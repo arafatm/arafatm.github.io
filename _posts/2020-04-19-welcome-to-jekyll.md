@@ -25,6 +25,14 @@ print_hi('Hank')
 #=> prints 'Hi, Hank' to STDOUT.
 ```
 
+```latex
+The well known Pythagorean theorem \(x^2 + y^2 = z^2\) was 
+proved to be invalid for other exponents. 
+Meaning the next equation has no integer solutions:
+
+\[ x^n + y^n = z^n \]
+```
+
 ## section
 
 Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
