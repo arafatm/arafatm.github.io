@@ -152,9 +152,9 @@ THE NEW YORK FIRE DEPARTMENT TRAINING ACADEMY
 Kirk Hammett (Metallica) wasn't as good as he'd like to be. Studied under
 Joe Satriani.
 
-"The main thing with Kirk . . . was he was a really good guitar
+"The main thing with Kirk . . . was he was a really good guitar
 player when he walked in the door. He was already playing lead
-guitar . . . he was already shredding. He had a great right hand,
+guitar . . . he was already shredding. He had a great right hand,
 he knew most of his chords, he just didn't learn how to play in an
 environment where he learned all the names and how to connect everything
 together." -- Joe Satriani
@@ -397,8 +397,8 @@ The questions to ask, when you feel pride, then, is this:
 "The best plan is only good intentions unless it degenerates into work." --
 PETER DRUCKER
 
-"A poet's function is not to experience the poetic state: that is a
-private affair. His function is to create it in others." -- Paul Valéry,
+"A poet's function is not to experience the poetic state: that is a
+private affair. His function is to create it in others." -- Paul Valry,
 philosopher and writer
 
 > "You can't build a reputation on what you're going to do" -- Henry Ford
@@ -408,7 +408,7 @@ there. So the next stage, of course, is the hard work." -- sculptor Nina
 Holton
 
 "The hard thing isn't setting a big, hairy, audacious goal. The hard thing is
-laying people off when you miss the big goal. The hard thing isn't
+laying people off when you miss the big goal. The hard thing isn't
 dreaming big. The hard thing is waking up in the middle of the night in a
 cold sweat when the dream turns into a nightmare." -- Ben Horowitz, serial
 entrepreneur 
@@ -458,9 +458,9 @@ SHAKESPEARE
 We are petrified, as the Reverend Dr. Sam Wells put it, that if we are
 humble, we will end up "subjugated, trodden on, embarrassed and irrelevant."
 
-"All of us who do creative work . . . we get into it because we have
+"All of us who do creative work . . . we get into it because we have
 good taste. But it's like there's a gap, that for the first couple years that
-you're making stuff, what you're making isn't so good . . . It's
+you're making stuff, what you're making isn't so good . . . It's
 really not that great. It's trying to be good, it has ambition to be good,
 but it's not quite that good. But your taste the thing that got you into the
 game your taste is still killer, and your taste is good enough that you can
@@ -769,7 +769,7 @@ prosperity." -- James Basford
 Most successful people are people you've never heard of. They want it that
 way.  It keeps them sober. It helps them do their jobs.
 
-### FOR WHAT OFTEN COMES NEXT, EGO IS THE ENEMY 
+### FOR WHAT OFTEN COMES NEXT, EGO IS THE ENEMY 
 
 "The evidence is in, and you are the verdict." -- ANNE LAMOTT
 
@@ -873,7 +873,7 @@ knowing you made the effort to do your best to become the best that you are
 capable of becoming." -- John Wooden
 
 "Ambition means tying your well-being to what other people say or
-do. Sanity means tying it to your own actions." -- Marcus Aurelius
+do. Sanity means tying it to your own actions." -- Marcus Aurelius
 
 We can't let externals determine whether something was worth it or not. It's
 on us.
@@ -928,7 +928,7 @@ to emerge from this with your dignity and character intact?
 
 ### MAINTAIN YOUR OWN SCORECARD
 
-"I never look back, except to find out about mistakes . . . I only
+"I never look back, except to find out about mistakes . . . I only
 see danger in thinking back about things you are proud of." -- ELISABETH
 NOELLE-NEUMANN
 
@@ -949,7 +949,7 @@ it: first, when we are about to act; and secondly, after we have acted. Our
 views are apt to be very partial in both cases; but they are apt to be most
 partial when it is of most importance that they should be otherwise. When we
 are about to act, the eagerness of passion will seldom allow us to consider
-what we are doing, with the candour of an indifferent person. When the
+what we are doing, with the candour of an indifferent person. When the
 action is over, indeed, and the passions which prompted it have subsided, we
 can enter more coolly into the sentiments of the indifferent spectator." --
 Adam Smith, theory for how wise and good people evaluate their actions
@@ -1055,7 +1055,7 @@ ryanholiday.net/reading-newsletter.
   - [THE DANGER OF EARLY PRIDE](#the-danger-of-early-pride)
   - [WORK, WORK, WORK](#work,-work,-work)
   - [FOR EVERYTHING THAT COMES NEXT, EGO IS THE
-    ENEMY ](#for-everything-that-comes-next,-ego-is-the-enemy )
+    ENEMY ](#for-everything-that-comes-next,-ego-is-the-enemy )
 - [PART II: SUCCESS](#part-ii:-success)
   - [ALWAYS STAY A STUDENT](#always-stay-a-student)
   - [DON'T TELL YOURSELF A STORY](#don't-tell-yourself-a-story)
@@ -1066,7 +1066,7 @@ ryanholiday.net/reading-newsletter.
   - [MEDITATE ON THE IMMENSITY](#meditate-on-the-immensity)
   - [MAINTAIN YOUR SOBRIETY](#maintain-your-sobriety)
   - [FOR WHAT OFTEN COMES NEXT, EGO IS THE
-    ENEMY ](#for-what-often-comes-next,-ego-is-the-enemy )
+    ENEMY ](#for-what-often-comes-next,-ego-is-the-enemy )
 - [PART III: FAILURE](#part-iii:-failure)
   - [Intro](#intro)
   - [ALIVE TIME OR DEAD TIME?](#alive-time-or-dead-time?)
