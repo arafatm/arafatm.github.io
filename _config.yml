@@ -27,13 +27,16 @@ markdown: kramdown
 theme: minima
 plugins:
   - jekyll-feed
-  - jekyll-postfiles
 
 defaults:
   - scope:
       path: "" # an empty string here means all files in the project
     values:
       layout: post
+  - scope:
+      path: "assets/img"
+    values:
+      image: true
 
 collections:
   books:
