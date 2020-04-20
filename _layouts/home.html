@@ -14,7 +14,11 @@ layout: default
     {%- for book in site.books -%}
     {%- if book.categories contains cat -%}
     <li>
-      <a href="{{ site.baseurl }}{{ book.url }}">{{ book.title }}</a>
+      {%- for tag in book.tags -%}
+      {{ tag }}&nbsp; 
+      {%- endfor -%}
+      <a href="{{ site.baseurl }}{{ book.url }}">{{ book.title }} 
+      </a>
     </li>
     {%- endif -%}
     {%- endfor -%}
