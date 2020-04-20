@@ -1,9 +1,9 @@
 ---
-categories: mba
+categories: communication
 tags: [communication]
 author: Kim Scott
 source: https://www.amazon.com/Radical-Candor-Revised-Kick-Ass-Humanity-ebook/dp/B07P9LPXPT/ref=sr_1_3?dchild=1&keywords=radical+candor&qid=1587354325&s=digital-text&sr=1-3
-title: Radical Candor: Be a Kick-Ass Boss Without Losing Your Humanity
+title: Radical Candor - Be a Kick-Ass Boss Without Losing Your Humanity
 ---
 
 It’s brutally hard to tell people when they are screwing up.
