@@ -2,7 +2,7 @@
 categories: mba
 author: Ed Catmul and Amy Wallace
 source: kindle://book?action=open&asin=B00FUZQYBO
-title: Creativity, Inc.: Overcoming the Unseen Forces That Stand in the Way of True Inspiration
+title: Creativity, Inc. Overcoming the Unseen Forces That Stand in the Way of True Inspiration
 ---
 
 by Ed Catmull and Amy Wallace
