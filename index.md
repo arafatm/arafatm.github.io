@@ -4,3 +4,5 @@
 
 layout: home
 ---
+
+[My Kindle Notes](https://read.amazon.com/notebook)
