@@ -7,7 +7,7 @@ layout: default
   <h1 class="page-heading">{{ page.title }}</h1>
   {%- endif -%}
 
-  {%- assign categories =  site.books | map: 'categories' | join: ','  | split: ',' | uniq -%}
+  {%- assign categories =  site.books | map: 'categories' | join: ','  | split: ',' | uniq | sort -%}
   {%- for cat in categories -%}
   <h3>{{ cat }}</h3>
   <ul>
@@ -18,7 +18,7 @@ layout: default
       {{ tag }}&nbsp; 
       {%- endfor -%}
       <a href="{{ site.baseurl }}{{ book.url }}">{{ book.title }} 
-      </a>
+      </a> by {{ book.author }}
     </li>
     {%- endif -%}
     {%- endfor -%}
