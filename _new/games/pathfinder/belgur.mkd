@@ -1,0 +1,159 @@
+# Belgur
+
+## Bio
+- Male half-orc ranger 3 - CR 2
+- No Alignment Humanoid (Human, Orc); Deity: Gozreh; 
+- Age: 16; Height: 5' 8"; Weight: 220lb.; Eyes: Brown; Hair: Black; Skin: Gray
+
+- GP 349
+
+## Abilities
+ 
+- STR  17   +3
+- DEX  14   +2
+- CON  14   +2
+- INT  10    0
+- WIS  14   +2
+- CHA   8   -1
+
+## Saving
+
+-           Total   Base  Ability Resist Misc Temp Notes
+- FORTITUDE +5   =  +3    +2        Endurance: +4 vs. hot or cold environments and to resist
+- REFLEX    +5   =  +3    +2 
+- WILL      +3   =  +1    +2
+
+## Defense
+
+HP: 32 - 29
+NL:    - 1
+
+-               Arm  Shield  Dex  Size  Nat  Def  Dod  Misc
+- AC    = 16     +4           +2
+- T. AC = 12
+- FF AC = 14
+
+CM Bonus  BAB  Str  Siz  Mis
+- 6        +3 
+
+CM Defense  BAB  STR  DEX  Size
+- 18      = 10   +3   +3   +2   0 
+
+## Attk
+
+- BAB +3    
+  - Fav Enemy +2 (Orcs)  
+  - Descendent +1 confirm crit v fav. enemies of your subtype (orc)
+- Init +2  
+  - Fav. Terr +2 (Underground)
+- Speed 30/20 ft
+
+Feats
+- Rapid Shot 2 shots at -2
+- Pwr Atk
+- Cleave
+
+## Weapons
+
+- Earth Breaker 2H  +6, 2d6+4   Crit x3
+- GreatSword    2H  +6, 2d6+4   Crit 19-20/x2 2H
+
+- Longbow           +5, 1d8   Crit x3  Rng 100'
+- Arrows 60
+
+
+- Hide Armor        +4  Max Dex +4, Arm Chk -3 
+
+
+## Feats
+- Power Attack -1/+2
+- Cleave - 2nd attack if 1st is success, -2 AC pen. till next turn
+- Rapid Shot -2 atk roll for 2 attacks
+- Endurance
+- Martial Weap Proficiencty
+- Simple Weap Prof
+- Arm Prof Med
+- Shield Proficiency
+
+## Traits
+
+- Bastard
+- Scarred Descendant
+
+## Skills
+
+- -1   Acrobatics    
+-  0   Appraise      
+- -1   Bluff         
+- +4   Climb         
+- -1   Ciplomacy     
+- -1   Disguise      
+- -2   Esc. Artst    
+- -1   Fly           
+- +4   Handle Animal 
+- +2   Heal          
+- +5   Intimidate    
+- +4   dungeoneering  
+- +4   geography    
+- +5   nature       
+- +8   Perception   
+- -1   Ride          
+- +7   Sense Motive
+- +5   Stealth
+- +8   Survival
+- +0   Swim
+
+
+## Abilities
+- Darkvision 60ft
+- Fav Enemy (Orcs)
+- Fav Terrain (Underground)
+- Orc Blood
+- Orc Ferocity 1/day
+- Track +1
+
+Special
+- Wild Empathy +2
+
+## Languages
+- Common
+- Orc
+
+## Spells
+
+- Melee Touch +6
+- Ranged Touch +5
+
+Ranger spells     Concentration +2
+
+## Equipment
+
+- Horse (non-battle)
+- 
+
+# 2015-10-25 
+
+Sherriff is back
+
+http://cdn.obsidianportal.com/map_images/435279/sandpoint-hinterlands.jpg
+
+Goblins have taken over island off Thistletop (NE of map)
+
+Closing down glassworks. 
+- [Ameiko]() to inherit
+- [Tseuto]() got away
+- daddy is dead
+- sheriff will barricade glassworks
+
+Townsfolk equip us for the trip to Thistletop
+
+[Shalelu](http://pathfinderwiki.com/wiki/Shalelu_Andosana) is our guide to Thistletop (2-3 days)
+
+Attacked by bear
+
+Enter Nettlewood - very dense brambles
+- close to sea
+- patch is nearly 20ft high
+- few spots where brambles can be pushed aside to reveal tunnel
+
+

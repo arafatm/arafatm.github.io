@@ -1,0 +1,253 @@
+# Character Sheet
+
+Cleric Human
+- Deity: Erastil
+
+## Base
+
+| Abi | Scr | Mod | Temp
+| Str | 8   | -1  |
+| Dex | 8   | -1  |
+| Con | 10  | 0   |
+| Int | 18  | 4   |
+| Wis | 15  | 2   |
+| Cha | 16  | 3   |
+
+- Fort: +3 = +3 base
+- Refl: -1 = -1 abil
+- Will: +5 = +3 base +2 abil
+
+- AC: 9 = 10 -1 Dex
+- Touch AC 9
+- Flat Footed AC: 9
+
+- CM Bonus: 0 = +1 BAB -1 Str
+
+- Base Atk: +1
+- Initiative: -1
+- Speed: 30/20 ft
+
+## Weapons
+
+- Quarterstaff: 1d6-1, Crit x2
+  - Double: -4, 1d6-1/1d6-1, Crit x2
+
+- Dagger: 1d4-1, Crit 19x2, 
+  - Rang: 1d4-1, Rang 10'
+
+## Skills
+
+| Skill         |    | Abilit | Rank | Temp |
+| -----         | -- | ------ | ---- | ---- |
+| Acrobatics    | -4 | dex -1 | ---- | ---- |
+| Appraise      | 9  | int  4 | ---- | ---- |
+| Bluff         | 4  | cha  3 | ---- | ---- |
+| Climb         | -4 | dex +1 | ---- | ---- |
+| Diplomacy     | -4 | dex +1 | ---- | ---- |
+| Dis Device    | -4 | dex +1 | ---- | ---- |
+| Disguise      | -4 | dex +1 | ---- | ---- |
+| Escape Art    | -4 | dex +1 | ---- | ---- |
+| Fly           | -4 | dex +1 | ---- | ---- |
+| Handle Anim   | -4 | dex +1 | ---- | ---- |
+| Heal          | -4 | dex +1 | ---- | ---- |
+| Intimidate    | -4 | dex +1 | ---- | ---- |
+| Know History  | -4 | dex +1 | ---- | ---- |
+| Know Religion | -4 | dex +1 | ---- | ---- |
+| Linguistics   | -4 | dex +1 | ---- | ---- |
+| Perception    | -4 | dex +1 | ---- | ---- |
+| Ride          | -4 | dex +1 | ---- | ---- |
+| Sense Motive  | -4 | dex +1 | ---- | ---- |
+| Sleight Hand  | -4 | dex +1 | ---- | ---- |
+| Spellcraft    | -4 | dex +1 | ---- | ---- |
+| Stealth       | -4 | dex +1 | ---- | ---- |
+| Survival      | -4 | dex +1 | ---- | ---- |
+| Swim          | -4 | dex +1 | ---- | ---- |
+| Use Mag Dev   | -4 | dex +1 | ---- | ---- |
+
+L# Notes
+
+# Town
+
+- two waters tavern #6
+- jail
+- locked box
+- umber carnival
+- 
+
+## **Almara Dalisen** carnival master
+
+- Wants us to investigate death on road to carnival
+  - **Archivin Walder** (sp?)
+
+## **Sheriff Kyra Feldane**
+
+
+**Constable Jake**
+
+Pawn Shop owner is dead
+- Wife: **Agnes Walder**
+- Skulks: Rogi & Zahkar
+
+Interrogate Rogi & Zahkar
+
+Wayne found a body *sister Ezrelda* in Carnival
+- **Talisman of Erastil** (my deity)
+
+## Investigate body Sister Ezrelda
+
+- defensive wounds on hands/arms
+- claw marks
+- puncture wounds on face
+- wounds on throat
+- rope burn around neck
+- back of tent cut
+
+Guards don't want to tell us where sphinx is
+
+Found empty vials of invisibility
+- Send Bob (the guard) to get Almira
+
+Bob comes back
+- I go speak to Almira
+
+Wayne/Justin look at tracks
+- colorful clothes hidden under the wagon
+
+on way to see almira
+- lots of townsfolk and deputies agitated
+
+Almira having heated convo with stranger *master ventlock* (head of security)
+- wearing uniform similar to circus guards
+
+## Townspeople milling around
+
+- got robbed by bunch of pickpockets
+
+**cut back to wayne/justin** 
+
+circus hasn't had clowns for months
+
+found clown clothes are too big for last 2 clowns that were small people
+
+Ventlock goes in the sphinx tent with 2 guards
+
+**back together**
+
+another vial with feral mutagen
+
+**check out archivins murder scene**
+
+we're being followed by skulks. they run off
+- found a note ???
+  - koreth (circled)
+  - justin
+  - priest
+  - archivin (crossed off)
+
+murder scene has wiff of magic: mutagen potion
+
+giant claw gash in the ground can't be from a feline because claw marks don't
+match
+
+## talking to the sphinx
+
+"if you have me you want to tell me, if you tell me you don't have me" 
+- secrets
+
+"i cut evil like a double edged sword and chaos flees at my approach. balance i
+single handedly appraise through battles with my heart and mind instead of with
+my gaze" 
+- justice
+
+who is responsible for the murders "what can't you see hear or feel until it's
+too late. what shadows love and shopkeepers hate" 
+- thief
+
+## head back to town
+
+run into villagers beating up on someone
+
+*milandru* works for carnival
+- was going to meet a young lady
+
+## Sleep - Next Day
+
+**someone else got killed**
+
+- Justin & Raygar go to town jail to warn sheriffs
+- Town jail is closed
+
+At carnival
+- something on fire behind the carnival
+- guards are trying to keep townsfolk out
+
+Someone firebombed carnival
+
+## Hanging corpse (felton?)
+- eyes gouged out, hand cut off
+- town drunk but had given up drinking
+- letter pinned "we take care of our own"
+- find a harot card with picture of sphinx
+- note: signed by arhaneem braeton 
+  - employee of braeton shipping
+
+**note found near archivin's murder spot**
+
+2 sides with different handwriting
+
+1. Names
+- Koreth (circled)
+- Justin
+- priest
+- arton (?) (can't tell exactly, crossed out)
+
+2. Bosworth fetch! 
+- B.M. (All the supplies this time!)
+
+**Take Felton's body to temple with Jake**
+
+- old tree in center of temple
+
+Speak with Priestess Andrea
+
+Day of Mourning
+- loss of Sister Eldridge
+- her body was taken last night
+- all tithings have been stolen
+
+Archivin's body
+- body ravaged by a beast
+
+Crypt
+- fresh drag marks
+
+## Head over to locked box
+
+Ask Agnes about the B.M's from JAkes list
+- Bremer Malk: neighbor. slovenly
+- Borvius Monchello: jealous of braetons. has a knack for getting rare things
+- Burk & Bander Malpin: "stay clear of them". enjoy getting into occasional 
+  violence
+
+## HEad to the Shiver Den
+
+Looking for Bosworth
+
+Get in fight
+- kill a skulk
+- alive skulk
+
+Interrogate skulk
+
+Interrogate Human
+- Cleavan
+- Togy (skulk) is dead
+- Ferrai (skulk) is still alive
+
+Bosworth works for Nisku (a skulk gang)
+
+Bosworth is OD'd
+
+## Wayne goes to tell constables
+
+Runs into mercanaries kosovorian 
