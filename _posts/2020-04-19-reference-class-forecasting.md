@@ -2,9 +2,8 @@
 date: 2020-04-19
 categories: mba
 tags: [agile, estimation]
-title: From Nobel Prize to Project Management: Getting Risks Right
+title: From Nobel Prize to Project Management Getting Risks Right
 ---
-tags: [agile, estimation]
 
 - by Bent Flyvbjerg, Ph.D. & Dr. Techn.
 - [Full Paper](https://arxiv.org/pdf/1302.3642.pdf)
