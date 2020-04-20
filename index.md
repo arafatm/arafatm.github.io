@@ -5,4 +5,4 @@
 layout: home
 ---
 
-[My Kindle Notes](https://read.amazon.com/notebook)
+:book: [My Kindle Notes](https://read.amazon.com/notebook)
