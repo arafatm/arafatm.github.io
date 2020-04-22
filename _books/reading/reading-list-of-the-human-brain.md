@@ -1,6 +1,9 @@
-# Reading List of the Human Brain + Behavior
-
-copied from https://docs.google.com/document/d/1WIqIYuSGfyoU_ZO-xZMDXfaaUmnG2tmnkHiGZQ7pvqg/edit
+---
+categories: reading
+source: https://docs.google.com/document/d/1WIqIYuSGfyoU_ZO-xZMDXfaaUmnG2tmnkHiGZQ7pvqg/edit
+author: Rick Boone
+title: Reading List of the Human Brain + Behavior
+---
 
 ## Behavioral Economics + Behavioral Science
 
