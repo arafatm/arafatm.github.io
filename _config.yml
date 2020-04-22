@@ -40,9 +40,9 @@ defaults:
       image: true
 
 collections:
-  books:
+  zbooks:
     output: true
-    permalink: /zbooks/:name
+    permalink: /books/:name
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
