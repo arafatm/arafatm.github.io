@@ -7,11 +7,11 @@ layout: default
   <h1 class="page-heading">{{ page.title }}</h1>
   {%- endif -%}
 
-  {%- assign categories =  site.books | map: 'categories' | join: ','  | split: ',' | uniq | sort -%}
+  {%- assign categories =  site.zbooks | map: 'categories' | join: ','  | split: ',' | uniq | sort -%}
   {%- for cat in categories -%}
   <h3>{{ cat }}</h3>
   <ul>
-    {%- for book in site.books -%}
+    {%- for book in site.zbooks -%}
     {%- if book.categories contains cat -%}
     <li>
       {%- for tag in book.tags -%}
@@ -27,7 +27,7 @@ layout: default
 
   {{ content }}
 
-  {% for category in site.books.categories %}
+  {% for category in site.zbooks.categories %}
   <h3>{{ category[0] }}</h3>
   <ul>
     {% for post in category[1] %}
