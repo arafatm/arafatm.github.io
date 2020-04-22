@@ -42,7 +42,7 @@ defaults:
 collections:
   books:
     output: true
-    permalink: /books/:name
+    permalink: /zbooks/:name
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
