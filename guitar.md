@@ -1,7 +1,7 @@
 ---
 layout: page
-title: :guitar: [Fender Play: Guitar](https://www.fender.com/play)
 permalink: /guitar
+title: :guitar: [Fender Play: Guitar](https://www.fender.com/play)
 ---
 
 # Exercise: Warm up on 1 String With a Stretch
