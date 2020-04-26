@@ -1,5 +1,5 @@
 ---
-categories: agile
+category: agile
 tags: estimation
 author: Bent Flyvbjerg, Ph.D. & Dr. Techn.
 source: https://arxiv.org/pdf/1302.3642.pdf
