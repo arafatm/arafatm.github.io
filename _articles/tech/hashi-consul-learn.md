@@ -234,41 +234,39 @@ curl 'http://localhost:8500/v1/health/service/web?passing'
 
 ### Updating Services
 
-Next you'll update the web service by registering a health check for it. Remember that because you never started a service on port `80` where you registered web, the health check you register will fail.
+Next you'll update the web service by registering a health check for it.
 
-You can update service definitions without any downtime by changing the service definition file and sending a `SIGHUP` to the agent or running `consul reload`. Alternatively, you can use the HTTP API to add, remove, and modify services dynamically. In this example, you will update the registration file.
+Remember that because you never started a service on port `80` where you
+registered web, the health check you register will fail.
 
-First, edit the registration file by running the following command. Copy and paste the whole code block (excluding the `$`) into your terminal.
+:flashlight: You can update service definitions without any downtime by
+changing the service definition file and sending a `SIGHUP` to the agent or
+running `consul reload`. Alternatively, you can use the HTTP API to add,
+remove, and modify services dynamically. In this example, you will update the
+registration file.
 
-:ship:
+:ship: Edit the registration file
 ```bash
-echo '{"service":
+echo '{ "service":
+  {"name": "web",
+    "tags": ["rails"],
+    "port": 80,
+    "check": {
+      "args": ["curl", "localhost"],
+      "interval": "10s"
+    }
+  }
+}'      > ./consul.d/web.json
 ```
 
-      {"name": "web",
-        "tags": ["rails"],
-        "port": 80,
-        "check": {
-          "args": ["curl", "localhost"],
-          "interval": "10s"
-        }
-      }
-    }' > ./consul.d/web.json
-    
+:flashlight: If the command exits with an `exit code >= 2`, then the check will
+fail and Consul will consider the service unhealthy. An exit code of 1 will be
+considered as warning state.
 
-The 'check' stanza of this service definition adds a script-based health check that tries to connect to the web service every 10 seconds via curl. Script based health checks run as the same user that started the Consul process.
-
-If the command exits with an exit code >= 2, then the check will fail and Consul will consider the service unhealthy. An exit code of 1 will be considered as warning state.
-
-Now reload Consul's configuration to make it aware of the new health check.
-
-:ship:
+:ship: Now reload Consul's configuration to make it aware of the new health check.
 ```bash
 consul reload
 ```
-
-    Configuration reload triggered
-    
 
 Notice the following lines in Consul's logs, which indicate that the web check is critical.
 
@@ -280,54 +278,51 @@ Notice the following lines in Consul's logs, which indicate that the web check i
         2019/08/06 16:35:16 [WARN] agent: Check "service:web" is now critical
     ...
     
+:exclamation: Consul's DNS server only returns healthy results. 
 
-Consul's DNS server only returns healthy results. Query DNS for the web service again. It shouldn't return any IP addresses since web's health check is failing.
-
-:ship:
+:ship: Query DNS for the web service again. It shouldn't return any IP
+addresses since web's health check is failing.
 ```bash
 dig @127.0.0.1 -p 8600 web.service.consul
 ```
 
-    
-    ; <<>> DiG 9.10.6 <<>> @127.0.0.1 -p 8600 web.service.consul
-    ; (1 server found)
-    ;; global options: +cmd
-    ;; Got answer:
-    ;; ->>HEADER<<- opcode: QUERY, status: NXDOMAIN, id: 28984
-    ;; flags: qr aa rd; QUERY: 1, ANSWER: 0, AUTHORITY: 1, ADDITIONAL: 1
-    ;; WARNING: recursion requested but not available
-    
-    ;; OPT PSEUDOSECTION:
-    ; EDNS: version: 0, flags:; udp: 4096
-    ;; QUESTION SECTION:
-    ;web.service.consul.        IN  A
-    
-    ;; AUTHORITY SECTION:
-    consul.         0   IN  SOA ns.consul. hostmaster.consul. 1565134764 3600 600 86400 0
-    
-    ;; Query time: 0 msec
-    ;; SERVER: 127.0.0.1#8600(127.0.0.1)
-    ;; WHEN: Tue Aug 06 16:39:24 PDT 2019
-    ;; MSG SIZE  rcvd: 97
-    
-
-Notice that there is no answer section in the response, because Consul has marked the web service as unhealthy.
-
 ### Summary
 
-In this guide you registered a service with Consul and learned how to query it using the HTTP API and DNS interface. You also added a script based health check for the service. You can find a complete list of service registration fields in the API documentation <https://www.consul.io/api/agent/service.html>, or learn more about health checks in the [check definition documentation <https://www.consul.io/docs/agent/checks.html>.
-
-Continue to the next guide to learn how to enable Consul's service mesh control plane called Consul Connect, which allows you to secure and observe network traffic between your services, and allow or deny inter-service communication.> Consul Connect is a service mesh control plane that provides service-to-service connection authorization and encryption using mutual TLS. In this guide you will learn how to configure Connect to encrypt and control traffic between services.
+You can find a complete list of service registration fields in the API
+documentation <https://www.consul.io/api/agent/service.html>, or learn more
+about health checks in the [check definition documentation
+<https://www.consul.io/docs/agent/checks.html>.
 
 ## Connect Services - Service Mesh | Consul
 
-In addition to providing IP addresses directly to services with the DNS interface or HTTP API, Consul can connect services to each other via sidecar proxies that you deploy locally with each service instance <https://www.consul.io/docs/connect/proxies.html>. This type of deployment (local proxies that control network traffic between service instances) is a service mesh. Because sidecar proxies connect your registered services, Consul's service mesh feature is called Consul Connect.
+Consul's service mesh control plane called _Consul Connect_, allows you to
+secure and observe network traffic between your services, and allow or deny
+inter-service communication.
 
-Connect lets you secure and observe communication between your services without modifying their code. Instead Connect configures sidecar proxies to establish mutual TLS between your services and either allow or deny communication between them based on their registered names. Because sidecar proxies control all service-to-service traffic, they can gather metrics about it and export them to a third party aggregator like Prometheus.
+_Consul Connect_ is a service mesh control plane that provides
+**service-to-service connection authorization and encryption using mutual
+TLS**. 
 
-You can also natively integrate <https://www.consul.io/docs/connect/native.html> applications with Consul Connect for optimal performance and security.
+In addition to providing IP addresses directly to services with the DNS
+interface or HTTP API, Consul can connect services to each other via sidecar
+proxies that you deploy locally with each service instance
+<https://www.consul.io/docs/connect/proxies.html>. This type of deployment
+(local proxies that control network traffic between service instances) is a
+**service mesh**. Because sidecar proxies connect your registered services,
+Consul's service mesh feature is called Consul Connect.
 
-**Security Warning:** This guide demonstrates Connect features with a dev-mode agent for simplicity, which is not a production-recommended secure way to deploy Connect. Please read the Connect production guide <https://www.consul.io/docs/guides/connect-production.html> to learn about securely deploying Connect.
+Connect lets you secure and observe communication between your services without
+modifying their code. Instead Connect configures _sidecar proxies_ to establish
+mutual TLS between your services and either allow or deny communication between
+them based on their registered names. Because sidecar proxies control all
+service-to-service traffic, they can gather metrics about it and export them to
+a third party aggregator like Prometheus.
+
+You can also natively integrate native
+<https://www.consul.io/docs/connect/native.html> applications with Consul
+Connect for optimal performance and security.
+
+:warning: **Security Warning:** This guide demonstrates Connect features with a dev-mode agent for simplicity, which is not a production-recommended secure way to deploy Connect. Please read the Connect production guide <https://www.consul.io/docs/guides/connect-production.html> to learn about securely deploying Connect.
 
 Registering services that use Connect is similar to registering services normally. In this guide you will:
 
