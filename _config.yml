@@ -43,6 +43,9 @@ collections:
   zbooks:
     output: true
     permalink: /books/:name
+  zarticles:
+    output: true
+    permalink: /articles/:name
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list

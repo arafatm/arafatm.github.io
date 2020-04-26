@@ -1,7 +1,7 @@
 ---
 layout: page
 permalink: /quotes/
-title: quotes
+title: Quotes
 ---
 
 > If you don't deal with your demons they'll move into the cellar and lift weights
