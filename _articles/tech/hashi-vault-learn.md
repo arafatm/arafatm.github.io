@@ -15,7 +15,9 @@ vault kv list secret/
 vault kv get secret/hello  
 ```
 
-## Install Vault | <https://learn.hashicorp.com/vault/getting-started/install>
+## Install Vault 
+
+:link: <https://learn.hashicorp.com/vault/getting-started/install>
 
 ### Installing Vault
 
@@ -37,7 +39,9 @@ vault -autocomplete-install
 exec $SHELL
 ```
 
-## Starting the Server | <https://learn.hashicorp.com/vault/getting-started/dev-server>
+## Starting the Server 
+
+:link: <https://learn.hashicorp.com/vault/getting-started/dev-server>
 
 Vault operates as a client/server application. 
 
@@ -69,7 +73,9 @@ anything else:
 vault status
 ```
 
-## Your First Secret | <https://learn.hashicorp.com/vault/getting-started/first-secret>
+## Your First Secret 
+
+:link: <https://learn.hashicorp.com/vault/getting-started/first-secret>
 
 Using CLI <https://www.vaultproject.io/docs/commands> here, but can also 
 HTTP API <https://www.vaultproject.io/api/index.html>
@@ -119,7 +125,9 @@ vault kv get -format=json secret/hello | jq -r .data.data.excited
 vault kv delete secret/hello
 ```
 
-## Secrets Engines | <https://learn.hashicorp.com/vault/getting-started/secrets-engines>
+## Secrets Engines 
+
+:link: <https://learn.hashicorp.com/vault/getting-started/secrets-engines>
 
 :flashlight: By default, Vault enables Key/Value version2 secrets engine
 <https://www.vaultproject.io/docs/secrets/kv/kv-v2/> at the path `secret/` when
@@ -219,7 +227,9 @@ with physical systems, databases, HSMs, etc. But in addition to these physical
 systems, Vault can interact with more unique environments like AWS IAM, dynamic
 SQL user creation, etc. all while using the same read/write interface.
 
-## Dynamic Secrets | <https://learn.hashicorp.com/vault/getting-started/dynamic-secrets> 
+## Dynamic Secrets 
+
+:link: <https://learn.hashicorp.com/vault/getting-started/dynamic-secrets> 
 
 Unlike the `kv` secrets where you had to put data into the store yourself,
 dynamic secrets are generated when they are accessed. 
@@ -344,7 +354,9 @@ You've now worked with `vault write` and `vault read` for multiple paths: the `k
 
 Instead of having to memorize or reference documentation constantly to determine what paths to use, Vault has a built-in help system. This help system can be accessed via the API or the command-line and generates human-readable help for any path.
 
-## Secrets Engines Overview | <https://learn.hashicorp.com/vault/getting-started/help>
+## Secrets Engines Overview 
+
+:link: <https://learn.hashicorp.com/vault/getting-started/help>
 
 This section assumes you have the AWS secrets engine enabled at `aws/`. If you
 do not, enable it before continuing:
@@ -429,7 +441,9 @@ Go ahead and explore more paths! Enable other secrets engines, traverse their he
 
 The help system may not be the most exciting feature of Vault, but it is indispensable in day-to-day usage. The help system lets you learn about how to use any backend within Vault without leaving the command line.> Users can authenticate to Vault using multiple methods.
 
-## Authentication | <https://learn.hashicorp.com/vault/getting-started/authentication>
+## Authentication 
+
+:link: <https://learn.hashicorp.com/vault/getting-started/authentication>
 
 :warning: When starting the Vault server in `dev` mode, it automatically logs
 you in as the root user with admin permissions. In a non-dev setup, you would
@@ -567,7 +581,9 @@ vault token revoke -mode path auth/github
 vault auth disable github
 ```
 
-## Policies | <https://learn.hashicorp.com/vault/getting-started/policies>
+## Policies 
+
+:link: <https://learn.hashicorp.com/vault/getting-started/policies>
 
 Policies in Vault control what a user can access ie **authorization**. 
 
@@ -860,7 +876,9 @@ lock down the Vault in an emergency without consulting other operators.
 When the Vault is sealed again, it clears all of its state (including the
 encryption key) from memory. The Vault is secure and locked down from access.
 
-## Using the HTTP APIs with Authentication | <https://learn.hashicorp.com/vault/getting-started/apis>
+## Using the HTTP APIs with Authentication 
+
+:link: <https://learn.hashicorp.com/vault/getting-started/apis>
 
 :flashlight: Vault CLI is subset of API
 
@@ -1064,7 +1082,9 @@ unset VAULT_TOKEN
 
 HTTP APIs <https://www.vaultproject.io/api/index.html>
 
-## Web UI | <https://learn.hashicorp.com/vault/getting-started/ui>
+## Web UI 
+
+:link: <https://learn.hashicorp.com/vault/getting-started/ui>
 
 ### Dev servers
 
