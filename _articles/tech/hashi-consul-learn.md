@@ -502,166 +502,101 @@ firewalls**, but they rely on the services' logical names (for example "web" or
 
 ## Add to Consul KV - Service Configuration | Consul
 
-In addition to providing service discovery, integrated health checking, and securing network traffic, Consul includes a key value store, which you can use to dynamically configure applications, coordinate services, manage leader election, or serve as a data backend for Vault, along with a myriad of other uses.
+In addition to providing 
+- service discovery, 
+- integrated health checking, 
+- and securing network traffic, 
 
-In this guide you will explore the Consul key value store (Consul KV) using the command line. The guide assumes that the Consul agent from the previous guide is still running. If not you can start a new one by running `consul agent -dev`. Consul KV is enabled automatically on Consul agents; you don't need to enable it in Consul's configuration.
+**Consul includes a key value store**, which you can use to 
+- dynamically configure applications, 
+- coordinate services, 
+- manage leader election, 
+- or serve as a data backend for Vault, 
+- along with a myriad of other uses.
 
-There are two ways to interact with the Consul KV store: the HTTP API and the CLI. In this guide we will use the CLI. See the HTTP API documentation <https://www.consul.io/api/kv.html> to learn how applications and services can interact with Consul KV.
+There are two ways to interact with the Consul KV store: the HTTP API and the
+CLI. In this guide we will use the CLI. 
+
+See the HTTP API documentation <https://www.consul.io/api/kv.html> to learn how
+applications and services can interact with Consul KV.
 
 ### Add Data
 
 First, insert or "put" some values into the KV store with the `consul kv put` command. The first entry after the command is the key, and the second entry is the value.
 
-:ship:
+:ship: Insert `put` some values
 ```bash
 consul kv put redis/config/minconns 1
-```
 
-    Success! Data written to: redis/config/minconns
-    
-
-Here the key is `redis/config/maxconns` and the value is set to `25`.
-
-:ship:
-```bash
 consul kv put redis/config/maxconns 25
 ```
 
-    Success! Data written to: redis/config/maxconns
-    
-
-Notice that with the key entered below ("redis/config/users/admin"), you set a `flags` value of 42. Keys support setting a 64-bit integer flag value that isn't used internally by Consul, but can be used by clients to add metadata to any KV pair.
-
-:ship:
+:ship: set a **flag** which isn't used internally, but can add metadata
 ```bash
 consul kv put -flags=42 redis/config/users/admin abcd1234
 ```
 
-    Success! Data written to: redis/config/users/admin
-    
-
 ### Query Data
 
-Now, query for the value of one of the keys you just entered.
-
-:ship:
+:ship: Query with `get`
 ```bash
 consul kv get redis/config/minconns
 ```
 
-    1
-    
-
-Consul retains some additional metadata about the key-value pair. Retrieve the some metadata (including the "flag" you set) using the `-detailed` command line flag.
-
-:ship:
+:ship: Query including `flag` metadata
 ```bash
 consul kv get -detailed redis/config/users/admin
 ```
 
-    CreateIndex      14
-    Flags            42
-    Key              redis/config/users/admin
-    LockIndex        0
-    ModifyIndex      14
-    Session          -
-    Value            abcd1234
-    
-
-List all the keys in the store using the `recurse` options. Results are returned in lexicographical order.
-
-:ship:
+:ship: list all keys in the store recursively
 ```bash
 consul kv get -recurse
 ```
 
-    redis/config/maxconns:25
-    redis/config/minconns:1
-    redis/config/users/admin:abcd1234
-    
-
 ### Delete Data
 
-Delete a key from the Consul KV store, issue a "delete" call.
-
-:ship:
+:ship: Delete a key from the Consul KV store
 ```bash
 consul kv delete redis/config/minconns
 ```
 
-    Success! Deleted key: redis/config/minconns
-    
+:flashlight: Consul lets you interact with keys in a folder-like way. Although
+all the keys in the KV store are actually stored flat, Consul allows you to
+manipulate keys that share a certain prefix as a group, as if they were in
+folders or subfolders.
 
-Consul lets you interact with keys in a folder-like way. Although all the keys in the KV store are actually stored flat, Consul allows you to manipulate keys that share a certain prefix as a group, as if they were in folders or subfolders.
-
-Delete all the keys with the `redis` prefix using the `recurse` option.
-
-:ship:
+:ship: Delete all the keys with the `redis` prefix using the `recurse` option.  
 ```bash
 consul kv delete -recurse redis
 ```
 
-    Success! Deleted keys with prefix: redis
-    
-
 ### Modify Existing Data
 
-Update the value of an existing key.
-
-:ship:
+:ship: Update the value of an existing key.  
 ```bash
 consul kv put foo bar
 ```
 
-    Success! Data written to: foo
-    
-
-Get the updated key.
-
-:ship:
+:ship: Get the updated key.  
 ```bash
 consul kv get foo 
 ```
 
-    bar
-    
-
-Put the new value at an extant "path".
-
-:ship:
+:ship: Put the new value at an extant "path".  
 ```bash
 consul kv put foo zip
 ```
 
-    Success! Data written to: foo
-    
-
-Check the updated path.
-
-:ship:
+:ship: Check the updated path.
 ```bash
 consul kv get foo
 ```
 
-    zip
-    
-
 ### Summary
 
-In this guide you added, viewed, modified, and deleted entries in Consul's key value store.
+HTTP API documentation <https://www.consul.io/api/kv.html>
 
-Consul can perform atomic key updates using a Check-And-Set (CAS) operation, and includes other sophisticated options for writing keys and values. You can explore these options on the help page for the `consul kv put` command.
-
-:ship:
-```bash
-consul kv put -h
-```
-
-    
-
-These are only a few examples of what the API supports. For the complete documentation, please see the HTTP API documentation <https://www.consul.io/api/kv.html> and CLI documentation <https://www.consul.io/docs/commands/kv.html>.
-
-Now that Consul contains some interesting data including service registrations, keys, values, and intentions, continue to the next guide to explore all this data in the Consul web UI.> Consul comes with support for a user-friendly and functional web UI out of the box. In this guide we will explore the web UI.
+CLI documentation <https://www.consul.io/docs/commands/kv.html>.
 
 ## Explore the Consul UI | Consul
 
