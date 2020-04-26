@@ -324,8 +324,8 @@ Connect for optimal performance and security.
 
 :warning: **Security Warning:** This guide demonstrates Connect features with a dev-mode agent for simplicity, which is not a production-recommended secure way to deploy Connect. Please read the Connect production guide <https://www.consul.io/docs/guides/connect-production.html> to learn about securely deploying Connect.
 
-Registering services that use Connect is similar to registering services normally. In this guide you will:
-
+Registering services that use Connect is similar to registering services
+normally. In this guide you will:
 1.  Start a service.
 2.  Register it normally, but with an additional `connect` stanza.
 3.  Register a second proxy to communicate with the service.
@@ -334,208 +334,171 @@ Registering services that use Connect is similar to registering services normall
 
 ### Start a Connect-unaware Service
 
-Begin by starting a service that is unaware of Connect. You will use `socat` to start a basic echo service, which will act as the "upstream" service in this guide. In production, this service would be a database, backend, or any service which another service relies on.
+Use `socat` <https://medium.com/@copyconstruct/socat-29453e9fc8a6> to start a
+basic echo service, which will act as the "upstream" service in this guide. In
+production, this service would be a database, backend, or any service which
+another service relies on.
 
-Socat is a decades-old Unix utility that lacks a concept of encryption or the TLS protocol. You will use it to demonstrate that Connect takes care of these concerns for you. If socat isn't installed on your machine, it should be available via a package manager.
+Socat lacks a concept of encryption or the TLS protocol. You will use it to
+demonstrate that Connect takes care of these concerns for you. 
 
-Start the socat service and specify that it will listen for TCP connections on port 8181.
-
-:ship:
+:ship: Start the socat service and specify that it will listen for TCP
+connections on port 8181.
 ```bash
 socat -v tcp-l:8181,fork exec:"/bin/cat"
 ```
 
-    
-
-You can verify it is working by using `nc` (netcat) to connect directly to the echo service on the correct port. Once connected, type some text and press enter. The text you typed should be echoed back:
-
-:ship:
+:ship: verify it's working with `netcat`
 ```bash
 nc 127.0.0.1 8181
 ```
 
-    hello
-    hello
-    testing 123
-    testing 123
-    
-
 ### Register the Service and Proxy with Consul
 
-Next, register the service with Consul by writing a new service definition, like you did in the last guide. This time you will include a Connect stanza in the registration that will register a sidecar proxy to handle traffic for this backend service instance.
-
-Add a file called `socat.json` to the `consul.d` directory with the following command (copy the whole code block except the `$`).
-
-:ship:
+:ship: Register a _sidecar proxy_ to handle traffic for the socat service
+instance <https://www.consul.io/docs/connect/registration/sidecar-service.html>
 ```bash
 echo '{
+  "service": {
+    "name": "socat",
+    "port": 8181,
+    "connect": { "sidecar_service": {} }  # register on dynamically allocated port
+  }
+}'      > ./consul.d/socat.json
 ```
 
-      "service": {
-        "name": "socat",
-        "port": 8181,
-        "connect": { "sidecar_service": {} }
-      }
-    }' > ./consul.d/socat.json
-    
+:ship: reload the new socat configuration
+```bash
+consul reload
+```
 
-Now run `consul reload` or send a `SIGHUP` signal to Consul so it will read the new configuration.
+:exclamation: Consul comes with a L4 proxy for testing purposes, and
+first-class support for Envoy <https://www.envoyproxy.io/>, which you should
+use for production deployments and layer 7 traffic management. 
 
-Take a look at the `"connect"` stanza in the registration you just added. This empty configuration notifies Consul to register a sidecar proxy for this process on a dynamically allocated port. It also creates reasonable defaults that Consul will use to configure the proxy once you start it via the CLI. Consul does not automatically start the proxy process for you. This is because Consul Connect allows you to chose the proxy you'd like to use.
+:exclamation: You'll use the L4 proxy in this guide, because, unlike Envoy, it
+comes with Consul and doesn't require any extra installation.
 
-Consul comes with a L4 proxy for testing purposes, and first-class support for Envoy, which you should use for production deployments and layer 7 traffic management. You'll use the L4 proxy in this guide, because, unlike Envoy, it comes with Consul and doesn't require any extra installation.
-
-Start the proxy process in another terminal window using the `consul connect proxy` command, and specify which service instance and proxy registration it corresponds to.
-
-:ship:
+:ship: Start the proxy process, and specify which service instance and proxy
+registration it corresponds to.
 ```bash
 consul connect proxy -sidecar-for socat
 ```
 
-    ==> Consul Connect proxy starting...
-        Configuration mode: Agent API
-            Sidecar for ID: socat
-                  Proxy ID: socat-sidecar-proxy
-    
-    ==> Log data will now stream in as it occurs:
-    
-        2019/07/24 13:27:59 [INFO] Proxy loaded config and ready to serve
-        2019/07/24 13:27:59 [INFO] TLS Identity: spiffe://287133f6-3d1e-8fb0-a0c5-fb9d5a95d53c.consul/ns/default/dc/dc1/svc/socat
-        2019/07/24 13:27:59 [INFO] TLS Roots   : [Consul CA 7]
-        2019/07/24 13:27:59 [INFO] public listener starting on 0.0.0.0:21000
-    
-
 ### Register a Dependent Service and Proxy
 
-Next, register a downstream service called "web". Like the socat service definition, the configuration file for web will include a connect stanza that specifies a sidecar, but unlike the socat definition, the configuration here isn't empty. Instead it specifies web's upstream dependency on socat, and the port that the proxy will listen on.
-
-:ship:
+:ship: Register a downstream service called "web" that specifies web's upstream
+dependency on socat, and the port that the proxy will listen on.
 ```bash
 echo '{"service": {
-```
-
         "name": "web",
         "port": 8080,
         "connect": {
           "sidecar_service": {
             "proxy": {
               "upstreams": [{
-                 "destination_name": "socat",
-                 "local_bind_port": 9191
+                 "destination_name": "socat",   # dependency on socat service
+                 "local_bind_port": 9191        # listen on port 9191
               }]
             }
           }
         }
       }
     }' > ./consul.d/web.json
-    
+```
 
-Use `consul reload` or SIGHUP to reload Consul with the new web service definition. This registers a sidecar proxy for the service "web" that will listen on port 9191 to establish mTLS connections to "socat".
+:ship: reload the new web service definition
+```bash
+consul reload
+```
 
-If we were running a real web service it would talk to its proxy on a loopback address. The proxy would encrypt its traffic and send it over the network to the sidecar proxy for the socat service. Socat's proxy would decrypt the traffic and send it locally to socat on a loopback address at port 8181. Because there is no web service running, you will pretend to be the web service by talking to its proxy on the port that we specified (9191).
+If we were running a real web service it would talk to its proxy on a loopback
+address. The proxy would encrypt its traffic and send it over the network to
+the sidecar proxy for the socat service. 
 
-Before you start the proxy process, verify that you aren't able to connect to the socat service on port 9191. The below command should exit immediately, because there is nothing listening on port 9191 (socat is listening on 8181).
+Socat's proxy would decrypt the traffic and send it locally to socat on a
+loopback address at port 8181.
 
-:ship:
+Because there is no web service running, you will _pretend to be the web
+service_ by talking to its proxy on the port that we specified (9191).
+
+:ship: Verify that you aren't able to connect to the socat service on port 9191. 
+The below command should exit immediately, because there is nothing listening
+on port 9191 _socat is listening on 8181_.
 ```bash
 nc 127.0.0.1 9191
 ```
 
-    
-
-Now start the web proxy using the configuration from the sidecar registration.
-
-:ship:
+:ship: Start the web proxy using the configuration from the sidecar
+registration.
 ```bash
 consul connect proxy -sidecar-for web
 ```
 
-    ==> Consul Connect proxy starting...
-        Configuration mode: Agent API
-            Sidecar for ID: web
-                  Proxy ID: web-sidecar-proxy
-    
-    ==> Log data will now stream in as it occurs:
-    
-        2019/07/24 13:32:10 [INFO] 127.0.0.1:9191->service:default/socat starting on 127.0.0.1:9191
-        2019/07/24 13:32:10 [INFO] Proxy loaded config and ready to serve
-        2019/07/24 13:32:10 [INFO] TLS Identity: spiffe://287133f6-3d1e-8fb0-a0c5-fb9d5a95d53c.consul/ns/default/dc/dc1/svc/web
-        2019/07/24 13:32:10 [INFO] TLS Roots   : [Consul CA 7]
-        2019/07/24 13:32:10 [INFO] public listener starting on 0.0.0.0:21001
-    
+:flashlight: Note in the first log line that the proxy setup a local listener
+on port 9191 that will proxy to the socat service just as we configured in the
+sidecar registration. 
 
-Note in the first log line that the proxy setup a local listener on port 9191 that will proxy to the socat service just as we configured in the sidecar registration. Subsequent log lines list the identity URL of the certificate loaded from the agent, identifying it as the "web" service, and the set of trusted root CAs that the proxy knows about.
+Subsequent log lines list the identity URL of the certificate loaded from the
+agent, identifying it as the "web" service, and the set of trusted root CAs
+that the proxy knows about.
 
-Try connecting to socat again on port 9191. This time it should work and echo back your text.
-
-:ship:
+:ship: Connect to socat again on port 9191. This time it should work and echo
+back your text.
 ```bash
 nc 127.0.0.1 9191
 ```
-
-    hello
-    hello
     
+:ship: Close the connection by typing `Crl+c`.
 
-Close the connection by typing `Crl+c`.
+:flashlight: The communication between the web and socat proxies is encrypted
+and authorized over a mutual TLS connection, while communication between each
+service and its sidecar proxy is unencrypted. In production, services should
+only accept only loopback connections. Any traffic in and out of the machine
+should travel through the proxies and therefore would always be encrypted.
 
-The communication between the web and socat proxies is encrypted and authorized over a mutual TLS connection, while communication between each service and its sidecar proxy is unencrypted. In production, services should only accept only loopback connections. Any traffic in and out of the machine should travel through the proxies and therefore would always be encrypted.
-
-**Security note:** The Connect security model requires trusting loopback connections when you use proxies. To further secure loopback connections you can use tools like network namespacing.
+:warning: **Security note:** The Connect security model requires trusting
+loopback connections when you use proxies. To further secure loopback
+connections you can use tools like network namespacing.
 
 ### Control Communication with Intentions
 
-Intentions define which services are allowed communicate with which other services. The connections above succeeded because in development mode, the ACL system (and therefore the default intention policy) is "allow all" by default.
+**Intentions** <https://www.consul.io/docs/connect/intentions.html> define
+which services are allowed communicate with which other services. The
+connections above succeeded because in development mode, the ACL system (and
+therefore the default intention policy) is "allow all" by default.
 
-Create an intention to deny access from web to socat that specifies policy, and the source and destination services.
-
-:ship:
+:ship: Create an intention to deny access from web to socat that specifies
+policy, and the source and destination services.
 ```bash
 consul intention create -deny web socat
 ```
 
-    Created: web => socat (deny)
-    
-
-Now, try to connect again. The connection will fail.
-
-:ship:
+:ship: The connection should fail.
 ```bash
 nc 127.0.0.1 9191
 ```
 
-    
-
-Delete the intention.
-
-:ship:
+:ship: Delete the intention.
 ```bash
 consul intention delete web socat
 ```
 
-    Intention deleted.
-    
-
-Try the connection again, and it will succeed.
-
-:ship:
+:ship: Try the connection again, and it will succeed.
 ```bash
 nc 127.0.0.1 9191
 ```
 
-    hello
-    hello
-    
-
-Intentions allow you to segment your network much like traditional firewalls, but they rely on the services' logical names (for example "web" or "socat") rather than the IP addresses of each individual service instance. Learn more about intentions <https://www.consul.io/docs/connect/intentions.html> in the documentation.
+**Intentions allow you to segment your network much like traditional
+firewalls**, but they rely on the services' logical names (for example "web" or
+"socat") rather than the IP addresses of each individual service instance.
 
 :warning: Changing intentions does not affect existing connections with the current version of Consul. You must establish a new connection to see the effects of a changed intention.
 
 ### Summary
 
-In this guide you configured a service on a single agent and used Connect for automatic connection authorization and encryption. To get hands-on experience with the other features of Consul Connect's service mesh, try the Getting Started with Consul Service Mesh <https://learn.hashicorp.com/consul?track=gs-consul-service-mesh#gs-consul-service-mesh> guides.
-
-Next explore how to use Consul's key value (KV) store for service configuration.> In this guide, we will use the Consul command-line interface to add and manage data in the Consul key value store.
+- [ ] try the Getting Started with Consul Service Mesh guides
+  <https://learn.hashicorp.com/consul?track=gs-consul-service-mesh#gs-consul-service-mesh>
 
 ## Add to Consul KV - Service Configuration | Consul
 
