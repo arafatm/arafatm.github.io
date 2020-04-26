@@ -3,7 +3,7 @@ categories: career
 tags: [interview]
 source: https://www.thecut.com/article/questions-to-ask-in-a-job-interview.html
 author: Alison Green, The Cut
-title: 10 Impressive Questions to Ask in a Job Interview By Alison Green
+title: 10 Impressive Questions to Ask in a Job Interview
 ---
 
 ## 1. “How will you measure the success of the person in this position?”

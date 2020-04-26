@@ -40,10 +40,7 @@ defaults:
       image: true
 
 collections:
-  zbooks:
-    output: true
-    permalink: /books/:name
-  zarticles:
+  articles:
     output: true
     permalink: /articles/:name
 

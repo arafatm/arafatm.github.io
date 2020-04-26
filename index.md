@@ -1,8 +1,6 @@
 ---
-# Feel free to add content and custom Front Matter to this file.
-# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
-
 layout: home
 ---
 
-:book: [My Kindle Notes](https://read.amazon.com/notebook)
+- :book: [My Kindle Notes](https://read.amazon.com/notebook)
+- Photography [Ghost Sand](https://lab.cheron.works/webgl-gpgpu-particles/)

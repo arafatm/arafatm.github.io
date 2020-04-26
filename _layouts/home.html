@@ -8,30 +8,29 @@ layout: default
   <h1 class="page-heading">{{ page.title }}</h1>
   {%- endif -%}
 
-  <! comment />
-  {%- assign categories =  site.zbooks | map: 'categories' | 
+  {{ content }}
+
+  {%- assign categories =  site.articles | map: 'categories' | 
   join: ','  | split: ',' | uniq | sort -%}
 
   {%- for cat in categories -%}
   <h3>{{ cat }}</h3>
-  <ul>
-    {%- for book in site.zbooks -%}
-    {%- if book.categories contains cat -%}
+  <ul style="white-space: nowrap">
+    {%- for article in site.articles -%}
+    {%- if article.categories contains cat -%}
     <li>
-      {%- for tag in book.tags -%}
-      {{ tag }}&nbsp; 
+      {%- for tag in article.tags -%}
+      <span style="font-weight: 900">{{ tag }}&nbsp;</span>
       {%- endfor -%}
-      <a href="{{ site.baseurl }}{{ book.url }}">{{ book.title }} 
-      </a> by {{ book.author }}
+      <a href="{{ site.baseurl }}{{ article.url }}">{{ article.title }}</a> 
+      {% if article.author %} by {{ article.author }} {% endif %}
     </li>
     {%- endif -%}
     {%- endfor -%}
   </ul>
   {%- endfor -%}
 
-  {{ content }}
-
-  {% for category in site.zbooks.categories %}
+  {% for category in site.articles.categories %}
   <h3>{{ category[0] }}</h3>
   <ul>
     {% for post in category[1] %}

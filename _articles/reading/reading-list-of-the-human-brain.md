@@ -1,5 +1,5 @@
 ---
-categories: reading
+categories: zzz-reading
 source: https://docs.google.com/document/d/1WIqIYuSGfyoU_ZO-xZMDXfaaUmnG2tmnkHiGZQ7pvqg/edit
 author: Rick Boone
 title: Reading List of the Human Brain + Behavior
