@@ -2,9 +2,8 @@
 categories: career
 source: https://medium.com/@joulee/10-questions-i-wish-id-asked-more-to-turbocharge-my-career-afad1b0fa501
 author: Julie Zhuo
-title: 10 questions I wish I’d asked more to turbocharge my career
+title: 10 Questions I Wish I’d Asked More To Turbocharge My Career
 ---
-
 
     “The art and science of asking questions is the source of all knowledge,”
     Thomas Berger said.

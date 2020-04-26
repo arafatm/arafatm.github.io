@@ -1,5 +1,6 @@
 ---
 layout: page
+title: Fender Play Guitar
 ---
 
 # :guitar: [Fender](https://www.fender.com/play)

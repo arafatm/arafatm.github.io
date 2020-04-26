@@ -12,7 +12,11 @@ header {
   width: 100%;
   float: none;
   position: relative;
-  display: none;
+  //display: none;
+}
+
+header.post-header {
+  margin: 0em 0em 1em 0em;
 }
 
 section {
