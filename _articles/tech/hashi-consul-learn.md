@@ -115,285 +115,122 @@ how to safely add and remove servers.
 
 ## Register a Service and Health Check - Service Discovery | Consul
 
-In the previous guide you ran a local Consul agent, and checked for other members of the datacenter. In this guide you will start using Consul by registering a service and a health check.
+:flashlight: One of the major use cases for Consul is **service discovery**.
+Consul provides a DNS interface that downstream services can use to find the IP
+addresses of their upstream dependencies.
 
-One of the major use cases for Consul is service discovery. Consul provides a DNS interface that downstream services can use to find the IP addresses of their upstream dependencies.
+Consul knows where these services are located because each service registers
+with its local Consul client. Operators can register services manually,
+configuration management tools can register services when they are deployed, or
+container orchestration platforms can register services automatically via
+integrations.
 
-Consul knows where these services are located because each service registers with its local Consul client. Operators can register services manually, configuration management tools can register services when they are deployed, or container orchestration platforms can register services automatically via integrations.
-
-In this guide, you'll register a service and health check manually by providing Consul with a configuration file, and use Consul discover its location using the DNS interface and HTTP API. Manually registering a service will help you understand the information that your automation tooling will ultimately need to provide Consul in order to take advantage of service discovery.
+In this guide, you'll register a service and health check manually by providing
+Consul with a configuration file, and use Consul discover its location using
+the DNS interface and HTTP API. Manually registering a service will help you
+understand the information that your automation tooling will ultimately need to
+provide Consul in order to take advantage of service discovery.
 
 ### Defining a Service
 
-You can register services either by providing a service definition <https://www.consul.io/docs/agent/services.html>, which is the most common way to register services, or by making a call to the [HTTP API <https://www.consul.io/api/agent/service.html#register-service>. Here we will use a service definition.
+You can register services either by providing a service definition
+<https://www.consul.io/docs/agent/services.html>, which is the most common way
+to register services, or by making a call to the [HTTP API
+<https://www.consul.io/api/agent/service.html#register-service>. 
 
-First, create a directory for Consul configuration. Consul loads all configuration files in the configuration directory, so a common convention on Unix systems is to name the directory something like `/etc/consul.d` (the `.d` suffix implies "this directory contains a set of configuration files").
-
-:ship:
+:ship: Create directory for configuration files
 ```bash
 mkdir ./consul.d
 ```
 
-    
+Next, write a service definition configuration file. Pretend there is a service
+named "web" running on port 80. Use the following command to create a file
+called web.json in the configuration directory. This file will contain the
+service definition: name, port, and an optional tag you can use to find the
+service later on. (In this case copy the whole code block except for the `$` to
+run the command and create the file.)
 
-Next, write a service definition configuration file. Pretend there is a service named "web" running on port 80. Use the following command to create a file called web.json in the configuration directory. This file will contain the service definition: name, port, and an optional tag you can use to find the service later on. (In this case copy the whole code block except for the `$` to run the command and create the file.)
-
-:ship:
+:ship: Write a **service definition configuration** file
 ```bash
 echo '{"service":
+  { "name": "web",        # service name
+    "tags": ["rails"],    # optional tag to find service
+    "port": 80            # run on port 80
+  }
+}'    > ./consul.d/web.json
 ```
 
-      {"name": "web",
-       "tags": ["rails"],
-       "port": 80
-      }
-    }' > ./consul.d/web.json
-    
-
-Now, restart the agent, using command line flags to specify the configuration directory and enable script checks on the agent.
-
-**Security Warning:** Enabling script checks in some configurations may introduce a remote execution vulnerability which is known to be targeted by malware. In production we strongly recommend `-enable-local-script-checks` instead.
-
-:ship:
+:ship: Restart the agent and enable script checks on the agent.
 ```bash
 consul agent -dev -enable-script-checks -config-dir=./consul.d
 ```
 
-    ==> Starting Consul agent...
-               Version: 'v1.5.2'
-               Node ID: '82f64bfa-22c2-5727-0f5d-0bae376f6584'
-             Node name: 'Judiths-MBP.lan'
-            Datacenter: 'dc1' (Segment: '<all>')
-                Server: true (Bootstrap: false)
-           Client Addr: [127.0.0.1] (HTTP: 8500, HTTPS: -1, gRPC: 8502, DNS: 8600)
-          Cluster Addr: 127.0.0.1 (LAN: 8301, WAN: 8302)
-               Encrypt: Gossip: false, TLS-Outgoing: false, TLS-Incoming: false, Auto-Encrypt-TLS: false
-    
-    ==> Log data will now stream in as it occurs:
-    
-    ...
-    
-    2019/07/16 14:09:25 [INFO] agent: Synced service "web"
-    2019/07/16 14:09:25 [DEBUG] agent: Node info in sync
-    2019/07/16 14:09:25 [DEBUG] agent: Service "web" in sync
-    2019/07/16 14:09:25 [DEBUG] agent: Node info in sync
-    
+:warning: **Security Warning:** Enabling script checks in some configurations
+may introduce a remote execution vulnerability which is known to be targeted by
+malware. In production we strongly recommend `-enable-local-script-checks`
+instead.
 
-You'll notice in the output that Consul "synced" the web service. This means that the agent loaded the service definition from the configuration file, and has successfully registered it in the service catalog.
+:warning: We never started a web service in this example. Consul can register
+services that aren't running yet. It correlates each running service with its
+registration based on the service's port.
 
-:warning: We never started a web service in this example. Consul can register services that aren't running yet. It correlates each running service with its registration based on the service's port.
+In a multi-agent Consul datacenter, each service would register with its local
+Consul client, and the clients would forward the registration to the Consul
+servers, which maintain the service catalog.
 
-In a multi-agent Consul datacenter, each service would register with its local Consul client, and the clients would forward the registration to the Consul servers, which maintain the service catalog.
-
-If you wanted to register multiple services, you could create multiple service definition files in the Consul configuration directory.
+If you wanted to register multiple services, you could create multiple service
+definition files in the Consul configuration directory.
 
 ### Querying Services
 
-Once the agent adds the service to Consul's service catalog you can query it using either the DNS interface or HTTP API.
+via _DNS Interface_ or _HTTP API_ 
 
-#### » <#dns-interface>DNS Interface
+#### DNS Interface
 
-First query the web service using Consul's DNS interface. The DNS name for a service registered with Consul is `NAME.service.consul`, where `NAME` is the name you used to register the service (in this case, `web`). By default, all DNS names are in the `consul` namespace, though this is configurable <https://www.consul.io/docs/agent/options.html#domain>.
-
-The fully-qualified domain name of the web service is `web.service.consul`. Query the DNS interface (which Consul runs by default on port `8600`) for the registered service.
-
-:ship:
+:ship: The fqdn is `web.service.consul`. Query the DNS interface for the
+registered service.
 ```bash
 dig @127.0.0.1 -p 8600 web.service.consul
 ```
 
-    
-    ; <<>> DiG 9.10.6 <<>> @127.0.0.1 -p 8600 web.service.consul
-    ; (1 server found)
-    ;; global options: +cmd
-    ;; Got answer:
-    ;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 28340
-    ;; flags: qr aa rd; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 2
-    ;; WARNING: recursion requested but not available
-    
-    ;; OPT PSEUDOSECTION:
-    ; EDNS: version: 0, flags:; udp: 4096
-    ;; QUESTION SECTION:
-    ;web.service.consul.        IN  A
-    
-    ;; ANSWER SECTION:
-    web.service.consul. 0   IN  A   127.0.0.1
-    
-    ;; ADDITIONAL SECTION:
-    web.service.consul. 0   IN  TXT "consul-network-segment="
-    
-    ;; Query time: 2 msec
-    ;; SERVER: 127.0.0.1#8600(127.0.0.1)
-    ;; WHEN: Tue Jul 16 14:26:53 PDT 2019
-    ;; MSG SIZE  rcvd: 99
-    
+As you can see, an `A` record was returned containing the IP address where the
+service was registered. `A` records can only hold IP addresses.
 
-As you can see, an `A` record was returned containing the IP address where the service was registered. `A` records can only hold IP addresses.
+:flashlight: Since we started `consul` with a minimal configuration, the `A`
+record will return local host (`127.0.0.1`). Set the Consul agent `-advertise`
+argument or the `address` field in the service definition
+<https://www.consul.io/docs/agent/services.html> if you want to advertise an IP
+address that is meaningful to other nodes in the datacenter.
 
-**Tip:** Since we started `consul` with a minimal configuration, the `A` record will return local host (`127.0.0.1`). Set the Consul agent `-advertise` argument or the `address` field in the service definition <https://www.consul.io/docs/agent/services.html> if you want to advertise an IP address that is meaningful to other nodes in the datacenter.
-
-You can also use the DNS interface to retrieve the entire address/port pair as a `SRV` record.
-
-:ship:
+:ship: You can also use the DNS interface to retrieve the entire address/port pair as a `SRV` record.
 ```bash
 dig @127.0.0.1 -p 8600 web.service.consul SRV
 ```
 
-    
-    ; <<>> DiG 9.10.6 <<>> @127.0.0.1 -p 8600 web.service.consul SRV
-    ; (1 server found)
-    ;; global options: +cmd
-    ;; Got answer:
-    ;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 56598
-    ;; flags: qr aa rd; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 3
-    ;; WARNING: recursion requested but not available
-    
-    ;; OPT PSEUDOSECTION:
-    ; EDNS: version: 0, flags:; udp: 4096
-    ;; QUESTION SECTION:
-    ;web.service.consul.        IN  SRV
-    
-    ;; ANSWER SECTION:
-    web.service.consul. 0   IN  SRV 1 1 80 Judiths-MBP.lan.node.dc1.consul.
-    
-    ;; ADDITIONAL SECTION:
-    Judiths-MBP.lan.node.dc1.consul. 0 IN   A   127.0.0.1
-    Judiths-MBP.lan.node.dc1.consul. 0 IN   TXT "consul-network-segment="
-    
-    ;; Query time: 2 msec
-    ;; SERVER: 127.0.0.1#8600(127.0.0.1)
-    ;; WHEN: Tue Jul 16 14:31:13 PDT 2019
-    ;; MSG SIZE  rcvd: 150
-    
-
-The `SRV` record says that the web service is running on port 80 and exists on the node `Judiths-MBP.lan.node.dc1.consul.`. An additional section is returned by the DNS with the `A` record for that node.
-
-Finally, you can also use the DNS interface to filter services by tags. The format for tag-based service queries is `TAG.NAME.service.consul`. In the example below, you'll ask Consul for all web services with the "rails" tag. You'll get a successful response since you registered the web service with that tag.
-
-:ship:
+:ship: You can also use the DNS interface to filter services by tags. The
+format for tag-based service queries is `TAG.NAME.service.consul`. 
 ```bash
 dig @127.0.0.1 -p 8600 rails.web.service.consul
 ```
 
-    
-    ; <<>> DiG 9.10.6 <<>> @127.0.0.1 -p 8600 rails.web.service.consul
-    ; (1 server found)
-    ;; global options: +cmd
-    ;; Got answer:
-    ;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 37666
-    ;; flags: qr aa rd; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 2
-    ;; WARNING: recursion requested but not available
-    
-    ;; OPT PSEUDOSECTION:
-    ; EDNS: version: 0, flags:; udp: 4096
-    ;; QUESTION SECTION:
-    ;rails.web.service.consul.  IN  A
-    
-    ;; ANSWER SECTION:
-    rails.web.service.consul. 0 IN  A   127.0.0.1
-    
-    ;; ADDITIONAL SECTION:
-    rails.web.service.consul. 0 IN  TXT "consul-network-segment="
-    
-    ;; Query time: 0 msec
-    ;; SERVER: 127.0.0.1#8600(127.0.0.1)
-    ;; WHEN: Tue Jul 16 14:32:53 PDT 2019
-    ;; MSG SIZE  rcvd: 105
-    
+#### HTTP API
 
-#### » <#http-api>HTTP API
-
-In addition to the DNS interface, you can also query for the service using the HTTP API.
-
-:ship:
+:ship: Query for the service using the HTTP API.
 ```bash
 curl http://localhost:8500/v1/catalog/service/web
 ```
 
-    
+The HTTP API lists all nodes hosting a given service. 
 
-    [
-        {
-            "ID": "82f64bfa-22c2-5727-0f5d-0bae376f6584",
-            "Node": "Judiths-MBP.lan",
-            "Address": "127.0.0.1",
-            "Datacenter": "dc1",
-            "TaggedAddresses": {
-                "lan": "127.0.0.1",
-                "wan": "127.0.0.1"
-            },
-            "NodeMeta": {
-                "consul-network-segment": ""
-            },
-            "ServiceKind": "",
-            "ServiceID": "web",
-            "ServiceName": "web",
-            "ServiceTags": [
-                "rails"
-            ],
-            "ServiceAddress": "",
-            "ServiceWeights": {
-                "Passing": 1,
-                "Warning": 1
-            },
-            "ServiceMeta": {},
-            "ServicePort": 80,
-            "ServiceEnableTagOverride": false,
-            "ServiceProxyDestination": "",
-            "ServiceProxy": {},
-            "ServiceConnect": {},
-            "CreateIndex": 10,
-            "ModifyIndex": 10
-        }
-    ]
-    
+:flashlight: As you will see later when we discuss health checks
+<#updating-services> you'll typically want to filter your query for only
+healthy service instances, which DNS does automatically under the hood. Filter
+your HTTP API query to look for only healthy instances.
 
-The HTTP API lists all nodes hosting a given service. As you will see later when we discuss health checks <#updating-services> you'll typically want to filter your query for only healthy service instances, which DNS does automatically under the hood. Filter your HTTP API query to look for only healthy instances.
-
-:ship:
+:ship: Query for the service filtering for healthy service instances
 ```bash
 curl 'http://localhost:8500/v1/health/service/web?passing'
 ```
-
-    
-
-    [
-        {
-            "Node": {
-                "ID": "82f64bfa-22c2-5727-0f5d-0bae376f6584",
-                "Node": "Judiths-MBP.lan",
-                "Address": "127.0.0.1",
-                "Datacenter": "dc1",
-                "TaggedAddresses": {
-                    "lan": "127.0.0.1",
-                    "wan": "127.0.0.1"
-                },
-                "Meta": {
-                    "consul-network-segment": ""
-                },
-                "CreateIndex": 9,
-                "ModifyIndex": 10
-            },
-    ...
-            "Checks": [
-                {
-                    "Node": "Judiths-MBP.lan",
-                    "CheckID": "serfHealth",
-                    "Name": "Serf Health Status",
-                    "Status": "passing",
-                    "Notes": "",
-                    "Output": "Agent alive and reachable",
-                    "ServiceID": "",
-                    "ServiceName": "",
-                    "ServiceTags": [],
-                    "Definition": {},
-                    "CreateIndex": 9,
-                    "ModifyIndex": 9
-                }
-            ]
-        }
-    ]
-    
 
 ### Updating Services
 

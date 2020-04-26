@@ -4,7 +4,7 @@ title: Lifting
 permalink: /lifting/
 ---
 
-## 2020-04-25 Upper
+## 2020-04-25 Sandbothe Upper
 
 Warmup 4x
 - 25 band pull aparts
