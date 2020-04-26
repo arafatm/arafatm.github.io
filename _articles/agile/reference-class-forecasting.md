@@ -1,6 +1,6 @@
 ---
-categories: mba
-tags: [agile, estimation]
+categories: agile
+tags: estimation
 author: Bent Flyvbjerg, Ph.D. & Dr. Techn.
 source: https://arxiv.org/pdf/1302.3642.pdf
 title: From Nobel Prize to Project Management Getting Risks Right
