@@ -8,7 +8,7 @@ source: https://learn.hashicorp.com/vault#getting-started
 
 ## cheatsheet
 
-Docs <<https://www.vaultproject.io/docs>>
+Docs <https://www.vaultproject.io/docs>
 
 ```bash
 vault secrets list
