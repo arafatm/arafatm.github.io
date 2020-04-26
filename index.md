@@ -1,5 +1,14 @@
 ---
 layout: home
 ---
-- :guitar: [Fender Play: Guitar](https://www.fender.com/play/path/level-1)
-- :book: [My Kindle Notes](https://read.amazon.com/notebook)
+
+# Home
+---
+
+:guitar: [Fender Play: Guitar](/guitar) 
+...
+:muscle: [Lifting](/lifting) 
+...
+:book: [My Kindle Notes](https://read.amazon.com/notebook)
+
+---
