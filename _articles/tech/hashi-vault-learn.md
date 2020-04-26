@@ -8,7 +8,7 @@ source: https://learn.hashicorp.com/vault#getting-started
 
 ## cheatsheet
 
-Docs <https://www.vaultproject.io/docs>
+Docs <<https://www.vaultproject.io/docs>>
 
 ```bash
 vault secrets list
@@ -16,11 +16,11 @@ vault kv list secret/
 vault kv get secret/hello  
 ```
 
-## Install Vault | https://learn.hashicorp.com/vault/getting-started/install
+## Install Vault | <https://learn.hashicorp.com/vault/getting-started/install>
 
 ### Installing Vault
 
-https://www.vaultproject.io/downloads.html 
+<https://www.vaultproject.io/downloads.html> 
 
 ### Verifying the Installation
 
@@ -38,7 +38,7 @@ vault -autocomplete-install
 exec $SHELL
 ```
 
-## Starting the Server | https://learn.hashicorp.com/vault/getting-started/dev-server
+## Starting the Server | <https://learn.hashicorp.com/vault/getting-started/dev-server>
 
 Vault operates as a client/server application. 
 
@@ -51,7 +51,7 @@ vault server -dev
 
 Look for the following lines:
 
-    $ export VAULT_ADDR='http://127.0.0.1:8200'
+    $ export VAULT_ADDR='<http://127.0.0.1:8200'>
 
     Unseal Key: 1+yv+v5mz+aSCK67X6slL3ECxb4UDL8ujWZU/ONBpn0=
     Root Token: s.XmpNPoi9sRhYtdKHaQhkHP6x
@@ -70,12 +70,12 @@ anything else:
 vault status
 ```
 
-## Your First Secret | https://learn.hashicorp.com/vault/getting-started/first-secret
+## Your First Secret | <https://learn.hashicorp.com/vault/getting-started/first-secret>
 
-Using [CLI](https://www.vaultproject.io/docs/commands) here, but can also 
-[HTTP API](https://www.vaultproject.io/api/index.html)
+Using CLI <https://www.vaultproject.io/docs/commands> here, but can also 
+HTTP API <https://www.vaultproject.io/api/index.html>
 
-Using **inmem** backend in `-dev` but can use [Consul](https://www.consul.io/)
+Using **inmem** backend in `-dev` but can use Consul <https://www.consul.io/>
 
 ### Writing a Secret
 
@@ -89,7 +89,7 @@ vault kv put secret/hello foo=world
 vault kv put secret/hello foo=world excited=yes
 ```
 
-[command documentation](https://www.vaultproject.io/docs/commands/index.html)
+command documentation <https://www.vaultproject.io/docs/commands/index.html>
 
 :warning: The documentation uses the `key=value` based entry throughout, but it
 is more secure to use files if possible. Sending data via the CLI is often
@@ -120,15 +120,15 @@ vault kv get -format=json secret/hello | jq -r .data.data.excited
 vault kv delete secret/hello
 ```
 
-## Secrets Engines | https://learn.hashicorp.com/vault/getting-started/secrets-engines
+## Secrets Engines | <https://learn.hashicorp.com/vault/getting-started/secrets-engines>
 
-:flashlight: By default, Vault enables [Key/Value version2 secrets
-engine](https://www.vaultproject.io/docs/secrets/kv/kv-v2/) at the path
-`secret/` when running in `dev` mode. 
+:flashlight: By default, Vault enables Key/Value version2 secrets engine
+<https://www.vaultproject.io/docs/secrets/kv/kv-v2/> at the path `secret/` when
+running in `dev` mode. 
 
 ### Enable a Secrets Engine
 
-:ship: enable a new `kv` [Secrets Engine](https://www.vaultproject.io/docs/secrets)
+:ship: enable a new `kv` Secrets Engine <https://www.vaultproject.io/docs/secrets>
 ```bash
 vault secrets enable -path=kv kv
 ```
@@ -213,14 +213,14 @@ not the `TYPE` of the secrets engine.
 ### What is a Secrets Engine?
 
 Vault behaves similarly to a 
-[virtual filesystem](https://en.wikipedia.org/wiki/Virtual_file_system)
+virtual filesystem <https://en.wikipedia.org/wiki/Virtual_file_system>
 
 This abstraction is incredibly powerful. It enables Vault to interface directly
 with physical systems, databases, HSMs, etc. But in addition to these physical
 systems, Vault can interact with more unique environments like AWS IAM, dynamic
 SQL user creation, etc. all while using the same read/write interface.
 
-## Dynamic Secrets | https://learn.hashicorp.com/vault/getting-started/dynamic-secrets 
+## Dynamic Secrets | <https://learn.hashicorp.com/vault/getting-started/dynamic-secrets> 
 
 Unlike the `kv` secrets where you had to put data into the store yourself,
 dynamic secrets are generated when they are accessed. 
@@ -233,7 +233,7 @@ revoked immediately after use, minimizing the amount of time the secret
 existed.
 
 :warning: Before starting this page, please register for an 
-[AWS account](https://aws.amazon.com/)
+AWS account <https://aws.amazon.com/>
 
 ### Enable the AWS secrets engine
 
@@ -252,7 +252,7 @@ After enabling the AWS secrets engine, you must configure it to authenticate and
 :warning: Do not use your root account keys in production. This is a getting started guide and is not a best practices guide for production installations.
 
 :exclamation: I created an 
-[administrator credentials](https://docs.aws.amazon.com/IAM/latest/UserGuide/getting-started_create-admin-group.html).
+[administrator credentials](<https://docs.aws.amazon.com/IAM/latest/UserGuide/getting-started_create-admin-group.html).>
 and copied keys into `~/.aws/credentials`
 
 :ship: configure AWS secrets engine with 
@@ -271,7 +271,7 @@ you want to attach to that user. This is where roles come in - a role in Vault
 is a human-friendly identifier to an action.
 
 For example, here is an 
-[IAM policy](https://docs.aws.amazon.com/IAM/latest/UserGuide/introduction_access-management.html)
+IAM policy <https://docs.aws.amazon.com/IAM/latest/UserGuide/introduction_access-management.html>
 that enables all actions on EC2, but not IAM or other AWS services.
 
     {
@@ -287,7 +287,7 @@ that enables all actions on EC2, but not IAM or other AWS services.
     }
 
 We need to map this policy document to a 
-[named role](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles.html)
+named role <https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles.html>
 
 :ship: Map the above IAM policy to a new role `my-role` for user `iam_user`
 ```bash
@@ -345,7 +345,7 @@ You've now worked with `vault write` and `vault read` for multiple paths: the `k
 
 Instead of having to memorize or reference documentation constantly to determine what paths to use, Vault has a built-in help system. This help system can be accessed via the API or the command-line and generates human-readable help for any path.
 
-## Secrets Engines Overview | https://learn.hashicorp.com/vault/getting-started/help
+## Secrets Engines Overview | <https://learn.hashicorp.com/vault/getting-started/help>
 
 This section assumes you have the AWS secrets engine enabled at `aws/`. If you
 do not, enable it before continuing:
@@ -430,7 +430,7 @@ Go ahead and explore more paths! Enable other secrets engines, traverse their he
 
 The help system may not be the most exciting feature of Vault, but it is indispensable in day-to-day usage. The help system lets you learn about how to use any backend within Vault without leaving the command line.> Users can authenticate to Vault using multiple methods.
 
-## Authentication | https://learn.hashicorp.com/vault/getting-started/authentication
+## Authentication | <https://learn.hashicorp.com/vault/getting-started/authentication>
 
 :warning: When starting the Vault server in `dev` mode, it automatically logs
 you in as the root user with admin permissions. In a non-dev setup, you would
@@ -439,9 +439,9 @@ have had to authenticate first.
 Authentication is the mechanism of assigning an identity to a Vault user. 
 
 The access control and permissions associated with an identity are
-authorization https://learn.hashicorp.com/vault/getting-started/policies)
+authorization <https://learn.hashicorp.com/vault/getting-started/policies)>
 
-Vault has pluggable auth methods https://www.vaultproject.io/docs/auth 
+Vault has pluggable auth methods <https://www.vaultproject.io/docs/auth> 
 
 ### Tokens
 
@@ -487,7 +487,7 @@ discussed in more detail in the next section.
 
 ### Auth Methods
 
-We can use GitHub Auth https://www.vaultproject.io/docs/auth/github
+We can use GitHub Auth <https://www.vaultproject.io/docs/auth/github>
 
 :ship: Authenticate via GitHub.
 ```bash
@@ -545,7 +545,7 @@ vault auth help token
 ```
 
 :ship: Create a GitHub personal access token
-https://help.github.com/articles/creating-an-access-token-for-command-line-use/
+<https://help.github.com/articles/creating-an-access-token-for-command-line-use/>
 
 :ship: Login with GitHub Auth
 ```bash
@@ -568,7 +568,7 @@ vault token revoke -mode path auth/github
 vault auth disable github
 ```
 
-## Policies | https://learn.hashicorp.com/vault/getting-started/policies
+## Policies | <https://learn.hashicorp.com/vault/getting-started/policies>
 
 Policies in Vault control what a user can access ie **authorization**. 
 
@@ -580,7 +580,7 @@ The `root` and `default` policies are required policies and cannot be deleted.
 
 ### Policy Format
 
-Policies are authored in HCL https://github.com/hashicorp/hcl, but are JSON
+Policies are authored in HCL <https://github.com/hashicorp/hcl,> but are JSON
 compatible. 
 
 :flashlight: Save to `my-policy.hcl` this example policy
@@ -663,7 +663,7 @@ vault login GENERATED_TOKEN
 ```
 
 :exclamation: When you access the KV v2 secrets engine
-https://www.vaultproject.io/docs/secrets/kv/kv-v2/ using the `vault kv` CLI
+<https://www.vaultproject.io/docs/secrets/kv/kv-v2/> using the `vault kv` CLI
 commands, you can omit `/data` in the secret path.
 
 :ship: Verify that you can write any data to `secret/data/`.
@@ -698,7 +698,7 @@ how the mapping is done since it is specific to each auth method.
 vault write auth/github/map/teams/default value=my-policy
 ```
 
-## Deploy Vault https://learn.hashicorp.com/vault/getting-started/deploy
+## Deploy Vault <https://learn.hashicorp.com/vault/getting-started/deploy>
 
 :flashlight: Up to this point, we have been working with the "dev" server,
 which automatically authenticated us, setup in-memory storage, etc. 
@@ -708,7 +708,7 @@ Learn how to `configure` Vault, `start` Vault, the `seal/unseal` process, and
 
 ### Configuring Vault
 
-Vault is configured using HCL https://github.com/hashicorp/hcl files. 
+Vault is configured using HCL <https://github.com/hashicorp/hcl> files. 
 
 :ship: Save in `config.hcl` 
 - using **Consul** as the storage backend and 
@@ -726,7 +726,7 @@ listener "tcp" {
 ```
 
 :ship: Consul Getting Started Guide
-https://www.consul.io/intro/getting-started/install.html up to the point where
+<https://www.consul.io/intro/getting-started/install.html> up to the point where
 you have installed Consul and started it with this command:
 ```bash
 consul agent -dev
@@ -797,7 +797,7 @@ encrypt each of these keys with the users' PGP keys. This prevents one single
 person from having all the unseal keys. 
 
 See the documentation on using PGP, GPG, and Keybase
-https://www.vaultproject.io/docs/concepts/pgp-gpg-keybase.html
+<https://www.vaultproject.io/docs/concepts/pgp-gpg-keybase.html>
 
 ### Seal/Unseal
 
@@ -813,7 +813,7 @@ the output above, notice that the "key threshold" is 3.
 
 :flashlight: Vault does not store any of the unseal key shards. Vault uses an
 algorithm known as Shamir's Secret Sharing
-https://en.wikipedia.org/wiki/Shamir%27s_Secret_Sharing to split the master key
+<https://en.wikipedia.org/wiki/Shamir%27s_Secret_Sharing> to split the master key
 into shards. 
 
 :ship: Begin unsealing the Vault: 
@@ -861,20 +861,20 @@ lock down the Vault in an emergency without consulting other operators.
 When the Vault is sealed again, it clears all of its state (including the
 encryption key) from memory. The Vault is secure and locked down from access.
 
-## Using the HTTP APIs with Authentication | https://learn.hashicorp.com/vault/getting-started/apis
+## Using the HTTP APIs with Authentication | <https://learn.hashicorp.com/vault/getting-started/apis>
 
 :flashlight: Vault CLI is subset of API
 
 :ship: If in `dev mode`, validate the initialization status 
 ```bash
-curl http://127.0.0.1:8200/v1/sys/init
+curl <http://127.0.0.1:8200/v1/sys/init>
 ```
 
 ### Accessing Secrets via the REST APIs
 
 Machines that need access to information stored in Vault will most likely access Vault via its REST API. For example, if a machine were using 
 
-[AppRole](https://www.vaultproject.io/docs/auth/approle.html)
+AppRole <https://www.vaultproject.io/docs/auth/approle.html>
 
  for authentication, the application would first authenticate to Vault which would return a Vault API token. The application would use that token for future communication with Vault.
 
@@ -901,7 +901,7 @@ vault server -config=config.hcl
 curl \
        --request POST \
        --data '{"secret_shares": 1, "secret_threshold": 1}' \
-       http://127.0.0.1:8200/v1/sys/init | jq
+       <http://127.0.0.1:8200/v1/sys/init> | jq
 ```
 
 The response should be JSON and looks something like this:
@@ -929,11 +929,11 @@ Vault via the HTTP API:
 curl \
        --request POST \
        --data '{"key": "/ye2PeRrd/qruh9Ppu9EyUjk1vLqIflg1qqw6w9OE5E="}' \
-       http://127.0.0.1:8200/v1/sys/unseal | jq
+       <http://127.0.0.1:8200/v1/sys/unseal> | jq
 ```
 
 :ship: Enable AppRole auth for now
-https://www.vaultproject.io/docs/auth/approle.html
+<https://www.vaultproject.io/docs/auth/approle.html>
 ```bash
 vault auth enable <auth_method_type>
 ```
@@ -951,16 +951,16 @@ curl \
        --header "X-Vault-Token: $VAULT_TOKEN" \
        --request POST \
        --data '{"type": "approle"}' \
-       http://127.0.0.1:8200/v1/sys/auth/approle
+       <http://127.0.0.1:8200/v1/sys/auth/approle>
 ```
 
-:ship: Create an ACL policies https://www.vaultproject.io/docs/concepts/policies.html
+:ship: Create an ACL policies <https://www.vaultproject.io/docs/concepts/policies.html>
 ```bash
 curl \
        --header "X-Vault-Token: $VAULT_TOKEN" \
        --request PUT \
        --data '{"policy":"# Dev servers have version 2 of KV secrets engine mounted by default, so will\n# need these paths to grant permissions:\npath \"secret/data/*\" {\n  capabilities = [\"create\", \"update\"]\n}\n\npath \"secret/data/foo\" {\n  capabilities = [\"read\"]\n}\n"}' \
-       http://127.0.0.1:8200/v1/sys/policies/acl/my-policy
+       <http://127.0.0.1:8200/v1/sys/policies/acl/my-policy>
 ```
 
 :ship: Since `my-policy` expects `secret/data` path to exist, enable KV v2 secrets engine at `secret/` using API.  
@@ -969,7 +969,7 @@ curl \
        --header "X-Vault-Token: $VAULT_TOKEN" \
        --request POST \
        --data '{ "type":"kv-v2" }' \
-       http://127.0.0.1:8200/v1/sys/mounts/secret
+       <http://127.0.0.1:8200/v1/sys/mounts/secret>
 ```
 
 :ship: The following command specifies that the tokens issued under the AppRole `my-role` should be associated with `my-policy`.  
@@ -978,7 +978,7 @@ curl \
        --header "X-Vault-Token: $VAULT_TOKEN" \
        --request POST \
        --data '{"policies": ["my-policy"]}' \
-       http://127.0.0.1:8200/v1/auth/approle/role/my-role
+       <http://127.0.0.1:8200/v1/auth/approle/role/my-role>
 ```
 
 :warning: The AppRole auth method expects a RoleID and a SecretID as its input.
@@ -989,7 +989,7 @@ RoleID's password.
 ```bash
 curl \
         --header "X-Vault-Token: $VAULT_TOKEN" \
-         http://127.0.0.1:8200/v1/auth/approle/role/my-role/role-id | jq -r ".data"
+         <http://127.0.0.1:8200/v1/auth/approle/role/my-role/role-id> | jq -r ".data"
 ```
 
 :ship: create a new SecretID under the `my-role` and scan for `secret_id`.  
@@ -997,7 +997,7 @@ curl \
 curl \
         --header "X-Vault-Token: $VAULT_TOKEN" \
         --request POST \
-        http://127.0.0.1:8200/v1/auth/approle/role/my-role/secret-id | jq -r ".data"
+        <http://127.0.0.1:8200/v1/auth/approle/role/my-role/secret-id> | jq -r ".data"
 ```
 
 These two credentials can be supplied to the login endpoint to fetch a new Vault token.
@@ -1006,7 +1006,7 @@ These two credentials can be supplied to the login endpoint to fetch a new Vault
 ```bash
 curl --request POST \
        --data '{"role_id": "ROLE_ID", "secret_id": "SECRET_ID"}' \
-       http://127.0.0.1:8200/v1/auth/approle/login | jq -r ".auth"
+       <http://127.0.0.1:8200/v1/auth/approle/login> | jq -r ".auth"
 ```
 
 The response will be JSON, under the key `auth`:
@@ -1048,7 +1048,7 @@ curl \
         --header "X-Vault-Token: $VAULT_TOKEN" \
         --request POST \
         --data '{ "data": {"password": "my-long-password"} }' \
-        http://127.0.0.1:8200/v1/secret/data/creds | jq -r ".data"
+        <http://127.0.0.1:8200/v1/secret/data/creds> | jq -r ".data"
 
     {
       "created_time": "2020-02-05T16:51:34.0887877Z",
@@ -1063,9 +1063,9 @@ curl \
 unset VAULT_TOKEN
 ```
 
-HTTP APIs https://www.vaultproject.io/api/index.html
+HTTP APIs <https://www.vaultproject.io/api/index.html>
 
-## Web UI | https://learn.hashicorp.com/vault/getting-started/ui
+## Web UI | <https://learn.hashicorp.com/vault/getting-started/ui>
 
 ### Dev servers
 
@@ -1077,7 +1077,7 @@ and ready to use.
 vault server -dev
 ```
 
-:ship: Open a web browser and enter `http://127.0.0.1:8200/ui` to launch the UI.
+:ship: Open a web browser and enter `<http://127.0.0.1:8200/ui`> to launch the UI.
 
 ### Non-Dev servers
 
@@ -1100,4 +1100,4 @@ storage "consul" {
 :warning: The UI runs on the same port as the Vault listener. As such, you must
 configure at least one `listener` stanza in order to access the UI.
 
-https://10.0.1.35:8200/ui
+<https://10.0.1.35:8200/ui>
