@@ -13,11 +13,11 @@
   </head>
   <body>
     <div class="wrapper">
+      {% comment %}
       <header>
         <h1><a href="{{ "/" | absolute_url }}">{{ site.title | default: site.github.repository_name }}</a> 
           - {{ page.title }}</h1>
         
-        <!--
         {% if site.logo %}
           <img src="{{site.logo | relative_url}}" alt="Logo" />
         {% endif %}
@@ -39,8 +39,8 @@
           <li><a href="{{ site.github.repository_url }}">View On <strong>GitHub</strong></a></li>
         </ul>
         {% endif %}
-        -->
       </header>
+      {% endcomment %}
       <section>
 
       {{ content }}

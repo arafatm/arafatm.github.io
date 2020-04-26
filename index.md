@@ -10,5 +10,7 @@ layout: home
 :muscle: [Lifting](/lifting) 
 ...
 :book: [My Kindle Notes](https://read.amazon.com/notebook)
+...
+:link: [Links](/links)
 
 ---
