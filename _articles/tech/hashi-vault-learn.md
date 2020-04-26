@@ -5,9 +5,9 @@ source: https://learn.hashicorp.com/vault#getting-started
 title: Learn Vault
 ---
 
-Docs https://www.vaultproject.io/docs
-
 ## cheatsheet
+
+Docs https://www.vaultproject.io/docs
 
 ```bash
 vault secrets list
