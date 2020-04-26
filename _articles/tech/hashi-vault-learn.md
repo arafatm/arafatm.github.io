@@ -2,8 +2,9 @@
 category: tech
 tags: hashi vault
 source: https://learn.hashicorp.com/vault#getting-started
-title: Learn Vault
 ---
+
+# Learn Vault
 
 ## cheatsheet
 
