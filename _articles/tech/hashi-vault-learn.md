@@ -7,7 +7,7 @@ title: Learn Vault
 
 ## cheatsheet
 
-Docs https://www.vaultproject.io/docs
+Docs <https://www.vaultproject.io/docs>
 
 ```bash
 vault secrets list
