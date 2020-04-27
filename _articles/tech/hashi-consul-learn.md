@@ -5,7 +5,7 @@ source: https://learn.hashicorp.com/consul/getting-started/consul-gs-intro
 title: Learn Vault
 ---
 
-## Install Consul | Consul - HashiCorp Learn
+## Install Consul
 
 ### Installing Consul
 
@@ -113,7 +113,7 @@ See the Adding and Removing Servers guide
 <https://learn.hashicorp.com/consul/day-2-operations/servers> for details on
 how to safely add and remove servers.
 
-## Register a Service and Health Check - Service Discovery | Consul
+## Register a Service and Health Check - Service Discovery
 
 :flashlight: One of the major use cases for Consul is **service discovery**.
 Consul provides a DNS interface that downstream services can use to find the IP
@@ -293,7 +293,7 @@ documentation <https://www.consul.io/api/agent/service.html>, or learn more
 about health checks in the [check definition documentation
 <https://www.consul.io/docs/agent/checks.html>.
 
-## Connect Services - Service Mesh | Consul
+## Connect Services - Service Mesh
 
 Consul's service mesh control plane called _Consul Connect_, allows you to
 secure and observe network traffic between your services, and allow or deny
@@ -500,7 +500,7 @@ firewalls**, but they rely on the services' logical names (for example "web" or
 - [ ] try the Getting Started with Consul Service Mesh guides
   <https://learn.hashicorp.com/consul?track=gs-consul-service-mesh#gs-consul-service-mesh>
 
-## Add to Consul KV - Service Configuration | Consul
+## Add to Consul KV - Service Configuration
 
 In addition to providing 
 - service discovery, 
@@ -598,7 +598,7 @@ HTTP API documentation <https://www.consul.io/api/kv.html>
 
 CLI documentation <https://www.consul.io/docs/commands/kv.html>.
 
-## Explore the Consul UI | Consul
+## Explore the Consul UI
 
 Consul's web UI allows you to view and interact with Consul via a graphical
 user interface.
@@ -750,7 +750,7 @@ joining multiple Consul agents together.
 and Vagrant <https://www.vagrantup.com/> to run multiple Consul agents on your
 computer at once. 
 
-## Create a Local Consul Datacenter | Consul
+## Create a Local Consul Datacenter
 
 Now that you have practiced using Consul, it's time to learn a bit more about
 how Consul operates. In this guide, you'll create your first datacenter with
@@ -956,15 +956,11 @@ consul leave
 vagrant destroy
 ```
 
-## Next Steps | Consul - HashiCorp Learn
+## Next Steps 
 
-Congratulations on completing the Getting Started track, where you explored some of Consul's core functionality. Now that you know the basics, we want to give you some resources to help you continue learning about Consul, and get ready to take it into production.
-
-*   Day 1: Deploying Your First Datacenter <https://learn.hashicorp.com/consul?track=datacenter-deploy#datacenter-deploy> - If you liked the learn experience, continue on to the Day 1 track, which will give you step-by-step instructions on deploying your first production-grade Consul datacenter.
+- [ ] Day 1: Deploying Your First Datacenter
+  <https://learn.hashicorp.com/consul?track=datacenter-deploy#datacenter-deploy>
     
-*   Documentation <https://www.consul.io/docs/index.html> - The Consul documentation is organized based on Consul's features and components. If you are interested in a specific feature (for example the ACL system or the key-value store) the documentation is a great way to dig in.
+- [ ] Documentation <https://www.consul.io/docs/index.html> 
     
-*   Community Forum <https://discuss.hashicorp.com/c/consul> - Ask questions about Consul in our community forum, where you will find Consul engineers and fellow community members ready to help.
-    
-
-Was this guide helpful?
+- [ ] Community Forum <https://discuss.hashicorp.com/c/consul> 
