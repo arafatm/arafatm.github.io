@@ -130,7 +130,7 @@ Defining the New Behaviour: **I Will...**
 
 Define the new behaviour, one that will take **sixty seconds or less** to do.
 
-- [ ] https://boxofcrayons.com/the-coaching-habit-book/coaching-gurus/
+- TODO https://boxofcrayons.com/the-coaching-habit-book/coaching-gurus/
 
 A Final Word on Building Your Coaching Habit: This stuff is simple, but it’s not easy.
 
@@ -145,7 +145,7 @@ The habit will slip. It won’t always work.
 
 through deliberate and regular practice that you’ll move to **conscious competence**
 
-- [ ] TheCoachingHabit.com/videos "How to build rock solid habits"
+- TODO TheCoachingHabit.com/videos "How to build rock solid habits"
 
 ## Question Masterclass Part 1: Ask One Question at a Time
 
@@ -215,7 +215,7 @@ When they’re done discussing that P, you can just take them to one of the othe
 two Ps and ask, **"If this was a thing, what would the challenge here be for
 you?"**
 
-- [ ] TheCoachingHabit.com/videos: STARTING STRONG "What’s on your mind?"
+- TODO TheCoachingHabit.com/videos: STARTING STRONG "What’s on your mind?"
 
 what you’re holding in your mind will unconsciously influence what you can
 notice and focus on. When you’re thinking of buying a red Mazda, you suddenly
@@ -264,7 +264,7 @@ number at which we can chunk information.
 **"And what else?"** is such a useful question that you can add it into almost
 every exchange.
 
-- [ ] TheCoachingHabit.com/videos to THE ONE QUESTION THAT RULES THEM ALL
+- TODO TheCoachingHabit.com/videos to THE ONE QUESTION THAT RULES THEM ALL
 
 ## Question Masterclass Part 3 Should You Ask Rhetorical Questions?
 
@@ -329,7 +329,7 @@ Three Strategies to Make This Question Work for You
 One of your roles as a manager and a leader is to have answers. We’re just
 trying to slow down the rush to this role as your default behaviour.
 
-- [ ] TheCoachingHabit.com/videos HOW TO HELP YOUR TEAM FIND FOCUS
+- TODO TheCoachingHabit.com/videos HOW TO HELP YOUR TEAM FIND FOCUS
 
 In Barry Schwartz’s The Paradox of Choice, multiple studies that show how
 limiting choices reduces overwhelm and polychronicity,
@@ -381,8 +381,8 @@ you?
 relationships is discussed.*
 
 Peter Block
-- [ ] book Flawless Consulting
-- [ ] Book: The Answer to How Is Yes. 
+- TODO book Flawless Consulting
+- TODO Book: The Answer to How Is Yes. 
 
 We often don’t know what we actually want.
 
@@ -438,7 +438,7 @@ do that.
 It increases the sense of tribe-iness, rather than dictating, or helping him
 solve a challenge.
 
-- [ ] TheCoachingHabit.com/videos THE TERA QUOTIENT
+- TODO TheCoachingHabit.com/videos THE TERA QUOTIENT
 
 From the school of therapy known as "solution-based" therapy. They have a go-to question
 called the miracle question.
@@ -524,7 +524,7 @@ you. But before I do, what are your first thoughts?"**
 
 If the conversation is going well, keep asking **"And what else?"** until she has run out of ideas.
 
-- [ ] TheCoachingHabit.com/videos How to Be More Helpful (Rather Than **"Helpful"**)
+- TODO TheCoachingHabit.com/videos How to Be More Helpful (Rather Than **"Helpful"**)
 
 ## Question Masterclass Part 6 Actually Listen to the Answer
 
@@ -578,9 +578,9 @@ Five Strategic Questions
 - What management systems are required? It’s easy enough to measure stuff. It’s
   much harder to figure out what you want to measure that actually matters.
 
-- [ ] TheCoachingHabit.com/videos RAPID-FIRE STRATEGIC THINKING PLANNING & DOING
+- TODO TheCoachingHabit.com/videos RAPID-FIRE STRATEGIC THINKING PLANNING & DOING
 
-- [ ] book Thinking, Fast and Slow,
+- TODO book Thinking, Fast and Slow,
 - explains that we have two decision-making processes: a fast, instinctual
   "gut-feeling" one, and a slower, more rational one.
 
@@ -619,7 +619,7 @@ happened.
 
 The Learning Question: **"What Was Most Useful for You?"**
 
-- [ ] book Make It Stick: The Science of Successful Learning
+- TODO book Make It Stick: The Science of Successful Learning
 - useful summary of the best strategies and tactics we have to help people learn.
 
 First major tactic they share is harnessing the impact of information retrieval.
@@ -631,7 +631,7 @@ pair of questions known as the Coaching Bookends.
 - You start with the Kickstart Question: **"What’s on your mind?"**
 - before everyone rushes for the door, you ask the Learning Question: **"What was most useful for you about this conversation?"**
 
-- [ ] TheCoachingHabit.com/videos MAKE IT STICKY
+- TODO TheCoachingHabit.com/videos MAKE IT STICKY
 
 ## Question Masterclass Part 8 Use Every Channel to Ask a Question
 
