@@ -600,53 +600,78 @@ CLI documentation <https://www.consul.io/docs/commands/kv.html>.
 
 ## Explore the Consul UI | Consul
 
-Consul's web UI allows you to view and interact with Consul via a graphical user interface, which can lower the barrier of entry for new users, and ease troubleshooting.
+Consul's web UI allows you to view and interact with Consul via a graphical
+user interface.
 
-If you were running Consul in production you would need to enable the UI in Consul's configuration file or using the `-ui` command line flag, but because your agent is running in development mode, the UI is automatically enabled.
+:exclamation: If you were running Consul in production you would need to enable
+the UI in Consul's configuration file or using the `-ui` command line flag, but
+because your agent is running in development mode, the UI is automatically
+enabled.
 
 ### Navigate to the UI
 
-If you have already stopped the agent you were using in the previous guides, you can visit a live demo-instance <https://demo.consul.io/ui/dc1/services> of the Consul Web UI to explore the steps in this guide.
+Visit a live demo-instance <https://demo.consul.io/ui/dc1/services> of the
+Consul Web UI to explore the steps in this guide.
 
-If you are still running the agent that you used for the previous guides, you will be able to follow the activities in this guide more closely. Open a browser window and navigate to the UI, which is available at the `/ui` path on the same port as the HTTP API (port `8500`).
-
-http://localhost:8500/ui <http://localhost:8500/ui>
-
-A page will load that has a pink menu bar across the top. Welcome to the Consul Web UI.
+For local UI access <http://localhost:8500/ui>
 
 ### View Services
 
 ![Service Page](https://d33wubrfki0l68.cloudfront.net/24c41d54613afb774bff0a383043f8a47f4d0fd7/b8c35/img/consul-services.png "UI services page")
 
-The landing page for the UI is the services page, which gives you a list of all registered services including their health, tags, type, and source. You can click on a specific service to learn more about its instance count, the health of individual instances, and which agent each instance is registered with.
+The landing page for the UI is the services page, which gives you a list of all
+registered services including their health, tags, type, and source. You can
+click on a specific service to learn more about its instance count, the health
+of individual instances, and which agent each instance is registered with.
 
-You can filter the services visible on the page based on their name, tag, status, or other search terms.
+You can filter the services visible on the page based on their name, tag,
+status, or other search terms.
 
-**Try it:** filter for sidecar services by typing `sidecar` in the search bar and pressing the enter key.
+**Try it:** filter for sidecar services by typing `sidecar` in the search bar
+and pressing the enter key.
 
 You can learn about individual services by clicking on them.
 
-**Try it:** click on the `web-sidecar-proxy` service to explore what information is available. Now select the one listed instance of the `web-sidecar-proxy` service to see what information is available on an instance-to-instance basis.
+**Try it:** click on the `web-sidecar-proxy` service to explore what
+information is available. Now select the one listed instance of the
+`web-sidecar-proxy` service to see what information is available on an
+instance-to-instance basis.
 
 ### View Nodes
 
-Next click on the "Nodes" option in the pink top navigation bar to go to the nodes page. There you'll find an overview of the entire datacenter including the health status of each node. You can select individual nodes to learn about their health checks, registered services, round trip time, and lock sessions.
+Next click on the "Nodes" option in the pink top navigation bar to go to the
+nodes page. There you'll find an overview of the entire datacenter including
+the health status of each node. You can select individual nodes to learn about
+their health checks, registered services, round trip time, and lock sessions.
 
-You can also filter the nodes by heath status, or search for them in the search bar.
+You can also filter the nodes by heath status, or search for them in the search
+bar.
 
-**Try it:** Select the nodes page from the top menu bar and click on your local machine.
+**Try it:** Select the nodes page from the top menu bar and click on your local
+machine.
 
 ### Manage the Key-Value Store
 
-In the top navigation, click "Key/Value" to view the page for Consul KV. If you are using the same agent that from previous guides, you should see one key, `foo`.
+In the top navigation, click "Key/Value" to view the page for Consul KV. If you
+are using the same agent that from previous guides, you should see one key,
+`foo`.
 
-![Key Value Page](https://d33wubrfki0l68.cloudfront.net/3d5bda355f1865c274a634cfc528f49a52160a59/543f5/img/consul-kv.png "Key Value store page")
+![Key Value
+Page](https://d33wubrfki0l68.cloudfront.net/3d5bda355f1865c274a634cfc528f49a52160a59/543f5/img/consul-kv.png
+"Key Value store page")
 
-The keys page has a folder-like structure. Objects appear nested according to their key prefix. For example, you could have a folder for each application, business function, or a nested combination of the two.
+The keys page has a folder-like structure. Objects appear nested according to
+their key prefix. For example, you could have a folder for each application,
+business function, or a nested combination of the two.
 
-**Try it:** From the main page, click the blue "Create" button to add a new key-value pair. Call the key `redis/user` with a value `Alice`. Now create another pair with the key `redis/password` and the value `123`. On the main page, notice that there is only one new entry, called "redis", with a folder icon next to it.
+**Try it:** From the main page, click the blue "Create" button to add a new
+key-value pair. Call the key `redis/user` with a value `Alice`. Now create
+another pair with the key `redis/password` and the value `123`. On the main
+page, notice that there is only one new entry, called "redis", with a folder
+icon next to it.
 
-When you are clicked into a folder, Consul will automatically nest new keys under that folder, without you needing to type the prefix.
+When you are clicked into a folder, Consul will automatically nest new keys
+under that folder, without you needing to type the prefix.
 
 ### Manage Access Control Lists
 
@@ -657,237 +682,195 @@ your Consul datacenter to secure it for production, however, on your
 development agent they aren't enabled, so the there isn't much to see on your
 "ACL" page at the moment.
 
-You can secure the UI itself with ACLs, by limiting read, write, and update permissions for the various pages in the UI. You do this by creating a token with the appropriate permissions, and adding it to the UI under the ACL page <https://learn.hashicorp.com/consul/security-networking/production-acls#consul-ui-token>. To remove access, simply select "Stop using" from your tokens action menu in the token list.
+You can secure the UI itself with ACLs, by limiting read, write, and update
+permissions for the various pages in the UI. You do this by creating a token
+with the appropriate permissions, and adding it to the UI under the ACL page
+<https://learn.hashicorp.com/consul/security-networking/production-acls#consul-ui-token>.
+To remove access, simply select "Stop using" from your tokens action menu in
+the token list.
 
 **Security Warning:** The browser can store tokens that you add to the UI.
 
 ### Manage Intentions
 
-Click on the "Intentions" menu item to navigate to the intentions page in the UI. There aren't any intentions there yet, but if you are still running the same agent that you used for the previous guides, you can create an intention to block communication between your web and socat services.
+Click on the "Intentions" menu item to navigate to the intentions page in the
+UI. There aren't any intentions there yet, but if you are still running the
+same agent that you used for the previous guides, you can create an intention
+to block communication between your web and socat services.
 
-![Intentions Page](https://d33wubrfki0l68.cloudfront.net/2e192ba4ab0e3d31831252853ddf5422c774afbd/46332/img/consul-intentions.png "Intentions page")
+![Intentions
+Page](https://d33wubrfki0l68.cloudfront.net/2e192ba4ab0e3d31831252853ddf5422c774afbd/46332/img/consul-intentions.png
+"Intentions page")
 
-**Try it:** Click on the blue "Create" button. On the creation page set the source service to "web" and the destination to "socat". Make a deny intention. Open a terminal window and try to connect to to the socat service with the command `nc 127.0.0.1 9191`. It should exit immediately. Now on the main intentions page, click on the "..." menu item at the right of the new intention. Delete it and try to connect again. This time it should succeed.
+**Try it:** Click on the blue "Create" button. On the creation page set the
+source service to "web" and the destination to "socat". Make a deny intention.
+Open a terminal window and try to connect to to the socat service with the
+command `nc 127.0.0.1 9191`. It should exit immediately. Now on the main
+intentions page, click on the "..." menu item at the right of the new
+intention. Delete it and try to connect again. This time it should succeed.
 
 ### Adjust UI Settings
 
-Click on "Settings" at the far-right of the menu bar. Here you can edit the UI's settings.
+Click on "Settings" at the far-right of the menu bar. Here you can edit the
+UI's settings.
 
-If you have set up a metrics dashboard to monitor your services, you can add a link on the settings page that will auto-populate placeholders for there service name and datacenter, and link out to each service's metrics from its UI page.
+If you have set up a metrics dashboard to monitor your services, you can add a
+link on the settings page that will auto-populate placeholders for there
+service name and datacenter, and link out to each service's metrics from its UI
+page.
 
-You can also choose whether or not you would like to set up a blocking query to update the UI in real time, rather than upon refresh. This is off by default because it can have performance implications.
+You can also choose whether or not you would like to set up a blocking query to
+update the UI in real time, rather than upon refresh. This is off by default
+because it can have performance implications.
 
 ### UI Task Table
 
 As you may have noticed, some pages of the web UI are read-only, while others are interactive. Below is a table with the CRUD actions available for each page.
 
-**Page**
-
-**Action**
-
-Services
-
-Read
-
-Nodes
-
-Read
-
-Key/Value
-
-Create, Read, Update, Delete
-
-Intentions
-
-Create, Read, Update, Delete
-
-ACLs
-
-Create, Read, Update, Delete
+| Page        | Action
+| ----        | ------
+| Services    |  Read
+| Nodes       |  Read
+| Key/Value   |  Create, Read, Update, Delete
+| Intentions  |  Create, Read, Update, Delete
+| ACLs        |  Create, Read, Update, Delete
 
 ### Next Steps
 
-Now that you are comfortable navigating the UI, try using the Consul CLI <https://www.consul.io/docs/commands/index.html> to accomplish the same tasks we listed here.
+Now that you are comfortable navigating the UI, try using the Consul CLI
+<https://www.consul.io/docs/commands/index.html> to accomplish the same tasks
+we listed here.
 
-So far you have explored the core functionality of Consul, including service discovery, securing services with a mesh, and using the key value store. Continue to the next guide to learn how to set up a Consul datacenter by joining multiple Consul agents together.
+So far you have explored the core functionality of Consul, including service
+discovery, securing services with a mesh, and using the key value store.
+Continue to the next guide to learn how to set up a Consul datacenter by
+joining multiple Consul agents together.
 
-:warning: The next guide relies on VirtualBox <https://www.virtualbox.org/>, and Vagrant <https://www.vagrantup.com/> to run multiple Consul agents on your computer at once. If you haven't downloaded them yet, now would be a good time to do so.> In this guide you will join two Consul agents together to form a multi-agent Consul datacenter. You will use Vagrant to create the environment for this guide.
+:warning: The next guide relies on VirtualBox <https://www.virtualbox.org/>,
+and Vagrant <https://www.vagrantup.com/> to run multiple Consul agents on your
+computer at once. 
 
 ## Create a Local Consul Datacenter | Consul
 
-Now that you have practiced using Consul, it's time to learn a bit more about how Consul operates. In this guide, you'll create your first datacenter with multiple members.
+Now that you have practiced using Consul, it's time to learn a bit more about
+how Consul operates. In this guide, you'll create your first datacenter with
+multiple members.
 
-When a new Consul agent starts, it doesn't know about other agents; it is essentially a datacenter with one member. Agents learn about each other in two ways. To add a new agent to an existing datacenter you give it the IP address of any other agent in the datacenter (either a client or a server), which causes the new agent to join the datacenter. Once the agent is a member of the new datacenter, it automatically learns about the other agents via gossip.
+:flashlight: When a new Consul agent starts, it doesn't know about other
+agents; it is essentially a datacenter with one member. Agents learn about each
+other in two ways. 
 
-In this guide, you will join two agents together to create a two-member Consul datacenter.
+To add a new agent to an existing datacenter you give it the IP address of any
+other agent in the datacenter (either a client or a server), which causes the
+new agent to join the datacenter. 
+
+Once the agent is a member of the new datacenter, it automatically learns about
+the other agents via gossip.
 
 ### Set Up the Environment
 
-Consul is a distributed application that is designed to have one agent per machine. To run two agents on the same computer you will need to install VirtualBox <https://www.virtualbox.org/>, and Vagrant <https://www.vagrantup.com/>, which will run virtual machines to simulate a distributed environment.
+:exclamation: Consul is a distributed application that is designed to have one agent per
+machine. 
 
-Make a directory to store Vagrant's configuration for this guide.
+To run two agents on the same computer you will need to install VirtualBox
+<https://www.virtualbox.org/>, and Vagrant <https://www.vagrantup.com/>, which
+will run virtual machines to simulate a distributed environment.
 
-:ship:
+:ship: Make a directory to store Vagrant's configuration for this guide.
 ```bash
 mkdir consul-getting-started-join
 ```
 
-    
+:ship: Create a new file in the directory called `Vagrantfile` and paste the
+content of Consul's demo Vagrant file
+<https://github.com/hashicorp/consul/blob/master/demo/vagrant-cluster/Vagrantfile>
+into it. 
 
-Create a new file in the directory called `Vagrantfile` and paste the content of Consul's demo Vagrant file <https://github.com/hashicorp/consul/blob/master/demo/vagrant-cluster/Vagrantfile> into it. Then save the file. This file will tell Vagrant to create two virtual machines on your computer with the Consul binary preinstalled.
-
-Boot your two virtual machines. This may take a moment to download everything needed for the environment to spin up.
-
-:ship:
+:ship: Boot your two virtual machines. 
 ```bash
 vagrant up
 ```
 
-    Bringing machine 'n1' up with 'virtualbox' provider...
-    Bringing machine 'n2' up with 'virtualbox' provider...
-    ...
-    
-
-Once the environment is up, ssh into node 1 to begin configuring of your datacenter.
-
-:ship:
+:ship: Once the environment is up, ssh into node 1 to begin configuring of your datacenter.
 ```bash
 vagrant ssh n1
 ```
 
-    Linux n1 4.9.0-9-amd64 #1 SMP Debian 4.9.168-1+deb9u2 (2019-05-13) x86_64
-    
-    The programs included with the Debian GNU/Linux system are free software;
-    the exact distribution terms for each program are described in the
-    individual files in /usr/share/doc/*/copyright.
-    
-    Debian GNU/Linux comes with ABSOLUTELY NO WARRANTY, to the extent
-    permitted by applicable law.
-    You have new mail.
-    vagrant@n1:~$
-    
-
 ### Start the Agents
 
-In previous guides, we used a single agent in development mode to test Consul's functionality. However, you should never run development agents in production. In this guide you will configure your first Consul agent to run in server mode instead, via the following command line flags. (In production you would provide these settings to consul in a configuration file.)
-
-*   `server` switch <https://www.consul.io/docs/agent/options.html#_server> - Providing this flag specifies that we want the agent to start in server mode.
-    
-*   `-bootstrap-expect` flag <https://www.consul.io/docs/agent/options.html#_bootstrap_expect> - This tells the Consul server how many servers the datacenter should have in total. All the servers will wait for this number to join before bootstrapping the replicated log, which keeps data consistent across all the servers. Because you are setting up a one-server datacenter, you'll set this value to `1`. You can read more about this process in the [bootstrapping guide <https://www.consul.io/docs/guides/bootstrapping.html>.
-    
-*   `-node` name <https://www.consul.io/docs/agent/options.html#_node> - Each node in a datacenter must have a unique name. By default, Consul uses the hostname of the machine, but we'll manually override it, and set it to `agent-one`.
-    
-*   `-bind` address <https://www.consul.io/docs/agent/options.html#_bind> - This is the address that this agent will listen on for communication from other cluster members. It must be accessible by all other nodes in the datacenter. If you don't set a bind address Consul will try to listen on all IPv4 interfaces and will fail to start if it finds multiple private IPs. Since production servers often have multiple interfaces, you should always provide a bind address. In this case it is `172.20.20.10`, which you specified as the address of the first VM in your Vagrantfile.
-    
-*   `data-dir` flag <https://www.consul.io/docs/agent/options.html#_data_dir> - This flag tells Consul agents where they should store their state, which can include sensitive data like ACL tokens for both servers and clients. In production deployments you should be careful about the permissions for this directory. Find more information in the documentation <https://www.consul.io/docs/agent/options.html#_data_dir>. You will set the data directory to a standard location: `/tmp/consul`.
-    
-*   `config-dir` flag <https://www.consul.io/docs/agent/options.html#_config_dir> - This flag tells consul where to look for its configuration. You will set it to a standard location: `/etc/consul.d`.
-    
-
-Start your first Consul agent by running the following command. Consul will start up in the foreground of your terminal window.
-
-:warning: Do not copy the `vagrant@n1:~$` when copying the command. This special prompt reminds you that you are ssh-ed into the first virtual machine).
-
-    # vagrant@n1:~
-:ship:
+:ship: Start 1st (Vagrant) Consul agent in server mode
 ```bash
 consul agent \
-```
-
       -server \
       -bootstrap-expect=1 \
       -node=agent-one \
       -bind=172.20.20.10 \
       -data-dir=/tmp/consul \
       -config-dir=/etc/consul.d
-    
-    ...
-    
+```
 
-Open a new terminal window and change directories into `consul-getting-started-join`. Then ssh into your second virtual machine.
-
-:ship:
+* `server` switch <https://www.consul.io/docs/agent/options.html#_server> -
+  Providing this flag specifies that we want the agent to start in server mode.
+* `-bootstrap-expect` flag
+  <https://www.consul.io/docs/agent/options.html#_bootstrap_expect> - This
+  tells the Consul server how many servers the datacenter should have in total.
+  All the servers will wait for this number to join before bootstrapping the
+  replicated log, which keeps data consistent across all the servers. Because
+  you are setting up a one-server datacenter, you'll set this value to `1`. You
+  can read more about this process in the bootstrapping guide
+  <https://www.consul.io/docs/guides/bootstrapping.html>.
+* `-node` name <https://www.consul.io/docs/agent/options.html#_node> - Each
+  node in a datacenter must have a unique name. By default, Consul uses the
+  hostname of the machine, but we'll manually override it, and set it to
+  `agent-one`.
+* `-bind` address <https://www.consul.io/docs/agent/options.html#_bind> - This
+  is the address that this agent will listen on for communication from other
+  cluster members. It must be accessible by all other nodes in the datacenter.
+  If you don't set a bind address Consul will try to listen on all IPv4
+  interfaces and will fail to start if it finds multiple private IPs. Since
+  production servers often have multiple interfaces, you should always provide
+  a bind address. In this case it is `172.20.20.10`, which you specified as the
+  address of the first VM in your Vagrantfile.
+* `data-dir` flag <https://www.consul.io/docs/agent/options.html#_data_dir> -
+  This flag tells Consul agents where they should store their state, which can
+  include sensitive data like ACL tokens for both servers and clients. In
+  production deployments you should be careful about the permissions for this
+  directory. Find more information in the documentation
+  <https://www.consul.io/docs/agent/options.html#_data_dir>. You will set the
+  data directory to a standard location: `/tmp/consul`.
+* `config-dir` flag <https://www.consul.io/docs/agent/options.html#_config_dir>
+  This flag tells consul where to look for its configuration. You will set it
+  to a standard location: `/etc/consul.d`.
+    
+:ship: Connect to 2nd agent
 ```bash
 vagrant ssh n2
 ```
 
-    
-
-Now start up your second Consul agent in client mode. You'll set the bind address to the IP address of the second VM (`172.20.20.11`, specified in the Vagrantfile) and the name to `agent-two`. Don't include the `-server` flag and the agent will start in client mode. Consul will run in the foreground of your terminal.
-
-:warning: Do not copy the `vagrant@n2:~$` when copying the command. This special prompt reminds you that you are ssh-ed into the second virtual machine).
-
-    # vagrant@n2:~
-:ship:
+:ship: Start 2nd agent in client mode
 ```bash
 consul agent \
-```
-
       -node=agent-two \
       -bind=172.20.20.11 \
       -enable-script-checks=true \
       -data-dir=/tmp/consul \
       -config-dir=/etc/consul.d
-    ...
+```
     
 
 Now you have two Consul agents running: one server and one client. The two agents still don't know about each other and each comprise their own single-node datacenters.
 
-Verify this by ssh-ing into each VM and checking each agent's membership information. You'll need to open a new terminal window and change directories into `consul-getting-started-join`.
-
-Check the membership of `agent-two`.
-
-:ship:
+:ship: Verify 2nd agent does not know about 1st agent
 ```bash
 vagrant ssh n2
-```
 
-    Linux n2 4.9.0-9-amd64 #1 SMP Debian 4.9.168-1+deb9u2 (2019-05-13) x86_64
-    
-    The programs included with the Debian GNU/Linux system are free software;
-    the exact distribution terms for each program are described in the
-    individual files in /usr/share/doc/*/copyright.
-    
-    Debian GNU/Linux comes with ABSOLUTELY NO WARRANTY, to the extent
-    permitted by applicable law.
-    You have new mail.
-    Last login: Fri Aug  2 23:42:33 2019 from 10.0.2.2
-    
-
-    # vagrant@n2:~
-:ship:
-```bash
 consul members
 ```
 
-    Node       Address            Status  Type    Build  Protocol  DC   Segment
-    agent-two  172.20.20.11:8301  alive   client  1.5.3  2         dc1  <default>
-    
-
-Open a new terminal window and change directories into `consul-getting-started-join`.
-
-Check the membership of `agent-one`.
-
-:ship:
+:ship: Check the membership of `agent-one`.
 ```bash
 vagrant ssh n1
-```
 
-    Linux n1 4.9.0-9-amd64 #1 SMP Debian 4.9.168-1+deb9u2 (2019-05-13) x86_64
-    
-    The programs included with the Debian GNU/Linux system are free software;
-    the exact distribution terms for each program are described in the
-    individual files in /usr/share/doc/*/copyright.
-    
-    Debian GNU/Linux comes with ABSOLUTELY NO WARRANTY, to the extent
-    permitted by applicable law.
-    You have new mail.
-    Last login: Fri Aug  2 20:37:46 2019 from 10.0.2.2
-    
-
-    # vagrant@n1:~
-:ship:
-```bash
 consul members
 ```
 
@@ -897,21 +880,12 @@ consul members
 
 ### Join the Agents
 
-You're now ready to create your multi-agent datacenter. Stay in the terminal window where you are ssh-ed into the first VM, and run the `consul join` command on the Consul server, giving it the bind address of the Consul client.
-
-    # vagrant@n1:~
-:ship:
+:ship: In 1st vagrant, join the client
 ```bash
 consul join 172.20.20.11
 ```
 
-    Successfully joined cluster by contacting 1 nodes.
-    
-
-In the same window, run `consul members` again and you will see both agents listed.
-
-    # vagrant@n1:~
-:ship:
+:ship: Run `consul members` again and you will see both agents listed.
 ```bash
 consul members
 ```
@@ -920,99 +894,67 @@ consul members
     agent-one  172.20.20.10:8301  alive   server  1.5.3  2         dc1  <all>
     agent-two  172.20.20.11:8301  alive   client  1.5.3  2         dc1  <default>
     
+:exclamation: Consul clients can not function without a server. All datacenters
+must have at least one agent running in server mode for Consul to function
+correctly.
 
-Switch to the terminal window where your Consul server is running on the first VM, and you'll notice some log output indicating that agent two joined it.
+:exclamation: In datacenters with more than one server, more than half of the
+servers must be in communication with each other at all times for the
+datacenter to function correctly. This is called maintaining quorum.
+<https://www.consul.io/docs/internals/consensus.html>.
 
-Now switch to the terminal where your client is running on the second VM. You'll notice that the client had been throwing warnings and errors indicating that no servers were available. When the client learned about the server, it stopped throwing errors and synced its node information.
-
-        2019/08/03 00:09:25 [WARN] manager: No servers available
-        2019/08/03 00:09:25 [ERR] agent: failed to sync remote state: No known Consul servers
-        2019/08/03 00:09:54 [WARN] manager: No servers available
-        2019/08/03 00:09:54 [ERR] agent: failed to sync remote state: No known Consul servers
-        2019/08/03 00:10:10 [INFO] serf: EventMemberJoin: agent-one 172.20.20.10
-        2019/08/03 00:10:10 [INFO] consul: adding server agent-one (Addr: tcp/172.20.20.10:8300) (DC: dc1)
-        2019/08/03 00:10:10 [INFO] consul: New leader elected: agent-one
-        2019/08/03 00:10:11 [INFO] agent: Synced node info
-    
-
-Consul clients can not function without a server. All datacenters must have at least one agent running in server mode for Consul to function correctly.
-
-In datacenters with more than one server, more than half of the servers must be in communication with each other at all times for the datacenter to function correctly. This is called maintaining quorum. You can learn more about the quorum requirements of servers in the architecture documentation <https://www.consul.io/docs/internals/consensus.html>.
-
-Switch to the window where you are ssh-ed onto the second VM and run `consul members` on the client. The client will also list both agents as members.
-
-    # vagrant@n2:~
-:ship:
-```bash
-consul members
-```
-
-    Node       Address            Status  Type    Build  Protocol
-    agent-two  172.20.20.11:8301  alive   client  0.5.0  2
-    agent-one  172.20.20.10:8301  alive   server  0.5.0  2
-    
-
-**Tip:** To join a datacenter, a Consul agent only needs to learn about one other existing member, which can be a client or a server. After joining the datacenter, the agents automatically gossip with each other to propagate full membership information.
+:flashlight: To join a datacenter, a Consul agent only needs to learn about one
+other existing member, which can be a client or a server. After joining the
+datacenter, the agents automatically gossip with each other to propagate full
+membership information.
 
 ### Notes on Auto-join
 
-In production, new Consul agents should automatically join the datacenter without human intervention. You can configure Consul to automatically discover new agents in AWS, Google Cloud or Azure by adding the relevant cloud auto join <https://www.consul.io/docs/agent/cloud-auto-join.html> object to your Consul configuration file. This will allow a new node to join the datacenter without any hard-coded configuration.
+:exclamation: In production, new Consul agents should automatically join the
+datacenter without human intervention. You can configure Consul to
+automatically discover new agents in AWS, Google Cloud or Azure by adding the
+relevant cloud auto join
+<https://www.consul.io/docs/agent/cloud-auto-join.html> object to your Consul
+configuration file. This will allow a new node to join the datacenter without
+any hard-coded configuration.
 
-Alternatively, you can provide hard-coded addresses of known Consul agents to new agents using the `-join` flag <https://www.consul.io/docs/agent/options.html#_join> or `start_join` setting <https://www.consul.io/docs/agent/options.html#start_join>.
+Alternatively, you can provide hard-coded addresses of known Consul agents to
+new agents using the `-join` flag
+<https://www.consul.io/docs/agent/options.html#_join> or `start_join` setting
+<https://www.consul.io/docs/agent/options.html#start_join>.
 
 ### Query a Node
 
 You can query Consul agents using the DNS interface or HTTP API.
 
-For the DNS API, the structure of the names is `NAME.node.consul` or `NAME.node.DATACENTER.consul`. If the datacenter is omitted, Consul will only search the local datacenter.
+:exclamation: For the DNS API, the structure of the names is `NAME.node.consul`
+or `NAME.node.DATACENTER.consul`. If the datacenter is omitted, Consul will
+only search the local datacenter.
 
-From the terminal window where you are ssh-ed into agent one query the DNS interface for the address of agent-two.
-
-    # vagrant@n1:~
-:ship:
+:ship: From Vagrant 1, query the DNS interface for the address of agent-two.
 ```bash
 dig @127.0.0.1 -p 8600 agent-two.node.consul
 ```
 
-    ...
-    
-    ;; QUESTION SECTION:
-    ;agent-two.node.consul. IN  A
-    
-    ;; ANSWER SECTION:
-    agent-two.node.consul.  0 IN    A   172.20.20.11
-    
+The ability to look up nodes in addition to services is useful for system
+administration, in addition to service discovery. 
 
-The ability to look up nodes in addition to services is useful for system administration, in addition to service discovery. For example, knowing the address of the node to SSH into is as easy as making the node a part of the Consul datacenter and querying it.
+:flashlight: For example, knowing the address of the node to SSH into is as
+easy as making the node a part of the Consul datacenter and querying it.
 
 ### Stop the Agents
 
-Stop both of your agents gracefully by either typing `Ctrl-c` in the terminal windows where they are running, or issuing the `consul leave` command.
+:ship: Stop agents from within the vagrant sessions
+```bash
+consul leave
+```
 
 ### Clean Up the Environment
 
-Vagrant will automatically stop and power down the virtual machines it created, remove their hard disks from your machine, and free up all of the disk space and RAM they consume.
-
-It will not get rid of the directory you created or the Vagrant file it contains, so if you would like to re-run this guide, all you need to do is issue `vagrant up` again from inside the `consul-getting-started-join` directory.
-
-Clean up your virtual environment by running the following command from within the `consul-getting-started-join` directory.
-
-:ship:
+:ship: Shut down vagrant sessions
 ```bash
 vagrant destroy
 ```
-
-        n2: Are you sure you want to destroy the 'n2' VM? [y/N] y
-    ==> n2: Forcing shutdown of VM...
-    ==> n2: Destroying VM and associated drives...
-        n1: Are you sure you want to destroy the 'n1' VM? [y/N] y
-    ==> n1: Forcing shutdown of VM...
-    ==> n1: Destroying VM and associated drives...
-    
-
-### Summary
-
-In this guide you set up a multi-agent Consul datacenter, by joining two Consul agents, a server and a client. Continue to the next guide to learn about the operations and development tracks that will help you put Consul into production.> Congratulations on completing the Getting Started track, where you explored   some of Consul's core functionality. In this guide find other resources to help you  continue learning.
 
 ## Next Steps | Consul - HashiCorp Learn
 
