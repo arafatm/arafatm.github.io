@@ -2,7 +2,7 @@
 category: tech
 tags: hashi consul
 source: https://learn.hashicorp.com/consul/getting-started/consul-gs-intro
-title: Learn Vault
+title: Learn Consul
 ---
 
 ## Install Consul
