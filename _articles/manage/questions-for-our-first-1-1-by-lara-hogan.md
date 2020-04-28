@@ -2,7 +2,7 @@
 category: manage
 tags: 1:1
 source: https://larahogan.me/blog/first-one-on-one-questions/
-by: Lara hogan
+author: Lara hogan
 title: Questions for our first 1:1
 ---
 
