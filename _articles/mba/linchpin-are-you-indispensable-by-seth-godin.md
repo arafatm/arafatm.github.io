@@ -2,7 +2,7 @@
 category: mba
 source: kindle
 author: Seth Godin
-title: Linchpin: Are You Indispensable?
+title: Linchpin - Are You Indispensable?
 ---
 
 ## INTRODUCTION You Are a Genius
