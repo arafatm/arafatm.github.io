@@ -2,7 +2,7 @@
 category: philosophy
 source: kindle
 author: Yuval Noah Harari
-title: Sapiens: A Brief History of Humankind
+title: Sapiens. A Brief History of Humankind
 ---
 
 There are no gods in the universe, no nations, no money, no human rights, no
