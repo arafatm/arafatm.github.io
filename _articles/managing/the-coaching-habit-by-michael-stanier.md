@@ -3,7 +3,7 @@ category: manage
 tags: coach
 source: https://www.amazon.com/Coaching-Habit-Less-Change-Forever/dp/0978440749
 author: Michael Bungay Stanier
-title: The Coaching Habit: Say Less, Ask More &amp; Change the Way You Lead Forever
+title: The Coaching Habit: Say Less, Ask More \& Change the Way You Lead Forever
 ---
 
 ## Quick Summary
