@@ -1,6 +1,6 @@
 ---
 category: manage
-tags: 1:1
+tags: 1o1
 source: https://larahogan.me/blog/first-one-on-one-questions/
 author: Lara hogan
 title: Questions for our first 1:1
