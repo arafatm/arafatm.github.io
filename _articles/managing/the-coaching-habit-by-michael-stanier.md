@@ -1,27 +1,36 @@
-# The Coaching Habit: Say Less, Ask More & Change the Way You Lead Forever
-
-*by Michael Bungay Stanier*
+---
+category: manage
+tags: coach
+source: https://www.amazon.com/Coaching-Habit-Less-Change-Forever/dp/0978440749
+author: Michael Bungay Stanier
+title: The Coaching Habit: Say Less, Ask More & Change the Way You Lead Forever
+---
 
 ## Quick Summary
 
 - Ask One Question at a Time
 - Silence is success
 
-- 1 The Kickstart Question: "What's on your mind?"
-  - Cut the Intro and Ask the Question
-- 2 The AWE Question: "And What Else?"
-  - Don't Ask Rhetorical Questions
-- 3: The Focus Question: "What’s the Real Challenge Here for You?"
-  - Stick to Questions Starting with "What" (not Why)
-- 4 The Foundation Question: "What Do You Want?"
-  - Get Comfortable with Silence
-- 5: The Lazy Question: "What do you want *from me* (out of curiosity)?" 
-  - Actually Listen to the Answer
-- 6: The Strategic Question: "If You’re Saying Yes to This, What Are You Saying
-  No To?"
-  - Acknowledge the Answers You Get
-- 7: The Learning Question: "What Was Most Useful for You?"
-  - Use Every Channel to Ask a Question
+1 The Kickstart Question: "What's on your mind?"
+- Cut the Intro and Ask the Question
+
+2 The AWE Question: "And What Else?"
+- Don't Ask Rhetorical Questions
+
+3: The Focus Question: "What’s the Real Challenge Here for You?"
+- Stick to Questions Starting with "What" (not Why)
+
+4 The Foundation Question: "What Do You Want?"
+- Get Comfortable with Silence
+
+5: The Lazy Question: "What do you want *from me* (out of curiosity)?" 
+- Actually Listen to the Answer
+
+6: The Strategic Question: "If You’re Saying Yes to This, What Are You Saying No To?"
+- Acknowledge the Answers You Get
+
+7: The Learning Question: "What Was Most Useful for You?"
+- Use Every Channel to Ask a Question
 
 ## Intro
 

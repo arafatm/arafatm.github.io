@@ -1,4 +1,10 @@
-# Easy check-in questions for your 1:1s
+---
+category: manage
+tags: 1o1
+source: missing link
+author: Lara Hogan
+title: Easy check-in questions for your 1:1s
+---
 
 Here are the questions I've been asking in coaching calls with managers and
 individual contributors alike, to get a gut check on how folks are feeling
@@ -18,7 +24,7 @@ during this awful, strange season—without making the conversation too heavy.
 
 ### What's one thing you want to experiment with right now?
 
-# And here are some tips on how to ask these questions, straight from the brilliant mind of Paloma Medina:
+## And here are some tips on how to ask these questions, straight from the brilliant mind of Paloma Medina:
 
 ### Ask them to expand on their answer so you can understand their underlying core needs: 
 
