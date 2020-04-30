@@ -50,3 +50,14 @@ title: Fender Play Guitar
     
 ## Bob Marley: Waiting in Vain
 
+## Nirvana: Come As You Are
+
+    TAB 4/4
+                                         4x
+    ||                 |                 ||
+    ||                 |                 ||
+    ||:                |                :||
+    ||:                |                :||
+    ||     0   0       |   2       2     ||
+    || 2     2   2 2 1 | 0   0 0     0 1 ||
+
