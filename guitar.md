@@ -48,8 +48,6 @@ title: Fender Play Guitar
     | G     
     | . . . 
     
-## Bob Marley: Waiting in Vain
-
 ## Nirvana: Come As You Are
 
     TAB 4/4
