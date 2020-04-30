@@ -16,3 +16,37 @@ title: Fender Play Guitar
 ## I (Can't Get No) Satisfaction
 
     A | 2 - 2 - | 2 4 5 - | 5 5 4 4  
+
+## One Finger Chords
+
+    G Chord
+      x x x o o o
+      -----------
+      + + + + + + 
+      + + + + + +
+      + + + + + 0
+      + + + + + +
+      + + + + + +
+
+    C Chord
+      x x x o o o
+      -----------
+      + + + + 0 + 
+      + + + + + +
+      + + + + + +
+      + + + + + +
+      + + + + + +
+
+## Ex: Play Chords Using Diagrams
+
+    TAB 4/4
+
+    | G       | C       | G       | C   G
+    | . . . . | . . . . | . . . . | . . . .
+    | G       | C   G   | G       | C      
+    | . . . . | . . . . | . . . . | . . . .
+    | G     
+    | . . . 
+    
+## Bob Marley: Waiting in Vain
+
