@@ -10,9 +10,5 @@ layout: home
 ...
 :link: [Bookmarks](/links)
 
-TODO
-- [ ] http://freyr.websages.com/Life_Cycle_of_a_Silver_Bullet.pdf
-
-
 ---
 
