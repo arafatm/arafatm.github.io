@@ -1,5 +1,5 @@
 ---
-category: tech
+categories: learn
 tags: hashi vault
 source: https://learn.hashicorp.com/vault#getting-started
 title: Learn Vault

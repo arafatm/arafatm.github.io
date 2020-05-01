@@ -1,5 +1,5 @@
 ---
-category: tech
+categories: learn
 source: https://learn.hashicorp.com/terraform
 tags: hashi terraform
 title: Learn Terraform

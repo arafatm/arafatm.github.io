@@ -1,5 +1,5 @@
 ---
-category: tech
+categories: learn
 tags: hashi consul
 source: https://learn.hashicorp.com/consul/getting-started/consul-gs-intro
 title: Learn Consul
