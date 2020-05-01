@@ -1,6 +1,5 @@
 ---
-category: tech
-tags: agile 
+category: agile
 author: Sarah A. Sheard
 source: http://freyr.websages.com/Life_Cycle_of_a_Silver_Bullet.pdf
 title: Life Cycle of a Silver Bullet
