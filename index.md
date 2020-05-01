@@ -12,3 +12,5 @@ layout: home
 
 ---
 
+- [ ] https://www.jeremiahlee.com/posts/failed-squad-goals/
+
