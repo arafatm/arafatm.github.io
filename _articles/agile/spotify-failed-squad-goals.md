@@ -3,7 +3,7 @@ categories: agile
 tags: spotify squad
 source: https://www.jeremiahlee.com/posts/failed-squad-goals/
 author: Jereiah Lee
-title: Spotify’s Failed #SquadGoals
+title: Spotify’s Failed \#SquadGoals
 ---
 
 > “The Spotify model” got a bunch of companies talking like Taylor Swift about startup culture, but four former Spotify employees reveal the truth: its eponymous way of working failed before it scaled.
