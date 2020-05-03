@@ -11,6 +11,3 @@ layout: home
 :link: [Bookmarks](/links)
 
 ---
-
-- [ ] https://www.jeremiahlee.com/posts/failed-squad-goals/
-
