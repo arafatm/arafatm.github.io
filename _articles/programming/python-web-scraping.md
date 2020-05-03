@@ -1,6 +1,6 @@
 ---
 category: programming
-tags: python BeautifulSoup web-scraping
+tags: python web scraping
 source: https://www.dataquest.io/blog/web-scraping-tutorial-python/
 author: dataquest.io
 title: Python Web Scraping Using BeautifulSoup
