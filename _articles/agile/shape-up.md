@@ -88,7 +88,7 @@ your company.
 
 # Part 1: Shaping
 
-## Principles of Shaping | Shape Up
+## Principles of Shaping 
 
 ![A vertical axis marked Abstract at the top and Concrete at the bottom. In the
 middle a zone is marked
@@ -193,7 +193,7 @@ For that reason we have two separate tracks:
 3. **Address risks and rabbit holes.** 
 4. **Write the pitch**. 
 
-## Set Boundaries | Shape Up
+## Set Boundaries 
 
 ![Cartoon. In the background, three people talk around a table. One says 'They
 said they wanted categories.' The other says 'We should redesign the whole
@@ -201,196 +201,77 @@ section!' and the third says 'Yes!' In the foreground, a figure who is
 listening looks distressed and thinks 'uh
 oh.'](https://basecamp.com/assets/books/shapeup/1.2/intro_cartoon-849a30dad3a668738e5933a410abd2dd895dbab32c14bb5bdb1604652f74c1e4.jpg)
 
-The first step of shaping is setting boundaries on what we’re trying to do. The
-conversations we have are going to be entirely different if people think we’re
-talking about a small improvement or a major redesign.
-
-The conversation about building a feature always starts with a `raw idea`, like
-“customers are asking for group notifications.” Before we all go down the
-rabbit hole discussing ways we can solve it, we should first set some broad
-terms on the discussion to make it productive.
+The first step of shaping is setting boundaries on what we’re trying to do. 
 
 ### Setting the appetite[](#setting-the-appetite)
 
-Sometimes an idea gets us excited right away. In that case we need to temper
-the excitement by checking whether this is really something we’re going to be
-able to invest time in or not. If we don’t stop to think about how valuable the
-idea is, we can all jump too quickly to either committing resources or having
-long discussions about potential solutions that go nowhere.
-
-Other ideas are less exciting and feel more like a challenge we didn’t ask for.
-The customer wants a calendar; we don’t particularly want to build one, but we
-do feel we need to do something about the request.
-
 Whether we’re chomping at the bit or reluctant to dive in, it helps to
-explicitly define how much of our time and attention the subject deserves. Is
-this something worth a quick fix if we can manage? Is it a big idea worth an
-entire cycle? Would we redesign what we already have to accommodate it? Will we
-only consider it if we can implement it as a minor tweak?
+explicitly define how much of our time and attention the subject deserves. 
 
-We call this the `appetite`. You can think of the appetite as a time budget for
-a standard team size. We usually set the appetite in two sizes:
+**Appetite**: a time budget for a standard team size. 
 
-- `Small Batch`: This is a project that a team of one designer and one or two
+We usually set the appetite in two sizes:
+- **Small Batch**: This is a project that a team of one designer and one or two
   programmers can build in one or two weeks. We batch these together into a
-  `six week` cycle (more on that later).
-- `Big Batch`: This project takes the same-size team a full six-weeks.
+  **six week** cycle.
+- **Big Batch**: This project takes the same-size team a full six-weeks.
 
-In rare cases where the scope is so big that a six-week project isn’t
-conceivable, we’ll try to hammer it down by narrowing the problem definition.
-If we still can’t shrink the scope, we’ll break off a meaningful part of the
-project that we can shape to a six-week appetite.
+If we can’t shrink the scope, we’ll break off a meaningful part of the project
+that we can shape to a six-week appetite.
 
 ### Fixed time, variable scope[](#fixed-time-variable-scope)
 
-An appetite is completely different from an estimate. Estimates start with a
-design and end with a number. Appetites start with a number and end with a
-design. We use the appetite as a creative constraint on the design process.
-
-This principle, called “fixed time, variable scope,” is key to successfully
-defining and shipping projects. Take this book for an example. It’s hard to
-ship a book when you can always add more, explain more, or improve what’s
-already there. When you have a deadline, all of a sudden you have to make
-decisions. With one week left, I can choose between fixing typos or adding a
-new section to a chapter. That’s the tension between time, quality, and scope.
-I don’t want to release a book with embarrassing typos, so I’ll choose to
-reduce the scope by leaving out the extra section. Without the pressure of the
-fixed deadline, I wouldn’t make the trade-off. If the scope wasn’t variable,
-I’d _have_ to include the extra section. Then there’d be no time to fix the
-quality issues.
-
-We apply this principle at each stage of the process, from shaping potential
-projects to building and shipping them. First, the appetite constrains what
-kind of a solution we design during the shaping process. Later, when we hand
-the work to a team, the fixed time box pushes them to make decisions about what
-is core to the project and what is peripheral or unnecessary.
+- Estimates start with a design and end with a number. 
+- Appetites start with a number and end with a design. 
 
 ### “Good” is relative[](#good-is-relative)
 
-There’s no absolute definition of “the best” solution. The best is relative to
-your constraints. Without a time limit, there’s always a better version. The
-ultimate meal might be a ten course dinner. But when you’re hungry and in a
-hurry, a hot dog is perfect.
+**Without a time limit, there’s always a better version**. 
 
-The amount of time we set for our appetite is going to lead us to different
-solutions. We could model a whole set of database columns in the fancy version,
-or just provide a flat textarea in the simple version. We could redesign the
-main landing page to accommodate a new feature, or we could push it back to a
-screen with fewer design constraints. We can only judge what is a “good”
-solution in the context of how much time we want to spend and how important it
-is.
+    The ultimate meal might be a ten course dinner. 
+    But when you’re hungry and in a hurry, a hot dog is perfect.
 
 ### Responding to raw ideas[](#responding-to-raw-ideas)
 
-Our default response to any idea that comes up should be: “Interesting. Maybe
-some day.” In other words, a very soft “no” that leaves all our options open.
-We don’t put it in a backlog. We give it space so we can learn whether it’s
-really important and what it might entail.
+Our default response to any idea that comes up should be: “_Interesting. Maybe
+some day_.” 
 
-It’s too early to say “yes” or “no” on first contact. Even if we’re excited
-about it, we shouldn’t make a commitment that we don’t yet understand. We need
-to do work on the idea before it’s shaped enough to bet resources on. If we
-always say “yes” to incoming requests we’ll end up with a giant pile of work
-that only grows.
-
-It’s important to keep a cool manner and a bit of a poker face. We don’t want
-to shut down an idea that we don’t understand. New information might come in
-tomorrow that makes us see it differently. On the other hand, showing too much
-enthusiasm right away can set expectations that this thing is going to happen.
-We may not be able to commit to it once we’ve put it into context with
-everything else we want to do.
+Even if we’re excited about it, we shouldn’t make a commitment that we don’t
+yet understand.
 
 ### Narrow down the problem[](#narrow-down-the-problem)
 
-In addition to setting the appetite, we usually need to narrow down our
-understanding of the problem.
-
-We once had a customer ask us for more complex permission rules. It could
-easily have taken six weeks to build the change she wanted. Instead of taking
-the request at face value, we dug deeper. It turned out that someone had
-archived a file without knowing the file would disappear for everyone else
-using the system. Instead of creating a rule to prevent some people from
-archiving, we realized we could put a warning on the archive action itself that
-explains the impact. That’s a one-day change instead of a six-week project.
-
-Another example is the “calendar view” from the previous chapter. Everyone
-knows what a calendar view is. But unpacking it revealed tons of unknowns and
-decisions that would drastically affect the scope. If we only want to spend six
-weeks instead of six months building a huge calendar, how do we narrow it down?
-
-In that case we flip from asking “What could we build?” to “What’s really going
-wrong?” Sure, a calendar sounds nice. But what is driving the request? At what
-point specifically does someone’s current workflow break down without this
-thing they’re asking for?
+Flip from asking “What could we build?” to “**What’s really going wrong**?” 
 
 ### Case study: Defining “calendar”[](#case-study-defining-calendar)
 
-In the case of the calendar request, we called a customer who asked for this
-feature. Instead of asking her why she wants a calendar and what it should look
-like, we asked her _when_ she wanted a calendar. What was she doing when the
-thought occurred to ask for it?
-
-She told us she worked in an office with a big calendar drawn on a chalkboard
-wall. Her officemates marked when they were meeting clients in the handful of
-meeting rooms on the calendar. One day she was working from home. A client
-called and asked her to schedule a meeting. She had to drive to the office to
-look at the wall calendar. Traffic was terrible along the way, and in the end
-there wasn’t a free space that worked for her client. She could have saved an
-hour in traffic and a lot of frustration if she had been able to check for open
-spots on the calendar from her computer at home.
-
-The insight wasn’t “computerize the calendar”—that’s obvious. What we learned
-was that “see free spaces” was the important thing for this use case, not “do
-everything a calendar does.”
-
-This story, and others like it, gave us a specific `baseline` to design
-against. Basecamp had an agenda view of events. It worked for listing major
-deadlines and milestones but it wasn’t good for resource scheduling because you
-couldn’t see empty spaces on it. We narrowed down the need from “do everything
-a calendar does” to “help me see free spaces so I can figure out when to
-schedule something.”
-
-We didn’t have a solution yet. But now we felt like we had a problem that was
-specific enough to spark an idea that could fit within our appetite. This led
-us to the simpler “Dot Grid” concept from the last chapter.
-
-What if we can’t figure out a specific pain point or use case? Our appetite can
-also tell us how much research is worthwhile. If it’s not critical now and we
-can’t get our hands around the problem, we’ll walk away from it and work on
-something else. Maybe in the future a new request or story will pop up that
-gives us better insight into the problem.
+Instead of asking her why she wants a calendar and what it should look like, we
+asked her _when_ she wanted a calendar. What was she doing when the thought
+occurred to ask for it?
 
 ### Watch out for grab-bags[](#watch-out-for-grab-bags)
 
 When it comes to unclear ideas, the worst offenders are “redesigns” or
-“refactorings” that aren’t driven by a single problem or use case. When someone
-proposes something like “redesign the Files section,” that’s a grab-bag, not a
-project. It’s going to be very hard to figure out what it means, where it
-starts, and where it ends. Here’s a more productive starting point: “We need to
-rethink the Files section because sharing multiple files takes too many steps.”
-Now we can start asking: What’s not working? In what context are there too many
-steps? What parts of the existing design can stay the same and what parts need
-to change?
+“refactorings” that aren’t driven by a single problem or use case. 
 
-A tell-tale sign of a grab-bag is the “2.0” label. We made the mistake in the
-past of kicking off a “Files 2.0” project without really considering what that
-meant. Our excitement about improving a huge part of our app got the better of
-us. We know there were a lot of problems with our Files feature, but we didn’t
-ask ourselves what specifically we were going to do. The project turned out to
-be a mess because we didn’t know what “done” looked like. We recovered by
-splitting the project into smaller projects, like “Better file previews” and
-“Custom folder colors.” We set appetites and clear expectations on each project
-and shipped them successfully.
+When someone proposes something like “redesign the Files section,” that’s a
+grab-bag, not a project. 
+
+Here’s a more productive starting point: “We need to rethink the Files section
+because sharing multiple files takes too many steps.”
+
+A tell-tale sign of a grab-bag is the “2.0” label. 
 
 ### Boundaries in place[](#boundaries-in-place)
 
-When we have all three things—a raw idea, an appetite, and a narrow problem
-definition—we’re ready to move to the next step and define the elements of a
-solution.
+When we have all three things
+- a raw idea, 
+- an appetite, 
+- and a narrow problem definition
 
-xxx
+then we’re ready to move to the next step and define the elements of a solution.
 
-## Find the Elements | Shape Up
+## Find the Elements 
 
 
 ![A cartoon. Two people are sketching on a whiteboard animatedly. One says
@@ -709,13 +590,13 @@ pitching.
 
 Also keep in mind that, at this stage, we could walk away from the project. We
 haven’t bet on it. We haven’t made any commitments or promises about it. What
-we’ve done is added value to the `raw idea` by making it more actionable. We’ve
+we’ve done is added value to the **raw idea** by making it more actionable. We’ve
 gotten closer to a good option that we can later lobby for when it’s time to
 allocate resources.
 
 xxx
 
-## Risks and Rabbit Holes | Shape Up
+## Risks and Rabbit Holes 
 
 
 ![Cartoon. A figure stands beside a whiteboard covered in rough sketches,
@@ -857,7 +738,7 @@ up on it.
 
 Since everyone on the team wants to do their best work, they will of course
 look for all the use cases to cover and consider them necessary. As the team
-gets more comfortable with `scope hammering` (see [Decide When to
+gets more comfortable with **scope hammering** (see [Decide When to
 Stop](https://basecamp.com/shapeup/3.5-chapter-13)), this improves. But it’s
 still a good idea to call out any cases you specifically _aren’t_ supporting to
 keep the project well within the appetite.
@@ -930,8 +811,8 @@ We’ve gone from a roughly formed solution with potential risk in it to a solid
 idea that we now hope to bet on in the future.
 
 That means we’re ready to make the transition from privately shaping and
-getting feedback from an inner-circle to presenting the idea at the `betting
-table`. To do that, we write it up in a form that communicates the boundaries
+getting feedback from an inner-circle to presenting the idea at the **betting
+table**. To do that, we write it up in a form that communicates the boundaries
 and spells out the solution so that people with less context will be able to
 understand and evaluate it. This “pitch” will be the document that we use to
 lobby for resources, collect wider feedback if necessary, or simply capture the
@@ -939,7 +820,7 @@ idea for when the time is more ripe in the future.
 
 xxx
 
-## Write the Pitch | Shape Up
+## Write the Pitch 
 
 
 ![Cartoon. A person stands at a desk. To their right is a whiteboard with a
@@ -1002,7 +883,7 @@ time on a good solution that doesn’t benefit the right people.
 How far you have to go to spell out the problem will depend on how much context
 you share with the people reading the write-up. The best problem definition
 consists of a single specific story that shows why the status quo doesn’t work.
-This gives you a `baseline` to test fitness against. People will be able to
+This gives you a **baseline** to test fitness against. People will be able to
 weigh the solution against this specific problem—or other solutions if a debate
 ensues—and judge whether or not that story has a better outcome with the new
 solution swapped in.
@@ -1011,7 +892,7 @@ solution swapped in.
 
 You can think of the appetite as another part of the problem definition. Not
 only do we want to solve this use case, we want to come up with a way to do it
-in six weeks, not three months, or—in the case of a `small batch` project—two
+in six weeks, not three months, or—in the case of a **small batch** project—two
 weeks, not the whole six weeks.
 
 Stating the appetite in the pitch prevents unproductive conversations. There’s
@@ -1187,7 +1068,7 @@ We prefer asynchronous communication by default and escalate to real-time only
 when necessary. This gives everyone the maximum amount of time under their own
 control for doing real work. That means the first step for presenting a pitch
 is posting the write-up with all the ingredients above somewhere that
-stakeholders can read it on their own time. This keeps the `betting table`
+stakeholders can read it on their own time. This keeps the **betting table**
 short and productive. In ideal conditions everyone has time to read the pitches
 in advance. And if that isn’t possible in some cases, the pitch is ready to
 pull up for a quick live sell.
@@ -1211,10 +1092,10 @@ Pitches on the Message Board of the Product Strategy team in Basecamp
  'Looking for a 1-weeker' and describes the
  appetite.](https://basecamp.com/assets/books/shapeup/1.5/in_basecamp/sort_messages-45fcd7f0e22f160ca59e6900590f19968f54d9ae416865396062fd4b061df449.png)](https://basecamp.com/assets/books/shapeup/1.5/in_basecamp/sort_messages-45fcd7f0e22f160ca59e6900590f19968f54d9ae416865396062fd4b061df449.png) 
 
-A pitch as a Message. Note the one-week `appetite`. This was a `Small Batch`
+A pitch as a Message. Note the one-week **appetite**. This was a **Small Batch**
 project.
 
-When we need to include a `fat marker sketch` in a pitch, we’ll draw it on an
+When we need to include a **fat marker sketch** in a pitch, we’ll draw it on an
 iPad (with [Notability](https://www.gingerlabs.com/)) and take a screenshot.
 Basecamp’s text editor makes it easy to insert images and caption them so they
 make sense in the flow of the pitch.
@@ -1247,7 +1128,7 @@ xxx
 
 # Part 2: Betting
 
-## Bets, Not Backlogs | Shape Up
+## Bets, Not Backlogs 
 
 
 ![Cartoon. A person stands in front of a wall covered in countless sticky
@@ -1271,7 +1152,7 @@ timely projects that really matter right now.
 
 ### A few potential bets[](#a-few-potential-bets)
 
-So what do we do instead? Before each six-week cycle, we hold a `betting table`
+So what do we do instead? Before each six-week cycle, we hold a **betting table**
 where stakeholders decide what to do in the next cycle. At the betting table,
 they look at pitches from the last six weeks — or any pitches that somebody
 purposefully revived and lobbied for again.
@@ -1333,7 +1214,7 @@ in the next cycle.
 
 xxx
 
-## Bet Six Weeks | Shape Up
+## Bet Six Weeks 
 
 
 ![Cartoon. Three people sit around a table. The person in the middle is
@@ -1367,7 +1248,7 @@ deadline looming in order to make trade-offs. If the deadline is too distant
 and abstract at the start, teams will naturally wander and use time
 inefficiently until the deadline starts to get closer and feel real.
 
-After years of experimentation we arrived at `six weeks`. Six weeks is long
+After years of experimentation we arrived at **six weeks**. Six weeks is long
 enough to finish something meaningful and still short enough to see the end
 from the beginning.
 
@@ -1378,7 +1259,7 @@ breathe and think about what’s next. The end of a cycle is the worst time to
 meet and plan because everybody is too busy finishing projects and making
 last-minute decisions in order to ship on time.
 
-Therefore, after each six-week cycle, we schedule two weeks for `cool-down`.
+Therefore, after each six-week cycle, we schedule two weeks for **cool-down**.
 This is a period with no scheduled work where we can breathe, meet as needed,
 and consider what to do next.
 
@@ -1398,8 +1279,8 @@ testing later in the cycle.
 
 These teams will either spend the entire cycle working on one project, or
 they’ll work on multiple smaller projects during the cycle. We call the team
-that spends the cycle doing one project the `big batch` team and the team
-working on a set of smaller projects the `small batch` team. Small batch
+that spends the cycle doing one project the **big batch** team and the team
+working on a set of smaller projects the **small batch** team. Small batch
 projects usually run one or two weeks each. Small batch projects aren’t
 scheduled individually. It’s up to the small batch team to figure out how to
 juggle the work so they all ship before the end of the cycle.
@@ -1409,7 +1290,7 @@ we decide what to schedule.
 
 ### The betting table[](#the-betting-table)
 
-The `betting table` is a meeting held during cool-down where stakeholders
+The **betting table** is a meeting held during cool-down where stakeholders
 decide what to do in the next cycle. The potential bets to consider are either
 new pitches shaped during the last six weeks, or possibly one or two older
 pitches that someone specifically chose to revive. As we said last chapter,
@@ -1501,11 +1382,11 @@ don’t finish, by default the project doesn’t get an extension. We intentiona
 create a risk that the project—as pitched—won’t happen. This sounds severe but
 it’s extremely helpful for everyone involved.
 
-First, it eliminates the risk of runaway projects. We defined our `appetite` at
+First, it eliminates the risk of runaway projects. We defined our **appetite** at
 the start when the project was shaped and pitched. If the project was only
 worth six weeks, it would be foolish to spend two, three or ten times that.
 Very few projects are of the “at all costs” type and absolutely must happen
-now. We think of this like a `circuit breaker` that ensures one project doesn’t
+now. We think of this like a **circuit breaker** that ensures one project doesn’t
 overload the system. One project that’s taking too long will never freeze us or
 get in the way of new projects that could be more important.
 
@@ -1546,7 +1427,7 @@ That said, nobody likes bugs. We still want ways to deal with them. Three
 strategies have worked for us.
 
 1.  **Use cool-down**. Ask any programmer if there are things they wish they
-could go back and fix and they’ll have a list to show you. The `cool-down`
+could go back and fix and they’ll have a list to show you. The **cool-down**
 period between cycles gives them time to do exactly that. Six weeks is not long
 to wait for the majority of bugs, and two weeks every six weeks actually adds
 up to a lot of time for fixing them.
@@ -1685,11 +1566,11 @@ cycle can be a different combination of people.
 
 Different projects require different expertise. Maybe we need some more
 front-end programming on this one. Or this other one is going to invite a lot
-of scope creep so we need someone who’s good with the `scope hammer`.
+of scope creep so we need someone who’s good with the **scope hammer**.
 
 The type of work each person has been doing is another factor. Someone who’s
-done a long string of `small batch` projects might prefer to take on a `big
-batch`, or vice versa.
+done a long string of **small batch** projects might prefer to take on a **big
+batch**, or vice versa.
 
 And lastly there’s always a little Calendar Tetris with peoples’ availability.
 Vacations or sabbaticals affect which projects we can schedule in the coming
@@ -1722,7 +1603,7 @@ xxx
 
 # Part 3: Building
 
-## Hand Over Responsibility | Shape Up
+## Hand Over Responsibility 
 
 
 ![Cartoon. Three figures are seated at their desks, hunching over laptops as if
@@ -1782,7 +1663,7 @@ At the end of the cycle, the team will deploy their work. In the case of a
 Small Batch team with a few small projects for the cycle, they’ll deploy each
 one as they see fit as long as it happens before the end of the cycle.
 
-This constraint keeps us true to our bets and respects the `circuit breaker`.
+This constraint keeps us true to our bets and respects the **circuit breaker**.
 The project needs to be done within the time we budgeted; otherwise, our
 appetite and budget don’t mean anything.
 
@@ -1895,7 +1776,7 @@ together to get a fully integrated spike working.
 
 xxx
 
-## Get One Piece Done | Shape Up
+## Get One Piece Done 
 
 
 ![Cartoon. A figure stands next to another figure seated at a desk. The
@@ -2174,7 +2055,7 @@ because it proved that a new idea was going to work.
 
 xxx
 
-## Map the Scopes | Shape Up
+## Map the Scopes 
 
 
 ![Cartoon. The same figure as in the last chapter stands beside the desk of
@@ -2218,7 +2099,7 @@ back-end tasks. This allows us to finish one slice of the actual project and
 definitively move on. That’s better than having lots of pieces that—fingers
 crossed—are supposed to come together by the end of the cycle.
 
-We call these integrated slices of the project `scopes`. We break the overall
+We call these integrated slices of the project **scopes**. We break the overall
 scope (singular) of the project into separate scopes (plural) that can be
 finished independently of each other. In this chapter, we’ll see how the team
 maps the project into scopes and tackles them one by one.
@@ -2456,7 +2337,7 @@ tasks and scopes that will come up.
 
 Most software projects require some UI design and a thin layer of code below.
 Think of a database app where all you need to do is enter information, save it,
-and display it back. Work like this looks like a `layer cake`: You can judge
+and display it back. Work like this looks like a **layer cake**: You can judge
 the work by UI surface area because the back-end work is thin and evenly
 distributed. In these cases, you can integrate all design and programmer tasks
 together in the same scope. This is a good default for most “information
@@ -2513,7 +2394,7 @@ New tasks constantly come up as you get deeper into a problem. You’ll find cod
 that could be cleaned up, edge cases to address, and improvements to existing
 functionality. A good way to deal with all those improvements is to record them
 as tasks on the scope but mark them with a ~ in front. This allows everyone on
-the team to constantly sort out the `must-haves` from the `nice-to-haves`.
+the team to constantly sort out the **must-haves** from the **nice-to-haves**.
 
 In a world with no deadlines, we could improve everything forever. But in a
 fixed time box, we need a machete in our hands to cut down the constantly
@@ -2524,7 +2405,7 @@ Stop](https://basecamp.com/shapeup/3.5-chapter-13).
 
 xxx
 
-## Show Progress | Shape Up
+## Show Progress 
 
 
 ![Cartoon. A figure sits alone typing on a laptop. A thought bubble says: Ugh,
@@ -2548,7 +2429,7 @@ Consider a list with a few completed items and no incomplete items left. This
 could mean that all the work is done. But it could also mean that the team
 knows there’s more work but hasn’t defined tasks yet.
 
-Sometimes a team will define a `scope` early in the project without populating
+Sometimes a team will define a **scope** early in the project without populating
 it with tasks. It marks that some work needs to be done but that actual tasks
 haven’t been discovered yet.
 
@@ -2556,7 +2437,7 @@ Or think about doing some QA at the end of a scope. All the tasks are done.
 There’s nothing else to do. Then the act of testing populates the scope with
 new tasks for the issues found.
 
-This goes back to the notion of `imagined` versus `discovered` tasks. In our
+This goes back to the notion of **imagined** versus **discovered** tasks. In our
 naive notion of a list that’s planned up-front, somebody populates it with
 items that are gradually checked off. In real life, issues are discovered by
 getting involved in the problem. That means _to-do lists actually grow as the
@@ -2866,7 +2747,7 @@ That brings us to the next chapter, on deciding when to stop.
 
 xxx
 
-## Decide When to Stop | Shape Up
+## Decide When to Stop 
 
 
 ![Cartoon. A figure sits in front of a laptop holding their hand in one hand
@@ -2899,7 +2780,7 @@ there. At the same time, we don’t want to lower our standards. How do we make
 the call to say what we have is good enough and move on?
 
 It helps to shift the point of comparison. Instead of comparing up against the
-ideal, compare down to `baseline`—the current reality for customers. How do
+ideal, compare down to **baseline**—the current reality for customers. How do
 customers solve this problem today, without this feature? What’s the
 frustrating workaround that this feature eliminates? How much longer should
 customers put up with something that doesn’t work or wait for a solution
@@ -2930,7 +2811,7 @@ ideal
 
 ### Limits motivate trade-offs[](#limits-motivate-trade-offs)
 
-Recall that the six-week bet has a `circuit breaker`—if the work doesn’t get
+Recall that the six-week bet has a **circuit breaker**—if the work doesn’t get
 done, the project doesn’t happen.
 
 This forces the team to make trade-offs. When somebody says “wouldn’t it be
@@ -2977,7 +2858,7 @@ difference for the core use cases we’re trying to solve.
 ### Scope hammering[](#scope-hammering)
 
 People often talk about “cutting” scope. We use an even stronger
-word—`hammering`—to reflect the power and force it takes to repeatedly bang the
+word—**hammering**—to reflect the power and force it takes to repeatedly bang the
 scope so it fits in the time box.
 
 As we come up with things to fix, add, improve, or redesign during a project,
@@ -3000,8 +2881,8 @@ us to act on them. By chiseling and hammering the scope down, we stay focused
 on just the things we need to do to ship something effective that we can be
 proud of at the end of the time box.
 
-Throughout the cycle, you’ll hear our teams talking about `must-haves` and
-`nice-to-haves` as they discover work. The must-haves are captured as tasks on
+Throughout the cycle, you’ll hear our teams talking about **must-haves** and
+**nice-to-haves** as they discover work. The must-haves are captured as tasks on
 the scope. The scope isn’t considered “done” until those tasks are finished.
 Nice-to-haves can linger on a scope after it’s considered done. They’re marked
 with a tilde (~) in front. Those tasks are things to do if the team has extra
@@ -3013,7 +2894,7 @@ The act of marking them as a nice-to-have is the scope hammering.
  the
  front.](https://basecamp.com/assets/books/shapeup/3.5/scope_with_maybes-1838d92cd3c87917932716ef6baaad023b5b968af9d3f316d257c5f08a3a71f8.png)](https://basecamp.com/assets/books/shapeup/3.5/scope_with_maybes-1838d92cd3c87917932716ef6baaad023b5b968af9d3f316d257c5f08a3a71f8.png) 
 
-A finished scope with one `nice-to-have` (marked with a “~”) that was never
+A finished scope with one **nice-to-have** (marked with a “~”) that was never
 completed
 
 ### QA is for the edges[](#qa-is-for-the-edges)
@@ -3040,12 +2921,12 @@ Therefore we think of QA as a level-up, not a gate or a check-point that all
 work must go through. We’re much better off with QA than without it. But we
 don’t depend on QA to ship quality features that work as they should.
 
-QA generates `discovered tasks` that are all `nice-to-haves` by default. The
+QA generates **discovered tasks** that are all **nice-to-haves** by default. The
 designer-programmer team triages them and, depending on severity and available
-time, elevates some of them to `must-haves`. The most rigorous way to do this
+time, elevates some of them to **must-haves**. The most rigorous way to do this
 is to collect incoming QA issues on a separate to-do list. Then, if the team
 decides an issue is a must-have, they drag it to the list for the relevant
-`scope` it affects. This helps the team see that the scope isn’t done until the
+**scope** it affects. This helps the team see that the scope isn’t done until the
 issue is addressed.
 
 We treat code review the same way. The team can ship without waiting for a code
@@ -3058,13 +2939,13 @@ creating a step in our process that must happen every time.
 
 In very rare cases, we’ll extend a project that runs past its deadline by a
 couple weeks. How do we decide when to extend a project and when to let the
-`circuit breaker` do its thing?
+**circuit breaker** do its thing?
 
-First, the outstanding tasks must be true `must-haves` that withstood every
-attempt to `scope hammer` them.
+First, the outstanding tasks must be true **must-haves** that withstood every
+attempt to **scope hammer** them.
 
-Second, the outstanding work must be all `downhill`. No unsolved problems; no
-open questions. Any `uphill` work at the end of the cycle points to an
+Second, the outstanding work must be all **downhill**. No unsolved problems; no
+open questions. Any **uphill** work at the end of the cycle points to an
 oversight in the shaping or a hole in the concept. Unknowns are too risky to
 bet on. If the work is uphill, it’s better to do something else in the next
 cycle and put the troubled project back in the shaping phase. If you find a
@@ -3072,15 +2953,15 @@ viable way to patch the hole, then you can consider betting more time on it
 again in the future.
 
 Even if the conditions are met to consider extending the project, we still
-prefer to be disciplined and enforce the `appetite` for most projects. The
-two-week `cool-down` usually provides enough slack for a team with a few too
-many `must-haves` to ship before the next cycle starts. But this shouldn’t
+prefer to be disciplined and enforce the **appetite** for most projects. The
+two-week **cool-down** usually provides enough slack for a team with a few too
+many **must-haves** to ship before the next cycle starts. But this shouldn’t
 become a habit. Running into cool-down either points back to a problem in the
 shaping process or a performance problem with the team.
 
 xxx
 
-## Move On | Shape Up
+## Move On 
 
 
 ### Let the storm pass[](#let-the-storm-pass)
@@ -3103,14 +2984,14 @@ first place and who the change is helping.
 
 It can be tempting to commit to making changes in response to feedback, but
 then you no longer have a clean slate for the next cycle. Remember: these are
-just `raw ideas` coming in. The way to handle them is with a gentle “no.”
+just **raw ideas** coming in. The way to handle them is with a gentle “no.”
 Saying “no” doesn’t prevent you from continuing to contemplate them and maybe
 shape them up into future projects. Saying “yes,” on the other hand, takes away
 your freedom in the future. It’s like taking on debt.
 
-Remember, the thing you just shipped was a six-week `bet`. If this part of the
+Remember, the thing you just shipped was a six-week **bet**. If this part of the
 product needs more time, then it requires a new bet. Let the requests or bugs
-that just came up compete with everything else at the next `betting table` to
+that just came up compete with everything else at the next **betting table** to
 be sure they’re strategically important.
 
 ### Feedback needs to be shaped[](#feedback-needs-to-be-shaped)
@@ -3128,7 +3009,7 @@ version of the project for the greatest chance of success.
 
 xxx
 
-## Conclusion | Shape Up
+## Conclusion 
 
 ### Key concepts[](#key-concepts)
 
