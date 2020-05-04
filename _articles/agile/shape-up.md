@@ -752,25 +752,21 @@ Our CTO responds with technical thoughts on the pitch.
 
 ## xxx Bets, Not Backlogs 
 
-
 ![Cartoon. A person stands in front of a wall covered in countless sticky
 notes. A thought bubble above the person says: This is ridiculous. We'll never
 get all this
 done.](https://basecamp.com/assets/books/shapeup/2.1/intro_cartoon-562591e3436e67b04d32287bdc7ff45bfcdb284bfec3ac9a42c14e04f8ab9025.png)
 
-Now that we’ve written a pitch, where does it go? It doesn’t go onto a backlog.
-
 ### xxx No backlogs[](#no-backlogs)
 
 Backlogs are a big weight we don’t need to carry. Dozens and eventually
-hundreds of tasks pile up that we all know we’ll never have time for. The
-growing pile gives us a feeling like we’re always behind even though we’re not.
-Just because somebody thought some idea was important a quarter ago doesn’t
-mean we need to keep looking at it again and again.
+hundreds of tasks pile up that we all know we’ll never have time for. 
 
-Backlogs are big time wasters too. The time spent constantly reviewing,
-grooming and organizing old ideas prevents everyone from moving forward on the
-timely projects that really matter right now.
+The growing pile gives us a feeling like we’re always behind even though we’re not.
+
+The time spent constantly reviewing, grooming and organizing old ideas prevents
+everyone from moving forward on the timely projects that really matter right
+now.
 
 ### xxx A few potential bets[](#a-few-potential-bets)
 
@@ -779,19 +775,12 @@ where stakeholders decide what to do in the next cycle. At the betting table,
 they look at pitches from the last six weeks - or any pitches that somebody
 purposefully revived and lobbied for again.
 
-Nothing else is on the table. There’s no giant list of ideas to review. There’s
-no time spent grooming a backlog of old ideas. There are just a few
-well-shaped, risk-reduced options to review. The pitches are potential bets.
-
-With just a few options and a six-week long cycle, these meetings are
-infrequent, short, and intensely productive.
-
 If we decide to bet on a pitch, it goes into the next cycle to build. If we
 don’t, we let it go. There’s nothing we need to track or hold on to.
 
 What if the pitch was great, but the time just wasn’t right? Anyone who wants
-to advocate for it again simply tracks it independently - their own way - and then
-lobbies for it six weeks later.
+to advocate for it again simply tracks it independently - their own way - and
+then _lobbies for it six weeks later_.
 
 ### xxx Decentralized lists[](#decentralized-lists)
 
@@ -799,34 +788,26 @@ We don’t have to choose between a burdensome backlog and not remembering
 anything from the past. Everyone can still track pitches, bugs, requests, or
 things they want to do independently without a central backlog.
 
-Support can keep a list of requests or issues that come up more often than
-others. Product tracks ideas they hope to be able to shape in a future cycle.
-Programmers maintain a list of bugs they’d like to fix when they have some
-time. There’s no one backlog or central list and none of these lists are direct
-inputs to the betting process.
+- Support can keep a list of requests or issues that come up more often than
+  others. 
+- Product tracks ideas they hope to be able to shape in a future cycle.
+- Programmers maintain a list of bugs they’d like to fix when they have some
+  time. 
 
 Regular but infrequent one-on-ones between departments help to cross-pollinate
-ideas for what to do next. For example, Support can tell Product about top
-issues they are seeing, which Product can then track independently as potential
-projects to shape. Maybe Product picks off just one of those top issues to work
-on now. Then, in a future one-on-one, Support can lobby again for something
-that hasn’t yet gotten attention.
+ideas for what to do next. 
 
 This approach spreads out the responsibility for prioritizing and tracking what
-to do and makes it manageable. People from different departments can advocate
-for whatever they think is important and use whatever method works for them to
-track those things - or not.
-
-This way the conversation is always fresh. Anything brought back is brought
-back with a context, by a person, with a purpose. Everything is relevant,
-timely, and of the moment.
+to do and makes it manageable. 
 
 ### xxx Important ideas come back[](#important-ideas-come-back)
 
 It’s easy to overvalue ideas. The truth is, ideas are cheap. They come up all
 the time and accumulate into big piles.
 
-Really important ideas will come back to you. When’s the last time you forgot a
+Really important ideas will come back to you. 
+
+When’s the last time you forgot a
 really great, inspiring idea? And if it’s not that interesting - maybe a bug that
 customers are running into from time to time - it’ll come back to your attention
 when a customer complains again or a new customer hits it. If you hear it once
