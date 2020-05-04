@@ -817,7 +817,7 @@ If you hear it once and never again, maybe it wasn’t really a problem. And if
 you keep hearing about it, you’ll be motivated to shape a solution and pitch
 betting time on it in the next cycle.
 
-## xxx Bet Six Weeks 
+## Bet Six Weeks 
 
 ![Cartoon. Three people sit around a table. The person in the middle is
 standing and presenting a document. The person on the left says: Won't that
@@ -825,9 +825,6 @@ take longer than six weeks? The one presenting points to the document and says:
 Notif we focus on this one use case. The person on the right leans back and
 observes the
 discussion.](https://basecamp.com/assets/books/shapeup/2.2/intro_cartoon-cb716b39a86cb267e54549f739854b7c7b768da7316b8b0c495deba2805ccb10.png)
-
-Now that we have some good potential bets in the form of pitches, it’s time to
-make decisions about which projects to schedule.
 
 ### xxx Six-week cycles[](#six-week-cycles)
 
