@@ -7,137 +7,24 @@ title: Shape Up
 ---
 
 Table of Contents
-  - Introduction
-    - [Growing pains](#growing-pains)
-    - [Six-week cycles](#six-week-cycles)
-    - [Shaping the work](#shaping-the-work)
-    - [Making teams responsible](#making-teams-responsible)
-    - [Targeting risk](#targeting-risk)
-    - [How this book is organized](#how-this-book-is-organized)
-- Part 1: Shaping
-  - Principles of Shaping 
-    - [Wireframes are too concrete](#wireframes-are-too-concrete)
-    - [Words are too abstract](#words-are-too-abstract)
-    - [Case study: The Dot Grid Calendar](#case-study-the-dot-grid-calendar)
-    - [Property 1: It’s rough](#property-1-its-rough)
-    - [Property 2: It’s solved](#property-2-its-solved)
-    - [Property 3: It’s bounded](#property-3-its-bounded)
-    - [Who shapes](#who-shapes)
-    - [Two tracks](#two-tracks)
-    - [Steps to shaping](#steps-to-shaping)
-  - Set Boundaries 
-    - [Setting the appetite](#setting-the-appetite)
-    - [Fixed time, variable scope](#fixed-time-variable-scope)
-    - [“Good” is relative](#good-is-relative)
-    - [Responding to raw ideas](#responding-to-raw-ideas)
-    - [Narrow down the problem](#narrow-down-the-problem)
-    - [Case study: Defining “calendar”](#case-study-defining-calendar)
-    - [Watch out for grab-bags](#watch-out-for-grab-bags)
-    - [Boundaries in place](#boundaries-in-place)
-  - Find the Elements 
-    - [Move at the right speed](#move-at-the-right-speed)
-    - [Breadboarding](#breadboarding)
-      -  [Example](#example)
-    - [Fat marker sketches](#fat-marker-sketches)
-    - [Elements are the output](#elements-are-the-output)
-    - [Room for designers](#room-for-designers)
-    - [Not deliverable yet](#not-deliverable-yet)
-    - [No conveyor belt](#no-conveyor-belt)
-  - Risks and Rabbit Holes 
-    - [Different categories of risk](#different-categories-of-risk)
-    - [Look for rabbit holes](#look-for-rabbit-holes)
-    - [Case study: Patching a hole](#case-study-patching-a-hole)
-    - [Declare out of bounds](#declare-out-of-bounds)
-    - [Cut back](#cut-back)
-    - [Present to technical experts](#present-to-technical-experts)
-    - [De-risked and ready to write up](#de-risked-and-ready-to-write-up)
-  - Write the Pitch 
-    - [Ingredient 1. Problem](#ingredient-1-problem)
-    - [Ingredient 2. Appetite](#ingredient-2-appetite)
-    - [Ingredient 3. Solution](#ingredient-3-solution)
-    - [Help them see it](#help-them-see-it)
-      -  [Embedded sketches](#embedded-sketches)
-      -  [Annotated fat marker sketches](#annotated-fat-marker-sketches)
-    - [Ingredient 4. Rabbit holes](#ingredient-4-rabbit-holes)
-    - [Ingredient 5. No Gos](#ingredient-5-no-gos)
-    - [Examples](#examples)
-    - [Ready to present](#ready-to-present)
-    - [How we do it in Basecamp](#how-we-do-it-in-basecamp)
-- Part 2: Betting
-  - Bets, Not Backlogs 
-    - [No backlogs](#no-backlogs)
-    - [A few potential bets](#a-few-potential-bets)
-    - [Decentralized lists](#decentralized-lists)
-    - [Important ideas come back](#important-ideas-come-back)
-  - Bet Six Weeks 
-    - [Six-week cycles](#six-week-cycles)
-    - [Cool-down](#cool-down)
-    - [Team and project sizes](#team-and-project-sizes)
-    - [The betting table](#the-betting-table)
-    - [The meaning of a bet](#the-meaning-of-a-bet)
-    - [Uninterrupted time](#uninterrupted-time)
-    - [The circuit breaker](#the-circuit-breaker)
-    - [What about bugs?](#what-about-bugs)
-    - [Keep the slate clean](#keep-the-slate-clean)
-    - [Common questions to ask](#questions-to-ask)
-      - [Does the problem matter?](#does-the-problem-matter)
-      - [Is the appetite right?](#is-the-appetite-right)
-      - [Is the solution attractive?](#is-the-solution-attractive)
-      - [Is this the right time?](#is-this-the-right-time)
-      - [Are the right people available?](#are-the-right-people-available)
-    - [Make the announcement](#make-the-announcement)
-- xxx Part 3: Building
-  - xxx Hand Over Responsibility 
-    - [xxx Assign projects, not tasks](#assign-projects-not-tasks)
-    - [xxx Done means deployed](#done-means-deployed)
-    - [xxx Kick-off](#kick-off)
-    - [xxx Getting oriented](#getting-oriented)
-    - [xxx Imagined vs discovered tasks](#imagined-vs-discovered-tasks)
-  - xxx Get One Piece Done 
-    - [xxx Integrate one slice](#integrate-one-slice)
-    - [xxx Case study: Clients in projects](#case-study-clients-in-projects)
-    - [xxx Programmers don’t need to wait](#programmers-dont-need-to-wait)
-    - xxx Affordances before pixel-perfect
-    - xxx Program just enough for the next
-    - [xxx Start in the middle](#start-in-the-middle)
-  - xxx Map the Scopes 
-    - xxx Organize by structure, not by
-    - [xxx The scope map](#the-scope-map)
-    - [xxx The language of the project](#the-language-of-the-project)
-    - [xxx Case study: Message drafts](#case-study-message-drafts)
-    - [xxx Discovering scopes](#discovering-scopes)
-    - [xxx How to know if the scopes are right](#how-to-know-if-the-scopes-are-right)
-    - [xxx Layer cakes](#layer-cakes)
-    - [xxx Icebergs](#icebergs)
-    - [xxx Chowder](#chowder)
-    - [xxx Mark nice-to-haves with ~](#mark-nice-to-haves-with-)
-  - xxx Show Progress 
-    - [xxx The tasks that aren’t there](#the-tasks-that-arent-there)
-    - [xxx Estimates don’t show uncertainty](#estimates-dont-show-uncertainty)
-    - [xxx Work is like a hill](#work-is-like-a-hill)
-    - [xxx Scopes on the hill](#scopes-on-the-hill)
-    - [xxx Status without asking](#status-without-asking)
-    - [xxx Nobody says “I don’t know”](#nobody-says-i-dont-know)
-    - [xxx Prompts to refactor the scopes](#prompts-to-refactor-the-scopes)
-    - [xxx Build your way uphill](#build-your-way-uphill)
-    - [xxx Solve in the right sequence](#solve-in-the-right-sequence)
-  - xxx Decide When to Stop 
-    - [xxx Compare to baseline](#compare-to-baseline)
-    - [xxx Limits motivate trade-offs](#limits-motivate-trade-offs)
-    - [xxx Scope grows like grass](#scope-grows-like-grass)
-    - xxx Cutting scope isn’t lowering
-    - [xxx Scope hammering](#scope-hammering)
-    - [xxx QA is for the edges](#qa-is-for-the-edges)
-    - [xxx When to extend a project](#when-to-extend-a-project)
-  - xxx Move On 
-    - [xxx Let the storm pass](#let-the-storm-pass)
-    - [xxx Stay debt-free](#stay-debt-free)
-    - [xxx Feedback needs to be shaped](#feedback-needs-to-be-shaped)
-  - xxx Conclusion 
-    - [xxx Key concepts](#key-concepts)
-    - [xxx Get in touch](#get-in-touch)
-
-
+  - [Introduction](#Introduction)
+- [Part 1: Shaping](#Part-1:-Shaping)
+  - [Principles of Shaping-](#Principles-of-Shaping)
+  - [Set Boundaries](#Set-Boundaries)
+  - [Find the Elements](#Find-the-Elements)
+  - [Risks and Rabbit Holes](#Risks-and-Rabbit-Holes)
+  - [Write the Pitch](#Write-the-Pitch)
+- [Part 2: Betting](#Part-2:-Betting)
+  - [Bets, Not Backlogs](#Bets,-Not-Backlogs)
+  - [Bet Six Weeks](#Bet-Six-Weeks)
+- [xxx Part 3: Building](#xxx-Part-3:-Building)
+  - [xxx Hand Over Responsibility](#xxx-Hand-Over-Responsibility)
+  - [xxx Get One Piece Done](#xxx-Get-One-Piece-Done)
+  - [xxx Map the Scopes](#xxx-Map-the-Scopes)
+  - [xxx Show Progress](#xxx-Show-Progress)
+  - [xxx Decide When to Stop](#xxx-Decide-When-to-Stop)
+  - [xxx Move On](#xxx-Move-On)
+  - [xxx Conclusion](#xxx-Conclusion)
 
 ## Introduction
 
