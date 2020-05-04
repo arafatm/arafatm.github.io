@@ -800,23 +800,24 @@ ideas for what to do next.
 This approach spreads out the responsibility for prioritizing and tracking what
 to do and makes it manageable. 
 
-### xxx Important ideas come back[](#important-ideas-come-back)
+### Important ideas come back[](#important-ideas-come-back)
 
 It’s easy to overvalue ideas. The truth is, ideas are cheap. They come up all
 the time and accumulate into big piles.
 
 Really important ideas will come back to you. 
 
-When’s the last time you forgot a
-really great, inspiring idea? And if it’s not that interesting - maybe a bug that
-customers are running into from time to time - it’ll come back to your attention
-when a customer complains again or a new customer hits it. If you hear it once
-and never again, maybe it wasn’t really a problem. And if you keep hearing
-about it, you’ll be motivated to shape a solution and pitch betting time on it
-in the next cycle.
+When’s the last time you forgot a really great, inspiring idea? 
+
+And if it’s not that interesting - maybe a bug that customers are running into
+from time to time - it’ll come back to your attention when a customer complains
+again or a new customer hits it. 
+
+If you hear it once and never again, maybe it wasn’t really a problem. And if
+you keep hearing about it, you’ll be motivated to shape a solution and pitch
+betting time on it in the next cycle.
 
 ## xxx Bet Six Weeks 
-
 
 ![Cartoon. Three people sit around a table. The person in the middle is
 standing and presenting a document. The person on the left says: Won't that
