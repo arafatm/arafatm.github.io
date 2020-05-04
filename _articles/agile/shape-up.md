@@ -748,16 +748,16 @@ Our CTO responds with technical thoughts on the pitch.
 
 ---
 
-# xxx Part 2: Betting
+# Part 2: Betting
 
-## xxx Bets, Not Backlogs 
+## Bets, Not Backlogs 
 
 ![Cartoon. A person stands in front of a wall covered in countless sticky
 notes. A thought bubble above the person says: This is ridiculous. We'll never
 get all this
 done.](https://basecamp.com/assets/books/shapeup/2.1/intro_cartoon-562591e3436e67b04d32287bdc7ff45bfcdb284bfec3ac9a42c14e04f8ab9025.png)
 
-### xxx No backlogs[](#no-backlogs)
+### No backlogs[](#no-backlogs)
 
 Backlogs are a big weight we don’t need to carry. Dozens and eventually
 hundreds of tasks pile up that we all know we’ll never have time for. 
@@ -768,7 +768,7 @@ The time spent constantly reviewing, grooming and organizing old ideas prevents
 everyone from moving forward on the timely projects that really matter right
 now.
 
-### xxx A few potential bets[](#a-few-potential-bets)
+### A few potential bets[](#a-few-potential-bets)
 
 So what do we do instead? Before each six-week cycle, we hold a **betting table**
 where stakeholders decide what to do in the next cycle. At the betting table,
@@ -782,7 +782,7 @@ What if the pitch was great, but the time just wasn’t right? Anyone who wants
 to advocate for it again simply tracks it independently - their own way - and
 then _lobbies for it six weeks later_.
 
-### xxx Decentralized lists[](#decentralized-lists)
+### Decentralized lists[](#decentralized-lists)
 
 We don’t have to choose between a burdensome backlog and not remembering
 anything from the past. Everyone can still track pitches, bugs, requests, or
@@ -826,30 +826,20 @@ Notif we focus on this one use case. The person on the right leans back and
 observes the
 discussion.](https://basecamp.com/assets/books/shapeup/2.2/intro_cartoon-cb716b39a86cb267e54549f739854b7c7b768da7316b8b0c495deba2805ccb10.png)
 
-### xxx Six-week cycles[](#six-week-cycles)
+### Six-week cycles[](#six-week-cycles)
 
 Committing time and people is difficult if we can’t easily determine who’s
-available and for how long. When people are available at different times due to
-overlapping projects, project planning turns into a frustrating game of
-Calendar Tetris. Working in cycles drastically simplifes this problem. A cycle
-gives us a standard project size both for shaping and scheduling.
+available and for how long. 
 
-Some companies use two-week cycles (aka “sprints”). We learned that two weeks
-is too short to get anything meaningful done. Worse than that, two-week cycles
-are extremely costly due to the planning overhead. The amount of work you get
-out of two weeks isn’t worth the collective hours around the table to “sprint
-plan” or the opportunity cost of breaking everyone’s momentum to re-group.
+When people are available at different times due to overlapping projects,
+project planning turns into a frustrating game of Calendar Tetris. **Working in
+cycles** drastically simplifes this problem. A cycle gives us a standard
+project size both for shaping and scheduling.
 
-This led us to try longer cycles. We wanted a cycle that would be long enough
-to finish a whole project, start to end. At the same time, cycles need to be
-short enough to see the end from the beginning. People need to feel the
-deadline looming in order to make trade-offs. If the deadline is too distant
-and abstract at the start, teams will naturally wander and use time
-inefficiently until the deadline starts to get closer and feel real.
+Two weeks is too short to get anything meaningful done. 
 
-After years of experimentation we arrived at **six weeks**. Six weeks is long
-enough to finish something meaningful and still short enough to see the end
-from the beginning.
+**Six weeks** is long enough to finish something meaningful and still short
+enough to see the end from the beginning.
 
 ### xxx Cool-down[](#cool-down)
 
