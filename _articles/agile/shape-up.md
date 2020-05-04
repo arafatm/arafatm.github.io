@@ -72,13 +72,13 @@ programming early.
 
 ### How this book is organized[](#how-this-book-is-organized)
 
-Part One is all about **Shaping**  -  the pre-work we do on projects before we
+Part One is all about **Shaping** - the pre-work we do on projects before we
 consider them ready to schedule. 
 
-Part Two is about **Betting**  -  how we choose among the pitched projects and
+Part Two is about **Betting** - how we choose among the pitched projects and
 decide what to do six weeks at a time.
 
-Part Three is about **Building**  -  the expectations we place on the teams and
+Part Three is about **Building** - the expectations we place on the teams and
 the special practices they use to discover what to do. 
 
 Lastly the Appendix gives you some help for when it’s time to make changes at
@@ -398,7 +398,7 @@ designers in subsequent phases of the project.
 
 ### Not deliverable yet[](#not-deliverable-yet)
 
-It’s normal for the artifacts at this point  -  on the wall or in your notebook  - 
+It’s normal for the artifacts at this point - on the wall or in your notebook  - 
 to be more or less indecipherable to anybody who wasn’t there with you.
 
 The next step is to do some stress-testing and de-risking. 
@@ -536,7 +536,7 @@ That means we’re ready to make the transition from privately shaping and
 getting feedback from an inner-circle to presenting the idea at the **betting
 table**. 
 
-## xxx Write the Pitch 
+## Write the Pitch 
 
 ![Cartoon. A person stands at a desk. To their right is a whiteboard with a
 breadboard and fat marker sketch. At the table in front of them is an open
@@ -545,122 +545,57 @@ stylus above the tablet while thinking: Are they going to get
 it?](https://basecamp.com/assets/books/shapeup/1.5/intro_cartoon-21b07e1550340b500fe1728a0c2807a919213049bc1a6f9fab79dca4a96a1cff.png)
 
 We’ve got the elements of a solution now, and we’ve de-risked our concept to
-the point that we’re confident it’s a good option to give a team. But the
-concept is still in our heads or in some hard-to-decipher drawings on the
-whiteboard or our notebook. Now we need to put the concept into a form that
-other people will be able to understand, digest, and respond to.
+the point that we’re confident it’s a good option to give a team. 
 
-This is where we say “Okay, this is ready to write up as a pitch.” In this
-chapter, we’ll walk through the ingredients of a pitch and show some fully
-worked out examples from real projects at Basecamp.
+Now we need to put the concept into a form that other people will be able to
+understand, digest, and respond to.
 
 The purpose of the pitch is to present a good potential bet. It’s basically a
-presentation. The ingredients are all the things that we need to both capture
-the work done so far and present it in a form that will enable the people who
-schedule projects to make an informed bet.
+presentation. 
 
 There are five ingredients that we always want to include in a pitch:
+1. **Problem** - The raw idea, a use case, or something we’ve seen that
+   motivates us to work on this
+2. **Appetite** - How much time we want to spend and how that constrains the
+   solution
+3. **Solution** - The core elements we came up with, presented in a form
+   that’s easy for people to immediately understand
+4. **Rabbit holes** - Details about the solution worth calling out to avoid
+   problems
+5. **No-gos** - Anything specifically excluded from the concept:
+   functionality or use cases we intentionally aren’t covering to fit the
+   appetite or make the problem tractable
 
-1.  **Problem**  -  The raw idea, a use case, or something we’ve seen that
-motivates us to work on this
-2.  **Appetite**  -  How much time we want to spend and how that constrains the
-solution
-3.  **Solution**  -  The core elements we came up with, presented in a form
-that’s easy for people to immediately understand
-4.  **Rabbit holes**  -  Details about the solution worth calling out to avoid
-problems
-5.  **No-gos**  -  Anything specifically excluded from the concept: functionality
-or use cases we intentionally aren’t covering to fit the appetite or make the
-problem tractable
+### Ingredient 1. Problem[](#ingredient-1-problem)
 
-### xxx Ingredient 1. Problem[](#ingredient-1-problem)
-
-It’s critical to always present both a problem and a solution together. It
-sounds like an obvious point but it’s surprising how often teams, our own
-included, jump to a solution with the assumption that it’s obvious why it’s a
-good idea to build this thing.
+It’s critical to always present both a problem and a solution together. 
 
 Diving straight into “what to build” - the solution - is dangerous. You don’t
 establish any basis for discussing whether this solution is good or bad without
-a problem. “Add tabs to the iPad app” might be attractive to UI designers, but
-what’s to prevent the discussion from devolving into a long debate about
-different UI approaches? Without a specific problem, there’s no test of fitness
-to judge whether one solution is better than the other.
+a problem. 
 
-Establishing the problem also lets us have a clearer conversation later when
-it’s time to pitch the idea or bet on it. The solution might be perfect, but
-what if the problem only happens to customers who are known to be a poor fit to
-the product? We could spend six weeks on an ingenious solution that only
-benefits a small percentage of customers known to have low retention. We want
-to be able to separate out that discussion about the demand so we don’t spend
-time on a good solution that doesn’t benefit the right people.
+The best problem definition consists of a single specific story that shows why
+the status quo doesn’t work.
 
-How far you have to go to spell out the problem will depend on how much context
-you share with the people reading the write-up. The best problem definition
-consists of a single specific story that shows why the status quo doesn’t work.
-This gives you a **baseline** to test fitness against. People will be able to
-weigh the solution against this specific problem - or other solutions if a debate
-ensues - and judge whether or not that story has a better outcome with the new
-solution swapped in.
+### Ingredient 2. Appetite[](#ingredient-2-appetite)
 
-### xxx Ingredient 2. Appetite[](#ingredient-2-appetite)
+Not only do we want to solve this use case, we want to come up with a way to do
+it in six weeks, not three months, or - in the case of a **small batch**
+project - two weeks, not the whole six weeks.
 
-You can think of the appetite as another part of the problem definition. Not
-only do we want to solve this use case, we want to come up with a way to do it
-in six weeks, not three months, or - in the case of a **small batch** project - two
-weeks, not the whole six weeks.
+### Ingredient 3. Solution[](#ingredient-3-solution)
 
-Stating the appetite in the pitch prevents unproductive conversations. There’s
-always a better solution. The question is, if we only care enough to spend two
-weeks on this now, how does _this specific solution_ look?
-
-Anybody can suggest expensive and complicated solutions. It takes work and
-design insight to get to a simple idea that fits in a small time box. Stating
-the appetite and embracing it as a constraint turns everyone into a partner in
-that process.
-
-### xxx Ingredient 3. Solution[](#ingredient-3-solution)
-
-Like solutions with no problems, sometimes companies bet on problems with no
-solution. “We really need to make it easier to find things on the messages
-section. Customers are complaining about it.”
-
-That’s not ready to pitch or bet on. A problem without a solution is unshaped
-work. Giving it to a team means pushing research and exploration down to the
-wrong level, where the skillsets, time limit, and risk profile (thin vs. heavy
-tailed) are all misaligned.
+A problem without a solution is unshaped work. 
 
 If the solution isn’t there, someone should go back and do the shaping work on
-the shaping track. It’s only ready to bet on when problem, appetite, and
-solution come together. Then you can scrutinize the fit between problem and
-solution and judge whether it’s a good bet or not.
+the shaping track. 
 
-### xxx Help them see it[](#help-them-see-it)
-
-During the elements phase, it was critical to sketch ideas at the right level
-of abstraction so we didn’t slow down or lose any of the ideas appearing at the
-corners of our brains and tips of our tongues.
-
-We also need to draw at the right level of detail when we write the pitch. Here
-the challenge is a little different. We have time to slow down and prepare a
-proper presentation. We need to stay high level, but add a little more
-concreteness than when we worked alone or with a partner. People who read the
-pitch and look at the drawings without much context need to “get” the idea.
+### Help them see it[](#help-them-see-it)
 
 We need more concreteness, but we don’t want to over-specify the design with
-wireframes or high-fidelity mocks. They’ll box in the designers who do the work
-later. We also risk side-tracking the discussion into topics like color,
-proportions, or layout that have nothing to do with the actual shaping work we
-did.
+wireframes or high-fidelity mocks. 
 
-At the same time, hand-written breadboards have a “you had to be there” quality
-to them. To people who didn’t watch the breadboard unfold step by step, it can
-look like a soup of words and arrows.
-
-Therefore we need some techniques to help people see the idea while still not
-going too far into irrelevant details.
-
-#### xxx Embedded sketches[](#embedded-sketches)
+#### Embedded sketches[](#embedded-sketches)
 
 Suppose your breadboard from the shaping session looked like this:
 
@@ -690,19 +625,7 @@ line divides the box. To its right a rough sketch of a payment form appears
 with the words Go to Your Form above
 it.](https://basecamp.com/assets/books/shapeup/1.5/fat_marker_dashboard-8e3d19b9388470aea447a7d57d8aed50fe7c2a00952922a9b1d442a6ac38fec4.png)
 
-This makes it easier to see what the elements are and evaluate how clearly the
-feature presents itself on the dashboard. The downside is we’ve gotten into
-some layout decisions that would have been nice to avoid. Designers should feel
-free to find a different design than the box divided with a vertical line. We’d
-add a disclaimer here in the pitch that reminds designers of the latitude they
-should take.
-
-This is an example of selectively getting into more visual detail because we
-need it to sell the concept. Fortunately, we won’t need to make as many visual
-decisions in other parts of the concept. This was a “linchpin” part of the
-design that everybody had to see concretely in order to “get” it.
-
-#### xxx Annotated fat marker sketches[](#annotated-fat-marker-sketches)
+#### Annotated fat marker sketches[](#annotated-fat-marker-sketches)
 
 Sometimes ideas are inherently visual or a little too complicated to express in
 a schematic breadboard. Fat marker sketches can be very effective in a pitch;
@@ -724,24 +647,16 @@ the left. The numbers are drawn neatly in white on black circles so they look
 like
 call-outs.](https://basecamp.com/assets/books/shapeup/1.5/annotated_fat_marker_sketch-674c176b4187fe19ff4d633282201928a983e3f9aa8e422c5952ce01e540c551.jpg)
 
-### xxx Ingredient 4. Rabbit holes[](#ingredient-4-rabbit-holes)
+### Ingredient 4. Rabbit holes[](#ingredient-4-rabbit-holes)
 
-Sometimes addressing a rabbit hole just requires a few lines of text. For
-example, in the Payment Form project above, the shapers wanted to call out a
-specific solution for how to create URLs. The URLs would never live on custom
-domains for v1 of the project. This is the kind of thing that’s not central to
-the concept, but spelling it out patches a potential rabbit hole.
+Sometimes addressing a rabbit hole just requires a few lines of text. 
 
-### xxx Ingredient 5. No Gos[](#ingredient-5-no-gos)
+### Ingredient 5. No Gos[](#ingredient-5-no-gos)
 
 Lastly if there’s anything we’re _not_ doing in this concept, it’s good to
-mention it here. In the case of the Payment Form project, the team decided up
-front that they wouldn’t allow any kind of WYSIWYG editing of the form. Users
-would only be able to provide a logo and customize the header text on a
-separate “customize” page. WYSIWYG might be better in some peoples’ eyes, but
-given the appetite it was important to mark this as a no-go.
+mention it here. 
 
-### xxx Examples[](#examples)
+### Examples[](#examples)
 
 Here are two examples of real pitches.
 
@@ -774,38 +689,37 @@ Two videos show the problem. A fat marker sketch and a breadboard describe the
 solution. The black boxes contain data visualizations that support trade-offs
 in the solution.
 
-### xxx Ready to present[](#ready-to-present)
-
-The next step will be to make the case that this pitch describes a bet worth
-making. This can happen in a couple ways.
+### Ready to present[](#ready-to-present)
 
 We prefer asynchronous communication by default and escalate to real-time only
-when necessary. This gives everyone the maximum amount of time under their own
-control for doing real work. That means the first step for presenting a pitch
-is posting the write-up with all the ingredients above somewhere that
-stakeholders can read it on their own time. This keeps the **betting table**
+when necessary. 
+
+That means the first step for presenting a pitch is posting the write-up with
+all the ingredients above somewhere that stakeholders can read it on their own
+time. 
+This keeps the **betting table**
 short and productive. In ideal conditions everyone has time to read the pitches
 in advance. And if that isn’t possible in some cases, the pitch is ready to
 pull up for a quick live sell.
 
-### xxx How we do it in Basecamp[](#how-we-do-it-in-basecamp)
+### How we do it in Basecamp[](#how-we-do-it-in-basecamp)
 
 We post pitches as Messages in [Basecamp](https://basecamp.com/). We created a
 Message Category called _Pitch_ so we can easily find them. Pitches are posted
 to a Team called _Product Strategy_ that can be accessed by people on the
 betting table.
 
- [![A screenshot of a Message Board in a Basecamp team called Product Strategy.
- Five Pitches appear in the
- list.](https://basecamp.com/assets/books/shapeup/1.5/in_basecamp/message_board-a06e9431a81441c11011bd5ca2fcb1498b855124ebb7a0ad1e2ab68ddb0b66fd.png)](https://basecamp.com/assets/books/shapeup/1.5/in_basecamp/message_board-a06e9431a81441c11011bd5ca2fcb1498b855124ebb7a0ad1e2ab68ddb0b66fd.png) 
+[![A screenshot of a Message Board in a Basecamp team called Product Strategy.
+Five Pitches appear in the
+list.](https://basecamp.com/assets/books/shapeup/1.5/in_basecamp/message_board-a06e9431a81441c11011bd5ca2fcb1498b855124ebb7a0ad1e2ab68ddb0b66fd.png)](https://basecamp.com/assets/books/shapeup/1.5/in_basecamp/message_board-a06e9431a81441c11011bd5ca2fcb1498b855124ebb7a0ad1e2ab68ddb0b66fd.png) 
 
 Pitches on the Message Board of the Product Strategy team in Basecamp
 
- [![A screenshot of a Pitch posted as a Message in Basecamp. It is titled: Sort
- Messages Setting (Revised). It looks like a document. The first part of the
- pitch describes an example customer case. The second section is titled
- 'Looking for a 1-weeker' and describes the
- appetite.](https://basecamp.com/assets/books/shapeup/1.5/in_basecamp/sort_messages-45fcd7f0e22f160ca59e6900590f19968f54d9ae416865396062fd4b061df449.png)](https://basecamp.com/assets/books/shapeup/1.5/in_basecamp/sort_messages-45fcd7f0e22f160ca59e6900590f19968f54d9ae416865396062fd4b061df449.png) 
+[![A screenshot of a Pitch posted as a Message in Basecamp. It is titled: Sort
+Messages Setting (Revised). It looks like a document. The first part of the
+pitch describes an example customer case. The second section is titled 'Looking
+for a 1-weeker' and describes the
+appetite.](https://basecamp.com/assets/books/shapeup/1.5/in_basecamp/sort_messages-45fcd7f0e22f160ca59e6900590f19968f54d9ae416865396062fd4b061df449.png)](https://basecamp.com/assets/books/shapeup/1.5/in_basecamp/sort_messages-45fcd7f0e22f160ca59e6900590f19968f54d9ae416865396062fd4b061df449.png) 
 
 A pitch as a Message. Note the one-week **appetite**. This was a **Small Batch**
 project.
@@ -815,27 +729,22 @@ iPad (with [Notability](https://www.gingerlabs.com/)) and take a screenshot.
 Basecamp’s text editor makes it easy to insert images and caption them so they
 make sense in the flow of the pitch.
 
- [![Screenshot of another Pitch in Basecamp. The part of the pitch that is
- scrolled into view has a fat marker sketch embedded in the
- middle.](https://basecamp.com/assets/books/shapeup/1.5/in_basecamp/sketches_in_message-44bbfe2f97a960cd88aa15b7e1fc11371d13c1af9ab1008a687ba83adca1df40.png)](https://basecamp.com/assets/books/shapeup/1.5/in_basecamp/sketches_in_message-44bbfe2f97a960cd88aa15b7e1fc11371d13c1af9ab1008a687ba83adca1df40.png) 
+[![Screenshot of another Pitch in Basecamp. The part of the pitch that is
+scrolled into view has a fat marker sketch embedded in the
+middle.](https://basecamp.com/assets/books/shapeup/1.5/in_basecamp/sketches_in_message-44bbfe2f97a960cd88aa15b7e1fc11371d13c1af9ab1008a687ba83adca1df40.png)](https://basecamp.com/assets/books/shapeup/1.5/in_basecamp/sketches_in_message-44bbfe2f97a960cd88aa15b7e1fc11371d13c1af9ab1008a687ba83adca1df40.png) 
 
 A sketch drawn on an iPad in the middle of a pitch
 
-People comment on the pitch asynchronously. Not to say yes or no  -  that happens
-at the betting table  -  but to poke holes or contribute missing information.
+People comment on the pitch asynchronously. Not to say yes or no - that happens
+at the betting table - but to poke holes or contribute missing information.
 
- [![A screenshot of a pitch that is scrolled down to the bottom. A breadboard
- appears at the end of the document. Below that, a comment thread begins. The
- first comment is by David, the CTO, providing information about what the pitch
- requires from a technical
- standpoint.](https://basecamp.com/assets/books/shapeup/1.5/in_basecamp/sort_messages_comments-4b6ed91df6e5be6757d749f46b086deb5b916be3c59d4dcacb3061003155bdec.png)](https://basecamp.com/assets/books/shapeup/1.5/in_basecamp/sort_messages_comments-4b6ed91df6e5be6757d749f46b086deb5b916be3c59d4dcacb3061003155bdec.png) 
+[![A screenshot of a pitch that is scrolled down to the bottom. A breadboard
+appears at the end of the document. Below that, a comment thread begins. The
+first comment is by David, the CTO, providing information about what the pitch
+requires from a technical
+standpoint.](https://basecamp.com/assets/books/shapeup/1.5/in_basecamp/sort_messages_comments-4b6ed91df6e5be6757d749f46b086deb5b916be3c59d4dcacb3061003155bdec.png)](https://basecamp.com/assets/books/shapeup/1.5/in_basecamp/sort_messages_comments-4b6ed91df6e5be6757d749f46b086deb5b916be3c59d4dcacb3061003155bdec.png) 
 
 Our CTO responds with technical thoughts on the pitch.
-
-- * *
-
-In the next chapter we’ll look at the betting process in more detail to see
-where pitches go and how we turn them into scheduled projects.
 
 ---
 
@@ -867,7 +776,7 @@ timely projects that really matter right now.
 
 So what do we do instead? Before each six-week cycle, we hold a **betting table**
 where stakeholders decide what to do in the next cycle. At the betting table,
-they look at pitches from the last six weeks  -  or any pitches that somebody
+they look at pitches from the last six weeks - or any pitches that somebody
 purposefully revived and lobbied for again.
 
 Nothing else is on the table. There’s no giant list of ideas to review. There’s
@@ -1630,7 +1539,7 @@ on a white field and are themselves very
 unstyled.](https://basecamp.com/assets/books/shapeup/3.2/affordances_first-da6f456fef0a4f777495bf1a99b8a66a76598919c1838e919bf1e707eac0019c.png)
 
 This screenshot is from a registration app for multi-day courses. The designer
-made it in HTML by hand. There’s barely any style  -  just enough visual
+made it in HTML by hand. There’s barely any style - just enough visual
 hierarchy to feel confident that the layout is usable and amenable to future
 layers of styling.
 
@@ -1680,7 +1589,7 @@ beings with the word 'So' followed by a text field and an 'Add' button. The
 edit links and the Add button are
 unstyled.](https://basecamp.com/assets/books/shapeup/3.2/treehouse_pulls-c0044de294f1af4a45224a55414e98e14e22b73531a700d44e398fb1bd4d5350.png)
 
-This is the first design for adding and editing “pulls”  -  a type of data in
+This is the first design for adding and editing “pulls” - a type of data in
 this interview technique. Again, look at how raw it is. There’s just enough
 design here to quickly wire it up and test it. The team can click through this
 to judge whether navigating to a separate screen to record data is acceptable
