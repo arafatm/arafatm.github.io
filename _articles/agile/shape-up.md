@@ -403,7 +403,7 @@ to be more or less indecipherable to anybody who wasn’t there with you.
 
 The next step is to do some stress-testing and de-risking. 
 
-### xxx No conveyor belt[](#no-conveyor-belt)
+### No conveyor belt[](#no-conveyor-belt)
 
 Also keep in mind that, at this stage, we could walk away from the project. **We
 haven’t bet on it**. 
