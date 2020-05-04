@@ -213,7 +213,7 @@ For that reason we have two separate tracks:
 3. **Address risks and rabbit holes.** 
 4. **Write the pitch**. 
 
-## Set Boundaries 
+## Set Boundaries[](#Set-Boundaries) 
 
 ![Cartoon. In the background, three people talk around a table. One says 'They
 said they wanted categories.' The other says 'We should redesign the whole
