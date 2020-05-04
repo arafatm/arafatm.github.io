@@ -6,6 +6,7 @@ author: Ryan Singer - Basecamp
 title: Shape Up
 ---
 
+Table of Contents
   - Introduction
     - [Growing pains](#growing-pains)
     - [Six-week cycles](#six-week-cycles)
