@@ -26,7 +26,7 @@ Table of Contents
   - [xxx Move On](#xxx-Move-On)
   - [xxx Conclusion](#xxx-Conclusion)
 
-## Introduction
+## Introduction[](#introduction)
 
 ### Growing pains[](#growing-pains)
 
@@ -108,7 +108,7 @@ your company.
 
 # Part 1: Shaping
 
-## Principles of Shaping 
+## Principles of Shaping[](#Principles-of-Shaping)
 
 ![A vertical axis marked Abstract at the top and Concrete at the bottom. In the
 middle a zone is marked
@@ -291,7 +291,7 @@ When we have all three things
 
 then we’re ready to move to the next step and define the elements of a solution.
 
-## Find the Elements 
+## Find the Elements[](#Find-the-Elements) 
 
 ![A cartoon. Two people are sketching on a whiteboard animatedly. One says
 'a-ha!' while pointing to what they've drawn and the other, still sketching,
