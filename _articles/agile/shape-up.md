@@ -841,161 +841,111 @@ Two weeks is too short to get anything meaningful done.
 **Six weeks** is long enough to finish something meaningful and still short
 enough to see the end from the beginning.
 
-### xxx Cool-down[](#cool-down)
+### Cool-down[](#cool-down)
 
-If we were to run six-week cycles back to back, there wouldn’t be any time to
-breathe and think about what’s next. The end of a cycle is the worst time to
-meet and plan because everybody is too busy finishing projects and making
-last-minute decisions in order to ship on time.
-
-Therefore, after each six-week cycle, we schedule two weeks for **cool-down**.
-This is a period with no scheduled work where we can breathe, meet as needed,
-and consider what to do next.
+After each six-week cycle, we schedule two weeks for **cool-down**.  This is a
+period with no scheduled work where we can breathe, meet as needed, and
+consider what to do next.
 
 During cool-down, programmers and designers on project teams are free to work
-on whatever they want. After working hard to ship their six-week projects, they
-enjoy having time that’s under their control. They use it to fix bugs, explore
-new ideas, or try out new technical possibilities.
+on whatever they want. 
 
-### xxx Team and project sizes[](#team-and-project-sizes)
+### Team and project sizes[](#team-and-project-sizes)
 
 In addition to standardizing the length of our cycles, we also roughly
 standardize the types of projects and teams that we bet on.
 
 Our project teams consist of either one designer and two programmers or one
-designer and one programmer. They’re joined by a QA person who does integration
-testing later in the cycle.
+designer and one programmer. 
+
+They’re joined by a QA person who does integration testing later in the cycle.
 
 These teams will either spend the entire cycle working on one project, or
-they’ll work on multiple smaller projects during the cycle. We call the team
-that spends the cycle doing one project the **big batch** team and the team
-working on a set of smaller projects the **small batch** team. Small batch
-projects usually run one or two weeks each. Small batch projects aren’t
-scheduled individually. It’s up to the small batch team to figure out how to
-juggle the work so they all ship before the end of the cycle.
+they’ll work on multiple smaller projects during the cycle. 
 
-Now that we have a standard way to think about capacity, we can talk about how
-we decide what to schedule.
+We call the team that spends the cycle doing one project the **big batch** team
+and the team working on a set of smaller projects the **small batch** team. 
 
-### xxx The betting table[](#the-betting-table)
+Small batch projects usually run one or two weeks each.  It’s up to the small
+batch team to figure out how to juggle the work so they all ship before the end
+of the cycle.
+
+Now that we have a **standard way to think about capacity**, we can talk about
+how we decide what to schedule.
+
+### The betting table[](#the-betting-table)
 
 The **betting table** is a meeting held during cool-down where stakeholders
-decide what to do in the next cycle. The potential bets to consider are either
-new pitches shaped during the last six weeks, or possibly one or two older
-pitches that someone specifically chose to revive. As we said last chapter,
-there’s no “grooming” or backlog to organize. Just a few good options to
-consider.
+decide what to do in the next cycle. 
 
 Our betting table at Basecamp consists of the CEO (who in our case is the last
 word on product), CTO, a senior programmer, and a product strategist (myself).
 
 C-level time is only available in small slices, so there’s an atmosphere of
-“waste no time” and the call rarely goes longer than an hour or two. Everyone
-has had a chance to study the pitches on their own time beforehand. Ad-hoc
-one-on-one conversations in the weeks before usually establish some context
-too. Once the call starts, it’s all about looking at the options that made it
-to the table and making decisions.
+“waste no time” and the call rarely goes longer than an hour or two. 
 
-The output of the call is a cycle plan. Between everyone present, there’s
-knowledge of who’s available, what the business priorities are, and what kind
-of work we’ve been doing lately. All of this feeds into the decision-making
-process about what to do and who to schedule (more on this below).
+Everyone has had a chance to study the pitches on their own time beforehand. 
 
-The highest people in the company are there. There’s no “step two” to validate
-the plan or get approval. And nobody else can jump in afterward to interfere or
-interrupt the scheduled work.
+Ad-hoc one-on-one conversations in the weeks before usually establish some
+context too. 
+
+The output of the call is a cycle plan. 
 
 This buy-in from the very top is essential to making the cycles turn properly.
-The meeting is short, the options well-shaped, and the headcount low. When
-these criteria are met, the betting table becomes a place to exercise control
-over the direction of the product instead of a battle for resources or a plead
-for prioritization. With cycles long enough to make meaningful progress and
-shaped work that will realistically ship, the betting table gives the C-suite a
-“hands on the wheel” feeling they haven’t had since the early days.
 
-### xxx The meaning of a bet[](#the-meaning-of-a-bet)
+The meeting is short, the options well-shaped, and the headcount low. 
+
+### The meaning of a bet[](#the-meaning-of-a-bet)
 
 We talk about “betting” instead of planning because it sets different
 expectations.
 
 First, bets have a payout. We’re not just filling a time box with tasks until
-it’s full. We’re not throwing two weeks toward a feature and hoping for
-incremental progress. We intentionally shape work into a six-week box so
-there’s something meaningful finished at the end. The pitch defines a specific
-payout that makes the bet worth making.
+it’s full. 
 
 Second, bets are commitments. If we bet six weeks, then we commit to giving the
 team the entire six weeks to work exclusively on that thing with no
-interruptions. We’re not trying to optimize every hour of a programmer’s time.
-We’re looking at the bigger movement of progress on the whole product after the
-six weeks.
+interruptions. 
 
 Third, a smart bet has a cap on the downside. If we bet six weeks on something,
-the most we can lose is six weeks. We don’t allow ourselves to get into a
-situation where we’re spending multiples of the original estimate for something
-that isn’t worth that price.
+the most we can lose is six weeks. 
 
-Let’s look at these last two points more closely.
-
-### xxx Uninterrupted time[](#uninterrupted-time)
+### Uninterrupted time[](#uninterrupted-time)
 
 It’s not really a bet if we say we’re dedicating six weeks but then allow a
 team to get pulled away to work on something else.
 
-When you make a bet, you honor it. We do not allow the team to be interrupted
-or pulled away to do other things. If people interrupt the team with requests,
-that breaks our commitment. We’d no longer be giving the team a whole six weeks
-to do work that was shaped for six weeks of time.
-
 When people ask for “just a few hours” or “just one day,” don’t be fooled.
 Momentum and progress are second-order things, like growth or acceleration. You
 can’t describe them with one point. You need an uninterrupted curve of points.
+
 When you pull someone away for one day to fix a bug or help a different team,
 you don’t just lose a day. You lose the momentum they built up and the time it
 will take to gain it back. Losing the wrong hour can kill a day. Losing a day
 can kill a week.
 
 What if something comes up during that six weeks? We still don’t interrupt the
-team and break the commitment. The maximum time we’d have to wait is six weeks
-before being able to act on the new problem or idea. If the cycle passes and
-that thing is still the most important thing to do, we can bet on it for that
-cycle. This is why it’s so important to only bet one cycle ahead. This keeps
-our options open to respond to these new issues. And of course, if it’s a real
-crisis, we can always hit the brakes. But true crises are very rare.
+team and break the commitment. 
 
-### xxx The circuit breaker[](#the-circuit-breaker)
+If the cycle passes and that thing is still the most important thing to do, we
+can bet on it for that cycle. 
+
+### The circuit breaker[](#the-circuit-breaker)
 
 We combine this uninterrupted time with a tough but extremely powerful policy.
-Teams have to ship the work within the amount of time that we bet. If they
-don’t finish, by default the project doesn’t get an extension. We intentionally
-create a risk that the project - as pitched - won’t happen. This sounds severe but
-it’s extremely helpful for everyone involved.
+Teams have to ship the work within the amount of time that we bet. _If they
+don’t finish, by default the project doesn’t get an extension_.
 
-First, it eliminates the risk of runaway projects. We defined our **appetite** at
-the start when the project was shaped and pitched. If the project was only
-worth six weeks, it would be foolish to spend two, three or ten times that.
-Very few projects are of the “at all costs” type and absolutely must happen
-now. We think of this like a **circuit breaker** that ensures one project doesn’t
-overload the system. One project that’s taking too long will never freeze us or
-get in the way of new projects that could be more important.
+First, it eliminates the risk of runaway projects. 
 
 Second, if a project doesn’t finish in the six weeks, it means we did something
-wrong in the shaping. Instead of investing more time in a bad approach, the
-circuit breaker pushes us to reframe the problem. We can use the shaping track
-on the next six weeks to come up with a new or better solution that avoids
-whatever rabbit hole we fell into on the first try. Then we’ll review the new
-pitch at the betting table to see if it really changes our odds of success
-before dedicating another six weeks to it.
+wrong in the shaping.  We can use the shaping track on the next six weeks to
+come up with a new or better solution. 
 
 Finally, the circuit breaker motivates teams to take more ownership over their
-projects. As we’ll see in the next chapter, teams are given full responsibilty
-for executing projects. That includes making trade-offs about implementation
-details and choosing where to cut scope. You can’t ship without making hard
-decisions about where to stop, what to compromise, and what to leave out. A
-hard deadline and the chance of not shipping motivates the team to regularly
-question how their design and implementation decisions are affecting the scope.
+projects. 
 
-### xxx What about bugs?[](#what-about-bugs)
+### What about bugs?[](#what-about-bugs)
 
 If the teams aren’t interrupted in the six week cycle, how do we handle bugs
 that come up?
@@ -1003,159 +953,82 @@ that come up?
 First we should step back and question our assumptions about bugs.
 
 There is nothing special about bugs that makes them automatically more
-important than everything else. The mere fact that something is a bug does not
-give us an excuse to interrupt ourselves or other people. All software has
-bugs. The question is: how severe are they? If we’re in a real crisis - data is
+important than everything else.  All software has bugs. 
+
+The question is: how severe are they? If we’re in a real crisis - data is
 being lost, the app is grinding to a halt, or a huge swath of customers are
 seeing the wrong thing - then we’ll drop everything to fix it. But _crises are
-rare_. The vast majority of bugs can wait six weeks or longer, and many don’t
-even need to be fixed. If we tried to eliminate every bug, we’d never be done.
-You can’t ship anything new if you have to fix the whole world first.
+rare_. 
 
 That said, nobody likes bugs. We still want ways to deal with them. Three
 strategies have worked for us.
+1. **Use cool-down**. 
+2. **Bring it to the betting table**. 
+3. **Schedule a bug smash**. Once a year - usually around the holidays - we’ll
+   dedicate a whole cycle to fixing bugs. 
 
-1.  **Use cool-down**. Ask any programmer if there are things they wish they
-could go back and fix and they’ll have a list to show you. The **cool-down**
-period between cycles gives them time to do exactly that. Six weeks is not long
-to wait for the majority of bugs, and two weeks every six weeks actually adds
-up to a lot of time for fixing them.
-2.  **Bring it to the betting table**. If a bug is too big to fix during
-cool-down, it can compete for resources at the betting table. Suppose a
-back-end process is slowing the app down and a programmer wants to change it
-from a synchronous step to an asynchronous job. The programmer can make the
-case for fixing it and shape the solution in a pitch. Then instead of
-interrupting other work, the people at the betting table can make a deliberate
-decision. Time should always be used strategically. There’s a huge difference
-between delaying other work to fix a bug versus deciding up front that the bug
-is worth the time to fix.
-3.  **Schedule a bug smash**. Once a year - usually around the holidays - we’ll
-dedicate a whole cycle to fixing bugs. We call it a “bug smash.” The holidays
-are a good time for this because it’s hard to get a normal project done when
-people are traveling or taking time off. The team can self-organize to pick off
-the most important bugs and solve long-standing issues in the front-end or
-back-end.
-
-### xxx Keep the slate clean[](#keep-the-slate-clean)
+### Keep the slate clean[](#keep-the-slate-clean)
 
 The key to managing capacity is giving ourselves a clean slate with every
 cycle. That means only betting one cycle at a time and never carrying scraps of
-old work over without first shaping and considering them as a new potential
-bet.
-
-It is crucial to maximize our options in the future. We don’t know what will
-happen in the next six weeks. We don’t know what brilliant idea will emerge or
-what urgent request might appear.
+old work over. 
 
 Even if we have some kind of road map in our heads at the time scale above
-cycles, we keep it in our heads and in our side-channel discussions. Each six
-weeks we learn what’s working and what isn’t, what’s important and what’s not.
-There’s no downside to keeping the option open and massive upside from being
-available to act on the unexpected.
+cycles, we keep it in our heads and in our side-channel discussions. 
 
 What about projects that just can’t be done in one cycle? In that case we still
-only bet six weeks at a time. Suppose we envision a feature that takes two
-cycles to ship. We reduce our risk dramatically by shaping a specific six week
-target, with something fully built and working at the end of that six weeks. If
-that goes as expected, we’ll feel good about betting the next six weeks the way
-we envisioned in our heads. But if it doesn’t, we could define a very different
-project. Or we could put the multi-cycle thing on pause and do something urgent
-that came up. The important thing is that we always shape what the end looks
-like for that cycle and that we keep our options open to change course.
+only bet six weeks at a time. 
 
-### xxx Questions to ask[](#questions-to-ask)
+We reduce our risk dramatically by shaping a specific six week target, with
+something fully built and working at the end of that six weeks. If that goes as
+expected, we’ll feel good about betting the next six weeks. 
 
-Here are some common questions you might hear on one of our betting table
-calls.
+### Common questions to ask[](#questions-to-ask)
 
-#### xxx Does the problem matter?[](#does-the-problem-matter)
-
-Just like in pitch write-ups, we always take care to separate problem and
-solution. The solution doesn’t matter if the problem isn’t worth solving.
+#### Does the problem matter?[](#does-the-problem-matter)
 
 Of course, any problem that affects customers matters. But we have to make
-choices because there will always be more problems than time to solve them. So
-we weigh problems against each other. Is _this_ problem more important than
+choices because there will always be more problems than time to solve them. 
+
+So we weigh problems against each other. Is _this_ problem more important than
 _that_ problem right now?
 
-How the people at the table judge problems depends on their perspective, role,
-and knowledge. For example, a problem might impact a small segment of customers
-but put a disproportionate burden on support. Depending on your exposure to
-support and which aspect of the business you’re focused on, you may weigh that
-differently.
-
-Sometimes a solution that is too complicated or too sweeping may invite
-questions about the problem. Do we really need to make so many changes across
-the app? Have we understood the problem specifically enough? Maybe there’s a
-way to narrow it down so that we get 80% of the benefit from 20% of the change.
-
-#### xxx Is the appetite right?[](#is-the-appetite-right)
+#### Is the appetite right?[](#is-the-appetite-right)
 
 It’s good when we have a solution shaped to a reasonable time frame, like two
-or six weeks. But we might still debate whether it’s worth the time. Suppose a
-stakeholder says they aren’t interested in spending six weeks on a given pitch.
-The negotiation could go a couple directions from there:
+or six weeks. But we might still debate whether it’s worth the time. 
 
-1.  Maybe the problem wasn’t articulated well enough, and there’s knowledge
-that the shaper can add to the conversation right now to swing opinion. For
-example, “Yeah it doesn’t happen often, but when it does people are so vocal
-about it that it really tarnishes perception of us.” Or “Maybe it sounds
-trivial, but support has to go through 11 time-consuming steps to get to
-resolution.”
-2.  Sometimes saying “no” to the time commitment is really saying no to
-something else. Maybe there’s something about the solution or the technical
-implementation they don’t like. Asking “How would you feel if we could do it in
-two weeks?” can uncover that it’s not so much about the time. The CTO might
-answer, “I don’t want to introduce another dependency into that area of the
-app.”
-3.  The shaper might just let the idea go if interest is too low.
-4.  The shaper might go back to the drawing table and either work on a smaller
-version (for a shorter appetite) or do more research if they believe the
-problem is compelling but they weren’t armed well enough to present it.
+Suppose a stakeholder says they aren’t interested in spending six weeks on a
+given pitch.  The negotiation could go a couple directions from there:
+1. Maybe the problem wasn’t articulated well enough, and there’s knowledge that
+   the shaper can add to the conversation right now to swing opinion. 
+2. Sometimes saying “no” to the time commitment is really saying no to
+   something else. 
+3. The shaper might just let the idea go if interest is too low.
+4. The shaper might go back to the drawing table and either work on a smaller
+   version (for a shorter appetite) or do more research 
 
-#### xxx Is the solution attractive?[](#is-the-solution-attractive)
+#### Is the solution attractive?[](#is-the-solution-attractive)
 
 The problem may be important and the appetite fair, but there can be
 differences about the solution.
 
-For example, adding interface elements to the screen carries an invisible cost:
-giving up the real estate. A button in the corner of the home page might
-perfectly solve the problem. But that real estate is valuable. If we give it up
-now, we won’t be able to use it in the future. Are we selling it too cheaply to
-solve this particular problem?
-
 If someone offers an immediate design solution, like “how about we move that
 button to an action menu instead,” we might discuss it. But generally we’ll
 avoid doing design work or discussing technical solutions for longer than a few
-moments at the betting table. If we catch ourselves spending too much time in
-the weeds we’ll remind ourselves “okay, we’re not doing design here” and move
-back up to the high level.
+moments at the betting table. 
 
-#### xxx Is this the right time?[](#is-this-the-right-time)
+#### Is this the right time?[](#is-this-the-right-time)
 
 The kind of project we want to do next can depend on which projects we’ve done
-recently. Maybe it’s been too long since we’ve made a splash of news with a new
-feature. Or perhaps we’ve been building too many new features and feel overdue
-to fix some long-standing customer requests. Or if the teams spent the last
-couple cycles in the same area of the app, their morale may dip if we plan yet
-another project doing the same kind of work.
+recently. 
 
-Those are all reasons that we might pass on a project even though it’s
-perfectly well shaped and valuable. The project’s great; it’s just not the
-right time.
+The project’s great; it’s just not the right time.
 
-#### xxx Are the right people available?[](#are-the-right-people-available)
+#### Are the right people available?[](#are-the-right-people-available)
 
 As part of the betting process we choose who specifically will play which role
-on each team. That is, we’ll pair a project with a specific small team of a
-designer and one or two programmers. We have a “Core Product” team of designers
-and programmers and we select from that pool when planning teams for each
-cycle. The team will work with each other for the whole cycle and then the next
-cycle can be a different combination of people.
-
-Different projects require different expertise. Maybe we need some more
-front-end programming on this one. Or this other one is going to invite a lot
-of scope creep so we need someone who’s good with the **scope hammer**.
+on each team. Different projects require different expertise. 
 
 The type of work each person has been doing is another factor. Someone who’s
 done a long string of **small batch** projects might prefer to take on a **big
@@ -1171,7 +1044,7 @@ projects they want to work on. Culturally, we are too meeting-averse for this
 extra step. But we’ve heard it can work well for some teams because the project
 teams have a little more buy-in.
 
-### xxx Make the announcement[](#make-the-announcement)
+### Make the announcement[](#make-the-announcement)
 
 After the bets are made, one of us will write a message that tells everyone
 which projects we’re betting on for the next cycle and who will be working on
@@ -1182,9 +1055,6 @@ them.
  Then headings below introduce each project in the cycle with a short paragraph
  of commentary
  each.](https://basecamp.com/assets/books/shapeup/2.2/kickoff_message-18083d3733d1f1b965ce2c128a48f3d6428ad3978d5864e26b1b1bc34ce3e1cf.png)](https://basecamp.com/assets/books/shapeup/2.2/kickoff_message-18083d3733d1f1b965ce2c128a48f3d6428ad3978d5864e26b1b1bc34ce3e1cf.png) 
-
-Jason announces the bets for the next cycle with a
-[Basecamp](https://basecamp.com/) message
 
 ---
 
@@ -1889,26 +1759,26 @@ the problems you have to solve.
 
 Three signs indicate when the scopes are right:
 
-1.  You feel like you can see the whole project and nothing important that
+1. You feel like you can see the whole project and nothing important that
 worries you is hidden down in the details.
-2.  Conversations about the project become more flowing because the scopes give
+2. Conversations about the project become more flowing because the scopes give
 you the right language.
-3.  When new tasks come up, you know where to put them. The scopes act like
+3. When new tasks come up, you know where to put them. The scopes act like
 buckets that you can easily lob new tasks into.
 
 On the other hand, these three signs indicate the scopes should be redrawn:
 
-1.  It’s hard to say how “done” a scope is. This often happens when the tasks
+1. It’s hard to say how “done” a scope is. This often happens when the tasks
 inside the scope are unrelated. If the problems inside the scope are unrelated,
 finishing one doesn’t get you closer to finishing the other. It’s good in this
 case to look for something you can factor out, like in the Drafts example.
-2.  The name isn’t unique to the project, like “front-end” or “bugs.” We call
+2. The name isn’t unique to the project, like “front-end” or “bugs.” We call
 these “grab bags” and “junk drawers.” This suggests you aren’t integrating
 enough, so you’ll never get to mark a scope “done” independent of the rest. For
 example, with bugs, it’s better to file them under a specific scope so you can
 know whether, for example, “Send” is done or if you need to fix a couple bugs
 first before putting it out of mind.
-3.  It’s too big to finish soon. If a scope gets too big, with too many tasks,
+3. It’s too big to finish soon. If a scope gets too big, with too many tasks,
 it becomes like its own project with all the faults of a long master to-do
 list. Better to break it up into pieces that can be solved in less time, so
 there are victories along the way and boundaries between the problems to solve.
