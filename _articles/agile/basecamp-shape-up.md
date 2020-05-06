@@ -17,14 +17,14 @@ Table of Contents
 - [Part 2: Betting](#Part-2-Betting)
   - [Bets, Not Backlogs](#Bets,-Not-Backlogs)
   - [Bet Six Weeks](#Bet-Six-Weeks)
-- [xxx Part 3: Building](#xxx-Part-3-Building)
-  - [xxx Hand Over Responsibility](#xxx-Hand-Over-Responsibility)
-  - [xxx Get One Piece Done](#xxx-Get-One-Piece-Done)
-  - [xxx Map the Scopes](#xxx-Map-the-Scopes)
-  - [xxx Show Progress](#xxx-Show-Progress)
-  - [xxx Decide When to Stop](#xxx-Decide-When-to-Stop)
-  - [xxx Move On](#xxx-Move-On)
-  - [xxx Conclusion](#xxx-Conclusion)
+- [Part 3: Building](#Part-3-Building)
+  - [Hand Over Responsibility](#Hand-Over-Responsibility)
+  - [Get One Piece Done](#Get-One-Piece-Done)
+  - [Map the Scopes](#Map-the-Scopes)
+  - [Show Progress](#Show-Progress)
+  - [Decide When to Stop](#Decide-When-to-Stop)
+  - [Move On](#Move-On)
+  - [Conclusion](#Conclusion)
 
 ## Introduction[](#introduction)
 
@@ -1078,10 +1078,9 @@ them.
 
 ---
 
-# xxx Part 3: Building
+# Part 3: Building
 
-## xxx Hand Over Responsibility 
-
+## Hand Over Responsibility 
 
 ![Cartoon. Three figures are seated at their desks, hunching over laptops as if
 very focused. On the left, one holds a pencil in the air and gazes down at a
@@ -1090,169 +1089,72 @@ On the right, another figure points to the laptop and leans forward, thinking:
 OK... so that's how that
 works.](https://basecamp.com/assets/books/shapeup/3.1/intro_cartoon-3a9ab2d1da6bb6653381f5ca7f32b221652035f40cf7b5fa748fffe2edf119f5.jpg)
 
-We’ve made our bets and now it’s time to start the next cycle. How does the
-team get started?
+### Assign projects, not tasks[](#assign-projects-not-tasks)
 
-### xxx Assign projects, not tasks[](#assign-projects-not-tasks)
-
-We _don’t_ start by assigning tasks to anyone. Nobody plays the role of the
-“taskmaster” or the “architect” who splits the project up into pieces for other
-people to execute.
+We _don’t_ start by assigning tasks to anyone. 
 
 Splitting the project into tasks up front is like putting the pitch through a
-paper shredder. Everybody just gets disconnected pieces. We want the project to
-stay “whole” through the entire process so we never lose sight of the bigger
-picture.
+paper shredder. 
 
-Instead, we trust the team to take on the entire project and work within the
-boundaries of the pitch. The team is going to define their own tasks and their
-own approach to the work. They will have full autonomy and use their judgement
-to execute the pitch as best as they can.
+Talented people don’t like being treated like “code monkeys” or ticket takers.
 
-Teams love being given more freedom to implement an idea the way they think is
-best. Talented people don’t like being treated like “code monkeys” or ticket
-takers.
+We’ve done the shaping. We’ve set the boundaries. Now we are going to
+**trust the team to fill in the outline** from the pitch with **real design decisions
+and implementation**.
 
-Projects also turn out better when the team is given responsibility to look
-after the whole. Nobody can predict at the beginning of a project what exactly
-will need to be done for all the pieces to come together properly. What works
-on paper almost never works exactly as designed in practice. The designers and
-programmers doing the real work are in the best position to make changes and
-adjustments or spot missing pieces.
+### Done means deployed[](#done-means-deployed)
 
-When teams are assigned individual tasks, each person can execute their little
-piece without feeling responsible for judging how all the pieces fit together.
-Planning up front makes you blind to the reality along the way.
+At the end of the cycle, the team will deploy their work.  This constraint
+keeps us true to our bets and respects the **circuit breaker**.
 
-Remember: we aren’t giving the teams absolute freedom to invent a solution from
-scratch. We’ve done the shaping. We’ve set the boundaries. Now we are going to
-trust the team to fill in the outline from the pitch with real design decisions
-and implementation.
-
-This is where our efforts to define the project at the right level of
-abstraction - without too much detail - will pay off. With their talent and
-knowledge of the particulars, the team is going to arrive at a better finished
-product than we could have by trying to determine the final form in advance.
-
-### xxx Done means deployed[](#done-means-deployed)
-
-At the end of the cycle, the team will deploy their work. In the case of a
-Small Batch team with a few small projects for the cycle, they’ll deploy each
-one as they see fit as long as it happens before the end of the cycle.
-
-This constraint keeps us true to our bets and respects the **circuit breaker**.
-The project needs to be done within the time we budgeted; otherwise, our
-appetite and budget don’t mean anything.
-
-That also means any testing and QA needs to happen _within_ the cycle. The team
-will accommodate that by scoping off the most essential aspects of the project,
-finishing them early, and coordinating with QA. (More on that later.)
+That also means any testing and QA needs to happen _within_ the cycle. 
 
 For most projects we aren’t strict about the timing of help documentation,
 marketing updates, or announcements to customers and don’t expect those to
-happen within the cycle. Those are thin-tailed from a risk perspective (they
-never take 5x as long as we think they will) and are mostly handled by other
-teams. We’ll often take care of those updates and publish an announcement about
-the new feature during cool-down after the cycle.
+happen within the cycle. Those are thin-tailed from a risk perspective 
 
-### xxx Kick-off[](#kick-off)
+### Kick-off[](#kick-off)
 
-We start the project by creating a new [Basecamp](https://basecamp.com/)
-project and adding the team to it. Then the first thing we’ll do is post the
-shaped concept to the Message Board. We’ll either post the original pitch or a
-distilled version of it.
+We start the project by creating a new project and adding the team to it. 
 
- [![Screenshot of a kick-off message in Basecamp. The message is titled 'Hill
- Charts Concept'. Some text starts explaining how the feature is going to
- relate to the existing to-do functionality. A fat marker sketch is below the
- text.](https://basecamp.com/assets/books/shapeup/3.1/in_basecamp/concept_message-6701d89c76753bc47de6e41a1daca7f59611bcaa7c209514e0e41ca0bdfad48f.png)](https://basecamp.com/assets/books/shapeup/3.1/in_basecamp/concept_message-6701d89c76753bc47de6e41a1daca7f59611bcaa7c209514e0e41ca0bdfad48f.png) 
+Then the first thing we’ll do is post the shaped concept to the Message Board.
+We’ll either **post the original pitch or a distilled version of it**.
 
-The first thing on the [Basecamp](https://basecamp.com/) project is a message
-with the shaped concept
-
-Since our teams are remote, we use the chat room in the Basecamp project to
-arrange a kick-off call.
-
- [![Screenshot of the Campfire chat room in Basecamp. The three people on the
- project discuss when to have the kick-off
- call.](https://basecamp.com/assets/books/shapeup/3.1/in_basecamp/kicking_off-8cde0422601d5e7043538aa19d54d77189061ed33e28ba2aa56ebe7fa9aa2984.png)](https://basecamp.com/assets/books/shapeup/3.1/in_basecamp/kicking_off-8cde0422601d5e7043538aa19d54d77189061ed33e28ba2aa56ebe7fa9aa2984.png) 
-
-Arranging a call with the team to walk through the shaped work
+Since our teams are remote, we arrange a **kick-off call**.
 
 The call gives the team a chance to ask any important questions that aren’t
 clear from the write-up. Then, with a rough understanding of the project,
 they’re ready to get started.
 
-### xxx Getting oriented[](#getting-oriented)
+### Getting oriented[](#getting-oriented)
 
-Work in the first few days doesn’t look like “work.” No one is checking off
-tasks. Nothing is getting deployed. There aren’t any deliverables to look at.
-Often there isn’t even much communication between the team in the first few
-days. There can be an odd kind of radio silence.
+Each person has their head down trying to figure out how the
+existing system works and which starting point is best. 
 
-Why? Because each person has their head down trying to figure out how the
-existing system works and which starting point is best. Everyone is busy
-learning the lay of the land and getting oriented.
-
- [![The team in the Campfire chat room discusses the work. The designer says:
- We'll need to stub in the Hill Chart Editor. The programmer responds: I can
- add an empty controller for the editor. The programmer goes on to share some
- early thinking about how to model the
- attributes.](https://basecamp.com/assets/books/shapeup/3.1/in_basecamp/where_to_start-3f152d1d0df2ca09a6e8576cfe152b0d66b6e24e3eca2edf0cff89bfb29febd5.png)](https://basecamp.com/assets/books/shapeup/3.1/in_basecamp/where_to_start-3f152d1d0df2ca09a6e8576cfe152b0d66b6e24e3eca2edf0cff89bfb29febd5.png) 
-
-The team figuring out where to start
+**The team figuring out where to start**.
 
 It’s important for managers to respect this phase. Teams can’t just dive into a
 code base and start building new functionality immediately. They have to
 acquaint themselves with the relevant code, think through the pitch, and go
-down some short dead ends to find a starting point. Interfering or asking them
-for status too early hurts the project. It takes away time that the team needs
-to find the best approach. The exploration needs to happen anyway. Asking for
-visible progress will only push it underground. It’s better to empower the team
-to explictly say “I’m still figuring out how to start” so they don’t have to
-hide or disguise this legitimate work.
+down some short dead ends to find a starting point. 
 
 Generally speaking, if the silence doesn’t start to break after three days,
 that’s a reasonable time to step in and see what’s going on.
 
-### xxx Imagined vs discovered tasks[](#imagined-vs-discovered-tasks)
+### Imagined vs discovered tasks[](#imagined-vs-discovered-tasks)
 
 Since the team was given the project and not tasks, they need to come up with
-the tasks themselves. Here we note an important difference between tasks we
-_think_ we need to do at the start of a project and the tasks we _discover_ we
-need to do in the course of doing real work.
+the tasks themselves. 
 
-The team naturally starts off with some imagined tasks - the ones they assume
-they’re going to have to do just by thinking about the problem. Then, as they
-get their hands dirty, they discover all kinds of other things that we didn’t
-know in advance. These unexpected details make up the true bulk of the project
-and sometimes present the hardest challenges.
+Teams discover tasks by doing real work. 
 
-Teams discover tasks by doing real work. For example, the designer adds a new
-button on the desktop interface but then notices there’s no obvious place for
-it on the mobile webview version. They record a new task: figure out how to
-reveal the button on mobile. Or the first pass of the design has good visual
-hierarchy, but then the designer realizes there needs to be more explanatory
-copy in a place that disrupts the layout. Two new tasks: Change the layout to
-accommodate explanatory copy; write the explanatory copy.
-
-Often a task will appear in the process of doing something unrelated. Suppose a
-programmer is working on a database migration. While looking at the model to
-understand the associations, she might run into a method that needs to be
-updated for a different part of the project later. She’s going to want to note
-a task to update that method later.
+Often a task will appear in the process of doing something unrelated. 
 
 **The way to really figure out what needs to be done is to start doing real
 work.** That doesn’t mean the teams start by building just anything. They need
-to pick something meaningful to build first. Something that is central to the
-project while still small enough to be done end-to-end - with working UI and
-working code - in a few days.
+to **pick something meaningful to build first**. 
 
-In the next chapters we’ll look at how the team chooses that target and works
-together to get a fully integrated spike working.
-
-## xxx Get One Piece Done 
-
+## Get One Piece Done 
 
 ![Cartoon. A figure stands next to another figure seated at a desk. The
 standing figure with hands on hips asks: So, how's the project coming? The
@@ -1260,28 +1162,18 @@ seated figure looks nervously to a whiteboard covered in a mess of sticky notes
 labeled: To-Do. A thought bubble says: Ugh, how do I
 explain?](https://basecamp.com/assets/books/shapeup/3.2/intro_cartoon-2c91ce2d0578468d323214fbc95cf42d8ca17b0030895263b15ac829d3a0af1d.png)
 
-As the team gets oriented, they start to discover and track the tasks they need
-to do to build the project. It’s important at this early phase that they don’t
-create a master plan of parts that should come together in the 11th hour. If
-the team completes a lot of tasks but there’s no “one thing” to click on and
-try out, it’s hard to feel progress. A team can do a lot of work but feel
-insecure because they don’t have anything real to show for it yet. Lots of
-things are done but nothing is _really_ done.
+It’s important at this early phase that the team **don’t create a master plan
+of parts that should come together in the 11th hour**.
 
-Instead they should aim to make something tangible and demoable early - in the
-first week or so. That requires integrating vertically on one small piece of
-the project instead of chipping away at the horizontal layers.
+Aim to make something tangible and demoable early - in the first week or so. 
 
-### xxx Integrate one slice[](#integrate-one-slice)
+### Integrate one slice[](#integrate-one-slice)
 
 We can think of projects in two layers: front-end and back-end, design and
-code. While technically speaking there are more layers than this, these two are
-the primary integration challenge in most projects.
+code. 
 
-Suppose the project starts with a lot of design. The team could design a
-variety of screens and even implement them as templates or views. But until
-they’re wired to a backend, nothing does anything. The work remains
-hypothetical and speculative.
+While technically speaking there are more layers than this, these two are the
+primary integration challenge in most projects.
 
 ![Illustration depicting the front-end and back-end as two discs lying flat.
 The front-end disc floats above and parallel to the back-end disc. The
@@ -1290,20 +1182,13 @@ boundaries have checkmarks, suggesting surface area that is completed. Nothing
 is marked on the back-end disc below. At the right a label says: Nothing
 works.](https://basecamp.com/assets/books/shapeup/3.2/front-end_only-91147b9b144a224f146ec3f184ac4aa2bc583490e3e6bc847947d123cae7ea3c.png)
 
-Same with the backend. A lot of tasks could be checked off, but without any
-UI - what can you do with it? How do you judge if the work on a specific piece of
-business logic is really right without interacting with it?
-
 ![Another illustration of the front and back end discs. This time the back-end
 disc also has surface area marked out as completed, but it doesn't line up the
 completed areas on the front end disc above. The illustration again is labeled:
 Nothing works.
 ](https://basecamp.com/assets/books/shapeup/3.2/back-end_only-e8b9580807d4b4b50a31627b20d37c1dcf90c55b1f0cc20d5ab88f25888b6bf6.png)
 
-What we want instead is to pick off one slice of the project to integrate. Then
-when that’s done, the team has something tangible that they’ve proven to work
-(or not work and reconsider). Anyone can click through the interaction and see
-if the feature does what it should and if what it does is what they want.
+**Pick off one slice of the project to integrate.** 
 
 ![Illustration showing the two discs lying directly on each other. One area is
 marked on the front-end disc and dotted lines coming down indicate the exact
@@ -1311,72 +1196,56 @@ same area is also marked on the back end disc. This common area on both is
 shaded and marked complete. At the right, a label says: Something
 works!](https://basecamp.com/assets/books/shapeup/3.2/one_slice-4cbcdda1a5cdc1b2bdc9bf7bd023cc0c5af666c5857c6e7d32650d9229a81cf0.png)
 
-### xxx Case study: Clients in projects[](#case-study-clients-in-projects)
+### Case study: Clients in projects[](#case-study-clients-in-projects)
 
 We built a feature in Basecamp 3 that allowed service firms to invite clients
 to their projects and share chosen documents, messages, or to-do lists with
-them. The concept, defined in the pitch, had a variety of moving parts:
+them. 
 
-- Client Access: Before this feature, Basecamp’s access model was all or
-  nothing. We needed a way to invite some people to see just some parts of a
-  project. This had major back-end and caching implications.
-- Client Management: We needed a way to add clients to projects and the ability
-  to manage clients separately from team members.
-- Visibility Toggle: Each piece of content in a project should have a toggle to
-  expose it to clients or not.
+The concept, defined in the pitch, had a variety of moving parts:
+- Client Access
+- Client Management 
+- Visibility Toggle 
 
-The team had one designer and one programmer. After they got oriented and
-familiar with how the existing code worked, the designer chose the visibility
-toggle as the best place to integrate first. This was the most central piece of
-UI in the project. It’s the one that would appear in demo videos and the
-interaction customers would use most.
+After they got oriented and familiar with how the existing code worked, the
+designer chose the visibility toggle as the best place to integrate first. 
 
-The designer didn’t make a pixel-perfect mockup. Instead, he experimented with
-different affordances and placements in the app’s HTML templates. Should the
-toggle be two radio buttons, a checkbox, or a custom button that changes state?
+It’s the one that would appear in demo videos and the interaction customers
+would use most.
 
-Meanwhile, the programmer wasn’t waiting around. He had enough guidance from
-the pitch to start spiking the access model.
+He experimented with different affordances and placements in the app’s HTML
+templates. 
+
+Meanwhile, the programmer had enough guidance from the pitch to start spiking
+the access model.
 
 As soon as the designer felt confident in the basic direction of the UI, he
-pinged the programmer and showed him the stubbed toggle. Stepping away from the
-access problem for a bit, the programmer wired the toggle enough so that it
-would appear on all the supported content types, change state when clicked, and
-save its state in the database.
-
-At this point, the toggle didn’t actually change the visibility of the content.
-But it worked from the service firm’s point of view. The designer could click
-it, feel it, and judge how well it worked with live data on a staging server.
+pinged the programmer and showed him the stubbed toggle.  It worked from the
+service firm’s point of view. The designer could click it, feel it, and judge
+how well it worked with live data on a staging server.
 
 There was still more design work to do on the toggle. But the programmer didn’t
-need to be involved anymore. With the affordance wired up, the designer could
-continue to experiment with copy, placement, color, mobile view rendering, and
-more. Meanwhile, the programmer could get back to the access model or whatever
-else was most important to tackle next.
+need to be involved anymore. 
 
 About three days after the start of the project, the designer demoed the
-working toggle to a manager. Their conversation led to a few more tweaks and
-then they were able to call the toggle “done.” One important piece of the
-project was designed, implemented, demoed, and settled. The team felt good
-about showing tangible progress. And the team and management both felt
-confidence in the project by seeing a working piece. By clicking through a core
-interaction early, they were able to validate that what they hoped would make
-sense in theory did indeed look right and make sense in practice.
+working toggle to a manager. Their conversation led to a few more tweaks. 
 
 This short example illustrates a few points about how the teams integrate over
 short periods to finish one piece of the project at a time.
 
-### xxx Programmers don’t need to wait[](#programmers-dont-need-to-wait)
+### Programmers don’t need to wait[](#programmers-dont-need-to-wait)
 
 Because the important moving parts were already defined in the shaping process,
 programmers don’t need to sit idle waiting for design when the project starts.
-There’s enough direction in the pitch for them to start working on back-end
-problems from the start. They won’t be able to take a piece of functionality to
-completion without knowing where it leads on the front-end, but there should be
-enough information in the pitch to inform foundational modeling decisions.
 
-### xxx Affordances before pixel-perfect
-screens[](#affordances-before-pixel-perfect-screens)
+There’s enough direction in the pitch for them to start working on back-end
+problems from the start. 
+
+They won’t be able to take a piece of functionality to completion without
+knowing where it leads on the front-end, but there should be enough information
+in the pitch to inform foundational modeling decisions.
+
+### xxx Affordances before pixel-perfect screens[](#affordances-before-pixel-perfect-screens)
 
 Programmers don’t need a pixel-perfect design to start implementing. All they
 need are endpoints: input elements, buttons, places where stored data should
