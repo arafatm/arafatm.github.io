@@ -12,6 +12,7 @@ layout: home
 
 ---
 
+- [ ] [Energy Practice - Yoga](https://www.youtube.com/watch?v=F47hdaNXwT4)
 - [ ] [Shape Up](/agile/shape-up)
 - [ ] Hashi Consul
 - [ ] https://www.hashicorp.com/certification/
