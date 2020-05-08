@@ -4,7 +4,7 @@
 
 ![stand-by-me.png](/assets/img/stand-by-me.png)
 
-![strumming-workout.png](/assets/img/strumming-workout.png)
+![strumming-workout.png](assets/img/strumming-workout.png)
 
 ![daytrippers.png](/assets/img/daytrippers.png)
 
