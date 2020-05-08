@@ -2,7 +2,7 @@
 layout: home
 ---
 
-:guitar: [Fender Play: Guitar](/guitar) 
+:guitar: [Guitar](/guitar) 
 ...
 :muscle: [Lifting](/lifting) 
 ...
