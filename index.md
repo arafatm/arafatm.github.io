@@ -8,7 +8,7 @@ layout: home
 ...
 :book: [My Kindle Notes](https://read.amazon.com/notebook)
 ...
-:link: [Bookmarks](/links)
+:link: [Bookmarks](/bookmarks)
 
 ---
 
