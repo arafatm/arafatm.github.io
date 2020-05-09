@@ -1,5 +1,5 @@
 ---
-category: Diversity
+category: diversity
 tags: hiring gender paper
 source: http://gender-decoder.katmatfield.com/static/documents/Gaucher-Friesen-Kay-JPSP-Gendered-Wording-in-Job-ads.pdf
 authors: Danielle Gaucher, Justin Friesen, Aaron C. Kay

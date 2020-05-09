@@ -5,7 +5,6 @@ source: https://www.fender.com/play
 title: Fender Play Guitar
 ---
 
-
 ## Exercise: Warm up on 1 String With a Stretch
 
 
