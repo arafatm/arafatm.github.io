@@ -1,9 +1,10 @@
 ---
-layout: page
+category: learn
+tags: guitar
+source: https://www.fender.com/play
 title: Fender Play Guitar
 ---
 
-# :guitar: [Fender](https://www.fender.com/play)
 
 ## Exercise: Warm up on 1 String With a Stretch
 
