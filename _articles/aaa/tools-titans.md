@@ -1,8 +1,8 @@
 ---
-categories: aa-arafat 
+category: aaa
 tags: lifehack 4hour
-author: Timothy Ferriss
 source: https://read.amazon.com/?asin=B01HSMRWNU
+author: Timothy Ferriss
 title: Tools of Titans: The Tactics, Routines, and Habits of Billionaires, Icons, and World-Class Performers
 ---
 
