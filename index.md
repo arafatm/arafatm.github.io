@@ -19,4 +19,7 @@ layout: home
 - [ ] Hashi Consul
 - [ ] https://www.hashicorp.com/certification/
 - [ ] [Tools of Titans](tools-titans.md)
-- [ ] https://online-learning.harvard.edu/catalog?keywords=&subject%5B%5D=3&paid%5B1%5D=1&max_price=&start_date_range%5Bmin%5D%5Bdate%5D=&start_date_range%5Bmax%5D%5Bdate%5D=
+- [ ] [Using Python for Research | Harvard University](https://online-learning.harvard.edu/course/using-python-research?delta=0)
+- [ ] [CS50's Introduction to Artificial Intelligence with Python | Harvard University](https://online-learning.harvard.edu/course/cs50s-introduction-artificial-intelligence-python?delta=0)
+- [ ] [Data Science: Machine Learning | Harvard University](https://online-learning.harvard.edu/course/data-science-machine-learning?delta=1)
+- [ ] #library #hold [The 22 Immutable Laws of Marketing - Multnomah County Library - OverDrive](https://multcolib.overdrive.com/media/23899)
