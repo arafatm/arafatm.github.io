@@ -4,7 +4,7 @@ Author: Timothy Ferriss
 
 ## Gymnast Strong
 
-[QL Walk 10 to 15 feet. Reverse direction](https://read.amazon.com/&asin=B01HSMRWNU&location=685)
+[QL Walk 10 to 15 feet. Reverse direction](https://read.amazon.com/?asin=B01HSMRWNU&location=685)
 
 [Jefferson Curl 5 to 10 reps](kindle://book?action=open&asin=B01HSMRWNU&location=696)
 
