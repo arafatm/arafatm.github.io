@@ -1,5 +1,5 @@
 ---
-category: aaa 
+categories: aa-arafat 
 tags: lifehack 4hour
 authors: Timothy Ferriss
 source: https://read.amazon.com/?asin=B01HSMRWNU
