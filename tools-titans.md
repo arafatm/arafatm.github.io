@@ -12,3 +12,11 @@ Author: Timothy Ferriss
 - [Pike Pulses, 15 to 20 pulses](/assets/img/tools-titans/pike-pulses.png)
 - [Cast Wall Walk, 10 reps](/assets/img/tools-titans/cast-wall-walk.png)
 
+## AcroYoga—Thai and Fly
+
+Hippie Twist kindle://book?action=open&asin=B01HSMRWNU&location=1306
+
+Folded Leaf and Leaf Hugger kindle://book?action=open&asin=B01HSMRWNU&location=1326
+
+Leg Love—“Gravity Boots” kindle://book?action=open&asin=B01HSMRWNU&location=1339
+
