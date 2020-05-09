@@ -17,6 +17,10 @@ title: Bookmarks
 - Coursera: Machine Learning Foundations <https://github.com/arafatm/edu_coursera_machine_learning_1_foundations)>
 - Udacity: Microservices with Kubernetes <https://github.com/arafatm/edu_udacity_scalable_microservices_with_kubernetes)>
 
+## Learn
+
+- [Catalog of Online Courses | Harvard University](https://online-learning.harvard.edu/catalog)
+
 ## Read a random note
 
 ```

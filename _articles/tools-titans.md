@@ -13,13 +13,13 @@ To help with sleep
 
 ### 1 Make Your Bed
 
-> “When you wake up in the morning, tell yourself: The people I deal with today
-> will be meddling, ungrateful, arrogant, dishonest, jealous, and surly. They
-> are like this because they can’t tell good from evil.  But I have seen the
-> beauty of good, and the ugliness of evil, and have recognized that the
-> wrongdoer has a nature related to my own—not of the same blood or birth, but
-> the same mind, and possessing a share of the divine. And so none of them can
-> hurt me.” -- Marcus Aurelius 
+    “When you wake up in the morning, tell yourself: The people I deal with
+    today will be meddling, ungrateful, arrogant, dishonest, jealous, and
+    surly. They are like this because they can’t tell good from evil.  But I
+    have seen the beauty of good, and the ugliness of evil, and have recognized
+    that the wrongdoer has a nature related to my own—not of the same blood or
+    birth, but the same mind, and possessing a share of the divine. And so none
+    of them can hurt me.” -- Marcus Aurelius 
 
 ### 2 Meditate (10 to 20 minutes)
 
