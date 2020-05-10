@@ -26,12 +26,19 @@ section {
   width: 60em;
 }
 
-p {
-  margin: 1em 0em 1em 2em;
+p, iframe  {
+  margin-left: 3em;
 }
 
-iframe {
-  margin: 1em 0em 1em 2em;
+h1, h2 {
+  text-decoration: underline
+}
+
+h2 {
+}
+
+h3, h4, h5, h6 {
+  margin: 2em 0em;
 }
 
 footer {
