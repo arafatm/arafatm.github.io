@@ -2,7 +2,8 @@
 title: Guitar Level 2 with Alex, Montavilla Guitar Center
 ---
 
-## 2020-05-08 Class 1 
+<details markdown="1">
+<summary markdown="h2">2020-05-08 Class </summary>
 
 ### Common Chords 
 
@@ -31,3 +32,5 @@ title: Guitar Level 2 with Alex, Montavilla Guitar Center
 <img src="assets/img/guitar/blink-182-all-the-small-things.png" width="50%">
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/9Ht5RZpzPqw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+</details>

@@ -14,8 +14,12 @@ layout: home
 
 - [Escape To River Cottage series 1 ep 1 - YouTube](https://www.youtube.com/watch?v=KtiVrBqZ_ao)
 
+---
+
 - [ ] :a: !bene consolidate HSA
 - [ ] :a: !bene consolidate 401k
+
+---
 
 - [ ] [Basecamp Shape Up](/agile/basecamp-shape-up)
 - [ ] Hashi Consul
