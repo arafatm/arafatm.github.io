@@ -2,29 +2,29 @@
 
 ## 2020-05-08 Class 1 
 
-Common Chords 
+### Common Chords 
 
 <img src="/assets/img/guitar/common-chords.png" width="50%">
 
-Strumming Workout 
+### Strumming Workout 
 
 <img src="assets/img/guitar/strumming-workout.png" width="50%">
 
-Stand By Me 
+### Stand By Me 
 
 <img src="/assets/img/guitar/stand-by-me.png" width="50%">
 
-Beatles - Daytrippers 
+### Beatles - Daytrippers 
 
 <img src="/assets/img/guitar/daytrippers.png" width="50%">
 
-Palm Muting 
+### Palm Muting 
 
 [Guitar Palm Muting and Strumming 101 - YouTube](https://www.youtube.com/watch?v=76ZOPqcjK8c)
 
 <img src="assets/img/guitar/punk-strum.png" width="50%">
 
-Blink 182 - All The Small Things 
+### Blink 182 - All The Small Things 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/76ZOPqcjK8c" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
