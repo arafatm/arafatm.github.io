@@ -14,6 +14,9 @@ layout: home
 
 - [Escape To River Cottage series 1 ep 1 - YouTube](https://www.youtube.com/watch?v=KtiVrBqZ_ao)
 
+- [ ] :a: !bene consolidate HSA
+- [ ] :a: !bene consolidate 401k
+
 - [ ] [Energy Practice - Yoga](https://www.youtube.com/watch?v=F47hdaNXwT4)
 - [ ] [Shape Up](/agile/shape-up)
 - [ ] Hashi Consul
@@ -23,5 +26,6 @@ layout: home
 - [ ] [CS50's Introduction to Artificial Intelligence with Python - Harvard University](https://online-learning.harvard.edu/course/cs50s-introduction-artificial-intelligence-python?delta=0)
 - [ ] [Data Science: Machine Learning - Harvard University](https://online-learning.harvard.edu/course/data-science-machine-learning?delta=1)
 - [ ] #library #hold [The 22 Immutable Laws of Marketing - Multnomah County Library - OverDrive](https://multcolib.overdrive.com/media/23899)
+
 
 
