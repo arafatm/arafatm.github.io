@@ -2,14 +2,16 @@
 title: Guitar Level 2 with Alex, Montavilla Guitar Center
 ---
 
+
+
 <details markdown="1">
 <summary markdown="1">
 ## 2020-05-08 
-- **Chords**: Common
-- **Workout**: Strumming - Alternate, Basic, Best
-- Ben E. King - Stand By Me
+- Common Chords 
+- Strumming Workout
+- Ben. E. King - Stand By Me
 - Beatles - Daytrippers
-- **Technique**: Palm Muting
+- Palm Muting
 - Blink 182 - All The Small Things
 </summary>
 
