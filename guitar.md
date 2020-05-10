@@ -2,7 +2,8 @@
 
 ## 2020-05-08 Class 1 
 
-Common Chords <img src="/assets/img/guitar/common-chords.png" width="50%"> test
+Common Chords 
+<img src="/assets/img/guitar/common-chords.png" width="50%">
 
 Common Chords ![common-chords.png](/assets/img/guitar/common-chords.png | width=100)
 
