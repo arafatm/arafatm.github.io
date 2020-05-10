@@ -26,6 +26,8 @@ Palm Muting
 
 Blink 182 - All The Small Things 
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/76ZOPqcjK8c" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 [blink-182 - All The Small Things (Official Video) - YouTube](https://www.youtube.com/watch?v=9Ht5RZpzPqw)
 
 <img src="assets/img/guitar/blink-182-all-the-small-things.png" width="50%">
