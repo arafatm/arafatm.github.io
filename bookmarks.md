@@ -4,9 +4,9 @@ permalink: /bookmarks/
 title: Bookmarks
 ---
 
-## Misc
+## Health
 
-- special effects [Ghost Sand](https://lab.cheron.works/webgl-gpgpu-particles/)
+- #yoga Energy Practice <https://www.youtube.com/watch?v=F47hdaNXwT4>
 
 ## Management
 
@@ -14,12 +14,16 @@ title: Bookmarks
 
 ## Tech
 
-- Coursera: Machine Learning Foundations <https://github.com/arafatm/edu_coursera_machine_learning_1_foundations)>
-- Udacity: Microservices with Kubernetes <https://github.com/arafatm/edu_udacity_scalable_microservices_with_kubernetes)>
+- [ ] Coursera: Machine Learning Foundations <https://github.com/arafatm/edu_coursera_machine_learning_1_foundations)>
+- [ ] Udacity: Microservices with Kubernetes <https://github.com/arafatm/edu_udacity_scalable_microservices_with_kubernetes)>
+
+## Misc
+
+- special effects Ghost Sand <https://lab.cheron.works/webgl-gpgpu-particles/>
 
 ## Learn
 
-- [Catalog of Online Courses | Harvard University](https://online-learning.harvard.edu/catalog)
+- Harvard Catalog of Online Courses <https://online-learning.harvard.edu/catalog>
 
 ## Read a random note
 

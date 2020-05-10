@@ -17,8 +17,7 @@ layout: home
 - [ ] :a: !bene consolidate HSA
 - [ ] :a: !bene consolidate 401k
 
-- [ ] [Energy Practice - Yoga](https://www.youtube.com/watch?v=F47hdaNXwT4)
-- [ ] [Shape Up](/agile/shape-up)
+- [ ] [Basecamp Shape Up](/agile/basecamp-shape-up)
 - [ ] Hashi Consul
 - [ ] <https://www.hashicorp.com/certification/>
 - [ ] [Tools of Titans](tools-titans.md)
