@@ -1,5 +1,5 @@
 ---
-title: Guitar Level 2 with Alex, Montavilla Guitar Center
+title: Guitar Level 2 with Alex, Montavilla Guitar
 ---
 
 ## 2020-05-08 Class 1 
