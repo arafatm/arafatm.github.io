@@ -21,11 +21,11 @@ header.post-header {
 
 h1, h2 {
   text-decoration: underline;
-  margin: 1em 0em;
+  //margin: 1em 0em 1em 0em;
 }
 
 h3, h4, h5, h6 {
-  margin: 2em 0em;
+  //margin: 0em 0em 1em 0em;
 }
 
 section {
@@ -35,12 +35,12 @@ section {
   width: 60em;
 }
 
-p, iframe  {
-  margin-left: 3em;
+summary h2 { 
+  display: inline;
 }
 
-img, iframe {
-  border: 1px solid black;
+p, iframe  {
+  margin-left: 3em;
 }
 
 footer {

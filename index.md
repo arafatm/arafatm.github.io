@@ -12,7 +12,7 @@ layout: home
 
 ---
 
-- [Escape To River Cottage series 1 ep 1 - YouTube](https://www.youtube.com/watch?v=KtiVrBqZ_ao)
+[Escape To River Cottage series 1 ep 1 - YouTube](https://www.youtube.com/watch?v=KtiVrBqZ_ao)
 
 ---
 
