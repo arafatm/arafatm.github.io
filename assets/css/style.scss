@@ -19,6 +19,15 @@ header.post-header {
   margin: 0em 0em 1em 0em;
 }
 
+h1, h2 {
+  text-decoration: underline
+  margin: 1em 0em;
+}
+
+h3, h4, h5, h6 {
+  margin: 2em 0em;
+}
+
 section {
   margin: 1em 1em;
   padding: 0em;
@@ -28,15 +37,7 @@ section {
 
 p, iframe  {
   margin-left: 3em;
-}
-
-h1, h2 {
-  text-decoration: underline
-  margin: 1em 0em;
-}
-
-h3, h4, h5, h6 {
-  margin: 2em 0em;
+  border: 1px solid black;
 }
 
 footer {
