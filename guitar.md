@@ -2,7 +2,7 @@
 
 ## 2020-05-08 Class 1 
 
-Common Chords ![common-chords.png](/assets/img/guitar/common-chords.png)
+Common Chords ![common-chords.png](/assets/img/guitar/common-chords.png | width=100)
 
 Strumming Workout ![strumming-workout.png](assets/img/guitar/strumming-workout.png)
 
