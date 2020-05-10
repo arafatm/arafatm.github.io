@@ -6,10 +6,20 @@ author: Timothy Ferriss
 title: Tools of Titans - The Tactics, Routines, and Habits of Billionaires, Icons, and World-Class Performers
 ---
 
-To help with sleep
-- [ ] 2 tablespoons of apple cider vinegar (I use Bragg brand) and 1 tablespoon honey, stirred into 1 cup of hot water [:link:](kindle://book?action=open&asin=B01HSMRWNU&location=2679)
+<details markdown="1">
+<summary markdown="1">
+## To help with sleep
+</summary>
 
+2 tablespoons of apple cider vinegar (I use Bragg brand) and 1 tablespoon
+honey, stirred into 1 cup of hot water
+[:link:](kindle://book?action=open&asin=B01HSMRWNU&location=2679)
+</details>
+
+<details markdown="1">
+<summary markdown="1">
 ## 5 Morning Rituals that Help Me Win the Day
+</summary>
 
 ### 1 Make Your Bed
 
@@ -63,9 +73,12 @@ To be filled in at night:
     2.  
     3. 
 
-Location: 2784
+</details>
 
+<details markdown="1">
+<summary markdown="1">
 ## Gymnast Strong
+</summary>
 
 QL Walk 10 to 15 feet. Reverse direction [:link:](kindle://book?action=open&asin=B01HSMRWNU&location=685)
 
@@ -81,7 +94,12 @@ Pike Pulses 15 to 20 pulses [:link:](kindle://book?action=open&asin=B01HSMRWNU&l
 
 Cast Wall Walk 10 reps [:link:](kindle://book?action=open&asin=B01HSMRWNU&location=747)
 
+</details>
+
+<details markdown="1">
+<summary markdown="1">
 ## AcroYoga—Thai and Fly
+</summary>
 
 Hippie Twist [:link:](kindle://book?action=open&asin=B01HSMRWNU&location=1306)
 
@@ -89,3 +107,4 @@ Folded Leaf and Leaf Hugger [:link:](kindle://book?action=open&asin=B01HSMRWNU&l
 
 Leg Love—“Gravity Boots” [:link:](kindle://book?action=open&asin=B01HSMRWNU&location=1339)
 
+</details>
