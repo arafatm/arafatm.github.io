@@ -20,14 +20,12 @@
 
 ### Palm Muting 
 
-[Guitar Palm Muting and Strumming 101 - YouTube](https://www.youtube.com/watch?v=76ZOPqcjK8c)
-
 <img src="assets/img/guitar/punk-strum.png" width="50%">
-
-### Blink 182 - All The Small Things 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/76ZOPqcjK8c" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-[blink-182 - All The Small Things (Official Video) - YouTube](https://www.youtube.com/watch?v=9Ht5RZpzPqw)
+### Blink 182 - All The Small Things 
 
 <img src="assets/img/guitar/blink-182-all-the-small-things.png" width="50%">
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/9Ht5RZpzPqw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
