@@ -6,29 +6,10 @@ author: Ryan Singer - Basecamp
 title: Shape Up
 ---
 
-Table of Contents
-  - [Introduction](#Introduction)
-- [Part 1: Shaping](#Part-1-Shaping)
-  - [Principles of Shaping-](#Principles-of-Shaping)
-  - [Set Boundaries](#Set-Boundaries)
-  - [Find the Elements](#Find-the-Elements)
-  - [Risks and Rabbit Holes](#Risks-and-Rabbit-Holes)
-  - [Write the Pitch](#Write-the-Pitch)
-- [Part 2: Betting](#Part-2-Betting)
-  - [Bets, Not Backlogs](#Bets,-Not-Backlogs)
-  - [Bet Six Weeks](#Bet-Six-Weeks)
-- [Part 3: Building](#Part-3-Building)
-  - [Hand Over Responsibility](#Hand-Over-Responsibility)
-  - [Get One Piece Done](#Get-One-Piece-Done)
-  - [Map the Scopes](#Map-the-Scopes)
-  - [Show Progress](#Show-Progress)
-  - [Decide When to Stop](#Decide-When-to-Stop)
-  - [Move On](#Move-On)
-  - [Conclusion](#Conclusion)
 
-## Introduction[](#introduction)
+## Introduction
 
-### Growing pains[](#growing-pains)
+### Growing pains
 
 As software teams start to grow, some common struggles appear:
 - Team members feel like projects go on and on, with no end in sight.
@@ -36,7 +17,7 @@ As software teams start to grow, some common struggles appear:
 - Founders ask themselves: “Why can’t we get features out the door like we used
   to in the early days?”
 
-### Six-week cycles[](#six-week-cycles)
+### Six-week cycles
 
 Six weeks is 
 - long enough to build something meaningful start-to-finish 
@@ -50,7 +31,7 @@ not micromanaging time.
 
 We commit the six weeks and leave the team alone to get it done.
 
-### Shaping the work[](#shaping-the-work)
+### Shaping the work
 
 We **shape the work** before giving it to a team. 
 
@@ -62,7 +43,7 @@ When shaping, we focus less on estimates and more on our **appetite.**
 Instead of asking how much time it will _take_ to do some work, we ask: **How
 much time do we want to spend**? 
 
-### Making teams responsible[](#making-teams-responsible)
+### Making teams responsible
 
 Third, we **give full responsibility** to a small integrated team of designers
 and programmers. 
@@ -70,7 +51,7 @@ and programmers.
 - make adjustments to the scope,
 - work together to **build vertical slices** of the product one at a time. 
 
-### Targeting risk[](#targeting-risk)
+### Targeting risk
 
 At every step of the process we target a specific risk: the risk of not
 shipping on time. 
@@ -90,7 +71,7 @@ project runs over, by default it doesn’t get an extension.
 And lastly we reduce risk in the building process by integrating design and
 programming early. 
 
-### How this book is organized[](#how-this-book-is-organized)
+### How this book is organized
 
 Part One is all about **Shaping** - the pre-work we do on projects before we
 consider them ready to schedule. 
@@ -108,7 +89,7 @@ your company.
 
 # Part 1: Shaping
 
-## Principles of Shaping[](#Principles-of-Shaping)
+## Principles of Shaping
 
 ![A vertical axis marked Abstract at the top and Concrete at the bottom. In the
 middle a zone is marked
@@ -117,7 +98,7 @@ Shaped.](https://basecamp.com/assets/books/shapeup/1.1/levels_of_abstraction-bf5
 When we shape the work, we need to do it at the right level of abstraction: **not
 too vague and not too concrete**. 
 
-### Wireframes are too concrete[](#wireframes-are-too-concrete)
+### Wireframes are too concrete
 
 When design leaders go straight to wireframes or high-fidelity mockups, they
 define too much detail too early. This leaves designers no room for creativity.
@@ -125,14 +106,14 @@ define too much detail too early. This leaves designers no room for creativity.
 Over-specifying the design also leads to estimation errors. Counterintuitive as
 it may seem, **the more specific the work is, the harder it can be to estimate**.
 
-### Words are too abstract[](#words-are-too-abstract)
+### Words are too abstract
 
 When a project is defined in a few words, nobody knows what it means.
 
 Concerning estimation, under-specified projects naturally grow out of control
 because there’s **no boundary to define what’s out of scope**.
 
-### Case study: The Dot Grid Calendar[](#case-study-the-dot-grid-calendar)
+### Case study: The Dot Grid Calendar
 
 Customers started asking us to “add a calendar” to Basecamp.
 
@@ -165,20 +146,20 @@ created looked like this:
 same structure as the rough sketch but it is fully designed down to every
 detail.](https://basecamp.com/assets/books/shapeup/1.1/calendar_screenshot-f8bcf5d1a0cd1642043ed106ac8b58db460e86acad341bde1a848f20fe1683a3.png)](https://basecamp.com/assets/books/shapeup/1.1/calendar_screenshot-f8bcf5d1a0cd1642043ed106ac8b58db460e86acad341bde1a848f20fe1683a3.png) 
 
-### Property 1: It’s rough[](#property-1-its-rough)
+### Property 1: It’s rough
 
 Everyone can tell by looking at it that it’s unfinished. 
 
-### Property 2: It’s solved[](#property-2-its-solved)
+### Property 2: It’s solved
 
 Despite being rough and unfinished, shaped work has been thought through. 
 
-### Property 3: It’s bounded[](#property-3-its-bounded)
+### Property 3: It’s bounded
 
 Lastly, shaped work indicates what _not_ to do. It tells the team where to
 stop. 
 
-### Who shapes[](#who-shapes)
+### Who shapes
 
 Shaping is creative and integrative. It requires combining interface ideas with
 technical possibilities with business priorities. To do that you’ll need to
@@ -197,7 +178,7 @@ requires you to be critical about the problem.
 
 Shaping is a closed-door, creative process. 
 
-### Two tracks[](#two-tracks)
+### Two tracks
 
 You can’t really schedule shaping work because, by its very nature, **unshaped
 work is risky and unknown**. 
@@ -206,14 +187,14 @@ For that reason we have two separate tracks:
 1. one for shaping
 2. one for building. 
 
-### Steps to shaping[](#steps-to-shaping)
+### Steps to shaping
 
 1. **Set boundaries.** 
 2. **Rough out the elements.** 
 3. **Address risks and rabbit holes.** 
 4. **Write the pitch**. 
 
-## Set Boundaries[](#Set-Boundaries) 
+## Set Boundaries
 
 ![Cartoon. In the background, three people talk around a table. One says 'They
 said they wanted categories.' The other says 'We should redesign the whole
@@ -223,7 +204,7 @@ oh.'](https://basecamp.com/assets/books/shapeup/1.2/intro_cartoon-849a30dad3a668
 
 The first step of shaping is setting boundaries on what we’re trying to do. 
 
-### Setting the appetite[](#setting-the-appetite)
+### Setting the appetite
 
 Whether we’re chomping at the bit or reluctant to dive in, it helps to
 explicitly define how much of our time and attention the subject deserves. 
@@ -239,19 +220,19 @@ We usually set the appetite in two sizes:
 If we can’t shrink the scope, we’ll break off a meaningful part of the project
 that we can shape to a six-week appetite.
 
-### Fixed time, variable scope[](#fixed-time-variable-scope)
+### Fixed time, variable scope
 
 - Estimates start with a design and end with a number. 
 - Appetites start with a number and end with a design. 
 
-### “Good” is relative[](#good-is-relative)
+### “Good” is relative
 
 **Without a time limit, there’s always a better version**. 
 
     The ultimate meal might be a ten course dinner. 
     But when you’re hungry and in a hurry, a hot dog is perfect.
 
-### Responding to raw ideas[](#responding-to-raw-ideas)
+### Responding to raw ideas
 
 Our default response to any idea that comes up should be: “_Interesting. Maybe
 some day_.” 
@@ -259,17 +240,17 @@ some day_.”
 Even if we’re excited about it, we shouldn’t make a commitment that we don’t
 yet understand.
 
-### Narrow down the problem[](#narrow-down-the-problem)
+### Narrow down the problem
 
 Flip from asking “What could we build?” to “**What’s really going wrong**?” 
 
-### Case study: Defining “calendar”[](#case-study-defining-calendar)
+### Case study: Defining “calendar”
 
 Instead of asking her why she wants a calendar and what it should look like, we
 asked her _when_ she wanted a calendar. What was she doing when the thought
 occurred to ask for it?
 
-### Watch out for grab-bags[](#watch-out-for-grab-bags)
+### Watch out for grab-bags
 
 When it comes to unclear ideas, the worst offenders are “redesigns” or
 “refactorings” that aren’t driven by a single problem or use case. 
@@ -282,7 +263,7 @@ because sharing multiple files takes too many steps.”
 
 A tell-tale sign of a grab-bag is the “2.0” label. 
 
-### Boundaries in place[](#boundaries-in-place)
+### Boundaries in place
 
 When we have all three things
 - a raw idea, 
@@ -291,14 +272,14 @@ When we have all three things
 
 then we’re ready to move to the next step and define the elements of a solution.
 
-## Find the Elements[](#Find-the-Elements) 
+## Find the Elements
 
 ![A cartoon. Two people are sketching on a whiteboard animatedly. One says
 'a-ha!' while pointing to what they've drawn and the other, still sketching,
 says 'Yes! And
 then...'](https://basecamp.com/assets/books/shapeup/1.3/intro_cartoon-7cdeaa7e5e113e22cde722646b3931f1f687ffdeefa3c0e0d20c85ef3f11e700.png)
 
-### Move at the right speed[](#move-at-the-right-speed)
+### Move at the right speed
 
 First, we need to have **the right people, or nobody**, in the room. 
 
@@ -311,7 +292,7 @@ The questions we’re trying to answer are:
 - What are the key components or interactions?
 - Where does it take you?
 
-### Breadboarding[](#breadboarding)
+### Breadboarding
 
 ![A drawing of an electronics breadboard and a finished electronics product.
 The breadboard looks like a circuit board with a light bulb, dimmer and battery
@@ -327,7 +308,7 @@ There are three basic things we’ll draw:
 
 We’ll use words for everything instead of pictures. 
 
-#### Example[](#example)
+#### Example
 
 ![A different breadboard. This time a Pay button on the Invoice leads to a Pay
 Invoice place. Under that, there is an option to Autopay in the Future.
@@ -345,7 +326,7 @@ choices.
 
 We’re getting more concrete while still leaving out a huge amount of detail.
 
-### Fat marker sketches[](#fat-marker-sketches)
+### Fat marker sketches
 
 Sometimes the idea we have in mind is a visual one. Breadboarding would just
 miss the point because the 2D arrangement of elements is the fundamental
@@ -386,7 +367,7 @@ This notation is much less constraining than breadboards, which has downsides.
 We might sketch a sidebar and get attached to a layout element like that even
 though it’s not a core element. 
 
-### Elements are the output[](#elements-are-the-output)
+### Elements are the output
 
 In the case of the Autopay example, we ended up with some clear elements:
 - A new “use this to Autopay?” checkbox on the existing “Pay an invoice” screen
@@ -411,19 +392,19 @@ This enabled us to work out the main elements of the solution:
 - Agenda-style list of events below that scrolls an event into view when you
   tap a dot
 
-### Room for designers[](#room-for-designers)
+### Room for designers
 
 By leaving details out, the breadboard and fat marker methods give room to
 designers in subsequent phases of the project.
 
-### Not deliverable yet[](#not-deliverable-yet)
+### Not deliverable yet
 
 It’s normal for the artifacts at this point - on the wall or in your notebook  - 
 to be more or less indecipherable to anybody who wasn’t there with you.
 
 The next step is to do some stress-testing and de-risking. 
 
-### No conveyor belt[](#no-conveyor-belt)
+### No conveyor belt
 
 Also keep in mind that, at this stage, we could walk away from the project. **We
 haven’t bet on it**. 
@@ -446,7 +427,7 @@ in Part Three so that teams tackle the right problems in the right order,
 leaving room for the unexpected. **But that doesn’t mean we shouldn’t look for
 the pitfalls we _can_ find up front and eliminate them before betting** 
 
-### Different categories of risk[](#different-categories-of-risk)
+### Different categories of risk
 
 In terms of risk, well-shaped work looks like a thin-tailed probability
 distribution. 
@@ -470,7 +451,7 @@ delay.](https://basecamp.com/assets/books/shapeup/1.4/fat_tailed-5fb8e1135bd81c8
 We want to remove the unknowns and tricky problems from the project so that our
 probability is as thin-tailed as possible. 
 
-### Look for rabbit holes[](#look-for-rabbit-holes)
+### Look for rabbit holes
 
 In this step, we slow down and look critically at what we came up with. Did we
 miss anything? Are we making
@@ -485,7 +466,7 @@ ask ourselves questions like:
 - Is there a hard decision we should settle in advance so it doesn’t trip up
   the team?
 
-### Case study: Patching a hole[](#case-study-patching-a-hole)
+### Case study: Patching a hole
 
 For example, when we defined the To-Do Groups project, we introduced the idea
 of dividers in the to-do list:
@@ -508,7 +489,7 @@ inside the cycle under pressure. There are lots of reasons why a different
 design or a deeper reconsideration of completed to-dos would be objectively
 better. 
 
-### Declare out of bounds[](#declare-out-of-bounds)
+### Declare out of bounds
 
 Since everyone on the team wants to do their best work, they will of course
 look for all the use cases to cover and consider them necessary. 
@@ -525,12 +506,12 @@ down who to notify about a message. We explicitly marked off the other cases as
 “out of bounds” for the project and focused on the win we wanted: a faster flow
 for posting messages.
 
-### Cut back[](#cut-back)
+### Cut back
 
 There may be parts of the solution we got excited about during the sketching
 phase that aren’t really necessary. 
 
-### Present to technical experts[](#present-to-technical-experts)
+### Present to technical experts
 
 Up to this point shaping has been a closed-door activity. 
 
@@ -545,7 +526,7 @@ so they’re partners in keeping the project at the size you intend.
 
 And emphasize that you’re looking for risks that could blow up the project.
 
-### De-risked and ready to write up[](#de-risked-and-ready-to-write-up)
+### De-risked and ready to write up
 
 At the end of this stage, we have 
 - the elements of the solution, 
@@ -586,7 +567,7 @@ There are five ingredients that we always want to include in a pitch:
    functionality or use cases we intentionally aren’t covering to fit the
    appetite or make the problem tractable
 
-### Ingredient 1. Problem[](#ingredient-1-problem)
+### Ingredient 1. Problem
 
 It’s critical to always present both a problem and a solution together. 
 
@@ -597,25 +578,25 @@ a problem.
 The best problem definition consists of a single specific story that shows why
 the status quo doesn’t work.
 
-### Ingredient 2. Appetite[](#ingredient-2-appetite)
+### Ingredient 2. Appetite
 
 Not only do we want to solve this use case, we want to come up with a way to do
 it in six weeks, not three months, or - in the case of a **small batch**
 project - two weeks, not the whole six weeks.
 
-### Ingredient 3. Solution[](#ingredient-3-solution)
+### Ingredient 3. Solution
 
 A problem without a solution is unshaped work. 
 
 If the solution isn’t there, someone should go back and do the shaping work on
 the shaping track. 
 
-### Help them see it[](#help-them-see-it)
+### Help them see it
 
 We need more concreteness, but we don’t want to over-specify the design with
 wireframes or high-fidelity mocks. 
 
-#### Embedded sketches[](#embedded-sketches)
+#### Embedded sketches
 
 Suppose your breadboard from the shaping session looked like this:
 
@@ -645,7 +626,7 @@ line divides the box. To its right a rough sketch of a payment form appears
 with the words Go to Your Form above
 it.](https://basecamp.com/assets/books/shapeup/1.5/fat_marker_dashboard-8e3d19b9388470aea447a7d57d8aed50fe7c2a00952922a9b1d442a6ac38fec4.png)
 
-#### Annotated fat marker sketches[](#annotated-fat-marker-sketches)
+#### Annotated fat marker sketches
 
 Sometimes ideas are inherently visual or a little too complicated to express in
 a schematic breadboard. Fat marker sketches can be very effective in a pitch;
@@ -667,16 +648,16 @@ the left. The numbers are drawn neatly in white on black circles so they look
 like
 call-outs.](https://basecamp.com/assets/books/shapeup/1.5/annotated_fat_marker_sketch-674c176b4187fe19ff4d633282201928a983e3f9aa8e422c5952ce01e540c551.jpg)
 
-### Ingredient 4. Rabbit holes[](#ingredient-4-rabbit-holes)
+### Ingredient 4. Rabbit holes
 
 Sometimes addressing a rabbit hole just requires a few lines of text. 
 
-### Ingredient 5. No Gos[](#ingredient-5-no-gos)
+### Ingredient 5. No Gos
 
 Lastly if there’s anything we’re _not_ doing in this concept, it’s good to
 mention it here. 
 
-### Examples[](#examples)
+### Examples
 
 Here are two examples of real pitches.
 
@@ -709,7 +690,7 @@ Two videos show the problem. A fat marker sketch and a breadboard describe the
 solution. The black boxes contain data visualizations that support trade-offs
 in the solution.
 
-### Ready to present[](#ready-to-present)
+### Ready to present
 
 We prefer asynchronous communication by default and escalate to real-time only
 when necessary. 
@@ -722,7 +703,7 @@ short and productive. In ideal conditions everyone has time to read the pitches
 in advance. And if that isn’t possible in some cases, the pitch is ready to
 pull up for a quick live sell.
 
-### How we do it in Basecamp[](#how-we-do-it-in-basecamp)
+### How we do it in Basecamp
 
 We post pitches as Messages in [Basecamp](https://basecamp.com/). We created a
 Message Category called _Pitch_ so we can easily find them. Pitches are posted
@@ -777,7 +758,7 @@ notes. A thought bubble above the person says: This is ridiculous. We'll never
 get all this
 done.](https://basecamp.com/assets/books/shapeup/2.1/intro_cartoon-562591e3436e67b04d32287bdc7ff45bfcdb284bfec3ac9a42c14e04f8ab9025.png)
 
-### No backlogs[](#no-backlogs)
+### No backlogs
 
 Backlogs are a big weight we don’t need to carry. Dozens and eventually
 hundreds of tasks pile up that we all know we’ll never have time for. 
@@ -788,7 +769,7 @@ The time spent constantly reviewing, grooming and organizing old ideas prevents
 everyone from moving forward on the timely projects that really matter right
 now.
 
-### A few potential bets[](#a-few-potential-bets)
+### A few potential bets
 
 So what do we do instead? Before each six-week cycle, we hold a **betting table**
 where stakeholders decide what to do in the next cycle. At the betting table,
@@ -802,7 +783,7 @@ What if the pitch was great, but the time just wasn’t right? Anyone who wants
 to advocate for it again simply tracks it independently - their own way - and
 then _lobbies for it six weeks later_.
 
-### Decentralized lists[](#decentralized-lists)
+### Decentralized lists
 
 We don’t have to choose between a burdensome backlog and not remembering
 anything from the past. Everyone can still track pitches, bugs, requests, or
@@ -820,7 +801,7 @@ ideas for what to do next.
 This approach spreads out the responsibility for prioritizing and tracking what
 to do and makes it manageable. 
 
-### Important ideas come back[](#important-ideas-come-back)
+### Important ideas come back
 
 It’s easy to overvalue ideas. The truth is, ideas are cheap. They come up all
 the time and accumulate into big piles.
@@ -846,7 +827,7 @@ Notif we focus on this one use case. The person on the right leans back and
 observes the
 discussion.](https://basecamp.com/assets/books/shapeup/2.2/intro_cartoon-cb716b39a86cb267e54549f739854b7c7b768da7316b8b0c495deba2805ccb10.png)
 
-### Six-week cycles[](#six-week-cycles)
+### Six-week cycles
 
 Committing time and people is difficult if we can’t easily determine who’s
 available and for how long. 
@@ -861,7 +842,7 @@ Two weeks is too short to get anything meaningful done.
 **Six weeks** is long enough to finish something meaningful and still short
 enough to see the end from the beginning.
 
-### Cool-down[](#cool-down)
+### Cool-down
 
 After each six-week cycle, we schedule two weeks for **cool-down**.  This is a
 period with no scheduled work where we can breathe, meet as needed, and
@@ -870,7 +851,7 @@ consider what to do next.
 During cool-down, programmers and designers on project teams are free to work
 on whatever they want. 
 
-### Team and project sizes[](#team-and-project-sizes)
+### Team and project sizes
 
 In addition to standardizing the length of our cycles, we also roughly
 standardize the types of projects and teams that we bet on.
@@ -893,7 +874,7 @@ of the cycle.
 Now that we have a **standard way to think about capacity**, we can talk about
 how we decide what to schedule.
 
-### The betting table[](#the-betting-table)
+### The betting table
 
 The **betting table** is a meeting held during cool-down where stakeholders
 decide what to do in the next cycle. 
@@ -915,7 +896,7 @@ This buy-in from the very top is essential to making the cycles turn properly.
 
 The meeting is short, the options well-shaped, and the headcount low. 
 
-### The meaning of a bet[](#the-meaning-of-a-bet)
+### The meaning of a bet
 
 We talk about “betting” instead of planning because it sets different
 expectations.
@@ -930,7 +911,7 @@ interruptions.
 Third, a smart bet has a cap on the downside. If we bet six weeks on something,
 the most we can lose is six weeks. 
 
-### Uninterrupted time[](#uninterrupted-time)
+### Uninterrupted time
 
 It’s not really a bet if we say we’re dedicating six weeks but then allow a
 team to get pulled away to work on something else.
@@ -950,7 +931,7 @@ team and break the commitment.
 If the cycle passes and that thing is still the most important thing to do, we
 can bet on it for that cycle. 
 
-### The circuit breaker[](#the-circuit-breaker)
+### The circuit breaker
 
 We combine this uninterrupted time with a tough but extremely powerful policy.
 Teams have to ship the work within the amount of time that we bet. _If they
@@ -965,7 +946,7 @@ come up with a new or better solution.
 Finally, the circuit breaker motivates teams to take more ownership over their
 projects. 
 
-### What about bugs?[](#what-about-bugs)
+### What about bugs?
 
 If the teams aren’t interrupted in the six week cycle, how do we handle bugs
 that come up?
@@ -987,7 +968,7 @@ strategies have worked for us.
 3. **Schedule a bug smash**. Once a year - usually around the holidays - we’ll
    dedicate a whole cycle to fixing bugs. 
 
-### Keep the slate clean[](#keep-the-slate-clean)
+### Keep the slate clean
 
 The key to managing capacity is giving ourselves a clean slate with every
 cycle. That means only betting one cycle at a time and never carrying scraps of
@@ -1003,9 +984,9 @@ We reduce our risk dramatically by shaping a specific six week target, with
 something fully built and working at the end of that six weeks. If that goes as
 expected, we’ll feel good about betting the next six weeks. 
 
-### Common questions to ask[](#questions-to-ask)
+### Common questions to ask
 
-#### Does the problem matter?[](#does-the-problem-matter)
+#### Does the problem matter?
 
 Of course, any problem that affects customers matters. But we have to make
 choices because there will always be more problems than time to solve them. 
@@ -1013,7 +994,7 @@ choices because there will always be more problems than time to solve them.
 So we weigh problems against each other. Is _this_ problem more important than
 _that_ problem right now?
 
-#### Is the appetite right?[](#is-the-appetite-right)
+#### Is the appetite right?
 
 It’s good when we have a solution shaped to a reasonable time frame, like two
 or six weeks. But we might still debate whether it’s worth the time. 
@@ -1028,7 +1009,7 @@ given pitch.  The negotiation could go a couple directions from there:
 4. The shaper might go back to the drawing table and either work on a smaller
    version (for a shorter appetite) or do more research 
 
-#### Is the solution attractive?[](#is-the-solution-attractive)
+#### Is the solution attractive?
 
 The problem may be important and the appetite fair, but there can be
 differences about the solution.
@@ -1038,14 +1019,14 @@ button to an action menu instead,” we might discuss it. But generally we’ll
 avoid doing design work or discussing technical solutions for longer than a few
 moments at the betting table. 
 
-#### Is this the right time?[](#is-this-the-right-time)
+#### Is this the right time?
 
 The kind of project we want to do next can depend on which projects we’ve done
 recently. 
 
 The project’s great; it’s just not the right time.
 
-#### Are the right people available?[](#are-the-right-people-available)
+#### Are the right people available?
 
 As part of the betting process we choose who specifically will play which role
 on each team. Different projects require different expertise. 
@@ -1064,7 +1045,7 @@ projects they want to work on. Culturally, we are too meeting-averse for this
 extra step. But we’ve heard it can work well for some teams because the project
 teams have a little more buy-in.
 
-### Make the announcement[](#make-the-announcement)
+### Make the announcement
 
 After the bets are made, one of us will write a message that tells everyone
 which projects we’re betting on for the next cycle and who will be working on
@@ -1089,7 +1070,7 @@ On the right, another figure points to the laptop and leans forward, thinking:
 OK... so that's how that
 works.](https://basecamp.com/assets/books/shapeup/3.1/intro_cartoon-3a9ab2d1da6bb6653381f5ca7f32b221652035f40cf7b5fa748fffe2edf119f5.jpg)
 
-### Assign projects, not tasks[](#assign-projects-not-tasks)
+### Assign projects, not tasks
 
 We _don’t_ start by assigning tasks to anyone. 
 
@@ -1102,7 +1083,7 @@ We’ve done the shaping. We’ve set the boundaries. Now we are going to
 **trust the team to fill in the outline** from the pitch with **real design decisions
 and implementation**.
 
-### Done means deployed[](#done-means-deployed)
+### Done means deployed
 
 At the end of the cycle, the team will deploy their work.  This constraint
 keeps us true to our bets and respects the **circuit breaker**.
@@ -1113,7 +1094,7 @@ For most projects we aren’t strict about the timing of help documentation,
 marketing updates, or announcements to customers and don’t expect those to
 happen within the cycle. Those are thin-tailed from a risk perspective 
 
-### Kick-off[](#kick-off)
+### Kick-off
 
 We start the project by creating a new project and adding the team to it. 
 
@@ -1126,7 +1107,7 @@ The call gives the team a chance to ask any important questions that aren’t
 clear from the write-up. Then, with a rough understanding of the project,
 they’re ready to get started.
 
-### Getting oriented[](#getting-oriented)
+### Getting oriented
 
 Each person has their head down trying to figure out how the
 existing system works and which starting point is best. 
@@ -1141,7 +1122,7 @@ down some short dead ends to find a starting point.
 Generally speaking, if the silence doesn’t start to break after three days,
 that’s a reasonable time to step in and see what’s going on.
 
-### Imagined vs discovered tasks[](#imagined-vs-discovered-tasks)
+### Imagined vs discovered tasks
 
 Since the team was given the project and not tasks, they need to come up with
 the tasks themselves. 
@@ -1167,7 +1148,7 @@ of parts that should come together in the 11th hour**.
 
 Aim to make something tangible and demoable early - in the first week or so. 
 
-### Integrate one slice[](#integrate-one-slice)
+### Integrate one slice
 
 We can think of projects in two layers: front-end and back-end, design and
 code. 
@@ -1196,7 +1177,7 @@ same area is also marked on the back end disc. This common area on both is
 shaded and marked complete. At the right, a label says: Something
 works!](https://basecamp.com/assets/books/shapeup/3.2/one_slice-4cbcdda1a5cdc1b2bdc9bf7bd023cc0c5af666c5857c6e7d32650d9229a81cf0.png)
 
-### Case study: Clients in projects[](#case-study-clients-in-projects)
+### Case study: Clients in projects
 
 We built a feature in Basecamp 3 that allowed service firms to invite clients
 to their projects and share chosen documents, messages, or to-do lists with
@@ -1233,7 +1214,7 @@ working toggle to a manager. Their conversation led to a few more tweaks.
 This short example illustrates a few points about how the teams integrate over
 short periods to finish one piece of the project at a time.
 
-### Programmers don’t need to wait[](#programmers-dont-need-to-wait)
+### Programmers don’t need to wait
 
 Because the important moving parts were already defined in the shaping process,
 programmers don’t need to sit idle waiting for design when the project starts.
@@ -1245,45 +1226,29 @@ They won’t be able to take a piece of functionality to completion without
 knowing where it leads on the front-end, but there should be enough information
 in the pitch to inform foundational modeling decisions.
 
-### xxx Affordances before pixel-perfect screens[](#affordances-before-pixel-perfect-screens)
+### Affordances before pixel-perfect screens
 
 Programmers don’t need a pixel-perfect design to start implementing. All they
 need are endpoints: input elements, buttons, places where stored data should
-appear. These affordances are the core of a user interface design.
+appear. 
 
 Questions about font, color, spacing, and layout can be resolved after the raw
-affordances are in place and hooked up in code. Copywriting, basic affordances,
-and some wiring are all we need to try a live working version in the browser or
-on the device. Then we can answer the fundamental questions early: Does it make
-sense? Is it understandable? Does it do what we want?
+affordances are in place and hooked up in code. 
 
 That means the first interface a designer gives to a programmer can look very
-basic, like the example below. It’s more like a breadboard than a visual design
-or a polished mock-up.
+basic, like the example below. 
 
 ![Screenshot of a web browser. Some form fields, labels, and headers present an
 interface, but there is no navigation around them or visual styling. They float
 on a white field and are themselves very
 unstyled.](https://basecamp.com/assets/books/shapeup/3.2/affordances_first-da6f456fef0a4f777495bf1a99b8a66a76598919c1838e919bf1e707eac0019c.png)
 
-This screenshot is from a registration app for multi-day courses. The designer
-made it in HTML by hand. There’s barely any style - just enough visual
-hierarchy to feel confident that the layout is usable and amenable to future
-layers of styling.
-
 While the design looks simple, a lot of decisions are reflected in it.
-
-- The decision to ask for arrival time but not departure time came from
-  detailed discussions about the business logic and pricing model.
+- The decision to ask for arrival time but not departure time 
 - The specific options in the arrival time pulldown correspond to rules that
   had to be worked out about when to charge for meals and overnight stays.
 - The designer’s first sketches used a calendar-style date picker for the
-  arrival and departure days. But that led to UX problems. Some courses were
-  long (multiple weeks) with different phases. There wasn’t room in a standard
-  calendar-style date picker to label the phases on the day boxes. With a
-  pulldown, she could use option groups to label groups of dates when needed.
-  That way users wouldn’t need to reference a schedule elsewhere to be sure
-  they were selecting the right dates.
+  arrival and departure days. But that led to UX problems. 
 
 Here’s another example. This is the first working piece of an app for capturing
 data from customer interviews.
@@ -1296,17 +1261,8 @@ Observations. Below each box there is a simple text link that says add/edit.
 The interface is rough and
 unstyled.](https://basecamp.com/assets/books/shapeup/3.2/treehouse_story-602f74d12c548ce957ce0746e3765f3e663a654d967c670d8cec1ec452e20d2e.png)
 
-At this early stage the project name (Basecamp) and interview subject (Jan)
-were hard-coded and most of the links didn’t go anywhere.
-
-Look at how raw this design is. The actions are plain text links in the default
-blue and purple browser colors. The boxes containing the data points are barely
-styled with plain black borders. As rough as it is, this design tests some
-important trade-offs. The designer chose to show as much data as possible above
-the fold so it would be easy to review interviews. That didn’t leave enough
-room within each section for UI to add, edit, or remove data points. That led
-the designer to create separate screens for adding and editing data per
-section.
+Look at how raw this design is.  As rough as it is, this design tests some
+important trade-offs. 
 
 ![Screenshot of a dedicated screen for adding pulls to the box labeled 'pulls'
 in the previous screenshot. The breadcrumb at the top indicate these are pulls
@@ -1317,57 +1273,24 @@ beings with the word 'So' followed by a text field and an 'Add' button. The
 edit links and the Add button are
 unstyled.](https://basecamp.com/assets/books/shapeup/3.2/treehouse_pulls-c0044de294f1af4a45224a55414e98e14e22b73531a700d44e398fb1bd4d5350.png)
 
-This is the first design for adding and editing “pulls” - a type of data in
-this interview technique. Again, look at how raw it is. There’s just enough
-design here to quickly wire it up and test it. The team can click through this
-to judge whether navigating to a separate screen to record data is acceptable
-or not. If it works, they can layer on additional styling later. If it doesn’t
-work, they didn’t waste a lot of time implementing a pixel-perfect design.
-
 Beautiful alignment, colors, and typography don’t matter on the first pass.
-Visual styling is important in the end product, not in the early stages. The
-biggest uncertainties are about whether it will work, whether it will make
-sense, and how hard it will be to implement. After the elements are wired up,
-they can be rearranged, restyled, and repainted to improve the work that’s
-already done. First make it work, then make it beautiful.
+Visual styling is important in the end product, not in the early stages. 
 
-### xxx Program just enough for the next
-step[](#program-just-enough-for-the-next-step)
+### Program just enough for the next step
 
 The same is true for back-end work. It doesn’t have to be all or nothing.
-Sometimes a designer just needs some scaffolding - a couple fields that save data
-or some code to navigate from one stubbed screen to another. Other times she
-needs to populate a variable in the template with a collection of real data so
-she can iterate on different displays (rows, columns, media boxes, etc) to find
-the best design.
-
-The early back-end work can be strategically patchy. There might be a
-controller to render templates but no model. Or a controller and bits of a
-model with mock data but no support for creating or updating the data. Screens
-that aren’t wired yet could at least be connected with routes for navigating
-between them.
-
-When it was time to test the first piece of the interview app, the team knew
-there would be sensitive data from real interviews going into it. They needed
-to protect it with some kind of authentication. Rather than building full
-username and password support - or even integrating a third-party solution - they
-just used plain HTTPAuth to hard-code a password.
+Sometimes a designer just needs some scaffolding 
 
 ![Screenshot of the interview app protected with HTTPAuth. The site is greyed
 out and the browser's default username and password dialog for HTTP
 Authentication appears on top of
 it.](https://basecamp.com/assets/books/shapeup/3.2/treehouse_auth-026f20666d1ff20c9c937b8c3a6b4b4214e56d4a2a3479f3c7c8a932d4a269b3.png)
 
-This allowed the team to try adding data from real interviews very early in the
-cycle, without slowing down to hook up some authentication code that wasn’t
-going to teach them anything about the problems they were trying to solve.
-
 The point is to create a back-and-forth between design and programming on the
 same piece of the product. Instead of one big hand-off, take turns layering in
-affordances, code, and visual styling. Step by step, click through the real
-working feature-in-progress to judge how it’s coming and what to do next.
+affordances, code, and visual styling. 
 
-### xxx Start in the middle[](#start-in-the-middle)
+### Start in the middle
 
 In the examples above, the team didn’t build log in first. They didn’t build a
 way to create an interview project and an interview subject before solving the
@@ -1446,7 +1369,7 @@ scope (singular) of the project into separate scopes (plural) that can be
 finished independently of each other. In this chapter, we’ll see how the team
 maps the project into scopes and tackles them one by one.
 
-### xxx The scope map[](#the-scope-map)
+### xxx The scope map
 
 Imagine an overhead view of the project. At the beginning, there’s just an
 outline from the shaping work that preceded the project. There aren’t any tasks
@@ -1489,7 +1412,7 @@ in that list.
 correspond to the regions on the map above. Each list has a few items
 below.](https://basecamp.com/assets/books/shapeup/3.3/scopes_as_tasks-f2d2d388c1fef0554194b742b4f86a90c584d4fd39304b964f2e128ab6fbda92.png)
 
-### xxx The language of the project[](#the-language-of-the-project)
+### xxx The language of the project
 
 Scopes are more than just slices. They become the language of the project at
 the macro level. When we were building the _Clients in Projects_ feature, the
@@ -1504,7 +1427,7 @@ of going down into the weeds and defending the purposes and status of
 individual outstanding tasks. (We’ll see more in the next chapter about how to
 report on scopes using the Hill Chart.)
 
-### xxx Case study: Message drafts[](#case-study-message-drafts)
+### xxx Case study: Message drafts
 
 A designer and programmer were building a feature to create and save drafts of
 messages in a new app. After kick-off, they identified a bunch of tasks they
@@ -1609,7 +1532,7 @@ And then the project was done.
 ![Every region on the map is checked off. There are no to-dos on the
 right.](https://basecamp.com/assets/books/shapeup/3.3/drafts_9-06a8aa76c9f01d2311422dac7e0e88235fc7e38a68b02d4643ef87355425ab63.png)
 
-### xxx Discovering scopes[](#discovering-scopes)
+### xxx Discovering scopes
 
 Scope mapping isn’t planning. You need to walk the territory before you can
 draw the map. Scopes properly drawn are not arbitrary groupings or categories
@@ -1637,7 +1560,7 @@ that scope early. It wasn’t until they got into the weeds that they noticed
 there were tasks specifically about sending the draft and made that a separate
 scope.
 
-### xxx How to know if the scopes are right[](#how-to-know-if-the-scopes-are-right)
+### xxx How to know if the scopes are right
 
 Well-made scopes show the anatomy of the project. When you feel a pain in your
 body, you don’t have to question whether it’s in your arms or your legs or your
@@ -1675,7 +1598,7 @@ there are victories along the way and boundaries between the problems to solve.
 Let’s close this chapter with a few tips for dealing with different kinds of
 tasks and scopes that will come up.
 
-### xxx Layer cakes[](#layer-cakes)
+### xxx Layer cakes
 
 Most software projects require some UI design and a thin layer of code below.
 Think of a database app where all you need to do is enter information, save it,
@@ -1692,7 +1615,7 @@ axis is labeled Effort to Build and the two horizontal axes are labeled
 Functionality. The slice of the cake is wide and deep and the two layers are
 thin.](https://basecamp.com/assets/books/shapeup/3.3/layer_cake-df0e389ebd8bf05c90eb190e7732cbe89c107e21b927ff4cce6dd6b9a70c3184.png)
 
-### xxx Icebergs[](#icebergs)
+### xxx Icebergs
 
 But sometimes there is significantly more back-end work than UI work or vice
 versa. For example, a new feature that only requires submitting a form could
@@ -1723,14 +1646,14 @@ accepting them as a fact. Is the complexity really necessary and irreducible?
 Do we need that fancy UI? Is there a different way to build that back-end
 process so it has fewer interdependencies with the rest of the system?
 
-### xxx Chowder[](#chowder)
+### xxx Chowder
 
 There are almost always a couple things that don’t fit into a scope. We allow
 ourselves a “Chowder” list for loose tasks that don’t fit anywhere. But we
 always keep a skeptical eye on it. If it gets longer than three to five items,
 something is fishy and there’s probably a scope to be drawn somewhere.
 
-### xxx Mark nice-to-haves with ~[](#mark-nice-to-haves-with-)
+### xxx Mark nice-to-haves with ~
 
 New tasks constantly come up as you get deeper into a problem. You’ll find code
 that could be cleaned up, edge cases to address, and improvements to existing
@@ -1763,7 +1686,7 @@ to stay on top of the work. But this doesn’t help the manager directly. There
 are a couple problems with to-dos that make them insufficient for judging
 status.
 
-### xxx The tasks that aren’t there[](#the-tasks-that-arent-there)
+### xxx The tasks that aren’t there
 
 Consider a list with a few completed items and no incomplete items left. This
 could mean that all the work is done. But it could also mean that the team
@@ -1802,7 +1725,7 @@ outstanding tasks will go down or up. To know that, you’d need more context on
 the work inside the scope to understand what it means that those particular
 tasks are done and whether others might still be coming.
 
-### xxx Estimates don’t show uncertainty[](#estimates-dont-show-uncertainty)
+### xxx Estimates don’t show uncertainty
 
 Some teams try to attach estimates to their tasks or scopes to report status.
 The problem with estimates is they have a very different meaning depending on
@@ -1820,7 +1743,7 @@ without counting tasks and without numerical estimates. We do that by shifting
 the focus from what’s done or not done to what’s unknown and what’s solved. To
 enable this shift, we use the metaphor of the hill.
 
-### xxx Work is like a hill[](#work-is-like-a-hill)
+### xxx Work is like a hill
 
 Every piece of work has two phases. First there’s the uphill phase of figuring
 out what our approach is and what we’re going to do. Then, once we can see all
@@ -1903,7 +1826,7 @@ Note how the hill shows how the work _feels_ at different stages. The uphill
 phase is full of uncertainty, unknowns, and problem solving. The downhill phase
 is marked by certainty, confidence, seeing everything, and knowing what to do.
 
-### xxx Scopes on the hill[](#scopes-on-the-hill)
+### xxx Scopes on the hill
 
 We can combine the hill with the concept of scopes from the last chapter. The
 scopes give us the language for the project (“Locate,” “Reply”) and the hill
@@ -1927,7 +1850,7 @@ Here “Future-applying edits” is a scope that is still being worked out, with
 significant unknowns to solve. The other two scopes have no meaningful unknowns
 left, and “Global recurring events” is closer to finished.
 
-### xxx Status without asking[](#status-without-asking)
+### xxx Status without asking
 
 We built a feature exclusive to Basecamp for creating hill charts and updating
 them with a few clicks. The team members, who have the full context of where
@@ -1960,7 +1883,7 @@ unknown that’s holding it back?” The manager can workshop this specific piec
 of the project without having to first untangle it from all the other things
 that are moving along as expected.
 
-### xxx Nobody says “I don’t know”[](#nobody-says-i-dont-know)
+### xxx Nobody says “I don’t know”
 
 Nobody wants to raise their hand to management and say “I don’t know how to
 solve this problem.” This causes teams to hide uncertainty and accumulate risk.
@@ -1982,7 +1905,7 @@ Once it’s been spotted, the language of uphill/downhill facilitates the
 conversation. It’s less about the person (Looks like you’re stuck!) and more
 about the work. The question is: What can we solve to get that over the hill?
 
-### xxx Prompts to refactor the scopes[](#prompts-to-refactor-the-scopes)
+### xxx Prompts to refactor the scopes
 
 Sometimes probing into a stuck scope reveals that it isn’t stuck at all. The
 problem is in how the lines of the scope were drawn.
@@ -2029,7 +1952,7 @@ frequently than before.
 the hill independently at different
 speeds.](https://basecamp.com/assets/books/shapeup/3.4/notify_movement_after_refactoring-215c277c889103d22b884995b89170bd558c57b94085e41840ae5600b604cac8.png)
 
-### xxx Build your way uphill[](#build-your-way-uphill)
+### xxx Build your way uphill
 
 Some teams struggle with backsliding when they first try the hill chart. They
 consider a scope solved, move it the top of the hill, and later have to slide
@@ -2044,7 +1967,7 @@ about this,” the second third as “I’ve validated my approach,” and the f
 third to the top as “I’m far enough with what I’ve built that I don’t believe
 there are other unknowns.”
 
-### xxx Solve in the right sequence[](#solve-in-the-right-sequence)
+### xxx Solve in the right sequence
 
 In addition to seeing where the work stands, we can use the hill chart to
 sequence the work - which problems to solve in which order.
@@ -2104,7 +2027,7 @@ Still, there’s always more work than time. Shipping on time means shipping
 something imperfect. There’s always some queasiness in the stomach as you look
 at your work and ask yourself: Is it good enough? Is this ready to release?
 
-### xxx Compare to baseline[](#compare-to-baseline)
+### xxx Compare to baseline
 
 Designers and programmers always want to do their best work. It doesn’t matter
 if the button is on the center of the landing page or two pages down a settings
@@ -2147,7 +2070,7 @@ them.”
 Make scope cuts by comparing down to baseline instead of up to some perfect
 ideal
 
-### xxx Limits motivate trade-offs[](#limits-motivate-trade-offs)
+### xxx Limits motivate trade-offs
 
 Recall that the six-week bet has a **circuit breaker** - if the work doesn’t get
 done, the project doesn’t happen.
@@ -2161,7 +2084,7 @@ We expect our teams to actively make trade-offs and question the scope instead
 of cramming and pushing to finish tasks. We create our own work for ourselves.
 We should question any new work that comes up before we accept it as necessary.
 
-### xxx Scope grows like grass[](#scope-grows-like-grass)
+### xxx Scope grows like grass
 
 Scope grows naturally. Scope creep isn’t the fault of bad clients, bad
 managers, or bad programmers. Projects are opaque at the macro scale. You can’t
@@ -2193,7 +2116,7 @@ performance of our interactions. The trick is asking ourselves which things
 actually matter, which things move the needle, and which things make a
 difference for the core use cases we’re trying to solve.
 
-### xxx Scope hammering[](#scope-hammering)
+### xxx Scope hammering
 
 People often talk about “cutting” scope. We use an even stronger
 word - **hammering** - to reflect the power and force it takes to repeatedly bang the
@@ -2235,7 +2158,7 @@ The act of marking them as a nice-to-have is the scope hammering.
 A finished scope with one **nice-to-have** (marked with a “~”) that was never
 completed
 
-### xxx QA is for the edges[](#qa-is-for-the-edges)
+### xxx QA is for the edges
 
 At Basecamp’s current size (millions of users and about a dozen people on the
 product team), we have one QA person. They come in toward the end of the cycle
@@ -2273,7 +2196,7 @@ if there’s time and it makes sense, someone senior may look at the code and
 give feedback. It’s more about taking advantage of a teaching opportunity than
 creating a step in our process that must happen every time.
 
-### xxx When to extend a project[](#when-to-extend-a-project)
+### xxx When to extend a project
 
 In very rare cases, we’ll extend a project that runs past its deadline by a
 couple weeks. How do we decide when to extend a project and when to let the
@@ -2300,7 +2223,7 @@ shaping process or a performance problem with the team.
 ## xxx Move On 
 
 
-### xxx Let the storm pass[](#let-the-storm-pass)
+### xxx Let the storm pass
 
 Shipping can actually generate new work if you’re not careful. Feature releases
 beget feature requests. Customers say “Okay, that’s great, but what about that
@@ -2316,7 +2239,7 @@ It’s important to stay cool and avoid knee-jerk reactions. Give it a few days
 and allow it to die down. Be firm and remember why you made the change in the
 first place and who the change is helping.
 
-### xxx Stay debt-free[](#stay-debt-free)
+### xxx Stay debt-free
 
 It can be tempting to commit to making changes in response to feedback, but
 then you no longer have a clean slate for the next cycle. Remember: these are
@@ -2330,7 +2253,7 @@ product needs more time, then it requires a new bet. Let the requests or bugs
 that just came up compete with everything else at the next **betting table** to
 be sure they’re strategically important.
 
-### xxx Feedback needs to be shaped[](#feedback-needs-to-be-shaped)
+### xxx Feedback needs to be shaped
 
 Here we come full circle. The raw ideas that just came in from customer
 feedback aren’t actionable yet. They need to be shaped. They are the raw inputs
@@ -2345,7 +2268,7 @@ version of the project for the greatest chance of success.
 
 ## xxx Conclusion 
 
-### xxx Key concepts[](#key-concepts)
+### xxx Key concepts
 
 The Shape Up method presented in this book is tightly interwoven. It may take
 some thought and experimentation to pull out the right pieces and adapt them to
@@ -2366,7 +2289,7 @@ and concepts in this book gave you some things to take home immediately:
 - Downhill versus uphill work and communicating about unknowns
 - Scope hammering to separate must-haves from nice-to-haves
 
-### xxx Get in touch[](#get-in-touch)
+### xxx Get in touch
 
 We’d love to hear what you think so we can make the Shape Up method easier to
 adopt. What did we miss? What still isn’t clear? What do you wish we had talked
