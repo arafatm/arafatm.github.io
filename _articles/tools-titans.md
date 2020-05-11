@@ -6,22 +6,32 @@ author: Timothy Ferriss
 title: Tools of Titans - The Tactics, Routines, and Habits of Billionaires, Icons, and World-Class Performers
 ---
 
-<details markdown="1">
-<summary markdown="1">
+
+1. [title: Tools of Titans - The Tactics, Routines, and Habits of Billionaires, Icons, and World-Class Performers](#title:-tools-of-titans---the-tactics,-routines,-and-habits-of-billionaires,-icons,-and-world-class-performers)
+2. [To help with sleep](#to-help-with-sleep)
+3. [5 Morning Rituals that Help Me Win the Day](#5-morning-rituals-that-help-me-win-the-day)
+4. [Gymnast Strong](#gymnast-strong)
+	1. [QL Walk 10 to 15 feet. Reverse direction](#ql-walk-10-to-15-feet.-reverse-direction)
+	2. [Jefferson Curl 5 to 10 reps](#jefferson-curl-5-to-10-reps)
+	3. [Dips with RTO 5 slow dips](#dips-with-rto-5-slow-dips)
+	4. [Hinge Rows 5 to 15 times](#hinge-rows-5-to-15-times)
+	5. [Ag Walks with Rear Support 5 minutes of constant movement](#ag-walks-with-rear-support-5-minutes-of-constant-movement)
+	6. [Pike Pulses 15 to 20 pulses](#pike-pulses-15-to-20-pulses)
+	7. [Cast Wall Walk 10 reps](#cast-wall-walk-10-reps)
+5. [AcroYoga—Thai and Fly](#acroyoga—thai-and-fly)
+	1. [Hippie Twist](#hippie-twist)
+	2. [Folded Leaf and Leaf Hugger](#folded-leaf-and-leaf-hugger)
+	3. [Leg Love—“Gravity Boots”](#leg-love—“gravity-boots”)
+
 ## To help with sleep
-</summary>
 
 2 tablespoons of apple cider vinegar (I use Bragg brand) and 1 tablespoon
 honey, stirred into 1 cup of hot water
 [:link:](kindle://book?action=open&asin=B01HSMRWNU&location=2679)
-</details>
 
-<details markdown="1">
-<summary markdown="1">
 ## 5 Morning Rituals that Help Me Win the Day
-</summary>
 
-### 1 Make Your Bed
+1 Make Your Bed
 
     “When you wake up in the morning, tell yourself: The people I deal with
     today will be meddling, ungrateful, arrogant, dishonest, jealous, and
@@ -31,17 +41,13 @@ honey, stirred into 1 cup of hot water
     birth, but the same mind, and possessing a share of the divine. And so none
     of them can hurt me.” -- Marcus Aurelius 
 
-### 2 Meditate (10 to 20 minutes)
+2 Meditate (10 to 20 minutes)
 
-### 3 Do 5 to 10 Reps of Something (<1 minute)
+3 Do 5 to 10 Reps of Something. Often take a 30- to 60-second pure cold shower after this
 
-often take a 30- to 60-second pure cold shower after this,
+4 Prepare “Titanium Tea”. Add 1 to 2 tablespoons of coconut oil
 
-### 4 Prepare “Titanium Tea” (this name was a joke, but it stuck) (2 to 3 minutes)
-
-Add 1 to 2 tablespoons of coconut oil
-
-### 5 Morning Pages or 5-Minute Journal (5 to 10 minutes)
+5 Morning Pages or 5-Minute Journal (5 to 10 minutes)
 
 To be answered in the morning: 
 
@@ -73,50 +79,38 @@ To be filled in at night:
     2.  
     3. 
 
-</details>
-
-<details markdown="1">
-<summary markdown="1">
 ## Gymnast Strong
-</summary>
 
-QL Walk 10 to 15 feet. Reverse direction [:link:](kindle://book?action=open&asin=B01HSMRWNU&location=685)
+### QL Walk 10 to 15 feet. Reverse direction
 
-Jefferson Curl 5 to 10 reps [:link:](kindle://book?action=open&asin=B01HSMRWNU&location=696)
+### Jefferson Curl 5 to 10 reps
 
 ![jefferson-curl.png](/img/titans/jefferson-curl.png)
 
-Dips with RTO 5 slow dips [:link:](kindle://book?action=open&asin=B01HSMRWNU&location=710)
+### Dips with RTO 5 slow dips
 
 ![dips-with-rto.png](/img/titans/dips-with-rto.png)
 
-Hinge Rows 5 to 15 times [:link:](kindle://book?action=open&asin=B01HSMRWNU&location=717)
+### Hinge Rows 5 to 15 times
 
 ![hinge-rows.png](/img/titans/hinge-rows.png)
 
-Ag Walks with Rear Support 5 minutes of constant movement [:link:](kindle://book?action=open&asin=B01HSMRWNU&location=727 )
+### Ag Walks with Rear Support 5 minutes of constant movement
 
 ![ag-walks.png](/img/titans/ag-walks.png)
 
-Pike Pulses 15 to 20 pulses [:link:](kindle://book?action=open&asin=B01HSMRWNU&location=738)
+### Pike Pulses 15 to 20 pulses
 
 ![pike-pulses.png](/img/titans/pike-pulses.png)
 
-Cast Wall Walk 10 reps [:link:](kindle://book?action=open&asin=B01HSMRWNU&location=747)
+### Cast Wall Walk 10 reps
 
 ![cast-wall-walk.png](/img/titans/cast-wall-walk.png)
 
-</details>
-
-<details markdown="1">
-<summary markdown="1">
 ## AcroYoga—Thai and Fly
-</summary>
 
-Hippie Twist [:link:](kindle://book?action=open&asin=B01HSMRWNU&location=1306)
+### Hippie Twist
 
-Folded Leaf and Leaf Hugger [:link:](kindle://book?action=open&asin=B01HSMRWNU&location=1326)
+### Folded Leaf and Leaf Hugger
 
-Leg Love—“Gravity Boots” [:link:](kindle://book?action=open&asin=B01HSMRWNU&location=1339)
-
-</details>
+### Leg Love—“Gravity Boots”
