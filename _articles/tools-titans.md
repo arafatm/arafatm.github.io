@@ -83,27 +83,27 @@ To be filled in at night:
 
 ### Jefferson Curl 5 to 10 reps
 
-![jefferson-curl.png](/img/titans/jefferson-curl.png)
+![jefferson-curl.png](/assets/img/titans/jefferson-curl.png)
 
 ### Dips with RTO 5 slow dips
 
-![dips-with-rto.png](/img/titans/dips-with-rto.png)
+![dips-with-rto.png](/assets/img/titans/dips-with-rto.png)
 
 ### Hinge Rows 5 to 15 times
 
-![hinge-rows.png](/img/titans/hinge-rows.png)
+![hinge-rows.png](/assets/img/titans/hinge-rows.png)
 
 ### Ag Walks with Rear Support 5 minutes of constant movement
 
-![ag-walks.png](/img/titans/ag-walks.png)
+![ag-walks.png](/assets/img/titans/ag-walks.png)
 
 ### Pike Pulses 15 to 20 pulses
 
-![pike-pulses.png](/img/titans/pike-pulses.png)
+![pike-pulses.png](/assets/img/titans/pike-pulses.png)
 
 ### Cast Wall Walk 10 reps
 
-![cast-wall-walk.png](/img/titans/cast-wall-walk.png)
+![cast-wall-walk.png](/assets/img/titans/cast-wall-walk.png)
 
 ## AcroYoga—Thai and Fly
 
