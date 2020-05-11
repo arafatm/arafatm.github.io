@@ -43,6 +43,10 @@ summary h2 {
   display: inline;
 }
 
+img, iframe {
+  max-width: 50%;
+}
+
 iframe  {
   margin: 1em;
 }
