@@ -1292,36 +1292,19 @@ affordances, code, and visual styling.
 
 ### Start in the middle
 
-In the examples above, the team didn’t build log in first. They didn’t build a
-way to create an interview project and an interview subject before solving the
-problem of adding interview data. They jumped straight into the middle where
-the interesting problem was and stubbed everything else to get there.
+In the examples above, the team didn’t build log in first. They jumped straight
+into the middle where the interesting problem was and stubbed everything else
+to get there.
 
-To expand on this, here are three criteria to think about when choosing what to
-build first:
+Three criteria to think about when choosing what to build first:
 
-First, it should be **core**. The visibility toggle was core to the Clients in
-Projects concept. Without it, the other work wouldn’t mean anything. Contrast
-that with a more peripheral aspect of the project, like the ability to rename a
-client. Both were “required,” but one was more central and important to prove
-out early in the cycle. In the interview app, recording interview data was more
-core - more in the middle - than setting up a new research project.
+First, it should be **core**. 
 
-Second, it should be **small**. If the first piece of work isn’t small enough,
-there isn’t much benefit to carving it off from the rest. The point is to
-finish something meaningful in a few days and build momentum - to have something
-real to click on that shows the team is on the right track.
+Second, it should be **small**. 
 
-Third, it should be **novel**. If two parts of the project are both core and
-small, prefer the thing that you’ve never done before. In the Clients in
-Projects feature, the UI for adding clients was mostly the same as the UI for
-adding regular users. Starting on that would have moved the project forward,
-but it wouldn’t have taught the team anything. It wouldn’t have eliminated
-uncertainty. Starting with the visibility toggle boosted everyone’s confidence
-because it proved that a new idea was going to work.
+Third, it should be **novel**. 
 
-## xxx Map the Scopes 
-
+## Map the Scopes 
 
 ![Cartoon. The same figure as in the last chapter stands beside the desk of
 another figure. Hands on hips, the first figure asks: So, how's the project
@@ -1330,12 +1313,7 @@ outlines territories, some of them with checkmarks inside. A speech bubble
 says: 'Compose' and 'Store' are working. We're starting 'Send'
 now.](https://basecamp.com/assets/books/shapeup/3.3/intro_cartoon-bfdfe5579c42a0dc27591d343ab109d5d37f3fa94eb9b06266ee7b62f414b518.png)
 
-In the previous chapter, we started the project by finishing one integrated
-slice early on. That practice belongs to a more general technique that the team
-can use throughout the project.
-
-### xxx Organize by structure, not by
-person[](#organize-by-structure-not-by-person)
+### Organize by structure, not by person
 
 When asked to organize tasks for a project, people often separate work by
 person or role: they’ll create a list for Designers and a list for Programmers.
@@ -1343,46 +1321,18 @@ This leads to the problem we talked about in the previous chapter - people will
 complete tasks, but the tasks won’t add up to a finished part of the project
 early enough.
 
-To take an example outside of software, consider someone organizing a
-fundraising event. They could create a list of tasks for each of their three
-volunteers and track the work that way. But then there’d be no way to see the
-big picture of how the event is coming together - what’s done and what’s not done
-at the macro level. Instead, they should create lists based on the _structure_
-of the project - the things that can be worked on and finished independently of
-each other. To do that, they would create lists for Food Menu, Venue Setup, and
-Light/Sound. Then the organizer can easily see which areas are done and which
-areas have outstanding work.
-
-In product development, the categories aren’t pre-cut for us. We usually build
-things we’ve never built before. Each project is a wild territory that we have
-to walk through before we can draw a map. By digging into the work, we figure
-out where the interdependencies are, how things are connected, and what we can
-slice apart.
-
-As we saw in the previous chapter, the slices of work integrate front-end and
-back-end tasks. This allows us to finish one slice of the actual project and
-definitively move on. That’s better than having lots of pieces that - fingers
-crossed - are supposed to come together by the end of the cycle.
-
 We call these integrated slices of the project **scopes**. We break the overall
 scope (singular) of the project into separate scopes (plural) that can be
-finished independently of each other. In this chapter, we’ll see how the team
-maps the project into scopes and tackles them one by one.
+finished independently of each other. 
 
-### xxx The scope map
+### The scope map
 
-Imagine an overhead view of the project. At the beginning, there’s just an
-outline from the shaping work that preceded the project. There aren’t any tasks
-or scopes yet.
+An outline from the shaping work that preceded the project. 
 
 ![Drawing: an enclosed vaguely circular outline with nothing
 inside.](https://basecamp.com/assets/books/shapeup/3.3/map_outline-bd532edbcca0a1a71b7521d1303a4c500037254651c81e1e8a0487f7ce07446d.png)
 
 When the team members take over the project, they start discovering tasks.
-Tasks are a natural starting point because they’re concrete and granular. It’s
-too early to organize them into higher level categories. It would be artificial
-to try and group them arbitrarily. It’s enough at the start just to capture a
-variety of things that need to happen.
 
 ![Drawing: the same outline with a dozen tiny dots filling the space
 inside.](https://basecamp.com/assets/books/shapeup/3.3/map_tasks-dfc44d0acf74e8dd1d76ad7be0cc05efb7ba31cd690da5bf45f1734405ba7eff.png)
@@ -1391,9 +1341,9 @@ But we don’t want to stay with this picture for long. It’s too low-level.
 There’s nothing visible from high altitude.
 
 As the team starts doing real work on the project they learn how the tasks are
-related and what the structure of the project is really like. Then they become
-able to factor the project into scopes. This is like dividing the map of the
-project into separate territories.
+related and what the structure of the project is really like. 
+
+They factor the project into scopes. 
 
 ![Drawing: the same outline now divided with boundary lines like states on a
 map. The regions are labeled: Field on Form, Preset Locations, Migrate Events,
@@ -1401,51 +1351,33 @@ and Display on
 List.](https://basecamp.com/assets/books/shapeup/3.3/map_scopes-ef077052fd1354c32a3b98ca4374e5acdec4854dd25f2f9144681e931acb6ef4.png)
 
 The scopes reflect the meaningful parts of the problem that can be completed
-independently and in a short period of time - a few days or less. They are bigger
-than tasks but much smaller than the overall project.
-
-The map is a mental image. In practice, we define and track the scopes as to-do
-lists. Each scope corresponds to a list name. Then any tasks for that scope go
-in that list.
+independently and in a short period of time 
 
 ![A screenshot of to-do lists in Basecamp. The names of the to-do lists
 correspond to the regions on the map above. Each list has a few items
 below.](https://basecamp.com/assets/books/shapeup/3.3/scopes_as_tasks-f2d2d388c1fef0554194b742b4f86a90c584d4fd39304b964f2e128ab6fbda92.png)
 
-### xxx The language of the project
+### The language of the project
 
-Scopes are more than just slices. They become the language of the project at
-the macro level. When we were building the _Clients in Projects_ feature, the
-team used the language of the scopes like this: “After _Bucket Access_ is done
-we can implement _Invite Clients_. Then we’ll _Update Recording Visibility_
-when people on the firm flip the _Visibility Toggle_.”
+Scopes are more than just slices. They become the **language of the project**
+at the macro level. 
 
 When it’s time to report status, the team uses the language of scopes to
-explain what’s done and what’s not done. It’s more satisfying to have the
-conversation at a high level and point to finished pieces of software, instead
-of going down into the weeds and defending the purposes and status of
-individual outstanding tasks. (We’ll see more in the next chapter about how to
-report on scopes using the Hill Chart.)
+explain what’s done and what’s not done. 
 
-### xxx Case study: Message drafts
+It’s more satisfying to have the conversation at a high level and point to
+finished pieces of software, instead of going down into the weeds and defending
+the purposes and status of individual outstanding tasks. 
+
+### Case study: Message drafts
 
 A designer and programmer were building a feature to create and save drafts of
-messages in a new app. After kick-off, they identified a bunch of tasks they
-would need to do at some point.
+messages in a new app. 
 
 ![On the left, an enclosed outline that represents the project with scattered
 dots inside. On the right, a to-do list named 'Unscoped' with ten seemingly
 unrelated
 tasks.](https://basecamp.com/assets/books/shapeup/3.3/drafts_1-34f5a96e807ac206f0a3c1cd708a1ed553550480198d3dbd02e3f8f890c36100.png)
-
-As the end of the first week approached, they had completed some of the tasks,
-but there wasn’t anything to show for their work. In the spirit of “get one
-piece done” they focused on one key interaction they could integrate: creating
-a new draft.
-
-They called the new scope “Start New,” created a to-do list for it, and moved
-to-dos into it. There was only one design task left for them to consider this
-scope finished.
 
 ![One region of the outlined space is marked with a boundary and labeled Start
 New. On the right, the to-do list is broken into two: a new list called Start
@@ -1454,24 +1386,10 @@ in the Unscoped list, which is three items shorter now. Two of the items in the
 Start New list are completed and one is
 outstanding.](https://basecamp.com/assets/books/shapeup/3.3/drafts_2-89577b850eaa3053b9d335730a42d6bf7b66062b4ad5391e56307f9b928d79d2.png)
 
-After finishing the one design task, the scope was complete.
-
 ![The region that was labeled 'Start New' is now marked with a checkmark. On
 the right, the Start New to-do list is gone because all the items were
 completed and the Unscoped list
 remains.](https://basecamp.com/assets/books/shapeup/3.3/drafts_3-304ea3ad4d86e8b46f1dff3ad048776a111c79d078adb50ba25cf3611276995b.png)
-
-The unscoped tasks that are left don’t represent all the work that remains.
-More tasks are going to be discovered as they start working on each of those.
-Still, there is enough variety in the work to tease out more scopes. The team
-was motivated to break out the scopes already at this point because they knew
-they wanted their efforts to add up to another visible piece being finished
-before long.
-
-Taking a look at the tasks that were left, they decided to pull out tasks
-related to finding the drafts into a new scope called Locate and the task for
-deleting into a scope called Trash. The work that was left all seemed related
-to saving and editing the draft, so they called that Save/Edit.
 
 ![The map is now divided into three regions in addition to the checked off
 region: Trash, Locate, and Save/Edit. On the right, to-do lists corresponding
@@ -1479,14 +1397,7 @@ to the same regions appear. Save/Edit has the most items. The Unscoped list is
 gone because of all its items have been distributed to the new
 lists.](https://basecamp.com/assets/books/shapeup/3.3/drafts_4-1abbc8645f679d8db90f22ae2cc58e48f241a9a17f5c94555dc34ff64f2c5659.png)
 
-Take a look at the Locate scope. There’s only one task there right now. But
-surely there will be more work to do than just designing the index. When there
-are implementation tasks to do, that’s where they’ll go.
-
-The designer started some work on Locate while the programmer focused on
-Save/Edit. As she dug into it, she noticed she could carve off a couple pieces
-to make more visible progress. There were really three scopes in it.
-
+Noticed she could carve off a couple pieces to make more visible progress.
 First she factored out the work related to sending the drafted message. She
 called that Send.
 
@@ -1495,10 +1406,7 @@ Send. On the right, two items appear in a list called Send and the Save/Edit
 list is correspondingly
 shorter.](https://basecamp.com/assets/books/shapeup/3.3/drafts_5-267e71f5dd4144e6e02d53e587e15ef5a434055f3d4a9eaefb6e0e3f1368c2ab.png)
 
-Finally, some of the remaining Save/Edit tasks were about storing information
-and one other was actually unrelated - it was a special case for handling drafts
-when replying to another message. She broke these out into two new scopes:
-Store and Reply.
+Two new scopes: Store and Reply.
 
 ![The region formerly labeled Save/Edit is divided into two with a new
 boundary. The new two regions are named Store and Reply. On the right Store and
@@ -1508,57 +1416,28 @@ lists: Send, Store, Reply, Trash, and Locate. Each list has between one and
 three items on
 it.](https://basecamp.com/assets/books/shapeup/3.3/drafts_6-a511456472dd9b348e6fc314781a8e6c91e7ae942eed0779036539bf27bbb530.png)
 
-At this point the team suddenly felt like they could see the whole of the
-project at a high level. All the major parts were visible at the macro level as
-scopes. None of them were so big that important or challenging tasks could hide
-inside of them unnoticed.
-
-Meanwhile, the designer had made progress on Locate. After a little wiring,
-they were able to mark that done. Tasks were getting done on Send and Store as
-well.
-
 ![The region marked Locate is checked off. The list disappears on the
 right.](https://basecamp.com/assets/books/shapeup/3.3/drafts_7-5e57ebc504000f0fd6a34d99f88485de703c4275c9e95c8bf0b9ffe53da52f8c.png)
-
-Once Send and Store were finished, just a couple tasks remained for Trash and
-Reply.
 
 ![Send and Store are checked off. Now only Reply and Trash remain in the map
 and as to-do lists on the
 right.](https://basecamp.com/assets/books/shapeup/3.3/drafts_8-d8ce2b945f7eaf2938bba92428fb75dc665bcda8f5ca8d629f9cc054e34a5ef8.png)
 
-And then the project was done.
-
 ![Every region on the map is checked off. There are no to-dos on the
 right.](https://basecamp.com/assets/books/shapeup/3.3/drafts_9-06a8aa76c9f01d2311422dac7e0e88235fc7e38a68b02d4643ef87355425ab63.png)
 
-### xxx Discovering scopes
+### Discovering scopes
 
 Scope mapping isn’t planning. You need to walk the territory before you can
-draw the map. Scopes properly drawn are not arbitrary groupings or categories
-for the sake of tidiness. They reflect the real ground truth of what can be
-done independently - the underlying interdependencies and relationships in the
-problem.
+draw the map. 
 
-Scopes arise from interdependencies. The way parts depend on each other
-determines when you can say a given piece of the work is “done.” You don’t know
-what the work and interdependencies actually are in advance. We talked earlier
-about imagined versus discovered tasks. The same principle applies to scopes.
-The scopes need to be discovered by doing the real work and seeing how things
-connect and don’t connect.
+Scopes reflect the real ground truth of what can be done independently 
 
-That’s why at the start of a project, we don’t expect to see accurate scopes.
-We’re more likely to see them at the end of week one or start of week two,
-after the team has had a chance to do some real work and find the natural
-dividing lines in the anatomy of the problem.
+Scopes arise from interdependencies. 
+
+**At the start of a project, we don’t expect to see accurate scopes.**
 
 It’s also normal to see some shuffling and instability in the scopes at first.
-The lines get redrawn or scopes renamed as the team feels out where the
-boundaries really are, like in the example above. The team was focused on
-specific problems of saving and editing drafts, so it was easiest to identify
-that scope early. It wasn’t until they got into the weeds that they noticed
-there were tasks specifically about sending the draft and made that a separate
-scope.
 
 ### xxx How to know if the scopes are right
 
@@ -2100,8 +1979,7 @@ we’re trying to sell to.
 This is how it is. Rather than trying to stop scope from growing, give teams
 the tools, authority, and responsibility to constantly cut it down.
 
-### xxx Cutting scope isn’t lowering
-quality[](#cutting-scope-isnt-lowering-quality)
+### xxx Cutting scope isn’t lowering quality
 
 Picking and choosing which things to execute and how far to execute on them
 doesn’t leave holes in the product. Making choices makes the product better. It
