@@ -84,15 +84,27 @@ QL Walk 10 to 15 feet. Reverse direction [:link:](kindle://book?action=open&asin
 
 Jefferson Curl 5 to 10 reps [:link:](kindle://book?action=open&asin=B01HSMRWNU&location=696)
 
+![jefferson-curl.png](/img/titans/jefferson-curl.png)
+
 Dips with RTO 5 slow dips [:link:](kindle://book?action=open&asin=B01HSMRWNU&location=710)
+
+![dips-with-rto.png](/img/titans/dips-with-rto.png)
 
 Hinge Rows 5 to 15 times [:link:](kindle://book?action=open&asin=B01HSMRWNU&location=717)
 
+![hinge-rows.png](/img/titans/hinge-rows.png)
+
 Ag Walks with Rear Support 5 minutes of constant movement [:link:](kindle://book?action=open&asin=B01HSMRWNU&location=727 )
+
+![ag-walks.png](/img/titans/ag-walks.png)
 
 Pike Pulses 15 to 20 pulses [:link:](kindle://book?action=open&asin=B01HSMRWNU&location=738)
 
+![pike-pulses.png](/img/titans/pike-pulses.png)
+
 Cast Wall Walk 10 reps [:link:](kindle://book?action=open&asin=B01HSMRWNU&location=747)
+
+![cast-wall-walk.png](/img/titans/cast-wall-walk.png)
 
 </details>
 
