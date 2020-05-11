@@ -6,8 +6,6 @@ author: Timothy Ferriss
 title: Tools of Titans - The Tactics, Routines, and Habits of Billionaires, Icons, and World-Class Performers
 ---
 
-
-1. [title: Tools of Titans - The Tactics, Routines, and Habits of Billionaires, Icons, and World-Class Performers](#title:-tools-of-titans---the-tactics,-routines,-and-habits-of-billionaires,-icons,-and-world-class-performers)
 2. [To help with sleep](#to-help-with-sleep)
 3. [5 Morning Rituals that Help Me Win the Day](#5-morning-rituals-that-help-me-win-the-day)
 4. [Gymnast Strong](#gymnast-strong)
