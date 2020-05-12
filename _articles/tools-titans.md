@@ -6,20 +6,8 @@ author: Timothy Ferriss
 title: Tools of Titans - The Tactics, Routines, and Habits of Billionaires, Icons, and World-Class Performers
 ---
 
-2. [To help with sleep](#to-help-with-sleep)
-3. [5 Morning Rituals that Help Me Win the Day](#5-morning-rituals-that-help-me-win-the-day)
-4. [Gymnast Strong](#gymnast-strong)
-	1. [QL Walk 10 to 15 feet. Reverse direction](#ql-walk-10-to-15-feet.-reverse-direction)
-	2. [Jefferson Curl 5 to 10 reps](#jefferson-curl-5-to-10-reps)
-	3. [Dips with RTO 5 slow dips](#dips-with-rto-5-slow-dips)
-	4. [Hinge Rows 5 to 15 times](#hinge-rows-5-to-15-times)
-	5. [Ag Walks with Rear Support 5 minutes of constant movement](#ag-walks-with-rear-support-5-minutes-of-constant-movement)
-	6. [Pike Pulses 15 to 20 pulses](#pike-pulses-15-to-20-pulses)
-	7. [Cast Wall Walk 10 reps](#cast-wall-walk-10-reps)
-5. [AcroYoga—Thai and Fly](#acroyoga—thai-and-fly)
-	1. [Hippie Twist](#hippie-twist)
-	2. [Folded Leaf and Leaf Hugger](#folded-leaf-and-leaf-hugger)
-	3. [Leg Love—“Gravity Boots”](#leg-love—“gravity-boots”)
+* TOC
+{:toc}
 
 ## To help with sleep
 
