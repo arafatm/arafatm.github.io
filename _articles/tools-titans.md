@@ -9,15 +9,11 @@ title: Tools of Titans - The Tactics, Routines, and Habits of Billionaires, Icon
 * TOC
 {:toc}
 
-## To help with sleep
-
-2 tablespoons of apple cider vinegar (I use Bragg brand) and 1 tablespoon
-honey, stirred into 1 cup of hot water
-[:link:](kindle://book?action=open&asin=B01HSMRWNU&location=2679)
+## To help with sleep: 2 tablespoons of apple cider vinegar and 1 tablespoon honey, stirred into 1 cup of hot water
 
 ## 5 Morning Rituals that Help Me Win the Day
 
-1 Make Your Bed
+### 1 Make Your Bed
 
     “When you wake up in the morning, tell yourself: The people I deal with
     today will be meddling, ungrateful, arrogant, dishonest, jealous, and
@@ -27,13 +23,13 @@ honey, stirred into 1 cup of hot water
     birth, but the same mind, and possessing a share of the divine. And so none
     of them can hurt me.” -- Marcus Aurelius 
 
-2 Meditate (10 to 20 minutes)
+### 2 Meditate (10 to 20 minutes)
 
-3 Do 5 to 10 Reps of Something. Often take a 30- to 60-second pure cold shower after this
+### 3 Do 5 to 10 Reps of Something. Often take a 30- to 60-second pure cold shower after this
 
-4 Prepare “Titanium Tea”. Add 1 to 2 tablespoons of coconut oil
+### 4 Prepare “Titanium Tea”. Add 1 to 2 tablespoons of coconut oil
 
-5 Morning Pages or 5-Minute Journal (5 to 10 minutes)
+### 5 Morning Pages or 5-Minute Journal (5 to 10 minutes)
 
 To be answered in the morning: 
 
