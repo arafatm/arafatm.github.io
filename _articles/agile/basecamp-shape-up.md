@@ -6,6 +6,8 @@ author: Ryan Singer - Basecamp
 title: Shape Up
 ---
 
+* TOC
+{:toc}
 
 ## Introduction
 

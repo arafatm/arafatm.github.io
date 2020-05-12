@@ -2,14 +2,8 @@
 title: Guitar Level 2 with Alex, Montavilla Guitar Center
 ---
 
-1. [title: Guitar Level 2 with Alex, Montavilla Guitar Center](#title:-guitar-level-2-with-alex,-montavilla-guitar-center)
-2. [2020-05-08](#2020-05-08)
-	1. [Common Chords](#common-chords)
-	2. [Strumming Workout](#strumming-workout)
-	3. [Stand By Me](#stand-by-me)
-	4. [Beatles - Daytrippers](#beatles---daytrippers)
-	5. [Palm Muting](#palm-muting)
-	6. [Blink 182 - All The Small Things](#blink-182---all-the-small-things)
+* TOC 
+{:toc}
 
 ## 2020-05-08 
 
