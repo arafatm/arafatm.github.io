@@ -1,5 +1,6 @@
 ---
 layout: home
+title: arafatm
 ---
 
 :guitar: [Guitar](/guitar) 

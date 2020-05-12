@@ -3,6 +3,41 @@
 
 @import "{{ site.theme }}";
 
+body {
+  padding: 0em;
+  margin: 0em;
+}
+
+header {
+  margin: 0em 0em 1em 0em;
+}
+
+div.wrapper {
+  width: 60em;
+  margin: 1em auto;
+  padding: 0em;
+}
+
+h1 {
+  border-bottom: .1em solid black;
+  margin: 1em 0em;
+}
+h2, h3, h4 {
+  margin: 2em 0em 1em 0em;
+}
+h2 {
+  border-bottom: .1em solid black;
+}
+
+iframe {
+  margin: 1em;
+}
+
+p {
+  margin: 0 0 1em 1em;
+}
+
+
 /*
 body {
   margin: 0em 1em 0em 1em;
@@ -20,10 +55,6 @@ header.post-header {
   margin: 0em 0em 1em 0em;
 }
 
-h1, h2 {
-  text-decoration: underline;
-  //margin: 1em 0em 1em 0em;
-}
 
 h3, h4, h5, h6 {
   //margin: 0em 0em 1em 0em;
@@ -33,7 +64,7 @@ section {
   margin: 1em 1em;
   padding: 0em;
   float: none;
-  width: 60em;
+  //width: 60em;
 }
 
 summary { 
@@ -60,4 +91,3 @@ footer {
 }
 
 */
-
