@@ -6,6 +6,7 @@
 body {
   padding: 0em;
   margin: 0em;
+  background-color: #f5f5f5;
 }
 
 div.wrapper {
@@ -15,9 +16,11 @@ div.wrapper {
   font-family: Verdana, Geneva, sans-serif; 
   font-size: 16px;
   font-weight: 200;
-  color: #FFF;
-  background-color: #272822;
+  //color: #DDD;
+  background-color: #FFF;
 }
+
+//a { color: #AAF; }
 
 header {
   margin: 0em 0em 1em 0em;
@@ -27,6 +30,9 @@ h1 {
   border-bottom: .1em solid black;
   margin: 1em 0em;
 }
+
+//h2, h3, h4, h5, h6 { color: #BBB; }
+
 h2 {
   border-bottom: .1em solid black;
 }
