@@ -1612,7 +1612,7 @@ Here “Future-applying edits” is a scope that is still being worked out, with
 significant unknowns to solve. The other two scopes have no meaningful unknowns
 left, and “Global recurring events” is closer to finished.
 
-### Status without asking
+### xxx Status without asking
 
 We built a feature exclusive to Basecamp for creating hill charts and updating
 them with a few clicks. The team members, who have the full context of where
