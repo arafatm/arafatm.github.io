@@ -1665,30 +1665,6 @@ it back when they uncover an unexpected unknown.
 
 ### Solve in the right sequence
 
-In addition to seeing where the work stands, we can use the hill chart to
-sequence the work - which problems to solve in which order.
-
-Some scopes are riskier than others. Imagine two scopes: One involves geocoding
-data - something the team has never done before. The other is designing and
-implementing an email notification. Both have unknowns. Both start at the
-bottom of the hill. This is where the team asks themselves: If we were out of
-time at the end of the cycle, which of these could we easily whip
-together - despite the unknowns - and which might prove to be harder than we think?
-
-That motivates the team to push the scariest work uphill first. Once they get
-uphill, they’ll leave it there and look for anything critically important
-before finishing the downhill work to completion. It’s better to get a few
-critical scopes over the top early in the project and leave the
-screw-tightening for later.
-
-Work expands to fill the time available. If the team starts with the email
-template first, they could easily spend weeks iterating on copy or creating the
-ultimate best-ever email design. But they don’t _need_ to do that. There’s some
-version of an email template that could be worked out in a day during the final
-week and it would be sufficient. The geocoder, on the other hand, might present
-novel problems that the team could struggle with for weeks. They don’t want
-that surprise to come at the end of the cycle.
-
 Journalists have a concept called the “inverted pyramid.” The idea is their
 articles start with the most essential information at the top, then they add
 details and background information in decreasing order of importance. This
@@ -1702,10 +1678,8 @@ last.
 
 As the end of the cycle approaches, teams should have finished the important
 things and left a variety of “nice to haves” and “maybes” lingering around.
-That brings us to the next chapter, on deciding when to stop.
 
-## xxx Decide When to Stop 
-
+## Decide When to Stop 
 
 ![Cartoon. A figure sits in front of a laptop holding their hand in one hand
 and sweating. A calendar on the wall shows a deadline three two days away.
@@ -1723,78 +1697,48 @@ Still, there’s always more work than time. Shipping on time means shipping
 something imperfect. There’s always some queasiness in the stomach as you look
 at your work and ask yourself: Is it good enough? Is this ready to release?
 
-### xxx Compare to baseline
+### Compare to baseline
 
-Designers and programmers always want to do their best work. It doesn’t matter
-if the button is on the center of the landing page or two pages down a settings
-screen, the designer will give it their best attention. And the best
-programmers want the code base to feel like a cohesive whole, completely
-logically consistent with every edge case covered.
-
-Pride in the work is important for quality and morale, but we need to direct it
-at the right target. If we aim for an ideal perfect design, we’ll never get
-there. At the same time, we don’t want to lower our standards. How do we make
-the call to say what we have is good enough and move on?
+Designers and programmers always want to do their best work.  Pride in the work
+is important for quality and morale, but we need to direct it at the right
+target. If we aim for an ideal perfect design, we’ll never get there. At the
+same time, we don’t want to lower our standards. 
 
 It helps to shift the point of comparison. Instead of comparing up against the
-ideal, compare down to **baseline** - the current reality for customers. How do
-customers solve this problem today, without this feature? What’s the
-frustrating workaround that this feature eliminates? How much longer should
-customers put up with something that doesn’t work or wait for a solution
-because we aren’t sure if design A might be better than design B?
+ideal, compare down to **baseline** - the current reality for customers...
+- How do customers solve this problem today, without this feature? 
+- What’s the frustrating workaround that this feature eliminates? 
+- How much longer should customers put up with something that doesn’t work or
+  wait for a solution because we aren’t sure if design A might be better than
+  design B?
 
-Seeing that our work so far is better than the current alternatives makes us
-feel better about the progress we’ve made. This motivates us to make calls on
-the things that are slowing us down. It’s less about us and more about value
-for the customer. It’s the difference between “never good enough” and “better
-than what they have now.” We can say “Okay, this isn’t perfect, but it
-definitely works and customers will feel like this is a big improvement for
-them.”
+[![A chart with performance on the Y axis and development time on the X axis.
+A line curves upward from zero performance at the beginning of development time
+to about halfway up the y axis when it reaches the middle of the chart and
+terminates in a dot. The x axis below the dot is labeld: Now. Horizontal lines
+divide the Y axis into three regions. In the bottom third, below the dot of the
+current position, a dotted line is labeled: Baseline. At the top of the chart,
+above the dot, a line is labeled: Ideal. The Y value of the dot is labeled:
+Work in progress. An arrow points down from the dot to the baseline with the
+label: Compare down. Another arrow points up from the dot to the ideal line and
+says: Not
+up.](https://basecamp.com/assets/books/shapeup/3.5/compare_to_baseline-ff521686dc8ea60cb9587d072409f5ee8bba79ca269e0fb04963b930699fb62d.jpg)](https://basecamp.com/assets/books/shapeup/3.5/compare_to_baseline-ff521686dc8ea60cb9587d072409f5ee8bba79ca269e0fb04963b930699fb62d.jpg) 
 
- [![A chart with performance on the Y axis and development time on the X axis.
- A line curves upward from zero performance at the beginning of development
- time to about halfway up the y axis when it reaches the middle of the chart
- and terminates in a dot. The x axis below the dot is labeld: Now. Horizontal
- lines divide the Y axis into three regions. In the bottom third, below the dot
- of the current position, a dotted line is labeled: Baseline. At the top of the
- chart, above the dot, a line is labeled: Ideal. The Y value of the dot is
- labeled: Work in progress. An arrow points down from the dot to the baseline
- with the label: Compare down. Another arrow points up from the dot to the
- ideal line and says: Not
- up.](https://basecamp.com/assets/books/shapeup/3.5/compare_to_baseline-ff521686dc8ea60cb9587d072409f5ee8bba79ca269e0fb04963b930699fb62d.jpg)](https://basecamp.com/assets/books/shapeup/3.5/compare_to_baseline-ff521686dc8ea60cb9587d072409f5ee8bba79ca269e0fb04963b930699fb62d.jpg) 
-
-Make scope cuts by comparing down to baseline instead of up to some perfect
-ideal
-
-### xxx Limits motivate trade-offs
+### Limits motivate trade-offs
 
 Recall that the six-week bet has a **circuit breaker** - if the work doesn’t get
 done, the project doesn’t happen.
 
-This forces the team to make trade-offs. When somebody says “wouldn’t it be
-better if…” or finds another edge case, they should first ask themselves: Is
-there time for this? Without a deadline, they could easily delay the project
-for changes that don’t actually deserve the extra time.
-
 We expect our teams to actively make trade-offs and question the scope instead
-of cramming and pushing to finish tasks. We create our own work for ourselves.
-We should question any new work that comes up before we accept it as necessary.
+of cramming and pushing to finish tasks.
 
-### xxx Scope grows like grass
+### Scope grows like grass
 
 Scope grows naturally. Scope creep isn’t the fault of bad clients, bad
-managers, or bad programmers. Projects are opaque at the macro scale. You can’t
-see all the little micro-details of a project until you get down into the work.
-Then you discover not only complexities you didn’t anticipate, but all kinds of
-things that could be fixed or made better than they are.
+managers, or bad programmers. Projects are opaque at the macro scale. 
 
-Every project is full of scope we don’t need. Every part of a product doesn’t
-need to be equally prominent, equally fast, and equally polished. Every use
-case isn’t equally common, equally critical, or equally aligned with the market
-we’re trying to sell to.
-
-This is how it is. Rather than trying to stop scope from growing, give teams
-the tools, authority, and responsibility to constantly cut it down.
+Rather than trying to stop scope from growing, give teams the tools, authority,
+and responsibility to constantly cut it down.
 
 ### xxx Cutting scope isn’t lowering quality
 
