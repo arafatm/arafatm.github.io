@@ -1463,12 +1463,16 @@ On the other hand, these three signs indicate the scopes should be redrawn:
 ### Layer cakes
 
 Most software projects require some UI design and a thin layer of code below.
+
 Think of a database app where all you need to do is enter information, save it,
-and display it back. Work like this looks like a **layer cake**: You can judge
+and display it back. 
+
+Work like this looks like a **layer cake**: You can judge
 the work by UI surface area because the back-end work is thin and evenly
-distributed. In these cases, you can integrate all design and programmer tasks
-together in the same scope. This is a good default for most “information
-system” type apps.
+distributed. 
+
+In these cases, you can integrate all design and programmer tasks
+together in the same scope. 
 
 ![Two square planes representing front and back end are aligned in such a way
 that they look like a slice of cake with two layers. The 'layer cake' is drawn
@@ -1477,12 +1481,10 @@ axis is labeled Effort to Build and the two horizontal axes are labeled
 Functionality. The slice of the cake is wide and deep and the two layers are
 thin.](https://basecamp.com/assets/books/shapeup/3.3/layer_cake-df0e389ebd8bf05c90eb190e7732cbe89c107e21b927ff4cce6dd6b9a70c3184.png)
 
-### xxx Icebergs
+### Icebergs
 
 But sometimes there is significantly more back-end work than UI work or vice
-versa. For example, a new feature that only requires submitting a form could
-require very complex business logic to return the right answer. This kind of
-work is like an iceberg.
+versa. 
 
 ![An iceberg is drawn with the same three dimensional axis: height represents
 effort to build and width and depth represent funtionality. A dotted line marks
@@ -1491,82 +1493,50 @@ rest below the line is marked Back
 End.](https://basecamp.com/assets/books/shapeup/3.3/iceberg-c7da94a0a02bb81ab4609822d2c03ea7bbe15966d6c19b5c786c8ece1589000b.png)
 
 For icebergs, it can help to factor out the UI as a separate scope of work
-(assuming the UI isn’t interdependent with the back-end complexity). If the
-back-end is complex enough, you can split it into separate concerns and then
-turn those into scopes as well. The goal in cases like this is to define some
-different things you can finish and integrate in stages, rather than waiting
-until the 11th hour with fingers crossed that it will all come together.
 
-You also sometimes see upside-down icebergs, where there is a ton of UI
-complexity with less back-end complexity. For example, the data model for a
-calendar isn’t complicated, but the interaction for rendering a multiple-day
-event and wrapping across grid cells could take a lot of time and
-problem-solving.
+If the back-end is complex enough, you can split it into separate concerns and
+then turn those into scopes as well. 
 
 For both back-end and front-end icebergs, we always question them before
 accepting them as a fact. Is the complexity really necessary and irreducible?
-Do we need that fancy UI? Is there a different way to build that back-end
-process so it has fewer interdependencies with the rest of the system?
 
-### xxx Chowder
+### Chowder
 
 There are almost always a couple things that don’t fit into a scope. We allow
-ourselves a “Chowder” list for loose tasks that don’t fit anywhere. But we
-always keep a skeptical eye on it. If it gets longer than three to five items,
-something is fishy and there’s probably a scope to be drawn somewhere.
+ourselves a “Chowder” list for loose tasks that don’t fit anywhere. 
 
-### xxx Mark nice-to-haves with ~
+If it gets longer than three to five items, something is fishy and there’s
+probably a scope to be drawn somewhere.
 
-New tasks constantly come up as you get deeper into a problem. You’ll find code
-that could be cleaned up, edge cases to address, and improvements to existing
-functionality. A good way to deal with all those improvements is to record them
-as tasks on the scope but mark them with a ~ in front. This allows everyone on
-the team to constantly sort out the **must-haves** from the **nice-to-haves**.
+### Mark nice-to-haves with ~
 
-In a world with no deadlines, we could improve everything forever. But in a
+This allows everyone on the team to constantly sort out the **must-haves** from
+the **nice-to-haves**.
+
+In a
 fixed time box, we need a machete in our hands to cut down the constantly
-growing scope. The ~ at the start of an item, or even a whole scope, is our
-best tool for that. We’ll come back to this technique when we talk about making
-cuts to scope in Chapter 13, [Decide When to
-Stop](https://basecamp.com/shapeup/3.5-chapter-13).
+growing scope. 
 
-## xxx Show Progress 
+[Decide When to Stop](#decide-when-to-stop)
 
+## Show Progress 
 
 ![Cartoon. A figure sits alone typing on a laptop. A thought bubble says: Ugh,
 I hate asking this. A speech box indicating what they are typing says: So...
 how's the project
 going?](https://basecamp.com/assets/books/shapeup/3.4/intro_cartoon-2844861c7d69b5783b5b7097c3b305a53552ac362f685aed5f3138fe6f7d5e65.png)
 
-Good-hearted managers don’t like asking for status. It’s awkward, feels like
-nagging, and gets even worse when they have to ask follow-up questions to get
-sufficiently clear about what’s going on.
+Good-hearted managers don’t like asking for status. 
 
 Managers would rather be able to see the status themselves whenever they need
-to. We saw in the last chapter how organizing to-dos into scopes helps the team
-to stay on top of the work. But this doesn’t help the manager directly. There
-are a couple problems with to-dos that make them insufficient for judging
-status.
+to. 
 
-### xxx The tasks that aren’t there
+### The tasks that aren’t there
 
-Consider a list with a few completed items and no incomplete items left. This
-could mean that all the work is done. But it could also mean that the team
-knows there’s more work but hasn’t defined tasks yet.
+**Imagined** versus **discovered** tasks. 
 
-Sometimes a team will define a **scope** early in the project without populating
-it with tasks. It marks that some work needs to be done but that actual tasks
-haven’t been discovered yet.
-
-Or think about doing some QA at the end of a scope. All the tasks are done.
-There’s nothing else to do. Then the act of testing populates the scope with
-new tasks for the issues found.
-
-This goes back to the notion of **imagined** versus **discovered** tasks. In our
-naive notion of a list that’s planned up-front, somebody populates it with
-items that are gradually checked off. In real life, issues are discovered by
-getting involved in the problem. That means _to-do lists actually grow as the
-team makes progress_.
+In real life, issues are discovered by getting involved in the problem. That
+means _to-do lists actually grow as the team makes progress_.
 
 ![Two diagrams with the same axes. The top is labeled: In Theory. The Y axis is
 tasks and the X axis is time. A to-do list is shown at five time steps t1
@@ -1581,35 +1551,31 @@ discovered. The height of the list has grown from t1 to t5, in contrast with
 the constant height in the first
 diagram.](https://basecamp.com/assets/books/shapeup/3.4/tasks_growing-9ec9f929e6eb6dab7ba05e7c02a5b4c33ba5739622236c2f213ebe75bcb4c17c.jpg)
 
-If we tried to judge at _t2_ how far along the project is, we’d be misled. From
-an outsider’s perspective, there’s no way to know whether the number of
-outstanding tasks will go down or up. To know that, you’d need more context on
-the work inside the scope to understand what it means that those particular
-tasks are done and whether others might still be coming.
+If we tried to judge at _t2_ how far along the project is, we’d be misled. 
 
-### xxx Estimates don’t show uncertainty
+### Estimates don’t show uncertainty
 
-Some teams try to attach estimates to their tasks or scopes to report status.
 The problem with estimates is they have a very different meaning depending on
 the nature of the work being estimated.
 
 Say you have two tasks, both estimated to take four hours. If one task is
 something the team has done ten times in the past, you can be confident in the
-estimate. Suppose the other task is something the team has never done before,
-or it has unclear interdependencies. It could take the four hours if all goes
-perfectly, but due to the unknowns in it, it could stretch out to two to three
-days. It’s not meaningful to write “4 hours, or maybe 3 days” as the estimate.
+estimate. 
+
+It’s not meaningful to write “4 hours, or maybe 3 days” as the estimate.
 
 Recognizing this, we came up with a way to see the status of the project
 without counting tasks and without numerical estimates. We do that by shifting
 the focus from what’s done or not done to what’s unknown and what’s solved. To
 enable this shift, we use the metaphor of the hill.
 
-### xxx Work is like a hill
+### Work is like a hill
 
-Every piece of work has two phases. First there’s the uphill phase of figuring
-out what our approach is and what we’re going to do. Then, once we can see all
-the work involved, there’s the downhill phase of execution.
+Every piece of work has two phases. 
+1. First there’s the **uphill phase** of figuring out what our approach is and
+   what we’re going to do. 
+2. Then, once we can see all the work involved, there’s the **downhill phase**
+   of execution.
 
 ![A Hill Chart diagram. It looks like a wide bell curve, with a vertical dotted
 line down the middle. The far left edge is labeled: Start, and the far right
@@ -1620,79 +1586,13 @@ suggest the dot originated at the left side, moved up to its current position,
 and later moves over the hill and down the right to the
 finish.](https://basecamp.com/assets/books/shapeup/3.4/hill_concept-a0a77c0ebb209b61899b8b4cdb1a315f2807e3fdc2e1d2373e2f19060725f042.png)
 
-Let’s use an everyday example to get the feeling of the hill.
+### Scopes on the hill
 
-Suppose you’re planning to host a dinner party. You’ve set the date, but it’s
-still a couple weeks ahead and you haven’t thought about what to cook yet. You
-have no idea what type of cuisine the meal will be or what dish to make. That
-would place you at the start of the hill on the bottom-left.
+We can combine the hill with the concept of scopes from the last chapter. 
 
-![The hill with a dot at the far bottom left labeled: Didn't start
-yet.](https://basecamp.com/assets/books/shapeup/3.4/dinner_hill_1-e2ec26c6872bce18b3bb9494c25aaeffea15502c0011dfc45dc439ad23877020.png)
+The **scopes** give us the language for the project (“Locate,” “Reply”). 
 
-Next you think about who’s attending and note that a couple people are
-vegetarian. That eliminates some options (like grilling out) but still leaves a
-lot of options open. You consider both Italian and Indian. You think Indian
-might be more fun to cook, with more interesting vegetarian options. So you
-decide to look for Indian recipes.
-
-At this point, the question “What percent complete is the project?” doesn’t
-even make sense. And if someone asked you to estimate how long the shopping and
-prep will take, you couldn’t answer that either because you haven’t chosen a
-dish yet. The answer would be: “I’ve done some work to figure out what kind of
-cuisine, but I haven’t narrowed it down to a specific dish yet.” We can
-represent that by putting you halfway up the “figuring it out” side of the
-hill.
-
-![The hill with the dot moved halfway up the left side. It is labeled: Choosing
-type of
-cuisine.](https://basecamp.com/assets/books/shapeup/3.4/dinner_hill_2-66189464c0db39fde407061ff9fb7821ef0bb38bf87658b294be2df0e880cc7f.png)
-
-Next you do some searching online and look through your recipe books. You want
-to find a recipe that will be interesting but doesn’t require ingredients that
-will be too hard to find. You settle on a recipe and prepare a shopping list.
-
-Now you are in a very different position than before. The feeling changes from
-“I’m still not sure what I’m doing” to “Now I know what to do.” You’re at the
-top of the hill.
-
-![The dot moves to the top of the hill. It is labeled: Choosing dish, making
-grocery list. A thought bubble appears on the side of the chart saying: Now I
-know what I have to
-do!](https://basecamp.com/assets/books/shapeup/3.4/dinner_hill_3-430bd6d8ea2f1f26edc29697bc585ea97c8b4fac16ad9b313e6ec3c647396954.png)
-
-From this vantage point, you can see all of the steps that are left. It’s even
-fair to estimate how long all the work will take (“Let’s see…an hour to grocery
-shop, 30 minutes of prep, cook for 45 minutes…”).
-
-The day before the dinner party, you go to the grocery store and buy the
-ingredients. This moves you downhill. You’re closer to finishing the task.
-
-![The dot moves one third down the right side of the hill. It is labeled:
-Buying
-ingredients.](https://basecamp.com/assets/books/shapeup/3.4/dinner_hill_4-bad87f32f0705cafd769924dbe4e3c13f001565fefc9c6b1de5b724b3fef3362.png)
-
-Next comes the work of prepping and cooking the meal.
-
-![The dot moves two thirds down the right side of the hill. It is labeled:
-Cooking
-meal.](https://basecamp.com/assets/books/shapeup/3.4/dinner_hill_5-ed35d83a059a495cfebdf180c48841e047ad7035a329b88a1d2a28cd7afd8717.png)
-
-After the meal is over, there’s just a little work left: the clean-up.
-
-![The dot moves to the bottom of the hill on the right side. The movement is
-labeled: Cleaning
-up.](https://basecamp.com/assets/books/shapeup/3.4/dinner_hill_6-9ee3dcc1091814729a7160037d9464985f21449951d6ecce041308950c955998.png)
-
-Note how the hill shows how the work _feels_ at different stages. The uphill
-phase is full of uncertainty, unknowns, and problem solving. The downhill phase
-is marked by certainty, confidence, seeing everything, and knowing what to do.
-
-### xxx Scopes on the hill
-
-We can combine the hill with the concept of scopes from the last chapter. The
-scopes give us the language for the project (“Locate,” “Reply”) and the hill
-describes the status of each scope (“uphill,” “downhill”).
+The hill describes the status of each scope (“uphill,” “downhill”).
 
 To see the status of the scopes, we can plot each one as a different color on
 the hill.
@@ -1712,7 +1612,7 @@ Here “Future-applying edits” is a scope that is still being worked out, with
 significant unknowns to solve. The other two scopes have no meaningful unknowns
 left, and “Global recurring events” is closer to finished.
 
-### xxx Status without asking
+### Status without asking
 
 We built a feature exclusive to Basecamp for creating hill charts and updating
 them with a few clicks. The team members, who have the full context of where
