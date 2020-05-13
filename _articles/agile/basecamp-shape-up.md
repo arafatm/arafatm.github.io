@@ -1441,45 +1441,26 @@ Scopes arise from interdependencies.
 
 It’s also normal to see some shuffling and instability in the scopes at first.
 
-### xxx How to know if the scopes are right
+### How to know if the scopes are right
 
-Well-made scopes show the anatomy of the project. When you feel a pain in your
-body, you don’t have to question whether it’s in your arms or your legs or your
-head. You know the parts and their names so you can explain where the pain is.
-In the same way, every project has a natural anatomy that arises from the
-design you want, the system you’re working within, and the interdependencies of
-the problems you have to solve.
+Well-made scopes show the anatomy of the project. 
 
 Three signs indicate when the scopes are right:
-
 1. You feel like you can see the whole project and nothing important that
-worries you is hidden down in the details.
+   worries you is hidden down in the details.
 2. Conversations about the project become more flowing because the scopes give
-you the right language.
+   you the right language.
 3. When new tasks come up, you know where to put them. The scopes act like
-buckets that you can easily lob new tasks into.
+   buckets that you can easily lob new tasks into.
 
 On the other hand, these three signs indicate the scopes should be redrawn:
-
 1. It’s hard to say how “done” a scope is. This often happens when the tasks
-inside the scope are unrelated. If the problems inside the scope are unrelated,
-finishing one doesn’t get you closer to finishing the other. It’s good in this
-case to look for something you can factor out, like in the Drafts example.
+   inside the scope are unrelated. 
 2. The name isn’t unique to the project, like “front-end” or “bugs.” We call
-these “grab bags” and “junk drawers.” This suggests you aren’t integrating
-enough, so you’ll never get to mark a scope “done” independent of the rest. For
-example, with bugs, it’s better to file them under a specific scope so you can
-know whether, for example, “Send” is done or if you need to fix a couple bugs
-first before putting it out of mind.
-3. It’s too big to finish soon. If a scope gets too big, with too many tasks,
-it becomes like its own project with all the faults of a long master to-do
-list. Better to break it up into pieces that can be solved in less time, so
-there are victories along the way and boundaries between the problems to solve.
+   these “grab bags” and “junk drawers.” 
+3. It’s too big to finish soon. 
 
-Let’s close this chapter with a few tips for dealing with different kinds of
-tasks and scopes that will come up.
-
-### xxx Layer cakes
+### Layer cakes
 
 Most software projects require some UI design and a thin layer of code below.
 Think of a database app where all you need to do is enter information, save it,
