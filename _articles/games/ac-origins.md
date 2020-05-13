@@ -19,7 +19,6 @@ title: Assassin Creed: Origins
 
 ### If you jump from a great height, press the dodge button to roll.
 
-
 ### Skills 
 
 - **Chain Assassination** is extremely useful, as it lets you kill two guards
