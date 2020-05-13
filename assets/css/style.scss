@@ -8,14 +8,19 @@ body {
   margin: 0em;
 }
 
-header {
-  margin: 0em 0em 1em 0em;
-}
-
 div.wrapper {
   width: 60em;
-  margin: 1em auto;
+  margin: 0em auto;
   padding: 0em;
+  font-family: Verdana, Geneva, sans-serif; 
+  font-size: 16px;
+  font-weight: 200;
+  color: #FFF;
+  background-color: #272822;
+}
+
+header {
+  margin: 0em 0em 1em 0em;
 }
 
 h1 {
