@@ -1612,48 +1612,16 @@ Here “Future-applying edits” is a scope that is still being worked out, with
 significant unknowns to solve. The other two scopes have no meaningful unknowns
 left, and “Global recurring events” is closer to finished.
 
-### xxx Status without asking
+### Status without asking
 
 We built a feature exclusive to Basecamp for creating hill charts and updating
-them with a few clicks. The team members, who have the full context of where
-the work stands, intuitively drag the scopes into position, and save a new
-update that’s logged on the project (see [How to Implement Shape Up in
-Basecamp](https://basecamp.com/shapeup/4.0-appendix-01)).
+them with a few clicks. 
 
 ![An animated screenshot of the Hill Chart feature in Basecamp. The cursor
 grabs a dot and drags it along the line of the hill to a new
 position.](https://basecamp.com/assets/books/shapeup/3.4/dragging_scopes-3e5bf229b1603922b72af5d04a2a7f1aceaf91b8e751680b3d29a3ac982c8289.gif)
 
-For managers, the ability to compare past states is the killer feature. It
-shows not only where the work stands but how the work is _moving_.
-
-![Screenshot of three hill charts in Basecamp captured at different times. The
-same four scopes appear on each hill but the positions advance over the hill
-and to the right with the passing of
-time.](https://basecamp.com/assets/books/shapeup/3.4/snapshots-acc8efc1f87284428ed51816961e7f6f40141ff29cf1103c3d0002e73b0da497.png)
-
-With this second-order view, managers can judge what’s in motion and what’s
-stuck. They can see which problems the team chose to solve and how much time
-they spent at each stage from unknown to known to done.
-
-This report becomes the manager’s first destination when they feel anxious
-about a project. Since it’s self-serve, there’s no need to interrupt the team
-with the awkward status question. And in cases where something doesn’t look
-right, the manager can jump directly into a conversation about the relevant
-piece of work. “Looks like ‘Autosave’ has been uphill for a while. What’s the
-unknown that’s holding it back?” The manager can workshop this specific piece
-of the project without having to first untangle it from all the other things
-that are moving along as expected.
-
-### xxx Nobody says “I don’t know”
-
-Nobody wants to raise their hand to management and say “I don’t know how to
-solve this problem.” This causes teams to hide uncertainty and accumulate risk.
-The moments when somebody is stuck or going in circles are where the biggest
-risks and opportunities lie. If we catch those moments early, we can address
-them with help from someone senior or by reworking the concept. If we don’t
-catch them, the unsolved problems could linger so far into the cycle that they
-endanger the project.
+### Nobody says “I don’t know”
 
 The hill chart allows everybody to see that somebody might be stuck without
 them actually saying it. A dot that doesn’t move is effectively a raised hand:
@@ -1663,73 +1631,39 @@ them actually saying it. A dot that doesn’t move is effectively a raised hand:
 Two of the scopes are moving, but one scope stays in the same position on each
 snapshot](https://basecamp.com/assets/books/shapeup/3.4/stuck_scope-e163bf7a8211ad246df85cd4182b520606d1713589000abd991f1e2625ba9177.png)
 
-Once it’s been spotted, the language of uphill/downhill facilitates the
-conversation. It’s less about the person (Looks like you’re stuck!) and more
-about the work. The question is: What can we solve to get that over the hill?
-
-### xxx Prompts to refactor the scopes
+### Prompts to refactor the scopes
 
 Sometimes probing into a stuck scope reveals that it isn’t stuck at all. The
 problem is in how the lines of the scope were drawn.
-
-Here’s a case where the “Notify” scope was stuck on the hill for too long.
 
 ![Two snapshots of a hill chart taken six days apart. A scope labeled Notify is
 in the same position on
 both.](https://basecamp.com/assets/books/shapeup/3.4/notify_stuck-6b712f982cad1d5dfd69521c1a3d981d267170d0e362f745a0fc174a6a4e76a3.png)
 
 When we checked in with the team, it turned out the work was moving along just
-fine. The problem was that “Notify” wasn’t a single thing. It had three
-different parts: designing an email, delivering the email in the back-end, and
-displaying the notification in an in-app menu. The team mostly finished the
-code for delivering the email. The design of the email was nearly figured out.
-But they hadn’t started on the in-app display. It wasn’t possible to say
-whether “Notify” as a whole was over the hill or not because parts of it were
-and parts of it weren’t.
+fine. The problem was that “Notify” wasn’t a single thing. 
 
-The solution in a case like this is to break the scope apart into smaller
-scopes that can move independently.
+[![Two scope maps appear showing a before and after. Before, one of the scopes
+is labeled Notify. After, that region is broken into three new subregions:
+Email, Hey Menu, and Deliver. Below the two scope maps, the same change is
+shown in the to-do lists. First all the items are in a list called Notify.
+Then they are broken into three different lists: Hey Menu Notification, Email
+Notification, and Notification
+Delivery](https://basecamp.com/assets/books/shapeup/3.4/notify_factored_out-a7da115cbab1c0b9b005e8ffe51b85a8d8e4e292118b1125740b29d42ea232a2.png)](https://basecamp.com/assets/books/shapeup/3.4/notify_factored_out-a7da115cbab1c0b9b005e8ffe51b85a8d8e4e292118b1125740b29d42ea232a2.png) 
 
- [![Two scope maps appear showing a before and after. Before, one of the scopes
- is labeled Notify. After, that region is broken into three new subregions:
- Email, Hey Menu, and Deliver. Below the two scope maps, the same change is
- shown in the to-do lists. First all the items are in a list called Notify.
- Then they are broken into three different lists: Hey Menu Notification, Email
- Notification, and Notification
- Delivery](https://basecamp.com/assets/books/shapeup/3.4/notify_factored_out-a7da115cbab1c0b9b005e8ffe51b85a8d8e4e292118b1125740b29d42ea232a2.png)](https://basecamp.com/assets/books/shapeup/3.4/notify_factored_out-a7da115cbab1c0b9b005e8ffe51b85a8d8e4e292118b1125740b29d42ea232a2.png) 
-
-Now the team can move each dot to accurately show where the work stands.
-
-![Two hill charts showing the corresponding before and after. Before, a single
-dot for Notify is stuck on the uphill side. After, three dots appear. One for
-Hey Menu on the far left, one for Notification Email about to crest the top,
-and one for Notification Delivery almost all the way to the bottom on the
-right.](https://basecamp.com/assets/books/shapeup/3.4/notify_after_refactoring-22e9c4d8c52823332c7dcf95d64465885527b938ecefc46301a9d0d848b31d24.png)
-
-The benefit comes at the second order. With the scopes separated out, they can
-move independently over time. Now the team can show more progress more
-frequently than before.
+With the scopes separated out, they can move independently over time. 
 
 ![Three snapshots of the three scopes on the hill showing how they move over
 the hill independently at different
 speeds.](https://basecamp.com/assets/books/shapeup/3.4/notify_movement_after_refactoring-215c277c889103d22b884995b89170bd558c57b94085e41840ae5600b604cac8.png)
 
-### xxx Build your way uphill
+### Build your way uphill
 
 Some teams struggle with backsliding when they first try the hill chart. They
 consider a scope solved, move it the top of the hill, and later have to slide
 it back when they uncover an unexpected unknown.
 
-When this happens, it’s often because somebody did the uphill work with their
-head instead of their hands. Coming up with an approach in your head is just
-the first step uphill. We often have a theory of how we’ll solve
-something - “I’ll just use that API” - and then the reality turns out to be more
-complicated. It’s good to think of the first third uphill as “I’ve thought
-about this,” the second third as “I’ve validated my approach,” and the final
-third to the top as “I’m far enough with what I’ve built that I don’t believe
-there are other unknowns.”
-
-### xxx Solve in the right sequence
+### Solve in the right sequence
 
 In addition to seeing where the work stands, we can use the hill chart to
 sequence the work - which problems to solve in which order.
