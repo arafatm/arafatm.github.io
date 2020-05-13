@@ -1,7 +1,7 @@
 ---
 category: games
 tags: AC-Origins
-title: Assassin Creed: Origins
+title: Assassin Creed Origins
 ---
 
 * TOC
