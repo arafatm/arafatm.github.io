@@ -30,5 +30,6 @@ title: arafatm.github.io
 - [ ] [CS50's Introduction to Artificial Intelligence with Python - Harvard University](https://online-learning.harvard.edu/course/cs50s-introduction-artificial-intelligence-python?delta=0)
 - [ ] [Data Science: Machine Learning - Harvard University](https://online-learning.harvard.edu/course/data-science-machine-learning?delta=1)
 - [ ] #library #hold [The 22 Immutable Laws of Marketing - Multnomah County Library - OverDrive](https://multcolib.overdrive.com/media/23899)
+- [ ] [Mel Robbins: How to stop screwing yourself over | TED Talk](https://www.ted.com/talks/mel_robbins_how_to_stop_screwing_yourself_over?language=en)
 - [ ] [Youtube - Russian Revolution and Civil War: Crash Course European History #35](https://www.youtube.com/watch?v=U6KR4cLLVzQ)
 - [ ] https://www.youtube.com/watch?v=PHe0bXAIuk0
