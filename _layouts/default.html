@@ -50,6 +50,7 @@
         {{ content }}
       </section>
 
+      {% comment %}
       <footer>
         <h1>
           <a href="{{ "/" | absolute_url }}">{{ site.title | default: site.github.repository_name }}</a> 
@@ -61,6 +62,8 @@
         {% comment %}
         {% endcomment %}
       </footer>
+      {% endcomment %}
+
     </div>
     <script src="{{ "/assets/js/scale.fix.js" | relative_url }}"></script>
     {% if site.google_analytics %}

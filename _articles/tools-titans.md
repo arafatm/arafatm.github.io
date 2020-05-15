@@ -3,13 +3,15 @@ category: aaa
 tags: lifehack 4hour
 source: https://read.amazon.com/?asin=B01HSMRWNU
 author: Timothy Ferriss
-title: Tools of Titans - The Tactics, Routines, and Habits of Billionaires, Icons, and World-Class Performers
+title: Tools of Titans
 ---
 
 * TOC
 {:toc}
 
-## To help with sleep: 2 tablespoons of apple cider vinegar and 1 tablespoon honey, stirred into 1 cup of hot water
+## To help with sleep: 
+
+2 tablespoons of apple cider vinegar and 1 tablespoon honey, stirred into 1 cup of hot water
 
 ## 5 Morning Rituals that Help Me Win the Day
 

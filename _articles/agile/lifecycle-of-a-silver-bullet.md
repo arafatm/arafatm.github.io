@@ -5,16 +5,14 @@ source: http://freyr.websages.com/Life_Cycle_of_a_Silver_Bullet.pdf
 title: Life Cycle of a Silver Bullet
 ---
 
-    The silver bullets for our executives are those new
-    management trends that promise to transform the way
-    business is done.  Examples over the decades have
-    included Management by Objectives and Total Quality
-    Management, while Six Sigma, Lean Enterprise, the
-    Capability Maturity Model Integration (CMMI®), and agile
-    software development techniques are more recent methods
-    earning silver-bullet reputations. Process improvement
-    initiatives like these can and do work, but how they are
-    implemented is critical to their success.
+    The silver bullets for our executives are those new management trends that
+    promise to transform the way business is done.  Examples over the decades
+    have included Management by Objectives and Total Quality Management, while
+    Six Sigma, Lean Enterprise, the Capability Maturity Model Integration
+    (CMMI®), and agile software development techniques are more recent methods
+    earning silver-bullet reputations. Process improvement initiatives like
+    these can and do work, but how they are implemented is critical to their
+    success.
 
 ## Phases
 
@@ -84,9 +82,9 @@ investments.
 
 ## How to Use Silver Bullets
 
-    You must focus on the business goal of improvement, not
-    just on the method used to get there (e.g., CMMI) or on
-    intermediate indicators (e.g., Level 3)
+    You must focus on the business goal of improvement, not just on the method
+    used to get there (e.g., CMMI) or on intermediate indicators (e.g., Level
+    3)
 
 **Everyone** Realize that all methods are a means to the end
 
@@ -104,7 +102,6 @@ resources, and with less thought
 a company develops specific solutions to its specific
 concerns. 
 
-    Second-generation applications of these methods can work
-    if they are studied to determine where the true benefits
-    came from, and applied intelligently with appropriate
-    investment.
+    Second-generation applications of these methods can work if they are
+    studied to determine where the true benefits came from, and applied
+    intelligently with appropriate investment.
