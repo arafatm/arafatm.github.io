@@ -46,6 +46,10 @@ title: Guitar Level 2 with Alex, Montavilla Guitar Center
 
 ![8th-note-16th-note](/assets/img/guitar//8th-note-16th-note.png)
 
+## Natural Notes on any String
+
+![natural-notes-on-any-string](img/guitar/natural-notes-on-any-string.md)
+
 ## 4 Non Blondes - What's Up
 
 ![4-non-blondes-whats-up](/assets/img/guitar//4-non-blondes-whats-up.png)
