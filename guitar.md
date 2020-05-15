@@ -3,7 +3,6 @@ source: https://sites.google.com/alexandermargitich.com/guitarfoundations2/
 title: Guitar Level 2 with Alex, Montavilla Guitar Center
 ---
 
-
 * TOC 
 {:toc}
 
@@ -40,3 +39,21 @@ title: Guitar Level 2 with Alex, Montavilla Guitar Center
 ## I'm Gonna Be (500 Miles)
 
 ![](assets/img/guitar/im-gonna-be.png)
+
+# 2nd Class 2020-05-14
+
+## 8th/16th note
+
+![8th-note-16th-note](/assets/img/guitar//8th-note-16th-note.png)
+
+## 4 Non Blondes - What's Up
+
+![4-non-blondes-whats-up](/assets/img/guitar//4-non-blondes-whats-up.png)
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/6NXnxTNIWkc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+## Beatles - Let It Be
+
+![beatles-let-it-be](/assets/img/guitar//beatles-let-it-be.png)
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/QDYfEBY9NM4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
