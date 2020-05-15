@@ -1,6 +1,6 @@
 ---
 layout: home
-title: arafatm.github.io
+title: arafatm
 ---
 
 :guitar: [Guitar](/guitar) 
