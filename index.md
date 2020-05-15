@@ -17,6 +17,7 @@ title: arafatm
 
 ---
 
+- [ ] :a: enforce https
 - [ ] Hashi Consul
 - [ ] <https://www.hashicorp.com/certification/>
 - [ ] [TED Mel Robbins: How to stop screwing yourself over](https://www.ted.com/talks/mel_robbins_how_to_stop_screwing_yourself_over)
