@@ -6,6 +6,20 @@ author: Ryan Singer - Basecamp
 title: Shape Up
 ---
 
+## Key concepts
+
+- Shaped versus unshaped work
+- Setting appetites instead of estimates
+- Designing at the right level of abstraction
+- Concepting with breadboards and fat marker sketches
+- Making bets with a capped downside (the circuit breaker) and honoring them
+  with uninterrupted time
+- Choosing the right cycle length (six weeks)
+- A cool-down period between cycles
+- Breaking projects apart into scopes
+- Downhill versus uphill work and communicating about unknowns
+- Scope hammering to separate must-haves from nice-to-haves
+
 * TOC
 {:toc}
 
@@ -1740,199 +1754,97 @@ managers, or bad programmers. Projects are opaque at the macro scale.
 Rather than trying to stop scope from growing, give teams the tools, authority,
 and responsibility to constantly cut it down.
 
-### xxx Cutting scope isn’t lowering quality
+### Cutting scope isn’t lowering quality
 
-Picking and choosing which things to execute and how far to execute on them
-doesn’t leave holes in the product. Making choices makes the product better. It
-makes the product better _at some things_ instead of others. Being picky about
-scope _differentiates_ the product. Differentiating what is core from what is
-peripheral moves us in competitive space, making us more alike or more
-different than other products that made different choices.
+Making choices makes the product better. 
 
-Variable scope is not about sacrificing quality. We are extremely picky about
-the quality of our code, our visual design, the copy in our interfaces, and the
-performance of our interactions. The trick is asking ourselves which things
-actually matter, which things move the needle, and which things make a
-difference for the core use cases we’re trying to solve.
+Being picky about scope _differentiates_ the product. 
 
-### xxx Scope hammering
+The trick is asking ourselves which things actually matter, which things move
+the needle, and which things make a difference for the core use cases we’re
+trying to solve.
 
-People often talk about “cutting” scope. We use an even stronger
-word - **hammering** - to reflect the power and force it takes to repeatedly bang the
-scope so it fits in the time box.
+### Scope hammering
 
-As we come up with things to fix, add, improve, or redesign during a project,
-we ask ourselves:
+We use **hammering** to reflect the power and force it takes to repeatedly bang
+the scope so it fits in the time box.
 
 - Is this a “must-have” for the new feature?
 - Could we ship without this?
 - What happens if we don’t do this?
 - Is this a new problem or a pre-existing one that customers already live with?
 - How likely is this case or condition to occur?
-- When this case occurs, which customers see it? Is it core - used by everyone - or
-  more of an edge case?
+- When this case occurs, which customers see it? Is it core - used by everyone
+  - or more of an edge case?
 - What’s the actual impact of this case or condition in the event it does
   happen?
 - When something doesn’t work well for a particular use case, how aligned is
   that use case with our intended audience?
 
-The fixed deadline motivates us to ask these questions. Variable scope enables
-us to act on them. By chiseling and hammering the scope down, we stay focused
-on just the things we need to do to ship something effective that we can be
-proud of at the end of the time box.
+Throughout the cycle, talk about **must-haves** and **nice-to-haves** 
 
-Throughout the cycle, you’ll hear our teams talking about **must-haves** and
-**nice-to-haves** as they discover work. The must-haves are captured as tasks on
-the scope. The scope isn’t considered “done” until those tasks are finished.
-Nice-to-haves can linger on a scope after it’s considered done. They’re marked
-with a tilde (~) in front. Those tasks are things to do if the team has extra
-time at the end and things to cut if they don’t. Usually they never get built.
-The act of marking them as a nice-to-have is the scope hammering.
+[![Screenshot of a to-do list in Basecamp for a scope. All the items are
+checked off except for one. The one oustanding item is marked with a tilde at
+the
+front.](https://basecamp.com/assets/books/shapeup/3.5/scope_with_maybes-1838d92cd3c87917932716ef6baaad023b5b968af9d3f316d257c5f08a3a71f8.png)](https://basecamp.com/assets/books/shapeup/3.5/scope_with_maybes-1838d92cd3c87917932716ef6baaad023b5b968af9d3f316d257c5f08a3a71f8.png) 
 
- [![Screenshot of a to-do list in Basecamp for a scope. All the items are
- checked off except for one. The one oustanding item is marked with a tilde at
- the
- front.](https://basecamp.com/assets/books/shapeup/3.5/scope_with_maybes-1838d92cd3c87917932716ef6baaad023b5b968af9d3f316d257c5f08a3a71f8.png)](https://basecamp.com/assets/books/shapeup/3.5/scope_with_maybes-1838d92cd3c87917932716ef6baaad023b5b968af9d3f316d257c5f08a3a71f8.png) 
-
-A finished scope with one **nice-to-have** (marked with a “~”) that was never
-completed
-
-### xxx QA is for the edges
-
-At Basecamp’s current size (millions of users and about a dozen people on the
-product team), we have one QA person. They come in toward the end of the cycle
-and hunt for edge cases outside the core functionality.
+### QA is for the edges
 
 QA can limit their attention to edge cases because the designers and
 programmers take responsibility for the basic quality of their work.
-Programmers write their own tests, and the team works together to ensure the
-project does what it should according to what was shaped. This follows from
-giving the team responsibility for the whole project instead of assigning them
-individual tasks (see Chapter 9, [Hand Over
-Responsibility](https://basecamp.com/shapeup/3.1-chapter-09)).
 
-For years we didn’t have a QA role. Then after our user base grew to a certain
-size, we saw that small edge cases began to impact hundreds or thousands of
-users in absolute numbers. Adding the extra QA step helped us improve the
-experience for those users and reduce the disproportional burden they would
-create for support.
+We think of QA as a level-up, not a gate 
 
-Therefore we think of QA as a level-up, not a gate or a check-point that all
-work must go through. We’re much better off with QA than without it. But we
-don’t depend on QA to ship quality features that work as they should.
+QA generates **discovered tasks** that are all **nice-to-haves** by default. 
 
-QA generates **discovered tasks** that are all **nice-to-haves** by default. The
-designer-programmer team triages them and, depending on severity and available
-time, elevates some of them to **must-haves**. The most rigorous way to do this
-is to collect incoming QA issues on a separate to-do list. Then, if the team
-decides an issue is a must-have, they drag it to the list for the relevant
-**scope** it affects. This helps the team see that the scope isn’t done until the
-issue is addressed.
+The designer-programmer team triages them and, depending on severity and
+available time, elevates some of them to **must-haves**. 
 
-We treat code review the same way. The team can ship without waiting for a code
-review. There’s no formal check-point. But code review makes things better, so
-if there’s time and it makes sense, someone senior may look at the code and
-give feedback. It’s more about taking advantage of a teaching opportunity than
-creating a step in our process that must happen every time.
-
-### xxx When to extend a project
-
-In very rare cases, we’ll extend a project that runs past its deadline by a
-couple weeks. How do we decide when to extend a project and when to let the
-**circuit breaker** do its thing?
+### When to extend a project
 
 First, the outstanding tasks must be true **must-haves** that withstood every
 attempt to **scope hammer** them.
 
 Second, the outstanding work must be all **downhill**. No unsolved problems; no
-open questions. Any **uphill** work at the end of the cycle points to an
-oversight in the shaping or a hole in the concept. Unknowns are too risky to
-bet on. If the work is uphill, it’s better to do something else in the next
-cycle and put the troubled project back in the shaping phase. If you find a
-viable way to patch the hole, then you can consider betting more time on it
-again in the future.
+open questions. 
 
 Even if the conditions are met to consider extending the project, we still
-prefer to be disciplined and enforce the **appetite** for most projects. The
-two-week **cool-down** usually provides enough slack for a team with a few too
-many **must-haves** to ship before the next cycle starts. But this shouldn’t
-become a habit. Running into cool-down either points back to a problem in the
-shaping process or a performance problem with the team.
+prefer to be disciplined and enforce the **appetite** for most projects. 
 
-## xxx Move On 
+But this shouldn’t become a habit. 
 
+## Move On 
 
-### xxx Let the storm pass
+### Let the storm pass
 
-Shipping can actually generate new work if you’re not careful. Feature releases
-beget feature requests. Customers say “Okay, that’s great, but what about that
-other thing we’ve been asking for?” Bugs pop up. Suggestions for improvements
-come in. Everyone is focused on the new thing and reacting to it.
+Shipping can actually generate new work if you’re not careful. 
 
 The feedback can be especially intense if the feature you shipped changes
-existing workflows. Even purely visual changes sometimes spur intense pushback.
-A small minority of customers might overreact and say things like “You ruined
-it! Change it back!”
+existing workflows. 
 
 It’s important to stay cool and avoid knee-jerk reactions. Give it a few days
 and allow it to die down. Be firm and remember why you made the change in the
 first place and who the change is helping.
 
-### xxx Stay debt-free
+### Stay debt-free
 
 It can be tempting to commit to making changes in response to feedback, but
 then you no longer have a clean slate for the next cycle. Remember: these are
 just **raw ideas** coming in. The way to handle them is with a gentle “no.”
-Saying “no” doesn’t prevent you from continuing to contemplate them and maybe
-shape them up into future projects. Saying “yes,” on the other hand, takes away
-your freedom in the future. It’s like taking on debt.
 
 Remember, the thing you just shipped was a six-week **bet**. If this part of the
-product needs more time, then it requires a new bet. Let the requests or bugs
-that just came up compete with everything else at the next **betting table** to
-be sure they’re strategically important.
+product needs more time, then it requires a new bet. 
 
-### xxx Feedback needs to be shaped
+Let the requests or bugs that just came up compete with everything else at the
+next **betting table** to be sure they’re strategically important.
 
-Here we come full circle. The raw ideas that just came in from customer
-feedback aren’t actionable yet. They need to be shaped. They are the raw inputs
-that we talked about in step one of the shaping process: [Set
-Boundaries](https://basecamp.com/shapeup/1.2-chapter-03).
+### Feedback needs to be shaped
+
+The raw ideas that just came in from customer feedback aren’t actionable yet. 
 
 If a request is truly important, you can make it your top priority on the
-shaping track of the next cycle. Bet on something else for the teams to build
-and use that time to properly shape the new idea. Then, when the six weeks are
-over, you can make the case at the betting table and schedule the shaped
-version of the project for the greatest chance of success.
+shaping track of the next cycle. 
 
-## xxx Conclusion 
+Bet on something else for the teams to build and use that time to properly
+shape the new idea. 
 
-### xxx Key concepts
-
-The Shape Up method presented in this book is tightly interwoven. It may take
-some thought and experimentation to pull out the right pieces and adapt them to
-your team.
-
-Whether your team can adopt the method at once or not, I hope that the language
-and concepts in this book gave you some things to take home immediately:
-
-- Shaped versus unshaped work
-- Setting appetites instead of estimates
-- Designing at the right level of abstraction
-- Concepting with breadboards and fat marker sketches
-- Making bets with a capped downside (the circuit breaker) and honoring them
-  with uninterrupted time
-- Choosing the right cycle length (six weeks)
-- A cool-down period between cycles
-- Breaking projects apart into scopes
-- Downhill versus uphill work and communicating about unknowns
-- Scope hammering to separate must-haves from nice-to-haves
-
-### xxx Get in touch
-
-We’d love to hear what you think so we can make the Shape Up method easier to
-adopt. What did we miss? What still isn’t clear? What do you wish we had talked
-about that we didn’t? We’d also love to hear about your successes and
-challenges as you try to apply it to your teams and projects.
-
-Send us an email at [shapeup@basecamp.com](mailto:shapeup@basecamp.com).
