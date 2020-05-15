@@ -21,22 +21,27 @@ title: Assassin Creed Origins
 
 ### Skills 
 
-- **Chain Assassination** is extremely useful, as it lets you kill two guards
-  without sounding an alarm.
-- **Enhanced Predator** Bow is a ton of fun, since it turns your arrows into
-  remote-control missiles that you can guide manually.
-- **XP Boost** skills are good to get early on, since that’s where they’ll do
-  the most good.
-- **Smoke Screen** is useful if a fight is getting away from you.
-- **Overpower Combo** lets you do waaaay more damage with an overpower attack,
-  which you’ll need in boss fights.
-- **Overpower Chain** Throw is useful when fighting a bunch of enemies, since
-  it lets you quickly clear two from the field.
-- **Charge Heavy** Attack is crucial when fighting enemies with a shield.
-- **Both auto-loot** abilities will save you a lot of time.
-- **Enhanced Hunter** Bow is also helpful in combat, since it lets you stagger
-  onrushing shielded enemies.
-- **Eagle Harass** is both useful and funny.
-- **Bow Fury** is useful as long as the enemies you’re taking on are below your
-  level.
+![](https://cdn.gamer-network.net/2017/usgamer/assassin's-creed-origins-abilities-upgrade-screen.png/EG11/resize/656x-1/quality/70)
 
+- **Regeneration (Warrior)** This passive ability lets Bayek slowly regenerate
+  health even during the heat of combat, so long as he goes unharmed for merely
+  a few seconds.
+- **Charge Heavy Attack (Warrior)** This combat ability lets you charge up your
+  heavy attack, so you can actually stun an enemy carrying a shield, even if
+  they are using it to block all your other attacks.
+- **Weapon Bearer (Warrior)** The Weapon Bearer ability allows Bayek to equip a
+  second weapon, an excellent tactic for whenever you come up against a
+  particularly difficult enemy that requires a change of tactic.
+- **Arrow Retriever (Hunter)** This passive ability will allow Bayek to recover
+  any enemy arrows that are stuck in his shield, a great way for earning back
+  arrows after combat is finished.
+- **Eagle Tagging (Hunter)** This ability for Senu allows the eagle to tag any
+  enemies that he comes across while you scan the ground with him, also
+  highlighting points of interest for Bayek to later uncover.
+- **Fire Bomb (Seer)** The Fire Bomb ability does exactly what it says on the
+  tin: it lets Bayek throw a fire bomb that continually damaged any opponents
+  caught in the initial blast radius.
+- **Salesman (Seer)** Although this might seem like a waste of an ability point
+  early on, the ability to sell trinkets and goods at an increased price will
+  benefit Bayek the more you explore.
+- **Sleep Darts (Seer)** The Sleep Darts ability is basically essential if you'd rather knock out an enemy rather than assassinate them.
