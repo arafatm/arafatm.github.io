@@ -11,7 +11,7 @@ title: Shape Up
 1. **Six week cycle**, **2 week cooldown**
 2. **Shape** the work
 3. Set **appetites**, not estimates
-4. Design at the **right level** of abstraction
+4. Design at the **right level of abstraction**
 5. **Breadboards** and **Fat Marker** sketches
 6. build with **Circuit Breakers**
 7. **Hammering** the scope
