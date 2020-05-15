@@ -44,4 +44,5 @@ title: Assassin Creed Origins
 - **Salesman (Seer)** Although this might seem like a waste of an ability point
   early on, the ability to sell trinkets and goods at an increased price will
   benefit Bayek the more you explore.
-- **Sleep Darts (Seer)** The Sleep Darts ability is basically essential if you'd rather knock out an enemy rather than assassinate them.
+- **Sleep Darts (Seer)** The Sleep Darts ability is basically essential if
+  you'd rather knock out an enemy rather than assassinate them.
