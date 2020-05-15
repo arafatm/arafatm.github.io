@@ -6,19 +6,17 @@ author: Ryan Singer - Basecamp
 title: Shape Up
 ---
 
-## Key concepts
+## Summary
 
-- Shaped versus unshaped work
-- Setting appetites instead of estimates
-- Designing at the right level of abstraction
-- Concepting with breadboards and fat marker sketches
-- Making bets with a capped downside (the circuit breaker) and honoring them
-  with uninterrupted time
-- Choosing the right cycle length (six weeks)
-- A cool-down period between cycles
-- Breaking projects apart into scopes
-- Downhill versus uphill work and communicating about unknowns
-- Scope hammering to separate must-haves from nice-to-haves
+1. **Six week cycle**, **2 week cooldown**
+2. **Shape** the work
+3. Set **appetites**, not estimates
+4. Design at the **right level** of abstraction
+5. **Breadboards** and **Fat Marker** sketches
+6. build with **Circuit Breakers**
+7. **Hammering** the scope
+
+## Table of Contents
 
 * TOC
 {:toc}
