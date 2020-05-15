@@ -9,7 +9,7 @@ title: Guitar Level 2 with Alex, Montavilla Guitar Center
 
 ### Common Chords 
 
-![](/assets/img/guitar/common-chords.png)
+![](/assets/img/guitar/common-open-chords.png)
 
 ### Strumming Workout 
 
@@ -21,7 +21,7 @@ title: Guitar Level 2 with Alex, Montavilla Guitar Center
 
 ### Beatles - Daytrippers 
 
-![](/assets/img/guitar/daytrippers.png)
+![](/assets/img/guitar/day-tripper.png)
 
 ### Palm Muting 
 
@@ -31,6 +31,10 @@ title: Guitar Level 2 with Alex, Montavilla Guitar Center
 
 ### Blink 182 - All The Small Things 
 
-![](assets/img/guitar/blink-182-all-the-small-things.png)
+![](assets/img/guitar/all-the-small-things.png)
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/9Ht5RZpzPqw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+### I'm Gonna Be (500 Miles)
+
+![](assets/img/guitar/im-gonna-be.png)
