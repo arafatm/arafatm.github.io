@@ -1807,7 +1807,7 @@ Second, the outstanding work must be all **downhill**. No unsolved problems; no
 open questions. 
 
 Even if the conditions are met to consider extending the project, we still
-prefer to be disciplined and enforce the **appetite** for most projects. 
+prefer to be disciplined and **enforce the appetite** for most projects. 
 
 But this shouldn’t become a habit. 
 
