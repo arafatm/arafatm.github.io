@@ -22,4 +22,4 @@ title: arafatm
 - [ ] <https://www.hashicorp.com/certification/>
 - [ ] [TED Mel Robbins: How to stop screwing yourself over](https://www.ted.com/talks/mel_robbins_how_to_stop_screwing_yourself_over)
 - [ ] [YT Russian Revolution and Civil War: Crash Course European History #35](https://www.youtube.com/watch?v=U6KR4cLLVzQ)
-- [ ] [Ray Dalio: Economic Machine](https://www.youtube.com/watch?v=PHe0bXAIuk0)
+- [ ] [(38) Principles for Success: "The Call to Adventure" | Episode 1 - YouTube](https://www.youtube.com/watch?v=dKz095P7LdU&list=PLykIL_1_MFWkWDDgvdZ6L7rsvKCKl-39j)
