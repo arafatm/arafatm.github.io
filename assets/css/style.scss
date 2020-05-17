@@ -3,6 +3,12 @@
 
 @import "{{ site.theme }}";
 
+div.wrapper {
+  width: 50em;
+  margin: 0em auto;
+}
+
+h1, h2, h3, h4, h5, h6 { white-space: nowrap; }
 /*
 body {
   background-attachment: fixed !important;
