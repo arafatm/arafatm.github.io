@@ -497,8 +497,7 @@ firewalls**, but they rely on the services' logical names (for example "web" or
 
 ### Summary
 
-- [ ] try the Getting Started with Consul Service Mesh guides
-  <https://learn.hashicorp.com/consul?track=gs-consul-service-mesh#gs-consul-service-mesh>
+- [ ] Getting Started with Consul Service Mesh <https://learn.hashicorp.com/consul?track=gs-consul-service-mesh#gs-consul-service-mesh>
 
 ## Add to Consul KV - Service Configuration
 
@@ -958,9 +957,8 @@ vagrant destroy
 
 ## Next Steps 
 
-- [ ] Day 1: Deploying Your First Datacenter
-  <https://learn.hashicorp.com/consul?track=datacenter-deploy#datacenter-deploy>
-    
-- [ ] Documentation <https://www.consul.io/docs/index.html> 
-    
-- [ ] Community Forum <https://discuss.hashicorp.com/c/consul> 
+- Day 1: Deploying Your First Datacenter ps://learn.hashicorp.com/consul?track=datacenter-deploy#datacenter-deploy>
+  
+- Documentation <https://www.consul.io/docs/index.html> 
+  
+- Community Forum <https://discuss.hashicorp.com/c/consul> 
