@@ -22,6 +22,7 @@ title: Bookmarks
 ## Misc
 
 - special effects Ghost Sand <https://lab.cheron.works/webgl-gpgpu-particles/>
+- Recomendo: 500 brief review of cool things <https://drive.google.com/file/d/1Q72NJqaMeYF5-BDLtvFqMNjfFWP9QjyE>
 
 ## Learn
 
