@@ -17,6 +17,9 @@ new book, The Making of a Manager, goes into great details about the questions
 that new leaders should ask themselves and their reports. Here is a summary of
 the top 10.
 
+* TOC
+{:toc}
+
 ## 1. Where have I had the most impact over the past few months, from your perspective?
 
 Virginia Woolf once said, “Without self awareness we are as babies in the
