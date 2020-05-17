@@ -6,7 +6,10 @@ author: Alison Green, The Cut
 title: 10 Impressive Questions to Ask in a Job Interview
 ---
 
-## 1. “How will you measure the success of the person in this position?”
+1. TOC
+{:toc}
+
+## How will you measure the success of the person in this position?
 
 This gets right to the crux of what you need to know about the job: **What does
 it mean to do well, and what will you need to achieve in order for the manager
@@ -28,7 +31,7 @@ boss about expectations for the role, or even that the manager has no idea what
 success would look like in the job (which would be a sign to proceed with
 extreme caution).
 
-## 2. “What are some of the challenges you expect the person in this position to face?”
+## What are some of the challenges you expect the person in this position to face?
 
 This can **get at information you’d never get from the job description** — like
 that you’ll have to deal with messy interdepartmental politics, or that the
@@ -42,7 +45,7 @@ for yourself — that’s annoying and usually pretty transparent — but if ask
 about challenges leads to a real discussion of how you’d approach them, it can
 be genuinely useful for you both.
 
-## 3. “Can you describe a typical day or week in the job?”
+## Can you describe a typical day or week in the job?
 
 If the job description mentioned a combination of admin work and program work,
 it’s important to know whether 90 percent of your time will be spent on the
@@ -52,21 +55,21 @@ six months. But even barring major insights like that, the answer to this
 question can just **help you better visualize what it will actually be like to
 be in the job day after day**.
 
-Tip: **Some interviewers will respond to this question with, “Oh, every day is
-different.” If that happens, try asking, “Can you tell me what the last month
+Tip: **Some interviewers will respond to this question with, "Oh, every day is
+different." If that happens, try asking, "Can you tell me what the last month
 looked like for the person in the job currently? What took up most of their
-time?”**
+time?"**
 
-## 4. How long did the previous person in the role hold the position? What has turnover in the role generally been like?
+## How long did the previous person in the role hold the position? What has turnover in the role generally been like?
 
 If no one has stayed in the job very long, that could be a red flag about a
 difficult manager, unrealistic expectations, lack of training, or some other
 land mine. If just one person left after a few months, that’s not necessarily a
 danger sign — after all, sometimes things just don’t work out. But **if you
-hear there’s been a pattern of people leaving quickly, it’s worth asking, “Do
-you have a sense of what has led to the high turnover?”**
+hear there’s been a pattern of people leaving quickly, it’s worth asking, "Do
+you have a sense of what has led to the high turnover?"**
 
-## 5. “What are you hoping this person will accomplish in their first six months and in their first year?”
+## What are you hoping this person will accomplish in their first six months and in their first year?
 
 This question can give you a **sense of what kind of learning curve you’re
 expected to have and the pace** of the team and organization. If you’re
@@ -80,7 +83,7 @@ most of your first six months will be spent in training.
 This question can also draw out information about key projects that you
 wouldn’t otherwise have heard about.
 
-## 6. “Thinking back to people you’ve seen do this work previously, what differentiated the ones who were good from the ones who were really great at it?”
+## Thinking back to people you’ve seen do this work previously, what differentiated the ones who were good from the ones who were really great at it?
 
 A job candidate asked me this question years ago, and it might be the strongest
 question I’ve ever been asked in an interview. The thing about this question is
@@ -96,7 +99,7 @@ Plus, the answer to this question can give you much more nuanced insight into
 what it’ll take to truly excel in the job — and whatever the answer is, you can
 think about whether or not it’s something you’re likely able to do.
 
-## 7. “How would you describe the culture here? What type of people tend to really thrive here, and what type don’t do as well?”
+## How would you describe the culture here? What type of people tend to really thrive here, and what type don’t do as well?
 
 If the culture is very formal with lots of hierarchy and you’re happiest in a
 more relaxed environment, this might not be the right match for you.
@@ -107,16 +110,16 @@ options, you still might decide to take the job anyway — but you’ll usually 
 happier if you know what you’re signing up for, and aren’t unpleasantly
 surprised after you start.
 
-## 8. “What do you like about working here?”
+## What do you like about working here?
 
 You can learn a lot by the way people respond to this question. People who
 genuinely enjoy their jobs and the company will usually have several things
 they can tell you that they like about working there and will usually sound
 sincere. But if you get a blank stare or a long silence before your interviewer
-answers, or the answer is something like “the paycheck,” consider that a red
+answers, or the answer is something like "the paycheck," consider that a red
 flag.
 
-## 9. Ask the question you really care about.
+## Ask the question you really care about.
 
 Sometimes people use their turn to ask questions in an interview solely as an
 additional chance to try to impress their interviewer — asking questions
@@ -145,7 +148,7 @@ network** who might have the inside scoop on the company’s culture or the
 manager you’d be working for, **reading online reviews at places like
 Glassdoor**, and talking to other people who work there.
 
-## 10. “What’s your timeline for next steps?”
+## What’s your timeline for next steps?
 
 This is a basic logistics question, but it’s useful to ask because it gives you
 a benchmark for when you can expect to hear something back. Otherwise, if
@@ -160,7 +163,7 @@ she’s back, or whatever the case might be.
 Plus, asking this question makes it easy for you to check in with the employer
 if the timeline they give you comes and goes with no word. **If they tell you
 that they plan to make a decision in two weeks and it’s been three weeks, you
-can reasonably email them and say something like, “I know you were hoping to
+can reasonably email them and say something like, "I know you were hoping to
 make a decision around this time, so I wanted to check in and see if you have
 an updated timeline you can share. I’m really interested in the position and
-would love to talk more with you.”**
+would love to talk more with you."**

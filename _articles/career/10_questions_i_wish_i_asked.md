@@ -17,10 +17,10 @@ new book, The Making of a Manager, goes into great details about the questions
 that new leaders should ask themselves and their reports. Here is a summary of
 the top 10.
 
-* TOC
+1. TOC
 {:toc}
 
-## 1. Where have I had the most impact over the past few months, from your perspective?
+## Where have I had the most impact over the past few months, from your perspective?
 
 Virginia Woolf once said, “Without self awareness we are as babies in the
 cradle.” Self-awareness is understanding the extent to which your own
@@ -39,7 +39,7 @@ that others are noticing as well? Or do your peers have a different view of
 what you’ve done that’s most impactful? This is a great question for your
 manager, as well as practically any peer.
 
-## 2. What do you think it would look like for me to be twice as good at what I do, or for this project to go twice as well?
+## What do you think it would look like for me to be twice as good at what I do, or for this project to go twice as well?
 
 If you’re feeling a puff of pride about how you knocked that last project out
 of the park, or how you’re firing on all cylinders, it’s time to unveil this
@@ -53,7 +53,7 @@ looks like,” suddenly, you have a new goal in front of you. As they say, shoot
 for the stars, and you’ll land on the moon. Bonus points: this question shows
 others that you’re eager, proactive, and always aiming for more.
 
-## 3. I’m trying to get a better handle on my blind spots. What kinds of things, from your perspective, do I have a habit of missing or dismissing too quickly?
+## I’m trying to get a better handle on my blind spots. What kinds of things, from your perspective, do I have a habit of missing or dismissing too quickly?
 
 “We all have blind spots, and it’s shaped exactly like us,” author Junot Diaz
 said. Maybe your nature is to be conservative and shoot down the big, bold
@@ -67,7 +67,7 @@ your way of saying, “Help me become better.” And it’s packaged in a way th
 acknowledges that having blind spots is universal, not a personal weakness.
 You’re just self-aware enough to want to uncover what yours are.
 
-## 4. What’s hard for you in your job?
+## What’s hard for you in your job?
 
 If you’re looking for a classic conversation starter that avoids any
 pontification on the weather, feels engaging rather than cheesy, and leaves you
@@ -82,7 +82,7 @@ challenges. Because face it, every job has its towering mountains and
 unglamorous uphill climbs, and by being curious about other people’s journeys,
 you’re guaranteed to take away an interesting story or a new perspective.
 
-## 5. How do you prioritize your time?
+## How do you prioritize your time?
 
 Time is the most precious resource we have, and pretty much all of us don’t
 feel like we have enough of it. Learning how to prioritize effectively — how to
@@ -95,7 +95,7 @@ glimpse into what they consider valuable. Especially with managers, mentors, or
 people whose careers you’d like to emulate, this question also sheds light on
 what these folks consider most important in their jobs.
 
-## 6. What’s something interesting you’ve learned in your job that most people don’t know?
+## What’s something interesting you’ve learned in your job that most people don’t know?
 
 This is a tweak on question #4, except instead of asking about what’s hard,
 you’re asking for a non-obvious nugget of wisdom. This question will net you
@@ -106,7 +106,7 @@ question works better for people with jobs that you know less about — it c
 feel like a hard question if you pose it to someone who does the same thing as
 you because of the pressure to come up with something novel.
 
-## 7. You’re really exceptional at X. How do you do it so well?
+## You’re really exceptional at X. How do you do it so well?
 
 Mentorship is something all of us hear we should seek in order to grow and
 advance. And yet, Sheryl Sandberg in Lean In cautions against asking people
@@ -117,7 +117,7 @@ that the recipient will appreciate, as well as an opportunity for you to learn
 something from an expert. And that’s exactly how the best mentorship
 relationships start — from a curiosity to learn and a willingness to teach.
 
-## 8. What’s your biggest problem, and how can I help?
+## What’s your biggest problem, and how can I help?
 
 If you have some spare cycles on your hands and you’re looking for ways to
 increase your impact, this question is exactly what you need. I’ve never felt
@@ -130,7 +130,7 @@ Even if the answer at the moment is “Thanks, but there’s nothing you can hel
 with right now,” your initiative will be remembered and rewarded when future
 opportunities arise.
 
-## 9. I’d love to [learn about/do more of/achieve] X. If you come across any opportunities, will you keep an eye out for me?
+## I’d love to [learn about/do more of/achieve] X. If you come across any opportunities, will you keep an eye out for me?
 
 I always tell people who aspire for leadership opportunities that the biggest
 mistake they can make is keeping their aspirations a secret. It’s natural to do
@@ -145,7 +145,7 @@ negotiation, or become a team lead, this question signals to your manager or
 mentor where you’d like to go, and asks them to help you connect the dots on
 opportunities that will help you get there faster.
 
-## 10. Can you help me do X?
+## Can you help me do X?
 
 Think back to the last time you asked someone in senior position to do you a
 favor. For most people, the examples are few and far in between. Why? Because
