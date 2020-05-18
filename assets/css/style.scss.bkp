@@ -1,0 +1,151 @@
+---
+---
+
+/*
+//@import "{{ site.theme }}";
+
+body {
+  //background-color: #f5f5f5;
+  background: #252525;
+  background: linear-gradient(#2a2a29, #1c1c1c);
+  //color: #000;
+  color: #f0e7d5;
+  font-size: 16px;
+  font-weight: normal;
+  font: 18px/1.5 "OpenSansRegular", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  line-height: 1.25em;
+  padding: 0 0 1em 0;
+  text-align: justify;
+}
+
+a { text-decoration: none; }
+
+/*
+div.wrapper {
+  width: 50em;
+  margin: 0em auto;
+}
+
+//h1, h2, h3, h4, h5, h6 { white-space: nowrap; }
+
+/*
+body {
+  background-attachment: fixed !important;
+  background-color: #f5f5f5;
+  background: #252525;
+  background: linear-gradient(#2a2a29, #1c1c1c);
+  color: #f0e7d5;
+  font-weight: normal;
+  font: 14px/1.5 "OpenSansRegular", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin: 0em;
+  padding: 0em;
+}
+
+div.wrapper {
+  background: linear-gradient(#2a2a29, #1c1c1c);
+  color: #f0e7d5;
+  font-weight: normal;
+  font: 14px/1.5 "OpenSansRegular", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin: 0em auto;
+  padding: 0em;
+  width: 50em;
+}
+
+//a { color: #AAF; }
+
+header {
+  margin: 0em 0em 1em 0em;
+  padding: 1em;
+}
+
+header h1 {
+  margin: 0em 0em 1em;
+  text-decoration: none;
+  border: none;
+}
+
+h1 {
+  border-bottom: .1em solid black;
+  margin: 1em 0em;
+}
+
+//h2, h3, h4, h5, h6 { color: #BBB; }
+
+h2 {
+  border-bottom: .1em solid black;
+}
+
+h2, h3, h4 {
+  margin: 2em 0em 1em 0em;
+}
+
+h3, h4 {
+  text-decoration: underline;
+}
+
+iframe {
+  margin: 1em;
+}
+
+p {
+  margin: 0 0 1em 1em;
+}
+
+li ul {
+  margin: 0em;
+}
+
+
+/*
+body {
+  margin: 0em 1em 0em 1em;
+  padding: 0em 0em 0em 0em;
+}
+
+header {
+  width: 100%;
+  float: none;
+  position: relative;
+  //display: none;
+}
+
+header.post-header {
+  margin: 0em 0em 1em 0em;
+}
+
+
+h3, h4, h5, h6 {
+  //margin: 0em 0em 1em 0em;
+}
+
+section {
+  margin: 1em 1em;
+  padding: 0em;
+  float: none;
+  //width: 60em;
+}
+
+summary { 
+  margin: 1em 0em 1em 0em;
+}
+
+summary h2 { 
+  display: inline;
+}
+
+img, iframe {
+  max-width: 50%;
+}
+
+iframe  {
+  margin: 1em;
+}
+
+footer {
+  float: none;
+  position: static;
+  margin: 1em 1em;
+  padding: 0em;
+}
+
+*/
