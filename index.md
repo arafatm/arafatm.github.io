@@ -15,6 +15,21 @@ title: arafatm
 
 [Escape To River Cottage series 1 ep 1 - YouTube](https://www.youtube.com/watch?v=KtiVrBqZ_ao)
 
+```ruby
+# Ruby code with syntax highlighting
+GitHubPages::Dependencies.gems.each do |gem, version|
+  s.add_dependency(gem, "= #{version}")
+end
+```
+
+```javascript
+// Javascript code with syntax highlighting.
+var fun = function lang(l) {
+  dateformat.i18n = require('./lang/' + l)
+  return true;
+}
+```
+
 ---
 
 - [ ] :a: https://foldforcovid.io/

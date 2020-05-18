@@ -16,37 +16,37 @@ title: Life Cycle of a Silver Bullet
 
 ## Phases
 
-1 Fresh Start: _Envision a little pig in a suit, wiping a
+1. Fresh Start: _Envision a little pig in a suit, wiping a
 bunch of architectural drawings and books off a table_
 
-2 Executive Dedication and Openness: _Envision a little pig
+1. Executive Dedication and Openness: _Envision a little pig
 constructing a house made of bricks_
 
-3 Success
+1. Success
 
-4 Publicity: _Envision a little pig proudly holding a book
+1. Publicity: _Envision a little pig proudly holding a book
 showing a house of bricks on the cover. The book’s title e
 Balle-Argentee Method.”_
 
-5 Momentum
+1. Momentum
 
-6 First Replication: _Envision two or three other little
+1. First Replication: _Envision two or three other little
 pigs constructing house of wood._
 
-7 Confirmation: _Envision a collection of books with houses
+1. Confirmation: _Envision a collection of books with houses
 of wood on the cover_
 
-8 Proceduralization: _Envision an entire village of houses
+1. Proceduralization: _Envision an entire village of houses
 made of straw_
 
-9 Diminished Returns: _Envision the village of straw houses
+1. Diminished Returns: _Envision the village of straw houses
 starting to crumble, propped up by sticks and invaded by
 mice_
 
-10 Blaming the Method: _Envision the big bad wolf blowing
+1. Blaming the Method: _Envision the big bad wolf blowing
 down the village of straw houses._
 
-11 Starting Fresh: _Envision a different little pig wiping a
+1. Starting Fresh: _Envision a different little pig wiping a
 bunch of books and drawings off his desk. One of the books
 has a picture of a house of bricks on the cover_
 
