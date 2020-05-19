@@ -1,7 +1,7 @@
 ---
 layout: page
 permalink: /gymnasticbodies/
-source: http://my.gymnasticbodies.com
+https://my.gymnasticbodies.com/#class-finder
 title: gymnastic Bodies
 ---
 
