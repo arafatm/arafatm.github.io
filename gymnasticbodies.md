@@ -13,57 +13,57 @@ title: gymnastic Bodies
 ### Wrist Strech 
 
 ##### Front
-![wrist-stretch-front](/img/gymnasticbodies/wrist-stretch-front.png)
+![wrist-stretch-front](/assets/img/gymnasticbodies/wrist-stretch-front.png)
 
 ##### Back
-![wrist-stretch-back](/img/gymnasticbodies/wrist-stretch-back.png)
+![wrist-stretch-back](/assets/img/gymnasticbodies/wrist-stretch-back.png)
 
 ### Seal to Cat Stretch 3x
 
 ##### Seal Stretch
 
-![seal-stretch](/img/gymnasticbodies/seal-stretch.png)
+![seal-stretch](/assets/img/gymnasticbodies/seal-stretch.png)
 
 ##### Cat Stretch
 
-![cat-stretch](/img/gymnasticbodies/cat-stretch.png)
+![cat-stretch](/assets/img/gymnasticbodies/cat-stretch.png)
 
 ##### Repeat 3x
 
 ### Capsule Stretch
 
-![capsule-stretch](/img/gymnasticbodies/capsule-stretch.png)
+![capsule-stretch](/assets/img/gymnasticbodies/capsule-stretch.png)
 
 ### Shoulder Extension
 
-![shoulder-extension](/img/gymnasticbodies/shoulder-extension.png)
+![shoulder-extension](/assets/img/gymnasticbodies/shoulder-extension.png)
 
 ### Hip Swivels
 
-![hip-swivels](/img/gymnasticbodies/hip-swivels.png)
+![hip-swivels](/assets/img/gymnasticbodies/hip-swivels.png)
 
 ### Pancake Front/Left/Right
 
 ##### Pancake Front
-![pancake-front](/img/gymnasticbodies/pancake-front.png)
+![pancake-front](/assets/img/gymnasticbodies/pancake-front.png)
 
 ##### Pancake Left
-![pancake-left](/img/gymnasticbodies/pancake-left.png)
+![pancake-left](/assets/img/gymnasticbodies/pancake-left.png)
 
 ##### Pancake Right
-![pancake-right](/img/gymnasticbodies/pancake-right.png)
+![pancake-right](/assets/img/gymnasticbodies/pancake-right.png)
 
 ### Butterfly
 
-![butterfly](/img/gymnasticbodies/butterfly.png)
+![butterfly](/assets/img/gymnasticbodies/butterfly.png)
 
 ### Pike
 
-![pike-stretch](/img/gymnasticbodies/pike-stretch.png)
+![pike-stretch](/assets/img/gymnasticbodies/pike-stretch.png)
 
 ### Shoulder Bridge
 
-![shoulder-bridge](/img/gymnasticbodies/shoulder-bridge.png)
+![shoulder-bridge](/assets/img/gymnasticbodies/shoulder-bridge.png)
 
 ### Calf Stretch
 
