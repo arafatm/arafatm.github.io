@@ -2,7 +2,7 @@
 layout: page
 permalink: /gymnasticbodies/
 source: http://my.gymnasticbodies.com
-title: Gymastic Bodies
+title: gymnastic Bodies
 ---
 
 * TOC
@@ -12,52 +12,67 @@ title: Gymastic Bodies
 
 ### Wrist Strech 
 
-![wrist-stretch-front](/img/gymasticbodies/wrist-stretch-front.png)
+##### Front
+![wrist-stretch-front](/img/gymnasticbodies/wrist-stretch-front.png)
 
-![wrist-stretch-back](/img/gymasticbodies/wrist-stretch-back.png)
+##### Back
+![wrist-stretch-back](/img/gymnasticbodies/wrist-stretch-back.png)
 
 ### Seal to Cat Stretch 3x
 
-![seal-stretch](/img/gymasticbodies/seal-stretch.png)
+##### Seal Stretch
 
-![cat-stretch](/img/gymasticbodies/cat-stretch.png)
+![seal-stretch](/img/gymnasticbodies/seal-stretch.png)
+
+##### Cat Stretch
+
+![cat-stretch](/img/gymnasticbodies/cat-stretch.png)
+
+##### Repeat 3x
 
 ### Capsule Stretch
 
-![capsule-stretch](/img/gymasticbodies/capsule-stretch.png)
+![capsule-stretch](/img/gymnasticbodies/capsule-stretch.png)
 
 ### Shoulder Extension
 
-![shoulder-extension](/img/gymasticbodies/shoulder-extension.png)
+![shoulder-extension](/img/gymnasticbodies/shoulder-extension.png)
 
 ### Hip Swivels
 
-![hip-swivels](/img/gymasticbodies/hip-swivels.png)
+![hip-swivels](/img/gymnasticbodies/hip-swivels.png)
 
 ### Pancake Front/Left/Right
 
-![pancake-front](/img/gymasticbodies/pancake-front.png)
+##### Pancake Front
+![pancake-front](/img/gymnasticbodies/pancake-front.png)
 
-![pancake-left](/img/gymasticbodies/pancake-left.png)
+##### Pancake Left
+![pancake-left](/img/gymnasticbodies/pancake-left.png)
 
-![pancake-right](/img/gymasticbodies/pancake-right.png)
+##### Pancake Right
+![pancake-right](/img/gymnasticbodies/pancake-right.png)
 
 ### Butterfly
 
-![butterfly](/img/gymasticbodies/butterfly.png)
-https://github.com/arafatm/arafatm.github.io/blob/master/img/gymnasticbodies/butterfly.png
+![butterfly](/img/gymnasticbodies/butterfly.png)
 
 ### Pike
 
-![pike-stretch](/img/gymasticbodies/pike-stretch.png)
+![pike-stretch](/img/gymnasticbodies/pike-stretch.png)
 
 ### Shoulder Bridge
 
-![shoulder-bridge](/img/gymasticbodies/shoulder-bridge.png)
+![shoulder-bridge](/img/gymnasticbodies/shoulder-bridge.png)
 
-### Cat Stretch
+### Calf Stretch
 
-![calf-stretch](/assets/img/gymasticbodies/calf-stretch.png)
+![calf-stretch](/assets/img/gymnasticbodies/calf-stretch.png)
 
-![](/assets/img/guitar/common-open-chords.png)
+## Fundamentals
 
+### Crab & Ape
+
+### Wrist stretches
+
+### 
