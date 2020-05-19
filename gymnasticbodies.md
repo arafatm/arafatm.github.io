@@ -69,10 +69,12 @@ title: gymnastic Bodies
 
 ![calf-stretch](/assets/img/gymnasticbodies/calf-stretch.png)
 
-## Fundamentals
+## Fundamentals Block 1
 
 ### Crab & Ape
 
 ### Wrist stretches
 
-### 
+### Front Support, Back Support, Prone, Supine
+
+### Straight Body, Tuck, Straddle, Pike 
