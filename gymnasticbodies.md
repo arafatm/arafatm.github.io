@@ -1,4 +1,6 @@
 ---
+layout: page
+permalink: /gb/
 source: http://my.gymnasticbodies.com
 title: Gymastic Bodies
 ---
@@ -43,6 +45,7 @@ title: Gymastic Bodies
 ### Butterfly
 
 ![butterfly](/assets/img/gymasticbodies/butterfly.png)
+https://github.com/arafatm/arafatm.github.io/blob/master/assets/img/gymnasticbodies/butterfly.png
 
 ### Pike
 
