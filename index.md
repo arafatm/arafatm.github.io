@@ -35,6 +35,8 @@ var fun = function lang(l) {
 ---
 
 - [ ] :a: https://foldforcovid.io/
+- [ ] [Live Stream Consul 1.8 Product Announcement](https://www.youtube.com/watch?v=3K9DmvAmIYY)
+- [ ] [Managing Secrets with Vault and Consul](https://testdriven.io/blog/managing-secrets-with-vault-and-consul)
 - [ ] Hashi Consul
 - [ ] <https://www.hashicorp.com/certification/>
 - [ ] [TED Mel Robbins: How to stop screwing yourself over](https://www.ted.com/talks/mel_robbins_how_to_stop_screwing_yourself_over)
