@@ -13,7 +13,7 @@ title: Learn Consul
 
 ### Verifying the Installation
 
-:ship: Verify install
+:shipit: Verify install
 ```bash
 consul
 ```
@@ -45,7 +45,7 @@ production deployment of servers and clients in this guide
 
 ### Starting the Agent
 
-:ship: Start the Consul agent in development mode.
+:shipit: Start the Consul agent in development mode.
 ```bash
 consul agent -dev
 ```
@@ -57,7 +57,7 @@ with Consul. To avoid this, explicitly set the name of your node with the
 
 ### Datacenter Members
 
-:ship: Check the membership of Consul DataCenter
+:shipit: Check the membership of Consul DataCenter
 ```bash
 consul members
 ```
@@ -72,7 +72,7 @@ the servers. For a strongly consistent view of the world, query the _HTTP API_
 <https://www.consul.io/api/index.html>, which forwards the request to the
 Consul servers.
 
-:ship: Query nodes 
+:shipit: Query nodes 
 ```bash
 curl localhost:8500/v1/catalog/nodes
 ```
@@ -88,14 +88,14 @@ caching. To perform DNS lookups you have to point to the Consul agent's DNS
 server, which runs on port `8600` by default. The format of the DNS entries
 (such as `Judiths-MBP.node.consul`) will be covered in more detail later.
 
-:ship: DNS Lookup to point to the Consul agent's DNS server
+:shipit: DNS Lookup to point to the Consul agent's DNS server
 ```bash
 dig @127.0.0.1 -p 8600 FQDN.node.consul
 ```
 
 ### Stopping the Agent
 
-:ship: Stop the Consul agent by using the `consul leave` command. 
+:shipit: Stop the Consul agent by using the `consul leave` command. 
 ```bash
 consul leave
 ```
@@ -138,7 +138,7 @@ You can register services either by providing a service definition
 to register services, or by making a call to the [HTTP API
 <https://www.consul.io/api/agent/service.html#register-service>. 
 
-:ship: Create directory for configuration files
+:shipit: Create directory for configuration files
 ```bash
 mkdir ./consul.d
 ```
@@ -150,7 +150,7 @@ service definition: name, port, and an optional tag you can use to find the
 service later on. (In this case copy the whole code block except for the `$` to
 run the command and create the file.)
 
-:ship: Write a **service definition configuration** file
+:shipit: Write a **service definition configuration** file
 ```bash
 echo '{"service":
   { "name": "web",        # service name
@@ -160,7 +160,7 @@ echo '{"service":
 }'    > ./consul.d/web.json
 ```
 
-:ship: Restart the agent and enable script checks on the agent.
+:shipit: Restart the agent and enable script checks on the agent.
 ```bash
 consul agent -dev -enable-script-checks -config-dir=./consul.d
 ```
@@ -187,7 +187,7 @@ via _DNS Interface_ or _HTTP API_
 
 #### DNS Interface
 
-:ship: The fqdn is `web.service.consul`. Query the DNS interface for the
+:shipit: The fqdn is `web.service.consul`. Query the DNS interface for the
 registered service.
 ```bash
 dig @127.0.0.1 -p 8600 web.service.consul
@@ -202,12 +202,12 @@ argument or the `address` field in the service definition
 <https://www.consul.io/docs/agent/services.html> if you want to advertise an IP
 address that is meaningful to other nodes in the datacenter.
 
-:ship: You can also use the DNS interface to retrieve the entire address/port pair as a `SRV` record.
+:shipit: You can also use the DNS interface to retrieve the entire address/port pair as a `SRV` record.
 ```bash
 dig @127.0.0.1 -p 8600 web.service.consul SRV
 ```
 
-:ship: You can also use the DNS interface to filter services by tags. The
+:shipit: You can also use the DNS interface to filter services by tags. The
 format for tag-based service queries is `TAG.NAME.service.consul`. 
 ```bash
 dig @127.0.0.1 -p 8600 rails.web.service.consul
@@ -215,7 +215,7 @@ dig @127.0.0.1 -p 8600 rails.web.service.consul
 
 #### HTTP API
 
-:ship: Query for the service using the HTTP API.
+:shipit: Query for the service using the HTTP API.
 ```bash
 curl http://localhost:8500/v1/catalog/service/web
 ```
@@ -227,7 +227,7 @@ The HTTP API lists all nodes hosting a given service.
 healthy service instances, which DNS does automatically under the hood. Filter
 your HTTP API query to look for only healthy instances.
 
-:ship: Query for the service filtering for healthy service instances
+:shipit: Query for the service filtering for healthy service instances
 ```bash
 curl 'http://localhost:8500/v1/health/service/web?passing'
 ```
@@ -245,7 +245,7 @@ running `consul reload`. Alternatively, you can use the HTTP API to add,
 remove, and modify services dynamically. In this example, you will update the
 registration file.
 
-:ship: Edit the registration file
+:shipit: Edit the registration file
 ```bash
 echo '{ "service":
   {"name": "web",
@@ -263,7 +263,7 @@ echo '{ "service":
 fail and Consul will consider the service unhealthy. An exit code of 1 will be
 considered as warning state.
 
-:ship: Now reload Consul's configuration to make it aware of the new health check.
+:shipit: Now reload Consul's configuration to make it aware of the new health check.
 ```bash
 consul reload
 ```
@@ -280,7 +280,7 @@ Notice the following lines in Consul's logs, which indicate that the web check i
     
 :exclamation: Consul's DNS server only returns healthy results. 
 
-:ship: Query DNS for the web service again. It shouldn't return any IP
+:shipit: Query DNS for the web service again. It shouldn't return any IP
 addresses since web's health check is failing.
 ```bash
 dig @127.0.0.1 -p 8600 web.service.consul
@@ -342,20 +342,20 @@ another service relies on.
 Socat lacks a concept of encryption or the TLS protocol. You will use it to
 demonstrate that Connect takes care of these concerns for you. 
 
-:ship: Start the socat service and specify that it will listen for TCP
+:shipit: Start the socat service and specify that it will listen for TCP
 connections on port 8181.
 ```bash
 socat -v tcp-l:8181,fork exec:"/bin/cat"
 ```
 
-:ship: verify it's working with `netcat`
+:shipit: verify it's working with `netcat`
 ```bash
 nc 127.0.0.1 8181
 ```
 
 ### Register the Service and Proxy with Consul
 
-:ship: Register a _sidecar proxy_ to handle traffic for the socat service
+:shipit: Register a _sidecar proxy_ to handle traffic for the socat service
 instance <https://www.consul.io/docs/connect/registration/sidecar-service.html>
 ```bash
 echo '{
@@ -367,7 +367,7 @@ echo '{
 }'      > ./consul.d/socat.json
 ```
 
-:ship: reload the new socat configuration
+:shipit: reload the new socat configuration
 ```bash
 consul reload
 ```
@@ -379,7 +379,7 @@ use for production deployments and layer 7 traffic management.
 :exclamation: You'll use the L4 proxy in this guide, because, unlike Envoy, it
 comes with Consul and doesn't require any extra installation.
 
-:ship: Start the proxy process, and specify which service instance and proxy
+:shipit: Start the proxy process, and specify which service instance and proxy
 registration it corresponds to.
 ```bash
 consul connect proxy -sidecar-for socat
@@ -387,7 +387,7 @@ consul connect proxy -sidecar-for socat
 
 ### Register a Dependent Service and Proxy
 
-:ship: Register a downstream service called "web" that specifies web's upstream
+:shipit: Register a downstream service called "web" that specifies web's upstream
 dependency on socat, and the port that the proxy will listen on.
 ```bash
 echo '{"service": {
@@ -407,7 +407,7 @@ echo '{"service": {
     }' > ./consul.d/web.json
 ```
 
-:ship: reload the new web service definition
+:shipit: reload the new web service definition
 ```bash
 consul reload
 ```
@@ -422,14 +422,14 @@ loopback address at port 8181.
 Because there is no web service running, you will _pretend to be the web
 service_ by talking to its proxy on the port that we specified (9191).
 
-:ship: Verify that you aren't able to connect to the socat service on port 9191. 
+:shipit: Verify that you aren't able to connect to the socat service on port 9191. 
 The below command should exit immediately, because there is nothing listening
 on port 9191 _socat is listening on 8181_.
 ```bash
 nc 127.0.0.1 9191
 ```
 
-:ship: Start the web proxy using the configuration from the sidecar
+:shipit: Start the web proxy using the configuration from the sidecar
 registration.
 ```bash
 consul connect proxy -sidecar-for web
@@ -443,13 +443,13 @@ Subsequent log lines list the identity URL of the certificate loaded from the
 agent, identifying it as the "web" service, and the set of trusted root CAs
 that the proxy knows about.
 
-:ship: Connect to socat again on port 9191. This time it should work and echo
+:shipit: Connect to socat again on port 9191. This time it should work and echo
 back your text.
 ```bash
 nc 127.0.0.1 9191
 ```
     
-:ship: Close the connection by typing `Crl+c`.
+:shipit: Close the connection by typing `Crl+c`.
 
 :flashlight: The communication between the web and socat proxies is encrypted
 and authorized over a mutual TLS connection, while communication between each
@@ -468,23 +468,23 @@ which services are allowed communicate with which other services. The
 connections above succeeded because in development mode, the ACL system (and
 therefore the default intention policy) is "allow all" by default.
 
-:ship: Create an intention to deny access from web to socat that specifies
+:shipit: Create an intention to deny access from web to socat that specifies
 policy, and the source and destination services.
 ```bash
 consul intention create -deny web socat
 ```
 
-:ship: The connection should fail.
+:shipit: The connection should fail.
 ```bash
 nc 127.0.0.1 9191
 ```
 
-:ship: Delete the intention.
+:shipit: Delete the intention.
 ```bash
 consul intention delete web socat
 ```
 
-:ship: Try the connection again, and it will succeed.
+:shipit: Try the connection again, and it will succeed.
 ```bash
 nc 127.0.0.1 9191
 ```
@@ -523,38 +523,38 @@ applications and services can interact with Consul KV.
 
 First, insert or "put" some values into the KV store with the `consul kv put` command. The first entry after the command is the key, and the second entry is the value.
 
-:ship: Insert `put` some values
+:shipit: Insert `put` some values
 ```bash
 consul kv put redis/config/minconns 1
 
 consul kv put redis/config/maxconns 25
 ```
 
-:ship: set a **flag** which isn't used internally, but can add metadata
+:shipit: set a **flag** which isn't used internally, but can add metadata
 ```bash
 consul kv put -flags=42 redis/config/users/admin abcd1234
 ```
 
 ### Query Data
 
-:ship: Query with `get`
+:shipit: Query with `get`
 ```bash
 consul kv get redis/config/minconns
 ```
 
-:ship: Query including `flag` metadata
+:shipit: Query including `flag` metadata
 ```bash
 consul kv get -detailed redis/config/users/admin
 ```
 
-:ship: list all keys in the store recursively
+:shipit: list all keys in the store recursively
 ```bash
 consul kv get -recurse
 ```
 
 ### Delete Data
 
-:ship: Delete a key from the Consul KV store
+:shipit: Delete a key from the Consul KV store
 ```bash
 consul kv delete redis/config/minconns
 ```
@@ -564,29 +564,29 @@ all the keys in the KV store are actually stored flat, Consul allows you to
 manipulate keys that share a certain prefix as a group, as if they were in
 folders or subfolders.
 
-:ship: Delete all the keys with the `redis` prefix using the `recurse` option.  
+:shipit: Delete all the keys with the `redis` prefix using the `recurse` option.  
 ```bash
 consul kv delete -recurse redis
 ```
 
 ### Modify Existing Data
 
-:ship: Update the value of an existing key.  
+:shipit: Update the value of an existing key.  
 ```bash
 consul kv put foo bar
 ```
 
-:ship: Get the updated key.  
+:shipit: Get the updated key.  
 ```bash
 consul kv get foo 
 ```
 
-:ship: Put the new value at an extant "path".  
+:shipit: Put the new value at an extant "path".  
 ```bash
 consul kv put foo zip
 ```
 
-:ship: Check the updated path.
+:shipit: Check the updated path.
 ```bash
 consul kv get foo
 ```
@@ -775,29 +775,29 @@ To run two agents on the same computer you will need to install VirtualBox
 <https://www.virtualbox.org/>, and Vagrant <https://www.vagrantup.com/>, which
 will run virtual machines to simulate a distributed environment.
 
-:ship: Make a directory to store Vagrant's configuration for this guide.
+:shipit: Make a directory to store Vagrant's configuration for this guide.
 ```bash
 mkdir consul-getting-started-join
 ```
 
-:ship: Create a new file in the directory called `Vagrantfile` and paste the
+:shipit: Create a new file in the directory called `Vagrantfile` and paste the
 content of Consul's demo Vagrant file
 <https://github.com/hashicorp/consul/blob/master/demo/vagrant-cluster/Vagrantfile>
 into it. 
 
-:ship: Boot your two virtual machines. 
+:shipit: Boot your two virtual machines. 
 ```bash
 vagrant up
 ```
 
-:ship: Once the environment is up, ssh into node 1 to begin configuring of your datacenter.
+:shipit: Once the environment is up, ssh into node 1 to begin configuring of your datacenter.
 ```bash
 vagrant ssh n1
 ```
 
 ### Start the Agents
 
-:ship: Start 1st (Vagrant) Consul agent in server mode
+:shipit: Start 1st (Vagrant) Consul agent in server mode
 ```bash
 consul agent \
       -server \
@@ -841,12 +841,12 @@ consul agent \
   This flag tells consul where to look for its configuration. You will set it
   to a standard location: `/etc/consul.d`.
     
-:ship: Connect to 2nd agent
+:shipit: Connect to 2nd agent
 ```bash
 vagrant ssh n2
 ```
 
-:ship: Start 2nd agent in client mode
+:shipit: Start 2nd agent in client mode
 ```bash
 consul agent \
       -node=agent-two \
@@ -859,14 +859,14 @@ consul agent \
 
 Now you have two Consul agents running: one server and one client. The two agents still don't know about each other and each comprise their own single-node datacenters.
 
-:ship: Verify 2nd agent does not know about 1st agent
+:shipit: Verify 2nd agent does not know about 1st agent
 ```bash
 vagrant ssh n2
 
 consul members
 ```
 
-:ship: Check the membership of `agent-one`.
+:shipit: Check the membership of `agent-one`.
 ```bash
 vagrant ssh n1
 
@@ -879,12 +879,12 @@ consul members
 
 ### Join the Agents
 
-:ship: In 1st vagrant, join the client
+:shipit: In 1st vagrant, join the client
 ```bash
 consul join 172.20.20.11
 ```
 
-:ship: Run `consul members` again and you will see both agents listed.
+:shipit: Run `consul members` again and you will see both agents listed.
 ```bash
 consul members
 ```
@@ -930,7 +930,7 @@ You can query Consul agents using the DNS interface or HTTP API.
 or `NAME.node.DATACENTER.consul`. If the datacenter is omitted, Consul will
 only search the local datacenter.
 
-:ship: From Vagrant 1, query the DNS interface for the address of agent-two.
+:shipit: From Vagrant 1, query the DNS interface for the address of agent-two.
 ```bash
 dig @127.0.0.1 -p 8600 agent-two.node.consul
 ```
@@ -943,14 +943,14 @@ easy as making the node a part of the Consul datacenter and querying it.
 
 ### Stop the Agents
 
-:ship: Stop agents from within the vagrant sessions
+:shipit: Stop agents from within the vagrant sessions
 ```bash
 consul leave
 ```
 
 ### Clean Up the Environment
 
-:ship: Shut down vagrant sessions
+:shipit: Shut down vagrant sessions
 ```bash
 vagrant destroy
 ```
