@@ -15,6 +15,8 @@ title: arafatm
 
 ---
 
+| COD | RUN | RUK | MNT 
+
 - [ ] :a: https://foldforcovid.io/
 - [ ] [Live Stream Consul 1.8 Product Announcement](https://www.youtube.com/watch?v=3K9DmvAmIYY)
 - [ ] [Managing Secrets with Vault and Consul](https://testdriven.io/blog/managing-secrets-with-vault-and-consul)
