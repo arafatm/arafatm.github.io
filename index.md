@@ -17,7 +17,7 @@ title: arafatm
 
 |      |            | F | T | W | T | M | S | 5/30 | F | T | W | T | M | S | 5/23 |
 | 1.Dy | :octocat:  |   |   |   |   |   |   |      |   |   |   |   |   |   |      |
-| 2.Dy | :walking:  |   |   |   |   |   |   |      |   |   |   |   |   |   |      |
+| 2.Dy | :walking:  |   |   |   |   |   |   |      |   |   |   |   |   | 1 |      |
 | 1.Wk | :moneybag: |   |   |   |   |   |   |      |   |   |   |   |   |   |      |
 | 1.Wk | :runner:   |   |   |   |   |   |   |      |   |   |   |   |   |   |      |
 | 2.Wk | :muscle:   |   |   |   |   |   |   |      |   |   |   |   |   |   |  X   |
