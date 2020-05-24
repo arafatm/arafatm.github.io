@@ -15,7 +15,13 @@ title: arafatm
 
 ---
 
-| COD | RUN | RUK | MNT 
+|      |            | F | T | W | T | M | S | 5/30 | F | T | W | T | M | S | 5/23 |
+| 1.Dy | :octocat:  |   |   |   |   |   |   |      |   |   |   |   |   |   |      |
+| 2.Dy | :walking:  |   |   |   |   |   |   |      |   |   |   |   |   |   |      |
+| 1.Wk | :moneybag: |   |   |   |   |   |   |      |   |   |   |   |   |   |      |
+| 1.Wk | :runner:   |   |   |   |   |   |   |      |   |   |   |   |   |   |      |
+| 2.Wk | :muscle:   |   |   |   |   |   |   |      |   |   |   |   |   |   |  X   |
+| 3.Wk | :sweat:    |   |   |   |   |   |   |      |   |   |   |   |   |   |      |
 
 - [ ] :a: https://foldforcovid.io/
 - [ ] [Live Stream Consul 1.8 Product Announcement](https://www.youtube.com/watch?v=3K9DmvAmIYY)
