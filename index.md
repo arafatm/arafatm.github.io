@@ -20,7 +20,7 @@ title: arafatm
 | 2.Dy | :walking:  |   |   |   |   |   |   |      |   |   |   |   |   | 1 |      |
 | 1.Wk | :moneybag: |   |   |   |   |   |   |      |   |   |   |   |   |   |      |
 | 1.Wk | :runner:   |   |   |   |   |   |   |      |   |   |   |   |   |   |      |
-| 2.Wk | :muscle:   |   |   |   |   |   |   |      |   |   |   |   |   |   |  X   |
+| 2.Wk | :muscle:   |   |   |   |   |   |   |      |   |   |   |   |   |   | :x:  |
 | 3.Wk | :sweat:    |   |   |   |   |   |   |      |   |   |   |   |   |   |      |
 
 - [ ] :a: https://foldforcovid.io/
