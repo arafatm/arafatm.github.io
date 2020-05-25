@@ -11,13 +11,13 @@ td {
 }
 </style>
 
-|        |            | M   | S   | 5.23 |
-| Dy1 | :octocat:  | :o: |     |      |
-| Dy1 | :ok_woman: | :x: |     |      |
-| Dy2 | :walking:  | 1   | 1   |      |
-| Wk6 | :muscle:   |     | :o: | :x:  |
-| Wk3 | :guitar:   |     |     |      |
-| Wk1 | :moneybag: | :x: |     |      |
+|      |            | M | S | 23 | May |
+| DYx1 | :octocat:  |   |   |    |     |
+| DYx1 | :ok_woman: | X |   |    |     |
+| DYx2 | :walking:  | 1 | 1 |    |     |
+| WKx6 | :muscle:   |   | X | S  |     |
+| WKx3 | :guitar:   |   |   |    |     |
+| WKx1 | :moneybag: | X |   |    |     |
 
 :guitar: [Guitar](/guitar) 
 ...
