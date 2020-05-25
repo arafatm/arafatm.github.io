@@ -16,12 +16,12 @@ title: arafatm
 ---
 
 |      |            | F | T | W | T | M | S | 5/30 | F | T | W | T | M | S | 5/23 |
-| 1.Dy | :octocat:  |   |   |   |   |   |   |      |   |   |   |   |   |   |      |
-| 2.Dy | :walking:  |   |   |   |   |   |   |      |   |   |   |   |   | 1 |      |
-| 1.Wk | :moneybag: |   |   |   |   |   |   |      |   |   |   |   |   |   |      |
-| 1.Wk | :runner:   |   |   |   |   |   |   |      |   |   |   |   |   |   |      |
-| 2.Wk | :muscle:   |   |   |   |   |   |   |      |   |   |   |   |   |   | :x:  |
-| 3.Wk | :sweat:    |   |   |   |   |   |   |      |   |   |   |   |   |   |      |
+| 1xDy | :octocat:  |   |   |   |   |   |   |      |   |   |   |   |   |   |      |
+| 2xDy | :walking:  |   |   |   |   |   |   |      |   |   |   |   |   |:x:|      |
+| 1xWk | :moneybag: |   |   |   |   |   |   |      |   |   |   |   |   |   |      |
+| 1xWk | :runner:   |   |   |   |   |   |   |      |   |   |   |   |   |   |      |
+| 2xWk | :muscle:   |   |   |   |   |   |   |      |   |   |   |   |   |   | :x:  |
+| 3xWk | :sweat:    |   |   |   |   |   |   |      |   |   |   |   |   |:x:|      |
 
 - [ ] :a: https://foldforcovid.io/
 - [ ] [Live Stream Consul 1.8 Product Announcement](https://www.youtube.com/watch?v=3K9DmvAmIYY)
