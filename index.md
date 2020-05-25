@@ -16,12 +16,17 @@ title: arafatm
 ---
 
 <style>
-td { text-align: center; font-size: 0.8em; padding: 2px;}
+td { 
+  text-align: center; 
+  font-size: 1em; 
+  padding: 0.2em !important;
+}
 </style>
 
 |        |            | F | T | W | T | M | S   | 5.23 |
 | Dy x 1 | :octocat:  |   |   |   |   |   |     |      |
-| Dy x 2 | :walking:  |   |   |   |   |   | 1 |      |
+| Dy x 1 | :ok_woman:  |   |   |   |   |   |     |      |
+| Dy x 2 | :walking:  |   |   |   |   |   | 1   |      |
 | Wk x 1 | :moneybag: |   |   |   |   |   |     |      |
 | Wk x 1 | :runner:   |   |   |   |   |   |     |      |
 | Wk x 2 | :muscle:   |   |   |   |   |   |     | :x:  |
