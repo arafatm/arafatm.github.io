@@ -6,19 +6,18 @@ title: arafatm
 td { 
   text-align: center; 
   font-size: 1em; 
+  font-weight: 700;
   padding: 0.2em !important;
 }
 </style>
 
-|        |            | X | M   | S   | 5.23 |
-| Dy x 1 | :octocat:  |:x:|     |     |      |
-| Dy x 1 | :ok_woman: |   | :x: |     |      |
-| Dy x 2 | :walking:  |   | 1   | 1   |      |
-| Wk x 1 | :moneybag: |   | :x: |     |      |
-| Wk x 1 | :runner:   |   |     |     |      |
-| Wk x 2 | :muscle:   |   |     |     | :x:  |
-| Wk x 3 | :sweat:    |   |     | :x: |      |
-| Wk x 3 | :guitar:   |   |     |     |      |
+|        |            | M   | S   | 5.23 |
+| Dy1 | :octocat:  | :o: |     |      |
+| Dy1 | :ok_woman: | :x: |     |      |
+| Dy2 | :walking:  | 1   | 1   |      |
+| Wk6 | :muscle:   |     | :o: | :x:  |
+| Wk3 | :guitar:   |     |     |      |
+| Wk1 | :moneybag: | :x: |     |      |
 
 :guitar: [Guitar](/guitar) 
 ...
