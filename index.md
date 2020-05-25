@@ -22,6 +22,7 @@ title: arafatm
 | 1xWk | :runner:   |   |   |   |   |   |   |      |
 | 2xWk | :muscle:   |   |   |   |   |   |   | :x:  |
 | 3xWk | :sweat:    |   |   |   |   |   |:x:|      |
+| 3xWk | :guitar:   |   |   |   |   |   |   |      |
 
 - [ ] :a: https://foldforcovid.io/
 - [ ] [Live Stream Consul 1.8 Product Announcement](https://www.youtube.com/watch?v=3K9DmvAmIYY)
