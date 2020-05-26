@@ -1,8 +1,8 @@
 ---
 layout: page
-permalink: /gymnasticbodies/
-https://my.gymnasticbodies.com/#class-finder
-title: gymnastic Bodies
+permalink: /gbstretch/
+source: https://my.gymnasticbodies.com/#class-finder
+title: gymnastic Bodies - Stretch
 ---
 
 * TOC

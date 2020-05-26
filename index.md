@@ -11,19 +11,21 @@ td {
 }
 </style>
 
-|      |            | M | S | 23 | May |
-| DYx1 | :octocat:  |   |   |    |     |
-| DYx1 | :ok_woman: | X |   |    |     |
-| DYx2 | :walking:  | 1 | 1 |    |     |
-| WKx6 | :muscle:   |   | X | S  |     |
-| WKx3 | :guitar:   |   |   |    |     |
-| WKx1 | :moneybag: | X |   |    |     |
+|      |            | T | M | S | 23 | May |
+| DYx2 | :walking:  |   | X | 1 |    |     |
+| DYx1 | :ok_woman: |   | X |   |    |     |
+| DYx1 | :octocat:  |   |   |   |    |     |
+| WKx6 | :muscle:   |   |   | X | S  |     |
+| WKx3 | :guitar:   |   |   |   |    |     |
+| WKx1 | :moneybag: |   | X |   |    |     |
 
 :guitar: [Guitar](/guitar) 
 ...
 :muscle: [Lifting](/lifting) 
 ...
-:feelsgood: [Gymnastic](/gymnasticbodies) 
+:feelsgood: [Stretch](/gbstretch) 
+...
+:feelsgood: [Workout](/gbworkout) 
 ...
 :book: [My Kindle Notes](https://read.amazon.com/notebook)
 ...
