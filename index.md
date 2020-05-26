@@ -38,6 +38,7 @@ Hashi
 - [ ] :b: [Managing Secrets with Vault and Consul](https://testdriven.io/blog/managing-secrets-with-vault-and-consul)
 - [ ] :b: <https://www.hashicorp.com/certification/>
 
+misc
 - [ ] :b: https://foldforcovid.io/
 - [ ] [Escape To River Cottage](https://www.youtube.com/watch?v=KtiVrBqZ_ao)
 - [ ] [Principles for Success: "The Call to Adventure" Episode 1](https://www.youtube.com/watch?v=dKz095P7LdU&list=PLykIL_1_MFWkWDDgvdZ6L7rsvKCKl-39j)
