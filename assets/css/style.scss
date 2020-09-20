@@ -1,0 +1,30 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+body {
+  margin: 0 auto;
+  padding: 0;
+}
+
+div.wrapper {
+  width: 55em;
+}
+
+h2 { 
+  padding: .2em;
+  border-bottom: 1px solid black; 
+}
+
+section {
+  background-color: white;
+}
+
+
+/*
+div.wrapper {
+  background: #fff;
+}
+*/
+
