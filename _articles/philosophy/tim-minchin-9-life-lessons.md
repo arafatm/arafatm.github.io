@@ -185,18 +185,16 @@ humans to think the universe has a purpose for them.
 However I’m no nihilist.  I’m not even a cynic. I am actually rather romantic
 and here’s my idea of romance: you will soon be dead. Life will sometimes seem
 long and tough and God it’s tiring. And you will sometimes be happy and
-sometimes sad and then you’ll be old and then you’ll be dead. There is only one
-sensible thing to do with this empty existence and that is fill it. Not fillet.
-Fill it. 
+sometimes sad and then you’ll be old and then you’ll be dead. 
 
-And in my opinion, until I change it, life is best filled by learning as much
-as you can about as much as you can. 
+There is only one sensible thing to do with this empty existence and that is
+fill it. Not fillet.  **Fill it**. 
 
-Taking pride in whatever you’re doing. 
-
-Having compassion, sharing ideas, running, being enthusiastic and then there’s
-love and travel and wine and sex and art and kids and giving and mountain
-climbing, but you know all that stuff already. 
+And in my opinion, until I change it, **life is best filled by learning as much
+as you can about as much as you can. Taking pride in whatever you’re doing.
+Having compassion, sharing ideas, running, being enthusiastic** and then
+there’s love and travel and wine and sex and art and kids and giving and
+mountain climbing, but you know all that stuff already. 
 
 It’s an incredibly exciting thing this one meaningless life of yours. Good luck
 and thank you for indulging me.
