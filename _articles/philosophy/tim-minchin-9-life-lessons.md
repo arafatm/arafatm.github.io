@@ -1,6 +1,10 @@
-# Tim Minchin: 9 Lessons for Life
+---
+category: philosophy
+source: http://www.news.uwa.edu.au/201309176069/alumni/tim-minchin-stars-uwa-graduation-ceremony
+author: Tim Minchin
+title: 9 Lessons for Life
+---
 
-http://www.news.uwa.edu.au/201309176069/alumni/tim-minchin-stars-uwa-graduation-ceremony
 
 In darker days I did a corporate gig at a conference for this big company who
 made and sold accounting software in a bid, I presumed, to inspire their
