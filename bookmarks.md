@@ -7,6 +7,9 @@ title: Bookmarks
 ## Health
 
 - #yoga Energy Practice <https://www.youtube.com/watch?v=F47hdaNXwT4>
+- [20 Veggie Snack Ideas - Recipes for Healthy Vegetable Snacks | Kitchn](https://www.thekitchn.com/healthy-vegetable-snacks-233565)
+- [Recipe: Spiced Cucumber Sticks with Chaat Masala | Kitchn](https://www.thekitchn.com/recipe-spiced-cucumber-with-chaat-masala-recipes-from-the-kitchn-201289)
+- [Easy Buffalo Cauliflower Bites Recipe | Kitchn](https://www.thekitchn.com/easy-3-ingredient-buffalo-cauliflower-bites-261643)
 
 ## Management
 
@@ -26,6 +29,8 @@ title: Bookmarks
 - Home Office Setup Guide: The Best Gear - WIRED <https://www.wired.com/story/work-from-home-home-office-gear-guide>
 - special effects Ghost Sand <https://lab.cheron.works/webgl-gpgpu-particles/>
 - Recomendo: 500 brief review of cool things <https://drive.google.com/file/d/1Q72NJqaMeYF5-BDLtvFqMNjfFWP9QjyE>
+- [Tolerance is not a moral precept](https://extranewsfeed.com/tolerance-is-not-a-moral-precept-1af7007d6376)
+
 
 ## Learn
 

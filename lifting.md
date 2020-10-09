@@ -4,6 +4,36 @@ title: Lifting
 permalink: /lifting/
 ---
 
+## 2020-09-30 Sandbothe
+
+6x
+- 15 floor press 2x50#DB
+- 4 chinups
+
+6x3xSide Single Hand Snatch 50#DB
+
+## 2020-09-29 Sandbothe
+
+6x3 Hang Clean  2x50#DB
+
+6x6 Push Press 2x50#DB
+
+## 2020-09-26 Sandbothe
+
+Bowbar squat 365
+
+Bench 225 x3
+
+## 2020-09-22 Sandbothe
+
+10x
+- 3 chinups
+- 10 pushups
+
+6x12 RDL 2x50#DB
+
+6x12 front squat 2x40#DB
+
 ## 2020-09-20 Sandbothe
 
 3x3 Deadlift 355#
