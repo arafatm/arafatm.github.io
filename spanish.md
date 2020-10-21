@@ -368,7 +368,7 @@ Verbos
 - ganamos   = we earn
 - mira!     = look!
 - mira      = (she) looks at, watches
-- miran     = (she) looks at, watches
+- miran     = (they) looks at, watches
 - respirar  = to breathe
 - son       = they are
 - trabajar  = to work
@@ -378,7 +378,7 @@ Verbos
 - visitan   = they visit
 - vivir     = to live
 
-OSTRAS PALABRAS
+OSTRAS PALABRAS (OTHER WORDS)
 - a               = to
 - aqui            = here
 - asi             = so, (in) this way, thus
@@ -401,3 +401,32 @@ OSTRAS PALABRAS
 - [ ] :a: homework: review the conjugation of verbs (ar, er, ir)
 
 - [ ] :a: bring flash cards for next class to practice in pairs
+
+## pg 16 Structure and Verbs
+
+Singular
+- [ ] El Chico usa el libro = 
+- [ ] La Chica usa la pluma = 
+- [ ] El hombre y la mujer visitan el hotel en Espana y escuchan la cancion espanola = 
+
+Plural
+- [ ] Los chicos usan los libros
+- [ ] Las chicas usan las plumas
+- [ ] Los hombres y las mujeres visitan los hoteles en Espana y escuchan las canciones espanolas
+
+Rules
+1. Los vs Las
+2. Add s to a noun that ends in a vowel e.g. el uso, los usos 
+3. Add **es** to a noun of either gender that ends in a consonant to form a plural e.g. el papel, los papeles, la flor, las flores
+4. Omit accent mark from final syllable when adding **es**
+5. Change final z to c before adding es e.g. el lapiz, los lapices
+
+Generalizing rules: Spanish insists on using **el, la, los, las** before nouns to make generalizations 
+
+Rules:
+1. The masculine plural article and noun may refer to both feminine and
+   masucline persons when they are grouped together
+2. The context alone tells whether the reference is to a group consisting of
+   feminine and masculine persona or only of masculine persons
+
+- profesor, en que pagina estamos = professor, which page are we on?

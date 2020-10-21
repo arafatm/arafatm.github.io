@@ -7,6 +7,15 @@ title: arafatm
 
 |       | DY x2     | DY x1     | DY x1 | WK x4      | WK x3    | WK x1  |
 |       | :walking: | :octocat: | :bow: | :muscle:   | :guitar: | :bank: |
+| M     |           |           |       | $$$        |          |        |
+| S     |           |           |       |            |          |        |
+| 10.17 |           |           |       |            |          |        |
+| F     |           |           |       |            |          |        |
+| R     |           |           |       |            |          |        |
+| W     |           |           |       |            |          |        |
+| T     |           |           |       | S          |          |        |
+| M     |           |           |       |            |          |        |
+| S     |           |           |       |            |          |        |
 | 10.10 |           |           |       |            |          |        |
 | F     |           |           |       |            |          |        |
 | R     |           |           |       |            |          |        |
