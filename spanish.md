@@ -430,3 +430,237 @@ Rules:
    feminine and masculine persona or only of masculine persons
 
 - profesor, en que pagina estamos = professor, which page are we on?
+
+## Verbos Reflexivos 
+
+Acostarse (lie down)
+- yo me acuesto
+- tu te acuestas
+- el se acuesta
+- nosotros nos acuestamos
+- vosotros os acuestais
+- ellos/ellas o ustedes se acuestan
+
+Banarse (bath)
+- yo me bano
+- tu te banas
+- el se bana
+- nosotros nos banamos
+- vosotros os banais
+- ellos/ellas se banan
+
+Cepillarse (brush)
+- yo me cepillo
+- tu te cepillas
+- el se cepilla
+- nosotros nos cepillamos
+- vosotros os cepillais
+- ellos se cepillan
+
+Ducharse (shower)
+- yo me ducho
+- tu te duchas
+- el se ducha
+- nosotros nos duchamos
+- vosotros os duchais
+- ellos se duchan
+
+- ducharse - get a shower
+- estirarse - stretch
+- lavarse - wash up
+- levantarse - get up
+- llamarse - called
+- maquillarse - make up
+- mirarse - look at each other
+- peinarse - to comb
+- ponerse (la ropa) - put on (the clothes)
+- quitarse (la ropa) - take off (the clothes)
+- rasgarse - tear
+- secarse - dry up
+- sentarse - sit down
+- vestirse - get dressed
+
+Yo me acuesto a las 2 de la manana,
+yo duermo solamente 3 horas,
+Despues me despierto a las 5 de la manana,
+Pero, me levanto a las 10 de la manana,
+Luego me bano con agua fria,
+Luego me rasuro con jabon
+
+## Stem Changing Verbs
+
+- [ ] https://docs.google.com/presentation/d/0B3cY9XO3GREhM3BSY0pOa3QyRmhzeDhxdGpIR1pNOXhwLXZ3
+
+Verbos de cambio radical
+
+- contar (o *ue*) c*ue*nto contamos c*ue*ntas contáis c*ue*nta c*ue*ntan
+- volver (o *ue*) v*ue*lvo volvemos v*ue*lves volvéis v*ue*lve v*ue*lven
+- recordar  
+- dormir
+- poder   
+- morir
+
+- cerrar (e ie) cierro cerramos cierras cerráis cierra cierran
+- perder (e ie) pierdo perdemos pierdes perdéis pierde pierden
+- sentir (e ie) siento sentimos sientes sentís  siente  sienten
+- empezar
+- preferir
+
+- pedir (e i) pido pedimos pides pedís pide piden
+- repetir
+- vestir
+
+Verbos que terminan en -uir
+
+- huir      (i y) huyo      huimos      huyes      huís       huye      huyen
+- construir (i y) construyo construimos construyes construís  construye construyen
+- influir
+
+Verbos que terminan en –cer, -ger, -gir
+
+“yo” solamente (c z) 
+- convencer : yo convenzo
+- vencer    : yo venzo
+
+“yo” solamente (g j) 
+- coger   : yo cojo
+- dirigir : yo dirijo
+
+“yo” solamente (c 🡪 zc)
+- conocer 🡪 yo conozco
+- producir 🡪 yo produzco
+
+Verbos que terminan en -guir
+
+“yo” solamente (gu 🡪 g)
+- distinguir 🡪 yo distingo
+- seguir 🡪 yo sigo
+
+Verbos irregulares solamente en “yo”
+
+- caber : yo quepo
+- estar : yo estoy
+- poner : yo pongo
+- salir : yo salgo
+- dar   : yo doy
+- hacer : yo hago
+- saber : yo sé
+- traer : yo traigo
+
+Verbos de cambio radical, irregulares solamente en “yo”
+- decir digo  decimos dices  decís dice  dicen
+- tener tengo  tenemos tienes  tenéis tiene  tienen
+- venir vengo  venimos vienes  venís viene  vienen
+
+Verbos completamente irregulares
+- ir voy  vamos vas  vais va  van
+- oír oigo  oímos oyes  oís oye  oyen
+- ser soy  somos eres  sois es  son
+
+## !"# $%% &'()"# '#'*+,-!'# '* '#.-/"!u!"# $%% &'()"# '#'*+,-!'# '* '#.-/"!u
+
+# ESPAÑOL INGLÉS
+SER           : TO BE
+ESTAR         : TO BE
+TENER         : TO HAVE
+HACER         : TO DO, MAKE
+PODER         : TO BE ABLE
+DECIR         : TO SAY, TELL
+IR            : TO GO
+VER           : TO SEE
+DAR           : TO GIVE
+SABER         : TO KNOW
+QUERER        : TO WANT
+LLEGAR        : TO ARRIVE
+PASAR         : TO PASS, HAPPEN
+DEBER         : TO OWE, SHOULD
+PONER         : TO PUT
+PARECER       : TO SEEM, APPEAR
+QUEDAR        : TO STAY
+CREER         : TO BELIEVE
+HABLAR        : TO SPEAK
+LLEVAR        : TO CARRY, WEAR
+DEJAR         : TO LEAVE, LET
+SEGUIR        : TO FOLLOW, CONTINUE
+ENCONTRAR     : TO FIND
+LLAMAR(SE)    : TO CALL, CALL ONESELF
+VENIR         : TO COME
+PENSAR        : TO THINK
+SALIR         : TO LEAVE
+VOLVER        : TO RETURN
+TOMAR         : TO TAKE, HAVE
+CONOCER       : TO KNOW
+VIVIR         : TO LIVE
+SENTIR(SE)    : TO FEEL
+RECIBIR       : TO RECEIVE
+MIRAR         : TO WATCH
+CONTAR        : TO TELL, COUNT
+EMPEZAR       : TO BEGIN
+ESPERAR       : TO WAIT, HOPE
+BUSCAR        : TO LOOK FOR
+TRADUCIR      : TO TRANSLATE
+ENTRAR        : TO ENTER
+TRABAJAR      : TO WORK
+ESCRIBIR      : TO WRITE
+PERDER        : TO LOSE
+EXISTIR       : TO EXIST
+OCURRIR       : TO OCCUR
+VIAJAR        : TO TRAVEL
+PEDIR         : TO ASK FOR
+DESTRUIR      : TO DESTROY
+RECORDAR      : TO REMEMBER
+TERMINAR      : TO FINISH
+PERMITIR      : TO ALLOW
+MORIR         : TO DIE
+CONSEGUIR     : TO GET
+COMENZAR      : TO BEGIN
+SERVIR        : TO SERVE
+SACAR         : TO TAKE OUT
+NECESITAR     : TO NEED
+DESCANSAR     : TO REST
+ASISTIR       : TO ATTEND
+LEER          : TO READ
+CAER          : TO FALL
+CAMBIAR       : TO CHANGE
+APRENDER      : TO LEARN
+CREAR         : TO CREATE
+ABRIR         : TO OPEN
+APAGAR        : TO TURN OFF
+OÍR           : TO HEAR
+ENSEÑAR       : TO TEACH
+CONDUCIR      : TO DRIVE
+GANAR         : TO WIN, EARN
+REGRESAR      : TO RETURN
+TRAER         : TO BRING
+LIMPIAR       : TO CLEAN
+MORIR         : TO DIE
+LAVAR(SE)     : TO WASH
+SENTARSE      : TO SIT
+DIVERTIRSE    : TO HAVE FUN
+COMPRENDER    : TO UNDERSTAND
+DESPERTARSE   : TO WAKE UP
+EXPLICAR      : TO EXPLAIN
+PREGUNTAR     : TO ASK
+TOCAR         : TO TOUCH, PLAY
+MEJORAR       : TO IMPROVE
+ESTUDIAR      : TO STUDY
+ACOSTAR(SE)   : TO GO TO BED
+NACER         : TO BE BORN
+MANDAR        : TO SEND
+CORRER        : TO RUN
+PREOCUPAR(SE) : TO WORRY
+PAGAR         : TO PAY
+AYUDAR        : TO HELP
+GUSTAR        : TO LIKE
+JUGAR         : TO PLAY
+ESCUCHAR      : TO LISTEN
+CUMPLIR       : TO COMPLETE
+OFRECER       : TO OFFER
+DEVOLVER      : TO DISCOVER
+LEVANTAR      : (SE) TO GET UP
+ROMPER        : TO BREAK
+USAR          : TO USE
+
+
+
+
