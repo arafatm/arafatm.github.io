@@ -1,11 +1,13 @@
 ---
-categories: mba, agile, programming
+categories: mba
+source: https://www.amazon.com/Accelerate-Software-Performing-Technology-Organizations/dp/1942788339
 author: Nicole Forsgren PhD, Jez Humble, and Gene Kim
-title: Accelerate: The Science of Lean Software and DevOps: Building and Scaling High Performing Technology Organizations
+title: Accelerate - The Science of Lean Software and DevOps - Building and Scaling High Performing Technology Organizations
 ---
 
 > If I am a senior leader and my team doesn’t feel comfortable sharing risks,
 > then I will never truly know reality. 
+
 > And, if I’m not genuinely curious and only show up when there’s a failure,
 > then I am failing
 
@@ -24,9 +26,9 @@ CAPABILITIES TO DRIVE IMPROVEMENT
 - Lean Management and Monitoring 
 - Cultural
 
-![Figure A.1: Overall Research Program](media/accelerate.png)
+![Figure A.1: Overall Research Program](/assets/img/accelerate/accelerate.png)
 
-![High-Performance Team, Management, and Leadership Behaviors and Practices](media/accelerate_practices.png)
+![High-Performance Team, Management, and Leadership Behaviors and Practices](/assets/img/accelerate/accelerate_practices.png)
 
 ### CONTINUOUS DELIVERY CAPABILITIES 
 - Version control: Chapter 4 
