@@ -557,9 +557,8 @@ Verbos completamente irregulares
 - oír oigo  oímos oyes  oís oye  oyen
 - ser soy  somos eres  sois es  son
 
-## !"# $%% &'()"# '#'*+,-!'# '* '#.-/"!u!"# $%% &'()"# '#'*+,-!'# '* '#.-/"!u
+## ESPAÑOL INGLÉS
 
-# ESPAÑOL INGLÉS
 SER           : TO BE
 ESTAR         : TO BE
 TENER         : TO HAVE
@@ -660,7 +659,3 @@ DEVOLVER      : TO DISCOVER
 LEVANTAR      : (SE) TO GET UP
 ROMPER        : TO BREAK
 USAR          : TO USE
-
-
-
-
