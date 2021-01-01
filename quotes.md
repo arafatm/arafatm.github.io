@@ -497,3 +497,7 @@ title: Quotes
 > Instead of saying “I feel a bit down”, use sharper adjectives and clarify the reasons why -- Nonviolent Communication
 
 > Ask yourself “Why am I angry?” rather than “Who am I angry with?”  -- Nonviolent Communication
+
+> It’s easy to get stuck thinking about a more efficient way to do something you haven’t done yet
+
+
