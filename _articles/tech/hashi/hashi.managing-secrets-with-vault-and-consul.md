@@ -6,6 +6,9 @@ author: Michael Herman
 title: Managing Secrets with Vault and Consul
 ---
 
+* TOC
+{:toc}
+
 [:octocat: My
 Code](https://github.com/arafatm/learn-managing-secrets-with-vault-and-consul)
 

@@ -6,3 +6,6 @@ author: Kamil Sindi @ksindi
 title: Heuristics for Effective Management 
 ---
 
+* TOC
+{:toc}
+

@@ -6,6 +6,9 @@ author: Michael Bungay Stanier
 title: The Coaching Habit. Say Less, Ask More & Change the Way You Lead Forever
 ---
 
+* TOC
+{:toc}
+
 ## Quick Summary
 
 - Ask One Question at a Time

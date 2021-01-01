@@ -5,6 +5,9 @@ author: Mathew Stewart
 title: The Management Myth
 ---
 
+* TOC
+{:toc}
+
 > Most of management theory is inane, writes our correspondent, the founder of
 > a consulting firm. If you want to succeed in business, don’t get an M.B.A.
 > Study philosophy instead

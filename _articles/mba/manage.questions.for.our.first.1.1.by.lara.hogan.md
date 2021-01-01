@@ -6,6 +6,9 @@ author: Lara hogan
 title: Questions for our first 1:1
 ---
 
+* TOC
+{:toc}
+
 ## Grumpiness
 
 -  What makes you grumpy?

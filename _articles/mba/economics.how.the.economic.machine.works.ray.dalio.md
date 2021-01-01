@@ -6,6 +6,9 @@ title: How The Economic Machine Works
 author: Ray Dalio 
 ---
 
+* TOC
+{:toc}
+
 3 Rules of Thumb
 1. Don't have debt rise faster than income
 2. Don't have income rise faster than productivity

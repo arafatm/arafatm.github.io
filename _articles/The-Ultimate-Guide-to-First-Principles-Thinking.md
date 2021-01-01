@@ -4,6 +4,9 @@ source: https://fpt.guide/Start-Here-1ec592ca6f224266b0c80600afe7a3f3
 title: The Ultimate Guide to First-Principles Thinking
 ---
 
+* TOC
+{:toc}
+
 ## Writing
 
 - [ ] [Why You Should Write — David Perell](https://www.perell.com/blog/why-you-should-write)

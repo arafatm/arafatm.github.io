@@ -5,6 +5,9 @@ author: Yuval Noah Harari
 title: Sapiens A Brief History of Humankind
 ---
 
+* TOC
+{:toc}
+
 There are no gods in the universe, no nations, no money, no human rights, no
 laws, and no justice outside the common imagination of human beings.
 

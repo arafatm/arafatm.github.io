@@ -5,6 +5,9 @@ author: Steven Pinker
 title: Enlightenment Now - The Case for Reason, Science, Humanism, and Progress
 ---
 
+* TOC
+{:toc}
+
 ## PART I ENLIGHTENMENT
 
 The ideals of the Enlightenment are products of human reason, but they always

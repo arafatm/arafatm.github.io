@@ -5,6 +5,9 @@ author: Julie Zhuo
 title: 10 Questions I Wish I’d Asked More To Turbocharge My Career
 ---
 
+* TOC
+{:toc}
+
     “The art and science of asking questions is the source of all knowledge,”
     Thomas Berger said.
 

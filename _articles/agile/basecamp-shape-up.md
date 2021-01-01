@@ -6,6 +6,9 @@ author: Ryan Singer - Basecamp
 title: Shape Up
 ---
 
+* TOC
+{:toc}
+
 ## Summary
 
 1. **Six week cycle**, **2 week cooldown**

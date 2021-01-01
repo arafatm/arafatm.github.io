@@ -6,6 +6,9 @@ authors: Danielle Gaucher, Justin Friesen, Aaron C. Kay
 title: Gendered Wording in Job Ads
 ---
 
+* TOC
+{:toc}
+
 :pray: Thank you to Zach Iles (@ HashiCorp) for introducing me to this paper
 
 Link to test your job description for gender-coding http://gender-decoder.katmatfield.com/

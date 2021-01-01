@@ -5,6 +5,9 @@ source: kindle://book?action=open&asin=B00FUZQYBO
 title: Creativity, Inc. Overcoming the Unseen Forces That Stand in the Way of True Inspiration
 ---
 
+* TOC
+{:toc}
+
 by Ed Catmull and Amy Wallace
 
 The error we’d made was forgetting that “the process” has no agenda and doesn’t

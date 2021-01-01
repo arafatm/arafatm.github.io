@@ -5,6 +5,9 @@ author: Rick Boone
 title: Reading List of the Human Brain + Behavior
 ---
 
+* TOC
+{:toc}
+
 ## Behavioral Economics + Behavioral Science
 
 - TODO Thinking Fast And Slow Daniel Kahneman

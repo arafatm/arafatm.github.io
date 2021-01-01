@@ -5,6 +5,9 @@ source: https://www.fender.com/play
 title: Fender Play Guitar
 ---
 
+* TOC
+{:toc}
+
 ## Exercise: Warm up on 1 String With a Stretch
 
 

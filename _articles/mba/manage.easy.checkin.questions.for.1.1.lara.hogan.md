@@ -6,6 +6,9 @@ author: Lara Hogan
 title: Easy check-in questions for your 1:1s
 ---
 
+* TOC
+{:toc}
+
 Here are the questions I've been asking in coaching calls with managers and
 individual contributors alike, to get a gut check on how folks are feeling
 during this awful, strange season—without making the conversation too heavy.

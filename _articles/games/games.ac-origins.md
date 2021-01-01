@@ -7,6 +7,9 @@ title: Assassin Creed Origins
 * TOC
 {:toc}
 
+* TOC
+{:toc}
+
 ## Kotaku Tips
 
 [Tips For Playing Assassin’s Creed Origins](https://kotaku.com/tips-for-playing-assassin-s-creed-origins-1819920083)

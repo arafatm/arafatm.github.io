@@ -8,6 +8,9 @@ title: Learn Consul
 * TOC
 {:toc}
 
+* TOC
+{:toc}
+
 ## Install Consul
 
 ### Installing Consul

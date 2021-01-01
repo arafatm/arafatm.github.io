@@ -8,6 +8,9 @@ title: Getting Started with Consul Service Mesh
 * TOC
 {:toc}
 
+* TOC
+{:toc}
+
 ## Understand Consul Service Mesh | Consul
 
 > Consul can be deployed as a service mesh control plane that provides

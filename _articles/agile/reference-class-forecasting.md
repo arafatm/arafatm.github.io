@@ -6,6 +6,9 @@ source: https://arxiv.org/pdf/1302.3642.pdf
 title: From Nobel Prize to Project Management Getting Risks Right
 ---
 
+* TOC
+{:toc}
+
 [Project Management Journal, vol. 37, no. 3, August 2006, pp. 5-15](https://arxiv.org/pdf/1302.3642.pdf)
 
 ## Abstract

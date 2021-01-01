@@ -5,6 +5,9 @@ author: Nicole Forsgren PhD, Jez Humble, and Gene Kim
 title: Accelerate - The Science of Lean Software and DevOps - Building and Scaling High Performing Technology Organizations
 ---
 
+* TOC
+{:toc}
+
 > If I am a senior leader and my team doesn’t feel comfortable sharing risks,
 > then I will never truly know reality. 
 

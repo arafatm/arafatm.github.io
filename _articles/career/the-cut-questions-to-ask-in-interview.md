@@ -6,6 +6,9 @@ author: Alison Green, The Cut
 title: 10 Impressive Questions to Ask in a Job Interview
 ---
 
+* TOC
+{:toc}
+
 1. TOC
 {:toc}
 

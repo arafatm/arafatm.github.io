@@ -5,6 +5,9 @@ author: Seth Godin
 title: Linchpin - Are You Indispensable?
 ---
 
+* TOC
+{:toc}
+
 ## INTRODUCTION You Are a Genius
 
 A genius looks at something that others are stuck on and gets the world

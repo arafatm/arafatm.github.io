@@ -6,6 +6,9 @@ author: Claire Lew
 title: Get To Know your Team
 ---
 
+* TOC
+{:toc}
+
 #### #1: What was your first job?
 #### #2: Have you ever met anyone famous?
 #### #3: What are you reading right now?

@@ -5,6 +5,9 @@ source: http://freyr.websages.com/Life_Cycle_of_a_Silver_Bullet.pdf
 title: Life Cycle of a Silver Bullet
 ---
 
+* TOC
+{:toc}
+
     The silver bullets for our executives are those new management trends that
     promise to transform the way business is done.  Examples over the decades
     have included Management by Objectives and Total Quality Management, while

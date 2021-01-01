@@ -6,6 +6,9 @@ author: Jereiah Lee
 title: Spotify’s Failed \#SquadGoals
 ---
 
+* TOC
+{:toc}
+
 > “The Spotify model” got a bunch of companies talking like Taylor Swift about startup culture, but four former Spotify employees reveal the truth: its eponymous way of working failed before it scaled.
 
  ![Taylor Swift and her squad walking away from an explosion in front of the Spotify office at Birger Jarlsgatan.](chrome-extension://cjedbglnccaioiolemnfhjncicchinao/cover.png) 

@@ -5,6 +5,9 @@ author: Tim Minchin
 title: 9 Lessons for Life
 ---
 
+* TOC
+{:toc}
+
 
 In darker days I did a corporate gig at a conference for this big company who
 made and sold accounting software in a bid, I presumed, to inspire their

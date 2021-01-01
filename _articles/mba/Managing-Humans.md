@@ -5,6 +5,9 @@ author: Michael Lopp
 title: Managing Humans - Biting and Humorous Tales of a Software Engineering Manager
 ---
 
+* TOC
+{:toc}
+
 ## Part I: The Management Quiver
 
 ### 1. Don’t Be a Prick Be a human

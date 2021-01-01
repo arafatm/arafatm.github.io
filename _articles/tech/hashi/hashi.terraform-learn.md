@@ -5,6 +5,9 @@ source: https://learn.hashicorp.com/terraform
 title: Learn Terraform
 ---
 
+* TOC
+{:toc}
+
 https://console.aws.amazon.com/console/home for AWS console
 
 ## Introduction to Infrastructure as Code with Terraform

@@ -5,6 +5,9 @@ author: The Chronicle of Higher Education
 title: The Best Scholarly Books of the Decade
 ---
 
+* TOC
+{:toc}
+
 > You're probably stuck at home. Here's what to read next.
 
 Last year, in a pungent essay for _Harper_’s, Christian

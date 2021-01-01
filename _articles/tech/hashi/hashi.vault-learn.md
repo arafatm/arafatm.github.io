@@ -5,6 +5,9 @@ source: https://learn.hashicorp.com/vault#getting-started
 title: Learn Vault
 ---
 
+* TOC
+{:toc}
+
 ## cheatsheet
 
 Docs <https://www.vaultproject.io/docs>

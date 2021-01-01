@@ -6,6 +6,9 @@ author: dataquest.io
 title: Python Web Scraping Using BeautifulSoup
 ---
 
+* TOC
+{:toc}
+
 In this tutorial, we’ll show you how to perform web scraping using [Python
 3](https://www.python.org/downloads/release/python-350/) and the
 [BeautifulSoup](https://www.crummy.com/software/BeautifulSoup/) library. 
