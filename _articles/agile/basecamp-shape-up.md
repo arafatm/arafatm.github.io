@@ -19,11 +19,6 @@ title: Shape Up
 6. build with **Circuit Breakers**
 7. **Hammering** the scope
 
-## Table of Contents
-
-* TOC
-{:toc}
-
 ## Introduction
 
 ### Growing pains

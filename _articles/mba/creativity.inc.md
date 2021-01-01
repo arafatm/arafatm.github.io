@@ -8,10 +8,8 @@ title: Creativity, Inc. Overcoming the Unseen Forces That Stand in the Way of Tr
 * TOC
 {:toc}
 
-by Ed Catmull and Amy Wallace
-
-The error we’d made was forgetting that “the process” has no agenda and doesn’t
-have taste.
+> The error we’d made was forgetting that “the process” has no agenda and
+> doesn’t have taste.
 
 Imagine an old, heavy suitcase whose well-worn handles are hanging by a few
 threads. The handle is “Trust the Process” or “Story Is King”—a pithy statement
@@ -22,8 +20,8 @@ handle and—without realizing it—walk off without the suitcase. What’s more
 don’t even think about what we’ve left behind. After all, the handle is so much
 easier to carry around than the suitcase.
 
-the key is not to let this trust, our faith, lull us into the abdication of
-personal responsibility.
+> the key is not to let this trust, our faith, lull us into the abdication of
+> personal responsibility.
 
 **Mistakes are part of creativity**.
 

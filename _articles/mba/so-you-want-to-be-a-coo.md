@@ -8,9 +8,6 @@ title: So you want to be a COO
 * TOC
 {:toc}
 
-* TOC
-{:toc}
-
 A fun aspect of business school is exploring what you want to become. My dad, a
 successful small business owner, always encourages me to “think big.” It’s a
 broad statement but it has been a mantra for me in my exploration. Many
