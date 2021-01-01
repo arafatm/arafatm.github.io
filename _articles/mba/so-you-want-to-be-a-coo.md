@@ -5,10 +5,20 @@ author: Cori Land
 title: So you want to be a COO
 ---
 
-> A fun aspect of business school is exploring what you want to become. My dad,
-> a successful small business owner, always encourages me to…
-
+* TOC
 {:toc}
+
+A fun aspect of business school is exploring what you want to become. My dad, a
+successful small business owner, always encourages me to “think big.” It’s a
+broad statement but it has been a mantra for me in my exploration. Many
+business students feel prepared to become a manager–Product Manager, Operations
+Manager, Marketing Manager, etc. Is this “big” enough? Are we preparing
+ourselves to become executives? This semester, I undertook an independent study
+to understand the role of the Chief Operating Officer. I wanted to understand
+how COOs charted their careers, what their responsibilities include, how they
+interact with the rest of the C-Suite, and what mental models they use to be
+successful. I conducted research by interviewing COOs and by reading books and
+articles.
 
 ## Why COO?
 
