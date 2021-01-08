@@ -7,15 +7,14 @@ title: arafatm
 
 |       | DY x2     | DY x1     | DY x1 | WK x4    | WK x3    | WK x1  |
 |       | :walking: | :octocat: | :bow: | :muscle: | :guitar: | :bank: |
+| S     |           |           |       |          |          |        |
 | 01.08 |           |           |       |          |          |        |
 | 01.07 |           |           |       |          |          |        |
-| 01.06 |           |           |       |          |          |        |
+| 01.06 |           |           |       | S        |          |        |
 | 01.05 |           |           |       |          |          |        |
-| 01.04 |           |           |       |          |          |        |
+| 01.04 |           |           |       | S        |          |        |
 | 01.03 |           |           |       |          |          |        |
 | S     |           |           |       |          |          |        |
-| 01.02 |           |           |       |          |          |        |
-| F     |           |           |       |          |          |        |
 | 2021  | :tada:    | Happy     | New   | Year     | :tada:   | :tada: |
 
 :guitar: [Guitar](/guitar) ...

@@ -4,6 +4,16 @@ title: Lifting
 permalink: /lifting/
 ---
 
+# 2021
+
+## 2021-01-06 Sandbothe
+
+1x3 1.¼ 205# High Squat
+
+4x10 2x45# Close stance belt squat
+
+# 2020
+
 ## 2020-09-30 Sandbothe
 
 6x
