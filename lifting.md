@@ -6,6 +6,12 @@ permalink: /lifting/
 
 # 2021
 
+## 2021-01-11 Sandbothe
+
+10x3 on the minute gray banded bench squat 135#
+
+4x18 GHD back extensions
+
 ## 2021-01-06 Sandbothe
 
 1x3 1.¼ 205# High Squat
