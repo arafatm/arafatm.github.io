@@ -6,6 +6,12 @@ permalink: /lifting/
 
 # 2021
 
+## 2021-01-13 Sandbothe
+
+- Speed Bench: 10x3 115# w/ red bands
+- Tricep extensions: 4x25 30#
+- Lat pulldown: 15,15,9,9 90#
+
 ## 2021-01-11 Sandbothe
 
 10x3 on the minute gray banded bench squat 135#
