@@ -4,6 +4,9 @@ title: Lifting
 permalink: /lifting/
 ---
 
+Links
+- Yoga for Productivitiy 7 mins https://www.youtube.com/watch?v=pOc8bV40OWo
+
 # 2021
 
 ## 2021-01-13 Sandbothe
