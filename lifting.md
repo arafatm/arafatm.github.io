@@ -9,6 +9,13 @@ Links
 
 # 2021
 
+## 2021-02-01 Sandbothe Upper Speed
+
+- Bench 95# + orange band 10x3
+- Tricep Bench 25# 4x15
+
+# ---
+
 ## 2021-01-13 Sandbothe
 
 - Speed Bench: 10x3 115# w/ red bands
