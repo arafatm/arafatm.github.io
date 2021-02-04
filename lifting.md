@@ -9,6 +9,14 @@ Links
 
 # 2021
 
+## 2021-02-03 Sandbothe Lower 
+
+Deadlift w/ 2sec pause below knee 320# 3x3
+
+Reverse Hyper 50# 3x20
+
+Banded walk around block
+
 ## 2021-02-01 Sandbothe Upper Speed
 
 - Bench 95# + orange band 10x3
