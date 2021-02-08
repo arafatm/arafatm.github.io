@@ -1,35 +1,44 @@
 # My emoji's (4 chars and less)
 
-| My List | ---     | ---     | ---     | ---       | ---     | ---     |
-| ---     | ---     | ---     | ---     | ---       | ---     | ---     |
-| 🔥 fire | 💩 shit | 💡 bulb | 💥 boom | 📣 mega   | 😡 rage | ⛵ boat |
-| 💯 100  | 🅰️ a     | 🅱️ b     | 📖 book | 🎯 dart   | 💎 gem  | 🎁 gift |
-| 🔑 key  | 🔗 link | 🔒 lock | 📝 memo | 🌔 moon   | 🅾️ o2    | ⭕ o    |
-| 🙏 pray | 🚢 ship | 🆘 sos  | ⭐ star | 🎉 tada   | ™️ tm    | ❌ x    |
+| My List | ---     | ---     | ---     | ---     |
+| ---     | ---     | ---     | ---     | ---     |
+| 🔥 fire | 💩 shit | 💡 bulb | 💥 boom | 📣 mega |
+| 😡 rage | ⛵ boat | 💯 100  | 🅰️ a     | 🅱️ b     |
+| 📖 book | 🎯 dart | 💎 gem  | 🎁 gift | 🔑 key  |
+| 🔗 link | 🔒 lock | 📝 memo | 🌔 moon | 🅾️ o2    |
+| ⭕ o    | 🙏 pray | 🚢 ship | 🆘 sos  | ⭐ star |
+| 🎉 tada | ™️ tm    | ❌ x    |
 
-| Quick   | ---     | ---     | ---     | ---       | ---     | ---     |
-| ---     | ---     | ---     | ---     | ---       | ---     | ---     |
-| 😁 grin | 😉 wink | 😢 cry  | 😭 sob  | 😂 joy    | 😋 yum  | 😷 mask |
-| 👿 imp  | 💤 zzz  | 💨 dash | 💩 poop | 👍 +1     | 👎 -1   | ✊ fist |
-| ✌️ v     | 👋 wave | ✋ hand | 👏 clap | 🖕 fu     | 🙇 bow  | 👦 boy  |
-| 👧 girl | 👨 man  | 👶 baby | 👮 cop  | 🐾 feet   | 👄 lips | 💋 kiss |
-| 👂 ear  | 👀 eyes | 👃 nose | ⚡ zap  | 🐱 cat    | 🐶 dog  | 🐺 wolf |
-| 🐸 frog | 🐻 bear | 🐷 pig  | 🐮 cow  | 🐗 boar   | 🐦 bird | 🐛 bug  |
-| 🐜 ant  | 🐟 fish | 🐄 cow2 | 🐏 ram  | 🐀 rat    | 🐐 goat | 🐕 dog2 |
-| 🐖 pig2 | 🐂 ox   | 🐈 cat2 | 🌹 rose | 🌿 herb   | 🔔 bell | 💿 cd   |
-| 📀 dvd  | 📺 tv   | 📠 fax  | 📼 vhs  | 🔇 mute   | ➿ loop | 🔍 mag  |
-| 🛀 bath | 💺 seat | 💴 yen  | 💶 euro | 📧 e-mail | 🚪 door | 💣 bomb |
-| 🔫 gun  | 💊 pill | 📅 date | ⛳ golf | 🎿 ski    | 💍 ring | 🎨 art  |
-| 👞 shoe | 👢 boot | 🍵 tea  | 🍶 sake | 🍺 beer   | 🍚 rice | 🍲 stew |
-| 🍢 oden | 🥚 egg  | 🍰 cake | 🍐 pear | 🌽 corn   | 🏦 bank | ⛺ tent |
-| 🚊 tram | 🚲 bike | 🚗 car  | 🚕 taxi | 🚌 bus    | 🏧 atm  | 🇯🇵 jp |
-| 🇰🇷 kr | 🇨🇳 cn | 🇺🇸 us | 🇫🇷 fr | 🇪🇸 es   | 🇮🇹 it | 🇷🇺 ru |
-| 🇬🇧 gb | 🇬🇧 uk | 🇩🇪 de | 1️⃣ one   | 2️⃣ two     | 4️⃣ four  | 5️⃣ five  |
-| 6️⃣ six   | 9️⃣ nine  | 🔢 1234 | 0️⃣ zero  | #️⃣ hash    | 🔡 abcd | 🔤 abc  |
-| 🆗 ok   | 🆕 new  | 🔝 top  | 🆙 up   | 🆒 cool   | 🆓 free | 🆖 ng   |
-| 🈁 koko | 🈂️ sa   | 🚹 mens | 🚾 wc   | Ⓜ️ m       | 🆑 cl   | 🆔 id   |
-| 🆚 vs   | ♌ leo  | 🆎 ab   | 🔚 end  | 🔛 on     | 🔜 soon |
-
+| Quick   | ---     | ---       | ---     | ---     |
+| ---     | ---     | ---       | ---     | ---     |
+| 😁 grin | 😉 wink | 😢 cry    | 😭 sob  | 😂 joy  |
+| 😋 yum  | 😷 mask | 👿 imp    | 💤 zzz  | 💨 dash |
+| 💩 poop | 👍 +1   | 👎 -1     | ✊ fist | ✌️ v     |
+| 👋 wave | ✋ hand | 👏 clap   | 🖕 fu   | 🙇 bow  |
+| 👦 boy  | 👧 girl | 👨 man    | 👶 baby | 👮 cop  |
+| 🐾 feet | 👄 lips | 💋 kiss   | 👂 ear  | 👀 eyes |
+| 👃 nose | ⚡ zap  | 🐱 cat    | 🐶 dog  | 🐺 wolf |
+| 🐸 frog | 🐻 bear | 🐷 pig    | 🐮 cow  | 🐗 boar |
+| 🐦 bird | 🐛 bug  | 🐜 ant    | 🐟 fish | 🐄 cow2 |
+| 🐏 ram  | 🐀 rat  | 🐐 goat   | 🐕 dog2 | 🐖 pig2 |
+| 🐂 ox   | 🐈 cat2 | 🌹 rose   | 🌿 herb | 🔔 bell |
+| 💿 cd   | 📀 dvd  | 📺 tv     | 📠 fax  | 📼 vhs  |
+| 🔇 mute | ➿ loop | 🔍 mag    | 🛀 bath | 💺 seat |
+| 💴 yen  | 💶 euro | 📧 e-mail | 🚪 door | 💣 bomb |
+| 🔫 gun  | 💊 pill | 📅 date   | ⛳ golf | 🎿 ski  |
+| 💍 ring | 🎨 art  | 👞 shoe   | 👢 boot | 🍵 tea  |
+| 🍶 sake | 🍺 beer | 🍚 rice   | 🍲 stew | 🍢 oden |
+| 🥚 egg  | 🍰 cake | 🍐 pear   | 🌽 corn | 🏦 bank |
+| ⛺ tent | 🚊 tram | 🚲 bike   | 🚗 car  | 🚕 taxi |
+| 🚌 bus  | 🏧 atm  | 🇯🇵 jp   | 🇰🇷 kr | 🇨🇳 cn |
+| 🇺🇸 us | 🇫🇷 fr | 🇪🇸 es   | 🇮🇹 it | 🇷🇺 ru |
+| 🇬🇧 gb | 🇬🇧 uk | 🇩🇪 de   | 1️⃣ one   | 2️⃣ two   |
+| 4️⃣ four  | 5️⃣ five  | 6️⃣ six     | 9️⃣ nine  | 🔢 1234 |
+| 0️⃣ zero  | #️⃣ hash  | 🔡 abcd   | 🔤 abc  | 🆗 ok   |
+| 🆕 new  | 🔝 top  | 🆙 up     | 🆒 cool | 🆓 free |
+| 🆖 ng   | 🈁 koko | 🈂️ sa     | 🚹 mens | 🚾 wc   |
+| Ⓜ️ m     | 🆑 cl   | 🆔 id     | 🆚 vs   | ♌ leo  |
+| 🆎 ab   | 🔚 end  |           |
 
 # Github Emoji
 
