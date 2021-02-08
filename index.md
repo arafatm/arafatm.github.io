@@ -12,13 +12,13 @@ title: arafatm
 | 02.01 |                  |           |       |            |          |        |
 | 02.00 |                  |           |       |            |          |        |
 | 02.09 | :school_satchel: |           |       |            |          |        |
-| 02.08 | :school_satchel: |           |       |            |          |        |
-| S     | :runner:         |           |       |            |          |        |
-| 02.06 |                  |           |       | :house:    |          |        |
-| 02.05 |                  |           |       |            |          |        |
+| 02.08 | :school_satchel: | :octocat: |       |            |          |        |
+| S     | :runner:         | :octocat: |       |            |          |        |
+| 02.06 |                  | :octocat: |       | :house:    |          |        |
+| 02.05 |                  | :octocat: |       |            |          |        |
 | 02.04 |                  |           |       |            |          |        |
 | 02.03 |                  |           |       | :train:    |          |        |
-| 02.02 |                  | Golang    |       |            |          |        |
+| 02.02 |                  | :octocat: |       |            |          |        |
 | 02.01 |                  |           |       | :train:    |          |        |
 | S     |                  |           |       | :moneybag: |          |        |
 | 01.30 |                  |           |       | :train:    |          |        |
