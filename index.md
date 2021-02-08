@@ -3,6 +3,8 @@ layout: home
 title: arafatm
 ---
 
+:weight_lifter:
+
 ## Journal
 
 |       | DY x2            | DY x1     | DY x1 | WK x4      | WK x3    | WK x1  | Notes    |
