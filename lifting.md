@@ -5,9 +5,16 @@ permalink: /lifting/
 ---
 
 Links
+- https://www.sandbothestrong.com/
 - Yoga for Productivitiy 7 mins https://www.youtube.com/watch?v=pOc8bV40OWo
 
 # 2021
+
+## 2021-02-06 :house:
+
+4 rounds
+- pullups x5
+- KB Swing 40# x25
 
 ## 2021-02-03 Sandbothe Lower 
 
