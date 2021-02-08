@@ -3,7 +3,7 @@ layout: home
 title: arafatm
 ---
 
-:weight_lifter:
+:weight_lifting:
 
 ## Journal
 
