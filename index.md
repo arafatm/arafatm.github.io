@@ -5,46 +5,53 @@ title: arafatm
 
 ## Journal
 
-|       | DY x2     | DY x1     | DY x1 | WK x4     | WK x3    | WK x1  | Notes    |
-|       | :walking: | :octocat: | :bow: | :muscle:  | :guitar: | :bank: |
-| 01.06 |           |           |       |           |          |        |
-| 01.05 |           |           |       |           |          |        |
-| 01.04 |           |           |       |           |          |        |
-| 01.03 |           |           |       | Sandbothe |          |        |
-| 01.02 |           | Golang    |       |           |          |        |
-| 01.01 |           |           |       | Sandbothe |          |        |
-| S     |           |           |       | :dollar:  |          |        |
-| 01.30 |           |           |       | Sandbothe |          |        |
-| 01.29 |           |           |       |           |          |        |
-| 01.28 |           |           |       | Home work |          |        |
-| 01.27 |           |           |       |           |          |        |
-| 01.26 |           |           |       | Home work |          |        |
-| 01.25 |           |           |       |           |          |        | Vacation |
-| S     |           |           |       |           |          |        | Vacation |
-| 01.23 |           |           |       |           |          |        | Vacation |
-| 01.22 |           |           |       |           |          |        | Vacation |
-| 01.21 |           |           |       |           |          |        | Vacation |
-| 01.20 |           |           |       |           |          |        | Vacation |
-| 01.18 |           |           |       |           |          |        | Vacation |
-| 01.17 |           |           |       |           |          |        | Vacation |
-| S     |           |           |       |           |          |        | Vacation |
-| 01.15 |           |           |       |           |          |        |
-| 01.14 |           |           |       |           |          |        |
-| 01.13 |           |           |       | S         |          |        |
-| 01.12 |           |           |       |           |          |        |
-| 01.11 |           |           |       | S         |          |        |
-| 01.10 |           |           |       |           |          |        |
-| S     |           |           |       |           |          |        |
-| 01.08 |           |           |       |           |          |        |
-| 01.07 |           |           |       |           |          |        |
-| 01.06 |           |           |       | S         |          |        |
-| 01.05 |           |           |       |           |          |        |
-| 01.04 |           |           |       | S         |          |        |
-| 01.03 |           |           |       |           |          |        |
-| S     |           |           |       |           |          |        |
-| 2021  | :tada:    | Happy     | New   | Year      | :tada:   | :tada: |
+|       | DY x2     | DY x1     | DY x1 | WK x4      | WK x3    | WK x1  | Notes    |
+|       | :walking: | :octocat: | :bow: | :muscle:   | :guitar: | :bank: |
+| 02.03 |           |           |       |            |          |        |
+| 02.02 |           |           |       |            |          |        |
+| 02.01 |           |           |       |            |          |        |
+| 02.00 |           |           |       |            |          |        |
+| 02.09 |           |           |       |            |          |        |
+| 02.08 |           |           |       |            |          |        |
+| S     |           |           |       |            |          |        |
+| 02.06 |           |           |       | :house:    |          |        |
+| 02.05 |           |           |       |            |          |        |
+| 02.04 |           |           |       |            |          |        |
+| 02.03 |           |           |       | :school:   |          |        |
+| 02.02 |           | Golang    |       |            |          |        |
+| 02.01 |           |           |       | :school:   |          |        |
+| S     |           |           |       | :moneybag: |          |        |
+| 01.30 |           |           |       | :school:   |          |        |
+| 01.29 |           |           |       |            |          |        |
+| 01.28 |           |           |       | :house:    |          |        |
+| 01.27 |           |           |       |            |          |        |
+| 01.26 |           |           |       | :house:    |          |        |
+| 01.25 |           |           |       |            |          |        | Vacation |
+| S     |           |           |       |            |          |        | Vacation |
+| 01.23 |           |           |       |            |          |        | Vacation |
+| 01.22 |           |           |       |            |          |        | Vacation |
+| 01.21 |           |           |       |            |          |        | Vacation |
+| 01.20 |           |           |       |            |          |        | Vacation |
+| 01.18 |           |           |       |            |          |        | Vacation |
+| 01.17 |           |           |       |            |          |        | Vacation |
+| S     |           |           |       |            |          |        | Vacation |
+| 01.15 |           |           |       |            |          |        |
+| 01.14 |           |           |       |            |          |        |
+| 01.13 |           |           |       | S          |          |        |
+| 01.12 |           |           |       |            |          |        |
+| 01.11 |           |           |       | S          |          |        |
+| 01.10 |           |           |       |            |          |        |
+| S     |           |           |       |            |          |        |
+| 01.08 |           |           |       |            |          |        |
+| 01.07 |           |           |       |            |          |        |
+| 01.06 |           |           |       | S          |          |        |
+| 01.05 |           |           |       |            |          |        |
+| 01.04 |           |           |       | S          |          |        |
+| 01.03 |           |           |       |            |          |        |
+| S     |           |           |       |            |          |        |
+| 2021  | :tada:    | Happy     | New   | Year       | :tada:   | :tada: |
 
-[emoji](https://gist.github.com/arafatm/e26f158b7315b6bdbce9c4b3f4457b78) ...
+:fire: [emoji](/emoji) ...
 :guitar: [Guitar](/guitar) ...
 :muscle: [Lifting](/lifting) ...
 :bow: [Stretch](/gbstretch) ...
