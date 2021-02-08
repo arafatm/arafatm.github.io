@@ -4,54 +4,55 @@ title: arafatm
 ---
 
 :weight_lifting:
+:superhero:
 
 ## Journal
 
-|       | DY x2            | DY x1     | DY x1 | WK x4      | WK x3    | WK x1  | Notes    |
-|       | :walking:        | :octocat: | :bow: | :muscle:   | :guitar: | :bank: |
-| 02.03 |                  |           |       |            |          |        |
-| 02.02 |                  |           |       |            |          |        |
-| 02.01 |                  |           |       |            |          |        |
-| 02.00 |                  |           |       |            |          |        |
-| 02.09 | :school_satchel: |           |       |            |          |        |
-| 02.08 | :school_satchel: | :octocat: |       |            |          |        |
-| S     | :runner:         | :octocat: | :bow: |            |          |        |
-| 02.06 |                  | :octocat: |       | :house:    |          |        |
-| 02.05 |                  | :octocat: |       |            |          |        |
-| 02.04 |                  |           |       |            |          |        |
-| 02.03 |                  |           |       | :train:    |          |        |
-| 02.02 |                  | :octocat: |       |            |          |        |
-| 02.01 |                  |           |       | :train:    |          |        |
-| S     |                  |           |       | :moneybag: |          |        |
-| 01.30 |                  |           |       | :train:    |          |        |
-| 01.29 |                  |           |       |            |          |        |
-| 01.28 |                  |           |       | :house:    |          |        |
-| 01.27 |                  |           |       |            |          |        |
-| 01.26 |                  |           |       | :house:    |          |        |
-| 01.25 |                  |           |       |            |          |        | Vacation |
-| S     |                  |           |       |            |          |        | Vacation |
-| 01.23 |                  |           |       |            |          |        | Vacation |
-| 01.22 |                  |           |       |            |          |        | Vacation |
-| 01.21 |                  |           |       |            |          |        | Vacation |
-| 01.20 |                  |           |       |            |          |        | Vacation |
-| 01.18 |                  |           |       |            |          |        | Vacation |
-| 01.17 |                  |           |       |            |          |        | Vacation |
-| S     |                  |           |       |            |          |        | Vacation |
-| 01.15 |                  |           |       |            |          |        |
-| 01.14 |                  |           |       |            |          |        |
-| 01.13 |                  |           |       | S          |          |        |
-| 01.12 |                  |           |       |            |          |        |
-| 01.11 |                  |           |       | S          |          |        |
-| 01.10 |                  |           |       |            |          |        |
-| S     |                  |           |       |            |          |        |
-| 01.08 |                  |           |       |            |          |        |
-| 01.07 |                  |           |       |            |          |        |
-| 01.06 |                  |           |       | S          |          |        |
-| 01.05 |                  |           |       |            |          |        |
-| 01.04 |                  |           |       | S          |          |        |
-| 01.03 |                  |           |       |            |          |        |
-| S     |                  |           |       |            |          |        |
-| 2021  | :tada:           | Happy     | New   | Year       | :tada:   | :tada: |
+|       | DY x2            | DY x1     | DY x1 | WK x4            | WK x3    | WK x1  | Notes    |
+|       | :walking:        | :octocat: | :bow: | :muscle:         | :guitar: | :bank: |
+| 02.03 |                  |           |       |                  |          |        |
+| 02.02 |                  |           |       |                  |          |        |
+| 02.01 |                  |           |       |                  |          |        |
+| 02.00 |                  |           |       |                  |          |        |
+| 02.09 | :school_satchel: |           |       |                  |          |        |
+| 02.08 | :school_satchel: | :octocat: |       |                  |          |        |
+| S     | :runner:         | :octocat: | :bow: |                  |          |        |
+| 02.06 |                  | :octocat: |       | :house:          |          |        |
+| 02.05 |                  | :octocat: |       |                  |          |        |
+| 02.04 |                  |           |       |                  |          |        |
+| 02.03 |                  |           |       | :weight_lifting: |          |        |
+| 02.02 |                  | :octocat: |       |                  |          |        |
+| 02.01 |                  |           |       | :weight_lifting: |          |        |
+| S     |                  |           |       | :moneybag:       |          |        |
+| 01.30 |                  |           |       | :weight_lifting: |          |        |
+| 01.29 |                  |           |       |                  |          |        |
+| 01.28 |                  |           |       | :house:          |          |        |
+| 01.27 |                  |           |       |                  |          |        |
+| 01.26 |                  |           |       | :house:          |          |        |
+| 01.25 |                  |           |       |                  |          |        | Vacation |
+| S     |                  |           |       |                  |          |        | Vacation |
+| 01.23 |                  |           |       |                  |          |        | Vacation |
+| 01.22 |                  |           |       |                  |          |        | Vacation |
+| 01.21 |                  |           |       |                  |          |        | Vacation |
+| 01.20 |                  |           |       |                  |          |        | Vacation |
+| 01.18 |                  |           |       |                  |          |        | Vacation |
+| 01.17 |                  |           |       |                  |          |        | Vacation |
+| S     |                  |           |       |                  |          |        | Vacation |
+| 01.15 |                  |           |       |                  |          |        |
+| 01.14 |                  |           |       |                  |          |        |
+| 01.13 |                  |           |       | :weight_lifting: |          |        |
+| 01.12 |                  |           |       |                  |          |        |
+| 01.11 |                  |           |       | :weight_lifting: |          |        |
+| 01.10 |                  |           |       |                  |          |        |
+| S     |                  |           |       |                  |          |        |
+| 01.08 |                  |           |       |                  |          |        |
+| 01.07 |                  |           |       |                  |          |        |
+| 01.06 |                  |           |       | :weight_lifting: |          |        |
+| 01.05 |                  |           |       |                  |          |        |
+| 01.04 |                  |           |       | :weight_lifting: |          |        |
+| 01.03 |                  |           |       |                  |          |        |
+| S     |                  |           |       |                  |          |        |
+| 2021  | :tada:           | Happy     | New   | Year             | :tada:   | :tada: |
 
 :fire: [emoji](/emoji) ...
 :guitar: [Guitar](/guitar) ...
