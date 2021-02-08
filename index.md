@@ -5,8 +5,8 @@ title: arafatm
 
 ## Journal
 
-|       | DY x2            | DY x1     | DY x1 | WK x4    | WK x3    | WK x1  | Notes                |
-| ---   | ---              | ---       | ---   | ---      | ---      | ---    | ---                  |
+|       | DY x2            | DY x1     | DY x1 | WK x4    | WK x3    | WK x1  | Notes       |
+| ---   | ---              | ---       | ---   | ---      | ---      | ---    | ---         |
 |       | :walking:        | :octocat: | :bow: | :muscle: | :guitar: | :bank: |
 | 02.03 |                  |           |       |          |          |        |
 | 02.02 |                  |           |       |          |          |        |
@@ -27,15 +27,15 @@ title: arafatm
 | 01.28 |                  |           |       | :house:  |          |        |
 | 01.27 |                  |           |       |          |          |        |
 | 01.26 |                  |           |       | :house:  |          |        |
-| 01.25 |                  |           |       |          |          |        | Vacation             |
-| S     |                  |           |       |          |          |        | Vacation             |
-| 01.23 |                  |           |       |          |          |        | Vacation             |
-| 01.22 |                  |           |       |          |          |        | Vacation             |
-| 01.21 |                  |           |       |          |          |        | Vacation             |
-| 01.20 |                  |           |       |          |          |        | Vacation             |
-| 01.18 |                  |           |       |          |          |        | Vacation             |
-| 01.17 |                  |           |       |          |          |        | Vacation             |
-| S     |                  |           |       |          |          |        | Vacation             |
+| 01.25 |                  |           |       |          |          |        | Vacation    |
+| S     |                  |           |       |          |          |        | Vacation    |
+| 01.23 |                  |           |       |          |          |        | Vacation    |
+| 01.22 |                  |           |       |          |          |        | Vacation    |
+| 01.21 |                  |           |       |          |          |        | Vacation    |
+| 01.20 |                  |           |       |          |          |        | Vacation    |
+| 01.18 |                  |           |       |          |          |        | Vacation    |
+| 01.17 |                  |           |       |          |          |        | Vacation    |
+| S     |                  |           |       |          |          |        | Vacation    |
 | 01.15 |                  |           |       |          |          |        |
 | 01.14 |                  |           |       |          |          |        |
 | 01.13 |                  |           |       | :train:  |          |        |
