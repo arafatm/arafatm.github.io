@@ -10,6 +10,14 @@ Links
 
 # 2021
 
+## 2021-02-08 :house:
+
+4 rounds, 2/ 2 min break
+- pullups x6
+- sumo deadlift 2x50# DB + 40# Ruck x12
+- pushup x12
+
+
 ## 2021-02-06 :house:
 
 4 rounds
