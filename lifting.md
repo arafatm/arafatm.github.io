@@ -10,6 +10,13 @@ Links
 
 # 2021
 
+## 2021-02-09 :house:
+
+5 rounds, 4 min cycle
+- pullups x6
+- kettlell swing 40# x30
+- single hand overhead press 40# DB x5xside
+
 ## 2021-02-08 :house:
 
 4 rounds, 2/ 2 min break

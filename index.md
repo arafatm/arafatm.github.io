@@ -8,12 +8,12 @@ title: arafatm
 |       | DY x2            | DY x1     | DY x1 | WK x4    | WK x3    | WK x1  | Notes       |
 | ---   | ---              | ---       | ---   | ---      | ---      | ---    | ---         |
 |       | :walking:        | :octocat: | :bow: | :muscle: | :guitar: | :bank: |
-| 02.03 |                  |           |       |          |          |        |
-| 02.02 |                  |           |       |          |          |        |
-| 02.01 |                  |           |       |          |          |        |
-| 02.00 |                  |           |       |          |          |        |
-| 02.09 | :school_satchel: |           |       |          |          |        |
-| 02.08 | :school_satchel: | :octocat: |       |          |          |        |
+| 02.13 |                  |           |       |          |          |        |
+| 02.12 |                  |           |       |          |          |        |
+| 02.11 |                  |           |       |          |          |        |
+| 02.10 |                  |           |       |          |          |        |
+| 02.09 | :school_satchel: |           |       | :house:  |          |        |
+| 02.08 | :school_satchel: | :octocat: |       | :house:  |          |        |
 | S     | :runner:         | :octocat: | :bow: |          |          |        |
 | 02.06 |                  | :octocat: |       | :house:  |          |        |
 | 02.05 |                  | :octocat: |       |          |          |        |
