@@ -7,7 +7,7 @@
 | 📖 book | 🎯 dart | 💎 gem  | 🎁 gift | 🔑 key  |
 | 🔗 link | 🔒 lock | 📝 memo | 🌔 moon | 🅾️ o2    |
 | ⭕ o    | 🙏 pray | 🚢 ship | 🆘 sos  | ⭐ star |
-| 🎉 tada | ™️ tm    | ❌ x    |
+| 🎉 tada | ™️ tm    | ❌ x    | 👿 imp    
 
 | Quick   | ---     | ---       | ---     | ---     |
 | ---     | ---     | ---       | ---     | ---     |
