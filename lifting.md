@@ -10,6 +10,15 @@ Links
 
 # 2021
 
+## 2021-02-10 :house:
+
+10 rounds, 1 min break/round
+- Single hand Thruster 40#KB x3xSide
+- Single leg RDL 40#KB x3xSide
+
+3 rounds, 2min break/round
+- Front Squat 2x50#DB x10
+
 ## 2021-02-09 :house:
 
 5 rounds, 4 min cycle

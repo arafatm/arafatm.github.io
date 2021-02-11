@@ -11,7 +11,7 @@ title: arafatm
 | 02.13 |                  |           |       |          |          |        |
 | 02.12 |                  |           |       |          |          |        |
 | 02.11 |                  |           |       |          |          |        |
-| 02.10 |                  |           |       |          |          |        |
+| 02.10 |                  | :octocat: |       | :house:  |          |        |
 | 02.09 | :school_satchel: | :octocat: |       | :house:  |          |        |
 | 02.08 | :school_satchel: | :octocat: |       | :house:  |          |        |
 | S     | :runner:         | :octocat: | :bow: |          |          |        |
