@@ -88,7 +88,7 @@ Misc
 <style>
 table {
   display: block;
-  max-height: 30rem;
+  max-height: 40rem;
   overflow-y: scroll;
 }
 td {
