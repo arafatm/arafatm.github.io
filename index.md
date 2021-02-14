@@ -9,9 +9,9 @@ title: arafatm
 | ----- | ---------------- | --------- | ----- | -------- | -------- | ------ | ------------- |
 |       | :walking:        | :octocat: | :bow: | :muscle: | :guitar: | :bank: |
 | ----- | ---------------- | --------- | ----- | -------- | -------- | ------ | ------------- |
-| 02.13 |                  |           |       |          |          | :bank: |
+| 02.13 | :walking:        |           |       |          |          | :bank: |
 | 02.12 | :walking:        | :octocat: |       |          |          |        |
-| 02.11 | :walking:        | :octocat: |       |          |          |        |
+| 02.11 |                  | :octocat: |       |          |          |        |
 | 02.10 |                  | :octocat: |       | :house:  |          |        |
 | 02.09 | :school_satchel: | :octocat: |       | :house:  |          |        |
 | 02.08 | :school_satchel: | :octocat: |       | :house:  |          |        |
