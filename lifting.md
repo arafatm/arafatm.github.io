@@ -10,6 +10,20 @@ Links
 
 # 2021
 
+## 2021-02-22 Sandbothe
+
+Bench, 135, 5s down, fast up, 10x3
+
+Tricep extension, 25# 4x15 
+
+Pushups, 4 x 10 wide, 10 mid, 10 narrow
+
+## 2021-02-20 Sandbothe
+
+Belt Squat 45# 10x3
+
+Good morning, Camber Bar 4x15
+
 ## 2021-02-10 :house:
 
 10 rounds, 1 min break/round
