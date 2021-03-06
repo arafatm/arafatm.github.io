@@ -102,8 +102,8 @@ Hashi
 - [ ] <https://www.hashicorp.com/certification/>
 
 Misc
-- https://www.polygon.com/valheim-guide/22285481/eikthyr-first-prey-spawn-tools-axe-spear-beginner-workbench-shield-deer-trophy
-- https://guides.gamepressure.com/valheim/guide.asp?ID=58028
+- <https://www.polygon.com/valheim-guide/22285481/eikthyr-first-prey-spawn-tools-axe-spear-beginner-workbench-shield-deer-trophy>
+- <https://guides.gamepressure.com/valheim/guide.asp?ID=58028>
 - [ ] https://foldforcovid.io/
 - [ ] [Escape To River Cottage](https://www.youtube.com/watch?v=KtiVrBqZ_ao)
 - [ ] [Principles for Success: "The Call to Adventure" Episode 1](https://www.youtube.com/watch?v=dKz095P7LdU&list=PLykIL_1_MFWkWDDgvdZ6L7rsvKCKl-39j)
