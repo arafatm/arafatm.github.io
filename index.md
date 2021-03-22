@@ -10,7 +10,7 @@ title: arafatm
 |       | :walking:        | :octocat: | :bow: | :muscle: | :guitar: | :bank: |
 |       |                  |           |       |          |          |        |
 | 03.21 |                  |           |       |          |          |        |
-| S     |                  |           |       |          |          |        |
+| S     |                  |           |       | :train:  |          |        |
 | F     |                  |           |       |          |          |        |
 | R     |                  |           |       | :train:  |          |        |
 | W     |                  | :octocat: |       |          |          |        |
