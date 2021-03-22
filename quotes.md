@@ -194,7 +194,7 @@ title: Quotes
 
 > Luck is what happens when preparation meets opportunity
 
-> Whatever you fear most has no power – it is your fear that has the power.
+> Whatever you fear most has no power -- it is your fear that has the power.
 
 > You will continue to suffer if you have an emotional reaction to everything that is said to you. True power is sitting back and observing things with logic. True power is restraint. If words control you that means everyone else can control you. Breathe and allow things to pass -- Warren Buffett
 
@@ -234,7 +234,7 @@ title: Quotes
 
 > Best thing which we have in ourselves is good judgment -- Isocrates - Ego Is The Enemy
 
-> "Constantly train your intellect, for the greatest thing in the smallest -- Ego Is The Enemy
+> Constantly train your intellect, for the greatest thing in the smallest -- Ego Is The Enemy
 
 > This above all: to thine own self be true, And it must follow, as the night the day, Thou canst not then be false to any man. Farewell. My blessing season this in thee! -- Shakespeare, Polonius to his son Laertes - Ego Is The Enemy
 
@@ -270,11 +270,11 @@ title: Quotes
 
 > Pick up a book on a topic you know next to nothing about. Put yourself in rooms where you're the least knowledgeable person. Change your mind. Change your surroundings -- Ego Is The Enemy
 
-> Paul Graham says to have "frighteningly ambitious" ideas but, "The way to do really big things seems to be to start with deceptively small things." -- Ego Is The Enemy
+> Paul Graham says to have "frighteningly ambitious" ideas but, "The way to do really big things seems to be to start with deceptively small things. -- Ego Is The Enemy
 
 > **Ego needs honors in order to be validated**. Confidence on the other hand, is able to wait and focus on the task at hand regardless of external recognition -- Ego Is The Enemy
 
-> "You're becoming who you are going to be and so you might as well not be an -- Ego Is The Enemy
+> You're becoming who you are going to be and so you might as well not be an -- Ego Is The Enemy
 
 > What matters to an active man is to do the right thing; whether the right thing comes to pass should not bother him -- GOETHE - Ego Is The Enemy
 
@@ -324,7 +324,7 @@ title: Quotes
 
 > To live is the rarest thing in the world. Most people exist, that is all -- Oscar Wilde
 
-> What is it you do to train that is comparable to a pianist practicing scales?”  If you don’t know the answer to that one, maybe you are doing something wrong or not doing enough. Or maybe you are (optimally) not very ambitious
+> What is it you do to train that is comparable to a pianist practicing scales?"  If you don’t know the answer to that one, maybe you are doing something wrong or not doing enough. Or maybe you are (optimally) not very ambitious
 
 > To cherish the ego is to cherish misery -- Alan Watts
 
@@ -332,7 +332,7 @@ title: Quotes
 
 > It’s hard to escape the momentum of your past. We define ourselves by our mistakes -- Joe Rogan
 
-> Do you want to be the guy on the bumper sticker, he who dies with the most toys wins." -- Joe Rogan
+> Do you want to be the guy on the bumper sticker, he who dies with the most toys wins. -- Joe Rogan
 
 > Any kind of behavior that produces negative outcomes , like smoking, is just planting seeds. The momentum your experiencing right now is the sum total of all those fucking seeds. You’re a waking field of karma -- Duncan Trussel
 
@@ -362,7 +362,7 @@ title: Quotes
 
 > The fatal flaw in any belief system is that, it’s run by fallible human beings, who will eventually find a way to corrupt it, or pit it against other belief systems -- Nietzche
 
-> “Act that you use humanity, whether in your own person or in the person of any other, always at the same time as an end, never merely as a means.” -- Emmanuel Kant
+> Act that you use humanity, whether in your own person or in the person of any other, always at the same time as an end, never merely as a means. -- Emmanuel Kant
 
 > So trade out your map for a compass -- How Luck Happens 
 
@@ -408,11 +408,11 @@ title: Quotes
 
 > Causal Reductionism: Things rarely happen for just 1 reason. Usually, outcomes result from many causes conspiring together. But our minds cannot process such a complex arrangement, so we tend to ascribe outcomes to single causes, reducing the web of causality to a mere thread. -- https://threadreaderapp.com/thread/1225561131122597896.html
 
-> Ergodicity: A die rolled 100 times has equal probabilities to 100 dice rolled once; rolling a die is “ergodic”. But if the die gets chipped after 10 throws so it’s likelier to roll 4, then 1 die 100 times =/= 100 dice once (non-ergodic). Many treat non-ergodic systems as ergodic. -- https://threadreaderapp.com/thread/1225561131122597896.html
+> Ergodicity: A die rolled 100 times has equal probabilities to 100 dice rolled once; rolling a die is "ergodic". But if the die gets chipped after 10 throws so it’s likelier to roll 4, then 1 die 100 times =/= 100 dice once (non-ergodic). Many treat non-ergodic systems as ergodic. -- https://threadreaderapp.com/thread/1225561131122597896.html
 
 > Dunning-Kruger Effect: Awareness of the limitations of cognition (thinking) requires a proficiency in metacognition (thinking about thinking). In other words, being stupid makes you too stupid to realize how stupid you are. -- https://threadreaderapp.com/thread/1225561131122597896.html
 
-> Emergence: When many simple objects interact with each other, they can form a system that has qualities that the objects themselves don’t. Examples: neurons creating consciousness, traders creating the stock-market, simple mathematical rules creating “living” patterns. -- https://threadreaderapp.com/thread/1225561131122597896.html
+> Emergence: When many simple objects interact with each other, they can form a system that has qualities that the objects themselves don’t. Examples: neurons creating consciousness, traders creating the stock-market, simple mathematical rules creating "living" patterns. -- https://threadreaderapp.com/thread/1225561131122597896.html
 
 > Cultural Parasitism: An ideology parasitizes the mind, changing the host’s behavior so they spread it to other people. Therefore, a successful ideology (the only kind we hear about) is not configured to be true; it is configured only to be easily transmitted and easily believed. -- https://threadreaderapp.com/thread/1225561131122597896.html
 
@@ -426,7 +426,7 @@ title: Quotes
 
 > Limited Hangout: A common tactic by journos & politicians of revealing intriguing but relatively innocent info to satisfy curiosity and prevent discovery of more incriminating info. E.g. a politician accused of snorting cocaine may confess to having smoked marijuana at college. -- https://threadreaderapp.com/thread/1225561131122597896.html
 
-> Focusing Illusion: Nothing is ever as important as what you’re thinking about while you’re thinking about it. E.g. worrying about a thing makes the thing being worried about seem worse than it is. As Marcus Aurelius observed, “We suffer more often in imagination that in reality.” -- https://threadreaderapp.com/thread/1225561131122597896.html
+> Focusing Illusion: Nothing is ever as important as what you’re thinking about while you’re thinking about it. E.g. worrying about a thing makes the thing being worried about seem worse than it is. As Marcus Aurelius observed, "We suffer more often in imagination that in reality. -- https://threadreaderapp.com/thread/1225561131122597896.html
 
 > Concept Creep: As a social issue such as racism or sexual harassment becomes rarer, people react by expanding their definition of it, creating the illusion that the issue is actually getting worse. I explain the process in detail here: https://rabbitholemag.com/how-progress-blinds-people-to-progress/ -- https://threadreaderapp.com/thread/1225561131122597896.html
 
@@ -438,7 +438,7 @@ title: Quotes
 
 > Pluralistic Ignorance: Phenomenon where a group goes along with a norm, even though all of the group members secretly hate it, because each mistakenly believes that the others approve of it. (See also: Abilene Paradox) -- https://threadreaderapp.com/thread/1225561131122597896.html
 
-> The Petrie Multiplier: In fields in which men outnumber women, such as in STEM, women receive an underestimated amount of harassment due to the fact that there are more potential givers than receivers of harassment. (See also: Lotka–Volterra equations) -- https://threadreaderapp.com/thread/1225561131122597896.html
+> The Petrie Multiplier: In fields in which men outnumber women, such as in STEM, women receive an underestimated amount of harassment due to the fact that there are more potential givers than receivers of harassment. (See also: Lotka--Volterra equations) -- https://threadreaderapp.com/thread/1225561131122597896.html
 
 > Woozle Effect: An article makes a claim without evidence, is then cited by another, which is cited by another, and so on, until the range of citations creates the impression that the claim has evidence, when really all articles are citing the same uncorroborated source. -- https://threadreaderapp.com/thread/1225561131122597896.html
 
@@ -452,7 +452,7 @@ title: Quotes
 
 > Nirvana Fallacy: When people reject a thing because it compares unfavorably to an ideal that in reality is unattainable. E.g. condemning capitalism due to the superiority of imagined socialism, condemning ruthlessness in war due to imagining humane (but unrealistic) ways to win. -- https://threadreaderapp.com/thread/1225561131122597896.html
 
-> Emotive Conjugation: Synonyms can yield positive or negative impressions without changing the basic meaning of a word. Example: someone who is obstinate (neutral term) can be “headstrong” (positive) or “pig-headed” (negative). This is the basis for much bias in journalism. -- https://threadreaderapp.com/thread/1225561131122597896.html
+> Emotive Conjugation: Synonyms can yield positive or negative impressions without changing the basic meaning of a word. Example: someone who is obstinate (neutral term) can be "headstrong" (positive) or "pig-headed" (negative). This is the basis for much bias in journalism. -- https://threadreaderapp.com/thread/1225561131122597896.html
 
 > Anentiodromia: An excess of something can give rise to its opposite. E.g. A society that is too liberal will be tolerant of tyrants, who will eventually make it illiberal. I explain more here: -- https://threadreaderapp.com/thread/1225561131122597896.html
 
@@ -466,17 +466,17 @@ title: Quotes
 
 > Peter Principle: People in a hierarchy such as a business or government will be promoted until they suck at their jobs, at which point they will remain where they are. As a result, the world is filled with people who suck at their jobs. -- https://threadreaderapp.com/thread/1225561131122597896.html
 
-> Loki’s Wager: Fallacy where someone tries to defend a concept from criticism, or dismiss it as a myth, by unduly claiming it cannot be defined. E.g. “God works in mysterious ways” (god of the gaps), “race is biologically meaningless” (Lewontin’s fallacy). -- https://threadreaderapp.com/thread/1225561131122597896.html
+> Loki’s Wager: Fallacy where someone tries to defend a concept from criticism, or dismiss it as a myth, by unduly claiming it cannot be defined. E.g. "God works in mysterious ways" (god of the gaps), "race is biologically meaningless" (Lewontin’s fallacy). -- https://threadreaderapp.com/thread/1225561131122597896.html
 
-> Subselves: We use different mental processes in different situations, so each of us is not a single character but a collection of different characters, who take turns to commandeer the body depending on the situation. There is an office “you”, a lover “you”, an online “you”, etc. -- https://threadreaderapp.com/thread/1225561131122597896.html
+> Subselves: We use different mental processes in different situations, so each of us is not a single character but a collection of different characters, who take turns to commandeer the body depending on the situation. There is an office "you", a lover "you", an online "you", etc. -- https://threadreaderapp.com/thread/1225561131122597896.html
 
 > Goodhart’s Law: When a measure becomes a goal, it ceases to become a measure. E.g. British colonialists tried to control snakes in India. They measured progress by number of snakes killed, offering money for snake corpses. People responded by breeding snakes & killing them. -- https://threadreaderapp.com/thread/1225561131122597896.html
 
 > Radical Phase Transition (my term): Extremist movements can behave like solids (tyrannies), liquids (insurgencies), and gases (conspiracy theories). Pressuring them causes them to go from solid => liquid => gas. Leaving them alone causes them to go from gas => liquid => solid. -- https://threadreaderapp.com/thread/1225561131122597896.html
 
-> Legibility: We see a complex natural system, assume that because it *looks* messy that it must be disordered, then impose our own order on it to make it “legible”. But in removing the messiness we remove essential components of the system that we couldn’t grasp, and it fails. -- https://threadreaderapp.com/thread/1225561131122597896.html
+> Legibility: We see a complex natural system, assume that because it *looks* messy that it must be disordered, then impose our own order on it to make it "legible". But in removing the messiness we remove essential components of the system that we couldn’t grasp, and it fails. -- https://threadreaderapp.com/thread/1225561131122597896.html
 
-> Shifting Baseline Syndrome: Frog says to Fish, “how’s the water?”. Fish replies, “what’s water?”. We become blind to what we’re familiar with. And since the world is always changing, and we're always getting used to it, we can even become blind to the slow march of catastrophe. -- https://threadreaderapp.com/thread/1225561131122597896.html
+> Shifting Baseline Syndrome: Frog says to Fish, "how’s the water?". Fish replies, "what’s water?". We become blind to what we’re familiar with. And since the world is always changing, and we're always getting used to it, we can even become blind to the slow march of catastrophe. -- https://threadreaderapp.com/thread/1225561131122597896.html
 
 > Availability Cascade: When a new concept enters the arena of ideas, people react to it, thereby amplifying it. The idea thus becomes more popular, causing even more people to amplify it by reacting to it, until everyone feels the need to talk about it. -- https://threadreaderapp.com/thread/1225561131122597896.html
 
@@ -494,10 +494,152 @@ title: Quotes
 
 > Observing without evaluation is the highest form of intelligence. -- Indian philosopher J Krishnamurti, Nonviolent Communication
 
-> Instead of saying “I feel a bit down”, use sharper adjectives and clarify the reasons why -- Nonviolent Communication
+> Instead of saying "I feel a bit down", use sharper adjectives and clarify the reasons why -- Nonviolent Communication
 
-> Ask yourself “Why am I angry?” rather than “Who am I angry with?”  -- Nonviolent Communication
+> Ask yourself "Why am I angry?" rather than "Who am I angry with?"  -- Nonviolent Communication
 
 > It’s easy to get stuck thinking about a more efficient way to do something you haven’t done yet
 
+> I’ve missed more than 9000 shots in my career. I’ve lost almost 300 games. 26 times, I’ve been trusted to take the game winning shot and missed. I’ve failed over and over and over again in my life. And that is why I succeed. -- Michael Jordan
 
+> Talent wins games, but teamwork and intelligence wins championships. -- Michael Jordan
+
+> I can accept failure, everyone fails at something. But I can’t accept not trying. -- Michael Jordan
+
+> My attitude is that if you push me towards something that you think is a weakness, then I will turn that perceived weakness into a strength. -- Michael Jordan
+
+> You must expect great things of yourself before you can do them. -- Michael Jordan
+
+> To be successful you have to be selfish, or else you never achieve. And once you get to your highest level, then you have to be unselfish. Stay reachable. Stay in touch. Don’t isolate. -- Michael Jordan
+
+> Obstacles don’t have to stop you. If you run into a wall, don’t turn around and give up. Figure out how to climb it, go through it, or work around it. -- Michael Jordan
+
+> If you quit once it becomes a habit. Never quit! -- Michael Jordan
+
+> Always turn a negative situation into a positive situation. -- Michael Jordan
+
+> Everybody has talent, but ability takes hard work. -- Michael Jordan
+
+> To learn to succeed, you must first learn to fail. -- Michael Jordan
+
+> Never say never, because limits, like fears, are often just an illusion. -- Michael Jordan
+
+> Don’t let them drag you down by rumors just go with what you believe in. -- Michael Jordan
+
+> Make it happen -- Michael Jordan
+
+> If you do the work you get rewarded. There are no shortcuts in life. -- Michael Jordan
+
+> I’ve failed over and over and over again in my life and that is why I succeed. -- Michael Jordan
+
+> Once I made a decision, I never thought about it again. -- Michael Jordan
+
+> The minute you get away from fundamentals -- whether it’s proper technique, work ethic or mental preparation -- the bottom can fall out of your game, your schoolwork, your job, whatever you’re doing. -- Michael Jordan
+
+> The key to success is failure. -- Michael Jordan
+
+> Learning’s a gift, even when pain is your teacher. -- Michael Jordan
+
+> Failure is acceptable. but not trying is a whole different ball park. -- Michael Jordan
+
+> There is no "I" in team but there is in win. -- Michael Jordan
+
+> I play to win, whether during practice or a real game. -- Michael Jordan
+
+> You have to expect things of yourself before you can do them."- Michael Jordan
+
+> Every time I feel tired while I am exercising and training, I close my eyes to see that picture, to see that list with my name. This usually motivates me to work again. -- Michael Jordan
+
+> The best come from the worst. -- Michael Jordan
+
+> I never looked at the consequences of missing a big shot… When you think about the consequences you will always think of the negative result. -- Michael Jordan
+
+> I’ve never lost a game I just ran out of time. -- Michael Jordan
+
+> I’m not out there sweating for three hours every day just to find out what it feels like to sweat. -- Michael Jordan
+
+> My body could stand the crutches but my mind couldn’t stand the sideline. -- Michael Jordan
+
+> The game is my wife. It demands loyalty and responsibility, and it gives me back fulfillment and peace. -- Michael Jordan
+
+> I know fear is an obstacle for some people, but it is an illusion to me. Failure always made me try harder the next time. -- Michael Jordan
+
+> It’s heavy duty to try to do everything and please everybody. My job was to go out there and play the game of basketball as best I can. People may not agree with that. I can’t live with what everyone’s impression of what I should or what I shouldn’t do. -- Michael Jordan
+
+> If it turns out that my best wasn’t good enough, at least I won’t look back and say I was afraid to try. -- Michael Jordan
+
+> I realized that if I was going to achieve anything in life I had to be aggressive. I had to get out there and go for it. -- Michael Jordan
+
+> Be true to the game, because the game will be true to you. If you try to shortcut the game, then the game will shortcut you. If you put forth the effort, good things will be bestowed upon you. That’s truly about the game, and in some ways that’s about life too. -- Michael Jordan
+
+> Heart is what separates the good from the great. -- Michael Jordan
+
+> I would tell players to relax and never think about what’s at stake. Just think about the basketball game. If you start to think about who is going to win the championship, you’ve lost your focus. -- Michael Jordan
+
+> I own the guy guarding me. -- Michael Jordan
+
+> The game has its ups and downs, but you can never lose focus of your individual goals and you can’t let yourself be beat because of lack of effort. -- Michael Jordan
+
+> There is no such thing as a perfect basketball player, & I don’t believe there is only one greatest player either. -- Michael Jordan
+
+> If you accept the expectations of others, especially negative ones, then you never will change the outcome. -- Michael Jordan
+
+> You have competition every day because you set such high standards for yourself that you have to go out every day and live up to that. -- Michael Jordan
+
+> You have to expect things of yourself before you can do them. -- Michael Jordan
+
+> I mean we all fly. Once you leave the ground, you fly. Some people fly longer than others. -- Michael Jordan
+
+> Sometimes, things may not go your way, but the effort should be there every single night. -- Michael Jordan
+
+> Best evaluation I can make of a player is to look in his eyes and see how scared they are. -- Michael Jordan
+
+> Winning isn’t always championships. -- Michael Jordan
+
+> Sometimes you need to get hit in the head to realize that you’re in a fight. -- Michael Jordan
+
+> I want to wake up every day and do whatever comes in my mind, and not feel pressure or obligations to do anything else in my life. -- Michael Jordan
+
+> Enjoy every minute of life. Never second-guess life. -- Michael Jordan
+
+> I believe greatness is an evolutionary process that changes and evolves era to era."  -- Michael Jordan
+
+> If I had been playing for money I would have complained a long time ago that I was underpaid. -- Michael Jordan
+
+> Being Michael Jordan means acting the same as I always have. -- Michael Jordan
+
+> My father used to say that it’s never too late to do anything you wanted to do. And he said you never know what you can accomplish until you try. -- Michael Jordan
+
+> I want to be the bridge to the next generation. -- Michael Jordan
+
+> When I will lose the sense of motivation and the sense to prove something as a basketball player, it’s time for me to move away from the game. -- Michael Jordan
+
+> Sometimes, things may not go your way, but the effort should be there every single night. -- Michael Jordan
+
+>  "In reality, I never want to grow up. -- Michael Jordan
+
+> How many times have your parents told you not to do things, and the next thing you know, you go do it? And you realized you shouldn’t have done it."  -- Michael Jordan
+
+> My heroes are and were my parents. I can’t see having anyone else as my heroes. -- Michael Jordan
+
+> In college I never realized the opportunities available to a pro athlete. I’ve been given the chance to meet all kinds of people, to travel and expand my financial capabilities, to get ideas and learn about life, to create a world apart from basketball. -- Michael Jordan
+
+> In any investment, you expect to have fun and make money."  -- Michael Jordan
+
+>  "For a competitive junkie like me, golf is a great solution because it smacks you in the face every time you think you’ve accomplished something. That to me has taken over a lot of the energy and competitiveness for basketball. -- Michael Jordan
+
+> My challenge when I came back was to face the young talent, to dissect their games, and show them maybe that they needed to learn more about the game than just the money aspect. -- Michael Jordan
+
+>  "Do I need my number retired throughout the course of the league to acknowledge what I’ve done? No."  -- Michael Jordan
+
+> I want to be perceived as a guy who played his best in all facets, not just scoring. A guy who love challenges. -- Michael Jordan
+
+> I built my talents on the shoulders of someone else’s talent. -- Michael Jordan
+
+>  "Even when I’m old and gray, I won’t be able to play it, but I’ll still love the game. -- Michael Jordan
+
+> I know the signs of scaredness. -- Michael Jordan
+
+> It’s absolutely wrong that I don’t want guys to challenge me. And the people who say that aren’t in the room. -- Michael Jordan
+
+>  "Live the moment for the moment. -- Michael Jordan
