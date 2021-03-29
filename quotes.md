@@ -270,7 +270,7 @@ title: Quotes
 
 > Pick up a book on a topic you know next to nothing about. Put yourself in rooms where you're the least knowledgeable person. Change your mind. Change your surroundings -- Ego Is The Enemy
 
-> Paul Graham says to have "frighteningly ambitious" ideas but, "The way to do really big things seems to be to start with deceptively small things. -- Ego Is The Enemy
+> Paul Graham says to have "frighteningly ambitious" ideas but, "The way to do really big things seems to be to start with deceptively small things." -- Ego Is The Enemy
 
 > **Ego needs honors in order to be validated**. Confidence on the other hand, is able to wait and focus on the task at hand regardless of external recognition -- Ego Is The Enemy
 
@@ -316,7 +316,7 @@ title: Quotes
 
 > Nobody cares about your dirt. "Who you are inside" is meaningless aside from what it produces for other people -- https://github.com/arafatm/notes/blob/master/lifehack/cracked_6_Harsh_Truths_That_Will_Make_You_a_Better_Person.md
 
-> it's incredibly comforting to know that as long as you don't create anything in your life, then nobody can attack the thing you created -- https://github.com/arafatm/notes/blob/master/lifehack/cracked_6_Harsh_Truths_That_Will_Make_You_a_Better_Person.md
+> It's incredibly comforting to know that as long as you don't create anything in your life, then nobody can attack the thing you created -- https://github.com/arafatm/notes/blob/master/lifehack/cracked_6_Harsh_Truths_That_Will_Make_You_a_Better_Person.md
 
 > Damn it, you have to kill those excuses. Or they will kill you -- https://github.com/arafatm/notes/blob/master/lifehack/cracked_6_Harsh_Truths_That_Will_Make_You_a_Better_Person.md
 
@@ -324,7 +324,7 @@ title: Quotes
 
 > To live is the rarest thing in the world. Most people exist, that is all -- Oscar Wilde
 
-> What is it you do to train that is comparable to a pianist practicing scales?"  If you don’t know the answer to that one, maybe you are doing something wrong or not doing enough. Or maybe you are (optimally) not very ambitious
+> "What is it you do to train that is comparable to a pianist practicing scales?"  If you don’t know the answer to that one, maybe you are doing something wrong or not doing enough. Or maybe you are (optimally) not very ambitious
 
 > To cherish the ego is to cherish misery -- Alan Watts
 
@@ -382,7 +382,7 @@ title: Quotes
 
 > Life is not a dress rehearsal, this is probably it. Make it count -- Sam Altman
 
-> 🔥🧠 Tip: Never worry in your head. If you must worry, do it on pape, literally transcribe your worries. Constrain your worry to the speed of writing and you’ll rob it of 90% of its power -- @ndwignall  
+> 🔥🧠 Tip: Never worry in your head. If you must worry, do it on paper, literally transcribe your worries. Constrain your worry to the speed of writing and you’ll rob it of 90% of its power -- @ndwignall  
 
 > It is your responsibility as the feedback receiver, whether you accept or reject it, to at least consider the feedback and be thoughtful about it -- Fearless Feedback
 
@@ -426,7 +426,7 @@ title: Quotes
 
 > Limited Hangout: A common tactic by journos & politicians of revealing intriguing but relatively innocent info to satisfy curiosity and prevent discovery of more incriminating info. E.g. a politician accused of snorting cocaine may confess to having smoked marijuana at college. -- https://threadreaderapp.com/thread/1225561131122597896.html
 
-> Focusing Illusion: Nothing is ever as important as what you’re thinking about while you’re thinking about it. E.g. worrying about a thing makes the thing being worried about seem worse than it is. As Marcus Aurelius observed, "We suffer more often in imagination that in reality. -- https://threadreaderapp.com/thread/1225561131122597896.html
+> Focusing Illusion: Nothing is ever as important as what you’re thinking about while you’re thinking about it. E.g. worrying about a thing makes the thing being worried about seem worse than it is. As Marcus Aurelius observed, "We suffer more often in imagination that in reality." -- https://threadreaderapp.com/thread/1225561131122597896.html
 
 > Concept Creep: As a social issue such as racism or sexual harassment becomes rarer, people react by expanding their definition of it, creating the illusion that the issue is actually getting worse. I explain the process in detail here: https://rabbitholemag.com/how-progress-blinds-people-to-progress/ -- https://threadreaderapp.com/thread/1225561131122597896.html
 
@@ -546,7 +546,7 @@ title: Quotes
 
 > I play to win, whether during practice or a real game. -- Michael Jordan
 
-> You have to expect things of yourself before you can do them."- Michael Jordan
+> You have to expect things of yourself before you can do them. -- Michael Jordan
 
 > Every time I feel tired while I am exercising and training, I close my eyes to see that picture, to see that list with my name. This usually motivates me to work again. -- Michael Jordan
 
@@ -602,7 +602,7 @@ title: Quotes
 
 > Enjoy every minute of life. Never second-guess life. -- Michael Jordan
 
-> I believe greatness is an evolutionary process that changes and evolves era to era."  -- Michael Jordan
+> I believe greatness is an evolutionary process that changes and evolves era to era.  -- Michael Jordan
 
 > If I had been playing for money I would have complained a long time ago that I was underpaid. -- Michael Jordan
 
@@ -616,30 +616,90 @@ title: Quotes
 
 > Sometimes, things may not go your way, but the effort should be there every single night. -- Michael Jordan
 
->  "In reality, I never want to grow up. -- Michael Jordan
+> In reality, I never want to grow up. -- Michael Jordan
 
-> How many times have your parents told you not to do things, and the next thing you know, you go do it? And you realized you shouldn’t have done it."  -- Michael Jordan
+> How many times have your parents told you not to do things, and the next thing you know, you go do it? And you realized you shouldn’t have done it.  -- Michael Jordan
 
 > My heroes are and were my parents. I can’t see having anyone else as my heroes. -- Michael Jordan
 
 > In college I never realized the opportunities available to a pro athlete. I’ve been given the chance to meet all kinds of people, to travel and expand my financial capabilities, to get ideas and learn about life, to create a world apart from basketball. -- Michael Jordan
 
-> In any investment, you expect to have fun and make money."  -- Michael Jordan
+> In any investment, you expect to have fun and make money.  -- Michael Jordan
 
->  "For a competitive junkie like me, golf is a great solution because it smacks you in the face every time you think you’ve accomplished something. That to me has taken over a lot of the energy and competitiveness for basketball. -- Michael Jordan
+> For a competitive junkie like me, golf is a great solution because it smacks you in the face every time you think you’ve accomplished something. That to me has taken over a lot of the energy and competitiveness for basketball. -- Michael Jordan
 
 > My challenge when I came back was to face the young talent, to dissect their games, and show them maybe that they needed to learn more about the game than just the money aspect. -- Michael Jordan
 
->  "Do I need my number retired throughout the course of the league to acknowledge what I’ve done? No."  -- Michael Jordan
+> Do I need my number retired throughout the course of the league to acknowledge what I’ve done? No.  -- Michael Jordan
 
 > I want to be perceived as a guy who played his best in all facets, not just scoring. A guy who love challenges. -- Michael Jordan
 
 > I built my talents on the shoulders of someone else’s talent. -- Michael Jordan
 
->  "Even when I’m old and gray, I won’t be able to play it, but I’ll still love the game. -- Michael Jordan
+> Even when I’m old and gray, I won’t be able to play it, but I’ll still love the game. -- Michael Jordan
 
 > I know the signs of scaredness. -- Michael Jordan
 
 > It’s absolutely wrong that I don’t want guys to challenge me. And the people who say that aren’t in the room. -- Michael Jordan
 
->  "Live the moment for the moment. -- Michael Jordan
+> Live the moment for the moment. -- Michael Jordan
+
+> To avoid workplace drama and be liked, compliment people behind their back. -- https://www.buzzfeed.com/michelleno/effective-psychological-tricks
+
+> Saying "You're right!" instead of "I know" makes you look less like an asshole and doesn't diminish something someone else may have just found out. -- https://www.buzzfeed.com/michelleno/effective-psychological-tricks
+
+> On an airplane, if my seat-mate is hogging the armrest or being too chatty, I grab the barf bag. Works every time. -- https://www.buzzfeed.com/michelleno/effective-psychological-tricks
+
+> Instead of asking "Do you have any questions?" I ask, "What questions do you have?" The first almost always results in silence, while the second helps people feel comfortable asking questions. -- https://www.buzzfeed.com/michelleno/effective-psychological-tricks
+
+> Put headphones in and play the music that fits your hoped-for mood. It shifts me over to it mentally. -- https://www.buzzfeed.com/michelleno/effective-psychological-tricks
+
+> It really helps when I need to calm down or when I need to feel happier. -- https://www.buzzfeed.com/michelleno/effective-psychological-tricks
+
+> I work in an office. When people stop by my desk and refuse to leave me alone, I get up and refill my water bottle while they are talking to me. Instead of walking back to my desk, I walk them to theirs. They instinctively will sit down. Then I just sever the conversation and get back to work. -- https://www.buzzfeed.com/michelleno/effective-psychological-tricks
+
+> My 4-year-old got into the "why?" phase a little while back. I read an article that said the best way to get them to stop was to ask them "I'm not sure, what do you think?" It is a godsend. -- https://www.buzzfeed.com/michelleno/effective-psychological-tricks
+
+> They answer their own question, you provide some feedback, and they immediately move on. Fucking awesome. -- https://www.buzzfeed.com/michelleno/effective-psychological-tricks
+
+> When you're in an argument, find something to agree on, then push your main point. -- https://www.buzzfeed.com/michelleno/effective-psychological-tricks
+
+> If you need to deescalate someone and get them to communicate, ask them questions about numbers or personal information. -- https://www.buzzfeed.com/michelleno/effective-psychological-tricks
+
+> I work in emergency services. If someone is totally distraught and shut down, asking their phone number, address, social security number, or birth date can pull them out of an emotional place and bring them back to a headspace where they can talk about what happened more easily. I often ask these questions even after I have the information, just to deescalate. -- https://www.buzzfeed.com/michelleno/effective-psychological-tricks
+
+> Thank someone for a trait you want them to have. -- https://www.buzzfeed.com/michelleno/effective-psychological-tricks
+
+> Instead of telling a customer you’re sorry for the wait, tell them thank you for your patience or understanding. Works wonders. -- https://www.buzzfeed.com/michelleno/effective-psychological-tricks
+
+> Be direct and personal when you need things. Instead of asking IF anyone has an EpiPen, ask WHO has an EpiPen. -- https://www.buzzfeed.com/michelleno/effective-psychological-tricks
+
+> Instead of saying, "Someone call 911," point to someone and say, "Go call 911 and come tell me when they are on the way." -- https://www.buzzfeed.com/michelleno/effective-psychological-tricks
+
+> I currently manage around 240 people between six restaurants. It is often hard to get them to do what is needed. I have found that saying "I need your help" is effective in getting them on board. People want to feel needed and like that they are making a difference. -- https://www.buzzfeed.com/michelleno/effective-psychological-tricks
+
+> Expressing that need to them as much [as possible] makes all the difference in the world. -- https://www.buzzfeed.com/michelleno/effective-psychological-tricks
+
+> When I have something important to say to my kids, I say it very quietly so that they listen. They're immune to my yelling but whispering gets their attention. -- https://www.buzzfeed.com/michelleno/effective-psychological-tricks
+
+> If you look happy to see someone eveytime you see them, they will eventually be happy to see you. -- https://www.buzzfeed.com/michelleno/effective-psychological-tricks
+
+> Listen to someone without giving advice or asking for more information. This typically gets me more information than if I were to be pushy about it. -- https://www.buzzfeed.com/michelleno/effective-psychological-tricks
+
+> If you're trying to pick out dinner with your partner, rather than ask, "What do you want?" and getting the typical "I don't know; anything" answer and then having suggestions shot down, start with, "What do you NOT want?" -- https://www.buzzfeed.com/michelleno/effective-psychological-tricks
+
+> Used it a few times in some of my relationships and it's the godsend question. -- https://www.buzzfeed.com/michelleno/effective-psychological-tricks
+
+> To de-escalate a situation or someone who is prone to violence, address them at one or two emotional levels below where they are. For example, If their anger is at a level 10, then you should come in at a level 8. Being completely calm, reserved, and polite only pisses people off more as you "clearly don't understand the magnitude of the situation." -- https://www.buzzfeed.com/michelleno/effective-psychological-tricks
+
+> If they are screaming and yelling, you need to come in loud — while not attacking them, and agreeing with them (to a point). By agreeing with their anger, they are more open to listen to you. Works pretty much every time, though there might be a little up and down in the middle. Just follow the person's lead while always being a level below them. -- https://www.buzzfeed.com/michelleno/effective-psychological-tricks
+
+> Say hello to everybody you know, with a smile. Just imagine: if someone walks into you twice a year and both times you smile and greet them enthusiastically, they will think of you as a nice person. So little effort for a person to find you friendly! -- https://www.buzzfeed.com/michelleno/effective-psychological-tricks
+
+> When I do something bothersome to my husband and he goes quiet, I wait a few minutes and then ask him a seemingly innocent question, usually on the subject of how certain parts of a car works. This gets him talking about the car thing and he rambles for like five minutes and then, Bam! He’s happy again and not quietly brooding. -- https://www.buzzfeed.com/michelleno/effective-psychological-tricks
+
+> When somebody shy is speaking, if you look at them and nod your head it encourages them to keep talking. -- https://www.buzzfeed.com/michelleno/effective-psychological-tricks
+
+> I’m a professional poker player. When I am in a pot with one other player, I often try to make them laugh when they are thinking about what to do. If you can get them to laugh, it sets them in a mood where they are unlikely to bluff. -- https://www.buzzfeed.com/michelleno/effective-psychological-tricks
+
+> I work with a bunch of idiot lawyers and I use the phrase "You’re correct" all the time. Even if it’s one teeny tiny thing they’re correct about, it makes them feel smart and they instantly soften. It also keeps them listening because they’re hoping more flattery will come down the pike. -- https://www.buzzfeed.com/michelleno/effective-psychological-tricks
