@@ -129,47 +129,47 @@ MIGHT (TOTAL Pts: 14)
 
 ## Trainers: Alchemy , Blacksmithing , Detect Hidden , Dispelling , Lockpicking , Mercantile , Persuasion , Sagecraft , Stealth
 
-|     |     | Level         | Region             | Area           | Location                   | Trainer                     | Details
-| --- | --- | ---           | ---                | ---            | ---                        | ---                         | ---
-| x   | DH  | Trainer (0-3) | Dalentarth         | Odarath West   | Gorhart                    | Arnick Arduna               | Inside the inn.
-|     | PE  | Trainer (0-3) | Dalentarth         | Odarath East   | House of Ballads           | Ellova                      |
-|     | BL  | Trainer (0-3) | Dalentarth         | Odarath East   | Shieldring Keep            | Halder Rodric               | Hallway to the right when you enter.
-|     | ME  | Trainer (0-3) | Dalentarth         | Haxhi          | Star Camp                  | Elayen Dark                 |
-|     | ST  | Trainer (0-3) | Dalentarth         | Haxhi          | Star Camp                  | Hiroen Karet                |
-|     | LO  | Trainer (0-3) | Dalentarth         | Lorca-Rane     | Thorvald Ulfsson           |                             | In the southeast corner of the map, below the bridge leading to the Plains of Erathell.
-|     | SA  | Trainer (0-3) | Dalentarth         | Ysa            | Delving Hall               | Savant Raina Njorn          | Must have started Trial by Fire for the key.
-|     | DH  | Trainer (0-3) | Dalentarth         | Ysa            | Embassy Hall               | Ambassador Odvar            | Varani wing.
-|     | AL  | Trainer (0-3) | Dalentarth         | Ysa            | Lyceum Grove               | Jakasen                     |
-|     | SA  | Trainer (0-3) | Dalentarth         | Ysa            | Southeast                  | Viscount Setter the Allseer | Or in The Font after completing Oh, the Indignitaries. (Note: you cannot train with him while that quest is active.)
-|     | DI  | Trainer (0-3) | Dalentarth         | Ysa            | The Trellis                | Saramer                     |
-|     | BL  | Trainer (0-3) | Dalentarth         | Ysa            | United Merchats Delegation | Holte Frenn                 |
-|     | AL  | Trainer (0-3) | Plains of Erathell | Forsaken Plain | Emaire                     | Molly Janick                | In the Blue Bear Tavern.
-|     | LO  | Trainer (0-3) | Plains of Erathell | Galafor        | Tirin's Rest               | Tefroy Tarion               | Requires Lock and Key.
-|     | ST  | Trainer (0-3) | Plains of Erathell | Tywili Coast   | Moon Camp                  | Inthaels Scyld              |
-|     | ME  | Trainer (4-6) | Plains of Erathell | Tywili Coast   | Moon Camp                  | Eormen Gest                 |
-|     | PE  | Trainer (0-3) | Plains of Erathell | Rathir         | Upper city                 | Magessa Ohr                 | Inside the House of Wyvyrn-Gifre.
-|     | DI  | Trainer (4-6) | Plains of Erathell | Rathir         | Scholia Arcana             | Artan Caid                  |
-|     | SA  | Trainer (4-6) | Plains of Erathell | Rathir         | Scholia Arcana             | Itran Sconn                 |
-|     | AL  | Trainer (4-6) | Plains of Erathell | Rathir         | Scholia Arcana             | Savant Red Thombrum         |
-|     | ME  | Trainer (0-3) | Detyre             | Alserund       | Caverns of Ingress         | Anton Demian                | Just outside the caverns, a bit north by the altar.
-|     | BL  | Trainer (4-6) | Detyre             | Menetyre       | Ironfast Keep              | Efyr Dynnwel                | Requires `A Master's Touch`. Unavailable if you turn against the Warsworn.
-|     | DH  | Trainer (4-6) | Detyre             | Apotyre        | Sun Camp                   | Gawait Hand                 | He moves to Whitestone's tavern after `Thick as Thieves`
-|     | DI  | Trainer (0-3) | Detyre             | Adessa         | Many                       | Eric Porthe                 | He moves around the city.
-|     | PE  | Trainer (4-6) | Detyre             | Adessa         | Forum                      | Templar Montainel           | She sometimes moves to upstairs in the Hospitalis Quarters.
-|     | ST  | Trainer (4-6) | Detyre             | Adessa         | Hospitalis Quarters        | Borm of Bowstrings          |
-|     | LO  | Trainer (4-6) | Detyre             | Adessa         | Hospitalis Quarters        | Narit Wyle                  |
-|     | PE  | Trainer (7-9) | Klurikon           | Mel Senshir    | By the docks               | Caradas Hyne                |
-|     | ME  | Trainer (7-9) | Klurikon           | Mel Senshir    | By the forge               | Enion Gaius                 |
-|     | DH  | Trainer (7-9) | Klurikon           | Mel Senshir    | By the forge               | Ney Csalan                  | `Unavailable if you turn against the Warsworn`
-|     | BL  | Trainer (7-9) | Klurikon           | Mel Senshir    | By the forge               | Ragna Senn                  |
-|     | DI  | Trainer (7-9) | Klurikon           | The Midden     | House of Sorrows           | Dionaeach                   | Requires `The Sorrows Call`. Unavailable after `Voices of the Dead`
-|     | SA  | Trainer (7-9) | Klurikon           | The Keening    | West                       | Liordran                    | When you accept his quest he moves to just outside Rahnil.
-|     | AL  | Trainer (7-9) | Klurikon           | Caeled Coast   | Seawatch                   | Conni                       | Requires the completion of `Ghosts of Seawatch`.
-|     | LO  | Trainer (7-9) | Klurikon           | Caeled Coast   | Seawatch                   | Elya Madmyr                 | Just outside Seawatch, to the west.
-|     | ST  | Trainer (7-9) | Alabastra          | Shadow Pass    | Dark Glow Caverns          | Ticnerani                   | To access Alabastra you must complete `Pride Before a Fall`.
-|     | AL  | Trainer (7-9) | Gallows End        | Gravehal Keep  | Bertrand Seznec            |                             | May be found while scouting for a Gnomish Trireme. Requires The Legend of Dead Kel DLC.
-|     | ME  | Trainer (7-9) | Gallows End        | Gravehal Keep  | Erlen Vanik                |                             | Requires `forming an alliance with the Varani during Diplomacy`
-|     | ST  | Trainer (7-9) | Gallows End        | Gravehal Keep  | Marten Strand              |                             | May be found while scouting for a Traveler Sloop, Merchant Vessel, or Warsworn Galley
+|   |     | Level         | Region             | Area           | Location                   | Trainer                     | Details
+| - | --- | ---           | ---                | ---            | ---                        | ---                         | ---
+| x | DH  | Trainer (0-3) | Dalentarth         | Odarath West   | Gorhart                    | Arnick Arduna               | Inside the inn.
+| x | PE  | Trainer (0-3) | Dalentarth         | Odarath East   | House of Ballads           | Ellova                      |
+| x | BL  | Trainer (0-3) | Dalentarth         | Odarath East   | Shieldring Keep            | Halder Rodric               | Hallway to the right when you enter.
+|   | ME  | Trainer (0-3) | Dalentarth         | Haxhi          | Star Camp                  | Elayen Dark                 |
+|   | ST  | Trainer (0-3) | Dalentarth         | Haxhi          | Star Camp                  | Hiroen Karet                |
+|   | LO  | Trainer (0-3) | Dalentarth         | Lorca-Rane     | Thorvald Ulfsson           |                             | In the southeast corner of the map, below the bridge leading to the Plains of Erathell.
+|   | SA  | Trainer (0-3) | Dalentarth         | Ysa            | Delving Hall               | Savant Raina Njorn          | Must have started Trial by Fire for the key.
+|   | DH  | Trainer (0-3) | Dalentarth         | Ysa            | Embassy Hall               | Ambassador Odvar            | Varani wing.
+|   | AL  | Trainer (0-3) | Dalentarth         | Ysa            | Lyceum Grove               | Jakasen                     |
+|   | SA  | Trainer (0-3) | Dalentarth         | Ysa            | Southeast                  | Viscount Setter the Allseer | Or in The Font after completing Oh, the Indignitaries. (Note: you cannot train with him while that quest is active.)
+|   | DI  | Trainer (0-3) | Dalentarth         | Ysa            | The Trellis                | Saramer                     |
+|   | BL  | Trainer (0-3) | Dalentarth         | Ysa            | United Merchats Delegation | Holte Frenn                 |
+|   | AL  | Trainer (0-3) | Plains of Erathell | Forsaken Plain | Emaire                     | Molly Janick                | In the Blue Bear Tavern.
+|   | LO  | Trainer (0-3) | Plains of Erathell | Galafor        | Tirin's Rest               | Tefroy Tarion               | Requires Lock and Key.
+|   | ST  | Trainer (0-3) | Plains of Erathell | Tywili Coast   | Moon Camp                  | Inthaels Scyld              |
+|   | ME  | Trainer (4-6) | Plains of Erathell | Tywili Coast   | Moon Camp                  | Eormen Gest                 |
+|   | PE  | Trainer (0-3) | Plains of Erathell | Rathir         | Upper city                 | Magessa Ohr                 | Inside the House of Wyvyrn-Gifre.
+|   | DI  | Trainer (4-6) | Plains of Erathell | Rathir         | Scholia Arcana             | Artan Caid                  |
+|   | SA  | Trainer (4-6) | Plains of Erathell | Rathir         | Scholia Arcana             | Itran Sconn                 |
+|   | AL  | Trainer (4-6) | Plains of Erathell | Rathir         | Scholia Arcana             | Savant Red Thombrum         |
+|   | ME  | Trainer (0-3) | Detyre             | Alserund       | Caverns of Ingress         | Anton Demian                | Just outside the caverns, a bit north by the altar.
+|   | BL  | Trainer (4-6) | Detyre             | Menetyre       | Ironfast Keep              | Efyr Dynnwel                | Requires `A Master's Touch`. Unavailable if you turn against the Warsworn.
+|   | DH  | Trainer (4-6) | Detyre             | Apotyre        | Sun Camp                   | Gawait Hand                 | He moves to Whitestone's tavern after `Thick as Thieves`
+|   | DI  | Trainer (0-3) | Detyre             | Adessa         | Many                       | Eric Porthe                 | He moves around the city.
+|   | PE  | Trainer (4-6) | Detyre             | Adessa         | Forum                      | Templar Montainel           | She sometimes moves to upstairs in the Hospitalis Quarters.
+|   | ST  | Trainer (4-6) | Detyre             | Adessa         | Hospitalis Quarters        | Borm of Bowstrings          |
+|   | LO  | Trainer (4-6) | Detyre             | Adessa         | Hospitalis Quarters        | Narit Wyle                  |
+|   | PE  | Trainer (7-9) | Klurikon           | Mel Senshir    | By the docks               | Caradas Hyne                |
+|   | ME  | Trainer (7-9) | Klurikon           | Mel Senshir    | By the forge               | Enion Gaius                 |
+|   | DH  | Trainer (7-9) | Klurikon           | Mel Senshir    | By the forge               | Ney Csalan                  | `Unavailable if you turn against the Warsworn`
+|   | BL  | Trainer (7-9) | Klurikon           | Mel Senshir    | By the forge               | Ragna Senn                  |
+|   | DI  | Trainer (7-9) | Klurikon           | The Midden     | House of Sorrows           | Dionaeach                   | Requires `The Sorrows Call`. Unavailable after `Voices of the Dead`
+|   | SA  | Trainer (7-9) | Klurikon           | The Keening    | West                       | Liordran                    | When you accept his quest he moves to just outside Rahnil.
+|   | AL  | Trainer (7-9) | Klurikon           | Caeled Coast   | Seawatch                   | Conni                       | Requires the completion of `Ghosts of Seawatch`.
+|   | LO  | Trainer (7-9) | Klurikon           | Caeled Coast   | Seawatch                   | Elya Madmyr                 | Just outside Seawatch, to the west.
+|   | ST  | Trainer (7-9) | Alabastra          | Shadow Pass    | Dark Glow Caverns          | Ticnerani                   | To access Alabastra you must complete `Pride Before a Fall`.
+|   | AL  | Trainer (7-9) | Gallows End        | Gravehal Keep  | Bertrand Seznec            |                             | May be found while scouting for a Gnomish Trireme. Requires The Legend of Dead Kel DLC.
+|   | ME  | Trainer (7-9) | Gallows End        | Gravehal Keep  | Erlen Vanik                |                             | Requires `forming an alliance with the Varani during Diplomacy`
+|   | ST  | Trainer (7-9) | Gallows End        | Gravehal Keep  | Marten Strand              |                             | May be found while scouting for a Traveler Sloop, Merchant Vessel, or Warsworn Galley
 
 ## Area min/max levels in table format
 
