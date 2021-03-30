@@ -6,6 +6,15 @@
 useful components. Way more cost-effective than just selling everything for
 gold if you're ever going to craft.*
 
+## Backpacks
+
+- Rikka Egest in The Corner Shop. Gorhart in Dalentarth's Odarath
+- Riona Helt in Asker's Alley. City of Ysa in Dalentarth
+- Wil Donall in Scholia Arcana academy. Rathir's Upper City
+- Domus Politica merchant (Senecer Macit) in Adessa
+- Illyn Doldran in Mel Senshir; he's the trader nearest the jail
+- Ampelio, the Kollossae horticultural giantess, sells one in the Teeth of Naros DLC city, Idylla.
+
 ## Skills
 
 *You shouldn’t put more than 2 points into a skill unless you’ve seen both its
@@ -162,3 +171,182 @@ MIGHT (TOTAL Pts: 14)
 |     | ME  | Trainer (7-9) | Gallows End        | Gravehal Keep  | Erlen Vanik                |                             | Requires `forming an alliance with the Varani during Diplomacy`
 |     | ST  | Trainer (7-9) | Gallows End        | Gravehal Keep  | Marten Strand              |                             | May be found while scouting for a Traveler Sloop, Merchant Vessel, or Warsworn Galley
 
+## Area min/max levels in table format
+
+| Region             | Zone                  | Area or Dungeon        | Min | Max        | Notes
+| ---                | ---                   | ---                    | --- | ---        | ---
+| Dalentarth         | Allestar Glade        | Outdoors               | 1   | 1          |
+| Dalentarth         | Allestar Glade        | Stonecandle Mines      | 2   | 12         |
+| Dalentarth         | Odarath West          | Outdoors               | 1   | 5          |
+| Dalentarth         | Odarath West          | Agnur Farhal           | 2   | 10         |
+| Dalentarth         | Odarath West          | Waterhall Down         | 2   | 12         |
+| Dalentarth         | Odarath West          | Lawbreaker's Grotto    | 6   | 16         |
+| Dalentarth         | Odarath East          | Outdoors               | 2   | 12         | Stay away from tunnel in NE or you'll lock Windemere.
+| Dalentarth         | Odarath East          | Overgrown Thicket      | 3   | 13         |
+| Dalentarth         | Odarath East          | Gorguath               | 3   | 20         |
+| Dalentarth         | Odarath East          | Shieldring Keep        | 21  | 35         |
+| Dalentarth         | Webwood               | Outdoors               | 3   | 13         | Togh Farm and 1 Webwood lorestone are actually in Haxhi and will lock that area.
+| Dalentarth         | Webwood               | Cathrus                | 3   | 13         |
+| Dalentarth         | Webwood               | Shade River Caves      | 3   | 13         |
+| Dalentarth         | Webwood               | Castle Yolvan          | 4   | 20         |
+| Dalentarth         | Ettinmere             | Outdoors               | 3   | 13         |
+| Dalentarth         | Ettinmere             | Uduath                 | 4   | 20         |
+| Dalentarth         | Ettinmere             | Dellach                | 4   | 24         |
+| Dalentarth         | Ettinmere             | Theater of Fate        | 4   | 24         | Entrace is inside Dellach.
+| Dalentarth         | Glendara              | Outdoors               | 3   | 13         |
+| Dalentarth         | Glendara              | Bloodstone Deep        | 4   | 14         |
+| Dalentarth         | Glendara              | Coilsbain              | 5   | 14         |
+| Dalentarth         | Glendara              | Coilsbain Ruins        | 6   | 16         | Entrance inside Coilsbain.
+| Dalentarth         | Glendara              | Murderer's Hold        | 8   | 16         | (the prison)
+| Dalentarth         | Glendara              | Hunter's Pit           | 5   | 20         |
+| Dalentarth         | Glendara              | Miral's Path           | 8   | 17         |
+| Dalentarth         | Glendara              | Ironhold Passage       | ?   | ?          |
+| Dalentarth         | Haxhi                 | Outdoors               | 3   | 13         |
+| Dalentarth         | Haxhi                 | Splitrock Depths       | 4   | 14         |
+| Dalentarth         | Haxhi                 | Haxhi Dam              | 4   | 20         | Opens during Nyralim's quest.
+| Dalentarth         | Haxhi                 | Sundur Caverns         | 4   | 24         |
+| Dalentarth         | Lorca-Rane            | Outdoors               | 4   | 14         |
+| Dalentarth         | Lorca-Rane            | Brigand Hall Caverns   | 3   | 20         | Locked door into dungeon proper opens during The Road Patrol.
+| Dalentarth         | Lorca-Rane            | Brunuath               | 5   | 20         |
+| Dalentarth         | Lorca-Rane            | Ohn's Stand            | 17  | 37         |
+| Dalentarth         | The Sidhe             | Outdoors               | 4   | 14         |
+| Dalentarth         | The Sidhe             | Rundamir               | 3   | 20         |
+| Dalentarth         | The Sidhe             | St. Eadric's Well      | 4   | 20         | Unlocked during House of Ballads questline.
+| Dalentarth         | The Sidhe             | Arduath                | 10  | 20         | Locked door into dungeon proper opens during Travelers questline.
+| Dalentarth         | The Sidhe             | Aodh                   | 7   | 30         | Unlocked during Scholia Arcana questline.
+| Dalentarth         | Summer's End          | Outdoors               | 5   | 20         | Can be locked if you travel too far northeast in Odarath East.
+| Dalentarth         | Summer's End          | Castle Windemere       | 7   | 40         |
+| Dalentarth         | Ysa                   | Outdoors               | 5   | 18         | Unlocked by completing Nyralim's quest.
+| Dalentarth         | Ysa                   | Den of Night           | 11  | 21         |
+| Dalentarth         | Ysa                   | Delving Hall           | 17  | 35         |
+| Dalentarth         | Ysa                   | Trial of Initiation    | 6   | 40         | Part of the Scholia Arcana questline. Locks on starting the ritual.
+| Plains of Erathell | The Wolds             | Outdoors               | 8   | 20         |
+| Plains of Erathell | The Wolds             | Cranalt                | 9   | 25         |
+| Plains of Erathell | The Wolds             | Brigand's Quarter      | 13  | 25         | (the prison)
+| Plains of Erathell | Forsaken Plain (west) | Outdoors               | 8   | 21         | Going too far north of Emaire will lock the Cradle of Summer.
+| Plains of Erathell | Forsaken Plain (west) | Mull-Rane              | 9   | 25         |
+| Plains of Erathell | Forsaken Plain (west) | Outlaw Pit             | 15  | 25         | (the prison)
+| Plains of Erathell | Forsaken Plain (west) | Bristlethorn           | 16  | 26         |
+| Plains of Erathell | Forsaken Plain (east) | Outdoors               | 8   | 22         |
+| Plains of Erathell | Forsaken Plain (east) | Orieator's Tomb        | 9   | 27         |
+| Plains of Erathell | Forsaken Plain (east) | Bitter Cove            | 13  | 30         |
+| Plains of Erathell | Forsaken Plain (east) | Shining Labyrinth      | 20  | 30         |
+| Plains of Erathell | Tala-Rane             | Outdoors               | 8   | 22         |
+| Plains of Erathell | Tala-Rane             | Dolve Wayle            | 9   | 23         |
+| Plains of Erathell | Tala-Rane             | Corgan Hold            | 9   | 25         |
+| Plains of Erathell | Tala-Rane             | Warsworn Vault         | 9   | 29         | Locked door into dungeon proper opens during Warsworn questline.
+| Plains of Erathell | Tala-Rane             | Helmgard Keep          | 9   | 30         |
+| Plains of Erathell | Kandrian (west)       | Outdoors               | 8   | 23         |
+| Plains of Erathell | Kandrian (west)       | Caer Tosai             | 9   | 25         |
+| Plains of Erathell | Kandrian (west)       | Lucky Mine             | 9   | 29         |
+| Plains of Erathell | Kandrian (east)       | Outdoors               | 8   | 25         |
+| Plains of Erathell | Kandrian (east)       | Onarach                | 6   | 16         |
+| Plains of Erathell | Kandrian (east)       | Kandrian Cove          | 9   | 24         | Below Kandrian Keep, enter by river.
+| Plains of Erathell | Kandrian (east)       | Tulan                  | 9   | 27         |
+| Plains of Erathell | Kandrian (east)       | Virki                  | 9   | 29         |
+| Plains of Erathell | Kandrian (east)       | Kandrian Keep          | 10  | 25         |
+| Plains of Erathell | Kandrian (east)       | Kandrian Stockade      | 16  | 26         | (the prison)
+| Plains of Erathell | Galafor               | Outdoors               | 8   | 23         |
+| Plains of Erathell | Galafor               | Adarus                 | 9   | 26         |
+| Plains of Erathell | Galafor               | Burren Cove            | 9   | 30         |
+| Plains of Erathell | Galafor               | Gloamthicket           | 10  | 25         |
+| Plains of Erathell | Galafor               | Locksmith's Lab        | 13  | 23         | In Tirin's Rest, unlocks during the Warsworn questline.
+| Plains of Erathell | Galafor               | Skycrown               | ?   | 30+        | Unlocks during the Scholia Arcana questline. Enemies in first room are yellow at level 35, so level range is at least 30
+| Plains of Erathell | Tywili Coast          | Outdoors               | 8   | 25         |
+| Plains of Erathell | Tywili Coast          | Dolve Arne             | 11  | 26         |
+| Plains of Erathell | Tywili Coast          | The Blackened Hall     | 12  | 32         |
+| Plains of Erathell | Tywili Coast          | Rithen                 | 17  | 30 or less | Locked door into dungeon proper opens during Travelers questline. Max level previously was 37 which is wrong. Enemies are grey at 36 meaning max level is 30 or under.
+| Plains of Erathell | Cradle of Summer      | Outdoors               | 10  | 25         | Can be locked by going too far north of Emaire in Forsaken Plain (west).
+| Plains of Erathell | Cradle of Summer      | Syl                    | 11  | 26         |
+| Plains of Erathell | Cradle of Summer      | Urul-Tusk              | 11  | 30         | Unlocked during The Great General.
+| Plains of Erathell | Cradle of Summer      | Shardfall              | 12  | 30         | Locked on starting the Sholia Arcana questline, unlocks again when you're sent here as part of the questline.
+| Plains of Erathell | Rathir                | Outdoors               | 10  | 25         |
+| Plains of Erathell | Rathir                | Rathir Jail            | ?   | ?          | (the prison) Inside City Watch building.
+| Plains of Erathell | Rathir                | Eamonn's Fortress      | 10  | 25         | Unlocked during Warsworn questline.
+| Plains of Erathell | Rathir                | The Lower Tunnels      | 16  | 26         |
+| Plains of Erathell | Rathir                | Catacombs              | 17  | 37         | Inside Customs House, unlocked during Warsworn questline.
+| Plains of Erathell | Rathir                | Customs Storage        | 1   | 40         | Inside Customs House, separate area with locked boxes containing level-appropriate loot.
+| Detyre             | The Red Marches       | Outdoors               | 8   | 20         |
+| Detyre             | The Red Marches       | Galette Tunnels        | 9   | 21         |
+| Detyre             | The Red Marches       | Tomb of Fyragnos       | 9   | 22         | Locked doors are unlocked during the Galette quests.
+| Detyre             | Alserund              | Outdoors               | 8   | 21         |
+| Detyre             | Alserund              | Caverns of Ingress     | 9   | 22         |
+| Detyre             | Alserund              | Fellfire Pit           | 9   | 22         |
+| Detyre             | Alserund              | Caer Elatha            | 10  | 25         |
+| Detyre             | Alserund              | Eagonn's Tomb          | 11  | 25         |
+| Detyre             | Alserund              | House of Valor         | 1   | 40         |
+| Detyre             | Alserund              | Arena                  | 1   | 40         | Inside House of Valor, access through Challenge Board and House of Valor questline.
+| Detyre             | The Hollowlands       | Outdoors               | 8   | 22         |
+| Detyre             | The Hollowlands       | Aron Excavations Mine  | 10  | 23         |
+| Detyre             | The Hollowlands       | Canyon Hill Mine       | 10  | 25         |
+| Detyre             | The Hollowlands       | Duneshead Mine         | 10  | 25         |
+| Detyre             | The Hollowlands       | Saltwell Caverns       | 10  | 25         | Unlocked during An Old Friend.
+| Detyre             | The Hollowlands       | Cloudcrest Mountain    | 12  | 40         | Unlocks during the Warsworn questline.
+| Detyre             | The Hollowlands       | Cloudcrest Peak        | 12  | 40         | Inside Cloudcrest Passage.
+| Detyre             | Menetyre              | Outdoors               | 8   | 23         |
+| Detyre             | Menetyre              | Hurvar's Doorsil       | 10  | 25         |
+| Detyre             | Menetyre              | Tearscotter Mine       | 10  | 25         |
+| Detyre             | Menetyre              | Ironfast Keep          | 10  | 27         |
+| Detyre             | Menetyre              | Hall of the Firstsworn | 12  | 30         | Unlocks during the Warsworn questline.
+| Detyre             | Apotyre               | Outdoors               | 8   | 25         |
+| Detyre             | Apotyre               | Convict's Cavern       | 14  | 24         | (the prison)
+| Detyre             | Apotyre               | Cynric Quarry          | 11  | 25         |
+| Detyre             | Apotyre               | Darkvari Mine          | 11  | 25         |
+| Detyre             | Apotyre               | Skoria Mine            | 11  | 25         | Locked door into dungeon proper opens during Whitestone questline.
+| Detyre             | Apotyre               | Zungar Shaft           | 11  | 25         |
+| Detyre             | Apotyre               | Whitestone Passage     | 11  | 25         | Inside Mayor's House.
+| Detyre             | Apotyre               | Snaketail Grotto       | 12  | 28         |
+| Detyre             | Apotyre               | Hierophant's Den       | 9   | 29         | Below Sun Camp, unlocks during the Travelers questline.
+| Detyre             | Apotyre               | Stebic's Lab           | 12  | 30         | Inside Motus Mining Headquarters.
+| Detyre             | Adessa                | Outdoors               | 11  | 25         |
+| Detyre             | Adessa                | Adessa Mine            | 12  | 25         |
+| Detyre             | Adessa                | Livrarium Vaults       | 15  | 25         | Below the Livrarium, unlocked during the Travelers questline.
+| Detyre             | Adessa                | Sparring Arena         | 6   | 26         | Inside the Praetorian Garrison.
+| Klurikon           | Mel Senshir           | Outdoors               | 13  | 40         |
+| Klurikon           | Mel Senshir           | Broken Tower           | 20  | 30         |
+| Klurikon           | Mel Senshir           | Broken Tower Basement  | 19  | 22         | Unlocked during Malicious Practices.
+| Klurikon           | Mel Senshir           | Mel Senshir Jail       | 17  | 37         | (the prison)
+| Klurikon           | Cursewood             | Outdoors               | 16  | 31         |
+| Klurikon           | Cursewood             | Shattertier Mine       | 17  | 35         |
+| Klurikon           | Cursewood             | Foes' Hearth           | 22  | 37         |
+| Klurikon           | Cursewood             | Seven Widow Mine       | 22  | 40         |
+| Klurikon           | The Midden            | Outdoors               | 16  | 31         |
+| Klurikon           | The Midden            | Meathgra's Den         | 22  | 32         |
+| Klurikon           | The Midden            | Proving Halls          | 17  | 35         | Unlocked during House of Sorrows questline, exiting will lock House of Sorrows.
+| Klurikon           | The Midden            | Tinehil                | 17  | 36         |
+| Klurikon           | The Midden            | House of Sorrows       | 17  | 40         | Unlocked during House of Sorrows questline, locked after exiting Proving Halls.
+| Klurikon           | Drowned Forest        | Outdoors               | 16  | 32         |
+| Klurikon           | Drowned Forest        | Bonnlach               | 17  | 32         |
+| Klurikon           | Drowned Forest        | Sioran Crypt           | 17  | 35         |
+| Klurikon           | Drowned Forest        | Sanctuary Grotto       | 22  | 37         |
+| Klurikon           | The Keening           | Outdoors               | 16  | 32         |
+| Klurikon           | The Keening           | Ghennig                | 17  | 34         |
+| Klurikon           | The Keening           | Fallen Hall            | 17  | 35         |
+| Klurikon           | The Keening           | Rahnil                 | 17  | 35         |
+| Klurikon           | Caeled Coast (north)  | Outdoors               | 16  | 33         |
+| Klurikon           | Caeled Coast (north)  | Castle Gastyr          | 17  | 37         |
+| Klurikon           | Caeled Coast (north)  | Damalroc               | 17  | 37         |
+| Klurikon           | Caeled Coast (south)  | Outdoors               | 16  | 34         |
+| Klurikon           | Caeled Coast (south)  | Seawatch               | 3   | 30         |
+| Klurikon           | Caeled Coast (south)  | House of Pride         | 18  | 35         | Unlocked during main questline.
+| Klurikon           | Caeled Coast (south)  | Castle Ansilla         | 17  | 37         |
+| Klurikon           | Caeled Coast (south)  | Sinsear                | 17  | 37         |
+| Klurikon           | Dannestar Tower       | Outdoors               | 20  | 35         | Unlocked during main questline.
+| Alabastra          | High Fulgen           | Outdoors               | 22  | 40         |
+| Alabastra          | High Fulgen           | Glasspillar Caves      | 10  | 40         |
+| Alabastra          | High Fulgen           | Whispering Caves       | 23  | 40         |
+| Alabastra          | High Fulgen           | Primordia              | 35  | 40         |
+| Alabastra          | Shadow Pass           | Outdoors               | 22  | 40         |
+| Alabastra          | Shadow Pass           | Dark Glow Caverns      | 24  | 40         |
+| Alabastra          | Shadow Pass           | Mordus-Torr            | 24  | 40         |
+| Alabastra          | Twilight Pass         | Outdoors               | 22  | 40         |
+| Alabastra          | Twilight Pass         | Echoing Light Mine     | 22  | 40         |
+| Alabastra          | Twilight Pass         | Glowlode Mine          | 23  | 40         |
+| Alabastra          | Twilight Pass         | Weconai                | 23  | 40         |
+| Alabastra          | Amaura                | Outdoors               | 22  | 40         |
+| Alabastra          | Amaura                | Cann-Rane              | 23  | 40         |
+| Alabastra          | Amaura                | Prismere Basin         | 24  | 40         |
+| Alabastra          | Amaura                | House of Vengeance     | 23  | 40         |
+| Alabastra          | Bhaile                | Outdoors               | 23  | 40         | Bhaile can only be visited once.
+| Alabastra          | Bhaile                | Amethyn                | 24  | 40         |
+| Alabastra          | Bhaile                | Final Battle           | 25  | 40         |
