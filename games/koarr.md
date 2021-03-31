@@ -23,17 +23,22 @@ than 8 unless you’ve seen its Master trainer (7 for
 Stealth/Alchemy/Mercantile). Once you’ve seen a skill’s master trainer, use the
 Skill Book.*
 
-- On first level up, ensure you put a point in Persuasion if you aren't playing Dokkalfar.
-- Get Dispelling to rank 2 then level Lockpicking & Stealth while here
-- Finish getting Stealth / Lockpicking / Alchemy to 2 here, then do Sagecraft
-- Get Persuasion to rank 3 (4 after trainer) while here. Then start towards rank 1 Blacksmithing & rank 2 Mercantile. 
-- At this point you should start using Persuasion and Stealth as dump stats
-- Get Persuasion to rank 6 while here.
-- Start leveling Dispelling to rank 3 & Persuasion to rank 7 while here, if they aren't already. 
-- 6 trainers here to grab. Get Detect Hidden trainer in Embassy Hall, then level Detect Hidden to rank 5.
-- Start leveling Dispelling to rank 3 & Persuasion to rank 7 while here, if they aren't already. 
-- start maxing Detect Hidden afterwards but don't use skill books
-- ignore Persuasion & Stealth trainers
+- PE 1
+- DI 2
+- LO 2
+- ST 2
+- AL 2
+- SA 2
+- PE 3
+- BL 1
+- ME 2
+- Dump PE, ST
+- PE 6
+- DI 3
+- PE 7
+- Trainers (mid)
+- DH max
+- Ignore Persuasion & Stealth trainers
 - go back to Hospitalis for another lock trainer but ignore Stealth trainer
 - need rank 5 Detect Hidden before A Pilgrim's Setback
 - Alchemy rank 5, you can make Greater Phasewalk now
@@ -134,8 +139,8 @@ MIGHT (TOTAL Pts: 14)
 | x | DH  | Trainer (0-3) | Dalentarth         | Odarath West   | Gorhart                    | Arnick Arduna               | Inside the inn.
 | x | PE  | Trainer (0-3) | Dalentarth         | Odarath East   | House of Ballads           | Ellova                      |
 | x | BL  | Trainer (0-3) | Dalentarth         | Odarath East   | Shieldring Keep            | Halder Rodric               | Hallway to the right when you enter.
-|   | ME  | Trainer (0-3) | Dalentarth         | Haxhi          | Star Camp                  | Elayen Dark                 |
-|   | ST  | Trainer (0-3) | Dalentarth         | Haxhi          | Star Camp                  | Hiroen Karet                |
+| x | ME  | Trainer (0-3) | Dalentarth         | Haxhi          | Star Camp                  | Elayen Dark                 |
+| x | ST  | Trainer (0-3) | Dalentarth         | Haxhi          | Star Camp                  | Hiroen Karet                |
 |   | LO  | Trainer (0-3) | Dalentarth         | Lorca-Rane     | Thorvald Ulfsson           |                             | In the southeast corner of the map, below the bridge leading to the Plains of Erathell.
 |   | SA  | Trainer (0-3) | Dalentarth         | Ysa            | Delving Hall               | Savant Raina Njorn          | Must have started Trial by Fire for the key.
 |   | DH  | Trainer (0-3) | Dalentarth         | Ysa            | Embassy Hall               | Ambassador Odvar            | Varani wing.
