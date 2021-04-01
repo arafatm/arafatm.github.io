@@ -1,3 +1,5 @@
+## Links
+
 ![Map](https://external-preview.redd.it/Q5DyIoMobFiowJ9gqRZOUl9OTSACzPlMeBiWLVfCmgw.jpg?auto=webp&s=e376a253dbb804ef93fbddc71ff1d2e65b90af08)
 
 [Guide](https://docs.google.com/document/d/11ddjbV1ewI_2XEsa-HKcI7HErj3mXKbjJ6NYE0x6Ulw/edit#)
@@ -76,48 +78,48 @@ SORCERY (TOTAL Pts: 109)
 
 *Fateweave (at House of Ballads): Longsword Mastery 1 & Assassin's Art 1 into Staff Mastery 5 (+1) & Sphere of Protection 4 (+1)*
 
-| -- Tier 1 --
-| keep Storm Bolt        | 1
-| Arcane Weaponry I      | 1
-| Staff Mastery          | 3
-| --Tier 2--
-| Mark of Flame          | 1
-| Conservative Casting   | 5
-| Arcane Weaponry II     | 1
-| Staff Mastery          | 4 (+1)
-| Sphere of Protection   | 3
-| Sphere of Protection   | 6 (+2)
-| --Tier 3--
-| Ice Barrage            | 1
-| Summon Faer Gorta      | 6
-| Healing Surge          | 1
-| Mark of Flame          | 4 (+3, bugged to give +1 point)
-| Ice Barrage            | 5 (+4)
-| --Tier 4--
-| Transference           | 1
-| Sphere of Reprisal     | 4
-| Frostshackle           | 5
-| Smolder                | 5
-| --Tier 5--
-| Chain Lightning        | 1
-| Tempest                | 5
-| Masterful Construction | 5
-| Transference           | 4 (+3, bugged to give +1 point)
-| Arcane Weaponry III    | 1
-| Arcane Weaponry IV     | 1
-| Chain Lightning        | 5 (+4)
-| --Tier 6--
-| Meteor                 | 4 (bugged to give +1 point)
-| Sphere of Retribution  | 4
-| Chakram Mastery        | 6
-| Staff Mastery          | 6 (+1)
-| Elemental Rage         | 5
-| Sceptre Mastery        | 6
-| Sphere of Retribution  | 5 (+1)
-| Sphere of Reprisal     | 5 (+1)
-| Winter's Embrace       | 5
-| Storm Bolt             | 6 (+5)
-| Healing Surge          | 2 (+1)
+| | -- Tier 1 --
+|x| keep Storm Bolt        | 1
+|x| Arcane Weaponry I      | 1
+|x| Staff Mastery          | 3
+| | --Tier 2--
+|x| Mark of Flame          | 1
+|x| Conservative Casting   | 5
+|x| Arcane Weaponry II     | 1
+|x| Staff Mastery          | 4 (+1)
+|x| Sphere of Protection   | 3
+|x| Sphere of Protection   | 6 (+2)
+| | --Tier 3--
+|x| Ice Barrage            | 1
+|x| Summon Faer Gorta      | 6
+|x| Healing Surge          | 1
+|x| Mark of Flame          | 4 (+3, bugged to give +1 point)
+|x| Ice Barrage            | 5 (+4)
+| | --Tier 4--
+|x| Transference           | 1
+|x| Sphere of Reprisal     | 4
+| | Frostshackle           | 5
+| | Smolder                | 5
+| | --Tier 5--
+| | Chain Lightning        | 1
+| | Tempest                | 5
+| | Masterful Construction | 5
+| | Transference           | 4 (+3, bugged to give +1 point)
+| | Arcane Weaponry III    | 1
+| | Arcane Weaponry IV     | 1
+| | Chain Lightning        | 5 (+4)
+| | --Tier 6--
+| | Meteor                 | 4 (bugged to give +1 point)
+| | Sphere of Retribution  | 4
+| | Chakram Mastery        | 6
+| | Staff Mastery          | 6 (+1)
+| | Elemental Rage         | 5
+| | Sceptre Mastery        | 6
+| | Sphere of Retribution  | 5 (+1)
+| | Sphere of Reprisal     | 5 (+1)
+| | Winter's Embrace       | 5
+| | Storm Bolt             | 6 (+5)
+| | Healing Surge          | 2 (+1)
 
 MIGHT (TOTAL Pts: 14)
 | --Tier 1--
