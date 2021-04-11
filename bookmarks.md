@@ -26,6 +26,8 @@ title: Bookmarks
 
 ## Misc
 
+- [Mint Filter](https://mint.intuit.com/transaction.event#location:{"startDate":"02/01/2021","endDate":"01/01/2022","query":"category=:Melissa"})
+- [Amazon Transactions](https://smile.amazon.com/cpe/yourpayments/transactions)
 - Home Office Setup Guide: The Best Gear - WIRED <https://www.wired.com/story/work-from-home-home-office-gear-guide>
 - special effects Ghost Sand <https://lab.cheron.works/webgl-gpgpu-particles/>
 - Recomendo: 500 brief review of cool things <https://drive.google.com/file/d/1Q72NJqaMeYF5-BDLtvFqMNjfFWP9QjyE>
