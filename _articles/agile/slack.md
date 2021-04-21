@@ -15,19 +15,21 @@ thoughtful use of slack instead of the mindless obsession with elimination of al
 
 # Part One Slack
 
+![Tiles](/assets/img/slack/tiles.png)
+
 instead of eight tiles and one open space, we have a game with nine tiles and no open space.
 
-slack, the degree of freedom required to effect change.
+**Slack** :=  *the degree of freedom required to effect change*
 
 ## 1 Madmen in the Halls
 
-a dangerous corporate delusion: the idea that organizations are effective only
+A dangerous corporate delusion: the idea that organizations are effective only
 to the extent that all their workers are totally and eternally busy.
 
 Maybe middle management exists for some reason above and beyond filling the
 space between the top and the bottom of the hierarchy.
 
-It is the middle of the organization where reinvention takes place.
+> It is the middle of the organization where reinvention takes place.
 
 Slack is the time when reinvention happens. It is time when you are not 100
 percent busy doing the operational business of your firm.
@@ -40,14 +42,15 @@ they are, as a group, rather laid-back.
 This highly efficient person doesn’t get cracking right away on anything new
 that comes up, because this highly efficient person is too busy.
 
-It’s possible to make an organization more efficient without making it better.
+> It’s possible to make an organization more efficient without making it better.
+
 That’s what happens when you drive out slack.
 
 ## 3 The Myth of Fungible Resource
 
-fun gi ble (fu j bl) adj. (especially of goods) being of such nature or kind as
-to be freely exchangeable or replaceable, in whole or in part, for another of
-like nature or kind.
+fun-gi-ble *adj* (especially of goods) being of such nature or kind as to be
+freely exchangeable or replaceable, in whole or in part, for another of like
+nature or kind.
 
 you can see how appealing it is to assume that people are fungible.
 
@@ -69,8 +72,8 @@ doing.
 
 ways to split Lamar has to do with the cost he incurs in switching tasks.
 
-There are certain kinds of work that require immersion into the task before
-progress can begin.
+> There are certain kinds of work that require immersion into the task before
+> progress can begin.
 
 jobs like writing, research, analysis, invention, and programming.
 
@@ -86,12 +89,12 @@ Moving a person who had been assigned to a single job to work part-time on a
 second exposes you to a loss of at least six hours per week of that person’s
 time.
 
-For knowledge workers, though, the minimum penalty is 15 percent.
+> For knowledge workers, though, the minimum penalty is 15 percent.
 
 One of the study’s published reports was “Programmer Performance and the
 Effects of the Workplace,” Proceedings of the 8th International Conference on
 Software Engineerin (London: IEEE Computer Society Press, 1985).
-
+ 
 ## 4 When “Hurry Up” Really Means “Slow Down”
 
 From my visits and from anecdotal evidence collected from seminar attendees and
@@ -124,7 +127,7 @@ to be done.
 
 you can’t structure her work in a way that gives her no opportunity for growth.
 
-Growth is essential to Eve, as essential as her paycheck.
+> Growth is essential to Eve, as essential as her paycheck.
 
 manage a small not-for-profit organization where most of the work was done by
 volunteers.
@@ -169,14 +172,15 @@ the paradox of managing Eve: In order to keep control, you have to give it up.
 You have to use your authority so sparingly that no one notices that it’s being
 used.
 
-You have to create a real sense that control is not completely centralized in
-your hands, but spread generously over the whole of your organization.
+> You have to create a real sense that control is not completely centralized in
+> your hands, but spread generously over the whole of your organization.
 
 ## 6 Business Instead of Busyness
 
-sensibly designed-in slack includes all of the following: Flexibility, a
-capacity for ongoing organizational redesign Better people retention A capacity
-to invest
+Sensibly designed-in slack includes all of the following: 
+- Flexibility, a capacity for ongoing organizational redesign 
+- Better people retention 
+- A capacity to invest
 
 Slack represents operational capacity sacrificed in the interests of long-term
 health.
@@ -196,7 +200,7 @@ be essentially as useful as Orin was.
 How long this takes is a function of how unique your domain is, and how
 different it is from the last place that Oliver worked.
 
-Human Capital = Time to get up to speed × (Salary + Overhead) × 50%
+> Human Capital = Time to get up to speed × (Salary + Overhead) × 50%
 
 Thus, if it takes him six months to get up to speed, then your investment in
 his domain knowledge is 50 percent of that, or three times his total monthly
@@ -204,13 +208,13 @@ cost.
 
 when Orin left, your capital loss was, similarly, three person-months.
 
-Aggregate Human Capital and Capital Drain
+> Aggregate Human Capital and Capital Drain
 
 Example: Knowledge-worker staff 30 people Average ramp-up time 6 months Average
 cost per person-month (plus overhead) $7,500 Aggregate human capital (30 × 6 ×
 $7,500 × 50%) $675,000
 
-Human Capital Drain = LOSSOOrin × % staff turnover per month
+> Human Capital Drain = LOSS(Orin) × % staff turnover per month
 
 On projects, the turnover calculus works somewhat differently. First of all,
 the extent of required domain knowledge is larger, since there are two
@@ -247,14 +251,14 @@ Their willingness to spend this found capital outside their own backyard is a
 signal that they have no real vision, no idea of how to grow in the arena that
 they know best.
 
-A penny saved is not a penny earned. At least not all pennies saved.
+> A penny saved is not a penny earned. At least not all pennies saved.
 
 Because the R&D expenditure is investment, trimming it may succeed only in
 moving profit from next year’s bottom line to this year’s.
 
 # Part Two Lost, but Making Good Time
 
-Minimize time Minimize cost
+> Minimize time OR Minimize cost
 
 You have to pick one or the other.
 
@@ -262,7 +266,7 @@ organizational stress looks like nothing more than a sign of deficient slack.
 
 ## 7 The Cost of Pressure
 
-THE HURRY UP ORGANIZATION is under constant pressure.
+> THE HURRY UP ORGANIZATION is under constant pressure.
 
 Meet a deadline and everybody on the team gets 5,000 Advantage Miles,
 redeemable for travel and other goodies. Yawn. It would be different if the
@@ -275,15 +279,25 @@ An increasingly common bit of our organizational folklore holds that pressure
 improves performance and that maximum performance can occur only in the
 presence of maximum pressure.
 
-Lister’s Law
+> Lister’s Law: “People under time pressure don’t think faster.” -- Tim Lister
 
-“People under time pressure don’t think faster.”    —Tim Lister
+Lister’s astounding fact tells us that the galley slave model is entirely wrong
+for knowledge workers. Since they **can’t alter the rate of mental
+discriminations** (basic elements of knowledge work) per second, their
+potential to respond to pressure is severely limited. 
 
-In a healthy knowledge-worker organization, people don’t waste a lot of time
-anyway, since wasted time is an affront to them
+All they can do is
+- Eliminate wasted time  
+- Defer tasks that are not on the critical path  
+- Stay late
+
+> In a healthy knowledge-worker organization, people don’t waste a lot of time
+> anyway, since wasted time is an affront to them
 
 A more realistic model of how pressure impacts performance is, I believe, shown
 in the graph below.
+
+![Tiles](/assets/img/slack/pressure.png)
 
 Here we see that pressure has a fairly limited capacity to reduce delivery
 time, maybe 10 or 15 percent at the most.
