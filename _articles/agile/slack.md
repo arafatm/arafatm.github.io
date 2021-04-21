@@ -300,7 +300,7 @@ in the graph below.
 ![Tiles](/assets/img/slack/pressure.png)
 
 Here we see that pressure has a fairly limited capacity to reduce delivery
-time, maybe 10 or 15 percent at the most.
+time, **maybe 10 or 15 percent at the most**.
 
 In Region I, workers are responding to increased pressure by trimming any
 remaining waste, by concentrating on the critical path, and by staying late.
@@ -320,13 +320,15 @@ key people.
 projects in which the schedule is commonly termed aggressive or highly
 aggressive invariably turn out to be fiascoes.
 
-A bad schedule is one that sets a date that is subsequently missed. That’s it.
+> A bad schedule is one that sets a date that is subsequently missed. That’s
+> it.
 
 The marketing manager, for example, who throws a tantrum to force a new project
 to commit to the one-year schedule has to accept responsibility when the
-project actually takes two. Forcing a project onto an unrealistic schedule is
-dangerous for the company and has to be made dangerous as well for those who
-impose the schedule.
+project actually takes two. 
+
+Forcing a project onto an unrealistic schedule is dangerous for the company and
+has to be made dangerous as well for those who impose the schedule.
 
 ## 9 Overtime
 
@@ -336,20 +338,19 @@ When you’ve all been through it together, and shared an important success,
 there is something profoundly changed about the culture of the organization.
 The energy is still there after the workathon weekend is long past.
 
-The manager who makes effective use of the occasional sprint
+The manager who makes effective use of the occasional sprint needs **impeccable
+timing**, a **flawless sense of what can and can’t be accomplished** over a
+short period
 
-needs impeccable timing, a flawless sense of what can and can’t be accomplished
-over a short period
+And enough **raw leadership talent** to pull the whole affair together.
 
-and enough raw leadership talent to pull the whole affair together.
-
-Finally, such a manager also needs to have a huge reserve of trust to dip into,
-the clear sense shared by all that the call for extraordinary effort is truly
-extraordinary, not likely to be wasted and not likely to become a regular
+Finally, such a manager also needs to have a **huge reserve of trust** to dip
+into, the clear sense shared by all that the call for extraordinary effort is
+truly extraordinary, not likely to be wasted and not likely to become a regular
 fixture.
 
-Sprinting at the end of a marathon makes good sense, but sprinting through the
-whole twenty-six-mile race makes no sense at all.
+> Sprinting at the end of a marathon makes good sense, but sprinting through
+> the whole twenty-six-mile race makes no sense at all.
 
 The sprint-gasp-sprint-gasp marathon would probably take you twice as long to
 complete as a more normally run twenty-six miles.
@@ -361,9 +362,10 @@ Extended overtime is a productivity-reduction technique.
 
 There are four reasons why overtime hurts enough to offset the effect of the
 added hours.
-
-Reduced quality Personnel burnout Increased turnover of staff Ineffective use
-of time during normal hours
+1. Reduced quality 
+2. Personnel burnout 
+3. Increased turnover of staff 
+4. Ineffective use of time during normal hours
 
 Because most companies don’t capitalize their investment in people, they fail
 to note the dollar cost of their lost human capital due to turnover.
@@ -372,7 +374,7 @@ When we measure human capital carefully and use the measurements to give a cash
 quantification to personnel turnover, it often becomes the second or third
 largest cost category.
 
-in Soul of a New Machine, the retrospective of Data General’s
+In *Soul of a New Machine*, the retrospective of Data General’s
 overtime-intensive Eagle Project, the author, Tracy Kidder, reports that every
 single member of the Eagle team was gone within a month of the end of the
 project.
@@ -383,7 +385,7 @@ continue working for the kind of company that had so used them.
 I’m much more impressed with a manager who never breaks a sweat, who never
 looks busy at all.
 
-Overworked managers are doing things they shouldn’t be doing.
+> Overworked managers are doing things they shouldn’t be doing.
 
 When managers are overworked, they’re doing something other than management;
 the more they allow themselves to be overworked, the less real management gets
@@ -412,10 +414,9 @@ letters,
 Today those same managers do their own typing, all made possible by that
 laborsaving device the word processor.
 
-The word processor is a laborsaving device
-
-but it has also served a face-saving role, enabling us to transfer a class of
-what was previously considered clerical work up to higher-paid workers.
+The word processor is a laborsaving device but it has also served a face-saving
+role, enabling us to transfer a class of what was previously considered
+clerical work up to higher-paid workers.
 
 Use of face-saving schemes to push clerical work upward (usually to managers or
 to knowledge workers) has given us organizations that are critically starved of
@@ -426,9 +427,9 @@ much, the organization is a big winner.
 
 ## 12 The Second Law of Bad Management
 
-First Law of Bad Management If something isn’t working, do more of it.
+> First Law of Bad Management: If something isn’t working, do more of it.
 
-Second Law of Bad Management Put yourself in as your own utility infielder.
+> Second Law of Bad Management: Put yourself in as your own utility infielder.
 
 I have known managers who took on as many as three full jobs reporting to their
 own management position.
@@ -442,7 +443,7 @@ them that do this work.
 Good management is the lifeblood of the healthy corporate body. Getting rid of
 it to save cost is like losing weight by giving blood.
 
-management is all nuance.
+> Management is all nuance.
 
 Management is hard because the skills are inherently difficult to master. Your
 mastery of them will affect your organization more than anything going on under
@@ -450,19 +451,15 @@ you.
 
 ## 13 Culture of Fear
 
-IN THE NAME OF THE ROSE, Umberto Eco’s
-
-Aristotle’s Treatise on Comedy.
-
 “Laughter, for a few minutes, distracts the villein [common person] from fear.
 But law is imposed by fear, whose true name is the fear of God. This book could
-strike the Luciferine spark that would set a new fire to the whole world.”
+strike the Luciferine spark that would set a new fire to the whole world.” --
+In The Name of the Rose, Umberto Eco
 
 “What would we be, we sinful creatures, without fear, perhaps the most
 foresighted and most loving of the divine gifts?”
 
 Among the characteristics of the Culture of Fear organization are these:
-
 1. It is not safe to say certain things
 2. In fact, being right in your doubts proves that you must be the reason that
    the fondest wishes of those above you did not come true.
@@ -482,16 +479,17 @@ Among the characteristics of the Culture of Fear organization are these:
    organization.
 2. Litigation can be a consequence of an intrinsically flawed contract.
 
-In a healthy organization, a certain amount of failure is okay. At Microsoft,
-for example, there has long been an almost official policy of “sink, then
-swim.” People are loaded down with so much responsibility that they sink
-(fail). Then they have a chance to rest up, to analyze and modify their own
-performance. Finally, they are loaded again with a comparable amount of
+In a healthy organization, **a certain amount of failure is okay**. 
+
+At Microsoft, for example, there has long been an almost official policy of
+“sink, then swim.” People are loaded down with so much responsibility that they
+sink (fail). Then they have a chance to rest up, to analyze and modify their
+own performance. Finally, they are loaded again with a comparable amount of
 responsibility, but this time they succeed. If they don’t sink the first time,
 that just shows they weren’t challenged enough.
 
-Healthy companies know that they have to allow people to fail without assessing
-blame.
+> Healthy companies know that they have to allow people to fail without
+> assessing blame.
 
 They have to do that or else no one will take on anything that’s not a sure
 bet.
@@ -514,14 +512,17 @@ side.
 
 Someone in authority has trumpeted, “Don’t tell me it can’t be done by April. I
 am the vice president!” And so authority is used to trump reality … briefly.
+
 Those lower down on the totem pole suppress their reservations and try to put
 on a good face, for a while at least.
 
 ## 15 Process Obsession
 
-STANDARDS are a very good thing. Consider: Your new Lucent telephone uses the
-exact same modular connector (RJ-11 in the United States) to plug into the line
-jack as your older Panasonic phone used.
+STANDARDS are a very good thing. 
+
+Consider: Your new Lucent telephone uses the exact same modular connector
+(RJ-11 in the United States) to plug into the line jack as your older Panasonic
+phone used.
 
 The standards we depend on to give us choice in our lives are all product
 standards. Almost without exception, they are used to constrain the interface
@@ -531,7 +532,7 @@ Frederick Winslow Taylor. His 1911 book, The Principles of Scientific
 Management, set out to do for the human aspect of factory work what the
 principle of interchangeable parts had done for rifles half a century earlier.
 
-Taylorism called for rigorous standardization of manual factory activity
+Taylorism called for rigorous standardization of manual factory activity. 
 
 I shall argue below that it is particularly ill suited to knowledge work,
 
@@ -545,10 +546,11 @@ There is human capital in factory workers too, an ever-increasing amount;
 preservation of this factory human capital may well require us to rethink the
 benefits of Taylorism even in the domain for which it was intended.
 
-Knowledge work is a domain for which Taylorism was never intended. Knowledge
-work is just not very like factory work. There is no assembly line and there
-never will be, there aren’t many fixed rules, values are more subjective,
-measurements more dubious, judgment is all-important.
+> Knowledge work is a domain for which Taylorism was never intended. 
+
+Knowledge work is just not very like factory work. There is no assembly line
+and there never will be, there aren’t many fixed rules, values are more
+subjective, measurements more dubious, judgment is all-important.
 
 In a study of workers at Bell Telephone Laboratories, interviewers asked
 engineers in one division to identify stars among their peers.
@@ -556,9 +558,9 @@ engineers in one division to identify stars among their peers.
 Surprisingly, the stars approached their work in ways that were not very
 different from the way their peers did.
 
-But there were marked differences in how they managed their networks of
-connections, liaisons to fellow workers whose cooperation was required to get
-anything done.
+> But there were marked differences in how they managed their networks of
+> connections, liaisons to fellow workers whose cooperation was required to get
+> anything done.
 
 Each time you add automation, you choose some particularly mechanical component
 of the work
@@ -586,12 +588,12 @@ little service and too much lip service.
 When there is neither time nor staff to cope with work that runs more slowly
 than expected, then the cost of lateness is paid out of quality.
 
-Product quality has almost nothing to do with defects or their lack.
+> Product quality has almost nothing to do with defects or their lack.
 
-real quality is far more a matter of what it does for you and how it changes
+Real quality is far more a matter of what it does for you and how it changes
 you than whether it is perfectly free of flaws.
 
-that browser, even though it crashes maddeningly often, should be considered a
+That browser, even though it crashes maddeningly often, should be considered a
 quality
 
 Its quality is most of all a function of its usefulness.
@@ -603,10 +605,10 @@ usefulness, market impact, change of customer work modes, etc.
 Suppose you were to read in the newspaper that your country’s brand-new air
 traffic control system was to be developed on a “highly aggressive” schedule.
 
-Quality takes time. Even quality in the “defects only” sense takes time.
+> Quality takes time. Even quality in the “defects only” sense takes time.
 
-I’d much prefer the opposite, in which the Quality Assurance organization did
-its work only at the beginning of the project, assuring reasonableness of
+I’d much prefer the opposite, in which the **Quality Assurance organization did
+its work only at the beginning of the project**, assuring reasonableness of
 schedule and work procedures, and then disappeared for the rest.
 
 If you buy the notion that quality takes time, then it won’t come as any
@@ -624,14 +626,14 @@ focused all available resources on a much-reduced iMac product set.
 
 ## 17 Efficient and/or Effective
 
-THE OVERSTRESSED ORGANIZATION is so busy making itself efficient that it has
+The overstressed organization is so busy making itself efficient that it has
 clean forgotten how to be effective. The two are not at all the same.
 
 You’re efficient when you do something with minimum waste.
 
 And you’re effective when you’re doing the right something.
 
-Yogi Berra’s words, “We’re lost, but we’re making good time.”
+> Yogi Berra’s words, “We’re lost, but we’re making good time.”
 
 Directing an entire organization is hard. Seeming to direct it, on the other
 hand, is easy. All you have to do is note which way the drift is moving and
@@ -643,7 +645,7 @@ result of making them risk-averse.
 
 ## 18 Management by Objectives
 
-MANAGEMENT BY OBJECTIVES is a fad from the 1950s, now largely discredited. But
+Management by objectives is a fad from the 1950s, now largely discredited. But
 it hasn’t gone away.
 
 MBO is always based on stasis, the organization’s present steady state. MBO
@@ -670,7 +672,7 @@ satisfaction.
 
 # Part Three Change and Growth
 
-You can’t grow if you can’t change at all.
+> You can’t grow if you can’t change at all.
 
 Part Three turns to the subject of making organizational change—and hence
 growth—possible.
@@ -690,7 +692,7 @@ are.”
 It’s nontrivial for a company and everyone in it to know “who we are.” A little
 bit easier, however, is to know “who we aren’t.”
 
-Without vision, a company can react, but it can’t pro-act.
+> Without vision, a company can react, but it can’t pro-act.
 
 Without vision, flexibility is just an abstraction. It is a measure of what we
 could do if we ever got the gumption to try it (but we haven’t and we won’t).
@@ -700,7 +702,9 @@ characteristics:
 
 > 1. There has to be an element of present truth to the assertion.
 
-The challenge “Run a four-minute mile because that’s what we are all about ” would not inspire most of us because we wouldn’t see the present truth of the “what we’re all about” part.
+The challenge “Run a four-minute mile because that’s what we are all about ”
+would not inspire most of us because we wouldn’t see the present truth of the
+“what we’re all about” part.
 
 > 2. There is always an element of proposed future truth in the statement.
 
@@ -723,11 +727,12 @@ There’s LEADERSHIP, and then there’s “leadership.” The first conveys vis
 engenders confidence, and encourages striving toward common goals. The other
 doesn’t.
 
-Leadership is the ability to enroll other people in your agenda. Meaningful
-acts of leadership usually cause people to accept some short-term pain (extra
-cost or effort, delayed gratification) in order to increase the long-term
-benefit. We need leadership for this, because we all tend to be short-term
-thinkers.
+> Leadership is the ability to enroll other people in your agenda. 
+
+Meaningful acts of leadership usually cause people to accept some short-term
+pain (extra cost or effort, delayed gratification) in order to increase the
+long-term benefit. We need leadership for this, because we all tend to be
+short-term thinkers.
 
 Lack of power is a great excuse for failure, but sufficient power is never a
 necessary condition of leadership. There is never sufficient power.
@@ -737,11 +742,11 @@ leadership.
 
 ## 21 Dilbert Reconsidered
 
-the geeky guy with the pointed-up necktie—is no hero. Dilbert is a jerk.
+> The geeky guy with the pointed-up necktie is no hero. Dilbert is a jerk.
 
 He keeps his head down, doesn’t object to even the most absurd of corporate
-absurdities, never makes waves, never puts his job on the line. It’s Dilbert
-and his ilk who make stupid management possible.
+absurdities, never makes waves, never puts his job on the line. **It’s Dilbert
+and his ilk who make stupid management possible**.
 
 “Yes, but are you like Dilbert?” Are you keeping your head down? Are you
 accepting senseless direction when it’s offered? Are you letting the
@@ -761,7 +766,7 @@ rotating function.
 
 ## 22 Fear and Safety
 
-successful organizational change” means proactive change, not reactive change.)
+> In a successful organizational "change” means proactive change, not reactive change.
 
 Since people define themselves—in part at least—by what they do professionally,
 changing what they do gets deep into the matter of personal definition. This is
@@ -784,7 +789,7 @@ gains that person more respect, not less.
 
 ## 23 Trust and Trustworthiness
 
-Without this gaining of trust, there is no leader, and no real turnaround.
+> Without this gaining of trust, there is no leader, and no real turnaround.
 
 You gain trust by demonstrating trustworthiness.
 
@@ -809,19 +814,20 @@ those beneath you is to give the same in equal measure.
 
 ## 24 Timing of Change
 
-Doing the “right” thing at the wrong time is worse than taking no action at
-all.
+> Doing the “right” thing at the wrong time is worse than taking no action at all.
 
-(1) a set of sensible approaches to change introduction
-
-(2) a culture that is not change-phobic.
-
-(3) proper timing.
+To overcome resistance to change, you need
+1. a set of sensible approaches to change introduction
+2. a culture that is not change-phobic.
+3. proper timing.
 
 The Goliath-like resistance to change is not exactly logical; it’s much more
 likely to be emotional.
 
-The period of growth is one in which people are naturally less
-change-resistant. It is therefore the optimal time to introduce any change.
+
+> The period of growth is one in which people are naturally less
+> change-resistant. It is therefore the optimal time to introduce any change.
+
+![Time for Change](/assets/img/slack/change.png)
 
 ## 25 What Middle Management Is There For
