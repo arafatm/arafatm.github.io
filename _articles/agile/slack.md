@@ -210,9 +210,11 @@ when Orin left, your capital loss was, similarly, three person-months.
 
 > Aggregate Human Capital and Capital Drain
 
-Example: Knowledge-worker staff 30 people Average ramp-up time 6 months Average
-cost per person-month (plus overhead) $7,500 Aggregate human capital (30 × 6 ×
-$7,500 × 50%) $675,000
+Example: 
+- Knowledge-worker staff 30 people 
+- Average ramp-up time 6 months 
+- Average cost per person-month (plus overhead) $7,500 
+- Aggregate human capital (30 × 6 × $7,500 × 50%) = $675,000
 
 > Human Capital Drain = LOSS(Orin) × % staff turnover per month
 
