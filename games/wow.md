@@ -1,0 +1,8 @@
+- classic: alliance
+- BC: Horde leaning
+- WotLK: Alliance heavy
+- Cata: Horde Heavy
+- MoP: Horde Heavy
+- WoD
+- Legion: Alliance leaning
+- BfA: Horde leaning
