@@ -1,3 +1,4 @@
+
 ## Suggested factions for each expansion
 
 - classic: alliance
@@ -8,6 +9,10 @@
 - WoD
 - Legion: Alliance leaning
 - BfA: Horde leaning
+
+## Reading Order of Books
+
+https://www.icy-veins.com/forums/topic/20998-reading-order-of-warcraft-books-and-novels/
 
 ## TLDR Lore for each Expansion
 
