@@ -1,4 +1,8 @@
-#
+# GTA Online
+
+## GTA Online Mega Guide
+
+https://www.reddit.com/r/gtaonline/comments/7ohgg5/the_gta_online_mega_guide/
 
 ## [GTA: Online Solo Rags to Riches Guide May 2018 - Google Docs](https://docs.google.com/document/d/125OHkxjdfyKawqMEa9TKYI1p43EBtMO15z90Dj0TCkI/edit)
 
@@ -51,8 +55,8 @@ The reason level 5 is so important is because it unlocks the first few
 simeon missions (and lowrider lamar missions). 
 
 The 2 simeon missions I suggest doing once level 5 are 
-- [ ] Where Credit’s Due
-- [ ] Ballas to the Wall 
+- [ ] **Where Credit’s Due**
+- [ ] **Ballas to the Wall** 
 
 Because they are easy to do solo with there being only 1 car in each. 
 
@@ -84,7 +88,7 @@ Recommended Purchases:
 This stage requires you have at least $50,000 our goal(s) for this stage can be branched off in a few ways. (List below is in no order.)
 1. Save $1,000,000 to buy a CEO office.
 2. Save $700,000 to buy a kuruma. (This is obsolete if you are a returning player and own the dukes of death).
-3. ave around $1,775,000 to buy a buzzard. (optional)
+3. Save around $1,775,000 to buy a buzzard. (optional)
 
 Number 1 is absolutely crucial in order to advance to the next stages and the
 other 2 can be avoided if you want. 
@@ -110,8 +114,13 @@ than done.)
 The real meat and potatoes of this stage are something called VIP missions,
 this stage assumes you either have a kuruma or no kuruma but no buzzard. 
 
-If you have a buzzard follow the VIP wave (Headhunter>Hostile
-Takeover>Headhunter>Sightseer>Repeat). 
+If you have a buzzard follow the **VIP wave
+- Headhunter
+- Hostile
+- Takeover
+- Headhunter
+- Sightseer
+- Repeat** 
 
 For others, the idea of this step is you want to do sightseer and headhunter,
 which are VIP missions that take around 5-10 minutes in cars. Both of these
@@ -119,7 +128,7 @@ missions should be done in invite only lobbies to minimize risk, the best part
 of these missions is there are no loading screens unlike in contact missions.
 
 **Headhunter** - 4 enemies will spawn around either the city or the county
-depending where you are (always be in the city when starting this) 2 of them
+depending where you are (**always be in the city when starting this**) 2 of them
 are always in some lightly armoured cars and 2 are stationary in a few set
 locations in which they vary each time the mission starts. Your first step is
 to kill the 2 drivers first in case they go too far, the best way to do this is
@@ -452,3 +461,6 @@ General Things:
 - https://www.youtube.com/watch?v=pr4HoN0Mo7Q - I based a lot of this
   information off of the stuff I learned from gamesauce to props to him, great
   youtuber with great tips.
+
+## GTAO: Solo Rags to Riches
+
