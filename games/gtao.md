@@ -1,3 +1,12 @@
+---
+layout: page
+title: GTA Online
+permalink: /gta/
+---
+
+* TOC
+{:toc}
+
 # GTA Online
 
 ## GTA Online Mega Guide
@@ -15,7 +24,8 @@ Index
 
 ### Stage 0: Broke, Homeless & Jobless
 
-SKIP THIS STAGE IF YOU HAVE ACCESS TO BASIC CONTACT MISSIONS. (GERALD METH RUNS/SIMEON MISSIONS/ETC)
+SKIP THIS STAGE IF YOU HAVE ACCESS TO BASIC CONTACT MISSIONS. (GERALD METH
+RUNS/SIMEON MISSIONS/ETC)
 
 Goals for this stage: 
 - Reach level 5
@@ -51,8 +61,8 @@ This is the step a decent amount of people should be at, this assumes that you
 do not have any home/garage and have little to no money but are at least level
 5. 
 
-The reason level 5 is so important is because it unlocks the first few
-simeon missions (and lowrider lamar missions). 
+The reason level 5 is so important is because it unlocks the first few simeon
+missions (and lowrider lamar missions). 
 
 The 2 simeon missions I suggest doing once level 5 are 
 - [ ] **Where Credit’s Due**
@@ -85,9 +95,11 @@ Recommended Purchases:
 
 ### Stage 2: Contracted Hitman
 
-This stage requires you have at least $50,000 our goal(s) for this stage can be branched off in a few ways. (List below is in no order.)
+This stage requires you have at least $50,000 our goal(s) for this stage can be
+branched off in a few ways. (List below is in no order.)
 1. Save $1,000,000 to buy a CEO office.
-2. Save $700,000 to buy a kuruma. (This is obsolete if you are a returning player and own the dukes of death).
+2. Save $700,000 to buy a kuruma. (This is obsolete if you are a returning
+   player and own the dukes of death).
 3. Save around $1,775,000 to buy a buzzard. (optional)
 
 Number 1 is absolutely crucial in order to advance to the next stages and the
@@ -128,8 +140,8 @@ missions should be done in invite only lobbies to minimize risk, the best part
 of these missions is there are no loading screens unlike in contact missions.
 
 **Headhunter** - 4 enemies will spawn around either the city or the county
-depending where you are (**always be in the city when starting this**) 2 of them
-are always in some lightly armoured cars and 2 are stationary in a few set
+depending where you are (**always be in the city when starting this**) 2 of
+them are always in some lightly armoured cars and 2 are stationary in a few set
 locations in which they vary each time the mission starts. Your first step is
 to kill the 2 drivers first in case they go too far, the best way to do this is
 to shoot them from the back glass, just kill the driver and drive off. You will
@@ -160,14 +172,14 @@ you can beeline to a 1.8 million dollar buzzard, reasoning below. (I don’t
 recommend beelining the buzzard yet.)
 
 Recommended Purchases:
-- The kuruma if you don’t have a dukes of death from being a returning player.
+- The **kuruma** if you don’t have a dukes of death from being a returning player.
 - This isn’t really recommended at this stage but if you are comfortable with
   the extra grinding then a buzzard to make VIP missions much easier and far
   less tedious. And overall make your GTA life less tedious when travelling.
-- If you are ranked high enough an AP pistol is far more accurate than the
+- If you are ranked high enough an **AP pistol** is far more accurate than the
   micro SMG and can have a bigger mag, this is a must have if you use the
   kuruma a lot.
-- Don’t buy a high end apartment, this guide is tailored to solo players and
+- **Don’t buy a high end apartment**, this guide is tailored to solo players and
   heists are really a waste of time if you rely on randoms even with the
   discount on the kuruma.
 - At the end of the day it's all about saving your way to the top and not
@@ -185,14 +197,14 @@ death).
 this stage so again you can branch off. You should end up finishing all of
 these goals by the end of this stage.
 
-1. Buy a vehicle warehouse. The vehicle warehouse is (arguably) the most
+1. **Buy a vehicle warehouse**. The vehicle warehouse is (arguably) the most
    profitable and lowest risk way of making money, but the startup is super
    expensive for what you earn at this point with the lowest vehicle warehouse
    costing 1.5 million and still being in a terrible location.
-2. Buy a small cargo warehouse and work your way up to owning only a medium and
+2. **Buy a small cargo warehouse** and work your way up to owning only a medium and
    a large. Cargo is also a great way to make money with a very high risk but
    great return once set up right. 
-3. Buy a buzzard 1.8 million is a very steep price for what you are earning
+3. **Buy a buzzard 1.8 million** is a very steep price for what you are earning
    right now but it makes doing both 1 and 2 so much easier and faster and in
    GTA time is money.  (This should only be done when 1 or 2  has been
    completed.) Save up for the money required for stage 5 which can be found in
@@ -268,7 +280,7 @@ completing the cargo section of this stage then you can go for whatever one you
 want the only difference is location, I suggest the LSIA location due to its
 big landing area, manageable price and access to the highway.
 
-Upon purchasing the cheapest warehouse you should be damned near broke and the
+Upon purchasing the cheapest warehouse you should be **damned near broke** and the
 setup for the vehicle warehouse is essential to maximise profits, make sure you
 stay broke (broke meaning 100k or less) so you can get to $0 easily, which is
 ironic because this is a money making guide. Another method is swapping
@@ -462,5 +474,312 @@ General Things:
   information off of the stuff I learned from gamesauce to props to him, great
   youtuber with great tips.
 
-## GTAO: Solo Rags to Riches
 
+## Steam Community :: Guide :: Advanced Vehicle Importing/Exporting
+
+[Source](https://steamcommunity.com/sharedfiles/filedetails/?id=864976309)
+
+
+> Making sure you get maximum profit from selling Vehicle cargo...
+
+### Introduction
+
+I'm sure that some of this stuff has been already covered in other guides, but
+here I'll skip most of completly useless things that everyone knows. Only
+in-depth information.
+
+Step 1: Empty Public Session
+
+This is what most of players fail to understand  
+**NEVER EVER DO VEHICLE MISSIONS WITH RANDOMS**  
+
+"But I need help, I get bored from playing alone", etc etc - you will tell me.
+Well, if you feel like that NPCs with their aimbots aren't enough for you, go
+ahead and play in "real" Public sessions. Those who want profits will rather
+stick with soloing.
+
+Here I'll show possibly the easiest way of getting your own session without
+port-blocking, etc. and can be done quickly as many times as you wish. Downside
+is, randoms can still join you but with a very low chance. Also, if you invite
+your friends to these sessions, it's very likely that amount of randoms joining
+will increase. You can always "disconnect" once again however.
+
+Some say that it doesn't work unless you set GTA.exe to High Priority (yet I
+don't see a reason why you haven't done that by now).  In order to do this
+click on Process in Task manager -> find GTA5.exe -> right click it -> Set
+Priority -> High
+
+1. Minimize the game by pressing Alt+Tab and open Task Manager. In Performance
+Category click Resource Monitor
+[![](https://steamuserimages-a.akamaihd.net/ugc/92724928152642460/69341E617AD700D3A9B4BFEBA4423706D1715BBA/)](https://steamuserimages-a.akamaihd.net/ugc/92724928152642460/69341E617AD700D3A9B4BFEBA4423706D1715BBA/).
+
+2. Find GTA5.exe, right click on it and Supsend Process, confirm it
+[![](https://steamuserimages-a.akamaihd.net/ugc/92724928152642655/58311E2F81AE17BB9434D262D623B2A15AF3936A/)](https://steamuserimages-a.akamaihd.net/ugc/92724928152642655/58311E2F81AE17BB9434D262D623B2A15AF3936A/).
+3. Wait a few seconds and Resume Process, same way
+[![](https://steamuserimages-a.akamaihd.net/ugc/92724928152643151/BE35159D17A0DF163A87B560724E7931C7948C86/)](https://steamuserimages-a.akamaihd.net/ugc/92724928152643151/BE35159D17A0DF163A87B560724E7931C7948C86/).
+4. You're done here, open the game again and you'll see everyone has left the
+session.
+
+Getting Only High-end Cars
+
+Yes, it is possible.
+
+What you need to do is avoid selling Standard and Mid range vehicles, just let
+them stay at your warehouse. Once you collect all 20 (10 Std. and 10 Mid) of
+them (without duplicate car models), you will source them no more.
+
+Game's logic for this explained easily:  Car X in stock? No - car X can be
+stolen. Yes ->  More than 1 of Car X in stock? No - there won't be duplicates
+of any cars. Yes - any of 32 cars' duplicate can be stolen
+
+Vehicle Collections that Are Worth It
+
+There're 10 total collections, but only 2 of them will really increase your
+payout, here's why.
+
+If you're following my advice of sourcing only high-end vehicles, each car will
+bring you roughly 80k(minus repair costs). Sourcing Std and Mid Range vehicles
+gives only 30k and 50k respectively.
+
+**End of Empires** collection: Z-type and Roosevelt - up to 180k  Both high-end
+cars so you don't end up sourcing Std and Mid Tier. You get only 20k extras
+from it, but hey, every little helps.
+
+**Uninsurable** collection: X80, T20, Osiris - 275k  The collection you should
+aim for - 35k extras and no Std/Mid tier cars again.
+
+The 4-car collection that ultimately should give you the best money doesn't do
+so.  
+
+**Birds of Paradise** collection of Cheetah, Tyrus, FMJ and Entity brings you
+totally: 80x2 + 50x2 + 50 thousands. That is 310k from 1 sale.  However, for
+selling 4 High-end cars you get 100x4 - 20x4 = 320k.  Still, it might be worth
+for those playing with friends due to increased associates' payout.
+
+All other collections bring way less money compared to selling high-end cars
+exclusively.
+
+What's also worth mentioning, when you sell a Mid tier car, you will source new
+Mid tier cars and no one guarantees you instantly get those which are missing
+from collection. That leads to further loss of income.
+
+Starting an Import mission
+
+No matter how easy that might sound, here're a few tips:  Always listen to what
+your assistant tells you. This way you'll be able to find out what to expect.
+Open map before moving away from your office. It's usually possible to tell
+which type of mission you have just by waypoint.  For standard, mid and high
+end cars there're 2, 3 and 4 waves of NPC enemies respectively, it will come
+handy.
+
+For names of all streets, [use this
+map](https://steamcommunity.com/linkfilter/?url=https://drive.google.com/file/d/0B6W5meCdWRoEamlIcUYzTjMtYk0/view)\[drive.google.com\].
+(8.1k x 8.1k pixels, 21MB)
+
+BELOW YOU WILL FIND A LIST OF ALL TYPES OF MISSIONS AND TIPS FOR THEM
+
+### Mission: Tailgating kuruma
+
+Safe way
+
+Doing it the correct way and avoid being detected. Follow the car to its destination, self-explanatory.  
+At the spot enemies won't be ready for you, but doesn't help much. Dealing with those korean aimbotters is very hard. Always be in cover. Use SMGs as they have more accuracy and aim for head - makes it a little easier.
+
+**Attackers after you steal:** None
+
+Fast way
+
+Going for a faster completition, you'll encounter enemies after you steal the cargo. It's your choice whether to spend extra 3 minutes or 2-5k in repair costs.  
+Take a heli and fly right behind the car. It won't take long for you to be detected. Using a car here is possible too, but it's less likely you lose the kuruma if you're in the air. Deal with the enemies using the same method as for safe way.
+
+**Attackers after you steal:** 2 kurumas each wave
+
+### Mission: Robbing Arms Dealer
+
+**Locations:** Milton Road, Lake Vinewood, Sam Austin Drive
+
+Waypoint will take you to a mansion where you have to silently kill all the guards. Make sure you use **SUPRESSED** weapon. You're better off not using sniper rifle, because its bullets pass through targets and can alert other guards right after you kill the one you need. Once the key is dropped, take it and run to the car. Don't bother killing other guards.
+
+**Attackers after you steal:**  
+None if you took the key silently  
+Schafter V12 and Supervolito each wave
+
+Here're video walkthroughs found on youtube. Not made by me.
+
+**Milton Road**
+
+**Lake Vinewood**
+
+**Sam Austin Drive**
+
+### Mission: Stunt Jump
+
+**Locations:** Lago Zancudo (near military base), Vinewood Hills, Vinewood Sign.  
+In my opinion, the easiest mission to complete without alerting anyone.
+
+Make sure to watch the map and use stealth moving (press Ctrl). You'll see 4 guards, only 1 is actually moving. **NEVER SHOOT THEM**, it's better to sneak around to find the safest way to the car. Only the walking guard has his eyes on the car itself, but only when he's close to the car. After he turns away, you're good to take the ride.  
+**Attackers after you steal:**  
+None if you haven't alerted the guards  
+Schafter V12 and Supervolito each wave if you have
+
+### Mission: Photoset
+
+**Locations:** RON Wind Farm, Grand Senora Desert, Vinewood Beach
+
+A straight-forward mission, there's only 1 way you can do it: Kill all 5 guards, take the car.
+
+**Attackers after you steal:** Schafter V12 and Supervolito each wave
+
+### Mission: Cargobob
+
+**Locations (cargobob/vehicle):** Lago Zancudo/Paleto Cove, Humane Labs/out in
+the ocean, West from Zancudo, NOOSE Facility/East of Davis Quartz
+
+No doubt the most annoying mission. Yet it's possible to finish it with 0
+repair costs. There're lots of possible ways you can do it, but I'll only
+explain the most effective (for me) here.
+
+1. Obtain the cargobob. You can call your Pegasus cargobob as well (I suggest
+   flying other heli/driving a fast car to Sandy Shores and calling it only
+   there, cause it flies really slow)  1.1 Go to the yellow point, there're 4
+   hostile NPCs there, just kill them all.  1.2 Call Lester to lose cops  
+2. Fly the Bob to the waypoint, unless you have the pickup location far away
+   from land(near Zancudo), land it on the nearest island. For Zancudo pickup
+   you gotta act fast and precise, skip step 3  
+3. Get out of the heli and use sniper rifle to kill enemies you can (6 of them
+   total)  
+4. Take the bob and hook up the vehicle.  
+5. Change your destination to the nearest road or beach. You'll have Buzzards
+   spawning once you get away from the pickup location.  
+6. Safely unhook the vehicle and land the bob around 100-150m away from the
+   car.  
+7. Now you'll need your aiming skill, leave the heli and use it for cover.
+   Buzzards got aimbot-like aim but have a long delay between shooting. You
+   need to kill the pilot as soon as possible, it shouldn't be hard since
+   Buzzards have their cockpit very exposed. Using Carbine or Advanced Rifle
+   will likely help you, it might be more effective than rockets if you can
+   aim.  7.1 If your car is fast enough (such as Reaper, Osiris, T20, etc) you
+   can try to enter them as soon as you shoot down first 2 Buzzards and go
+   full-throttle to your warehouse. It will only work if you can drive at full
+   speed without crashing.  
+8. Otherwise, you'll need to clear all the waves in order to keep repair costs
+   at the minimum.
+
+**Attackers after you steal:** 2 Buzzards each wave
+
+### Mission: Point2Point Race
+
+**Location (start/finish):** Little Seoul/Paleto Cove, East
+Vinewood/Lighthouse, Richman/Sandy Shores
+
+Really easy to complete, might be harder to escape. You'll need a fast car and
+ability to drive (Stock Elegy you can see at the start is more than enough).
+After you take the car, the NPCs you're dealing with will have fast cars, so it
+might be a good idea to get out of the car and shoot them before proceeding to
+the warehouse.
+
+**Attackers after you steal:** 2 Sultan RS's or 2 Banshee 900R's
+
+### Mission: Car Meet
+
+**Location:** Vinewood(east from Eclipse), Vinewood bowl.
+
+You'll see multiple other cars alongside yours and around 10 NPCs. Kill them
+all, BUT **DO NOT USE EXPLOSIVES** as you are very likely to trigger chain
+reaction and explode your cargo vehicle. Note that you can't store any of other
+vehicles present during the mission as your personal
+
+**Attackers after you steal:** Dominator and Futo each wave
+
+### Mission: Nasty Business
+
+**Location:** Route 66, Invetion Court, East Vinewood.
+
+Can be easily done without repair costs. Only 5 cops around the location, kill
+them all and immediately call Lester. Use Remove wanted level ONLY after you
+enter the car.
+
+**Attackers after you steal:** Only police
+
+### Mission: Vehicle on the Move
+
+**Location:** Anywhere
+
+You need to know when the car will stops to successfully steal it:  It will
+stop if there's an NPC vehicle ahead of it, you can block that one NPC using
+your own vehicle  It will stop at traffic lights
+
+The car won't stop:  At stop signs  Due to you or your vehicle in its way
+
+**Attackers after you steal:** None, chance of Wanted level
+
+### Mission: Find the Car by a Photo
+
+**Locations:**
+[Here](https://steamcommunity.com/linkfilter/?url=http://imgur.com/a/Gnrnu)\[imgur.com\]
+
+Securoserv will send you a message with a picture and approximate location of
+the car, for more precise spot use the album above.
+
+**Attackers after you steal:** None, chance of Wanted level
+
+### Mission: Police stop
+
+**Locations:** North Calafia Way, Mount Haan Road, Tongva Drive
+
+A quick mission, approach the target and kill 2 cops. Call Lester and use
+Remove Wanted Level only after you enter the vehicle you need.
+
+**Attackers after you steal:** None, Wanted Level
+
+### Mission: Circuit Race
+
+**Location:** Vinewood Racetrack, LSIA, SS airfield
+
+You'll need a car for this one, approach the racers and shoot the driver of the
+car. If you feel like you can aim well, take a sniper rifle and stay by the end
+of a straight line of the track, 1 shot will be enough to kill the driver.
+
+**Attackers after you steal:** None
+
+### Mission: Hijacked car
+
+**Locations:**
+[Richman](https://steamcommunity.com/linkfilter/?url=http://i.imgur.com/neKoi0v.jpg)\[i.imgur.com\],
+[Joshua
+Road](https://steamcommunity.com/linkfilter/?url=http://i.imgur.com/FA10TTB.jpg)\[i.imgur.com\],
+[Grand Senora
+Fwy](https://steamcommunity.com/linkfilter/?url=http://i.imgur.com/l9f1hMA.jpg)\[i.imgur.com\]
+
+On the pictures yellow arrow marks the car, red area is where you can snipe the
+driver from. Once you kill the driver, you get wanted level. At this point it's
+better to KYS and respawn without heat. Before entering vehicle call Lester and
+use Remove Wanted Level only after you're in the car.
+
+However, you can still take a fast car, get ahead of driver and shoot him. It
+might give you extra 1-2k in repair costs, but it's still faster
+
+**Attackers after you steal:** None, Wanted Level
+
+### Mission: Normal/Rigged car
+
+**Location:** Palomino Ave, Gentry Lane, North Rockford Dr, Great Ocean
+Highway, Nikola Place, and some other locations I can't recall.
+
+There will be no enemies, but I suggest putting the waypoint on your warehouse
+so that you know the distance. If the car has a bomb, keep the speed over 90
+KPh / 56 MPh. Average distance you'll clear during 2 mins at lowest possible
+speed is 4KM / 2.5miles, so plan the route considering that fact
+
+**Attackers after you steal:** None, chance of wanted level if the car doesn't
+have a bomb
+
+### Mission: Car with Bodyguards
+
+**Locations:** Same as for Normal/Rigged car
+
+There're no walkarounds for this one, just kill the NPCs and take the vehicle
+
+**Attackers after you steal:** Schafer V12 and Supervolito each wave
+
+Exporting Vehicles Without Loss
