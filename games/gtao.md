@@ -1,13 +1,13 @@
 ---
+category: games
+tags: gta
 layout: page
-title: GTA Online
 permalink: /gta/
+title: GTA Online
 ---
 
 * TOC
 {:toc}
-
-# GTA Online
 
 ## GTA Online Mega Guide
 
