@@ -783,3 +783,153 @@ There're no walkarounds for this one, just kill the NPCs and take the vehicle
 **Attackers after you steal:** Schafer V12 and Supervolito each wave
 
 Exporting Vehicles Without Loss
+## r/gtaonline - [GUIDE] Contact missions: payout, difficulty and other recurring questions
+
+[Source](https://www.reddit.com/r/gtaonline/comments/663nnw/guide_contact_missions_payout_difficulty_and/)
+
+Since [**Contact missions are getting double $ and RP rewards through May
+1**](http://www.rockstargames.com/newswire/article/60181/Duke-O-Death-Comes-to-GTA-Online-Double-GTA-RP-Contact-Missions-More),
+I thought it'd be useful to collect recurrent questions & tips in one thread.
+If you find someone asking one of those usual question ("which mission pays
+more" and so on), don't hesitate to direct them to this thread, or even
+copy/paste the answer from here.
+
+Before we get to the FAQ proper, here are a few discussions that you may find
+informative:
+
+* [**Tips for playing contact missions**: common ettiquette, courtesy, etc for newer players.](https://www.reddit.com/r/gtaonline/comments/67a1ac/tips_for_playing_contact_missions_during_the_x2/)
+* [Using Specialty Vehicles in Contact Missions](https://www.reddit.com/r/gtaonline/comments/663wnk/using_specialty_vehicles/)
+* [Contact Missions which are (nearly) impossible to solo](https://www.reddit.com/r/gtaonline/comments/67l8mf/contact_missions_which_are_nearly_impossible_to/)
+* [PSA \[PC\]: Port Blocking, Contact Missions, and YOU!](https://www.reddit.com/r/gtaonline/comments/66ihww/psa_pc_port_blocking_contact_missions_and_you/)
+* [End of Double Money & RP Contact Missions, Week 1 Report](https://www.reddit.com/r/gtaonline/comments/677b4w/end_of_double_money_rp_contact_missions_week_1/)
+    
+So here we go:
+
+### What are the best-paying contact missions?
+
+All of them. It doesn't matter which one you play, the reward is based on the
+amount of time taken to complete the mission, and all missions pay pretty much
+the same — there is a bit of variation, but it is negligible in the long run.
+So if anyone tells you "I got $20k doing Rooftop Rumble in 15 minutes", just
+know that doing the much easier Blow Up I in the same amount of time would have
+netted you as much money.
+
+### What is the best way to make money with contact missions? How much can I make?
+
+Since the reward is time-based, the best way to make money is to complete
+missions in a bit more than 4 minutes. Here are the reward brackets (taken from
+the [wikia page](http://gta.wikia.com/wiki/Missions_in_GTA_Online#Rewards)):
+
+| Minutes | 15+    | 12-15  | 10-12  | 8-10   | 6-8    | 4-6    | 3-4   | 2-3   | <2    |
+| ---     | ---    | ---    | ---    | ---    | ---    | ---    | ---   | ---   | ---   |
+| Pay %   | 100%   | 90%    | 80%    | 70%    | 60%    | 50%    | 37.5% | 25%   | 12.5% |
+| Example | $20400 | $18360 | $16320 | $14280 | $12240 | $10200 | $7650 | $5100 | $2550 |
+
+Taking into account 1 minute of lobby time between missions, completing
+missions just above the 4-minutes mark allows you to make an average of $9600
+per 5 minutes, which makes **$115k/h**, solo, in Hard difficulty.
+
+**Double that with the current bonus and you get around $230k/h**, which is
+quite good since you don't have to rely on other players as in adversary modes,
+and you don't have to invest in property as with CEO or biker stuff.
+
+On the other hand, if you spend 15 minutes per mission, you'll make around
+**$80k/h**. You make more per mission, but less per minute (or hour) spent
+playing so it's better to complete missions relatively quickly instead of
+waiting to get a larger pay.
+
+**NOTE**: This is for contact missions played alone. You get a 10% increase in
+$ per additional player, but if you're in for the money remember that the extra
+time you spend waiting for other players in the lobby may slow you down and
+decrease the overall amount of money you make. This may not be a problem if you
+play with friends or make sure to get a group to follow you from mission to
+mission, in which case you may very well make more than the figures shown here.
+
+### What are the easiest contact missions?
+
+Generally, the lower the starting rank, the easier the mission. Here's a quick
+breakdown, from a new character's perspective:
+- [Lamar's missions](http://gta.wikia.com/wiki/Missions_in_GTA_Online#Lamar_Davis) are
+  quite easy but can be annoying if you don't like hijacking gas trucks &
+  escaping cops.
+- [Gerald's missions](http://gta.wikia.com/wiki/Missions_in_GTA_Online#Gerald)
+  are easy, only "No Hay Bronca" can be long and difficult if you don't have an
+  armored car, or lots of body armor, or a Buzzard. But it can make for a nice
+  and challenging change of pace. The rest of the missions are quick and easy
+  and generally consist in killing a bunch of gang members and coming back to
+  his place.
+- [Simeon's missions](http://gta.wikia.com/wiki/Missions_in_GTA_Online#Simeon_Yetarian)
+  are also easy, some of them have you repossess cars and avoid cops, others
+  have you chase a car to bring it back it to the dealership.
+- [Ron's missions](http://gta.wikia.com/wiki/Missions_in_GTA_Online#Ron_Jakowski)
+  aren't hard, but may take you more time and effort as they involve killing
+  lots of bikers and driving slow vehicles.
+- [Trevor's missions](http://gta.wikia.com/wiki/Missions_in_GTA_Online#Trevor_Philips)
+  are mostly like Ron's.
+- [Lester's missions](http://gta.wikia.com/wiki/Missions_in_GTA_Online#Lester_Crest) are
+  more challenging overall and not a very good choice if you want to complete
+  them quickly.
+- [Martin's missions](http://gta.wikia.com/wiki/Missions_in_GTA_Online#Martin_Madrazo)
+  are more challenging too, but "Out of Court Settlement" and "Editor and
+  Thief" are easy and straightforward — kill a guy in his car and bring
+  documents back to Martin's house.
+
+Overall, if you're looking for quick and easy missions, **stick to Gerald's and
+Simeon's**, and play other missions when you want something more challenging that
+takes longer to complete.
+
+Note that a lot of harder or more challenging missions become a piece of cake
+if you do them from an Armored Kuruma. They may even become dull and boring
+because of a lack of challenge, but the way you want to play missions is
+entirely up to you.
+
+### How do I play contact missions?
+
+> option 1: bring up your phone and call a contact (Gerald, Simeon, Ron...),
+> and ask them for a job. Then check your phone, you'll receive an invite to a
+> random job via the Job List app (orange icon in the middle).
+
+> option 2: go to the pause menu > Online > Jobs > Play Job > Rockstar Created
+> > Missions. You have to be in a Public or Invite Only session to access
+> > Missions this way.
+
+Being in an Invite Only session allows you to start missions without dealing
+without random people joining, which is good if you want to stay alone or with
+select friends.
+
+> option 3: if none of these options work, have a friend start a contact
+> mission and invite you. You should then be able to start missions yourself.
+
+Remember that contact missions start to be available at rank 5, so you won't be
+able to start one below that rank; you can however join people hosting them
+without restrictions.
+
+### Can I make contact mission playlists?
+
+Yes. Go to the `pause menu > Online > Playlists > Create > Add Recently Played
+Job`, and you can create a playlist with contact missions you've recently
+played — which means that you have to play a job first before you can add it,
+but it's a good way to throw together a playlist of missions you enjoyed
+playing previously.
+
+### Where can I find ready-made mission playlists?
+
+People have posted their own playlists in this threads's comments; you'll find
+other playlists with the search bar:
+[https://www.reddit.com/r/gtaonline/search?q=mission+playlist&sort=new&restrict\_sr=on](https://www.reddit.com/r/gtaonline/search?q=mission+playlist&sort=new&restrict_sr=on)
+
+### Are there any contact missions that allow more than 4 players?
+
+Martin:
+* Trash Talk (1-6) unlock at level 81
+* Extradition (1-6) unlock at level 50
+* Judging the Jury (1-8) unlock at level 65
+* Mixed up with Coke (1-6) unlock at level 45
+* The Los Santos Connection (1-6) unlock at level 40
+    
+Lester
+* A Titan of a Job (1-6) unlock at level 24
+* Four Trailers (1-6) unlock at level 45
+    
+Ron
+* Landing Gear (4-6) unlock at level 55
