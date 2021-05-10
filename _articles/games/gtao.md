@@ -936,7 +936,10 @@ Ron
 
 ## Cayo Perico 
 
-https://www.reddit.com/r/gtaonline/comments/kevsjm/cayo_perico_heist_guide/
+[Source](https://www.reddit.com/r/gtaonline/comments/kevsjm/cayo_perico_heist_guide/)
+
+[More thorough Guide](https://www.gtaboom.com/cayo-perico-heist-finale-guide-elite-challenge-hard-mode-solo-run/)
+
 
 ### 1. Preperations
 
