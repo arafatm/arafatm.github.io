@@ -932,4 +932,183 @@ Lester
 * Four Trailers (1-6) unlock at level 45
     
 Ron
-* Landing Gear (4-6) unlock at level 55
+* Landing Gear (4-6) unlock at level 55## r/gtaonline - Cayo Perico Heist Guide
+
+## Cayo Perico 
+
+https://www.reddit.com/r/gtaonline/comments/kevsjm/cayo_perico_heist_guide/
+
+### 1. Preperations
+
+Right, so what do you need to grind the Cayo Perico Heist? Not a lot,
+surprisingly. Obviously you'll need a Kosatka, however, all the extra additions
+like sonar or missiles are not needed. However, the onboard Sparrow is
+_insanely_ useful, it's easily worth spending the $2,1m to buy it and upgrade
+it with homing rockets, you'll get the money back in 1-2 heists anyway. If you
+get the Sparrow, you can forget about all other vehicles like other Helis,
+Oppressors or jets, the Sparrow is all you'll ever need.
+
+About the position of the Kosatka, I'd try to leave it at Vespucci Beach,
+however, you can and probably will use it to fast travel to far away locations
+for missions.
+
+After starting a mission, turn around from the heist screen and hop directly
+into your Sparrow (except if you want to fast travel first). When returning
+from a mission, feel free to jump out of the Sparrow and parachute to the sub,
+you won't have to pay any insurance and the Sparrow will instantly be returned
+to the Kosatka, ready to be used for the next mission.
+
+Additionally, a saved outfit with a scuba suit is also useful for some prep
+missions.
+
+### 2. Prep missions
+
+##### 2.1 Gather Intel
+
+The most lengthy mission. If you've already completed the heist as a leader,
+you'll have to steal a Velum to fly directly to Cayo Perico. This is where the
+fast travel of the Kosatka comes in useful. After flying off with the Velum,
+don't forget to return your Kosatka to storage so you can call it back later
+when returning.
+
+Now, what do you actually need to find? Luckily, all the random POI are not
+needed at all (Uniforms, Grappling Hooks, Bolt Cutters). I'm sure you've seen
+[this](https://www.reddit.com/r/gtaonline/comments/kei7gr/cayo_perico_scope_out_map_i_made_in_like_10/)
+post with the map of all the intel. Surprisingly, all you need to photograph is
+[these](https://prnt.sc/w4lyio) fours spots, one of them being the sewage
+tunnel underwater, which only has to be scouted once, you won't have to scout
+it every heist.
+
+For the mission itself, just grab the nearest bike and jump over the hill on
+the left side of the checkpoint next to the party and drive to the comms tower.
+There, hack the security box (box can spawn on ground floor or on one of the 3
+tower levels). The hack is fairly complicated, however you can use your
+training keypad in your Arcade to get familiar with it, you'll have more than
+enough time at the tower to figure it out anyway.
+
+If playing solo, just scope out the main reward and move on to scouting the
+main docks for additional loot to fill you bags, as you will not be able to
+open the houses inside the compound for the loot there as they require 2
+keycards simultaneously.
+
+At the main docks, scope out the 2 places for additional loot and then let
+yourself be caught by the guards to be thrown back to the airport instantly and
+leave. Thats it, no more intel neccessary, only takes you about 15 minutes.
+
+##### 2.2 Kosatka
+
+For the approach vehicle, you'll want to use your Kosatka, so start the
+mission, fast travel to the mission and use your Sparrow to deal with the Heli
++ 3 boats. You can then just dump your heli in the water and request a Dinghy
+  to drive back to the Kosatka to save you the hassle of landing the heli and
+  swimming to the sub.
+
+Inside the sub, go right down the hatch and fight through the lower deck until
+you find the device, leave up throught the hatch ladder and leave the sub.
+
+Outside, hop into a Dinghy and drive back to your Kosatka and the mission is
+done.
+
+##### 2.3 Cutting torch
+
+Only 3 of the 4 equipment preps are mandatory, you can completely ignore the
+explosives as you will be using the cutting torch for any locks you encounter.
+
+The mission is very simple, fast travel back to Vespucci beach, fly to the
+construction site, either kill everyone and grab the drill or do it sneaky and
+fly back to the Kosatka, nothing huge here.
+
+##### 2.4 Fingerprint cloner
+
+Another pretty simple mission, fly to the warehouse, go in and be prepared to
+fight instantly, its unneccessary to cut the power, the guards will spot you
+insantly anyways. Then hack the computer, fly to the Archives, shoot the 2
+cameras, get the cloner, fly back to the sub, done.
+
+##### 2.5 Safe codes / plasma cutter
+
+This mission depends on the main loot, you either have to go to the casino,
+kill a lot of people and greab some codes off the head of security, no major
+ways to improve here other than to shoot, as this can't be done in stealth
+reliably either, and fly back to the sub.
+
+For the plasma cutters, (Actually can't remember the mission right now, must
+not have been hard then, just do the usual Sparrow, pewpew, grab, Sparrow
+stuff)
+
+##### 2.6 Weapons
+
+FOr weapon loadouts, you have multiple choices, I suggest either going for the
+**Conspirator** or **AP Pistol** loadouts, they are both very viable and
+neither has a distinct advantage, use whichever you prefer.
+
+This mission has 2 variants, you either just do the usual "Land on office,
+enter office, shoot guys, hack computer, get weapons, return to sub" stuff, or
+you'll have to follow a Merryweather heli, kill some goons, enter an Avenger,
+get the weapons, jump out of the Avenger and fly back to the sub. Both aren't
+that hard or complicated, just some standard "get this stuff" missions.
+
+**Do not forget to buy supressors** for your weapons, they're only $5k
+
+##### 2.7 Armor
+
+For the 3 optional preps, you only **need to do the armor**, as the other 2 are
+only beneficial for going loud, which we won't do.
+
+Again, pretty simple stuff, fly to a warehouse, blow up stuff, blow up more
+stuff inside the warehouse, blow up a boat, done. The Sparrow is absolutely
+your best friend for these kind of missions, just beware that is lacks any sort
+of armor, so when taking off you may get shot a bit too much at times.
+
+### 3. Finale
+
+Right, finale ,big money. Here's how the planning screen should look
+
+![r/gtaonline - Cayo Perico Heist
+Guide](https://preview.redd.it/749jwa4feq561.png?width=576&format=png&auto=webp&s=e307b467a12723c0d6068d63aac038c7ed6b2976)
+
+Haven't tested other times of day, but night is the obvious choice for stealth
+
+WHen the mission starts, you'll be instantly thrown underwater, right next to
+the compound. Just dive to the sewage tunnel, cuzt the grate and boom, you're
+in.
+
+Inside, try to deal with all the guards before going upstairs to the office
+elevator. Standard stealth rules apply, kill guards outside of camera view,
+kill facing guards in quick succession with well placed headshots (not
+headshotting can cause the alarm to go off ~3s after bodyshotting them to
+death). Chances are, you will fail the first couple of tries until you get a
+feel for it. Here's the path I use:
+
+![r/gtaonline - Cayo Perico Heist
+Guide](https://preview.redd.it/z3zjpvb2fq561.png?width=896&format=png&auto=webp&s=d11c5784425826639169338584dd6731b0e7c485)
+
+Looks complicated, but you'll get used to it
+
+When reaching the vault room, you cutting torch can make quick work of the
+lock, then grab the main loot and get out via the exit to the right of the main
+vault, turn right again and you're basically next to the compound gate. Just
+confirm that route and you're out.
+
+Once you're out, there will be 4 guards to deal with, not a huge issue, kill
+them and move on. There are bikes by the checkpoint, grab one and leave.
+
+Once you are outside the compound, a heli will be sent to search you. Have a
+look at what direction it flies, it will always fly straight until reaching the
+end of the island. Evade him once and you're good for 5-10 minutes, plenty of
+time to leave.
+
+![r/gtaonline - Cayo Perico Heist
+Guide](https://preview.redd.it/adgs3htyfq561.png?width=706&format=png&auto=webp&s=b6d7e7ab635ac8eb60adcbb34509b119dfe003da)
+
+Path outside the compound, at green circle, evade helicopter
+
+Drive to the docks, careful of the guards that only appear on the map once
+you're close to them, luckily at this point you're free to kill anyone you
+meet, so blast away. Grab the 2 warehouses worth of secondary loot, kill the
+guards by the docks and leave, even if you get spotted now, just make a dash
+for the open sea and get as far away from the island as possible until the
+mission finishes and you're done, $1,3m reward.
+
+And that's it, pretty simple heist, finale is made super easy by the sewage
+tunnel and the prep missions are already easy as piss
