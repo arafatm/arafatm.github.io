@@ -100,7 +100,6 @@ Imperial Short Heroics List
 13. Jedi **Knight** Voss (Ch. 3) (Sel-Makor dies) 
 
 Corelia
-
 14. Jedi **Knight** Corellia (Ch. 3) (Tol Braga dies) 
 15. Imperial **Agent** Corellia+ (Ch. 3) (Tol Braga is mentioned as dead, Janarus is Chancellor, Baras and Thanaton are alive, Republic reinforcements have not arrived yet.) 
 16. Sith **Warrior** Corellia (Ch. 3) (Baras dies, Darth Thanaton is still alive) 
@@ -109,3 +108,4 @@ Corelia
 19. Jedi **Consular** Corellia (Ch. 3) (Republic reinforcements arrive, Janarus is Supreme Chancellor, then it passes to Saresh as recent events) 
 20. Republic **Trooper** Corellia (Ch. 3) (Republic reinforcements arrive, Janarus is Supreme Chancellor, then it is passed to Saresh) 
 21. **Smuggler** Corellia+ (Ch. 3) (Only Saresh is mentionned)
+
