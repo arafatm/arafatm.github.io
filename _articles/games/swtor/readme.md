@@ -84,22 +84,36 @@ Imperial Short Heroics List
 
 # Order
 
+
 https://www.mmo-champion.com/threads/2477330-SWTOR-Class-Story-Chronologically-Listed
+
+
+- https://swtor-archive.fandom.com/wiki/Bounty_Hunter_Storyline
+- https://swtor-archive.fandom.com/wiki/Imperial_Agent_Storyline
 
 - [x] KOTOR I - Light Side Male. Choose the Caucasian mullet portrait character and play through the entire game. Romance your first female jedi companion and complete her character story.
 - [x] KOTOR II - Light Side/Neutral Female. Choose the Caucasian Brown haired portrait and play through the entire game. Save all the Jedi you encounter, max influence with your companions by doing what fits their personality, and rebuild the droid in the ship.
 
-- [ ] Bounty Hunter - Hutta
-- The Great Hunt: Mako, Braden, Jory, Nem'ro the Hutt
-- Gauntlet: Search for Information on Vexx
-- The Last Flight: kill vexx, Braden & Jory killed by Tarro Blood
-- Big Chief: defeat Fa'athra's Street Captains; Speak to Nem'ro; Confront Huttsbane
-- Settling Accounts: Kill Yalt (former accountant); Yalt ruin's Faathra's finances, let him go
-- House Cleaning ( At the end of this mission, Mako joins you as a "guest" )
-- My Sponsorship
-- Escaping Hutta ( Leads to the Imperial Fleet. )
+### Bounty Hunter - Hutta
 
-- [ ] Imperial Agent - Hutta
+The Bounty Hunter storyline began on Hutta. The Bounty Hunter joined up with a
+team of hunters, who were trying to get them into the Great Hunt, a
+galactic-wide competition where hunters not only must hunt and kill a target,
+but kill a rival hunter tracking the same target, for fame and riches.
+
+The team consisted of an old time hunter named Braden, a Nikto named Jory, and
+a young slicer named Mako. Braden, the team leader, was trying to negotiate
+with the local crime lord, Nemro the Hutt, to sponsor the hunter for the Great
+Hunt. However, a member of the Mandalorians named Tarro Blood, and rival for
+the Great Hunt, sabotaged the hunter's chances of entering the Great Hunt by
+killing Braden and Jory in their base. The hunter arrived at the scene shortly
+before Mako, who was devastated at the death of Braden and Jory, the latter
+being a close friend and the former being a father figure. With Mako's help,
+the hunter did jobs for Nemro and eventually gained the sponsorship of Nemro, a
+first step in entering the Great Hunt.
+
+### Imperial Agent - Hutta
+
 - [ ] Jedi Knight - Tython (Do the Pilgrimage Side Quest)
 - [ ] Jedi Consular - Tython
 - [ ] Sith Warrior - Korriban
