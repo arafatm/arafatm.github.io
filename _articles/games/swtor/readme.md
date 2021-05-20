@@ -84,6 +84,79 @@ Imperial Short Heroics List
 
 # Order
 
+https://www.mmo-champion.com/threads/2477330-SWTOR-Class-Story-Chronologically-Listed
+
+- [x] KOTOR I - Light Side Male. Choose the Caucasian mullet portrait character and play through the entire game. Romance your first female jedi companion and complete her character story.
+- [x] KOTOR II - Light Side/Neutral Female. Choose the Caucasian Brown haired portrait and play through the entire game. Save all the Jedi you encounter, max influence with your companions by doing what fits their personality, and rebuild the droid in the ship.
+
+- [ ] Bounty Hunter - Hutta
+- The Great Hunt
+- Mako, Braden, Jory
+- Nem'ro the Hutt
+- Gauntlet: Search for Information on Vexx
+- The Last Flight: kill vexx, Braden & Jory killed by Tarro Blood
+- Big Chief: defeat Fa'athra's Street Captains; Speak to Nem'ro; Confront Huttsbane
+- Settling Accounts: Kill Yalt (former accountant)
+- House Cleaning ( At the end of this mission, Mako joins you as a "guest" )
+- My Sponsorship
+- Escaping Hutta ( Leads to the Imperial Fleet. )
+
+- [ ] Imperial Agent - Hutta
+- [ ] Jedi Knight - Tython (Do the Pilgrimage Side Quest)
+- [ ] Jedi Consular - Tython
+- [ ] Sith Warrior - Korriban
+- [ ] Smuggler & Trooper - Ord Mantell (Bounce between these and have them finish Ord Mantell at the same time)
+- [ ] Sith Inquisitor - Korriban
+- [ ] Do all of the capitals, Dromund Kaas/Coruscant class stories, here in any order you wish with agent being last completed)
+- [ ] Imperial Agent - Dromund Kaas
+- [ ] Jedi Knight - Taris
+- [ ] Jedi Knight - Nar Shadaa
+- [ ] Complete the rest of the first two planets on your characters in any order you wish.
+- [ ] Smuggler - Alderaan
+- [ ] Bounty Hunter - Alderaan
+- [ ] Complete Chapter I in any order you wish here.
+
+CHAPTER II
+- [ ] Jedi Consular - Balmorra
+- [ ] Trooper - Balmorra
+- [ ] Smuggler - Balmorra
+- [ ] Jedi Knight - Balmorra
+- [ ] Imperial Agent - Taris
+- [ ] Bounty Hunter - Taris
+- [ ] Sith Inquisitor - Taris
+- [ ] Sith Warrior - Taris
+- [ ] Complete Quesh on your toons with Jedi Knight being last.
+- [ ] Jedi Knight - Hoth
+- [ ] Smuggler - Hoth
+- [ ] Bounty Hunter - Hoth
+- [ ] Imperial Agent - Hoth
+- [ ] Jedi Consular - Hoth
+- [ ] Sith Inquisitor and Warrior - Hoth
+- [ ] Do your chapter 2 finale quests except Jedi Knight and Sith Warrior
+- [ ] Sith Warrior - Chapter 2 finale
+- [ ] Jedi Knight - Chapter 2 finale
+- [ ] Sith Warrior - Make sure you speak to your LT. companion and speak to him about his General securing a base until those conversations are over. (VERY IMPORTANT)
+
+
+CHAPTER III
+- [ ] Sith Warrior - Quesh, Belsavis, and have your force using companion with you.
+- [ ] Jedi Consular - Belsavis
+- [ ] Bounty Hunter Belsavis
+- [ ] Sith Warrior - Voss
+- [ ] Jedi Knight - Belsavis, Voss & Corellia - Choose to kill the final boss of Corellia. Don’t do the last mission, Doomsday, yet.
+- [ ] Imperial Agent - Belsavis, Voss, Corellia and the Star Chamber mission Finale
+- [ ] Sith Warrior - Corellia
+- [ ] Jedi Knight - Doomsday
+- [ ] Sith Warrior - Finale
+- [ ] OPTIONAL — Wait for mail on your Sith Warrior to arrive and read what it says then continue the other classes.
+- [ ] Sith Inquisitor - Belsavis, Voss, Corellia, & Finale
+- [ ] Bounty Hunter - Belsavis, Voss, Corellia, & Finale
+- [ ] Jedi Consular - Belsavis, Voss, Corellia & Finale
+- [ ] Trooper - Belsavis, Voss, Corellia, & Finale
+- [ ] Smuggler - Belsavis, Voss, Corellia, & Finale
+
+# Order #2
+
 1. Bounty **Hunter** Hutta (Prelude) (Braden dies, Fa’athra is a major threat
    to Nem’ro) 
 2. Imperial **Agent** Hutta (Prelude) (Fa’athra falls) 
