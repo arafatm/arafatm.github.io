@@ -90,13 +90,11 @@ https://www.mmo-champion.com/threads/2477330-SWTOR-Class-Story-Chronologically-L
 - [x] KOTOR II - Light Side/Neutral Female. Choose the Caucasian Brown haired portrait and play through the entire game. Save all the Jedi you encounter, max influence with your companions by doing what fits their personality, and rebuild the droid in the ship.
 
 - [ ] Bounty Hunter - Hutta
-- The Great Hunt
-- Mako, Braden, Jory
-- Nem'ro the Hutt
+- The Great Hunt: Mako, Braden, Jory, Nem'ro the Hutt
 - Gauntlet: Search for Information on Vexx
 - The Last Flight: kill vexx, Braden & Jory killed by Tarro Blood
 - Big Chief: defeat Fa'athra's Street Captains; Speak to Nem'ro; Confront Huttsbane
-- Settling Accounts: Kill Yalt (former accountant)
+- Settling Accounts: Kill Yalt (former accountant); Yalt ruin's Faathra's finances, let him go
 - House Cleaning ( At the end of this mission, Mako joins you as a "guest" )
 - My Sponsorship
 - Escaping Hutta ( Leads to the Imperial Fleet. )
