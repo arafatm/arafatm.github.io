@@ -94,27 +94,14 @@ https://www.mmo-champion.com/threads/2477330-SWTOR-Class-Story-Chronologically-L
 - [x] KOTOR I - Light Side Male. Choose the Caucasian mullet portrait character and play through the entire game. Romance your first female jedi companion and complete her character story.
 - [x] KOTOR II - Light Side/Neutral Female. Choose the Caucasian Brown haired portrait and play through the entire game. Save all the Jedi you encounter, max influence with your companions by doing what fits their personality, and rebuild the droid in the ship.
 
-### Bounty Hunter - Hutta
+Bounty Hunter - Hutta
 
-The Bounty Hunter storyline began on Hutta. The Bounty Hunter joined up with a
-team of hunters, who were trying to get them into the Great Hunt, a
-galactic-wide competition where hunters not only must hunt and kill a target,
-but kill a rival hunter tracking the same target, for fame and riches.
-
-The team consisted of an old time hunter named Braden, a Nikto named Jory, and
-a young slicer named Mako. Braden, the team leader, was trying to negotiate
-with the local crime lord, Nemro the Hutt, to sponsor the hunter for the Great
-Hunt. However, a member of the Mandalorians named Tarro Blood, and rival for
-the Great Hunt, sabotaged the hunter's chances of entering the Great Hunt by
-killing Braden and Jory in their base. The hunter arrived at the scene shortly
-before Mako, who was devastated at the death of Braden and Jory, the latter
-being a close friend and the former being a father figure. With Mako's help,
-the hunter did jobs for Nemro and eventually gained the sponsorship of Nemro, a
-first step in entering the Great Hunt.
-
-### Imperial Agent - Hutta
+Imperial Agent - Hutta
 
 - [ ] Jedi Knight - Tython (Do the Pilgrimage Side Quest)
+- following sacking of Jedi Temple on Coruscant, Jedi order withrdraws to Tython
+- Jxin'sen travels to Tython to complete trials
+
 - [ ] Jedi Consular - Tython
 - [ ] Sith Warrior - Korriban
 - [ ] Smuggler & Trooper - Ord Mantell (Bounce between these and have them finish Ord Mantell at the same time)
@@ -127,8 +114,7 @@ first step in entering the Great Hunt.
 - [ ] Smuggler - Alderaan
 - [ ] Bounty Hunter - Alderaan
 - [ ] Complete Chapter I in any order you wish here.
-
-CHAPTER II
+- CHAPTER II
 - [ ] Jedi Consular - Balmorra
 - [ ] Trooper - Balmorra
 - [ ] Smuggler - Balmorra
@@ -148,9 +134,7 @@ CHAPTER II
 - [ ] Sith Warrior - Chapter 2 finale
 - [ ] Jedi Knight - Chapter 2 finale
 - [ ] Sith Warrior - Make sure you speak to your LT. companion and speak to him about his General securing a base until those conversations are over. (VERY IMPORTANT)
-
-
-CHAPTER III
+- CHAPTER III
 - [ ] Sith Warrior - Quesh, Belsavis, and have your force using companion with you.
 - [ ] Jedi Consular - Belsavis
 - [ ] Bounty Hunter Belsavis
