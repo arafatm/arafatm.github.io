@@ -140,9 +140,11 @@ Imperial Agent - Hutta
 - Convince Nem'ro to ally with Empire
 - Head to fleet with Kaliyo
 
-- [ ] Jedi Knight - Tython (Do the Pilgrimage Side Quest)
+Jedi Knight - Tython (Do the Pilgrimage Side Quest)
 - following sacking of Jedi Temple on Coruscant, Jedi order withrdraws to Tython
 - Jxin'sen travels to Tython to complete trials
+- After landing, Flesh Raiders are attacking
+
 - [ ] Jedi Consular - Tython
 - [ ] Sith Warrior - Korriban
 - [ ] Smuggler & Trooper - Ord Mantell (Bounce between these and have them finish Ord Mantell at the same time)
