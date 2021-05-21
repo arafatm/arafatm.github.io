@@ -82,12 +82,33 @@ Imperial Short Heroics List
 - Corellia – CorSec Crackdown
 - Corellia – Prison Busting
 
+# Brief Order 
+1. Bounty **Hunter** Hutta (Prelude) (Braden dies, Fa’athra is a major threat
+   to Nem’ro) 
+2. Imperial **Agent** Hutta (Prelude) (Fa’athra falls) 
+3. Jedi **Knight** Nar Shaddaa (Ch. 1) (First info on CotE) 
+4. **Smuggler** Alderaan (Ch. 2) (Bandon’s head is delivered) 
+5. Bounty **Hunter** Alderaan (Ch. 2) (Bandon’s head is seen) 
+6. Jedi **Consular** Chapter 2 (Qyzen calls Braden, but Mako answers) 
+7. Jedi **Knight** post-Hoth (Ch. 2) (Scourge no longer wrath) 
+8. Sith **Warrior** Quesh (Ch. 3) (Sith Warrior becomes Wrath) 
+9. Jedi **Consular** post-Hoth (Ch. 2) (CotE becomes main conflict) 
+10. Jedi **Consular** Belsavis (Ch. 3) (Esh-Kha awaken) 
+11. Bounty **Hunter** Belsavis (Ch. 3) (Esh-Kha mentioned as awake) 
+12. Sith **Warrior** Voss (Ch. 3) (Emperor freed from Sel-Makor) 
+13. Jedi **Knight** Voss (Ch. 3) (Sel-Makor dies) 
+#####  Corelia
+14. Jedi **Knight** Corellia (Ch. 3) (Tol Braga dies) 
+15. Imperial **Agent** Corellia+ (Ch. 3) (Tol Braga is mentioned as dead, Janarus is Chancellor, Baras and Thanaton are alive, Republic reinforcements have not arrived yet.) 
+16. Sith **Warrior** Corellia (Ch. 3) (Baras dies, Darth Thanaton is still alive) 
+17. Sith **Inquisitor** Corellia (Ch. 3) (Darth Thanaton dies.) 
+18. Bounty **Hunter** Corellia (Ch. 3) (Janarus is in scandal and must resign) 
+19. Jedi **Consular** Corellia (Ch. 3) (Republic reinforcements arrive, Janarus is Supreme Chancellor, then it passes to Saresh as recent events) 
+20. Republic **Trooper** Corellia (Ch. 3) (Republic reinforcements arrive, Janarus is Supreme Chancellor, then it is passed to Saresh) 
+21. **Smuggler** Corellia+ (Ch. 3) (Only Saresh is mentionned)
+
 # Order
-
-
 https://www.mmo-champion.com/threads/2477330-SWTOR-Class-Story-Chronologically-Listed
-
-
 - https://swtor-archive.fandom.com/wiki/Bounty_Hunter_Storyline
 - https://swtor-archive.fandom.com/wiki/Imperial_Agent_Storyline
 
@@ -170,31 +191,4 @@ Imperial Agent - Hutta
 - [ ] Jedi Consular - Belsavis, Voss, Corellia & Finale
 - [ ] Trooper - Belsavis, Voss, Corellia, & Finale
 - [ ] Smuggler - Belsavis, Voss, Corellia, & Finale
-
-# Order #2
-
-1. Bounty **Hunter** Hutta (Prelude) (Braden dies, Fa’athra is a major threat
-   to Nem’ro) 
-2. Imperial **Agent** Hutta (Prelude) (Fa’athra falls) 
-3. Jedi **Knight** Nar Shaddaa (Ch. 1) (First info on CotE) 
-4. **Smuggler** Alderaan (Ch. 2) (Bandon’s head is delivered) 
-5. Bounty **Hunter** Alderaan (Ch. 2) (Bandon’s head is seen) 
-6. Jedi **Consular** Chapter 2 (Qyzen calls Braden, but Mako answers) 
-7. Jedi **Knight** post-Hoth (Ch. 2) (Scourge no longer wrath) 
-8. Sith **Warrior** Quesh (Ch. 3) (Sith Warrior becomes Wrath) 
-9. Jedi **Consular** post-Hoth (Ch. 2) (CotE becomes main conflict) 
-10. Jedi **Consular** Belsavis (Ch. 3) (Esh-Kha awaken) 
-11. Bounty **Hunter** Belsavis (Ch. 3) (Esh-Kha mentioned as awake) 
-12. Sith **Warrior** Voss (Ch. 3) (Emperor freed from Sel-Makor) 
-13. Jedi **Knight** Voss (Ch. 3) (Sel-Makor dies) 
-
-Corelia
-14. Jedi **Knight** Corellia (Ch. 3) (Tol Braga dies) 
-15. Imperial **Agent** Corellia+ (Ch. 3) (Tol Braga is mentioned as dead, Janarus is Chancellor, Baras and Thanaton are alive, Republic reinforcements have not arrived yet.) 
-16. Sith **Warrior** Corellia (Ch. 3) (Baras dies, Darth Thanaton is still alive) 
-17. Sith **Inquisitor** Corellia (Ch. 3) (Darth Thanaton dies.) 
-18. Bounty **Hunter** Corellia (Ch. 3) (Janarus is in scandal and must resign) 
-19. Jedi **Consular** Corellia (Ch. 3) (Republic reinforcements arrive, Janarus is Supreme Chancellor, then it passes to Saresh as recent events) 
-20. Republic **Trooper** Corellia (Ch. 3) (Republic reinforcements arrive, Janarus is Supreme Chancellor, then it is passed to Saresh) 
-21. **Smuggler** Corellia+ (Ch. 3) (Only Saresh is mentionned)
 
