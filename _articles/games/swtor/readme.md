@@ -114,8 +114,10 @@ Imperial Agent - Hutta
 - Keeper wants to subvert Karrels who is out of favor with Nem'ro
 - Dheno Rey knows Red Blade, threatens to out me
 - Jarrel has a scheme to get info about stolen ore from Evocii leader, Odeph
-- Retrieve the stolen ore
+- Jarrel's sons were killed by a Sith. Convince him to run and hide to get him out of the way
 - Empire wants access to Nem'ro's refined gas pipeline. Crush Faathra who is tapping the same gas pockets
+- Convince Nem'ro to ally with Empire
+- Head to fleet with Kaliyo
 
 - [ ] Jedi Knight - Tython (Do the Pilgrimage Side Quest)
 - following sacking of Jedi Temple on Coruscant, Jedi order withrdraws to Tython
