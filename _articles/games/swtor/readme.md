@@ -95,13 +95,31 @@ https://www.mmo-champion.com/threads/2477330-SWTOR-Class-Story-Chronologically-L
 - [x] KOTOR II - Light Side/Neutral Female. Choose the Caucasian Brown haired portrait and play through the entire game. Save all the Jedi you encounter, max influence with your companions by doing what fits their personality, and rebuild the droid in the ship.
 
 Bounty Hunter - Hutta
+- The Great Hunt: Mako, Braden, Jory, Nem'ro the Hutt
+- Gauntlet: Search for Information on Vexx
+- The Last Flight: kill vexx, Braden & Jory killed by Tarro Blood
+- Big Chief: defeat Fa'athra's Street Captains; Speak to Nem'ro; Confront Huttsbane
+- Settling Accounts: Kill Yalt (former accountant); Yalt ruin's Faathra's finances, let him go
+- House Cleaning ( At the end of this mission, Mako joins you as a "guest" )
+- My Sponsorship
+- Escaping Hutta ( Leads to the Imperial Fleet. )
 
 Imperial Agent - Hutta
+- Empire and Republic are at truce
+- Jxin'ope is on Hutta as an imperial agent tryin to secure Hutt allies
+- Orders from Keeper; Jheeg prepared fake identity as Red Blade
+- Meet Nem'ro, Karrel Javis, Toth'lazhen; 
+- Nem'ro is at war with Faa'thra
+- Keeper lets me know Darth Jadus is interested in this op
+- Keeper wants to subvert Karrels who is out of favor with Nem'ro
+- Dheno Rey knows Red Blade, threatens to out me
+- Jarrel has a scheme to get info about stolen ore from Evocii leader, Odeph
+- Retrieve the stolen ore
+- Empire wants access to Nem'ro's refined gas pipeline. Crush Faathra who is tapping the same gas pockets
 
 - [ ] Jedi Knight - Tython (Do the Pilgrimage Side Quest)
 - following sacking of Jedi Temple on Coruscant, Jedi order withrdraws to Tython
 - Jxin'sen travels to Tython to complete trials
-
 - [ ] Jedi Consular - Tython
 - [ ] Sith Warrior - Korriban
 - [ ] Smuggler & Trooper - Ord Mantell (Bounce between these and have them finish Ord Mantell at the same time)
