@@ -108,14 +108,19 @@ Imperial Short Heroics List
 21. **Smuggler** Corellia+ (Ch. 3) (Only Saresh is mentionned)
 
 # Order
+
 https://www.mmo-champion.com/threads/2477330-SWTOR-Class-Story-Chronologically-Listed
+- http://www.swtor-spy.com/quests/
 - https://swtor-archive.fandom.com/wiki/Bounty_Hunter_Storyline
 - https://swtor-archive.fandom.com/wiki/Imperial_Agent_Storyline
+- https://swtor-archive.fandom.com/wiki/Jedi_Consular_Storyline
+- https://swtor-archive.fandom.com/wiki/Jedi_Knight_Storyline
+- https://swtor-archive.fandom.com/wiki/Trooper_Storyline
+- https://swtor-archive.fandom.com/wiki/Smuggler_Storyline
+- https://swtor-archive.fandom.com/wiki/Sith_Warrior_Storyline
+- https://swtor-archive.fandom.com/wiki/Sith_Inquisitor_Storyline
 
-- [x] KOTOR I - Light Side Male. Choose the Caucasian mullet portrait character and play through the entire game. Romance your first female jedi companion and complete her character story.
-- [x] KOTOR II - Light Side/Neutral Female. Choose the Caucasian Brown haired portrait and play through the entire game. Save all the Jedi you encounter, max influence with your companions by doing what fits their personality, and rebuild the droid in the ship.
-
-Bounty Hunter - Hutta
+##### Bounty Hunter - Hutta
 - The Great Hunt: Mako, Braden, Jory, Nem'ro the Hutt
 - Gauntlet: Search for Information on Vexx
 - The Last Flight: kill vexx, Braden & Jory killed by Tarro Blood
@@ -125,7 +130,7 @@ Bounty Hunter - Hutta
 - My Sponsorship
 - Escaping Hutta ( Leads to the Imperial Fleet. )
 
-Imperial Agent - Hutta
+##### Imperial Agent - Hutta
 - Empire and Republic are at truce
 - Jxin'ope is on Hutta as an imperial agent tryin to secure Hutt allies
 - Orders from Keeper; Jheeg prepared fake identity as Red Blade
@@ -140,80 +145,164 @@ Imperial Agent - Hutta
 - Convince Nem'ro to ally with Empire
 - Head to fleet with Kaliyo
 
-Jedi Knight - Tython (Do the Pilgrimage Side Quest)
-- following sacking of Jedi Temple on Coruscant, Jedi order withrdraws to Tython
-- Jxin'sen travels to Tython to complete trials
-- After landing, Flesh Raiders are attacking
-- Callef, a dark jedi, has opened a tunnel. Kill Callef
-- Master Orgus Din closes the tunnel
+##### Jedi Knight - Tython (Do the Pilgrimage Side Quest)
+
+Following sacking of Jedi Temple on Coruscant, Jedi order withrdraws to
+Tython. Jxin'sen travels to Tython to complete trials
+
+Attack of the Flesh Raiders: Flesh Raiders have mounted an assault on the
+Jedi training grounds in the Gnarls. Derrin Weller has asked you to help ward
+off this threat.  Speak to the speeder droid outside of the Masters’ Retreat
+to find transportation to the Gnarls.
+- Callef, a dark jedi, has opened a tunnel. Killed Callef
+- Meet Master Orgus Din closes the tunnel
+
+High-Tech Savages: After completing your mission in the Gnarls, you spoke
+with Master Satele Shan, head of the Jedi Council. She discussed your
+encounter with the Flesh Raiders before instructing you to meet with the Jedi
+Council.  To speak with Master Orgus and the rest of the Council, report to
+the Jedi Council chambers located in the upper level of the Jedi Temple.
 - Therapy with Master Satele Shan
 - Meet the council: Satele, Bela Kiwiks (with her padawan Kia Carsen), Orgus Din
 - Orgus Din takes me on as padawan
 - Go speak with the Matriarch of the Twilek Village, Martiarch Sumari, to get more info on the fleshraiders
+
+Enemy Force: Flesh Raiders are making incursions into an ancient Jedi shrine
+within the ruins of Kaleth. Master Orgus Din has left you to deal with this
+while he consults the Jedi Council about the contents of T7’s holorecording.
+You must travel to the ruins of Kaleth and explore the ancient shrine to
+learn why the Flesh Raiders have suddenly become interested in it.
 - Twilek settlement is here illegally. They've been dealing with raider attacks
 - Matriarch is sick, talk to Ranna Tao'Ven and Scout Chief Moorint
-- Pilgrimage Side Quest (The Thousand Steps?)
-  - Yuleph Phan, master of rituals in Kalikori, offers a rite of passage to prove your worth
-  - light fires on the path
-  - speak to Matriarch Kolovish
-  - Kolovish led the twilek pilgrims to Tython
 - Ranna and Moorint want me to destroy raider weapons
 - Found T-7 who was captured
 - T-7 has recording of Callef speaking with Bengel Morr
-- Raiders are searching for something in Kaleth, an ancient Jedi ruin. Push them back
+
+(Bonus) The Thousand Steps: Yuleph Phan, master of rituals in Kalikori village, has
+offered you the chance to complete a dangerous rite of passage that will
+prove your worth to the villagers.  To complete the rite, you must light the
+signals along the path to Kolovish, a revered former Matriarch who now lives
+in the mountains of Tython. Many Padawans have attempted the rite, but not
+all have succeeded. Take the burning brand and light the signals along the
+path to Kolovish’s home.
+- Yuleph Phan, master of rituals in Kalikori, offers a rite of passage to prove your worth
+- light fires on the path
+- speak to Matriarch Kolovish
+- Kolovish led the twilek pilgrims to Tython
+
+Enemy Force: Flesh Raiders are making incursions into an ancient Jedi shrine
+within the ruins of Kaleth. Master Orgus Din has left you to deal with this
+while he consults the Jedi Council about the contents of T7’s holorecording.
+You must travel to the ruins of Kaleth and explore the ancient shrine to
+learn why the Flesh Raiders have suddenly become interested in it.
+- Raiders are searching for something in Kaleth, an ancient Jedi ruin. Push
+  them back
 - Found a raider that can say "Jedi" and is force sensitive
-- Bengal Morr is Master Orgus' former Padawan. Turned against the Jedi following sacking of Coruscant 
+- Bengal Morr is Master Orgus' former Padawan. Turned against the Jedi
+  following sacking of Coruscant 
 - Matriarch is dying
+
+The Face of the Enemy: Master Orgus has learned that the Flesh Raiders are
+using an energy shield to protect their camps. The shields are powered by a
+generator inside a heavily guarded cave deep inside Flesh Raider territory.
+Infiltrate the Flesh Raider cave and disable the energy shield control console
+so Master Orgus can strike at their camps.
 - Disable shield generator protecting raider camp so Master Orgus can attack
 - Bengal Morr wants to destroy the Jedi to become more powerful
 - Matriarch is dead. Ranna is now matriarch
+- Orgus has learned of several flesh raider bases across Tython. 
+-  Dark Temptations: Master Orgus has learned of several Flesh Raider bases
+   scattered about Tython. He has instructed you to deal with one located in
+   the Kaleth ruins. Infiltrate the Flesh Raider stronghold inside the Forsaken
+   Den in the upper level of the Kaleth ruins.
 
-- [ ] Jedi Consular - Tython
-- [ ] Sith Warrior - Korriban
-- [ ] Smuggler & Trooper - Ord Mantell (Bounce between these and have them finish Ord Mantell at the same time)
-- [ ] Sith Inquisitor - Korriban
-- [ ] Do all of the capitals, Dromund Kaas/Coruscant class stories, here in any order you wish with agent being last completed)
-- [ ] Imperial Agent - Dromund Kaas
-- [ ] Jedi Knight - Taris
-- [ ] Jedi Knight - Nar Shadaa
-- [ ] Complete the rest of the first two planets on your characters in any order you wish.
-- [ ] Smuggler - Alderaan
-- [ ] Bounty Hunter - Alderaan
-- [ ] Complete Chapter I in any order you wish here.
-- CHAPTER II
-- [ ] Jedi Consular - Balmorra
-- [ ] Trooper - Balmorra
-- [ ] Smuggler - Balmorra
-- [ ] Jedi Knight - Balmorra
-- [ ] Imperial Agent - Taris
-- [ ] Bounty Hunter - Taris
-- [ ] Sith Inquisitor - Taris
-- [ ] Sith Warrior - Taris
-- [ ] Complete Quesh on your toons with Jedi Knight being last.
-- [ ] Jedi Knight - Hoth
-- [ ] Smuggler - Hoth
-- [ ] Bounty Hunter - Hoth
-- [ ] Imperial Agent - Hoth
-- [ ] Jedi Consular - Hoth
-- [ ] Sith Inquisitor and Warrior - Hoth
-- [ ] Do your chapter 2 finale quests except Jedi Knight and Sith Warrior
-- [ ] Sith Warrior - Chapter 2 finale
-- [ ] Jedi Knight - Chapter 2 finale
-- [ ] Sith Warrior - Make sure you speak to your LT. companion and speak to him about his General securing a base until those conversations are over. (VERY IMPORTANT)
-- CHAPTER III
-- [ ] Sith Warrior - Quesh, Belsavis, and have your force using companion with you.
-- [ ] Jedi Consular - Belsavis
-- [ ] Bounty Hunter Belsavis
-- [ ] Sith Warrior - Voss
-- [ ] Jedi Knight - Belsavis, Voss & Corellia - Choose to kill the final boss of Corellia. Don’t do the last mission, Doomsday, yet.
-- [ ] Imperial Agent - Belsavis, Voss, Corellia and the Star Chamber mission Finale
-- [ ] Sith Warrior - Corellia
-- [ ] Jedi Knight - Doomsday
-- [ ] Sith Warrior - Finale
-- [ ] OPTIONAL — Wait for mail on your Sith Warrior to arrive and read what it says then continue the other classes.
-- [ ] Sith Inquisitor - Belsavis, Voss, Corellia, & Finale
-- [ ] Bounty Hunter - Belsavis, Voss, Corellia, & Finale
-- [ ] Jedi Consular - Belsavis, Voss, Corellia & Finale
-- [ ] Trooper - Belsavis, Voss, Corellia, & Finale
-- [ ] Smuggler - Belsavis, Voss, Corellia, & Finale
+Dark Temptations: Master Orgus has learned of several Flesh Raider bases
+scattered about Tython.  He has instructed you to deal with one located in the
+Kaleth ruins. Infiltrate the Flesh Raider stronghold inside the Forsaken Den in
+the upper level of the Kaleth ruins.
+- Found Jedi Laotah injured. Warns me raiders are too strong then dies
+- Get Laotah's lightsaber back from the raiders
+- Orgus tells me Bengal has attacked Kalikori. Go back to protect them
+- Back at Kalikori, I am betrayed by Chief Moorint. They gave up Orgus to
+  Bengal in return for stopping raider attacks
 
+Weapon of the Jedi: Master Orgus Din is being held prisoner by Bengel Morr
+somewhere near the ancient Forge. T7’s scans located a likely holding area
+inside the Forge entrance along the way to the Forge.  Using T7’s scans, you
+must search the area in the Forge entrance along the path to the ancient Forge
+and find where Master Orgus is being held.
+- Found Bengal and knocked him out to be dealth with by council
+
+Seeking Darkness: The Jedi Masters have sensed more darkness in the galaxy that
+must be stopped. Because of your efforts on Tython, you have been chosen to
+investigate.  Head to the Jedi Temple spaceport and take a shuttle to Carrick
+Station. From there, you can arrange transport to Coruscant.
+- Master Kiwiiks is on Coruscant waiting for Orgus and me to help investigate
+
+#####  Jedi Consular - Tython
+
+The Path of a Jedi: 
+
+Wisdom of Elders: 
+
+Pilgrims: 
+
+Trials in Kaleth: 
+
+Hunter's Eye: 
+
+The Footsteps of the Fallen: 
+
+Rajivari's Legacy: 
+
+The Forge: 
+
+An Afflicted Master: 
+
+#####  Sith Warrior - Korriban
+#####  Smuggler & Trooper - Ord Mantell (Bounce between these and have them finish Ord Mantell at the same time)
+#####  Sith Inquisitor - Korriban
+#####  Do all of the capitals, Dromund Kaas/Coruscant class stories, here in any order you wish with agent being last completed)
+#####  Imperial Agent - Dromund Kaas
+#####  Jedi Knight - Taris
+#####  Jedi Knight - Nar Shadaa
+#####  Complete the rest of the first two planets on your characters in any order you wish.
+#####  Smuggler - Alderaan
+#####  Bounty Hunter - Alderaan
+#####  Complete Chapter I in any order you wish here.
+### - CHAPTER II
+#####  Jedi Consular - Balmorra
+#####  Trooper - Balmorra
+#####  Smuggler - Balmorra
+#####  Jedi Knight - Balmorra
+#####  Imperial Agent - Taris
+#####  Bounty Hunter - Taris
+#####  Sith Inquisitor - Taris
+#####  Sith Warrior - Taris
+#####  Complete Quesh on your toons with Jedi Knight being last.
+#####  Jedi Knight - Hoth
+#####  Smuggler - Hoth
+#####  Bounty Hunter - Hoth
+#####  Imperial Agent - Hoth
+#####  Jedi Consular - Hoth
+#####  Sith Inquisitor and Warrior - Hoth
+#####  Do your chapter 2 finale quests except Jedi Knight and Sith Warrior
+#####  Sith Warrior - Chapter 2 finale
+#####  Jedi Knight - Chapter 2 finale
+#####  Sith Warrior - Make sure you speak to your LT. companion and speak to him about his General securing a base until those conversations are over. (VERY IMPORTANT)
+### - CHAPTER III
+#####  Sith Warrior - Quesh, Belsavis, and have your force using companion with you.
+#####  Jedi Consular - Belsavis
+#####  Bounty Hunter Belsavis
+#####  Sith Warrior - Voss
+#####  Jedi Knight - Belsavis, Voss & Corellia - Choose to kill the final boss of Corellia. Don’t do the last mission, Doomsday, yet.
+#####  Imperial Agent - Belsavis, Voss, Corellia and the Star Chamber mission Finale
+#####  Sith Warrior - Corellia
+#####  Jedi Knight - Doomsday
+#####  Sith Warrior - Finale
+#####  OPTIONAL — Wait for mail on your Sith Warrior to arrive and read what it says then continue the other classes.
+#####  Sith Inquisitor - Belsavis, Voss, Corellia, & Finale
+#####  Bounty Hunter - Belsavis, Voss, Corellia, & Finale
+#####  Jedi Consular - Belsavis, Voss, Corellia & Finale
+#####  Trooper - Belsavis, Voss, Corellia, & Finale
+#####  Smuggler - Belsavis, Voss, Corellia, & Finale
