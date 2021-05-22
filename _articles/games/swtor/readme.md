@@ -144,6 +144,29 @@ Jedi Knight - Tython (Do the Pilgrimage Side Quest)
 - following sacking of Jedi Temple on Coruscant, Jedi order withrdraws to Tython
 - Jxin'sen travels to Tython to complete trials
 - After landing, Flesh Raiders are attacking
+- Callef, a dark jedi, has opened a tunnel. Kill Callef
+- Master Orgus Din closes the tunnel
+- Therapy with Master Satele Shan
+- Meet the council: Satele, Bela Kiwiks (with her padawan Kia Carsen), Orgus Din
+- Orgus Din takes me on as padawan
+- Go speak with the Matriarch of the Twilek Village, Martiarch Sumari, to get more info on the fleshraiders
+- Twilek settlement is here illegally. They've been dealing with raider attacks
+- Matriarch is sick, talk to Ranna Tao'Ven and Scout Chief Moorint
+- Pilgrimage Side Quest (The Thousand Steps?)
+  - Yuleph Phan, master of rituals in Kalikori, offers a rite of passage to prove your worth
+  - light fires on the path
+  - speak to Matriarch Kolovish
+  - Kolovish led the twilek pilgrims to Tython
+- Ranna and Moorint want me to destroy raider weapons
+- Found T-7 who was captured
+- T-7 has recording of Callef speaking with Bengel Morr
+- Raiders are searching for something in Kaleth, an ancient Jedi ruin. Push them back
+- Found a raider that can say "Jedi" and is force sensitive
+- Bengal Morr is Master Orgus' former Padawan. Turned against the Jedi following sacking of Coruscant 
+- Matriarch is dying
+- Disable shield generator protecting raider camp so Master Orgus can attack
+- Bengal Morr wants to destroy the Jedi to become more powerful
+- Matriarch is dead. Ranna is now matriarch
 
 - [ ] Jedi Consular - Tython
 - [ ] Sith Warrior - Korriban
