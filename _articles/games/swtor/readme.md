@@ -241,23 +241,74 @@ Station. From there, you can arrange transport to Coruscant.
 
 #####  Jedi Consular - Tython
 
-The Path of a Jedi: 
+The Path of a Jedi: You have arrived on Tython, the ancient homeworld of the
+Jedi. Believing you have great potential, the Jedi Council has made you Padawan
+to a noted Master, Master Yuon Par. Unfortunately, you arrived during a crisis.
+The native Flesh Raiders have begun raiding the Gnarls, where several ancient
+“teaching holograms” have been uncovered. Master Yuon Par has sent you to
+recover these priceless artifacts before they are destroyed. Speak to the
+speeder droid at the Masters’ Retreat for transport to the Gnarls.
+- welcomed by Master Syo Bakarn
+- "even in childhood you had a remarkable connection with the force"
+- Yuon asks you to recover artificats but watch out for Flesh Raiders
+- 1st holo, Master Garon Jard: Violence corupts
+- 2nd holo, Master Cala Brin: devote ourselves to justice without emotion
+- 3rd holo, Master Ters Sendon: safeguard knowledge
+- 4th holo missing
+- meet Transdoshan, Qyzen Fess
+- Missing holo is of Rajivari, one of the Jedi founders
 
-Wisdom of Elders: 
+Pilgrims: Master Yuon Par has tasked you with locating and retrieving the
+missing hologram of Rajivari, the first fallen Jedi.  She suspects that someone
+from the Twi’lek village of Kalikori may be responsible and that Bashenn,
+captain of the village guard, may know more. Find Bashenn in Kalikori village.
+- Nalen Raloch found the projector
+- Find Nalen's camp
+- Search for Rajivari's Holocron: Nalen has power. Causes cave to collapse
+- Escape the collapsing cave
+- Return to Yuon: Yuon spoke with Ranna Tao'Ven, the daughter of Kalikori matriarch
+- 4th Holo, Master Rajivari: Left behind true wisdom pointed by first blade
+- Fount of Rajivari: archive of his knowledge and teachings. Has not been found yet
+- Points to Kaleth, "Sanctuary" in old tongue, an ancient fortress
 
-Pilgrims: 
+Trials in Kaleth: After watching the holorecording of Master Rajivari, Master
+Yuon Par has tasked you with finding the Fount of Rajivari, an archive of
+long-lost knowledge. The first step is to find the “first blade” that was
+mentioned in the holorecording.  Yuon suggested investigating an area in Lower
+Kaleth where several ancient weapons have been unearthed. Explore the walls of
+Lower Kaleth for the first blade. 
+- Serch for the First Blade
+- First blade is the original lightsaber
+- Talked to Master Syo Bakarn and Master Jaric Kaeden who are concerned with Yuon's training
 
-Trials in Kaleth: 
+Hunter's Eye: Master Yuon Par has deciphered the second clue from Rajivari’s
+hologram.  She has asked you to take the hilt of the first blade to a cave
+where the founders of the Jedi Order once meditated, and look for some way to
+use it. Search for clues in the Flesh Raider cave. 
+- Explore the Flesh Raider Cave
 
-Hunter's Eye: 
+The Footsteps of the Fallen: Qyzen Fess has gone to explore the waterfall caves
+to find where the Fount of Rajivari is located. Unfortunately, you have learned
+the Fount is guarded by traps.  Master Yuon Par believes that information
+stored on the old terminals in Upper Kaleth may hold clues that will help you
+get past these traps safely. Use the terminals in Upper Kaleth to gather clues.
 
-The Footsteps of the Fallen: 
+Rajivari's Legacy: Qyzen Fess went to explore the waterfall caves for clues on
+where the Fount of Rajivari is located, but he has not returned.  Master Yuon
+Par has grown worried and asked you to look for Qyzen. There may be clues to
+Qyzen’s whereabouts inside the waterfall cave. 
 
-Rajivari's Legacy: 
+The Forge: Master Rajivari’s ghost told you that Nalen Raloch has been driven
+mad by power. Nalen wants to destroy the Jedi Order, starting with the ancient
+Forge where lightsabers are made.  Rajivari has told you to recover a crystal
+from the Forge entrance to use with the first blade’s hilt, to create a new
+lightsaber.
 
-The Forge: 
-
-An Afflicted Master: 
+An Afflicted Master: Your master, Yuon Par, has been hiding a serious illness
+from you and the Jedi Council. With Yuon now close to death, the Council has
+sent her to Coruscant for treatment.  The Council has asked you to follow Yuon
+to Coruscant and do everything you can to save her life. Go to the Jedi Temple
+spaceport and board a shuttle to Carrick Station. 
 
 #####  Sith Warrior - Korriban
 #####  Smuggler & Trooper - Ord Mantell (Bounce between these and have them finish Ord Mantell at the same time)
