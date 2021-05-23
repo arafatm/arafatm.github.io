@@ -351,6 +351,10 @@ outside of the Academy and take a taxi to the lower wilds.
 A New Master: Judge and Executioner: Upsetting Overseer Tremel’s plans for you,
 Darth Baras has summoned you to his chambers on the second floor of the Sith
 Academy.
+- Killing the beast cause a tremor in the force which brings you to Baras' attention
+- Meet Teeno, Phyne
+- Baras commands me to kill Tremel and bring back his hand
+- I let Tremel live but took his hand
 
 Sith Arithmetic: Darth Baras has issued your next trial. He commands you to
 bring back the shards of an ancient Sith tablet scattered throughout the tomb
