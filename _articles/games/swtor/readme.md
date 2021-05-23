@@ -368,7 +368,117 @@ you will need to know how to open the door to the chamber, and for that, you
 need the slave Vette. Go to the jail in the Sith Academy and speak with Vette
 and Jailer Knash.
 
-#####  Smuggler & Trooper - Ord Mantell (Bounce between these and have them finish Ord Mantell at the same time)
+#####  Smuggler - Ord Mantell (Bounce between these and have them finish Ord Mantell at the same time)
+
+Landing Party: After delivering a shipment of blasters to Republic forces, you
+find yourself trapped on Ord Mantell. Separatists have seized control of the
+local air defense cannon and are shooting down any starships flying in or out.
+Destroy the separatists’ remote control stations around Drelliad as the first
+step in disabling the air defense cannon.
+
+Desperate Times: You delivered a shipment of blasters to Ord Mantell, only to
+be betrayed by Skavak, one of your contacts. Skavak stole your ship and the
+blaster shipment for the separatists. Fortunately, Corso Riggs’s employer, a
+man named Viidu, can help you find Skavak.  Go to the Rendia Freight building
+at Fort Garnik and speak to Viidu to locate Skavak.
+
+Legitimate Business: A local named Tweeta has advised you to go see Wentell in
+Fort Garnik. She says that he’s the man you want to see if you want to learn
+the tips and tricks you’ll need to stay alive on Ord Mantell.  Speak to Wentell
+in Fort Garnik.
+
+Hungry for Information: Skavak, a separatist traitor, has stolen your ship and
+cargo. Viidu believes that Reki, a Republic contact in Talloran, can help track
+Skavak down.  To reach Reki, you’ll have to help reduce the separatist forces
+occupying Talloran. You must defeat the separatists in Talloran before you can
+speak with Reki.
+
+Security Breach: The computer at the separatist base in Mannett Point can lead
+you to Skavak and your stolen ship.  To access the computer, you need to find
+the encrypted maintenance tunnel schematics hidden inside Reki’s abandoned
+house. Unfortunately, his house is locked. Disable the power relays in Mannett
+Point to gain access to Reki’s house.
+
+Deadly Delivery: Viidu needs time to decode the separatists’ data you’ve
+retrieved. While he tries to locate Skavak, you’ll have to keep Rogan the
+Butcher off Viidu’s back.  Viidu needs you to retrieve unstable chemicals from
+a contact named Trymbo in Oradam village and bring them back safely. Speak to
+Trymbo at his house in Oradam village.
+
+Hitting Where it Hurts: Viidu has learned that Skavak plans to sell your
+blaster shipment to a separatist leader named Dareg in a hidden volcano base.
+You need to get there before the trade so you can recover your ship and cargo.
+Go to the rendezvous point inside the volcano base to stop Skavak from selling
+your cargo.
+
+Chasing Skavak: Skavak has escaped Ord Mantell using your ship and is bound for
+Coruscant.  You’ve acquired a shuttle pass from Syreena so you can follow him
+and reclaim what’s rightfully yours. Go to the spaceport in Fort Garnik and
+board a shuttle to Carrick Station to go to Coruscant.
+
+#####  Trooper - Ord Mantell (Bounce between these and have them finish Ord Mantell at the same time)
+
+Hit the Ground Running: You’re the newest member of Havoc Squad, the most elite
+infantry unit in the Republic military. Your first assignment is on Ord
+Mantell, where a separatist uprising has spiralled into a planet-wide war. An
+armored personnel walker is carrying you to Fort Garnik, where you’ll receive a
+full briefing on your mission.  One of the other passengers on the walker is
+Bex “Gearbox” Kolos, a veteran of Havoc Squad. Speak with Gearbox to learn more
+about your mission on Ord Mantell.
+
+Best of the Best: A fellow soldier mentioned that Fort Garnik has one of the
+best military training programs on Ord Mantell. He specifically recommended
+Lieutenant Forris as a highly experienced instructor for soldiers in the field.
+Meet with Lieutenant Forris at Fort Garnik to find out what he can teach you.
+
+The Spy: As the newest member of the Republic’s elite Havoc Squad, you’re
+joining in their hunt for a ZR-57 orbital strike bomb stolen by separatist
+forces on the war-torn world of Ord Mantell.  Commander Tavus, the leader of
+Havoc Squad, has issued your first orders: Meet with a Republic spy named
+Bellis and find out what he’s learned from his separatist sources about the
+bomb’s whereabouts. Make your way to Talloran village and rendezvous with
+Bellis.
+
+The Ambush: Havoc Squad is working to locate a ZR-57 orbital strike bomb stolen
+by separatist forces on the war-torn world of Ord Mantell. A refugee named
+Mirru claims to have information on the separatists’ plans for the bomb, so
+Fuse and Lieutenant Jorgan have ordered you to investigate.  Meet Mirru in the
+refugee camp outside the northern entrance to Fort Garnik.
+
+Mannett Point: Havoc Squad’s hunt for the stolen ZR-57 orbital strike bomb has
+led to a separatist base on the island of Mannett Point. Wraith, the squad’s
+infiltration expert, has been sent ahead to breach the facility, but she will
+need your help to enter the secured area where the bomb is believed to be held.
+Rendezvous with Wraith inside the separatist base at Mannett Point.
+
+Oradam Village: Needles has found a new lead in Havoc Squad’s hunt for the
+stolen ZR-57 orbital strike bomb. A man named Zak from nearby Oradam village
+came to Fort Garnik seeking treatment for radiation poisoning affecting both
+himself and his wife; the couple could easily have contracted radiation
+poisoning after handling the bomb.  Needles wants you to interrogate Zak and
+his wife to find out more, but before you do, you’ll need to recover several
+medical ingredients to cure the radiation poisoning. Recover vimidone, albozene
+and a medical injector from the scavengers at the camp west of Oradam village.
+
+The Separatists' Stronghold: Following the intelligence you retrieved, the rest
+of Havoc Squad set off to recover the stolen ZR-57 orbital strike bomb from the
+separatists’ mountain stronghold. Shortly after they breached the facility,
+however, all contact with the squad was lost.  It’s now up to you to ensure
+that the separatists cannot detonate the bomb. You need to hijack their
+communications system to broadcast the bomb’s disarm code. Use the data spike
+you’ve been issued on the communications console inside the separatists’
+mountain stronghold.
+
+New Assignment: Although you succeeded in disabling the ZR-57 orbital strike
+bomb before it could cause any damage on Ord Mantell, the victory was soured by
+the defection of Commander Tavus and the rest of Havoc Squad to the Sith
+Empire. It will now be up to you to take command, rebuild Havoc Squad, and hunt
+down the traitors before they can harm the Republic. You won’t be alone,
+though–Aric Jorgan has been placed under your command as the first of your new
+recruits.  Your orders are to report to General Garza, the head of Republic
+Special Forces, on Coruscant. From the Ord Mantell spaceport, take a shuttle to
+Carrick Station. From there, you can arrange transport to Coruscant.
+
 #####  Sith Inquisitor - Korriban
 #####  Do all of the capitals, Dromund Kaas/Coruscant class stories, here in any order you wish with agent being last completed)
 #####  Imperial Agent - Dromund Kaas
