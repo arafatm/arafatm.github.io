@@ -361,6 +361,13 @@ bring back the shards of an ancient Sith tablet scattered throughout the tomb
 of Tulak Hord.  Travel to the tomb of Tulak Hord and collect the shards from
 the antechamber, the machine vault and the archives.
 
+The Final Trial: Darth Baras has decreed that your final trial shall be to
+enter the tomb of Naga Sadow and recover an ancient lightsaber from a
+reliquary.  Before you can enter the secret chamber that hides the reliquary,
+you will need to know how to open the door to the chamber, and for that, you
+need the slave Vette. Go to the jail in the Sith Academy and speak with Vette
+and Jailer Knash.
+
 #####  Smuggler & Trooper - Ord Mantell (Bounce between these and have them finish Ord Mantell at the same time)
 #####  Sith Inquisitor - Korriban
 #####  Do all of the capitals, Dromund Kaas/Coruscant class stories, here in any order you wish with agent being last completed)
