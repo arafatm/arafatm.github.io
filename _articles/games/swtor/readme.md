@@ -286,31 +286,77 @@ hologram.  She has asked you to take the hilt of the first blade to a cave
 where the founders of the Jedi Order once meditated, and look for some way to
 use it. Search for clues in the Flesh Raider cave. 
 - Explore the Flesh Raider Cave
+- Rajivari holo: created dark jedi to purge the council
 
 The Footsteps of the Fallen: Qyzen Fess has gone to explore the waterfall caves
 to find where the Fount of Rajivari is located. Unfortunately, you have learned
 the Fount is guarded by traps.  Master Yuon Par believes that information
 stored on the old terminals in Upper Kaleth may hold clues that will help you
 get past these traps safely. Use the terminals in Upper Kaleth to gather clues.
+- find holos of other dark jedi for clues
+- 1st holo, Cahel Tse: Rajivari's 5th principle states showing kindness to enemy is weak
+- 2nd holo, Vadria Tallion: 2nd principle says all life is a battle
+- 3rd holo, Orth Quane: 7th principle says sacrificing oneself is path of a fool
 
 Rajivari's Legacy: Qyzen Fess went to explore the waterfall caves for clues on
 where the Fount of Rajivari is located, but he has not returned.  Master Yuon
 Par has grown worried and asked you to look for Qyzen. There may be clues to
 Qyzen’s whereabouts inside the waterfall cave. 
+- Found Qyzen captured by Nalen's forces
+- Enter the Fount of Rajivari
 
 The Forge: Master Rajivari’s ghost told you that Nalen Raloch has been driven
 mad by power. Nalen wants to destroy the Jedi Order, starting with the ancient
 Forge where lightsabers are made.  Rajivari has told you to recover a crystal
 from the Forge entrance to use with the first blade’s hilt, to create a new
 lightsaber.
+- forge a lightsaber
+- confront Nalen
 
 An Afflicted Master: Your master, Yuon Par, has been hiding a serious illness
 from you and the Jedi Council. With Yuon now close to death, the Council has
 sent her to Coruscant for treatment.  The Council has asked you to follow Yuon
 to Coruscant and do everything you can to save her life. Go to the Jedi Temple
 spaceport and board a shuttle to Carrick Station. 
+- Council: Satele, Jarric, Syo
+- accepted as a full Jedi
+- Board a shuttle to the fleet
 
 #####  Sith Warrior - Korriban
+
+Prologue: With a peace negotiated with the Republic, the Empire accelerates
+training of new Sith. You are sent to Korriban to undergo the training.
+
+Arm Yourself: Overseer Tremel has brought you to the Sith Academy on
+Korriban to begin your trials ahead of schedule.  Your first mission is to
+acquire a blade more appropriate to your destiny–an ancient Sith warblade from
+the armory of the tomb of Ajunta Pall.
+- On the way back to Tremel, ran into Vemrin and Dolgis. Warned to stay out of Vemrin's way
+- meet Eskella, Tremel's daughter
+- Tremel hates Vemrin for being mixed blood
+- Vemrin is being groomed by Barraas to be his next apprentice
+
+Judge and Executioner: Overseer Tremel has administered the second trial, one
+that will allow you to show your wisdom and understanding of the dark side.
+Your mission is to judge three prisoners in the Sith Academy jails. Meet with
+Jailer Knash in the Sith Academy jails for further instructions.
+- meet Vette, a prisoner
+
+Slaying the Beast: Overseer Tremel has handed down your third trial–you must
+slay a great beast in the tomb of Marka Ragnos.  Journey to the tomb of Marka
+Ragnos and discover the antechamber containing the ancient Sith carving. Then,
+meditate on the dark side to summon the beast. Speak to the shuttle droid
+outside of the Academy and take a taxi to the lower wilds.
+
+A New Master: Judge and Executioner: Upsetting Overseer Tremel’s plans for you,
+Darth Baras has summoned you to his chambers on the second floor of the Sith
+Academy.
+
+Sith Arithmetic: Darth Baras has issued your next trial. He commands you to
+bring back the shards of an ancient Sith tablet scattered throughout the tomb
+of Tulak Hord.  Travel to the tomb of Tulak Hord and collect the shards from
+the antechamber, the machine vault and the archives.
+
 #####  Smuggler & Trooper - Ord Mantell (Bounce between these and have them finish Ord Mantell at the same time)
 #####  Sith Inquisitor - Korriban
 #####  Do all of the capitals, Dromund Kaas/Coruscant class stories, here in any order you wish with agent being last completed)
