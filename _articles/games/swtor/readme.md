@@ -422,11 +422,6 @@ full briefing on your mission.  One of the other passengers on the walker is
 Bex “Gearbox” Kolos, a veteran of Havoc Squad. Speak with Gearbox to learn more
 about your mission on Ord Mantell.
 
-Best of the Best: A fellow soldier mentioned that Fort Garnik has one of the
-best military training programs on Ord Mantell. He specifically recommended
-Lieutenant Forris as a highly experienced instructor for soldiers in the field.
-Meet with Lieutenant Forris at Fort Garnik to find out what he can teach you.
-
 The Spy: As the newest member of the Republic’s elite Havoc Squad, you’re
 joining in their hunt for a ZR-57 orbital strike bomb stolen by separatist
 forces on the war-torn world of Ord Mantell.  Commander Tavus, the leader of
