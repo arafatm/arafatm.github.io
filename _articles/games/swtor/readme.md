@@ -381,11 +381,7 @@ be betrayed by Skavak, one of your contacts. Skavak stole your ship and the
 blaster shipment for the separatists. Fortunately, Corso Riggs’s employer, a
 man named Viidu, can help you find Skavak.  Go to the Rendia Freight building
 at Fort Garnik and speak to Viidu to locate Skavak.
-
-Legitimate Business: A local named Tweeta has advised you to go see Wentell in
-Fort Garnik. She says that he’s the man you want to see if you want to learn
-the tips and tricks you’ll need to stay alive on Ord Mantell.  Speak to Wentell
-in Fort Garnik.
+- blasters Skavak stole belonged to Rogun the Butcher
 
 Hungry for Information: Skavak, a separatist traitor, has stolen your ship and
 cargo. Viidu believes that Reki, a Republic contact in Talloran, can help track
