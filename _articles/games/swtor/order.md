@@ -9,10 +9,6 @@
 
 ### Dromund Kaas
 
-> This is tied in somewhat in several places (Lord Grathan area which has to be
-> happening simultaneously), but I found a few lines that helped establish a
-> timeline order.
-
 ##### 1D. Hunter
 
 > During the first target hunt to gain entry to the Great Hunt, it is mentioned
@@ -45,9 +41,6 @@
 > heads out to find the Jedi Padawan for Lord Baras.
 
 ### Coruscant
-
-> Very few tie-ins are present here, but I tried to establish a loose timeline
-> to do a chronological order for the original planets and then Coruscant.
 
 ##### 1C. Knight
 
