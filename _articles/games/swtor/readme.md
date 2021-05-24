@@ -394,6 +394,7 @@ you to Skavak and your stolen ship.  To access the computer, you need to find
 the encrypted maintenance tunnel schematics hidden inside Reki’s abandoned
 house. Unfortunately, his house is locked. Disable the power relays in Mannett
 Point to gain access to Reki’s house.
+- Syreena is being hassled by thugs. Killed them.
 
 Deadly Delivery: Viidu needs time to decode the separatists’ data you’ve
 retrieved. While he tries to locate Skavak, you’ll have to keep Rogan the
@@ -406,11 +407,17 @@ blaster shipment to a separatist leader named Dareg in a hidden volcano base.
 You need to get there before the trade so you can recover your ship and cargo.
 Go to the rendezvous point inside the volcano base to stop Skavak from selling
 your cargo.
+- Sepatist Leader Dareg
+- Skavak stole a rusty antique droid from Dareg
+- Syreena is Skavak's girl
 
 Chasing Skavak: Skavak has escaped Ord Mantell using your ship and is bound for
 Coruscant.  You’ve acquired a shuttle pass from Syreena so you can follow him
 and reclaim what’s rightfully yours. Go to the spaceport in Fort Garnik and
 board a shuttle to Carrick Station to go to Coruscant.
+- Skavak ghosted Syreena
+- Syreena killed Viidu. Paid me for shuttle flight to Coruscant
+- Bounty hunters Kindin & Xo'ru are waiting for me at spaceport
 
 #####  Trooper - Ord Mantell (Bounce between these and have them finish Ord Mantell at the same time)
 
@@ -421,6 +428,9 @@ armored personnel walker is carrying you to Fort Garnik, where you’ll receive 
 full briefing on your mission.  One of the other passengers on the walker is
 Bex “Gearbox” Kolos, a veteran of Havoc Squad. Speak with Gearbox to learn more
 about your mission on Ord Mantell.
+- Havoc Suad: Bex Kolos "Gearbox", Commandur Tavus, Captain Zora "Wraith",
+  Vanto Bazren "Fuse", Ryler Dorant "Needles"
+- Aric Jorga, Ops officer coordinating efforts
 
 The Spy: As the newest member of the Republic’s elite Havoc Squad, you’re
 joining in their hunt for a ZR-57 orbital strike bomb stolen by separatist
@@ -441,6 +451,10 @@ led to a separatist base on the island of Mannett Point. Wraith, the squad’s
 infiltration expert, has been sent ahead to breach the facility, but she will
 need your help to enter the secured area where the bomb is believed to be held.
 Rendezvous with Wraith inside the separatist base at Mannett Point.
+- Private Farn report Lieutenant Virk who is taking bribes from his soldiers
+  in return for cushy assignments
+- While interrogating a sep officer, you learn 3 commanders are here
+- kill saphro, Vyru, and Bol
 
 Oradam Village: Needles has found a new lead in Havoc Squad’s hunt for the
 stolen ZR-57 orbital strike bomb. A man named Zak from nearby Oradam village
