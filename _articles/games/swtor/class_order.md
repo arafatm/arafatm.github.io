@@ -208,8 +208,13 @@
 
 > Investigate a breach in the Hutt Network Data Center (Galactic Holonet). Axis is within and killed/contained
 
-
-> The Great Hunt Bounty is the Eidolon. Eidelon has a security company infringing on the Hutts and is selling munititions to the Republic. The Hunter blows up his science facility to stop munition production. Then puts his client list on the Holonet at Network Exchange. Hunter can kill Eidelon or deliver him to the Hutts. (Story is longer and the Hunter goes deeper into Network Access than others and probably should finish the planet storyline dealing with Axis.
+> The Great Hunt Bounty is the Eidolon. Eidelon has a security company
+> infringing on the Hutts and is selling munititions to the Republic. The
+> Hunter blows up his science facility to stop munition production. Then puts
+> his client list on the Holonet at Network Exchange. Hunter can kill Eidelon
+> or deliver him to the Hutts. (Story is longer and the Hunter goes deeper into
+> Network Access than others and probably should finish the planet storyline
+> dealing with Axis.
 
 ##### 4. Knight
 
