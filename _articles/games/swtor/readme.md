@@ -110,6 +110,7 @@ Imperial Short Heroics List
 # Order
 
 https://www.mmo-champion.com/threads/2477330-SWTOR-Class-Story-Chronologically-Listed
+- [Class storyline order by planet](https://www.swtor.com/community/showthread.php?t=919553)
 - http://www.swtor-spy.com/quests/
 - https://swtor-archive.fandom.com/wiki/Bounty_Hunter_Storyline
 - https://swtor-archive.fandom.com/wiki/Imperial_Agent_Storyline
@@ -473,6 +474,8 @@ that the separatists cannot detonate the bomb. You need to hijack their
 communications system to broadcast the bomb’s disarm code. Use the data spike
 you’ve been issued on the communications console inside the separatists’
 mountain stronghold.
+- Havoc squad sold the bomb to the empire and is defecting 
+- Reason for defection is squad was abandoned on Ando Prime 
 
 New Assignment: Although you succeeded in disabling the ZR-57 orbital strike
 bomb before it could cause any damage on Ord Mantell, the victory was soured by
@@ -483,9 +486,76 @@ though–Aric Jorgan has been placed under your command as the first of your new
 recruits.  Your orders are to report to General Garza, the head of Republic
 Special Forces, on Coruscant. From the Ord Mantell spaceport, take a shuttle to
 Carrick Station. From there, you can arrange transport to Coruscant.
+- Jorgan is being punished for Havoc's defection
+- promoted to Lt, and Jorgan is demoted to Sgt
+- Jorgan is assigned to new Havoc with you leading
 
 #####  Sith Inquisitor - Korriban
+
+Of Mind and Matter: You have been pulled from the ranks of slaves on Korriban
+and given a chance to complete the trials of the Sith Academy and become Sith,
+much to the disgust of your instructor, Overseer Harkun.  Your first trial is
+to find the sacrificial chamber in the tomb of Ajunta Pall and speak to the
+hermit Spindrall, who will test your worth. Go to the sacrificial chamber in
+the tomb of Ajunta Pall.
+
+The Plight Of The Acolyte: Overseer Harkun has given you your second trial, but
+not many details. You must report to Inquisitor Zyn in the Academy jail to
+receive further instructions.  Go to the Sith Academy jail and speak to
+Inquisitor Zyn.
+
+A Little Knowledge: Overseer Harkun has issued your third trial. You are to travel to the wilds of Korriban and enter the tomb of Marka Ragnos. There, you need to retrieve an ancient holocron that no Sith has been able to retrieve for a thousand years.  Speak to the shuttle droid outside of the Academy and take a taxi to the lower wilds.
+
+The Secret of Tulak Hord: Overseer Harkun has given you your fourth trial. This
+time, Lord Zash herself has requested a text from the tomb of Tulak Hord. The
+complete text, however, has been divided between three tablets in the tomb.
+Lord Zash wants all three.  Travel to the tomb of Tulak Hord and collect the
+tablets from the antechamber, the machine vault and the archives.
+
+Martial Law: Overseer Harkun is growing increasingly furious over your success
+at the trials. To remedy this, he has sent you to complete a trial of combat.
+You are to report to the combat training room on the second floor of the Sith
+Academy, and speak to the training master there.
+
+A Map for the Future: You have been given your final trial. You must venture
+into the tomb of Naga Sadow and retrieve an ancient map for Lord Zash.
+Unfortunately, to get to the map, you have to awaken an ancient creature known
+as the Dashade.  To access the Dashade’s chamber, you must first gather the
+ancient rods hidden throughout the tomb. Gather the ancient rods from within
+the tomb of Naga Sadow.
+
+Onwards to Dromund Kaas: You’ve been sent to Dromund Kaas to meet with Lord
+Zash in her chambers and learn more about her plans for the map you retrieved.
+Board your ship and travel with your companion, Khem Val, to Dromund Kaas.
+
 #####  Do all of the capitals, Dromund Kaas/Coruscant class stories, here in any order you wish with agent being last completed)
+
+##### 1D. Hunter
+During the first target hunt to gain entry to the Great Hunt, it is mentioned the statue in the Jungle is nameless at this point. Later, the Hunter kills a sith apprentice at Lord Grathan's estate. Ultimately, all targets are finished with the hunter killing an Imperial Agent. He/she wins entry to the Great Hunt.
+
+##### 2D. Inquisitor
+The Colossus is named at this point when Zash sends the apprentice to the Slave revolt jungle. Later, the inquisitor kills a scientist hired by Lord Grathan and ultimately kills Darth Skotia. Darth Thanaton appears at this point and the Inquisitor finds out he/she is a descendent of Lord Kallig. The first holocron is obtained for Lord Zash's plan.
+
+##### 3D. Agent
+The slave revolt has been occurring for some time now. Varying terrorist connections are investigated including slaves and Theovar Mindak, who is sheltered by Lord Grathan. He is dealt with and the terrorists attack Darth Jadus ship, while the Agent is at the Dark Temple. He/she leaves to hunt the Eagle network.
+
+##### 4D. Warrior
+We find out that Lord Baras actually started the slave revolt. The Warrior kills the slave leaders and then kills Lord Grathan. (This effectively should end a couple of storylines on the planet.) He/she obtains the ravager and heads out to find the Jedi Padawan for Lord Baras.
+
+##### Coruscant
+Very few tie-ins are present here, but I tried to establish a loose timeline to do a chronological order for the original planets and then Coruscant.
+
+##### 1C. Knight
+General Varsuthra mentions that the Republic is working on a secret weapons project here. Lord Tarnis the Sith traitor is killed, but the Empire finds the secret weapons facilities indicating their start here in the Works.
+
+##### 2C. Smuggler
+Skavak tries to sell a counterfeit Ruby to the Empire who are in the Works now. Skavak had sold Rogun the Butcher's guns as well by this time (to the Empire?). The Smuggler gets the ship back and leaves to find Nok Drayan's fortune.
+
+##### 3C. Consular
+The Consular arrives to find a cure for his/her Master. He/she does this, but ends up killing Lars Braddeg, who is working for the Sith Plaguebearer. Jedi Council members have arrived on Coruscant by this time and send the consular to help others.
+##### 4C. Trooper
+General Garza appears and wants the Trooper to cut off supplies to the Havok defectors. Jak Kardan is found and is working with justicars and imps who are established now on Coruscant. The Trooper clears the Imps from the Works effectively keeping the planet safe. 
+
 #####  Imperial Agent - Dromund Kaas
 #####  Jedi Knight - Taris
 #####  Jedi Knight - Nar Shadaa
