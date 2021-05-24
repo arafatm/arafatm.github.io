@@ -386,13 +386,22 @@ much to the disgust of your instructor, Overseer Harkun.  Your first trial is
 to find the sacrificial chamber in the tomb of Ajunta Pall and speak to the
 hermit Spindrall, who will test your worth. Go to the sacrificial chamber in
 the tomb of Ajunta Pall.
+- "Return to Harkun and nurture your hatred of him"
+- "It is Lord Zash who determines where the blow will land"
+- Harkun kills acolyte Kory
 
 The Plight Of The Acolyte: Overseer Harkun has given you your second trial, but
 not many details. You must report to Inquisitor Zyn in the Academy jail to
 receive further instructions.  Go to the Sith Academy jail and speak to
 Inquisitor Zyn.
+- Interrogate Alif
+- Apprentice Kayin is the killer but his master is a dark council member
 
-A Little Knowledge: Overseer Harkun has issued your third trial. You are to travel to the wilds of Korriban and enter the tomb of Marka Ragnos. There, you need to retrieve an ancient holocron that no Sith has been able to retrieve for a thousand years.  Speak to the shuttle droid outside of the Academy and take a taxi to the lower wilds.
+A Little Knowledge: Overseer Harkun has issued your third trial. You are to
+travel to the wilds of Korriban and enter the tomb of Marka Ragnos. There, you
+need to retrieve an ancient holocron that no Sith has been able to retrieve for
+a thousand years.  Speak to the shuttle droid outside of the Academy and take a
+taxi to the lower wilds.
 
 The Secret of Tulak Hord: Overseer Harkun has given you your fourth trial. This
 time, Lord Zash herself has requested a text from the tomb of Tulak Hord. The
