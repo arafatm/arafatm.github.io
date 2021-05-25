@@ -85,45 +85,48 @@ Spacedock.
 
 ##### Jedi Knight - Tython (Do the Pilgrimage Side Quest)
 
-Following sacking of Jedi Temple on Coruscant, Jedi order withrdraws to
-Tython. Jxin'sen travels to Tython to complete trials
+Following sacking of Jedi Temple on Coruscant, Jedi order withrdraws to Tython.
+Jxin'sen travels to Tython to complete trials
 
-Attack of the Flesh Raiders: Flesh Raiders have mounted an assault on the
-Jedi training grounds in the Gnarls. Derrin Weller has asked you to help ward
-off this threat.  Speak to the speeder droid outside of the Masters’ Retreat
-to find transportation to the Gnarls.
+Attack of the Flesh Raiders: Flesh Raiders have mounted an assault on the Jedi
+training grounds in the Gnarls. Derrin Weller has asked you to help ward off
+this threat.  Speak to the speeder droid outside of the Masters’ Retreat to
+find transportation to the Gnarls.
 - Callef, a dark jedi, has opened a tunnel. Killed Callef
 - Meet Master Orgus Din closes the tunnel
 
-High-Tech Savages: After completing your mission in the Gnarls, you spoke
-with Master Satele Shan, head of the Jedi Council. She discussed your
-encounter with the Flesh Raiders before instructing you to meet with the Jedi
-Council.  To speak with Master Orgus and the rest of the Council, report to
-the Jedi Council chambers located in the upper level of the Jedi Temple.
+High-Tech Savages: After completing your mission in the Gnarls, you spoke with
+Master Satele Shan, head of the Jedi Council. She discussed your encounter with
+the Flesh Raiders before instructing you to meet with the Jedi Council.  To
+speak with Master Orgus and the rest of the Council, report to the Jedi Council
+chambers located in the upper level of the Jedi Temple.
 - Therapy with Master Satele Shan
-- Meet the council: Satele, Bela Kiwiks (with her padawan Kia Carsen), Orgus Din
+- Meet the council: Satele, Bela Kiwiks (with her padawan Kia Carsen), Orgus
+  Din
 - Orgus Din takes me on as padawan
-- Go speak with the Matriarch of the Twilek Village, Martiarch Sumari, to get more info on the fleshraiders
+- Go speak with the Matriarch of the Twilek Village, Martiarch Sumari, to get
+  more info on the fleshraiders
 
 Enemy Force: Flesh Raiders are making incursions into an ancient Jedi shrine
 within the ruins of Kaleth. Master Orgus Din has left you to deal with this
 while he consults the Jedi Council about the contents of T7’s holorecording.
-You must travel to the ruins of Kaleth and explore the ancient shrine to
-learn why the Flesh Raiders have suddenly become interested in it.
+You must travel to the ruins of Kaleth and explore the ancient shrine to learn
+why the Flesh Raiders have suddenly become interested in it.
 - Twilek settlement is here illegally. They've been dealing with raider attacks
 - Matriarch is sick, talk to Ranna Tao'Ven and Scout Chief Moorint
 - Ranna and Moorint want me to destroy raider weapons
 - Found T-7 who was captured
 - T-7 has recording of Callef speaking with Bengel Morr
 
-(Bonus) The Thousand Steps: Yuleph Phan, master of rituals in Kalikori village, has
-offered you the chance to complete a dangerous rite of passage that will
+(Bonus) The Thousand Steps: Yuleph Phan, master of rituals in Kalikori village,
+has offered you the chance to complete a dangerous rite of passage that will
 prove your worth to the villagers.  To complete the rite, you must light the
-signals along the path to Kolovish, a revered former Matriarch who now lives
-in the mountains of Tython. Many Padawans have attempted the rite, but not
-all have succeeded. Take the burning brand and light the signals along the
-path to Kolovish’s home.
-- Yuleph Phan, master of rituals in Kalikori, offers a rite of passage to prove your worth
+signals along the path to Kolovish, a revered former Matriarch who now lives in
+the mountains of Tython. Many Padawans have attempted the rite, but not all
+have succeeded. Take the burning brand and light the signals along the path to
+Kolovish’s home.
+- Yuleph Phan, master of rituals in Kalikori, offers a rite of passage to prove
+  your worth
 - light fires on the path
 - speak to Matriarch Kolovish
 - Kolovish led the twilek pilgrims to Tython
@@ -131,8 +134,8 @@ path to Kolovish’s home.
 Enemy Force: Flesh Raiders are making incursions into an ancient Jedi shrine
 within the ruins of Kaleth. Master Orgus Din has left you to deal with this
 while he consults the Jedi Council about the contents of T7’s holorecording.
-You must travel to the ruins of Kaleth and explore the ancient shrine to
-learn why the Flesh Raiders have suddenly become interested in it.
+You must travel to the ruins of Kaleth and explore the ancient shrine to learn
+why the Flesh Raiders have suddenly become interested in it.
 - Raiders are searching for something in Kaleth, an ancient Jedi ruin. Push
   them back
 - Found a raider that can say "Jedi" and is force sensitive
@@ -204,9 +207,11 @@ captain of the village guard, may know more. Find Bashenn in Kalikori village.
 - Find Nalen's camp
 - Search for Rajivari's Holocron: Nalen has power. Causes cave to collapse
 - Escape the collapsing cave
-- Return to Yuon: Yuon spoke with Ranna Tao'Ven, the daughter of Kalikori matriarch
+- Return to Yuon: Yuon spoke with Ranna Tao'Ven, the daughter of Kalikori
+  matriarch
 - 4th Holo, Master Rajivari: Left behind true wisdom pointed by first blade
-- Fount of Rajivari: archive of his knowledge and teachings. Has not been found yet
+- Fount of Rajivari: archive of his knowledge and teachings. Has not been found
+  yet
 - Points to Kaleth, "Sanctuary" in old tongue, an ancient fortress
 
 Trials in Kaleth: After watching the holorecording of Master Rajivari, Master
@@ -217,7 +222,8 @@ Kaleth where several ancient weapons have been unearthed. Explore the walls of
 Lower Kaleth for the first blade. 
 - Serch for the First Blade
 - First blade is the original lightsaber
-- Talked to Master Syo Bakarn and Master Jaric Kaeden who are concerned with Yuon's training
+- Talked to Master Syo Bakarn and Master Jaric Kaeden who are concerned with
+  Yuon's training
 
 Hunter's Eye: Master Yuon Par has deciphered the second clue from Rajivari’s
 hologram.  She has asked you to take the hilt of the first blade to a cave
@@ -232,9 +238,11 @@ the Fount is guarded by traps.  Master Yuon Par believes that information
 stored on the old terminals in Upper Kaleth may hold clues that will help you
 get past these traps safely. Use the terminals in Upper Kaleth to gather clues.
 - find holos of other dark jedi for clues
-- 1st holo, Cahel Tse: Rajivari's 5th principle states showing kindness to enemy is weak
+- 1st holo, Cahel Tse: Rajivari's 5th principle states showing kindness to
+  enemy is weak
 - 2nd holo, Vadria Tallion: 2nd principle says all life is a battle
-- 3rd holo, Orth Quane: 7th principle says sacrificing oneself is path of a fool
+- 3rd holo, Orth Quane: 7th principle says sacrificing oneself is path of a
+  fool
 
 Rajivari's Legacy: Qyzen Fess went to explore the waterfall caves for clues on
 where the Fount of Rajivari is located, but he has not returned.  Master Yuon
@@ -265,11 +273,12 @@ spaceport and board a shuttle to Carrick Station.
 Prologue: With a peace negotiated with the Republic, the Empire accelerates
 training of new Sith. You are sent to Korriban to undergo the training.
 
-Arm Yourself: Overseer Tremel has brought you to the Sith Academy on
-Korriban to begin your trials ahead of schedule.  Your first mission is to
-acquire a blade more appropriate to your destiny–an ancient Sith warblade from
-the armory of the tomb of Ajunta Pall.
-- On the way back to Tremel, ran into Vemrin and Dolgis. Warned to stay out of Vemrin's way
+Arm Yourself: Overseer Tremel has brought you to the Sith Academy on Korriban
+to begin your trials ahead of schedule.  Your first mission is to acquire a
+blade more appropriate to your destiny–an ancient Sith warblade from the armory
+of the tomb of Ajunta Pall.
+- On the way back to Tremel, ran into Vemrin and Dolgis. Warned to stay out of
+  Vemrin's way
 - meet Eskella, Tremel's daughter
 - Tremel hates Vemrin for being mixed blood
 - Vemrin is being groomed by Barraas to be his next apprentice
@@ -289,7 +298,8 @@ outside of the Academy and take a taxi to the lower wilds.
 A New Master: Judge and Executioner: Upsetting Overseer Tremel’s plans for you,
 Darth Baras has summoned you to his chambers on the second floor of the Sith
 Academy.
-- Killing the beast cause a tremor in the force which brings you to Baras' attention
+- Killing the beast cause a tremor in the force which brings you to Baras'
+  attention
 - Meet Teeno, Phyne
 - Baras commands me to kill Tremel and bring back his hand
 - I let Tremel live but took his hand
@@ -306,7 +316,8 @@ you will need to know how to open the door to the chamber, and for that, you
 need the slave Vette. Go to the jail in the Sith Academy and speak with Vette
 and Jailer Knash.
 
-#####  Smuggler - Ord Mantell (Bounce between these and have them finish Ord Mantell at the same time)
+#####  Smuggler - Ord Mantell (Bounce between these and have them finish Ord
+Mantell at the same time)
 
 Landing Party: After delivering a shipment of blasters to Republic forces, you
 find yourself trapped on Ord Mantell. Separatists have seized control of the
@@ -357,7 +368,8 @@ board a shuttle to Carrick Station to go to Coruscant.
 - Syreena killed Viidu. Paid me for shuttle flight to Coruscant
 - Bounty hunters Kindin & Xo'ru are waiting for me at spaceport
 
-#####  Trooper - Ord Mantell (Bounce between these and have them finish Ord Mantell at the same time)
+#####  Trooper - Ord Mantell (Bounce between these and have them finish Ord
+Mantell at the same time)
 
 Hit the Ground Running: You’re the newest member of Havoc Squad, the most elite
 infantry unit in the Republic military. Your first assignment is on Ord
@@ -389,8 +401,8 @@ led to a separatist base on the island of Mannett Point. Wraith, the squad’s
 infiltration expert, has been sent ahead to breach the facility, but she will
 need your help to enter the secured area where the bomb is believed to be held.
 Rendezvous with Wraith inside the separatist base at Mannett Point.
-- Private Farn report Lieutenant Virk who is taking bribes from his soldiers
-  in return for cushy assignments
+- Private Farn report Lieutenant Virk who is taking bribes from his soldiers in
+  return for cushy assignments
 - While interrogating a sep officer, you learn 3 commanders are here
 - kill saphro, Vyru, and Bol
 
@@ -514,18 +526,24 @@ Family Cleansing: Your second bounty in the race to join the Great Hunt is for
 the Imperial Navy, or rather an Imperial admiral by the name of Fraabaal.  It’s
 time to find out the details of the job. Talk to Admiral Fraabaal at his office
 in Kaas City.
-- Fraabaal wants you to kill his daugther, Vereta, a Sith working for Lord Grathan
+- Fraabaal wants you to kill his daugther, Vereta, a Sith working for Lord
+  Grathan
 
 The Spy Game: Your final bounty for entry into the Great Hunt is a job for
 Imperial Intelligence Central Command in the Citadel.  Speak to Captain Medle
 in Commander Gargun’s office in Imperial Command.
-
-xxx
+- Team sent to Dark Temple hasn't come back
+- Retrive ID cards from Dark Temple
+- incl. Commander Gargun, Medle's boss
+- Medle wants the ID so Gargun can be declared dead
+- Gargun is insane thinking he's a Sith Lord. Got the ID without fighting
+- Medle tries to have you killed on return. Let him live
 
 The Melee: The last spot in the Great Hunt has come down to “The Grand Melee,”
 a free-for-all fight between the remaining contestants in the arena of the
 Mandalorian enclave. The last one standing gets into the Great Hunt.  Enter the
 arena in the Mandalorian enclave.
+- Tarro claimed you're dead and melee is about to start without you
 
 Joy Ride: You’ve made it into the Great Hunt! Your first task is an old
 tradition: stealing a ship.  Crysta Markon has told you of a ship belonging to
@@ -539,6 +557,8 @@ spaceport.
 > Grathan and ultimately kills Darth Skotia. Darth Thanaton appears at this
 > point and the Inquisitor finds out he/she is a descendent of Lord Kallig. The
 > first holocron is obtained for Lord Zash's plan.
+
+xxx
 
 Onwards to Dromund Kaas: You’ve been sent to Dromund Kaas to meet with Lord
 Zash in her chambers and learn more about her plans for the map you retrieved.
