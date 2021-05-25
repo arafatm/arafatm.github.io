@@ -50,6 +50,24 @@ palace.
 
 House Cleaning: Nem'ro's Apology
 
+My Sponsorship: Nem’ro has double-crossed you again. He has already given his
+Great Hunt sponsorship token to another bounty hunter and has told you that if
+you want it so badly, you should go take it from him. That’s exactly what
+you’re going to do, but first, you should collect your payment for the
+beastmaster job.  Speak to Juda to collect your payment for dealing with the
+beastmaster. You’ll find her within Nem’ro’s palace.
+- Mako has discovered Nem'ro sponsored bounty hunter, Rasrsk a Trandoshan. 
+- Set a trap for your rival who is going after a republic scientist, Albea, in
+  Fa'athra's palace
+- Bone mask is Grataa, a great hunt representative
+
+Escaping Hutta: Your task on Hutta is complete–you’ve earned your sponsorship
+for the Great Hunt.  Grataa, an official for the Great Hunt, has sent you to
+Dromund Kaas to seek out the Huntmaster in the Mandalorian enclave. The
+Huntmaster will tell you more about the Great Hunt and what it entails. To
+travel to Dromund Kaas, take the shuttle at the Jiguuna shuttle pad to Vaiken
+Spacedock.
+
 ##### Imperial Agent - Hutta
 - Empire and Republic are at truce
 - Jxin'ope is on Hutta as an imperial agent tryin to secure Hutt allies
@@ -469,6 +487,8 @@ Board your ship and travel with your companion, Khem Val, to Dromund Kaas.
 > finished with the hunter killing an Imperial Agent. He/she wins entry to the
 > Great Hunt.
 
+Mako: Braden was very excited finding you and winning the Great Hunt 
+
 The Hunt on Dromund Kaas: You’ve been sent to Dromund Kaas to seek out the
 Huntmaster in the Mandalorian enclave and learn more about the Great Hunt.
 Board your ship and travel with your companion, Mako, to Dromund Kaas.
@@ -478,6 +498,8 @@ Hunt.  After speaking to your contact, Crysta Markon, you learn that there is
 only one spot left in the Great Hunt and still dozens of competitors hoping to
 claim it. However, the Huntmaster has a way of dealing with this situation.
 Speak to the Huntmaster at the Mandalorian enclave.
+- Your handler, Crysta Markon, states there's only 1 spot with 3 dozen
+  sponsorees
 
 A Musty Trail: In order to make it into the Great Hunt, you’ll need to complete
 three bounties on Dromund Kaas.  Your first is a Republic noble who was
@@ -485,11 +507,14 @@ accidentally sold into slavery, and your only clue is the slave camp to which
 he was assigned. Unfortunately, the camp is in the center of a massive slave
 rebellion. Investigate the rebel slave camp near the unfinished colossus for
 clues as to where to find the Republic noble.
+- Lady Dak-Ah has Altaca
+- Navy Sgt Wallax wants to arrest you. Sent by Tarro Blood
 
 Family Cleansing: Your second bounty in the race to join the Great Hunt is for
 the Imperial Navy, or rather an Imperial admiral by the name of Fraabaal.  It’s
 time to find out the details of the job. Talk to Admiral Fraabaal at his office
 in Kaas City.
+- Fraabaal wants you to kill his daugther, Vereta, a Sith working for Lord Grathan
 
 The Spy Game: Your final bounty for entry into the Great Hunt is a job for
 Imperial Intelligence Central Command in the Citadel.  Speak to Captain Medle
