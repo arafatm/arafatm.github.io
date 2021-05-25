@@ -520,6 +520,8 @@ The Spy Game: Your final bounty for entry into the Great Hunt is a job for
 Imperial Intelligence Central Command in the Citadel.  Speak to Captain Medle
 in Commander Gargun’s office in Imperial Command.
 
+xxx
+
 The Melee: The last spot in the Great Hunt has come down to “The Grand Melee,”
 a free-for-all fight between the remaining contestants in the arena of the
 Mandalorian enclave. The last one standing gets into the Great Hunt.  Enter the
@@ -538,6 +540,35 @@ spaceport.
 > point and the Inquisitor finds out he/she is a descendent of Lord Kallig. The
 > first holocron is obtained for Lord Zash's plan.
 
+Onwards to Dromund Kaas: You’ve been sent to Dromund Kaas to meet with Lord
+Zash in her chambers and learn more about her plans for the map you retrieved.
+Board your ship and travel with your companion, Khem Val, to Dromund Kaas.
+
+At The Foot Of The Colossus: Darth Skotia stands between you and the lost power
+of Tulak Hord. Lord Zash has a plan to defeat Darth Skotia, but it requires
+some preparation. Your first task is to retrieve a Trandoshan relic that Darth
+Skotia hid beneath the unfinished colossus.  To find the relic, though, you’ll
+need the archaeological plans of the site. Travel to the unfinished colossus
+and gather the fragmented archaeological plans from the rebel slave engineers.
+
+Dismantling The Machine: Lord Zash has commissioned an anti-cyborg weapon in
+order to defeat Darth Skotia. Unfortunately, the scientist who developed the
+weapon, Dorotsech, is being held captive by the rogue Sith Lord Grathan.  Lord
+Zash has procured a keycard that should get you in to see Dorotsech. Go to the
+Cybernetics Lab in Lord Grathan’s Estate and use the keycard to open the door
+to free Dorotsech. Then, retrieve the weapon and dispose of him.
+
+Giant Killer: It’s time to execute Lord Zash’s plan to defeat Darth Skotia.
+Take the Trandoshan relic and cyber neutralizer and confront Darth Skotia in
+his chambers in the Sith Sanctum.
+
+In The Halls Of Traitors: With Darth Skotia out of the way, and Zash promoted
+to Darth, you may finally begin collecting the lost power of Tulak Hord. The
+first piece lies buried within the innermost chamber of the Dark Temple,
+protected by a vengeful spirit that Darth Zash has foreseen only you can
+pacify.  Darth Zash has given you a glyph to open the innermost chamber of the
+temple. Go there and use the glyph to open the door to the chamber.
+
 ##### 3D. Agent
 
 > The slave revolt has been occurring for some time now. Varying terrorist
@@ -546,12 +577,77 @@ spaceport.
 > Jadus ship, while the Agent is at the Dark Temple. He/she leaves to hunt the
 > Eagle network.
 
+The Path Leads to Dromund Kaas: Working undercover as “the Red Blade,” you were
+able to complete your mission on Hutta and convince Nem’ro the Hutt to ally
+with the Empire. Now it’s time to return to the Imperial capital for debriefing
+and reassignment.  Travel to Dromund Kaas with your companion, Kaliyo, in order
+to continue your mission.
+
+Dark Meeting: Your assignment is to expose and eliminate a violent dissident
+movement on Dromund Kaas.  After obtaining a major lead, however, you were
+ordered to cease operations and meet privately with Darth Jadus–the Dark
+Council member overseeing Intelligence operations. You must return to the
+Citadel in Kaas City, and meet with Darth Jadus in his chambers inside the Sith
+Sanctum.
+
+The Slave's Secret: Upon arriving at Imperial Intelligence headquarters, you
+found Keeper arguing with Darth Jadus, a powerful Sith Lord. The source of the
+tension between them is unclear, but Keeper agreed to Darth Jadus’s demand that
+you be given a special assignment.  Keeper has asked you to meet him in his
+office. First, however, you must gather equipment for your next mission from
+the lockers in Intelligence headquarters.
+
+High Society: Your assignment is to expose and eliminate a violent dissident
+movement on Dromund Kaas.  Your handler, Watcher Two, will brief you on your
+next lead when you arrive at the Nexus Room cantina. Proceed to the Nexus Room
+cantina in Kaas City and contact Watcher Two via your holocommunicator.
+
+Cleaning Up the Mess: Disaster! Although you prevented the dissident attack on
+Kaas City, a second, simultaneous attack was able to destroy the Dominator–a
+dreadnaught carrying three thousand people, including Darth Jadus.  Members of
+the dissident group responsible are fleeing Dromund Kaas from Cargo Port A3 in
+Kaas City. Get to their ship and plant a mouse droid aboard to safely disable
+it.
+
+Doom and the Dark Temple: You’ve uncovered a dissident plot to detonate the
+power conduits running beneath Kaas City, killing hundreds and leaving the city
+open to attack. The dissidents intend to launch the attack from the Dark
+Temple, using its long-forgotten access tunnels as a starting point for the
+conduit overload.  Over Keeper’s objections, Darth Jadus has chosen you to stop
+the dissidents. Travel to the Dark Temple and disable the secondary charges
+placed throughout the area.
+
 ##### 4D. Warrior
 
 > We find out that Lord Baras actually started the slave revolt. The Warrior
 > kills the slave leaders and then kills Lord Grathan. (This effectively should
 > end a couple of storylines on the planet.) He/she obtains the ravager and
 > heads out to find the Jedi Padawan for Lord Baras.
+
+The Flight to Dromund Kaas: You’ve been sent to Dromund Kaas to meet Darth
+Baras.  Board your ship and travel with your companion, Vette, to Dromund Kaas.
+
+The Transporter: You’ve reported to Darth Baras at the Citadel, and he’s
+instructed you to oversee the transfer of a prisoner at Cargo Port B7.
+Commander Lanklyn is the officer in charge of the operation. Head to Cargo Port
+B7 in Kaas City to make sure that nothing goes awry.
+
+Pull The Plug: Darth Baras has instructed you to meet with Commander Pritch.
+Commander Pritch will have further details on what needs to be done. Head to
+the Imperial post near the unfinished colossus to meet him.
+
+Laying Waste: Darth Baras has instructed you to meet with Dri’kill Ba’al, his
+undercover spy at the Grathan compound.  Dri’kill Ba’al will have a mission for
+you that will demonstrate that Lord Grathan is not untouchable. Find Dri’kill
+Ba’al at the Warehouse Offices on Lord Grathan’s Estate.
+
+An Ancient Answer: Darth Baras’s attempts to break Grik Sonosan have hit a
+standstill. In order to gain the information he craves, Darth Baras requires an
+ancient torture device from the Dark Temple called the Ravager.
+
+Leaving Dromund Kaas: Darth Baras has sent you to get your own starship at its
+private hangar in the Dromund Kaas spaceport, then contact him via the
+holoterminal on the ship’s bridge.
 
 ### Coruscant
 
@@ -561,12 +657,67 @@ spaceport.
 > project here. Lord Tarnis the Sith traitor is killed, but the Empire finds
 > the secret weapons facilities indicating their start here in the Works.
 
+The Jedi Envoy: After completing your training on Tython, you are to travel to
+Coruscant as ordered by the Jedi Council.  Travel to Coruscant.
+
+Stolen Secrets: The data files for the Planet Prison, a top secret Republic
+military weapon, have been stolen, along with valuable military hardware. A
+Rodian smuggler named Vistis Garn was behind the theft; he’s known to work for
+the Migrant Merchants’ Guild.  Take a speeder to the old Galactic Market and
+infiltrate the Migrant Merchants’ Guild warehouse to recover the stolen goods.
+
+Kidnapped!:  While you recovered the stolen data files for the Planet Prison,
+kidnappers have taken Doctor Tarnis.  Agent Galen has asked you to meet up with
+Kira Carsen and her security team at the spaceport to stop the kidnappers. Head
+to docking bay 84 in the spaceport and speak to Kira Carsen.
+
+The Rescue: Agent Galen is sending you to rescue Doctor Tarnis while he, Master
+Orgus and Master Kiwiiks secure vulnerable Republic weapons labs.  Galen
+offered the services of a special tactical unit of Republic soldiers to assist
+you. Take a speeder to the Black Sun sector and speak to Sergeant Nidaljo and
+his squad to get their help.
+
+Tracking Down the Traitor: General Var Suthra is determined to find the traitor
+Doctor Tarnis before he escapes.  Intelligence agents discovered Doctor
+Tarnis’s last holocall came from within Justicar territory; he wants you to
+investigate. Take a speeder to Justicar territory and find the Justicar prison.
+
+Race to the Ruins: Lord Tarnis has set up the Planet Prison in the ruins of the
+old Jedi Temple on Coruscant. You need to stop him before it becomes fully
+active.  Use the elevator in the Justicar territory to reach the Works, then
+travel to the speeder pad that can take you to the elevator that leads to the
+Jedi Temple. Once there, travel to the Jedi Council chambers to confront Lord
+Tarnis.
+
 ##### 2C. Smuggler
 
 > Skavak tries to sell a counterfeit Ruby to the Empire who are in the Works
 > now. Skavak had sold Rogun the Butcher's guns as well by this time (to the
 > Empire?). The Smuggler gets the ship back and leaves to find Nok Drayan's
 > fortune.
+
+The Gambler: Travel to Coruscant
+
+Identity Crisis: Darmas Pollaran thinks a slicer named Kixi might know where
+Skavak is hiding.  She is holed up in a computer lab in the Migrant Merchants’
+Guild area. Use the security panel in the Migrant Merchants’ Guild area to gain
+access to Kixi’s computer lab.
+
+Hot Pursuit: Skavak is involved with the Black Sun gang. Darmas Pollaran, your
+contact on Coruscant, thinks the Black Sun may have a fragmented holorecording
+that reveals Skavak’s location.  If you acquire the fragments, you can
+reassemble the entire message. Head to the Black Sun’s headquarters to retrieve
+the holo fragments from their computer consoles.
+
+Due Process: Darmas Pollaran’s informants have tracked Skavak to the Justicar
+sector.  Darmas thinks a pair of siblings named Juul and Jiik might know where
+to find him. Take a speeder to Justicar territory and speak with Juul in her
+apartment.
+
+Race the Devil: You’ve learned that Skavak has a secret meeting with Imperials
+down in the Works below Coruscant.  If you hurry, maybe you can catch him and
+reclaim your ship. Head to the south Works and intercept Skavak at his meeting
+with the Imperials.
 
 ##### 3C. Consular
 
@@ -575,12 +726,86 @@ spaceport.
 > Council members have arrived on Coruscant by this time and send the consular
 > to help others.
 
+The Arrival: Travel to Coruscant
+
+Secret Signals: Attros Finn claims the Noetikons, relics once housed in the
+Jedi Temple, may contain a cure for Master Yuon Par’s illness. The Noetikons
+were stolen, but Attros has heard a Noetikon is in the possession of a Gand
+scavenger.  A Republic security officer, Alec Efran, has the Gand in custody at
+the barricade in the old Galactic Market. Speak to Alec Efran and find out what
+the Gand knows.
+
+The Coming Darkness: Attros Finn has contacted you. Master Yuon Par’s illness
+is getting worse, and she has turned violent. You must stop Master Yuon from
+hurting herself or anyone else.  Return to the Senate tower medical ward and
+speak to Attros Finn.
+
+The Flow of Goods: Attros Finn claims the Noetikons, relics once housed in the
+Jedi Temple, may contain a cure for Master Yuon Par’s illness. Attros has
+discovered that a Noetikon is in the possession of the dangerous Black Sun
+gang.  The Black Sun are using the back rooms of the Silent Sun cantina as a
+secret warehouse. A Noetikon was seen in a recent shipment. Head to the Silent
+Sun cantina and investigate.
+
+Shadows: You are tracking three Noetikons, relics that may have a cure for your
+sick Master, Yuon Par. The first two Noetikons have pieces of the puzzle, but
+you must find the third.  Both the Black Sun gangster Curt Willham and the Gand
+mentioned that a Justicar named Lars Baddeg was involved in trying to hide the
+Noetikons from you. He may have the third Noetikon. Attros Finn suggested
+looking for Lars Baddeg at the Justicars’ base in Justicar territory.
+
+Ancient Secrets: Master Yuon Par’s time is running out. The Masters of the
+three Noetikons have suggested a cure for Master Yuon’s illness, an ancient
+shielding technique. This technique is recorded in the Jedi Archives in the
+ruined Jedi Temple.  Locate the Jedi Archives amongst the ruins of the Jedi
+Temple.
+
 ##### 4C. Trooper
 
 > General Garza appears and wants the Trooper to cut off supplies to the Havok
 > defectors. Jak Kardan is found and is working with justicars and imps who are
 > established now on Coruscant. The Trooper clears the Imps from the Works
 > effectively keeping the planet safe.
+
+The Coruscant Assignment: Travel to Coruscant
+
+Destroying The War Droids: General Garza has ordered you to destroy a shipment
+of war droids that the Havoc Squad traitors purchased from the Migrant
+Merchants’ Guild, a criminal organization on Coruscant.  Corporal Garrum, a
+SpecForce soldier who has been observing the Migrant Merchants’ Guild’s
+activities, is waiting to rendezvous with you and provide more details. Meet
+with Corporal Garrum on the outskirts of the old Galactic Market district to
+proceed with your mission.
+
+The Black Sun's Poison: Your next assignment from General Garza is to destroy a
+shipment of deadly nerve gas called Trivoris. It was purchased by the Havoc
+Squad traitors from the Black Sun, another underworld group operating on
+Coruscant.  Sergeant Jaxo, a fellow SpecForce trooper, will brief you on the
+details of the mission. Rendezvous with Sergeant Jaxo at her undercover
+assignment apartment in Black Sun territory.
+
+The Senate Inquiry: A committee of the Galactic Senate is conducting an
+“informal inquiry” into the defection of your former squad-mates to the Sith
+Empire.  General Garza has ordered you to appear at the inquiry, but she would
+prefer that you avoid confirming any of the Senators’ suspicions. Report to the
+Senate Subcommittee Chambers inside the Senate tower to proceed with the
+inquiry.
+
+More Old Friends: General Garza has learned that the former commander of Havoc
+Squad, Jek Kardan, is working with a group of ex-military vigilantes on
+Coruscant known as the Justicars. Kardan was a mentor to Harron Tavus and the
+other traitors, and Garza suspects that he is actively assisting them even now.
+She wants Kardan brought in for questioning. Travel to Justicar territory, then
+locate and apprehend Jek Kardan inside the Justicars’ base of operations.
+
+Assault On The Works: Using the Justicars’ data files, you have determined that
+Jek Kardan is using a rebuilt communications relay down in the Works level of
+Coruscant to route communications between the Havoc traitors. General Garza has
+ordered you to destroy the communications relay and attempt to capture Jek
+Kardan again, though you are authorized to kill him if capture is impossible.
+A fellow SpecForce soldier, Sergeant Mathin, will meet you at the security
+checkpoint near the elevator to the Works with the explosives you’ll need to
+destroy the relay.
 
 ### Offworld Actions
 
