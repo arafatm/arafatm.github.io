@@ -10,14 +10,45 @@
 ### Starting Planets: Tython, Korriban 
 
 ##### Bounty Hunter - Hutta
-- The Great Hunt: Mako, Braden, Jory, Nem'ro the Hutt
-- Gauntlet: Search for Information on Vexx
-- The Last Flight: kill vexx, Braden & Jory killed by Tarro Blood
-- Big Chief: defeat Fa'athra's Street Captains; Speak to Nem'ro; Confront Huttsbane
-- Settling Accounts: Kill Yalt (former accountant); Yalt ruin's Faathra's finances, let him go
-- House Cleaning ( At the end of this mission, Mako joins you as a "guest" )
-- My Sponsorship
-- Escaping Hutta ( Leads to the Imperial Fleet. )
+
+Gauntlet: Braden, a famed but now retired bounty hunter, has recruited you for
+his team for the Great Hunt. You’ll need sponsorship to get in, though. The
+local crime lord, Nem’ro the Hutt, has yet to offer his sponsorship to anyone,
+and Braden thinks if you can make a name for yourself, you can win that prize.
+Your first task is to hunt down a high-profile target named Vexx. Search Vexx’s
+safe house for any clues as to where he’s hiding.
+
+The Last Flight: Mako has cracked Vexx’s datapad, and it shows that he’s
+prepping a shuttle to leave the planet. Braden is sure that if you can stop
+him, you can win Nem’ro’s Great Hunt sponsorship.  Head to Vexx’s hangar in the
+Jiguuna spaceport, and stop Vexx from taking off.
+
+Big Chief: Eliminate the Evocii found within the renegade Evocii camp on Hutta.
+
+Keeping Them in Line: Braden and Jory have been murdered by a rival bounty
+hunter named Tarro Blood. Gaining Nem’ro’s support for the Great Hunt will be
+even more difficult now.  Mako suggested that you try to get on the Hutt’s good
+side before meeting him in person by taking out some of his rivals’ gang
+members.  Head into Jiguuna and defeat Fa’artha the Hutt’s street captains.
+- You kill Huttsbane, an evocii rebel leader
+- Mako is being followed by someone wearing a white bone mask
+
+Settling Accounts: Nem’ro needs more convincing that you deserve his
+sponsorship for the Great Hunt. Right now, that means taking out more of
+Nem’ro’s enemies. A former accountant of Nem’ro’s, Yalt, has defected to the
+syndicate of Fa’athra the Hutt. Nem’ro wants you to kill Yalt for this, and
+deliver his head to his wife.  Before you deal with Yalt, however, you should
+collect your payment for the Huttsbane job. Speak to Juda for your payment.
+You’ll find her within Nem’ro’s palace.
+
+House Cleaning: Nem’ro the Hutt wants you to take out more of his enemies
+before granting you his sponsorship to the Great Hunt. This time, Nem’ro wants
+you to take out his own beastmaster, who has been plotting against him.  Before
+you head off, you should collect your pay for the Yalt job. Speak to Juda to
+collect your payment for taking care of Yalt. You’ll find her within Nem’ro’s
+palace.
+
+House Cleaning: Nem'ro's Apology
 
 ##### Imperial Agent - Hutta
 - Empire and Republic are at truce
@@ -437,6 +468,42 @@ Board your ship and travel with your companion, Khem Val, to Dromund Kaas.
 > sith apprentice at Lord Grathan's estate. Ultimately, all targets are
 > finished with the hunter killing an Imperial Agent. He/she wins entry to the
 > Great Hunt.
+
+The Hunt on Dromund Kaas: You’ve been sent to Dromund Kaas to seek out the
+Huntmaster in the Mandalorian enclave and learn more about the Great Hunt.
+Board your ship and travel with your companion, Mako, to Dromund Kaas.
+
+The Huntmaster: You and Mako have arrived on Dromund Kaas to join the Great
+Hunt.  After speaking to your contact, Crysta Markon, you learn that there is
+only one spot left in the Great Hunt and still dozens of competitors hoping to
+claim it. However, the Huntmaster has a way of dealing with this situation.
+Speak to the Huntmaster at the Mandalorian enclave.
+
+A Musty Trail: In order to make it into the Great Hunt, you’ll need to complete
+three bounties on Dromund Kaas.  Your first is a Republic noble who was
+accidentally sold into slavery, and your only clue is the slave camp to which
+he was assigned. Unfortunately, the camp is in the center of a massive slave
+rebellion. Investigate the rebel slave camp near the unfinished colossus for
+clues as to where to find the Republic noble.
+
+Family Cleansing: Your second bounty in the race to join the Great Hunt is for
+the Imperial Navy, or rather an Imperial admiral by the name of Fraabaal.  It’s
+time to find out the details of the job. Talk to Admiral Fraabaal at his office
+in Kaas City.
+
+The Spy Game: Your final bounty for entry into the Great Hunt is a job for
+Imperial Intelligence Central Command in the Citadel.  Speak to Captain Medle
+in Commander Gargun’s office in Imperial Command.
+
+The Melee: The last spot in the Great Hunt has come down to “The Grand Melee,”
+a free-for-all fight between the remaining contestants in the arena of the
+Mandalorian enclave. The last one standing gets into the Great Hunt.  Enter the
+arena in the Mandalorian enclave.
+
+Joy Ride: You’ve made it into the Great Hunt! Your first task is an old
+tradition: stealing a ship.  Crysta Markon has told you of a ship belonging to
+a smuggler that should suit your purposes. Go to docking bay B-04 at the
+spaceport.
 
 ##### 2D. Inquisitor
 
