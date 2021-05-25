@@ -491,6 +491,10 @@ Board your ship and travel with your companion, Khem Val, to Dromund Kaas.
 
 ### Dromund Kaas
 
+##### Mako 
+
+Braden was very excited finding you and winning the Great Hunt 
+
 ##### 1D. Hunter
 
 > During the first target hunt to gain entry to the Great Hunt, it is mentioned
@@ -498,8 +502,6 @@ Board your ship and travel with your companion, Khem Val, to Dromund Kaas.
 > sith apprentice at Lord Grathan's estate. Ultimately, all targets are
 > finished with the hunter killing an Imperial Agent. He/she wins entry to the
 > Great Hunt.
-
-Mako: Braden was very excited finding you and winning the Great Hunt 
 
 The Hunt on Dromund Kaas: You’ve been sent to Dromund Kaas to seek out the
 Huntmaster in the Mandalorian enclave and learn more about the Great Hunt.
@@ -549,6 +551,13 @@ Joy Ride: You’ve made it into the Great Hunt! Your first task is an old
 tradition: stealing a ship.  Crysta Markon has told you of a ship belonging to
 a smuggler that should suit your purposes. Go to docking bay B-04 at the
 spaceport.
+- Stopped by Spaceport Security Commander
+
+##### Mako 
+
+- Fa'athra is trying to find who broke into his palace
+- Parents had Mako teched out as a baby
+- "street scum from Nar Shadaa"
 
 ##### 2D. Inquisitor
 
@@ -558,11 +567,11 @@ spaceport.
 > point and the Inquisitor finds out he/she is a descendent of Lord Kallig. The
 > first holocron is obtained for Lord Zash's plan.
 
-xxx
-
 Onwards to Dromund Kaas: You’ve been sent to Dromund Kaas to meet with Lord
 Zash in her chambers and learn more about her plans for the map you retrieved.
 Board your ship and travel with your companion, Khem Val, to Dromund Kaas.
+- Zash is rivals with Skotia
+- "This witch stinks of death" -- Khem
 
 At The Foot Of The Colossus: Darth Skotia stands between you and the lost power
 of Tulak Hord. Lord Zash has a plan to defeat Darth Skotia, but it requires
@@ -588,6 +597,8 @@ first piece lies buried within the innermost chamber of the Dark Temple,
 protected by a vengeful spirit that Darth Zash has foreseen only you can
 pacify.  Darth Zash has given you a glyph to open the innermost chamber of the
 temple. Go there and use the glyph to open the door to the chamber.
+
+xxx
 
 ##### 3D. Agent
 
