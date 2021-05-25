@@ -420,11 +420,13 @@ Unfortunately, to get to the map, you have to awaken an ancient creature known
 as the Dashade.  To access the Dashade’s chamber, you must first gather the
 ancient rods hidden throughout the tomb. Gather the ancient rods from within
 the tomb of Naga Sadow.
+- Release Khem Val
 
 Onwards to Dromund Kaas: You’ve been sent to Dromund Kaas to meet with Lord
 Zash in her chambers and learn more about her plans for the map you retrieved.
 Board your ship and travel with your companion, Khem Val, to Dromund Kaas.
-
+- Darth Skotia doesn't want you on Dromund Kaas
+- Sends apprentices to kill you
 
 ### Dromund Kaas
 
