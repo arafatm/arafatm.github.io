@@ -72,64 +72,55 @@ Spacedock.
 
 ##### Imperial Agent - Hutta
 
-Claim Your New Identity
-Your first mission as an Imperial agent brings you to Hutta. Your handler, Keeper, has ordered you to assume a cover identity and convince Nem’ro the Hutt to ally with the Empire.
+Claim Your New Identity: Your first mission as an Imperial agent brings you to
+Hutta. Your handler, Keeper, has ordered you to assume a cover identity and
+convince Nem’ro the Hutt to ally with the Empire.  The first step is to contact
+Jheeg, an Imperial asset in the town of Jiguuna; he will brief you on your
+cover. Meet Jheeg at his safe house in Jiguuna.
 
-The first step is to contact Jheeg, an Imperial asset in the town of Jiguuna; he will brief you on your cover. Meet Jheeg at his safe house in Jiguuna.
-
-Friends in Common
-You have run into an “old friend” at Nem’ro’s palace who insinuated that your handler, Keeper, wants you better equipped. To accomplish this, she has arranged for you to meet a “new friend” in Jigunna.
-
-Travel to Jiguuna and meet with your “new friend” for equipment and training.
-
-Soiree
-Operating undercover as the pirate “the Red Blade,” you’ve been assigned to win Nem’ro the Hutt’s allegiance for the Empire. You must introduce yourself to Nem’ro and deliver his tribute–surveillance equipment disguised as gifts.
-
-Proceed to Nem’ro’s palace in Jiguuna and seek an audience with the Hutt.
-
-Subverting Karrels Javis
-Now working undercover as the pirate “the Red Blade,” you’ve been assigned to earn the trust of Karrels Javis–the weak link in Nem’ro the Hutt’s criminal organization.
-
-Meet with Karrels in Nem’ro’s palace and find a way to help him regain Nem’ro’s favor.
-
-Economies of Scale
-Working undercover as the pirate “the Red Blade,” you’ve been assigned to sabotage Fa’athra the Hutt’s gas mining operations in the Rust Yards. This will help your relationship with Karrels Javis, as well as ensure that the gas supply is not disrupted.
-
-First, take some of the explosives from the crate delivered to your suite in Nem’ro’s palace.
-
-Change of Plans
-Unforeseen circumstances have turned Karrels Javis–the Empire’s closest ally inside Nem’ro the Hutt’s organization–into a liability. Keeper has ordered you to kill Karrels, frame Fa’athra the Hutt and suggest that Karrels’s murder was accomplished with Republic aid.
-
-Keeper has given you a Republic computer spike. Use it to slice into Karrels Javis’s security system down the hallway between your suite and his within Nem’ro’s palace.
-
-The New Truth
-Working undercover as “the Red Blade,” you’ve been assigned to convince Nem’ro the Hutt and his lieutenants to ally with the Empire. You’re on the verge of success, if you can only fake evidence that Nem’ro’s rival, Fa’athra, is in league with the Republic.
-
-You’ll need access codes to Fa’athra’s archives to obtain the materials for a forgery. Acquire the access codes by defeating Fa’athra’s lieutenants at Fa’athra’s palace.
-
-Leaving Hutta
-Working undercover as “the Red Blade,” you were able to complete your mission on Hutta and eliminate the real Red Blade to preserve your cover. Now it’s time to leave for the Imperial capital.
-
-From the Jiguuna spaceport, take a shuttle to Vaiken Spacedock. You can arrange transport there to Dromund Kaas.
-
-Nothing Is Ever Easy
-Working undercover as “the Red Blade,” you were able to convince Nem’ro the Hutt to ally with the Empire. Your mission on Hutta is complete.
-
-Keeper has ordered you to meet him on Dromund Kaas. Head to the Jiguuna spaceport and board a shuttle to the Imperial capital.
-
-- Empire and Republic are at truce
-- Jxin'ope is on Hutta as an imperial agent tryin to secure Hutt allies
-- Orders from Keeper; Jheeg prepared fake identity as Red Blade
-- Meet Nem'ro, Karrel Javis, Toth'lazhen; 
-- Nem'ro is at war with Faa'thra
+Soiree: Operating undercover as the pirate “the Red Blade,” you’ve been
+assigned to win Nem’ro the Hutt’s allegiance for the Empire. You must introduce
+yourself to Nem’ro and deliver his tribute–surveillance equipment disguised as
+gifts.  Proceed to Nem’ro’s palace in Jiguuna and seek an audience with the
+Hutt.
 - Keeper lets me know Darth Jadus is interested in this op
-- Keeper wants to subvert Karrels who is out of favor with Nem'ro
-- Dheno Rey knows Red Blade, threatens to out me
-- Jarrel has a scheme to get info about stolen ore from Evocii leader, Odeph
+
+Subverting Karrels Javis: Now working undercover as the pirate “the Red Blade,”
+you’ve been assigned to earn the trust of Karrels Javis–the weak link in Nem’ro
+the Hutt’s criminal organization.  Meet with Karrels in Nem’ro’s palace and
+find a way to help him regain Nem’ro’s favor.
+
+Economies of Scale: Working undercover as the pirate “the Red Blade,” you’ve
+been assigned to sabotage Fa’athra the Hutt’s gas mining operations in the Rust
+Yards. This will help your relationship with Karrels Javis, as well as ensure
+that the gas supply is not disrupted.  First, take some of the explosives from
+the crate delivered to your suite in Nem’ro’s palace.
+
+Change of Plans: Unforeseen circumstances have turned Karrels Javis–the
+Empire’s closest ally inside Nem’ro the Hutt’s organization–into a liability.
+Keeper has ordered you to kill Karrels, frame Fa’athra the Hutt and suggest
+that Karrels’s murder was accomplished with Republic aid.  Keeper has given you
+a Republic computer spike. Use it to slice into Karrels Javis’s security system
+down the hallway between your suite and his within Nem’ro’s palace.
 - Jarrel's sons were killed by a Sith. Convince him to run and hide to get him out of the way
-- Empire wants access to Nem'ro's refined gas pipeline. Crush Faathra who is tapping the same gas pockets
-- Convince Nem'ro to ally with Empire
-- Head to fleet with Kaliyo
+
+The New Truth: Working undercover as “the Red Blade,” you’ve been assigned to
+convince Nem’ro the Hutt and his lieutenants to ally with the Empire. You’re on
+the verge of success, if you can only fake evidence that Nem’ro’s rival,
+Fa’athra, is in league with the Republic.  You’ll need access codes to
+Fa’athra’s archives to obtain the materials for a forgery. Acquire the access
+codes by defeating Fa’athra’s lieutenants at Fa’athra’s palace.
+
+Nothing Is Ever Easy: Working undercover as “the Red Blade,” you were able to
+convince Nem’ro the Hutt to ally with the Empire. Your mission on Hutta is
+complete.  Keeper has ordered you to meet him on Dromund Kaas. Head to the
+Jiguuna spaceport and board a shuttle to the Imperial capital.
+
+Leaving Hutta: Working undercover as “the Red Blade,” you were able to complete
+your mission on Hutta and eliminate the real Red Blade to preserve your cover.
+Now it’s time to leave for the Imperial capital.  From the Jiguuna spaceport,
+take a shuttle to Vaiken Spacedock. You can arrange transport there to Dromund
+Kaas.
 
 ##### Jedi Knight - Tython (Do the Pilgrimage Side Quest)
 
