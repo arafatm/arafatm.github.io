@@ -2,6 +2,8 @@
 
 > [Source](https://www.swtor.com/community/showthread.php?t=919553)
 
+> Appearance: 2,1,1,18,6,1,1,20,16,30
+
 ## A. Opening planets and Coruscant/Dromund Kaas
 
 > Republic - Knight, Smuggler, Consular, Trooper  
