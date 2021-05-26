@@ -590,6 +590,11 @@ to free Dorotsech. Then, retrieve the weapon and dispose of him.
 Giant Killer: It’s time to execute Lord Zash’s plan to defeat Darth Skotia.
 Take the Trandoshan relic and cyber neutralizer and confront Darth Skotia in
 his chambers in the Sith Sanctum.
+- Zash will be in Nexus Room Cantina to have an alibi
+- After killing Skotia meet Zash in Nexus Room Cantina
+- Darth Thanaton isn't happy with Zash for killing Skotia
+- Thanaton "sits just below the Dark Council in authority"
+- "Her breath stinks of Sith lies" -- Khem
 
 In The Halls Of Traitors: With Darth Skotia out of the way, and Zash promoted
 to Darth, you may finally begin collecting the lost power of Tulak Hord. The
@@ -597,8 +602,14 @@ first piece lies buried within the innermost chamber of the Dark Temple,
 protected by a vengeful spirit that Darth Zash has foreseen only you can
 pacify.  Darth Zash has given you a glyph to open the innermost chamber of the
 temple. Go there and use the glyph to open the door to the chamber.
+- Lord Kallig "blood of my blood"
+- "This temple became my kingdom" -- Kallig
+- "Your strength would return our family to glory"
 
-xxx
+##### Khem
+
+- defeated by Tulak Horde in honorable combat
+- Served Tulak for honor
 
 ##### 3D. Agent
 
@@ -613,13 +624,7 @@ able to complete your mission on Hutta and convince Nem’ro the Hutt to ally
 with the Empire. Now it’s time to return to the Imperial capital for debriefing
 and reassignment.  Travel to Dromund Kaas with your companion, Kaliyo, in order
 to continue your mission.
-
-Dark Meeting: Your assignment is to expose and eliminate a violent dissident
-movement on Dromund Kaas.  After obtaining a major lead, however, you were
-ordered to cease operations and meet privately with Darth Jadus–the Dark
-Council member overseeing Intelligence operations. You must return to the
-Citadel in Kaas City, and meet with Darth Jadus in his chambers inside the Sith
-Sanctum.
+- "This is not your domain keeper. It's mine. It's always been mind" -- Darth Jadus
 
 The Slave's Secret: Upon arriving at Imperial Intelligence headquarters, you
 found Keeper arguing with Darth Jadus, a powerful Sith Lord. The source of the
@@ -627,6 +632,14 @@ tension between them is unclear, but Keeper agreed to Darth Jadus’s demand tha
 you be given a special assignment.  Keeper has asked you to meet him in his
 office. First, however, you must gather equipment for your next mission from
 the lockers in Intelligence headquarters.
+- Find slave leader Jurithus
+
+Dark Meeting: Your assignment is to expose and eliminate a violent dissident
+movement on Dromund Kaas.  After obtaining a major lead, however, you were
+ordered to cease operations and meet privately with Darth Jadus–the Dark
+Council member overseeing Intelligence operations. You must return to the
+Citadel in Kaas City, and meet with Darth Jadus in his chambers inside the Sith
+Sanctum.
 
 High Society: Your assignment is to expose and eliminate a violent dissident
 movement on Dromund Kaas.  Your handler, Watcher Two, will brief you on your
@@ -647,6 +660,8 @@ Temple, using its long-forgotten access tunnels as a starting point for the
 conduit overload.  Over Keeper’s objections, Darth Jadus has chosen you to stop
 the dissidents. Travel to the Dark Temple and disable the secondary charges
 placed throughout the area.
+
+xxx
 
 ##### 4D. Warrior
 
