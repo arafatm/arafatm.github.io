@@ -70,6 +70,10 @@ Huntmaster will tell you more about the Great Hunt and what it entails. To
 travel to Dromund Kaas, take the shuttle at the Jiguuna shuttle pad to Vaiken
 Spacedock.
 
+##### Mako 
+
+Braden was very excited finding you and winning the Great Hunt 
+
 ##### Imperial Agent - Hutta
 
 Claim Your New Identity: Your first mission as an Imperial agent brings you to
@@ -364,8 +368,7 @@ and Jailer Knash.
 - Given to me as a "gift" from Darth Baras
 - Asks for shock collar to be removed
 
-#####  Smuggler - Ord Mantell (Bounce between these and have them finish Ord
-Mantell at the same time)
+#####  Smuggler - Ord Mantell (Bounce between these and have them finish Ord Mantell at the same time)
 
 Landing Party: After delivering a shipment of blasters to Republic forces, you
 find yourself trapped on Ord Mantell. Separatists have seized control of the
@@ -416,8 +419,11 @@ board a shuttle to Carrick Station to go to Coruscant.
 - Syreena killed Viidu. Paid me for shuttle flight to Coruscant
 - Bounty hunters Kindin & Xo'ru are waiting for me at spaceport
 
-#####  Trooper - Ord Mantell (Bounce between these and have them finish Ord
-Mantell at the same time)
+##### Corso
+
+- joined Peace Brigade going into help planets abandoned after Treaty of Coruscant
+
+#####  Trooper - Ord Mantell (Bounce between these and have them finish Ord Mantell at the same time)
 
 Hit the Ground Running: You’re the newest member of Havoc Squad, the most elite
 infantry unit in the Republic military. Your first assignment is on Ord
@@ -462,6 +468,7 @@ poisoning after handling the bomb.  Needles wants you to interrogate Zak and
 his wife to find out more, but before you do, you’ll need to recover several
 medical ingredients to cure the radiation poisoning. Recover vimidone, albozene
 and a medical injector from the scavengers at the camp west of Oradam village.
+- On way back Lt. Virk is not happy with you
 
 The Separatists' Stronghold: Following the intelligence you retrieved, the rest
 of Havoc Squad set off to recover the stolen ZR-57 orbital strike bomb from the
@@ -486,6 +493,12 @@ Carrick Station. From there, you can arrange transport to Coruscant.
 - Jorgan is being punished for Havoc's defection
 - promoted to Lt, and Jorgan is demoted to Sgt
 - Jorgan is assigned to new Havoc with you leading
+- Report to General Garza, head of SpecOps, on Coruscant
+
+##### Jorgan
+
+- Not happy about demotion
+- Used to command the deadeyes, "finest sniper squad in the republic"
 
 #####  Sith Inquisitor - Korriban
 
@@ -538,10 +551,6 @@ Board your ship and travel with your companion, Khem Val, to Dromund Kaas.
 - Sends apprentices to kill you
 
 ### Dromund Kaas
-
-##### Mako 
-
-Braden was very excited finding you and winning the Great Hunt 
 
 ##### 1D. Hunter
 
