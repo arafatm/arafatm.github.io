@@ -564,6 +564,8 @@ The Hunt on Dromund Kaas: You’ve been sent to Dromund Kaas to seek out the
 Huntmaster in the Mandalorian enclave and learn more about the Great Hunt.
 Board your ship and travel with your companion, Mako, to Dromund Kaas.
 
+Letter from Albea: made it safely to Coruscant
+
 The Huntmaster: You and Mako have arrived on Dromund Kaas to join the Great
 Hunt.  After speaking to your contact, Crysta Markon, you learn that there is
 only one spot left in the Great Hunt and still dozens of competitors hoping to
@@ -571,6 +573,8 @@ claim it. However, the Huntmaster has a way of dealing with this situation.
 Speak to the Huntmaster at the Mandalorian enclave.
 - Your handler, Crysta Markon, states there's only 1 spot with 3 dozen
   sponsorees
+- Huntmaster Assistant Lek
+- Huntmaster (wookie)
 
 A Musty Trail: In order to make it into the Great Hunt, you’ll need to complete
 three bounties on Dromund Kaas.  Your first is a Republic noble who was
