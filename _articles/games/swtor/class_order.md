@@ -359,6 +359,11 @@ you will need to know how to open the door to the chamber, and for that, you
 need the slave Vette. Go to the jail in the Sith Academy and speak with Vette
 and Jailer Knash.
 
+##### Vette
+
+- Given to me as a "gift" from Darth Baras
+- Asks for shock collar to be removed
+
 #####  Smuggler - Ord Mantell (Bounce between these and have them finish Ord
 Mantell at the same time)
 
