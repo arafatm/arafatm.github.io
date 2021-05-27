@@ -307,6 +307,10 @@ spaceport and board a shuttle to Carrick Station.
 - accepted as a full Jedi
 - Board a shuttle to the fleet
 
+##### Qyzen
+
+- thinks of you as Herald for the Scorekeeper
+
 #####  Sith Warrior - Korriban
 
 Prologue: With a peace negotiated with the Republic, the Empire accelerates
