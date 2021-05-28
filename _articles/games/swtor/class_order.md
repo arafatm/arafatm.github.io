@@ -751,11 +751,9 @@ your ship’s holoterminal to check in with Imperial Intelligence headquarters o
 the status of your target list.  
 - Jadus' daughter, Zhorrid, is taking his seat
 
-##### Kaliyo
+##### Kaliyo: Part of the Team
 
 ##### 4D. Warrior
-
-xxx
 
 > We find out that Lord Baras actually started the slave revolt. The Warrior
 > kills the slave leaders and then kills Lord Grathan. (This effectively should
@@ -769,10 +767,14 @@ The Transporter: You’ve reported to Darth Baras at the Citadel, and he’s
 instructed you to oversee the transfer of a prisoner at Cargo Port B7.
 Commander Lanklyn is the officer in charge of the operation. Head to Cargo Port
 B7 in Kaas City to make sure that nothing goes awry.
+- Sleestack and TuMarr, rival gangsters, also want the prisoner, who is in carbonite
+- Darth Barras spy network, "the invisibles"
 
 Pull The Plug: Darth Baras has instructed you to meet with Commander Pritch.
 Commander Pritch will have further details on what needs to be done. Head to
 the Imperial post near the unfinished colossus to meet him.
+- Lord Bars instigated the Slave revolt to "disrupt one of his rivals"
+- Slaves are threatening to expose Baras unless provided with more weapons
 
 Laying Waste: Darth Baras has instructed you to meet with Dri’kill Ba’al, his
 undercover spy at the Grathan compound.  Dri’kill Ba’al will have a mission for
@@ -786,6 +788,8 @@ ancient torture device from the Dark Temple called the Ravager.
 Leaving Dromund Kaas: Darth Baras has sent you to get your own starship at its
 private hangar in the Dromund Kaas spaceport, then contact him via the
 holoterminal on the ship’s bridge.
+
+xxx
 
 ### Coruscant
 
