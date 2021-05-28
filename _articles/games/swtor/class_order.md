@@ -723,13 +723,7 @@ movement on Dromund Kaas.  Your handler, Watcher Two, will brief you on your
 next lead when you arrive at the Nexus Room cantina. Proceed to the Nexus Room
 cantina in Kaas City and contact Watcher Two via your holocommunicator.
 - Darth Grathan has gone rogue
-
-Cleaning Up the Mess: Disaster! Although you prevented the dissident attack on
-Kaas City, a second, simultaneous attack was able to destroy the Dominator–a
-dreadnaught carrying three thousand people, including Darth Jadus.  Members of
-the dissident group responsible are fleeing Dromund Kaas from Cargo Port A3 in
-Kaas City. Get to their ship and plant a mouse droid aboard to safely disable
-it.
+- Talk to Samara Mindak, daughter of Theovor Mindak
 
 Doom and the Dark Temple: You’ve uncovered a dissident plot to detonate the
 power conduits running beneath Kaas City, killing hundreds and leaving the city
@@ -738,10 +732,30 @@ Temple, using its long-forgotten access tunnels as a starting point for the
 conduit overload.  Over Keeper’s objections, Darth Jadus has chosen you to stop
 the dissidents. Travel to the Dark Temple and disable the secondary charges
 placed throughout the area.
+- "The Dark Temple predates the Dromund Kaas' colonization"
 
-xxx
+Cleaning Up the Mess: Disaster! Although you prevented the dissident attack on
+Kaas City, a second, simultaneous attack was able to destroy the Dominator–a
+dreadnaught carrying three thousand people, including Darth Jadus.  Members of
+the dissident group responsible are fleeing Dromund Kaas from Cargo Port A3 in
+Kaas City. Get to their ship and plant a mouse droid aboard to safely disable
+it.
+- The Eagle's group bombed Darth Jadus' ship
+- Keeper wants you to lead effort to eliminate the Eagle's network
+- new disgnation Cipher Nine
+
+Darth Zhorrid Arrives: Imperial Intelligence has given you a new mission:
+Eliminate the Eagle’s galaxy-spanning terrorist network. Equipped with a new
+rank and your own ship, you will dismantle the terror cells one at a time.  Use
+your ship’s holoterminal to check in with Imperial Intelligence headquarters on
+the status of your target list.  
+- Jadus' daughter, Zhorrid, is taking his seat
+
+##### Kaliyo
 
 ##### 4D. Warrior
+
+xxx
 
 > We find out that Lord Baras actually started the slave revolt. The Warrior
 > kills the slave leaders and then kills Lord Grathan. (This effectively should
