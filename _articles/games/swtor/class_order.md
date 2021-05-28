@@ -126,6 +126,8 @@ Now it’s time to leave for the Imperial capital.  From the Jiguuna spaceport,
 take a shuttle to Vaiken Spacedock. You can arrange transport there to Dromund
 Kaas.
 
+##### Kaliyo: Part of the Team
+
 ##### Jedi Knight - Tython (Do the Pilgrimage Side Quest)
 
 Following sacking of Jedi Temple on Coruscant, Jedi order withrdraws to Tython.
@@ -694,6 +696,12 @@ and reassignment.  Travel to Dromund Kaas with your companion, Kaliyo, in order
 to continue your mission.
 - "This is not your domain keeper. It's mine. It's always been mind" -- Darth Jadus
 
+Meet the team
+- Watcher Two: Genetically bred
+- Lodenth Kashar: Only alien you met at Intelligence
+- Fixer Twelve: 
+- Watcher Three:
+
 The Slave's Secret: Upon arriving at Imperial Intelligence headquarters, you
 found Keeper arguing with Darth Jadus, a powerful Sith Lord. The source of the
 tension between them is unclear, but Keeper agreed to Darth Jadus’s demand that
@@ -708,11 +716,13 @@ ordered to cease operations and meet privately with Darth Jadus–the Dark
 Council member overseeing Intelligence operations. You must return to the
 Citadel in Kaas City, and meet with Darth Jadus in his chambers inside the Sith
 Sanctum.
+- "Remember you walk the path to power" -- Jadus
 
 High Society: Your assignment is to expose and eliminate a violent dissident
 movement on Dromund Kaas.  Your handler, Watcher Two, will brief you on your
 next lead when you arrive at the Nexus Room cantina. Proceed to the Nexus Room
 cantina in Kaas City and contact Watcher Two via your holocommunicator.
+- Darth Grathan has gone rogue
 
 Cleaning Up the Mess: Disaster! Although you prevented the dissident attack on
 Kaas City, a second, simultaneous attack was able to destroy the Dominator–a
