@@ -782,6 +782,11 @@ Laying Waste: Darth Baras has instructed you to meet with Dri’kill Ba’al, hi
 undercover spy at the Grathan compound.  Dri’kill Ba’al will have a mission for
 you that will demonstrate that Lord Grathan is not untouchable. Find Dri’kill
 Ba’al at the Warehouse Offices on Lord Grathan’s Estate.
+- "Grathan's presence is useful to me, so I don't want him killed, just
+  crippled"
+- Kill Grathan's son, Beelzlit
+- Wife: Cellvanta Grathan
+- Cellvanta offers to help destroy Grathan in return for sparing them
 
 An Ancient Answer: Darth Baras’s attempts to break Grik Sonosan have hit a
 standstill. In order to gain the information he craves, Darth Baras requires an
