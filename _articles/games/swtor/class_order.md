@@ -4,14 +4,14 @@
 
 > Appearance: 2,1,1,18,6,1,1,20,16,30
 
-## A. Opening planets and Coruscant/Dromund Kaas
+# A. Opening planets and Coruscant/Dromund Kaas
 
 > Republic - Knight, Smuggler, Consular, Trooper  
 > Empire - Hunter, Inquisitor, Agent, Warrior
 
-### Starting Planets: Tython, Korriban 
+## Starting Planets: Tython, Korriban 
 
-##### Bounty Hunter - Hutta
+### Bounty Hunter - Hutta
 
 Gauntlet: Braden, a famed but now retired bounty hunter, has recruited you for
 his team for the Great Hunt. You’ll need sponsorship to get in, though. The
@@ -70,11 +70,11 @@ Huntmaster will tell you more about the Great Hunt and what it entails. To
 travel to Dromund Kaas, take the shuttle at the Jiguuna shuttle pad to Vaiken
 Spacedock.
 
-##### Mako 
+### Mako 
 
 Braden was very excited finding you and winning the Great Hunt 
 
-##### Imperial Agent - Hutta
+### Imperial Agent - Hutta
 
 Claim Your New Identity: Your first mission as an Imperial agent brings you to
 Hutta. Your handler, Keeper, has ordered you to assume a cover identity and
@@ -126,9 +126,9 @@ Now it’s time to leave for the Imperial capital.  From the Jiguuna spaceport,
 take a shuttle to Vaiken Spacedock. You can arrange transport there to Dromund
 Kaas.
 
-##### Kaliyo: Part of the Team
+### Kaliyo: Part of the Team
 
-##### Jedi Knight - Tython (Do the Pilgrimage Side Quest)
+### Jedi Knight - Tython (Do the Pilgrimage Side Quest)
 
 Following sacking of Jedi Temple on Coruscant, Jedi order withrdraws to Tython.
 Jxin'sen travels to Tython to complete trials
@@ -225,7 +225,7 @@ investigate.  Head to the Jedi Temple spaceport and take a shuttle to Carrick
 Station. From there, you can arrange transport to Coruscant.
 - Master Kiwiiks is on Coruscant waiting for Orgus and me to help investigate
 
-#####  Jedi Consular - Tython
+###  Jedi Consular - Tython
 
 The Path of a Jedi: You have arrived on Tython, the ancient homeworld of the
 Jedi. Believing you have great potential, the Jedi Council has made you Padawan
@@ -313,11 +313,11 @@ spaceport and board a shuttle to Carrick Station.
 - accepted as a full Jedi
 - Board a shuttle to the fleet
 
-##### Qyzen
+### Qyzen
 
 - thinks of you as Herald for the Scorekeeper
 
-#####  Sith Warrior - Korriban
+###  Sith Warrior - Korriban
 
 Prologue: With a peace negotiated with the Republic, the Empire accelerates
 training of new Sith. You are sent to Korriban to undergo the training.
@@ -365,12 +365,12 @@ you will need to know how to open the door to the chamber, and for that, you
 need the slave Vette. Go to the jail in the Sith Academy and speak with Vette
 and Jailer Knash.
 
-##### Vette
+### Vette
 
 - Given to me as a "gift" from Darth Baras
 - Asks for shock collar to be removed
 
-#####  Smuggler - Ord Mantell (Bounce between these and have them finish Ord Mantell at the same time)
+###  Smuggler - Ord Mantell (Bounce between these and have them finish Ord Mantell at the same time)
 
 Landing Party: After delivering a shipment of blasters to Republic forces, you
 find yourself trapped on Ord Mantell. Separatists have seized control of the
@@ -421,11 +421,11 @@ board a shuttle to Carrick Station to go to Coruscant.
 - Syreena killed Viidu. Paid me for shuttle flight to Coruscant
 - Bounty hunters Kindin & Xo'ru are waiting for me at spaceport
 
-##### Corso
+### Corso
 
 - joined Peace Brigade going into help planets abandoned after Treaty of Coruscant
 
-#####  Trooper - Ord Mantell (Bounce between these and have them finish Ord Mantell at the same time)
+###  Trooper - Ord Mantell (Bounce between these and have them finish Ord Mantell at the same time)
 
 Hit the Ground Running: You’re the newest member of Havoc Squad, the most elite
 infantry unit in the Republic military. Your first assignment is on Ord
@@ -497,12 +497,12 @@ Carrick Station. From there, you can arrange transport to Coruscant.
 - Jorgan is assigned to new Havoc with you leading
 - Report to General Garza, head of SpecOps, on Coruscant
 
-##### Jorgan
+### Jorgan
 
 - Not happy about demotion
 - Used to command the deadeyes, "finest sniper squad in the republic"
 
-#####  Sith Inquisitor - Korriban
+###  Sith Inquisitor - Korriban
 
 Of Mind and Matter: You have been pulled from the ranks of slaves on Korriban
 and given a chance to complete the trials of the Sith Academy and become Sith,
@@ -552,9 +552,9 @@ Board your ship and travel with your companion, Khem Val, to Dromund Kaas.
 - Darth Skotia doesn't want you on Dromund Kaas
 - Sends apprentices to kill you
 
-### Dromund Kaas
+## Dromund Kaas
 
-##### 1D. Hunter
+### 1D. Hunter
 
 > During the first target hunt to gain entry to the Great Hunt, it is mentioned
 > the statue in the Jungle is nameless at this point. Later, the Hunter kills a
@@ -616,13 +616,13 @@ a smuggler that should suit your purposes. Go to docking bay B-04 at the
 spaceport.
 - Stopped by Spaceport Security Commander
 
-##### Mako 
+### Mako 
 
 - Fa'athra is trying to find who broke into his palace
 - Parents had Mako teched out as a baby
 - "street scum from Nar Shadaa"
 
-##### 2D. Inquisitor
+### 2D. Inquisitor
 
 > The Colossus is named at this point when Zash sends the apprentice to the
 > Slave revolt jungle. Later, the inquisitor kills a scientist hired by Lord
@@ -676,12 +676,12 @@ believed to be key to a secret ritual that will grant you great power.  Darth
 Zash has traced one of these artifacts to Balmorra. Use your ship’s galaxy map
 to travel to Balmorra.
 
-##### Khem
+### Khem
 
 - defeated by Tulak Horde in honorable combat
 - Served Tulak for honor
 
-##### 3D. Agent
+### 3D. Agent
 
 > The slave revolt has been occurring for some time now. Varying terrorist
 > connections are investigated including slaves and Theovar Mindak, who is
@@ -751,11 +751,11 @@ your ship’s holoterminal to check in with Imperial Intelligence headquarters o
 the status of your target list.  
 - Jadus' daughter, Zhorrid, is taking his seat
 
-##### Kaliyo: Part of the Team: Lifestyle Choices
+### Kaliyo: Part of the Team: Lifestyle Choices
 
 - made a deal with Keeper to handle some "personal stuff"
 
-##### 4D. Warrior
+### 4D. Warrior
 
 > We find out that Lord Baras actually started the slave revolt. The Warrior
 > kills the slave leaders and then kills Lord Grathan. (This effectively should
@@ -791,16 +791,24 @@ Ba’al at the Warehouse Offices on Lord Grathan’s Estate.
 An Ancient Answer: Darth Baras’s attempts to break Grik Sonosan have hit a
 standstill. In order to gain the information he craves, Darth Baras requires an
 ancient torture device from the Dark Temple called the Ravager.
+- ambushed by Lord Vacuus "The killer of Garatak the Singed"
 
 Leaving Dromund Kaas: Darth Baras has sent you to get your own starship at its
 private hangar in the Dromund Kaas spaceport, then contact him via the
 holoterminal on the ship’s bridge.
+- Grik Sonosan commisioned by Master Nomen Karr
+- Nomen is tryig to find Sith spies in Republic
+- has a Padawan that senses "hidden darkness" from Alderaan
+- Ralesk is sent by Cellvanta with a gift. "Lord Grathan" wants him to assassinate you
 
-xxx
+### Vette: Before I got Free 
 
-### Coruscant
+- mother, sister, and vette were enslaved when young
+- "watch out I don't start calling you pops"
 
-##### 1C. Knight
+## Coruscant
+
+### 1C. Knight
 
 > General Varsuthra mentions that the Republic is working on a secret weapons
 > project here. Lord Tarnis the Sith traitor is killed, but the Empire finds
@@ -814,6 +822,10 @@ military weapon, have been stolen, along with valuable military hardware. A
 Rodian smuggler named Vistis Garn was behind the theft; he’s known to work for
 the Migrant Merchants’ Guild.  Take a speeder to the old Galactic Market and
 infiltrate the Migrant Merchants’ Guild warehouse to recover the stolen goods.
+- Doctor Tarnis created the Planet Prison which allows containing a planet with
+  no ships entering or leaving
+- Kira and Agent Galen, of SIS, will assist
+- Vistis made a copy of plans for Planet Prison and sold it to Black Sun
 
 Kidnapped!:  While you recovered the stolen data files for the Planet Prison,
 kidnappers have taken Doctor Tarnis.  Agent Galen has asked you to meet up with
@@ -825,6 +837,8 @@ Orgus and Master Kiwiiks secure vulnerable Republic weapons labs.  Galen
 offered the services of a special tactical unit of Republic soldiers to assist
 you. Take a speeder to the Black Sun sector and speak to Sergeant Nidaljo and
 his squad to get their help.
+- The plans Black Sun has also has plans on other experimental weapons
+- Tarnis is a Sith!
 
 Tracking Down the Traitor: General Var Suthra is determined to find the traitor
 Doctor Tarnis before he escapes.  Intelligence agents discovered Doctor
@@ -838,7 +852,9 @@ travel to the speeder pad that can take you to the elevator that leads to the
 Jedi Temple. Once there, travel to the Jedi Council chambers to confront Lord
 Tarnis.
 
-##### 2C. Smuggler
+### T7-01: Welcome T7
+
+### 2C. Smuggler
 
 > Skavak tries to sell a counterfeit Ruby to the Empire who are in the Works
 > now. Skavak had sold Rogun the Butcher's guns as well by this time (to the
@@ -868,7 +884,7 @@ down in the Works below Coruscant.  If you hurry, maybe you can catch him and
 reclaim your ship. Head to the south Works and intercept Skavak at his meeting
 with the Imperials.
 
-##### 3C. Consular
+### 3C. Consular
 
 > The Consular arrives to find a cure for his/her Master. He/she does this, but
 > ends up killing Lars Braddeg, who is working for the Sith Plaguebearer. Jedi
@@ -909,7 +925,7 @@ shielding technique. This technique is recorded in the Jedi Archives in the
 ruined Jedi Temple.  Locate the Jedi Archives amongst the ruins of the Jedi
 Temple.
 
-##### 4C. Trooper
+### 4C. Trooper
 
 > General Garza appears and wants the Trooper to cut off supplies to the Havok
 > defectors. Jak Kardan is found and is working with justicars and imps who are
@@ -956,28 +972,28 @@ A fellow SpecForce soldier, Sergeant Mathin, will meet you at the security
 checkpoint near the elevator to the Works with the explosives you’ll need to
 destroy the relay.
 
-### Offworld Actions
+## Offworld Actions
 
-##### Trooper 
+### Trooper 
 
 > performs a Port Raga rescue in Hutt Space. I believe they land after the
 > Smuggler as it is noted that Zone Zero on Taris has not been discovered in
 > the Smuggler story.
 
-##### Knight 
+### Knight 
 
 > makes a stop on Ord Mantell to take back weapon plans. This travel time may
 > explain why they are first on Coruscant, but third on Taris.
 
-##### Agent 
+### Agent 
 
 > makes a stop on Korriban to meet with Darth Zhorrid. This can explain why the
 > Warrior appears on Taris before the Agent and why they change spots in
 > chronological order.
 
-### B. Taris/Balmorra
+## B. Taris/Balmorra
 
-##### 1B. Bounty Hunter
+### 1B. Bounty Hunter
 
 > The Hunter targets Admiral Ivorness. In the process, he/she starts the
 > storyline here as the droids are made hostile in the Okara Droid Factory
@@ -985,7 +1001,7 @@ destroy the relay.
 > resistance leaders are meeting with allies (the Republic). The leaders
 > escape, but the Admiral is killed.
 
-##### 1T. Smuggler
+### 1T. Smuggler
 
 > The Smuggler helps Risha find the astrogation chart to help with search for
 > Nok Drayan treasure. Beryl Thorne appears and helps. The republic is
@@ -994,7 +1010,7 @@ destroy the relay.
 > really not been investigated up to this point. (Location where most Republic
 > class story arcs end)
 
-##### 2B. Inquisitor
+### 2B. Inquisitor
 
 > The target artifact is in a toxic swamp near the Balmorran Arms Factory. Lord
 > Zash notes that the Republic is helping the resistance and the empire army
@@ -1002,27 +1018,27 @@ destroy the relay.
 > helps find the artifact, while they wait. They research Collicoids and
 > ultimately find the artifact.
 
-##### 2T. Trooper
+### 2T. Trooper
 
 > It is noted that reclaiming and rebuilding Taris is important to the Galactic
 > Senate (Saresh planet story arc tie-in?). The empire is found to be on the
 > planet and working with Needles on vaccines for Rakghouls. Needles is killed
 > and Rakghoul strain is contained.
 
-##### 3B. Warrior
+### 3B. Warrior
 
 > The resistance movement has started against the empire. The Warrior works with
 > Malavai Quinn to find an empire spy in Republic resistance Commander Rylon.
 > (Working with Grand Marshal Cheketta from the planet story arc?). Rylon is
 > killed and the Jedi investigating him is killed or taken into custody.
 
-##### 3T. Knight
+### 3T. Knight
 
 > The knight is sent to find Doctor Godera (been here for a bit) for help with
 > the finding of the Desolator. Watcher One as mentioned in the Agent story is in
 > this arc and is killed or detained. Godera is rescued.
 
-##### 4B. Agent
+### 4B. Agent
 
 > The Eagle network is training terrorist fighters to hurt the Empire. The droids
 > are noted to be hostile in the Okara Droid factory by now (BH story). Grey Star
@@ -1030,7 +1046,7 @@ destroy the relay.
 > there will be no new recruits and the Empire should be in a good spot on the
 > planet.
 
-##### 4T. Consular
+### 4T. Consular
 
 > Jedi Master Tykan is noted as being here for sometime to help with
 > reclamation, but has gone "silent". The main base is attacked by Rakghouls
@@ -1038,11 +1054,11 @@ destroy the relay.
 > have chemical detonation from the main reactor. In essence, this saves the
 > Republic reclamation.
 
-### C. Nar Shadaa
+## C. Nar Shadaa
 
 > I would alternate with Empire going first.
 
-##### 1. Warrior  
+### 1. Warrior  
 
 > Defeat the Exchange and its leader Ukabi
 
@@ -1053,7 +1069,7 @@ destroy the relay.
 > the Warrior. The Warrior also stops the Exchange advances into Baras' slave
 > operation. (Quickest story)
 
-##### 1. Smuggler  
+### 1. Smuggler  
 
 > Take back Republic territory given to them by the Hutts, Stop the Mountain
 > and save Republic implant technology. Two side deals can be made to sell
@@ -1066,7 +1082,7 @@ destroy the relay.
 > sent by Rogun the Butcher, obtains his starship engine and frees Bowdaar from
 > slavery by Drooga. (Quickest story)
 
-##### 2. Agent  
+### 2. Agent  
 
 > Stop an Alien Revolution led by the Flame for Imperial Intelligence
 
@@ -1075,7 +1091,7 @@ destroy the relay.
 > The Agent eliminates the cell leaders and their communications hub. Is this
 > where Agent becomes brainwashed through spinal surgery?
 
-##### 2. Trooper  
+### 2. Trooper  
 
 > Stop Doctor Charnagus and his skin graft operations. Save a Captain in
 > Republic military.
@@ -1084,7 +1100,7 @@ destroy the relay.
 > help from the SIS (Jonas Balker). The Trooper saves a military robot named
 > M1-4X and eliminates one of the Havoc Squad traitors.
 
-##### 3. Inquisitor  
+### 3. Inquisitor  
 
 > Investigate a Cult of Revan and capture a machine that makes technology
 
@@ -1094,7 +1110,7 @@ destroy the relay.
 > and two trips to the Industrial Sector, but I will go with the subtle planet
 > story order hints shown earlier)
 
-##### 3. Consular  
+### 3. Consular  
 
 > Stop Imperial military leader from killing the race of Evocii
 
@@ -1103,7 +1119,7 @@ destroy the relay.
 > negotiated or given to the Hutts to keep the peace. (Story takes longer than
 > others due to traveling to Red Light Sector twice)
 
-##### 4. Hunter
+### 4. Hunter
 
 > Investigate a breach in the Hutt Network Data Center (Galactic Holonet). Axis
 > is within and killed/contained
@@ -1116,7 +1132,7 @@ destroy the relay.
 > Network Access than others and probably should finish the planet storyline
 > dealing with Axis.
 
-##### 4. Knight
+### 4. Knight
 
 > Rescue Aldo Domi a famous Jedi from the Empire's prison
 
@@ -1127,61 +1143,61 @@ destroy the relay.
 > class story location and that Aldo Domi is freed to end the planet storyline
 > before the Power Guard base is blown up.)
 
-### Offworld Actions
+## Offworld Actions
 
 > All classes. Chapter 1 Interlude.
 
-##### Sith Warrior
+### Sith Warrior
 
 > Travel to an orbital station near Voss in Hutt Space. The Warrior is lured
 > there by Baras rival Nomen Carr and subsequently an ambush by Troopers.
 
-##### Consular
+### Consular
 
 > Travel to a ship on the Outer Rim west of Hoth and Belsavis. The daughter of
 > the Jedi that was cured on Nar Shaddaa has the plague and is cured or dies in
 > space.
 
-##### Hunter
+### Hunter
 
 > Travels to Dromund Kaas, then back to Hutta, then back to DK. The Great Hunt
 > target list was stolen then saved.
 
-##### Agent
+### Agent
 
 > Kaliyo and Darth Zhorrid have side missions on Nar Shaddaa where the Agent
 > frees a slave and finds a Darth Jadus ally. Then the Agent travels to Dromund
 > Kaas to deliver the spy or his remains to the Darth.
 
-##### Knight
+### Knight
 
 > Travels to the far end of the unknown regions and has a meeting with a Sith.
 > Learns Kira is a child of the Emperor and then heads to Tython to let the
 > council know.
 
-##### Smuggler
+### Smuggler
 
 > Travels to Coruscant to help Corso find his sister. Then travels to a space
 > station near Hoth and Belsavis to rescue one of Skavak's flames. It is an
 > ambush and she is killed or left there.
 
-##### Inquisitor
+### Inquisitor
 
 > Travels to Korriban to gather an artifact from a Sith Lord for Lord Zash.
 
-##### Trooper
+### Trooper
 
 > Aric Jorgan has a side mission to look for the Deadeyes on Nar Shadaa. Then
 > travels to a ship on the Outer Rim near Tatooine and has to disable many
 > bombs and beat an Imp Ambush planted by Tavus.
 
-### D. Tatooine
+## D. Tatooine
 
 > The Czerka storyline does not really tie in to the class story arcs. We deal
 > with Czerka to get rid of the Rakata device. (Basically I feel Trooper does
 > it as shown below)
 
-##### 1. Warrior
+### 1. Warrior
 
 > The Warrior comes here tracking a Padawan that trained here. The Exchange
 > (local crime syndicate) has overrun the Moisture Farms. It is implied the
@@ -1189,7 +1205,7 @@ destroy the relay.
 > Warrior did not defeat the Sand Demon (actually can, but not canon in my
 > opinion).
 
-##### 2. Consular
+### 2. Consular
 
 > The Consular has come here seeking a "cultural explorer" that is a Jedi that
 > is "plagued". He is studying the native Jawas and Sand People. At this point,
@@ -1197,7 +1213,7 @@ destroy the relay.
 > Jawas start to rebuild Sand Crawlers. Additionally, the Jedi is saved before
 > he can "convert" the Sand People into fighters for the Republic.
 
-##### 3. Hunter
+### 3. Hunter
 
 > Gault is the bounty here under the name of Tyresius Lokai. His ship was shot
 > down near the Dune Sea area and he walked to Mos Ila (so this has to be after
@@ -1205,7 +1221,7 @@ destroy the relay.
 > where the Exchange's base of operations is on this planet. Gault has cheated
 > them in the past, but escapes and joins the Bounty Hunter.
 
-##### 4. Agent
+### 4. Agent
 
 > Mos Ila is the lone Empire outpost at this point. A Ghost Cell is here
 > training terrorists. A supplier for this Ghost Cell works for the Exchange
@@ -1213,7 +1229,7 @@ destroy the relay.
 > the alliance, but the Ghost Cell is ultimately stopped. This story shows that
 > all of Tatooine's Dune Sea area has been explored by this point.
 
-##### 5. Knight
+### 5. Knight
 
 > It is noted by the Republic that they have a secret weapons facility here
 > that is working on the "Shock Drum." The Sand People have attacked this base
@@ -1224,7 +1240,7 @@ destroy the relay.
 > against the Sand People to save their homeworld. The Jedi kills the Sand
 > Demon (from the Warrior Story LS choice) and saves the Shock Drum.
 
-##### 6. Smuggler
+### 6. Smuggler
 
 > The Smuggler is here to collect a sensor computer from the famed Diago Hixon.
 > A Sith uses the Geonoitions to meet the Smuggler (Imps expanded further NE)
@@ -1233,7 +1249,7 @@ destroy the relay.
 > but the Smuggler survives to get the computer and can work with either the
 > Jedi or Sith at this point.
 
-##### 7. Inquisitor
+### 7. Inquisitor
 
 > Andronikos Revel has lost the artifact that the Inquisitor wants to a mutiny
 > of his ship. The defectors ultimately travel to the Dune Sea area, but are
@@ -1241,7 +1257,7 @@ destroy the relay.
 > took weeks as noted in the story. The Inquisitor wipes out the Exchange
 > leaders ending their campaign against the Empire.
 
-##### 8. Trooper
+### 8. Trooper
 
 > The imperials have finally made it to the Anchorhead area and are starting
 > bombings with Droids and the like. The Geonotions have been at the Moisture
@@ -1250,23 +1266,23 @@ destroy the relay.
 > and then infiltrates the Imp base that had been started in the Dune Sea.
 > Anchorhead is saved.
 
-### Offworld Actions
+## Offworld Actions
 
-##### 1. Hunter
+### 1. Hunter
 
 > The Hunter makes a stop for Mako on Nar Shadaa for info on her sister Coral.
 > This is only slightly out of the way to Hutt space on the trip to Alderaan.
 
-##### 2. Inquisitor
+### 2. Inquisitor
 
 > Actually on Tatooine after you finish the planet, but Khem Val needs to find
 > a Dashade.
 
-##### 3. Consular
+### 3. Consular
 
 > Again on Tatooine, Qyzen needs to find his father's bones.
 
-### Explanation for the change in timeline order from Tatooine to Alderaan:  
+## Explanation for the change in timeline order from Tatooine to Alderaan:  
 
 > The Smuggler and Trooper spend very little time here. In comparison, the
 > Knight travels all over Dunland. The Consular and Inquisitor have companion
@@ -1276,7 +1292,7 @@ destroy the relay.
 > Warrior takes longer to travel Tatooine as it is implied in the story that
 > much of the far reaches such as the Dune Sea have not been explored.
 
-### E. Alderaan
+## E. Alderaan
 
 > The planet storyline ties in with the classes well here. Ulgo is trying to
 > take over the planet and they have an ally in Rist. Thul and Organa are
@@ -1284,14 +1300,14 @@ destroy the relay.
 > Other families such as Alde, Ayle, Baliss, Corwin, Cortess, Girard, Teral,
 > and Teraan are also involved.
 
-##### 1. Smuggler
+### 1. Smuggler
 
 > We find that the Empire has arrived to put someone on the throne and are
 > working with House Thul. House Baliss has slaughtered House Teraan. The
 > smuggler gets schematic back from House Baliss, the hyperdrive from House
 > Thul's spaceport and duel's a member of House Baliss to end their romp.
 
-##### 2. Hunter
+### 2. Hunter
 
 > This story gives much of the intro to the planet storyline. We learn that the
 > King died 3 years ago and the 3 largest houses are fighting over the crown.
@@ -1302,7 +1318,7 @@ destroy the relay.
 > claims the bounty and can even take a "side" contract from House Rist on
 > House Girard if they wish.
 
-##### 3. Trooper
+### 3. Trooper
 
 > Ruling families continue to have a civil war and here we find out that House
 > Rist has allied with House Ulgo. Imp assassins have found their way to House
@@ -1311,7 +1327,7 @@ destroy the relay.
 > House Baliss (Smuggler story), rescue/capture Thul's wife and stop Operation
 > B against Organa (Gearbox).
 
-##### 4. Agent
+### 4. Agent
 
 > Nobles are in full scale war now. A noble (Baroness Cortess with help from
 > House Ayl and House Organa it appears) is financing the terror network that
@@ -1320,7 +1336,7 @@ destroy the relay.
 > point. Denri Ayl and Baroness Cortess are killed and the Agent can decide on
 > the Killik's fate.
 
-##### 5. Warrior
+### 5. Warrior
 
 > Civil war is still happening. Duke Kendoh Thul helps find Jaesa Wilsaam. She
 > is the handmaiden of Geselle Organa. The Warrior can/or disregards a fight
@@ -1328,7 +1344,7 @@ destroy the relay.
 > planetary war. Additionally, he/she killed/captured/freed the Wilsaam's
 > parents for their own plot.
 
-##### 6. Knight
+### 6. Knight
 
 > Nobles are still fighting. Republic has made a Death Mark weapon project to
 > help with this fight, but it has been compromised. The Empire is attacking
@@ -1337,7 +1353,7 @@ destroy the relay.
 > Killik leader and also kills a Sith Lord using the Death Mark ending this
 > dangerous project. Duke Thul advocates for peace.
 
-##### 7. Inquisitor
+### 7. Inquisitor
 
 > Nobles are still warring. Elana Thul is allied with the Empire and helps find
 > the artifact the Inquisitor needs. Rihanna Rist, head of House Rist, loves
@@ -1346,7 +1362,7 @@ destroy the relay.
 > truce (or you can not help Elana Thul and she gets killed leaving the Empire
 > in a vulnerable position).
 
-##### 8. Consular
+### 8. Consular
 
 > Usurper Ulgo is still in power. House Teral allows the Consular to be their
 > representative to the peace talks after Ulgo had devastated their House in
@@ -1356,16 +1372,16 @@ destroy the relay.
 > decide whether to advise on working for peace or stripping Ulgo of their
 > lands. The planet storyline ends.
 
-### Offworld Actions
+## Offworld Actions
 
-##### Trooper
+### Trooper
 
 > Travels to Coruscant for orders and then to the Justice ship in the Unknown
 > regions to the far west. Tayus the traitor is captured/killed. There is time
 > off then start Act 2. The Trooper travels to Tatooine for a rescue op then
 > back to Coruscant.
 
-##### Agent
+### Agent
 
 > Travels to Hutta to stop the Eagle. Then after reporting in to Dromund Kaas,
 > the Agent goes to the Arkas ship not far to the west to stop/join/talk down
@@ -1374,7 +1390,7 @@ destroy the relay.
 > to four worlds (including Hutta and NS where they were headed anyway) killing
 > most of Kaliyo's ex-partners.
 
-##### Smuggler
+### Smuggler
 
 > Travels to Tatooine to save friends of Risha. The Smuggler then goes to Nar
 > Shadaa and thaws out Nok Drayen. He/she goes to the Longshadow ship west of
@@ -1383,7 +1399,7 @@ destroy the relay.
 > Corellia. Additionally, the Smuggler makes a trip to Tatooine to save a
 > friend of Corso.
 
-##### Hunter
+### Hunter
 
 > Travels to Nar Shadaa to avenge an ex Great Hunt winner and kills some of the
 > men that murdered Mako's friend Braden in the prologue. Next, he/she goes to
@@ -1393,7 +1409,7 @@ destroy the relay.
 > Hunter to his Ship west of Hoth. He/she has to go back to DK and kill a beast
 > for Mandalore. Then back to Mandalore's ship.
 
-##### Knight
+### Knight
 
 > Travels to the Uphrades planet just north of Alderaan to save the world from
 > a bombing. Afterwards heads to Darth Angril's ship as he is attacking Tython.
@@ -1401,7 +1417,7 @@ destroy the relay.
 > Tatooine for a rescue (i.e. the map of Emperor's fortress). The Knight
 > reports back to Tython.
 
-##### Inquisitor
+### Inquisitor
 
 > The Inquistor travels to Dromund Kaas, but never leaves the ship as he/she is
 > told by their ghost ancestor to head to Nar Shadaa for a lightsaber. Next is
@@ -1409,14 +1425,14 @@ destroy the relay.
 > this, the Inquisitor runs around DK helping Darth Thanaton who actually
 > intends to kill him/her. The Inquisitor has to recover and then off to Taris.
 
-##### Consular
+### Consular
 
 > Travels to Tython and then Lord Vivicar's ship which is west of Hoth. The
 > Consular kills/saves Vivicar and then reports back to Tython. He/she takes
 > some time off, but heads to the Fortitude ship east of Rishi and Hoth. This
 > is where the Rift Alliance is saved.
 
-##### Warrior
+### Warrior
 
 > Travels to Nar Shadaa for Vette, then travels to Jaesa Wilsaam's ship in the
 > Outer Rim near Tatooine. The Warrior dispatches Nomen Karr's trap and heads
@@ -1425,18 +1441,18 @@ destroy the relay.
 > general for Darth Baras. The Warrior returns to DK where Plan Zero is
 > started.
 
-### Note: 
+## Note: 
 
 > This is the end of Act 1. All major plotlines completed. The Republic starts
 > to liberate Balmorra and the Empire starts to decimate Taris. It is noted
 > that the Smuggler and Bounty Hunter took very little time off and this
 > explains why they arrive early.
 
-## Act II
+# Act II
 
-### F. Balmorra/Taris
+## F. Balmorra/Taris
 
-##### 1B. Trooper
+### 1B. Trooper
 
 > The galaxy is on the brink of war. Sobrik is occupied by the Imps and General
 > Rakton is in charge. The Republic and Resistance are working to change that.
@@ -1444,7 +1460,7 @@ destroy the relay.
 > Balmorra Arms factory. The Trooper finds prototype weapons and can keep them
 > or deliver them to the Republic. Balmorra is not won yet.
 
-##### 1T. Agent
+### 1T. Agent
 
 > The Agent becomes a double agent working for the Republic and heads here. The
 > Sith have bombed Taris now. The Republic wants to rebuild, but a corrupt Jedi
@@ -1453,7 +1469,7 @@ destroy the relay.
 > transmitter and recruits Dr. Lokin and recruits/kills the corrupt Jedi. Taris
 > not won yet.
 
-##### 2B. Smuggler
+### 2B. Smuggler
 
 > The war has started. Empire is in control of Balmorra and the Smuggler needs
 > to find prototype weapons for the Republic. He/she works with the resistance
@@ -1462,14 +1478,14 @@ destroy the relay.
 > Imps are worried now and the Voidwolf kills some of the Imp leaders due to
 > their losses.
 
-##### 2T. Hunter
+### 2T. Hunter
 
 > The war has started, but the Empire has not totally wiped out Taris yet. The
 > Hunter targets is Jicoln Cadera and he is hiding at the Endar Spire. He runs
 > to an area near the main Republic base and is ultimately killed by the Hunter
 > or his son Torian.
 
-##### 3B. Knight
+### 3B. Knight
 
 > Republic is trying to drive the Empire off Balmorra now. The Resistance does
 > not trust the Republic but the Jedi helps the Doc and the Resistance. The
@@ -1477,14 +1493,14 @@ destroy the relay.
 > cloaking device prototype for the fight with the Emperor and breaks the
 > Empires hold on the planet.
 
-##### 3T. Inquisitor
+### 3T. Inquisitor
 
 > The Sith is learning the Force Walk Ritual and needs ghost's power to beat
 > Darth Thanaton. Ashara Zavros tuns out to be the Padawan that can bring the
 > ghost out. She does this and the Inquisitor cleanses Taris of the Jedi
 > Sanctuary.
 
-##### 4B. Consular
+### 4B. Consular
 
 > Supreme Chancellor Janus appears and needs help freeing Balmorra and building
 > the Rift Alliance. Zenith of the Resistance helps sabotage the Empire and
@@ -1492,7 +1508,7 @@ destroy the relay.
 > Consular turns Darth Lacris's apprentice, kills Darth Lacris and blows up an
 > outer Empire base. Balmorra is fully liberated (along with the Jedi Knight).
 
-##### 4T. Warrior
+### 4T. Warrior
 
 > Darth Baras wants war and intends to kill Republic Generals. The 4 Republic
 > generals here are working on the Siantide cell project to help give the
@@ -1500,24 +1516,24 @@ destroy the relay.
 > main Pub base, so the War Trust is defeated and the Empire gains/destroys the
 > Siantide Project.
 
-### Offworld Actions
+## Offworld Actions
 
-##### Agent
+### Agent
 
 > Agent returns to Dromund Kaas to find information on his/her brainswashing
 > from the Imperial Intelligence archives.
 
-##### Knight
+### Knight
 
 > Knight must make a delivery of food and medicine to Nar Shadaa for Kira
 > Carson.
 
-##### Warrior
+### Warrior
 
 > Travels to Admiral Monk's flagship by Quesh. He kills the aggravated Imp
 > general and goes on to Quesh after the Admiral who had fled.
 
-### G. Quesh
+## G. Quesh
 
 > Empire order - Hunter, Inquisitor, Warrior, Agent
 > Republic order - Trooper, Smuggler, Consular, Knight
@@ -1532,23 +1548,23 @@ destroy the relay.
 > The Agent and Knight being last on Quesh makes sense due to the espionage
 > involved and the saving of the planet.
 
-### Offworld Actions
+## Offworld Actions
 
-##### Trooper
+### Trooper
 
 > After Quesh, the Trooper heads to Tatooine to help Aric Jorgan save the
 > Deadeyes.
 
-##### Inquisitor
+### Inquisitor
 
 > After Quesh, the Inquisitor must head to Korriban to replace the Padawans
 > that were killed on Quesh.
 
-### H. Hoth
+## H. Hoth
 
 > This is a planetary battle for the Starship Graveyard between the Republic, Empire and the Pirates.
 
-##### 1. Warrior
+### 1. Warrior
 
 > The warrior's last target is Jedi Knight Xerender who is after a lost
 > superweapon. There is a massive Pub presence here as compared to Imps. Part
@@ -1558,7 +1574,7 @@ destroy the relay.
 > older Jedi and the Warrior kills/buries them and gains Darth Baras lightsaber
 > in the process.
 
-##### 2. Hunter
+### 2. Hunter
 
 > The Black List target is a Trandoshan, Reneget Vause, who is causing problems
 > for the Chiss Ascendancy a native race on Hoth. He sides with the White Maw
@@ -1567,7 +1583,7 @@ destroy the relay.
 > Kita Kren. All are defeated and/or killed to help the Chiss and hurt the
 > White Maw.
 
-##### 3. Consular
+### 3. Consular
 
 > The Rift Alliance has soldiers fighting the White Maw. The Republic army is
 > on the brink of mutiny and won't send for more help at this time. Captain
@@ -1576,21 +1592,21 @@ destroy the relay.
 > of the Republic. Vallon is later stopped and cannot take leadership of the
 > White Maw or raise the Star of Coruscant Dreadnaught.
 
-##### 4. Trooper
+### 4. Trooper
 
 > A 3 way battle has started on Hoth. Sgt. Yuun is helping find/create an Umbar
 > Encryptor to breach Empire codes. The Empire has gained the Crescent Canyon
 > facility defeating the Ortolans. The White Maw wants the Umber Parts too, but
 > Zareen and some Imps are killed at the Star of Coruscant.
 
-##### 5. Inquisitor
+### 5. Inquisitor
 
 > The Inquisitor is looking for another ghost that crashed a Jedi Transport,
 > Star Runner, on Hoth. The White Maw control the planet at this time, but the
 > Imps and Pubs have moved in and know of the Star of Coruscant. The Inquisitor
 > finds the Star Runner in the Dreadnaught and binds the last ghost.
 
-##### 6. Agent
+### 6. Agent
 
 > Hoth is a warzone (Pubs near Dorn Base) and the Agent needs to find the
 > Starbreeze crashed ship. Admiral Davos an Imp General is preparing an
@@ -1599,7 +1615,7 @@ destroy the relay.
 > Ascendancy help and the Agent kills Davos, some pirates and finds the
 > Starbreeze.
 
-##### 7. Knight
+### 7. Knight
 
 > The Empire has started a full invasion of the planet, republic main base and
 > forward outpost. The Knight needs to find schemaics of the Emporer's fortress
@@ -1607,7 +1623,7 @@ destroy the relay.
 > Imperial Platforms near Aurek base. They kill Zeshatt, the White Maw leader
 > and find the plans.
 
-##### 8. Smuggler
+### 8. Smuggler
 
 > The White Maw have been ruling here and are using a cloaking device to gain
 > an advantage. A Republic leader, Major Pavan, is killed by an Imp strike on
@@ -1622,45 +1638,45 @@ destroy the relay.
 > the Pirates or leave Alinna, a Twilek slave, in charge. The planet appears to
 > be at somewhat of a standstill.
 
-### Offworld Actions
+## Offworld Actions
 
 > Note: This is the end of Act 2. The war has started as given in many spoilers
 > below. New story order on Belsavis is easily explained as well.
 
-##### Consular
+### Consular
 
 > Travels to Waypoint Station 3 near Tython and kills two Dark Lords. Heads to
 > Tython and finds out the Galaxy is at war again. Heads to Hoth to find the
 > whereabouts of the Esh-ka. In between goes to Alderaan spaceport for Qyzen to
 > help Lek.
 
-##### Inquisitor
+### Inquisitor
 
 > While on Hoth, finds Tulak Hord's bones for Khem Val. Then travels to Dromund
 > Kaas to fight Thanaton, but almost blows both up due to too much power. Finds
 > leads to a cure in Thanaton's library. Also checks on apprentices on
 > Korriban.
 
-##### Smuggler
+### Smuggler
 
 > Travels to Port Nowhere, then to Nar Shadaa to rescue a slicer and heist an
 > imperial ship near there. Voidwolf explains the Empire declared War. Back to
 > PN and also to Balmorra to help Corso with a job.
 
-##### Knight
+### Knight
 
 > Travels to Tython and Emperor's Fortress to help Tol Braga. The Emperor
 > enslaves the Knight for possibly weeks. Saved by Lord Scourge (who was the
 > Emperor's Wrath) and heads to Tython to alert the Jedi.
 
-##### Hunter
+### Hunter
 
 > Travels to Nar Shadaa for a party but other Grand Champions are dead. Travels
 > to the Tyrant Ship near Manaan and finds out the Treaty of Coruscant is
 > broken from a Dark Lord. Also heads to Dromund Kaas for Mako looking for her
 > sister. Can take time off and may as very little done between acts.
 
-##### Warrior
+### Warrior
 
 > Heads to Nar Shadaa to help Vette free her sister. Goes to Dromund Kaas to
 > defeat Darth Vengean for Baras. Takes time off, then finds out war has
@@ -1668,14 +1684,14 @@ destroy the relay.
 > Emperor's Hand names the warrior the new Emporer's Wrath (coincides with Jedi
 > Knight above)
 
-##### Trooper
+### Trooper
 
 > Heads to Coruscant and then Gauntlet mission in unknown regions near C2-198.
 > R&R time back at Coruscant, but General Rakton declares war. Travels to
 > Outpost 256 past Quesh for a rescue and then to Coruscant for new mission
 > details.
 
-##### Agent
+### Agent
 
 > Goes to Quesh to finish the Jedi infiltration. The Shadow Arsenal is
 > destroyed by Hunter. Heads to Dromund Kaas for a debriefing and time off is
@@ -1684,9 +1700,9 @@ destroy the relay.
 > to DK to hear the war is started and Cabal helped in some respects. In
 > between travels to Hutta for Kaliyo's betrayal.
 
-## Act III
+# Act III
 
-### I. Belsavis
+## I. Belsavis
 
 > We know the Dread Master's are freed here. And the World Razor is destroyed
 > or contained too. The last characters (Agent and Knight) do this if trying to
@@ -1694,7 +1710,7 @@ destroy the relay.
 > almost the same time. The rest are not as clear, but I tried to piece them
 > together.
 
-##### 1. Consular
+### 1. Consular
 
 > The republic does not know of the Rakata facilities yet as the story starts.
 > Rioting is occurring and the empire "may" be causing the riots. The consular
@@ -1703,7 +1719,7 @@ destroy the relay.
 > Consular can free/kill other Esh-kha besides the ones he/she allies with in
 > the Rift Alliance.
 
-##### 2. Hunter
+### 2. Hunter
 
 > Evidently mob rioting just started as Skadge caught Zale Burrows girlfriend
 > as the Republic sirens went off signaling the trouble. The Warden wants to
@@ -1713,7 +1729,7 @@ destroy the relay.
 > and the Esh-kha have been released (Assume certain light side/ dark side
 > choices are canon).
 
-##### 3. Smuggler
+### 3. Smuggler
 
 > Empire attack and airstrike (Voidwolf) occurred 3 days ago (Assume sirens
 > from the Smuggler story above). Many wardens dead and 10,000 prisoners are
@@ -1722,7 +1738,7 @@ destroy the relay.
 > Empire about Belsavis. The "secret" turned out to be a ship to get off
 > planet.
 
-##### 4. Inquisitor
+### 4. Inquisitor
 
 > The inquisitor comes looking for a Rakata device to fix his/her "illness" and
 > notes the Empire "recently" discovered Belsavis and caused a prison break.
@@ -1730,14 +1746,14 @@ destroy the relay.
 > Gorshaa trades the right to use the Mother machine and for the right to
 > "scan" the inquisitor for future research.
 
-##### 5. Warrior
+### 5. Warrior
 
 > Darth Ekkage, Darth Baras' sister, was captured by Nomen Carr and imprisoned
 > on Belsavis. The Warrior actually wants to stop the Empire from releasing her
 > while they raid the vaults and tombs. Lord Melicoste is trying to release
 > Ekkage, but both are killed with the help of a Padawan of Carr.
 
-##### 6. Trooper
+### 6. Trooper
 
 > By this time, Belsavis prison is under heavy Empire assault as they are
 > trying to free comrades. Trooper is freeing Daggerwing pilots and they
@@ -1745,7 +1761,7 @@ destroy the relay.
 > Daggerwing Leader Conrad Gal and Belsavis situation is starting to "turn
 > around" the Republic thinks.
 
-##### 7. Knight
+### 7. Knight
 
 > Lord Krannus has landed here to destroy all life on Belsavis. It is noted
 > that the Empire "just" launched a surprise attack. Republic scientists are
@@ -1754,7 +1770,7 @@ destroy the relay.
 > earlier) and stopped Krannus attempt at detonating the power core. This saves
 > the planet. (I would finish the World Razor planet story arc)
 
-##### 8. Agent
+### 8. Agent
 
 > (An Empire story must end this planet as the Warden that takes over is
 > killed/run off by the Dread Masters. I would think that the Agent did this
@@ -1770,50 +1786,50 @@ destroy the relay.
 > including Darth Angral, Darth Baras and the Children of the Emperor
 > (Consular, Knight and Warrior had to be here earlier).
 
-### Offworld Actions
+## Offworld Actions
 
-##### Agent
+### Agent
 
 > Travels to Tytan Rings just north of Belsavis for information on Star Cabal,
 > then to Dromund Kaas. Voss is just south of this in northern Hutt Space.
 > Therefore the big jump in order due to less space travel.
 
-##### Smuggler
+### Smuggler
 
 > Rescue for Risha's Jedi friend Sumalee on Hoth.
 
-##### Inquisitor
+### Inquisitor
 
 > Travels to Nar Shadaa for chips for a superweapon for Moff Pyron.
 
-##### Hunter
+### Hunter
 
 > Rescues Torian on Hoth.
 
-##### Consular
+### Consular
 
 > Attempted Rescue of Nadia Grell's dad near Tatooine.
 
-##### Trooper
+### Trooper
 
 > Rescue on A77 in the way NE unknown regions. (Big decision about Agent Jaxo
 > or prisoners)
 
-##### Warrior
+### Warrior
 
 > Alert troops on Hoth that they need to go to Corellia.
 
-##### Knight
+### Knight
 
 > Travel to Sith space station in North unknown regions to save Leesha Narezz.
 
-### J. Voss
+## J. Voss
 
 > The main story is about learning of the relationship between Gormak and the
 > Voss. Neither ending provides an alliance with the Empire or Republic, but as
 > we find out next, it does not matter.......
 
-##### 1. Agent
+### 1. Agent
 
 > The planet is newly discovered by the Empire/Republic, but intelligence has
 > had a contact there for 5 years (Again implying secrets even from the Sith
@@ -1823,7 +1839,7 @@ destroy the relay.
 > Voss prophecy of the Shining Man. The Three explain they will stay neutral
 > for 3000 days due to the prophecy. (see my statement above)
 
-##### 2. Smuggler
+### 2. Smuggler
 
 > Voss contacted the Republic after a Sith ship crashed there starting an
 > attack. The Voss repelled the attack and barely have diplomatic relations at
@@ -1831,7 +1847,7 @@ destroy the relay.
 > (Rogun the Butcher contact) is trying to provide them. Jela and the Sith
 > working with her are killed.
 
-##### 3. Inquisitor
+### 3. Inquisitor
 
 > Voss is a recent discovery. The Mystics prophecize that they knew the
 > Inquisitor was coming and would cause destruction to their way of life (Lets
@@ -1840,7 +1856,7 @@ destroy the relay.
 > use the Dream Rock and this shows the link between the Gormak and Voss
 > (somewhat relating to the real story with Gormak King Jokull)
 
-##### 4. Hunter
+### 4. Hunter
 
 > The target is Republic General Redrish. She believes the Voss can coexist
 > with the Gormak. The two sides do not and by this time the Empire has
@@ -1849,7 +1865,7 @@ destroy the relay.
 > Gormak Arena.) Hunter neutralizes or kills the General and either kills or
 > lets go the Gormak wanting to make peace.
 
-##### 5. Consular
+### 5. Consular
 
 > Each side is still competing for an alliance and by this time the original
 > Empire attack has been a "while." (vague reference.) It is too dangerous for
@@ -1859,7 +1875,7 @@ destroy the relay.
 > operation is stopped. Gaden Ko, becomes a mystic and promptly says the Voss
 > will stay neutral for now.
 
-##### 6. Trooper
+### 6. Trooper
 
 > Now the Republic is worried about a possible second attack on Voss by the
 > Empire. The Trooper is sent to end the threat and get Republic troops out of
@@ -1868,7 +1884,7 @@ destroy the relay.
 > saves the city and either retrieves the bomb or gives it to the Voss. The
 > bomb is the one the Havoc Squad traitors stole on Ord Mantell.
 
-##### 7. Warrior
+### 7. Warrior
 
 > Access to the Voss is restricted to the Empire now and it has been "years
 > ago" since the first Empire attack. (This seems confusing when I see the
@@ -1881,7 +1897,7 @@ destroy the relay.
 > the Three know that Sel Makor can be stopped. (This ends the Empire
 > storyline)
 
-##### 8. Knight
+### 8. Knight
 
 > The story says that the Empire sent Sith Lord Fulminas here recently. He is
 > here being helped by a Voss Mystic to learn a healing ritual (i.e. evil
@@ -1892,47 +1908,47 @@ destroy the relay.
 > Lord Fulminass ending his madness plague. Sel Makor is stopped ending the
 > Republic storyline.
 
-### Offworld Actions
+## Offworld Actions
 
-##### Hunter
+### Hunter
 
 > Saves Tyrant Ship near Corellia
 
-##### Agent
+### Agent
 
 > Returns to DK and Intelligence is dissolved.
 
-##### Knight
+### Knight
 
 > Travels to Valiant Ship near Alderaan to save/kill Warren Sedoru.
 
-##### Warrior
+### Warrior
 
 > Travels to a nearby vessel for Malavai Quinn betrayal. Also to Tatooine for
 > Vette.
 
-##### Inquisitor
+### Inquisitor
 
 > Travels to pick up Xalek at Korriban and to the Doombringer Ship to meet the
 > Moffs in N Imp space.
 
-##### Trooper
+### Trooper
 
 > Travels to Coruscant for Senate testimony and to deep Hoth for Aric Jorgan
 > Deadeye rescue.
 
-##### Consular
+### Consular
 
 > Travels to Javelin ship near Corellia. There is major battles here and
 > Consular's love interest is lost.
 
-##### Smuggler
+### Smuggler
 
 > Travels Tatooine to deal with Rogun the Butcher. Also I believe LS choice on
 > Voss is canon and deliveries must be made to Balmorra, Coruscant and
 > Alderaan.
 
-### K. Corellia
+## K. Corellia
 
 > This is the final big battle of the class storylines given in the original
 > part of the game. I would have Inquisitor (obvious from talking to Darth
@@ -1942,7 +1958,7 @@ destroy the relay.
 > leaves for Coruscant and that he/she hasn't met Saresh who appears in the
 > planet storyline.
 
-##### 1. Hunter
+### 1. Hunter
 
 > Darth Tormen wants to beat and embarrass the Republic. The Hunter proceeds to
 > kill/capture the Chairman of Business, Selonian Matriarch and Police
@@ -1950,7 +1966,7 @@ destroy the relay.
 > attack Darth Decimus and the Empire. Lastly, Supreme Chancellor Janarus is
 > captured/killed and the battle rages on.
 
-##### 2. Agent
+### 2. Agent
 
 > Empire has advantage for now bombing Corellia for 6 weeks. Agent coordinates
 > airstrike bombing of Aegis Base. The Star Cabal resistance attacks Lord
@@ -1963,7 +1979,7 @@ destroy the relay.
 > heading straight to Korriban) Hunter is killed/captured and one of several
 > Agent endings occurs.
 
-##### 3. Knight
+### 3. Knight
 
 > Corellia is in war with thousands dieing and Tol Braga helping the Empire.
 > Only a handful of Jedi here so far and reinforcements are called. Empire
@@ -1972,7 +1988,7 @@ destroy the relay.
 > Park and stops Tol Braga's ship from blowing up on Capitol Square. Jedi
 > kills/contains Tol Braga and kills Emporer (or his physical form).
 
-##### 4. Warrior
+### 4. Warrior
 
 > (Takes place at almost same time as Knight) Warrior is protecting Darth
 > Vowraan and attacking Darth Baras powerbase. Assassins are killed,
@@ -1980,7 +1996,7 @@ destroy the relay.
 > freeing a Baras entity. Lord Baras is killed and he is not the Voice of the
 > Emporer.
 
-##### 5. Inquisitor
+### 5. Inquisitor
 
 > (This has to happen after Warrior as Darth Thanaton is still alive at
 > Korriban). War is still going strong. Inauisitor saves Imp Fleet and fuel
@@ -1989,7 +2005,7 @@ destroy the relay.
 > Empire story here helping Darth Decimus claim victory) Thanaton is killed on
 > Korriban and Inquisitor becomes Darth Occlus.
 
-##### 6. Trooper
+### 6. Trooper
 
 > Target is the Bastion a mentioned in Warrior Story. Trooper works with
 > resistance and clears landing drop points or saves residential sector. Then
@@ -1997,7 +2013,7 @@ destroy the relay.
 > Bastion is taken back and General Rakton is captured/killed. (It is noted
 > that Saresh is the new chancellor and the Empire is regrouping on Ilum).
 
-##### 7. Consular
+### 7. Consular
 
 > Master Syo has fortified Guardian Holds on Corellia. Empire Droid production
 > in Labor Valley is stopped, an Imp base in Axial Park is taken and take back
@@ -2008,7 +2024,7 @@ destroy the relay.
 > Smuggler) Saresh is Chancellor claiming victory on Coruscant and Consular is
 > given a Jedi Council spot.
 
-##### 8. Smuggler
+### 8. Smuggler
 
 > Senator Dodonna arrived days ago. Darmas Polleran is working with her and is
 > trying to open Tunnel 26 in the Selonian Tunnels to hurt Corellia defenses.
@@ -2021,21 +2037,21 @@ destroy the relay.
 > winning Corellia for the Republic). Saresh recognizes the Smuggler on a holo
 > at the Spaceport for turning the Tide of the WAR (LS choice).
 
-### Offworld Actions
+## Offworld Actions
 
-##### Hunter
+### Hunter
 
 > Travels to Nar Shadaa for Mako's sister (Can happen before Corellia, but
 > makes more sense here to me)
 
-##### Knight
+### Knight
 
 > Travels to Voss for Kira's child of the emperor finding.
 
-##### Consular
+### Consular
 
 > Travels to Taris for Qyzen's clan.
 
-##### Inquisitor
+### Inquisitor
 
 > Travels to Taris for Khem Val/Darth Zash choice.
