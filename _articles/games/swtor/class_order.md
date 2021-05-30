@@ -751,7 +751,9 @@ your ship’s holoterminal to check in with Imperial Intelligence headquarters o
 the status of your target list.  
 - Jadus' daughter, Zhorrid, is taking his seat
 
-##### Kaliyo: Part of the Team
+##### Kaliyo: Part of the Team: Lifestyle Choices
+
+- made a deal with Keeper to handle some "personal stuff"
 
 ##### 4D. Warrior
 
