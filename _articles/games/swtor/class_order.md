@@ -669,7 +669,7 @@ temple. Go there and use the glyph to open the door to the chamber.
 - "This temple became my kingdom" -- Kallig
 - "Your strength would return our family to glory"
 - Artifact was used by Tulak Horde when he conquered the Dromand system
-- Only you can complete the rutual
+- Only you can complete the ritual
 
 Plans: You are on the trail of the lost artifacts of Tulak Hord, which are
 believed to be key to a secret ritual that will grant you great power.  Darth
