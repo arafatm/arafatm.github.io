@@ -495,6 +495,7 @@ Carrick Station. From there, you can arrange transport to Coruscant.
 - Jorgan is being punished for Havoc's defection
 - promoted to Lt, and Jorgan is demoted to Sgt
 - Jorgan is assigned to new Havoc with you leading
+- You are now commander of Havoc Squad
 - Report to General Garza, head of SpecOps, on Coruscant
 
 ### Jorgan
@@ -962,6 +963,11 @@ Temple.
 > effectively keeping the planet safe.
 
 The Coruscant Assignment: Travel to Coruscant
+- report to General Garza
+- Garza denying Havoc Squad defected
+- hundreds of other Special Forces soldiers also defected
+- cut supply lines to defected Havoc
+- Tavus is buying supplies from criminal gangs on Coruscant
 
 Destroying The War Droids: General Garza has ordered you to destroy a shipment
 of war droids that the Havoc Squad traitors purchased from the Migrant
@@ -970,6 +976,10 @@ SpecForce soldier who has been observing the Migrant Merchants’ Guild’s
 activities, is waiting to rendezvous with you and provide more details. Meet
 with Corporal Garrum on the outskirts of the old Galactic Market district to
 proceed with your mission.
+- primary target is a cyborg, Krel
+- Krel created cyborgs to cause more chaos on Coruscant. Eliminate them
+- found 3 prisoners: kalyn, Parr, Lox, claiming they're not cyborgs
+- I released them after taking their IDs
 
 The Black Sun's Poison: Your next assignment from General Garza is to destroy a
 shipment of deadly nerve gas called Trivoris. It was purchased by the Havoc
@@ -977,6 +987,7 @@ Squad traitors from the Black Sun, another underworld group operating on
 Coruscant.  Sergeant Jaxo, a fellow SpecForce trooper, will brief you on the
 details of the mission. Rendezvous with Sergeant Jaxo at her undercover
 assignment apartment in Black Sun territory.
+- flirt with Jaxo
 
 The Senate Inquiry: A committee of the Galactic Senate is conducting an
 “informal inquiry” into the defection of your former squad-mates to the Sith
