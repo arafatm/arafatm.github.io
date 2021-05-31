@@ -892,8 +892,9 @@ with the Imperials.
 - meet Risha
 - Skavak was on hunt for Nok Drayen's treasure with the help of Risha
 
-### Corso Riggs:
+### Corso Riggs: Gun Philosophy
 
+### Corso Riggs: Happier Times
 
 
 ### 3C. Consular
@@ -911,11 +912,11 @@ were stolen, but Attros has heard a Noetikon is in the possession of a Gand
 scavenger.  A Republic security officer, Alec Efran, has the Gand in custody at
 the barricade in the old Galactic Market. Speak to Alec Efran and find out what
 the Gand knows.
-
-The Coming Darkness: Attros Finn has contacted you. Master Yuon Par’s illness
-is getting worse, and she has turned violent. You must stop Master Yuon from
-hurting herself or anyone else.  Return to the Senate tower medical ward and
-speak to Attros Finn.
+- Yuon sees "the man in the shadows"
+- Attros Finn is helping heal Yuon
+- Masters Tharis Ornes, Vandar Tokare, Arca Jeth
+- "Yuon's illness is not medical"
+- "Find the Noetikon of light"
 
 The Flow of Goods: Attros Finn claims the Noetikons, relics once housed in the
 Jedi Temple, may contain a cure for Master Yuon Par’s illness. Attros has
@@ -923,6 +924,14 @@ discovered that a Noetikon is in the possession of the dangerous Black Sun
 gang.  The Black Sun are using the back rooms of the Silent Sun cantina as a
 secret warehouse. A Noetikon was seen in a recent shipment. Head to the Silent
 Sun cantina and investigate.
+- Masters Noab hulis, Nomi Da'Boda, Wole Vahn
+- Yuon's illness is a kind of mind control
+- Noetikon of Secrets might have more info
+
+The Coming Darkness: Attros Finn has contacted you. Master Yuon Par’s illness
+is getting worse, and she has turned violent. You must stop Master Yuon from
+hurting herself or anyone else.  Return to the Senate tower medical ward and
+speak to Attros Finn.
 
 Shadows: You are tracking three Noetikons, relics that may have a cure for your
 sick Master, Yuon Par. The first two Noetikons have pieces of the puzzle, but
@@ -930,12 +939,20 @@ you must find the third.  Both the Black Sun gangster Curt Willham and the Gand
 mentioned that a Justicar named Lars Baddeg was involved in trying to hide the
 Noetikons from you. He may have the third Noetikon. Attros Finn suggested
 looking for Lars Baddeg at the Justicars’ base in Justicar territory.
+- Fake noetikon? Trapped with Master of Questions
+- Lars in league with a mysterious Sith
+- Noetikon of Secrets: "the masters who have seen the darkness and turned back to the light"
+- Masters Jesper Altax, Chamma, Bastila Shan
+- illness created y ancient Sith, Terrak Morrhage
 
 Ancient Secrets: Master Yuon Par’s time is running out. The Masters of the
 three Noetikons have suggested a cure for Master Yuon’s illness, an ancient
 shielding technique. This technique is recorded in the Jedi Archives in the
 ruined Jedi Temple.  Locate the Jedi Archives amongst the ruins of the Jedi
 Temple.
+- Other masters are also sick... "the darkness is coming"
+
+### Qyzen Fess: Balance
 
 ### 4C. Trooper
 
