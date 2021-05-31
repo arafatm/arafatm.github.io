@@ -851,6 +851,8 @@ active.  Use the elevator in the Justicar territory to reach the Works, then
 travel to the speeder pad that can take you to the elevator that leads to the
 Jedi Temple. Once there, travel to the Jedi Council chambers to confront Lord
 Tarnis.
+- Tarnis is son of Darth Angral
+- On holocall with Angral, Lord Sadic, Lord Nefarid, Lord Praven
 
 ### T7-01: Welcome T7
 
@@ -873,16 +875,26 @@ contact on Coruscant, thinks the Black Sun may have a fragmented holorecording
 that reveals Skavak’s location.  If you acquire the fragments, you can
 reassemble the entire message. Head to the Black Sun’s headquarters to retrieve
 the holo fragments from their computer consoles.
+- Skavak paid Urbax to kill a lawman on his trail
+- Miel Muwn, a Sulistan lawman
+- Miel is trying to recover Murustavan Ruby from Skavak
 
 Due Process: Darmas Pollaran’s informants have tracked Skavak to the Justicar
 sector.  Darmas thinks a pair of siblings named Juul and Jiik might know where
 to find him. Take a speeder to Justicar territory and speak with Juul in her
 apartment.
+- Jiik arrested by Justicars. Saw them trading supplies with the Empire
 
 Race the Devil: You’ve learned that Skavak has a secret meeting with Imperials
 down in the Works below Coruscant.  If you hurry, maybe you can catch him and
 reclaim your ship. Head to the south Works and intercept Skavak at his meeting
 with the Imperials.
+- meet Risha
+- Skavak was on hunt for Nok Drayen's treasure with the help of Risha
+
+### Corso Riggs:
+
+
 
 ### 3C. Consular
 
