@@ -857,6 +857,12 @@ Tarnis.
 
 ### T7-01: Welcome T7
 
+### T7-01: Master Zallow
+
+- Jedi Master Zallow killed by Darth Malgus in Jedi Temple
+
+### Kira: Welcome: Ground Rules 
+
 ### 2C. Smuggler
 
 > Skavak tries to sell a counterfeit Ruby to the Empire who are in the Works
@@ -995,6 +1001,9 @@ Empire.  General Garza has ordered you to appear at the inquiry, but she would
 prefer that you avoid confirming any of the Senators’ suspicions. Report to the
 Senate Subcommittee Chambers inside the Senate tower to proceed with the
 inquiry.
+- Senators Arnus, Voralla, Krasul 
+- Asked about Havoc's defection, and connection to Ando Prime
+- Senator Voralla cuts off questioning into Ando Prime
 
 More Old Friends: General Garza has learned that the former commander of Havoc
 Squad, Jek Kardan, is working with a group of ex-military vigilantes on
@@ -1002,6 +1011,9 @@ Coruscant known as the Justicars. Kardan was a mentor to Harron Tavus and the
 other traitors, and Garza suspects that he is actively assisting them even now.
 She wants Kardan brought in for questioning. Travel to Justicar territory, then
 locate and apprehend Jek Kardan inside the Justicars’ base of operations.
+- Ando Prime was a bigger operation than expected
+- Extraction team was sent but Senate cut off operation
+- Found Karden talking to Imperial officer
 
 Assault On The Works: Using the Justicars’ data files, you have determined that
 Jek Kardan is using a rebuilt communications relay down in the Works level of
@@ -1011,6 +1023,14 @@ Kardan again, though you are authorized to kill him if capture is impossible.
 A fellow SpecForce soldier, Sergeant Mathin, will meet you at the security
 checkpoint near the elevator to the Works with the explosives you’ll need to
 destroy the relay.
+- convinced Kardan to surrender peacefully
+- Old havoc squad is separated hiding
+
+### Jorgan: Past and Present
+
+- with Deadeyes squad under CO Lt Vorne
+
+### Jorgan: Looking Ahead 
 
 ## Offworld Actions
 
@@ -1020,16 +1040,46 @@ destroy the relay.
 > Smuggler as it is noted that Zone Zero on Taris has not been discovered in
 > the Smuggler story.
 
+Public Relations: In the aftermath of your operation on Coruscant, the location
+of one of the Havoc traitors has been uncovered. Wraith, the former Havoc
+infiltration expert, has kidnapped a Republic Senator named Krasul and taken
+him to a remote space station called Port Raga.  General Garza has ordered you
+to rescue Senator Krasul and capture or kill Wraith at any cost. Use your
+starship to travel to Port Raga and meet up with Sergeant Jaxo for a more
+detailed briefing.
+- "Havoc abandonded us. Havoc invaded Ando Prime" -- Senator Krasul
+- Garza is expecting war with the Empire soon
+
+A Litle R and R: Go see Jaxo on Coruscant for "R&R"
+
 ### Knight 
 
 > makes a stop on Ord Mantell to take back weapon plans. This travel time may
 > explain why they are first on Coruscant, but third on Taris.
+
+New Intelligence: Before he died, Tarnis transmitted data on the Republic
+weapons projects to a hyperspace data transceiver on Ord Mantell. Darth Angral
+must have a secret base on the planet; General Var Suthra wants you to
+investigate.  Plot a course on the galaxy map of your new starship and travel
+to Ord Mantell.
+- meet Agent Ottau, Republic SIS
+- found out Angral is creating a world-killer weapon
+- on way back to ship, Kira is held hostage by Inquisitor Ferav
+- Angral left with an Admiral to refit a battle cruiser (with the Desolator)
+- Var Suthra lost contact with Agent Galen
 
 ### Agent 
 
 > makes a stop on Korriban to meet with Darth Zhorrid. This can explain why the
 > Warrior appears on Taris before the Agent and why they change spots in
 > chronological order.
+
+Darth Zhorrid Arrives: Imperial Intelligence has given you a new mission:
+Eliminate the Eagle’s galaxy-spanning terrorist network. Equipped with a new
+rank and your own ship, you will dismantle the terror cells one at a time.  Use
+your ship’s holoterminal to check in with Imperial Intelligence headquarters on
+the status of your target list.
+- Meet Zhorrid on Korriban
 
 ## B. Taris/Balmorra
 
