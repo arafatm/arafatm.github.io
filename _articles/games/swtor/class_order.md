@@ -1080,6 +1080,7 @@ rank and your own ship, you will dismantle the terror cells one at a time.  Use
 your ship’s holoterminal to check in with Imperial Intelligence headquarters on
 the status of your target list.
 - Meet Zhorrid on Korriban
+- Zhorrid wants you to tell her who killed her father when you find out
 
 ## B. Taris/Balmorra
 
