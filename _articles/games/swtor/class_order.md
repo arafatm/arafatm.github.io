@@ -1092,6 +1092,53 @@ the status of your target list.
 > resistance leaders are meeting with allies (the Republic). The leaders
 > escape, but the Admiral is killed.
 
+A Family Matter: The Taris Blacklist bounty is a Mandalorian exile named Jicoln
+Cadera. Bloodworthy suggested talking to the local Mandalorian leader,
+Commander Fett, for any possible leads.  Travel to the Mandalorian camp north
+of toxic lake garrison and see what Commander Fett has to say.
+
+A Friendly Wager: You’ve been given an old Blacklist bounty by the other Grand
+Champions of the Great Hunt, but the only details that were provided were
+coordinates matching the location of Taris and a holofrequency to call when you
+get there.  Use your ship’s galaxy map to travel to the planet Taris.
+
+Imperial Bounty: The Imperial government has placed bounties on all Republic
+settlers on Taris. One of these bounties is to deal with the Second Colonial
+Protectorate.
+
+To Walk in Dark Places: The Taris Blacklist bounty is a Mandalorian exile named
+Jicoln Cadera. You’ve enlisted Jicoln’s son, Torian, to assist you in tracking
+the exile down. Torian thinks that Jicoln could be holed up somewhere inside
+the collapsed ruins of Transport Station 5, but the location is absolutely
+overrun with rakghouls. He’s suggested that with the help of a musk he can
+produce, the two of you could reasonably brave the warren.  Torian asked you to
+collect some of the more easily identified, though most unpleasant, ingredients
+needed to create his special concoction. Gather rakghoul fluids, an old
+rakghoul carcass and rakghoul filth from around the Tularan Marsh.
+
+Torching the Nest: The Taris Blacklist bounty is a Mandalorian exile named
+Jicoln Cadera. You’ve enlisted Jicoln’s son, Torian, to assist you in tracking
+the exile down.Torian thinks that Jicoln could be holed up somewhere inside the
+collapsed ruins of Transport Station 5, but the location is absolutely overrun
+with rakghouls. Torian suggested that with the help of a musk he can produce,
+the two of you could reasonably brave the warren.  Against Torian’s advice, you
+elected not to make the concoction that would make the rakghouls ignore you.
+Enter Transport Station 5 in the Tularan Marsh, and clear a path through the
+rakghoul-infested area known as Zone Zero.
+
+Geroya be Haran: Speak to Jicoln Cadera via the holoterminal at his camp to
+restart this quest.
+
+Honor or Glory: The Taris Blacklist bounty is a Mandalorian exile named Jicoln
+Cadera. You’ve enlisted Jicoln’s son, Torian, to assist you in tracking the
+exile down. With his help, you were able to find one of Jicoln’s old
+encampments. Jicoln contacted you via an old holocom after you sprung his trap
+and warned you to leave well enough alone. Since you weren’t dissuaded by his
+threats, Jicoln offered you a chance to face him and sent you coordinates where
+you may challenge him to the Geroya be Haran.  Jicoln escaped your last trap,
+but just barely. He’s injured, and without supplies or a safe place to hide,
+it’s only a matter of time now. Track Jicoln through the wetlands.
+
 ### 1T. Smuggler
 
 > The Smuggler helps Risha find the astrogation chart to help with search for
@@ -1101,6 +1148,29 @@ the status of your target list.
 > really not been investigated up to this point. (Location where most Republic
 > class story arcs end)
 
+Beryl's Bargain: According to Risha, you have business waiting on Taris that
+will bring you one step closer to finding Nok Drayen’s lost fortune.  Travel to
+the planet Taris by plotting a course on your ship’s galaxy map. Once you’ve
+landed there, speak to Risha for more information.
+
+Early Warning: Somewhere on Taris is a secured vault containing an ancient
+astrogation chart with the route to Nok Drayen’s treasure. Beryl Thorne agreed
+to help you find the vault… after you make a pair of deliveries for her.  The
+first delivery is a biological sensor for Doctor Vernan. Head to Doctor
+Vernan’s station in the Republic Resettlement Zone on Taris and find the doctor
+to make the first delivery.
+
+Illusions: Somewhere on Taris is a secured vault containing an ancient
+astrogation chart with the route to Nok Drayen’s treasure. Beryl Thorne agreed
+to help you find the vault… after you make one more delivery for her.  Head to
+Waypoint Station Aurek in the Sinking City and speak with the Republic
+Quartermaster, Sergeant Klewer, to pick up the supplies you’ll be delivering.
+
+The Vault: Beryl Thorne gave you the coordinates of the secret vault holding
+Nok Drayen’s astrogation chart. However, you still need Risha’s help to get
+inside.  Return to the Taris spaceport and talk to Risha on your ship before
+you go to the vault.
+
 ### 2B. Inquisitor
 
 > The target artifact is in a toxic swamp near the Balmorran Arms Factory. Lord
@@ -1108,6 +1178,22 @@ the status of your target list.
 > did not know presently. The army has a supply shortage and Major Besseker
 > helps find the artifact, while they wait. They research Collicoids and
 > ultimately find the artifact.
+
+The Padawan
+The powerful Darth Thanaton has made it clear he wants you dead. You’ve learned a ritual that will allow you to defend yourself against him, but you must steal the power of Sith apparitions to use it. There are rumors of another Sith apparition on Taris.
+
+Use your ship’s galaxy map to travel to Taris.
+Laying the Trap
+The powerful Darth Thanaton has made it clear he wants you dead. You’ve learned a ritual that will allow you to defend yourself against him, but you must steal the power of Sith apparitions to use it. The apparition on Taris is guarded by Jedi. Elios Maliss has suggested that you may be able to corrupt one of their Padawans, Ashara Zavros, into taking you to the ghost, who is also her ancient ancestor.
+
+You decided to take advantage of Ashara’s pride by offering her a powerful Sith holocron. Retrieve the Sith holocron from the transport station.
+Means of Persuasion
+The powerful Darth Thanaton has made it clear he wants you dead. You’ve learned a ritual that will allow you to defend yourself against him, but you must steal the power of Sith apparitions to use it. The apparition on Taris is guarded by Jedi. Elios Maliss has suggested that you may be able to corrupt one of their Padawans, Ashara Zavros, into taking you to the ghost, who is also her ancient ancestor.
+
+You’ve contacted Ashara and told her to meet you in the bombed enclave.
+The Apprentice: The powerful Darth Thanaton has made it clear he wants you dead. You’ve learned a ritual that will allow you to defend yourself against him, but you must steal the power of Sith apparitions to use it. The apparition on Taris is guarded by Jedi. Elios Maliss has suggested that you may be able to corrupt one of their Padawans, Ashara Zavros, into taking you to the ghost, who is also her ancient ancestor.
+
+You’ve persuaded Ashara to let you into the enclave ruins to bind the apparition. Head to the haunted Jedi ruins in the Republic Resettlement Zone.
 
 ### 2T. Trooper
 
