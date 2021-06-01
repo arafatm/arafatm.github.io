@@ -24,27 +24,27 @@ Here to recruit Nem'ro to ally with the Empire
 
 Discover that other Jedi masters are turned to the dark side? 
 
-###  Jedi Consular - Tython
+### Jedi Consular - Tython
 
 Your Master Yuon Parr is taken ill 
 
-###  Sith Warrior - Korriban
+### Sith Warrior - Korriban
 
 Apprenticed to Darth Baras, a member of the Dark Council
 
-###  Smuggler - Ord Mantell 
+### Smuggler - Ord Mantell 
 
 "Delivering" guns to Republic forces
 
 Skavak steals your ship
 
-###  Trooper - Ord Mantell 
+### Trooper - Ord Mantell 
 
 New member of Havoc Squad on Ord Mantell
 
 Havoc Squad defects with a superweapon to sell to the Empire
 
-###  Sith Inquisitor - Korriban
+### Sith Inquisitor - Korriban
 
 A former slave, you're sent to Korriban for Sith training after being found strong in the force
 
@@ -106,55 +106,9 @@ spies in the republic.
 > project here. Lord Tarnis the Sith traitor is killed, but the Empire finds
 > the secret weapons facilities indicating their start here in the Works.
 
-Secret plans for the Planet Prison, a superweapon, has been stolen. While recovering, you discover other superweapon plans were also stolen.
 
-The Jedi Envoy: After completing your training on Tython, you are to travel to
-Coruscant as ordered by the Jedi Council.  Travel to Coruscant.
-
-Stolen Secrets: The data files for the Planet Prison, a top secret Republic
-military weapon, have been stolen, along with valuable military hardware. A
-Rodian smuggler named Vistis Garn was behind the theft; he’s known to work for
-the Migrant Merchants’ Guild.  Take a speeder to the old Galactic Market and
-infiltrate the Migrant Merchants’ Guild warehouse to recover the stolen goods.
-- Doctor Tarnis created the Planet Prison which allows containing a planet with
-  no ships entering or leaving
-- Kira and Agent Galen, of SIS, will assist
-- Vistis made a copy of plans for Planet Prison and sold it to Black Sun
-
-Kidnapped!:  While you recovered the stolen data files for the Planet Prison,
-kidnappers have taken Doctor Tarnis.  Agent Galen has asked you to meet up with
-Kira Carsen and her security team at the spaceport to stop the kidnappers. Head
-to docking bay 84 in the spaceport and speak to Kira Carsen.
-
-The Rescue: Agent Galen is sending you to rescue Doctor Tarnis while he, Master
-Orgus and Master Kiwiiks secure vulnerable Republic weapons labs.  Galen
-offered the services of a special tactical unit of Republic soldiers to assist
-you. Take a speeder to the Black Sun sector and speak to Sergeant Nidaljo and
-his squad to get their help.
-- The plans Black Sun has also has plans on other experimental weapons
-- Tarnis is a Sith!
-
-Tracking Down the Traitor: General Var Suthra is determined to find the traitor
-Doctor Tarnis before he escapes.  Intelligence agents discovered Doctor
-Tarnis’s last holocall came from within Justicar territory; he wants you to
-investigate. Take a speeder to Justicar territory and find the Justicar prison.
-
-Race to the Ruins: Lord Tarnis has set up the Planet Prison in the ruins of the
-old Jedi Temple on Coruscant. You need to stop him before it becomes fully
-active.  Use the elevator in the Justicar territory to reach the Works, then
-travel to the speeder pad that can take you to the elevator that leads to the
-Jedi Temple. Once there, travel to the Jedi Council chambers to confront Lord
-Tarnis.
-- Tarnis is son of Darth Angral
-- On holocall with Angral, Lord Sadic, Lord Nefarid, Lord Praven
-
-### T7-01: Welcome T7
-
-### T7-01: Master Zallow
-
-- Jedi Master Zallow killed by Darth Malgus in Jedi Temple
-
-### Kira: Welcome: Ground Rules 
+Secret plans for the Planet Prison, a superweapon, has been stolen. While
+recovering, you discover other superweapon plans were also stolen.
 
 ### 2C. Smuggler
 
@@ -163,39 +117,8 @@ Tarnis.
 > Empire?). The Smuggler gets the ship back and leaves to find Nok Drayan's
 > fortune.
 
-The Gambler: Travel to Coruscant
-
-Identity Crisis: Darmas Pollaran thinks a slicer named Kixi might know where
-Skavak is hiding.  She is holed up in a computer lab in the Migrant Merchants’
-Guild area. Use the security panel in the Migrant Merchants’ Guild area to gain
-access to Kixi’s computer lab.
-
-Hot Pursuit: Skavak is involved with the Black Sun gang. Darmas Pollaran, your
-contact on Coruscant, thinks the Black Sun may have a fragmented holorecording
-that reveals Skavak’s location.  If you acquire the fragments, you can
-reassemble the entire message. Head to the Black Sun’s headquarters to retrieve
-the holo fragments from their computer consoles.
-- Skavak paid Urbax to kill a lawman on his trail
-- Miel Muwn, a Sulistan lawman
-- Miel is trying to recover Murustavan Ruby from Skavak
-
-Due Process: Darmas Pollaran’s informants have tracked Skavak to the Justicar
-sector.  Darmas thinks a pair of siblings named Juul and Jiik might know where
-to find him. Take a speeder to Justicar territory and speak with Juul in her
-apartment.
-- Jiik arrested by Justicars. Saw them trading supplies with the Empire
-
-Race the Devil: You’ve learned that Skavak has a secret meeting with Imperials
-down in the Works below Coruscant.  If you hurry, maybe you can catch him and
-reclaim your ship. Head to the south Works and intercept Skavak at his meeting
-with the Imperials.
-- meet Risha
-- Skavak was on hunt for Nok Drayen's treasure with the help of Risha
-
-### Corso Riggs: Gun Philosophy
-
-### Corso Riggs: Happier Times
-
+Track down Skavak. Get your ship back. Meet Risha, who is on the trail of the
+lost treasure of Nok Drayen
 
 ### 3C. Consular
 
@@ -204,55 +127,8 @@ with the Imperials.
 > Council members have arrived on Coruscant by this time and send the consular
 > to help others.
 
-The Arrival: Travel to Coruscant
-
-Secret Signals: Attros Finn claims the Noetikons, relics once housed in the
-Jedi Temple, may contain a cure for Master Yuon Par’s illness. The Noetikons
-were stolen, but Attros has heard a Noetikon is in the possession of a Gand
-scavenger.  A Republic security officer, Alec Efran, has the Gand in custody at
-the barricade in the old Galactic Market. Speak to Alec Efran and find out what
-the Gand knows.
-- Yuon sees "the man in the shadows"
-- Attros Finn is helping heal Yuon
-- Masters Tharis Ornes, Vandar Tokare, Arca Jeth
-- "Yuon's illness is not medical"
-- "Find the Noetikon of light"
-
-The Flow of Goods: Attros Finn claims the Noetikons, relics once housed in the
-Jedi Temple, may contain a cure for Master Yuon Par’s illness. Attros has
-discovered that a Noetikon is in the possession of the dangerous Black Sun
-gang.  The Black Sun are using the back rooms of the Silent Sun cantina as a
-secret warehouse. A Noetikon was seen in a recent shipment. Head to the Silent
-Sun cantina and investigate.
-- Masters Noab hulis, Nomi Da'Boda, Wole Vahn
-- Yuon's illness is a kind of mind control
-- Noetikon of Secrets might have more info
-
-The Coming Darkness: Attros Finn has contacted you. Master Yuon Par’s illness
-is getting worse, and she has turned violent. You must stop Master Yuon from
-hurting herself or anyone else.  Return to the Senate tower medical ward and
-speak to Attros Finn.
-
-Shadows: You are tracking three Noetikons, relics that may have a cure for your
-sick Master, Yuon Par. The first two Noetikons have pieces of the puzzle, but
-you must find the third.  Both the Black Sun gangster Curt Willham and the Gand
-mentioned that a Justicar named Lars Baddeg was involved in trying to hide the
-Noetikons from you. He may have the third Noetikon. Attros Finn suggested
-looking for Lars Baddeg at the Justicars’ base in Justicar territory.
-- Fake noetikon? Trapped with Master of Questions
-- Lars in league with a mysterious Sith
-- Noetikon of Secrets: "the masters who have seen the darkness and turned back to the light"
-- Masters Jesper Altax, Chamma, Bastila Shan
-- illness created y ancient Sith, Terrak Morrhage
-
-Ancient Secrets: Master Yuon Par’s time is running out. The Masters of the
-three Noetikons have suggested a cure for Master Yuon’s illness, an ancient
-shielding technique. This technique is recorded in the Jedi Archives in the
-ruined Jedi Temple.  Locate the Jedi Archives amongst the ruins of the Jedi
-Temple.
-- Other masters are also sick... "the darkness is coming"
-
-### Qyzen Fess: Balance
+Master Yuon is sick. Find a possible cure in Jedi Noetikons that were lost
+during the sacking of the Jedi Temple
 
 ### 4C. Trooper
 
@@ -261,69 +137,8 @@ Temple.
 > established now on Coruscant. The Trooper clears the Imps from the Works
 > effectively keeping the planet safe.
 
-The Coruscant Assignment: Travel to Coruscant
-- report to General Garza
-- Garza denying Havoc Squad defected
-- hundreds of other Special Forces soldiers also defected
-- cut supply lines to defected Havoc
-- Tavus is buying supplies from criminal gangs on Coruscant
-
-Destroying The War Droids: General Garza has ordered you to destroy a shipment
-of war droids that the Havoc Squad traitors purchased from the Migrant
-Merchants’ Guild, a criminal organization on Coruscant.  Corporal Garrum, a
-SpecForce soldier who has been observing the Migrant Merchants’ Guild’s
-activities, is waiting to rendezvous with you and provide more details. Meet
-with Corporal Garrum on the outskirts of the old Galactic Market district to
-proceed with your mission.
-- primary target is a cyborg, Krel
-- Krel created cyborgs to cause more chaos on Coruscant. Eliminate them
-- found 3 prisoners: kalyn, Parr, Lox, claiming they're not cyborgs
-- I released them after taking their IDs
-
-The Black Sun's Poison: Your next assignment from General Garza is to destroy a
-shipment of deadly nerve gas called Trivoris. It was purchased by the Havoc
-Squad traitors from the Black Sun, another underworld group operating on
-Coruscant.  Sergeant Jaxo, a fellow SpecForce trooper, will brief you on the
-details of the mission. Rendezvous with Sergeant Jaxo at her undercover
-assignment apartment in Black Sun territory.
-- flirt with Jaxo
-
-The Senate Inquiry: A committee of the Galactic Senate is conducting an
-“informal inquiry” into the defection of your former squad-mates to the Sith
-Empire.  General Garza has ordered you to appear at the inquiry, but she would
-prefer that you avoid confirming any of the Senators’ suspicions. Report to the
-Senate Subcommittee Chambers inside the Senate tower to proceed with the
-inquiry.
-- Senators Arnus, Voralla, Krasul 
-- Asked about Havoc's defection, and connection to Ando Prime
-- Senator Voralla cuts off questioning into Ando Prime
-
-More Old Friends: General Garza has learned that the former commander of Havoc
-Squad, Jek Kardan, is working with a group of ex-military vigilantes on
-Coruscant known as the Justicars. Kardan was a mentor to Harron Tavus and the
-other traitors, and Garza suspects that he is actively assisting them even now.
-She wants Kardan brought in for questioning. Travel to Justicar territory, then
-locate and apprehend Jek Kardan inside the Justicars’ base of operations.
-- Ando Prime was a bigger operation than expected
-- Extraction team was sent but Senate cut off operation
-- Found Karden talking to Imperial officer
-
-Assault On The Works: Using the Justicars’ data files, you have determined that
-Jek Kardan is using a rebuilt communications relay down in the Works level of
-Coruscant to route communications between the Havoc traitors. General Garza has
-ordered you to destroy the communications relay and attempt to capture Jek
-Kardan again, though you are authorized to kill him if capture is impossible.
-A fellow SpecForce soldier, Sergeant Mathin, will meet you at the security
-checkpoint near the elevator to the Works with the explosives you’ll need to
-destroy the relay.
-- convinced Kardan to surrender peacefully
-- Old havoc squad is separated hiding
-
-### Jorgan: Past and Present
-
-- with Deadeyes squad under CO Lt Vorne
-
-### Jorgan: Looking Ahead 
+Cut off Havoc's supply lines. Convince their old commander, Jek Karden, to turn
+himself in and help bring in the rest of Havoc peacfully
 
 ## Offworld Actions
 
@@ -333,48 +148,16 @@ destroy the relay.
 > Smuggler as it is noted that Zone Zero on Taris has not been discovered in
 > the Smuggler story.
 
-Public Relations: In the aftermath of your operation on Coruscant, the location
-of one of the Havoc traitors has been uncovered. Wraith, the former Havoc
-infiltration expert, has kidnapped a Republic Senator named Krasul and taken
-him to a remote space station called Port Raga.  General Garza has ordered you
-to rescue Senator Krasul and capture or kill Wraith at any cost. Use your
-starship to travel to Port Raga and meet up with Sergeant Jaxo for a more
-detailed briefing.
-- "Havoc abandonded us. Havoc invaded Ando Prime" -- Senator Krasul
-- Garza is expecting war with the Empire soon
-
-A Litle R and R: Go see Jaxo on Coruscant for "R&R"
-
 ### Knight 
 
 > makes a stop on Ord Mantell to take back weapon plans. This travel time may
 > explain why they are first on Coruscant, but third on Taris.
-
-New Intelligence: Before he died, Tarnis transmitted data on the Republic
-weapons projects to a hyperspace data transceiver on Ord Mantell. Darth Angral
-must have a secret base on the planet; General Var Suthra wants you to
-investigate.  Plot a course on the galaxy map of your new starship and travel
-to Ord Mantell.
-- meet Agent Ottau, Republic SIS
-- found out Angral is creating a world-killer weapon
-- on way back to ship, Kira is held hostage by Inquisitor Ferav
-- Angral left with an Admiral to refit a battle cruiser (with the Desolator)
-- Var Suthra lost contact with Agent Galen
 
 ### Agent 
 
 > makes a stop on Korriban to meet with Darth Zhorrid. This can explain why the
 > Warrior appears on Taris before the Agent and why they change spots in
 > chronological order.
-
-Darth Zhorrid Arrives: Imperial Intelligence has given you a new mission:
-Eliminate the Eagle’s galaxy-spanning terrorist network. Equipped with a new
-rank and your own ship, you will dismantle the terror cells one at a time.  Use
-your ship’s holoterminal to check in with Imperial Intelligence headquarters on
-the status of your target list.
-- Meet Zhorrid on Korriban
-- Zhorrid wants you to tell her who killed her father when you find out
-
 
 # Act I
 
@@ -388,53 +171,6 @@ the status of your target list.
 > resistance leaders are meeting with allies (the Republic). The leaders
 > escape, but the Admiral is killed.
 
-A Family Matter: The Taris Blacklist bounty is a Mandalorian exile named Jicoln
-Cadera. Bloodworthy suggested talking to the local Mandalorian leader,
-Commander Fett, for any possible leads.  Travel to the Mandalorian camp north
-of toxic lake garrison and see what Commander Fett has to say.
-
-A Friendly Wager: You’ve been given an old Blacklist bounty by the other Grand
-Champions of the Great Hunt, but the only details that were provided were
-coordinates matching the location of Taris and a holofrequency to call when you
-get there.  Use your ship’s galaxy map to travel to the planet Taris.
-
-Imperial Bounty: The Imperial government has placed bounties on all Republic
-settlers on Taris. One of these bounties is to deal with the Second Colonial
-Protectorate.
-
-To Walk in Dark Places: The Taris Blacklist bounty is a Mandalorian exile named
-Jicoln Cadera. You’ve enlisted Jicoln’s son, Torian, to assist you in tracking
-the exile down. Torian thinks that Jicoln could be holed up somewhere inside
-the collapsed ruins of Transport Station 5, but the location is absolutely
-overrun with rakghouls. He’s suggested that with the help of a musk he can
-produce, the two of you could reasonably brave the warren.  Torian asked you to
-collect some of the more easily identified, though most unpleasant, ingredients
-needed to create his special concoction. Gather rakghoul fluids, an old
-rakghoul carcass and rakghoul filth from around the Tularan Marsh.
-
-Torching the Nest: The Taris Blacklist bounty is a Mandalorian exile named
-Jicoln Cadera. You’ve enlisted Jicoln’s son, Torian, to assist you in tracking
-the exile down.Torian thinks that Jicoln could be holed up somewhere inside the
-collapsed ruins of Transport Station 5, but the location is absolutely overrun
-with rakghouls. Torian suggested that with the help of a musk he can produce,
-the two of you could reasonably brave the warren.  Against Torian’s advice, you
-elected not to make the concoction that would make the rakghouls ignore you.
-Enter Transport Station 5 in the Tularan Marsh, and clear a path through the
-rakghoul-infested area known as Zone Zero.
-
-Geroya be Haran: Speak to Jicoln Cadera via the holoterminal at his camp to
-restart this quest.
-
-Honor or Glory: The Taris Blacklist bounty is a Mandalorian exile named Jicoln
-Cadera. You’ve enlisted Jicoln’s son, Torian, to assist you in tracking the
-exile down. With his help, you were able to find one of Jicoln’s old
-encampments. Jicoln contacted you via an old holocom after you sprung his trap
-and warned you to leave well enough alone. Since you weren’t dissuaded by his
-threats, Jicoln offered you a chance to face him and sent you coordinates where
-you may challenge him to the Geroya be Haran.  Jicoln escaped your last trap,
-but just barely. He’s injured, and without supplies or a safe place to hide,
-it’s only a matter of time now. Track Jicoln through the wetlands.
-
 ### 1T. Smuggler
 
 > The Smuggler helps Risha find the astrogation chart to help with search for
@@ -444,29 +180,6 @@ it’s only a matter of time now. Track Jicoln through the wetlands.
 > really not been investigated up to this point. (Location where most Republic
 > class story arcs end)
 
-Beryl's Bargain: According to Risha, you have business waiting on Taris that
-will bring you one step closer to finding Nok Drayen’s lost fortune.  Travel to
-the planet Taris by plotting a course on your ship’s galaxy map. Once you’ve
-landed there, speak to Risha for more information.
-
-Early Warning: Somewhere on Taris is a secured vault containing an ancient
-astrogation chart with the route to Nok Drayen’s treasure. Beryl Thorne agreed
-to help you find the vault… after you make a pair of deliveries for her.  The
-first delivery is a biological sensor for Doctor Vernan. Head to Doctor
-Vernan’s station in the Republic Resettlement Zone on Taris and find the doctor
-to make the first delivery.
-
-Illusions: Somewhere on Taris is a secured vault containing an ancient
-astrogation chart with the route to Nok Drayen’s treasure. Beryl Thorne agreed
-to help you find the vault… after you make one more delivery for her.  Head to
-Waypoint Station Aurek in the Sinking City and speak with the Republic
-Quartermaster, Sergeant Klewer, to pick up the supplies you’ll be delivering.
-
-The Vault: Beryl Thorne gave you the coordinates of the secret vault holding
-Nok Drayen’s astrogation chart. However, you still need Risha’s help to get
-inside.  Return to the Taris spaceport and talk to Risha on your ship before
-you go to the vault.
-
 ### 2B. Inquisitor
 
 > The target artifact is in a toxic swamp near the Balmorran Arms Factory. Lord
@@ -475,93 +188,12 @@ you go to the vault.
 > helps find the artifact, while they wait. They research Collicoids and
 > ultimately find the artifact.
 
-The Padawan: The powerful Darth Thanaton has made it clear he wants you dead.
-You’ve learned a ritual that will allow you to defend yourself against him, but
-you must steal the power of Sith apparitions to use it. There are rumors of
-another Sith apparition on Taris.  Use your ship’s galaxy map to travel to
-Taris.
-
-Laying the Trap: The powerful Darth Thanaton has made it clear he wants you
-dead. You’ve learned a ritual that will allow you to defend yourself against
-him, but you must steal the power of Sith apparitions to use it. The apparition
-on Taris is guarded by Jedi. Elios Maliss has suggested that you may be able to
-corrupt one of their Padawans, Ashara Zavros, into taking you to the ghost, who
-is also her ancient ancestor.  You decided to take advantage of Ashara’s pride
-by offering her a powerful Sith holocron. Retrieve the Sith holocron from the
-transport station.
-
-Means of Persuasion: The powerful Darth Thanaton has made it clear he wants you
-dead. You’ve learned a ritual that will allow you to defend yourself against
-him, but you must steal the power of Sith apparitions to use it. The apparition
-on Taris is guarded by Jedi. Elios Maliss has suggested that you may be able to
-corrupt one of their Padawans, Ashara Zavros, into taking you to the ghost, who
-is also her ancient ancestor.  You’ve contacted Ashara and told her to meet you
-in the bombed enclave.
-
-The Apprentice: The powerful Darth Thanaton has made it clear he wants you
-dead. You’ve learned a ritual that will allow you to defend yourself against
-him, but you must steal the power of Sith apparitions to use it. The apparition
-on Taris is guarded by Jedi. Elios Maliss has suggested that you may be able to
-corrupt one of their Padawans, Ashara Zavros, into taking you to the ghost, who
-is also her ancient ancestor.  You’ve persuaded Ashara to let you into the
-enclave ruins to bind the apparition. Head to the haunted Jedi ruins in the
-Republic Resettlement Zone.
-
 ### 2T. Trooper
 
 > It is noted that reclaiming and rebuilding Taris is important to the Galactic
 > Senate (Saresh planet story arc tie-in?). The empire is found to be on the
 > planet and working with Needles on vaccines for Rakghouls. Needles is killed
 > and Rakghoul strain is contained.
-
-Lost and Found: Following the clues that you uncovered on Coruscant, your hunt
-for the Havoc traitors has brought you to the world of Taris. A local Search
-and Rescue officer, Sergeant Elara Dorne, offered your first substantial lead:
-Several patrols have gone missing recently without any explanation.
-Investigate the last known coordinates of Patrol Team 3 in the Republic
-Resettlement Zone and determine if their disappearance might be related to the
-Havoc traitors.
-
-Welcome Party: Using the information you gathered on Coruscant, your hunt for
-the Havoc traitors has led you to the world of Taris. Once a pinnacle of
-Republic civilization, Taris was reduced to nothing but swamps and ruins after
-a Sith attack several centuries ago. It is unclear what activities the Havoc
-traitors may be engaged in there, but your orders are to stop them at all
-costs.  Use your ship to travel to Taris, then contact General Garza via your
-ship’s holo for further mission details.
-
-Fallenspire Stronghold: Following the clues that you uncovered on Coruscant,
-your hunt for the Havoc traitors has brought you to the world of Taris. A local
-Search and Rescue officer, Sergeant Elara Dorne, offered your first substantial
-lead: Several patrols have recently gone missing without any explanation.
-Having determined that the missing patrols were kidnapped by scavengers, your
-next step is to storm the scavengers’ headquarters and determine why they are
-abducting Republic soldiers.  Breach Fallenspire Stronghold in the Sinking City
-and search for evidence of the missing Republic soldiers.
-
-An Imperial Presence: Your hunt for the Havoc traitors has brought you to the
-world of Taris, where Sergeant Elara Dorne said that several Republic patrols
-have recently gone missing. After rescuing the soldiers, one of them revealed
-that they were captured on orders from Needles, the former Havoc Squad medic,
-who is working with Imperial forces on Taris toward some unknown purpose.
-Needles and his Imperial allies are working from a hidden bunker located in the
-Brell Sediment. Storm the Imperial research bunker and investigate Needles’s
-activities and whereabouts.
-
-A New Ally: Your hunt for the Havoc traitors brought you to Taris, where you
-located and killed Needles with the help of Sergeant Elara Dorne.  After
-returning to Sergeant Dorne, she informed you that General Garza has requested
-you contact her immediately. Use the holoterminal inside the Search and Rescue
-command post to contact General Garza.
-
-The Arrangement: Your hunt for the Havoc traitors has brought you to the world
-of Taris. Working with Sergeant Elara Dorne, a local Republic officer, you have
-discovered that Needles and his Imperial allies have been capturing Republic
-soldiers as part of a project to weaponize the rakghoul disease that runs
-rampant on Taris.  It is now believed that Needles is perfecting his creation
-in a secret laboratory deep within the ruins of an old transport station. Find
-Needles in his lab at the ruins of Transport Station 5 in the Tularan Marsh and
-capture or kill him at all costs.
 
 ### 3B. Warrior
 
@@ -570,31 +202,11 @@ capture or kill him at all costs.
 > (Working with Grand Marshal Cheketta from the planet story arc?). Rylon is
 > killed and the Jedi investigating him is killed or taken into custody.
 
-Check In: Plan Zero is underway. For years, Darth Baras has been tracking the Republic’s top military leaders, and the time has finally come to eliminate them.  Use your ship’s galaxy map to travel to Taris, and prepare for your assault against the Republic leaders.
-
-General Frellka: Darth Baras has deployed you to Taris to eliminate the four generals who make up the Republic War Trust. Lieutenant Pierce will assist your assault on your first target: General Frellka.  To locate General Frellka, intercept his caravans in the Brell Sediment. Recover three walker transponders, and you can use them to pinpoint General Frellka’s position.
-
-General Minst: Darth Baras has deployed you to Taris to eliminate the four generals who make up the Republic War Trust. With the help of Lieutenant Pierce, you have defeated General Frellka. Now you must find your next target: General Minst.  You have learned that General Minst is near the reactor core inside the ruins of Transport Station 5. Go to the Tularan Marsh, infiltrate the Republic station and find General Minst.
-
-General Durant: Darth Baras has deployed you to Taris to eliminate the four generals who make up the Republic War Trust. With Lieutenant Pierce’s help, you have neutralized Generals Frellka and Minst and learned of their secret operation called “Project Siantide.” Your next target is General Durant.  Lieutenant Pierce has penetrated General Durant’s defenses but is taking heavy fire and won’t last long. Hurry to General Durant’s compound in the Sinking City and take over Pierce’s assault.
-
-General Faraire: Darth Baras has deployed you to Taris to eliminate the four generals who make up the Republic War Trust. With Lieutenant Pierce’s help, you have defeated three of the generals and learned of “Project Siantide,” the War Trust’s secret operation to develop an experimental power source. Now only General Faraire remains.  To plan your assault on General Faraire, rendezvous with Darth Baras inside the Crater Command Base on the border of the Republic Resettlement Zone.
-
 ### 3T. Knight
 
 > The knight is sent to find Doctor Godera (been here for a bit) for help with
 > the finding of the Desolator. Watcher One as mentioned in the Agent story is in
 > this arc and is killed or detained. Godera is rescued.
-
-The Architect of Annihilation: General Var Suthra has a critical task for you on Taris; however, its sensitive nature means he cannot discuss it with you until you arrive on the planet.  Use your ship’s galaxy map to travel to Taris.
-
-Catching up with Watcher One: You need to find Doctor Godera before the Imperial Agent Watcher One locates him.  RE-M0, Godera’s faithful droid, can pinpoint the doctor’s location if you can reactivate the three tracking relays around the Sinking City.
-
-A More Immediate Concern: Through subterfuge and disguise, Watcher One managed to capture Doctor Godera. He also told you that a small Republic colony is about to be attacked by a Sith assassin.  You have to save the colonists before rescuing the doctor. Head to the Republic colonists’ bunker north of the Brell Sediment and save the colonists.
-
-An Opportunity Too Good to Pass Up: Through subterfuge and disguise, Watcher One managed to capture Doctor Godera. He also told you about a group of pirates preparing to sell a collection of Jedi artifacts to a Sith.  You have to keep the artifacts from falling into Sith hands before pursuing Doctor Godera. Head to the Death’s Claw hideout inside the Raarsan storage facility to recover the artifacts.
-
-The Rescue: Watcher One has kidnapped Doctor Godera and is interrogating him about his weapons projects.  Thanks to RE-M0, you know where they’re hiding. Search the Imperial Intelligence Outpost inside Transport Station 5.
 
 ### 4B. Agent
 
@@ -604,16 +216,6 @@ The Rescue: Watcher One has kidnapped Doctor Godera and is interrogating him abo
 > there will be no new recruits and the Empire should be in a good spot on the
 > planet.
 
-Chaos on a Broken World: Your mission to infiltrate the Republic Strategic Information Service and uncover the plans of Ardun Kothe has begun in earnest. You’ve convinced the SIS that you want to work with them and received your first assignment.  Use your ship’s galaxy map to travel to the planet Taris, where you will receive a full briefing.
-
-The Chronicles (Optional): While traveling to Taris, you stumbled upon a recording of the corrupt Jedi Ki Sazen speaking to her loyal followers.  Collect and examine the chronicles of Ki Sazen kept by the Nikto on Taris. Perhaps it will shed some light on Ki Sazen’s background.
-
-The Cult of Ki Sazen: Your mission to infiltrate the Republic Strategic Information Service has brought you to Taris to investigate a corrupt Jedi named Ki Sazen. To do so, you’ve cautiously allied with an Intelligence Fixer, Doctor Lokin.  Doctor Lokin informed you that Ki Sazen is after an abandoned bioresearch facility–one of several laboratories she’s attacked. In order to find it, you must triangulate its location in the Tularan Marsh. Inspect the first triangulation point.
-
-Hunter and Prey: Your mission to infiltrate the Republic Strategic Information Service has brought you to Taris to investigate a corrupt Jedi named Ki Sazen. To do so, you’ve cautiously allied with an Intelligence Fixer, Doctor Lokin.  Ki Sazen is building an army of rakghouls using a device called the Ultrawave Transmitter, but she’ll need data to make it work. Retrieve the data from the Sinking City sensor nets before her followers can.
-
-Thieves and Liars: Your mission to infiltrate the Republic Strategic Information Service has brought you to Taris to investigate a corrupt Jedi named Ki Sazen. To do so, you’ve cautiously allied with an Intelligence Fixer, Doctor Lokin.  Doctor Lokin has arranged to be captured by Ki Sazen’s people so he can transmit the location of her base to you. To ensure you receive the transmission, destroy the Republic signal jammer in the Republic Resettlement Zone.
-
 ### 4T. Consular
 
 > Jedi Master Tykan is noted as being here for sometime to help with
@@ -621,26 +223,6 @@ Thieves and Liars: Your mission to infiltrate the Republic Strategic Information
 > with help from Tykan, but is averted and later he is stopped while trying to
 > have chemical detonation from the main reactor. In essence, this saves the
 > Republic reclamation.
-
-The Expedition
-Master Syo Bakarn and the Jedi Council have a mission for you on Taris.
-
-Use your ship’s galaxy map to travel to Taris.
-
-The Junction
-In searching for Master Cin Tykan, you have met up with his lost expedition. The survivors claim Master Tykan went insane and attacked them.
-
-Master Tykan now plans to attack a facility called the Junction in the Brell Sediment. Speak to the Junction’s security chief in the Junction Control Center to warn him about Master Tykan’s plans.
-
-Rakghoul Invasion
-You have handled Master Cin Tykan’s attack on the Junction, but Master Tykan escaped. Apparently, he was interested in records of the old Tarisian infrastructure, but you cannot decrypt them.
-
-You’ll need to show these records to Captain Nelex at the Republic Expeditionary Force headquarters in the Olaris Reclamation Base to discover Master Tykan’s next move. Captain Nelex is trying to contact you via holocommunicator.
-
-Super Reactor
-Master Cin Tykan’s illness has driven him completely insane. He has kidnapped his Padawan, Aris Vauranelle, and is planning to attack an old super reactor. A meltdown could destroy everyone in the Republic reclamation zone and cause horrific damage to Taris.
-
-You must find and confront Master Cin Tykan at the super reactor in the Tularan Marsh.
 
 ## C. Nar Shadaa
 
