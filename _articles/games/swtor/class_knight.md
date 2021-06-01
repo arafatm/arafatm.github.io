@@ -13,42 +13,545 @@
 
 ### Bounty Hunter - Hutta
 
-Convince Nem'ro to sponsor you for the Great Hunt. Tarro Blood, a mandalorian,
-sees you as a rival in the Great Hunt.
+Gauntlet: Braden, a famed but now retired bounty hunter, has recruited you for
+his team for the Great Hunt. You’ll need sponsorship to get in, though. The
+local crime lord, Nem’ro the Hutt, has yet to offer his sponsorship to anyone,
+and Braden thinks if you can make a name for yourself, you can win that prize.
+Your first task is to hunt down a high-profile target named Vexx. Search Vexx’s
+safe house for any clues as to where he’s hiding.
+
+The Last Flight: Mako has cracked Vexx’s datapad, and it shows that he’s
+prepping a shuttle to leave the planet. Braden is sure that if you can stop
+him, you can win Nem’ro’s Great Hunt sponsorship.  Head to Vexx’s hangar in the
+Jiguuna spaceport, and stop Vexx from taking off.
+
+Big Chief: Eliminate the Evocii found within the renegade Evocii camp on Hutta.
+
+Keeping Them in Line: Braden and Jory have been murdered by a rival bounty
+hunter named Tarro Blood. Gaining Nem’ro’s support for the Great Hunt will be
+even more difficult now.  Mako suggested that you try to get on the Hutt’s good
+side before meeting him in person by taking out some of his rivals’ gang
+members.  Head into Jiguuna and defeat Fa’artha the Hutt’s street captains.
+- You kill Huttsbane, an evocii rebel leader
+- Mako is being followed by someone wearing a white bone mask
+
+Settling Accounts: Nem’ro needs more convincing that you deserve his
+sponsorship for the Great Hunt. Right now, that means taking out more of
+Nem’ro’s enemies. A former accountant of Nem’ro’s, Yalt, has defected to the
+syndicate of Fa’athra the Hutt. Nem’ro wants you to kill Yalt for this, and
+deliver his head to his wife.  Before you deal with Yalt, however, you should
+collect your payment for the Huttsbane job. Speak to Juda for your payment.
+You’ll find her within Nem’ro’s palace.
+
+House Cleaning: Nem’ro the Hutt wants you to take out more of his enemies
+before granting you his sponsorship to the Great Hunt. This time, Nem’ro wants
+you to take out his own beastmaster, who has been plotting against him.  Before
+you head off, you should collect your pay for the Yalt job. Speak to Juda to
+collect your payment for taking care of Yalt. You’ll find her within Nem’ro’s
+palace.
+
+House Cleaning: Nem'ro's Apology
+
+My Sponsorship: Nem’ro has double-crossed you again. He has already given his
+Great Hunt sponsorship token to another bounty hunter and has told you that if
+you want it so badly, you should go take it from him. That’s exactly what
+you’re going to do, but first, you should collect your payment for the
+beastmaster job.  Speak to Juda to collect your payment for dealing with the
+beastmaster. You’ll find her within Nem’ro’s palace.
+- Mako has discovered Nem'ro sponsored bounty hunter, Rasrsk a Trandoshan. 
+- Set a trap for your rival who is going after a republic scientist, Albea, in
+  Fa'athra's palace
+- Bone mask is Grataa, a great hunt representative
+
+Escaping Hutta: Your task on Hutta is complete–you’ve earned your sponsorship
+for the Great Hunt.  Grataa, an official for the Great Hunt, has sent you to
+Dromund Kaas to seek out the Huntmaster in the Mandalorian enclave. The
+Huntmaster will tell you more about the Great Hunt and what it entails. To
+travel to Dromund Kaas, take the shuttle at the Jiguuna shuttle pad to Vaiken
+Spacedock.
+
+### Mako 
+
+Braden was very excited finding you and winning the Great Hunt 
 
 ### Imperial Agent - Hutta
 
-Here to recruit Nem'ro to ally with the Empire
+Claim Your New Identity: Your first mission as an Imperial agent brings you to
+Hutta. Your handler, Keeper, has ordered you to assume a cover identity and
+convince Nem’ro the Hutt to ally with the Empire.  The first step is to contact
+Jheeg, an Imperial asset in the town of Jiguuna; he will brief you on your
+cover. Meet Jheeg at his safe house in Jiguuna.
+
+Soiree: Operating undercover as the pirate “the Red Blade,” you’ve been
+assigned to win Nem’ro the Hutt’s allegiance for the Empire. You must introduce
+yourself to Nem’ro and deliver his tribute–surveillance equipment disguised as
+gifts.  Proceed to Nem’ro’s palace in Jiguuna and seek an audience with the
+Hutt.
+- Keeper lets me know Darth Jadus is interested in this op
+
+Subverting Karrels Javis: Now working undercover as the pirate “the Red Blade,”
+you’ve been assigned to earn the trust of Karrels Javis–the weak link in Nem’ro
+the Hutt’s criminal organization.  Meet with Karrels in Nem’ro’s palace and
+find a way to help him regain Nem’ro’s favor.
+
+Economies of Scale: Working undercover as the pirate “the Red Blade,” you’ve
+been assigned to sabotage Fa’athra the Hutt’s gas mining operations in the Rust
+Yards. This will help your relationship with Karrels Javis, as well as ensure
+that the gas supply is not disrupted.  First, take some of the explosives from
+the crate delivered to your suite in Nem’ro’s palace.
+
+Change of Plans: Unforeseen circumstances have turned Karrels Javis–the
+Empire’s closest ally inside Nem’ro the Hutt’s organization–into a liability.
+Keeper has ordered you to kill Karrels, frame Fa’athra the Hutt and suggest
+that Karrels’s murder was accomplished with Republic aid.  Keeper has given you
+a Republic computer spike. Use it to slice into Karrels Javis’s security system
+down the hallway between your suite and his within Nem’ro’s palace.
+- Jarrel's sons were killed by a Sith. Convince him to run and hide to get him out of the way
+
+The New Truth: Working undercover as “the Red Blade,” you’ve been assigned to
+convince Nem’ro the Hutt and his lieutenants to ally with the Empire. You’re on
+the verge of success, if you can only fake evidence that Nem’ro’s rival,
+Fa’athra, is in league with the Republic.  You’ll need access codes to
+Fa’athra’s archives to obtain the materials for a forgery. Acquire the access
+codes by defeating Fa’athra’s lieutenants at Fa’athra’s palace.
+
+Nothing Is Ever Easy: Working undercover as “the Red Blade,” you were able to
+convince Nem’ro the Hutt to ally with the Empire. Your mission on Hutta is
+complete.  Keeper has ordered you to meet him on Dromund Kaas. Head to the
+Jiguuna spaceport and board a shuttle to the Imperial capital.
+
+Leaving Hutta: Working undercover as “the Red Blade,” you were able to complete
+your mission on Hutta and eliminate the real Red Blade to preserve your cover.
+Now it’s time to leave for the Imperial capital.  From the Jiguuna spaceport,
+take a shuttle to Vaiken Spacedock. You can arrange transport there to Dromund
+Kaas.
+
+### Kaliyo: Part of the Team
 
 ### Jedi Knight - Tython (Do the Pilgrimage Side Quest)
 
-Discover that other Jedi masters are turned to the dark side? 
+Following sacking of Jedi Temple on Coruscant, Jedi order withrdraws to Tython.
+Jxin'sen travels to Tython to complete trials
+
+Attack of the Flesh Raiders: Flesh Raiders have mounted an assault on the Jedi
+training grounds in the Gnarls. Derrin Weller has asked you to help ward off
+this threat.  Speak to the speeder droid outside of the Masters’ Retreat to
+find transportation to the Gnarls.
+- Callef, a dark jedi, has opened a tunnel. Killed Callef
+- Meet Master Orgus Din closes the tunnel
+
+High-Tech Savages: After completing your mission in the Gnarls, you spoke with
+Master Satele Shan, head of the Jedi Council. She discussed your encounter with
+the Flesh Raiders before instructing you to meet with the Jedi Council.  To
+speak with Master Orgus and the rest of the Council, report to the Jedi Council
+chambers located in the upper level of the Jedi Temple.
+- Therapy with Master Satele Shan
+- Meet the council: Satele, Bela Kiwiks (with her padawan Kia Carsen), Orgus
+  Din
+- Orgus Din takes me on as padawan
+- Go speak with the Matriarch of the Twilek Village, Martiarch Sumari, to get
+  more info on the fleshraiders
+
+Enemy Force: Flesh Raiders are making incursions into an ancient Jedi shrine
+within the ruins of Kaleth. Master Orgus Din has left you to deal with this
+while he consults the Jedi Council about the contents of T7’s holorecording.
+You must travel to the ruins of Kaleth and explore the ancient shrine to learn
+why the Flesh Raiders have suddenly become interested in it.
+- Twilek settlement is here illegally. They've been dealing with raider attacks
+- Matriarch is sick, talk to Ranna Tao'Ven and Scout Chief Moorint
+- Ranna and Moorint want me to destroy raider weapons
+- Found T-7 who was captured
+- T-7 has recording of Callef speaking with Bengel Morr
+
+(Bonus) The Thousand Steps: Yuleph Phan, master of rituals in Kalikori village,
+has offered you the chance to complete a dangerous rite of passage that will
+prove your worth to the villagers.  To complete the rite, you must light the
+signals along the path to Kolovish, a revered former Matriarch who now lives in
+the mountains of Tython. Many Padawans have attempted the rite, but not all
+have succeeded. Take the burning brand and light the signals along the path to
+Kolovish’s home.
+- Yuleph Phan, master of rituals in Kalikori, offers a rite of passage to prove
+  your worth
+- light fires on the path
+- speak to Matriarch Kolovish
+- Kolovish led the twilek pilgrims to Tython
+
+Enemy Force: Flesh Raiders are making incursions into an ancient Jedi shrine
+within the ruins of Kaleth. Master Orgus Din has left you to deal with this
+while he consults the Jedi Council about the contents of T7’s holorecording.
+You must travel to the ruins of Kaleth and explore the ancient shrine to learn
+why the Flesh Raiders have suddenly become interested in it.
+- Raiders are searching for something in Kaleth, an ancient Jedi ruin. Push
+  them back
+- Found a raider that can say "Jedi" and is force sensitive
+- Bengal Morr is Master Orgus' former Padawan. Turned against the Jedi
+  following sacking of Coruscant 
+- Matriarch is dying
+
+The Face of the Enemy: Master Orgus has learned that the Flesh Raiders are
+using an energy shield to protect their camps. The shields are powered by a
+generator inside a heavily guarded cave deep inside Flesh Raider territory.
+Infiltrate the Flesh Raider cave and disable the energy shield control console
+so Master Orgus can strike at their camps.
+- Disable shield generator protecting raider camp so Master Orgus can attack
+- Bengal Morr wants to destroy the Jedi to become more powerful
+- Matriarch is dead. Ranna is now matriarch
+- Orgus has learned of several flesh raider bases across Tython. 
+-  Dark Temptations: Master Orgus has learned of several Flesh Raider bases
+   scattered about Tython. He has instructed you to deal with one located in
+   the Kaleth ruins. Infiltrate the Flesh Raider stronghold inside the Forsaken
+   Den in the upper level of the Kaleth ruins.
+
+Dark Temptations: Master Orgus has learned of several Flesh Raider bases
+scattered about Tython.  He has instructed you to deal with one located in the
+Kaleth ruins. Infiltrate the Flesh Raider stronghold inside the Forsaken Den in
+the upper level of the Kaleth ruins.
+- Found Jedi Laotah injured. Warns me raiders are too strong then dies
+- Get Laotah's lightsaber back from the raiders
+- Orgus tells me Bengal has attacked Kalikori. Go back to protect them
+- Back at Kalikori, I am betrayed by Chief Moorint. They gave up Orgus to
+  Bengal in return for stopping raider attacks
+
+Weapon of the Jedi: Master Orgus Din is being held prisoner by Bengel Morr
+somewhere near the ancient Forge. T7’s scans located a likely holding area
+inside the Forge entrance along the way to the Forge.  Using T7’s scans, you
+must search the area in the Forge entrance along the path to the ancient Forge
+and find where Master Orgus is being held.
+- Found Bengal and knocked him out to be dealth with by council
+
+Seeking Darkness: The Jedi Masters have sensed more darkness in the galaxy that
+must be stopped. Because of your efforts on Tython, you have been chosen to
+investigate.  Head to the Jedi Temple spaceport and take a shuttle to Carrick
+Station. From there, you can arrange transport to Coruscant.
+- Master Kiwiiks is on Coruscant waiting for Orgus and me to help investigate
 
 ###  Jedi Consular - Tython
 
-Your Master Yuon Parr is taken ill 
+The Path of a Jedi: You have arrived on Tython, the ancient homeworld of the
+Jedi. Believing you have great potential, the Jedi Council has made you Padawan
+to a noted Master, Master Yuon Par. Unfortunately, you arrived during a crisis.
+The native Flesh Raiders have begun raiding the Gnarls, where several ancient
+“teaching holograms” have been uncovered. Master Yuon Par has sent you to
+recover these priceless artifacts before they are destroyed. Speak to the
+speeder droid at the Masters’ Retreat for transport to the Gnarls.
+- welcomed by Master Syo Bakarn
+- "even in childhood you had a remarkable connection with the force"
+- Yuon asks you to recover artificats but watch out for Flesh Raiders
+- 1st holo, Master Garon Jard: Violence corupts
+- 2nd holo, Master Cala Brin: devote ourselves to justice without emotion
+- 3rd holo, Master Ters Sendon: safeguard knowledge
+- 4th holo missing
+- meet Transdoshan, Qyzen Fess
+- Missing holo is of Rajivari, one of the Jedi founders
+
+Pilgrims: Master Yuon Par has tasked you with locating and retrieving the
+missing hologram of Rajivari, the first fallen Jedi.  She suspects that someone
+from the Twi’lek village of Kalikori may be responsible and that Bashenn,
+captain of the village guard, may know more. Find Bashenn in Kalikori village.
+- Nalen Raloch found the projector
+- Find Nalen's camp
+- Search for Rajivari's Holocron: Nalen has power. Causes cave to collapse
+- Escape the collapsing cave
+- Return to Yuon: Yuon spoke with Ranna Tao'Ven, the daughter of Kalikori
+  matriarch
+- 4th Holo, Master Rajivari: Left behind true wisdom pointed by first blade
+- Fount of Rajivari: archive of his knowledge and teachings. Has not been found
+  yet
+- Points to Kaleth, "Sanctuary" in old tongue, an ancient fortress
+
+Trials in Kaleth: After watching the holorecording of Master Rajivari, Master
+Yuon Par has tasked you with finding the Fount of Rajivari, an archive of
+long-lost knowledge. The first step is to find the “first blade” that was
+mentioned in the holorecording.  Yuon suggested investigating an area in Lower
+Kaleth where several ancient weapons have been unearthed. Explore the walls of
+Lower Kaleth for the first blade. 
+- Serch for the First Blade
+- First blade is the original lightsaber
+- Talked to Master Syo Bakarn and Master Jaric Kaeden who are concerned with
+  Yuon's training
+
+Hunter's Eye: Master Yuon Par has deciphered the second clue from Rajivari’s
+hologram.  She has asked you to take the hilt of the first blade to a cave
+where the founders of the Jedi Order once meditated, and look for some way to
+use it. Search for clues in the Flesh Raider cave. 
+- Explore the Flesh Raider Cave
+- Rajivari holo: created dark jedi to purge the council
+
+The Footsteps of the Fallen: Qyzen Fess has gone to explore the waterfall caves
+to find where the Fount of Rajivari is located. Unfortunately, you have learned
+the Fount is guarded by traps.  Master Yuon Par believes that information
+stored on the old terminals in Upper Kaleth may hold clues that will help you
+get past these traps safely. Use the terminals in Upper Kaleth to gather clues.
+- find holos of other dark jedi for clues
+- 1st holo, Cahel Tse: Rajivari's 5th principle states showing kindness to
+  enemy is weak
+- 2nd holo, Vadria Tallion: 2nd principle says all life is a battle
+- 3rd holo, Orth Quane: 7th principle says sacrificing oneself is path of a
+  fool
+
+Rajivari's Legacy: Qyzen Fess went to explore the waterfall caves for clues on
+where the Fount of Rajivari is located, but he has not returned.  Master Yuon
+Par has grown worried and asked you to look for Qyzen. There may be clues to
+Qyzen’s whereabouts inside the waterfall cave. 
+- Found Qyzen captured by Nalen's forces
+- Enter the Fount of Rajivari
+
+The Forge: Master Rajivari’s ghost told you that Nalen Raloch has been driven
+mad by power. Nalen wants to destroy the Jedi Order, starting with the ancient
+Forge where lightsabers are made.  Rajivari has told you to recover a crystal
+from the Forge entrance to use with the first blade’s hilt, to create a new
+lightsaber.
+- forge a lightsaber
+- confront Nalen
+
+An Afflicted Master: Your master, Yuon Par, has been hiding a serious illness
+from you and the Jedi Council. With Yuon now close to death, the Council has
+sent her to Coruscant for treatment.  The Council has asked you to follow Yuon
+to Coruscant and do everything you can to save her life. Go to the Jedi Temple
+spaceport and board a shuttle to Carrick Station. 
+- Council: Satele, Jarric, Syo
+- accepted as a full Jedi
+- Board a shuttle to the fleet
+
+### Qyzen
+
+- thinks of you as Herald for the Scorekeeper
 
 ###  Sith Warrior - Korriban
 
-Apprenticed to Darth Baras, a member of the Dark Council
+Prologue: With a peace negotiated with the Republic, the Empire accelerates
+training of new Sith. You are sent to Korriban to undergo the training.
 
-###  Smuggler - Ord Mantell 
+Arm Yourself: Overseer Tremel has brought you to the Sith Academy on Korriban
+to begin your trials ahead of schedule.  Your first mission is to acquire a
+blade more appropriate to your destiny–an ancient Sith warblade from the armory
+of the tomb of Ajunta Pall.
+- On the way back to Tremel, ran into Vemrin and Dolgis. Warned to stay out of
+  Vemrin's way
+- meet Eskella, Tremel's daughter
+- Tremel hates Vemrin for being mixed blood
+- Vemrin is being groomed by Barraas to be his next apprentice
 
-"Delivering" guns to Republic forces
+Judge and Executioner: Overseer Tremel has administered the second trial, one
+that will allow you to show your wisdom and understanding of the dark side.
+Your mission is to judge three prisoners in the Sith Academy jails. Meet with
+Jailer Knash in the Sith Academy jails for further instructions.
+- meet Vette, a prisoner
 
-Skavak steals your ship
+Slaying the Beast: Overseer Tremel has handed down your third trial–you must
+slay a great beast in the tomb of Marka Ragnos.  Journey to the tomb of Marka
+Ragnos and discover the antechamber containing the ancient Sith carving. Then,
+meditate on the dark side to summon the beast. Speak to the shuttle droid
+outside of the Academy and take a taxi to the lower wilds.
 
-###  Trooper - Ord Mantell 
+A New Master: Judge and Executioner: Upsetting Overseer Tremel’s plans for you,
+Darth Baras has summoned you to his chambers on the second floor of the Sith
+Academy.
+- Killing the beast cause a tremor in the force which brings you to Baras'
+  attention
+- Meet Teeno, Phyne
+- Baras commands me to kill Tremel and bring back his hand
+- I let Tremel live but took his hand
 
-New member of Havoc Squad on Ord Mantell
+Sith Arithmetic: Darth Baras has issued your next trial. He commands you to
+bring back the shards of an ancient Sith tablet scattered throughout the tomb
+of Tulak Hord.  Travel to the tomb of Tulak Hord and collect the shards from
+the antechamber, the machine vault and the archives.
 
-Havoc Squad defects with a superweapon to sell to the Empire
+The Final Trial: Darth Baras has decreed that your final trial shall be to
+enter the tomb of Naga Sadow and recover an ancient lightsaber from a
+reliquary.  Before you can enter the secret chamber that hides the reliquary,
+you will need to know how to open the door to the chamber, and for that, you
+need the slave Vette. Go to the jail in the Sith Academy and speak with Vette
+and Jailer Knash.
+
+### Vette
+
+- Given to me as a "gift" from Darth Baras
+- Asks for shock collar to be removed
+
+###  Smuggler - Ord Mantell (Bounce between these and have them finish Ord Mantell at the same time)
+
+Landing Party: After delivering a shipment of blasters to Republic forces, you
+find yourself trapped on Ord Mantell. Separatists have seized control of the
+local air defense cannon and are shooting down any starships flying in or out.
+Destroy the separatists’ remote control stations around Drelliad as the first
+step in disabling the air defense cannon.
+
+Desperate Times: You delivered a shipment of blasters to Ord Mantell, only to
+be betrayed by Skavak, one of your contacts. Skavak stole your ship and the
+blaster shipment for the separatists. Fortunately, Corso Riggs’s employer, a
+man named Viidu, can help you find Skavak.  Go to the Rendia Freight building
+at Fort Garnik and speak to Viidu to locate Skavak.
+- blasters Skavak stole belonged to Rogun the Butcher
+
+Hungry for Information: Skavak, a separatist traitor, has stolen your ship and
+cargo. Viidu believes that Reki, a Republic contact in Talloran, can help track
+Skavak down.  To reach Reki, you’ll have to help reduce the separatist forces
+occupying Talloran. You must defeat the separatists in Talloran before you can
+speak with Reki.
+
+Security Breach: The computer at the separatist base in Mannett Point can lead
+you to Skavak and your stolen ship.  To access the computer, you need to find
+the encrypted maintenance tunnel schematics hidden inside Reki’s abandoned
+house. Unfortunately, his house is locked. Disable the power relays in Mannett
+Point to gain access to Reki’s house.
+- Syreena is being hassled by thugs. Killed them.
+
+Deadly Delivery: Viidu needs time to decode the separatists’ data you’ve
+retrieved. While he tries to locate Skavak, you’ll have to keep Rogan the
+Butcher off Viidu’s back.  Viidu needs you to retrieve unstable chemicals from
+a contact named Trymbo in Oradam village and bring them back safely. Speak to
+Trymbo at his house in Oradam village.
+
+Hitting Where it Hurts: Viidu has learned that Skavak plans to sell your
+blaster shipment to a separatist leader named Dareg in a hidden volcano base.
+You need to get there before the trade so you can recover your ship and cargo.
+Go to the rendezvous point inside the volcano base to stop Skavak from selling
+your cargo.
+- Sepatist Leader Dareg
+- Skavak stole a rusty antique droid from Dareg
+- Syreena is Skavak's girl
+
+Chasing Skavak: Skavak has escaped Ord Mantell using your ship and is bound for
+Coruscant.  You’ve acquired a shuttle pass from Syreena so you can follow him
+and reclaim what’s rightfully yours. Go to the spaceport in Fort Garnik and
+board a shuttle to Carrick Station to go to Coruscant.
+- Skavak ghosted Syreena
+- Syreena killed Viidu. Paid me for shuttle flight to Coruscant
+- Bounty hunters Kindin & Xo'ru are waiting for me at spaceport
+
+### Corso
+
+- joined Peace Brigade going into help planets abandoned after Treaty of Coruscant
+
+###  Trooper - Ord Mantell (Bounce between these and have them finish Ord Mantell at the same time)
+
+Hit the Ground Running: You’re the newest member of Havoc Squad, the most elite
+infantry unit in the Republic military. Your first assignment is on Ord
+Mantell, where a separatist uprising has spiralled into a planet-wide war. An
+armored personnel walker is carrying you to Fort Garnik, where you’ll receive a
+full briefing on your mission.  One of the other passengers on the walker is
+Bex “Gearbox” Kolos, a veteran of Havoc Squad. Speak with Gearbox to learn more
+about your mission on Ord Mantell.
+- Havoc Suad: Bex Kolos "Gearbox", Commandur Tavus, Captain Zora "Wraith",
+  Vanto Bazren "Fuse", Ryler Dorant "Needles"
+- Aric Jorga, Ops officer coordinating efforts
+
+The Spy: As the newest member of the Republic’s elite Havoc Squad, you’re
+joining in their hunt for a ZR-57 orbital strike bomb stolen by separatist
+forces on the war-torn world of Ord Mantell.  Commander Tavus, the leader of
+Havoc Squad, has issued your first orders: Meet with a Republic spy named
+Bellis and find out what he’s learned from his separatist sources about the
+bomb’s whereabouts. Make your way to Talloran village and rendezvous with
+Bellis.
+
+The Ambush: Havoc Squad is working to locate a ZR-57 orbital strike bomb stolen
+by separatist forces on the war-torn world of Ord Mantell. A refugee named
+Mirru claims to have information on the separatists’ plans for the bomb, so
+Fuse and Lieutenant Jorgan have ordered you to investigate.  Meet Mirru in the
+refugee camp outside the northern entrance to Fort Garnik.
+
+Mannett Point: Havoc Squad’s hunt for the stolen ZR-57 orbital strike bomb has
+led to a separatist base on the island of Mannett Point. Wraith, the squad’s
+infiltration expert, has been sent ahead to breach the facility, but she will
+need your help to enter the secured area where the bomb is believed to be held.
+Rendezvous with Wraith inside the separatist base at Mannett Point.
+- Private Farn report Lieutenant Virk who is taking bribes from his soldiers in
+  return for cushy assignments
+- While interrogating a sep officer, you learn 3 commanders are here
+- kill saphro, Vyru, and Bol
+
+Oradam Village: Needles has found a new lead in Havoc Squad’s hunt for the
+stolen ZR-57 orbital strike bomb. A man named Zak from nearby Oradam village
+came to Fort Garnik seeking treatment for radiation poisoning affecting both
+himself and his wife; the couple could easily have contracted radiation
+poisoning after handling the bomb.  Needles wants you to interrogate Zak and
+his wife to find out more, but before you do, you’ll need to recover several
+medical ingredients to cure the radiation poisoning. Recover vimidone, albozene
+and a medical injector from the scavengers at the camp west of Oradam village.
+- On way back Lt. Virk is not happy with you
+
+The Separatists' Stronghold: Following the intelligence you retrieved, the rest
+of Havoc Squad set off to recover the stolen ZR-57 orbital strike bomb from the
+separatists’ mountain stronghold. Shortly after they breached the facility,
+however, all contact with the squad was lost.  It’s now up to you to ensure
+that the separatists cannot detonate the bomb. You need to hijack their
+communications system to broadcast the bomb’s disarm code. Use the data spike
+you’ve been issued on the communications console inside the separatists’
+mountain stronghold.
+- Havoc squad sold the bomb to the empire and is defecting 
+- Reason for defection is squad was abandoned on Ando Prime 
+
+New Assignment: Although you succeeded in disabling the ZR-57 orbital strike
+bomb before it could cause any damage on Ord Mantell, the victory was soured by
+the defection of Commander Tavus and the rest of Havoc Squad to the Sith
+Empire. It will now be up to you to take command, rebuild Havoc Squad, and hunt
+down the traitors before they can harm the Republic. You won’t be alone,
+though–Aric Jorgan has been placed under your command as the first of your new
+recruits.  Your orders are to report to General Garza, the head of Republic
+Special Forces, on Coruscant. From the Ord Mantell spaceport, take a shuttle to
+Carrick Station. From there, you can arrange transport to Coruscant.
+- Jorgan is being punished for Havoc's defection
+- promoted to Lt, and Jorgan is demoted to Sgt
+- Jorgan is assigned to new Havoc with you leading
+- You are now commander of Havoc Squad
+- Report to General Garza, head of SpecOps, on Coruscant
+
+### Jorgan
+
+- Not happy about demotion
+- Used to command the deadeyes, "finest sniper squad in the republic"
 
 ###  Sith Inquisitor - Korriban
 
-A former slave, you're sent to Korriban for Sith training after being found strong in the force
+Of Mind and Matter: You have been pulled from the ranks of slaves on Korriban
+and given a chance to complete the trials of the Sith Academy and become Sith,
+much to the disgust of your instructor, Overseer Harkun.  Your first trial is
+to find the sacrificial chamber in the tomb of Ajunta Pall and speak to the
+hermit Spindrall, who will test your worth. Go to the sacrificial chamber in
+the tomb of Ajunta Pall.
+- "Return to Harkun and nurture your hatred of him"
+- "It is Lord Zash who determines where the blow will land"
+- Harkun kills acolyte Kory
 
-Apprenticed to Darth Zash who is after ancient Sith teachings
+The Plight Of The Acolyte: Overseer Harkun has given you your second trial, but
+not many details. You must report to Inquisitor Zyn in the Academy jail to
+receive further instructions.  Go to the Sith Academy jail and speak to
+Inquisitor Zyn.
+- Interrogate Alif
+- Apprentice Kayin is the killer but his master is a dark council member
+
+A Little Knowledge: Overseer Harkun has issued your third trial. You are to
+travel to the wilds of Korriban and enter the tomb of Marka Ragnos. There, you
+need to retrieve an ancient holocron that no Sith has been able to retrieve for
+a thousand years.  Speak to the shuttle droid outside of the Academy and take a
+taxi to the lower wilds.
+
+The Secret of Tulak Hord: Overseer Harkun has given you your fourth trial. This
+time, Lord Zash herself has requested a text from the tomb of Tulak Hord. The
+complete text, however, has been divided between three tablets in the tomb.
+Lord Zash wants all three.  Travel to the tomb of Tulak Hord and collect the
+tablets from the antechamber, the machine vault and the archives.
+
+Martial Law: Overseer Harkun is growing increasingly furious over your success
+at the trials. To remedy this, he has sent you to complete a trial of combat.
+You are to report to the combat training room on the second floor of the Sith
+Academy, and speak to the training master there.
+
+A Map for the Future: You have been given your final trial. You must venture
+into the tomb of Naga Sadow and retrieve an ancient map for Lord Zash.
+Unfortunately, to get to the map, you have to awaken an ancient creature known
+as the Dashade.  To access the Dashade’s chamber, you must first gather the
+ancient rods hidden throughout the tomb. Gather the ancient rods from within
+the tomb of Naga Sadow.
+- Release Khem Val
+
+Onwards to Dromund Kaas: You’ve been sent to Dromund Kaas to meet with Lord
+Zash in her chambers and learn more about her plans for the map you retrieved.
+Board your ship and travel with your companion, Khem Val, to Dromund Kaas.
+- Darth Skotia doesn't want you on Dromund Kaas
+- Sends apprentices to kill you
 
 ## Dromund Kaas
 
@@ -60,7 +563,65 @@ Apprenticed to Darth Zash who is after ancient Sith teachings
 > finished with the hunter killing an Imperial Agent. He/she wins entry to the
 > Great Hunt.
 
-Complete 3 "hunts" on DK and win the melee to officially join the Great Hunt
+The Hunt on Dromund Kaas: You’ve been sent to Dromund Kaas to seek out the
+Huntmaster in the Mandalorian enclave and learn more about the Great Hunt.
+Board your ship and travel with your companion, Mako, to Dromund Kaas.
+
+Letter from Albea: made it safely to Coruscant
+
+The Huntmaster: You and Mako have arrived on Dromund Kaas to join the Great
+Hunt.  After speaking to your contact, Crysta Markon, you learn that there is
+only one spot left in the Great Hunt and still dozens of competitors hoping to
+claim it. However, the Huntmaster has a way of dealing with this situation.
+Speak to the Huntmaster at the Mandalorian enclave.
+- Your handler, Crysta Markon, states there's only 1 spot with 3 dozen
+  sponsorees
+- Huntmaster Assistant Lek
+- Huntmaster (wookie)
+
+A Musty Trail: In order to make it into the Great Hunt, you’ll need to complete
+three bounties on Dromund Kaas.  Your first is a Republic noble who was
+accidentally sold into slavery, and your only clue is the slave camp to which
+he was assigned. Unfortunately, the camp is in the center of a massive slave
+rebellion. Investigate the rebel slave camp near the unfinished colossus for
+clues as to where to find the Republic noble.
+- Lady Dak-Ah has Altaca
+- Navy Sgt Wallax wants to arrest you. Sent by Tarro Blood
+
+Family Cleansing: Your second bounty in the race to join the Great Hunt is for
+the Imperial Navy, or rather an Imperial admiral by the name of Fraabaal.  It’s
+time to find out the details of the job. Talk to Admiral Fraabaal at his office
+in Kaas City.
+- Fraabaal wants you to kill his daugther, Vereta, a Sith working for Lord
+  Grathan
+
+The Spy Game: Your final bounty for entry into the Great Hunt is a job for
+Imperial Intelligence Central Command in the Citadel.  Speak to Captain Medle
+in Commander Gargun’s office in Imperial Command.
+- Team sent to Dark Temple hasn't come back
+- Retrive ID cards from Dark Temple
+- incl. Commander Gargun, Medle's boss
+- Medle wants the ID so Gargun can be declared dead
+- Gargun is insane thinking he's a Sith Lord. Got the ID without fighting
+- Medle tries to have you killed on return. Let him live
+
+The Melee: The last spot in the Great Hunt has come down to “The Grand Melee,”
+a free-for-all fight between the remaining contestants in the arena of the
+Mandalorian enclave. The last one standing gets into the Great Hunt.  Enter the
+arena in the Mandalorian enclave.
+- Tarro claimed you're dead and melee is about to start without you
+
+Joy Ride: You’ve made it into the Great Hunt! Your first task is an old
+tradition: stealing a ship.  Crysta Markon has told you of a ship belonging to
+a smuggler that should suit your purposes. Go to docking bay B-04 at the
+spaceport.
+- Stopped by Spaceport Security Commander
+
+### Mako 
+
+- Fa'athra is trying to find who broke into his palace
+- Parents had Mako teched out as a baby
+- "street scum from Nar Shadaa"
 
 ### 2D. Inquisitor
 
@@ -70,11 +631,56 @@ Complete 3 "hunts" on DK and win the melee to officially join the Great Hunt
 > point and the Inquisitor finds out he/she is a descendent of Lord Kallig. The
 > first holocron is obtained for Lord Zash's plan.
 
-Kill Darth Skotia, who is interfering with Zash's plans to find Tulak Horde's
-lost power.
+Onwards to Dromund Kaas: You’ve been sent to Dromund Kaas to meet with Lord
+Zash in her chambers and learn more about her plans for the map you retrieved.
+Board your ship and travel with your companion, Khem Val, to Dromund Kaas.
+- Zash is rivals with Skotia
+- "This witch stinks of death" -- Khem
 
-Meet Lord Kallig, a spectre of your ancestor, and rival to Tulak Horde, who
-wants you to return the family to glory.
+At The Foot Of The Colossus: Darth Skotia stands between you and the lost power
+of Tulak Hord. Lord Zash has a plan to defeat Darth Skotia, but it requires
+some preparation. Your first task is to retrieve a Trandoshan relic that Darth
+Skotia hid beneath the unfinished colossus.  To find the relic, though, you’ll
+need the archaeological plans of the site. Travel to the unfinished colossus
+and gather the fragmented archaeological plans from the rebel slave engineers.
+
+Dismantling The Machine: Lord Zash has commissioned an anti-cyborg weapon in
+order to defeat Darth Skotia. Unfortunately, the scientist who developed the
+weapon, Dorotsech, is being held captive by the rogue Sith Lord Grathan.  Lord
+Zash has procured a keycard that should get you in to see Dorotsech. Go to the
+Cybernetics Lab in Lord Grathan’s Estate and use the keycard to open the door
+to free Dorotsech. Then, retrieve the weapon and dispose of him.
+
+Giant Killer: It’s time to execute Lord Zash’s plan to defeat Darth Skotia.
+Take the Trandoshan relic and cyber neutralizer and confront Darth Skotia in
+his chambers in the Sith Sanctum.
+- Zash will be in Nexus Room Cantina to have an alibi
+- After killing Skotia meet Zash in Nexus Room Cantina
+- Darth Thanaton isn't happy with Zash for killing Skotia
+- Thanaton "sits just below the Dark Council in authority"
+- "Her breath stinks of Sith lies" -- Khem
+
+In The Halls Of Traitors: With Darth Skotia out of the way, and Zash promoted
+to Darth, you may finally begin collecting the lost power of Tulak Hord. The
+first piece lies buried within the innermost chamber of the Dark Temple,
+protected by a vengeful spirit that Darth Zash has foreseen only you can
+pacify.  Darth Zash has given you a glyph to open the innermost chamber of the
+temple. Go there and use the glyph to open the door to the chamber.
+- Lord Kallig "blood of my blood"
+- "This temple became my kingdom" -- Kallig
+- "Your strength would return our family to glory"
+- Artifact was used by Tulak Horde when he conquered the Dromand system
+- Only you can complete the ritual
+
+Plans: You are on the trail of the lost artifacts of Tulak Hord, which are
+believed to be key to a secret ritual that will grant you great power.  Darth
+Zash has traced one of these artifacts to Balmorra. Use your ship’s galaxy map
+to travel to Balmorra.
+
+### Khem
+
+- defeated by Tulak Horde in honorable combat
+- Served Tulak for honor
 
 ### 3D. Agent
 
@@ -84,8 +690,71 @@ wants you to return the family to glory.
 > Jadus ship, while the Agent is at the Dark Temple. He/she leaves to hunt the
 > Eagle network.
 
-Track a terrorist cell on DK. The Eagle Network bombs and kills Darh Jadus on
-his ship. Discover that the network operates on multiple planets
+The Path Leads to Dromund Kaas: Working undercover as “the Red Blade,” you were
+able to complete your mission on Hutta and convince Nem’ro the Hutt to ally
+with the Empire. Now it’s time to return to the Imperial capital for debriefing
+and reassignment.  Travel to Dromund Kaas with your companion, Kaliyo, in order
+to continue your mission.
+- "This is not your domain keeper. It's mine. It's always been mind" -- Darth Jadus
+
+Meet the team
+- Watcher Two: Genetically bred
+- Lodenth Kashar: Only alien you met at Intelligence
+- Fixer Twelve: 
+- Watcher Three:
+
+The Slave's Secret: Upon arriving at Imperial Intelligence headquarters, you
+found Keeper arguing with Darth Jadus, a powerful Sith Lord. The source of the
+tension between them is unclear, but Keeper agreed to Darth Jadus’s demand that
+you be given a special assignment.  Keeper has asked you to meet him in his
+office. First, however, you must gather equipment for your next mission from
+the lockers in Intelligence headquarters.
+- Find slave leader Jurithus
+
+Dark Meeting: Your assignment is to expose and eliminate a violent dissident
+movement on Dromund Kaas.  After obtaining a major lead, however, you were
+ordered to cease operations and meet privately with Darth Jadus–the Dark
+Council member overseeing Intelligence operations. You must return to the
+Citadel in Kaas City, and meet with Darth Jadus in his chambers inside the Sith
+Sanctum.
+- "Remember you walk the path to power" -- Jadus
+
+High Society: Your assignment is to expose and eliminate a violent dissident
+movement on Dromund Kaas.  Your handler, Watcher Two, will brief you on your
+next lead when you arrive at the Nexus Room cantina. Proceed to the Nexus Room
+cantina in Kaas City and contact Watcher Two via your holocommunicator.
+- Darth Grathan has gone rogue
+- Talk to Samara Mindak, daughter of Theovor Mindak
+
+Doom and the Dark Temple: You’ve uncovered a dissident plot to detonate the
+power conduits running beneath Kaas City, killing hundreds and leaving the city
+open to attack. The dissidents intend to launch the attack from the Dark
+Temple, using its long-forgotten access tunnels as a starting point for the
+conduit overload.  Over Keeper’s objections, Darth Jadus has chosen you to stop
+the dissidents. Travel to the Dark Temple and disable the secondary charges
+placed throughout the area.
+- "The Dark Temple predates the Dromund Kaas' colonization"
+
+Cleaning Up the Mess: Disaster! Although you prevented the dissident attack on
+Kaas City, a second, simultaneous attack was able to destroy the Dominator–a
+dreadnaught carrying three thousand people, including Darth Jadus.  Members of
+the dissident group responsible are fleeing Dromund Kaas from Cargo Port A3 in
+Kaas City. Get to their ship and plant a mouse droid aboard to safely disable
+it.
+- The Eagle's group bombed Darth Jadus' ship
+- Keeper wants you to lead effort to eliminate the Eagle's network
+- new disgnation Cipher Nine
+
+Darth Zhorrid Arrives: Imperial Intelligence has given you a new mission:
+Eliminate the Eagle’s galaxy-spanning terrorist network. Equipped with a new
+rank and your own ship, you will dismantle the terror cells one at a time.  Use
+your ship’s holoterminal to check in with Imperial Intelligence headquarters on
+the status of your target list.  
+- Jadus' daughter, Zhorrid, is taking his seat
+
+### Kaliyo: Part of the Team: Lifestyle Choices
+
+- made a deal with Keeper to handle some "personal stuff"
 
 ### 4D. Warrior
 
@@ -94,9 +763,49 @@ his ship. Discover that the network operates on multiple planets
 > end a couple of storylines on the planet.) He/she obtains the ravager and
 > heads out to find the Jedi Padawan for Lord Baras.
 
-Darth Baras has captured an SIS agent. Discovers that Jedi Nomen Karr has an
-apprentice who can sense "hidden darkness" and thus expose Baras' network of
-spies in the republic.
+The Flight to Dromund Kaas: You’ve been sent to Dromund Kaas to meet Darth
+Baras.  Board your ship and travel with your companion, Vette, to Dromund Kaas.
+
+The Transporter: You’ve reported to Darth Baras at the Citadel, and he’s
+instructed you to oversee the transfer of a prisoner at Cargo Port B7.
+Commander Lanklyn is the officer in charge of the operation. Head to Cargo Port
+B7 in Kaas City to make sure that nothing goes awry.
+- Sleestack and TuMarr, rival gangsters, also want the prisoner, who is in carbonite
+- Darth Barras spy network, "the invisibles"
+
+Pull The Plug: Darth Baras has instructed you to meet with Commander Pritch.
+Commander Pritch will have further details on what needs to be done. Head to
+the Imperial post near the unfinished colossus to meet him.
+- Lord Bars instigated the Slave revolt to "disrupt one of his rivals"
+- Slaves are threatening to expose Baras unless provided with more weapons
+
+Laying Waste: Darth Baras has instructed you to meet with Dri’kill Ba’al, his
+undercover spy at the Grathan compound.  Dri’kill Ba’al will have a mission for
+you that will demonstrate that Lord Grathan is not untouchable. Find Dri’kill
+Ba’al at the Warehouse Offices on Lord Grathan’s Estate.
+- "Grathan's presence is useful to me, so I don't want him killed, just
+  crippled"
+- Kill Grathan's son, Beelzlit
+- Wife: Cellvanta Grathan
+- Cellvanta offers to help destroy Grathan in return for sparing them
+
+An Ancient Answer: Darth Baras’s attempts to break Grik Sonosan have hit a
+standstill. In order to gain the information he craves, Darth Baras requires an
+ancient torture device from the Dark Temple called the Ravager.
+- ambushed by Lord Vacuus "The killer of Garatak the Singed"
+
+Leaving Dromund Kaas: Darth Baras has sent you to get your own starship at its
+private hangar in the Dromund Kaas spaceport, then contact him via the
+holoterminal on the ship’s bridge.
+- Grik Sonosan commisioned by Master Nomen Karr
+- Nomen is tryig to find Sith spies in Republic
+- has a Padawan that senses "hidden darkness" from Alderaan
+- Ralesk is sent by Cellvanta with a gift. "Lord Grathan" wants him to assassinate you
+
+### Vette: Before I got Free 
+
+- mother, sister, and vette were enslaved when young
+- "watch out I don't start calling you pops"
 
 ## Coruscant
 
@@ -105,8 +814,6 @@ spies in the republic.
 > General Varsuthra mentions that the Republic is working on a secret weapons
 > project here. Lord Tarnis the Sith traitor is killed, but the Empire finds
 > the secret weapons facilities indicating their start here in the Works.
-
-Secret plans for the Planet Prison, a superweapon, has been stolen. While recovering, you discover other superweapon plans were also stolen.
 
 The Jedi Envoy: After completing your training on Tython, you are to travel to
 Coruscant as ordered by the Jedi Council.  Travel to Coruscant.
@@ -374,9 +1081,6 @@ your ship’s holoterminal to check in with Imperial Intelligence headquarters o
 the status of your target list.
 - Meet Zhorrid on Korriban
 - Zhorrid wants you to tell her who killed her father when you find out
-
-
-# Act I
 
 ## B. Taris/Balmorra
 
