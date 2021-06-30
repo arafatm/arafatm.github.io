@@ -4,7 +4,6 @@ title: arafatm
 ---
 
 ## Journal
-
 |       | DY x1     | WK x4    | WK x3    | WK x1  | Notes         |
 | ----- | --------- | -------- | -------- | ------ | ------------- |
 |       | :octocat: | :muscle: | :guitar: | :bank: |               |
@@ -203,20 +202,11 @@ title: arafatm
 
 ## TODO
 
-- [ ] :a: https://github.com/arafatm/learn-go-with-tests
 - [ ] :a: http://www-scf.usc.edu/~csci201/lectures/Lecture11/royce1970.pdf
+- [ ] :a: https://github.com/arafatm/learn-go-with-tests
 - [ ] :b: Road To React
-- [ ] https://www.freecodecamp.org/news/learn-the-pern-stack-full-course/
 - [ ] [Announcing the HashiCorp Cloud Platform](https://www.hashicorp.com/blog/announcing-cloud-platform)
-
-Consul
-- [ ] <https://learn.hashicorp.com/consul?track=gs-consul-service-mesh#gs-consul-service-mesh>
-- [ ] <https://learn.hashicorp.com/consul?track=kubernetes#kubernetes>
-- [ ] <https://learn.hashicorp.com/consul?track=hcs-azure#hcs-azure>
-- [ ] <https://learn.hashicorp.com/consul?track=day-0#day-0>
-
-Hashi
-- [ ] https://hashicorp.atlassian.net/wiki/spaces/CLOUD/pages/785974268/Learning+Resources
+- [ ] https://mailchi.mp/ryanholiday/read-these-18-books?e=559a2dbb73
 - [ ] <https://www.hashicorp.com/certification/>
 
 Misc
