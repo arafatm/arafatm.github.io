@@ -3,7 +3,11 @@ layout: home
 title: arafatm
 ---
 
+- [ ] Complete https://arafatm.com/agile/slack#25-what-middle-management-is-there-for
+- [ ] Complete Team Topologies
+
 ## Journal
+
 |       | DY x1     | WK x4    | WK x3    | WK x1  | Notes         |
 | ----- | --------- | -------- | -------- | ------ | ------------- |
 |       | :octocat: | :muscle: | :guitar: | :bank: |               |
