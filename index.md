@@ -18,6 +18,8 @@ title: arafatm
 - [ ] [(12) Hotwire modals, with zero JavaScript - YouTube](https://www.youtube.com/watch?v=WK16FeBfbxI)
 - [ ] [Legends & Lattes](https://www.amazon.com/Legends-Lattes-Novel-Fantasy-Stakes-ebook/dp/B09R9FSZB5)
 
+{% include_relative bookmarks.md %}
+
 ## Links
 - [Portland Things to Do - Reddit Edition (2023 update) - Google Sheets](https://docs.google.com/spreadsheets/d/19HaN6KTVgQht60_qbsFLqsRihh600uK2pxxwwc9Jv6U/edit#gid=0)
 
