@@ -292,7 +292,7 @@ Thanks!
 
 Eric
 
-![](moz-extension://dc465a85-394a-ae40-a284-1c368817eca9/wp-content/themes/bakadesuyo/assets/img/closet.svg)
+![](moz-extension://dc465a85-394a-ae40-a284-1c368817eca9/wp-content/themes/bakadesuyohttps://raw.githubusercontent.com/arafatm/assets/main/img/closet.svg)
 
 #### Over **500,000** people have subscribed to my newsletter. Join now and get the beginning of my new book free:
 

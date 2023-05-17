@@ -18,7 +18,7 @@ the industry and the implications of choosing one pattern over another
 Part III, we deal with ways to evolve the organization design to provide
 powerful capabilities for innovation and rapid delivery
 
-![teams and interactions](/assets/img/team.topologies/0.1.team.interaction.png)
+![teams and interactions](https://raw.githubusercontent.com/arafatm/assets/main/img/team.topologies/0.1.team.interaction.png)
 Figure 0.1: The Four Team Types and Three Interaction Modes
 
 Here are some scenarios with corresponding ways to read the book that might
@@ -58,7 +58,7 @@ organizations, leading to, at best, happy accidents with architectural choices
 and, at worst, significant ongoing friction as the organization spends time and
 effort “fighting” the homomorphic force.
 
-![](/assets/img/team.topologies/9.1.core.png) Figure 9.1: Core Ideas of Team Topologies
+![](https://raw.githubusercontent.com/arafatm/assets/main/img/team.topologies/9.1.core.png) Figure 9.1: Core Ideas of Team Topologies
 
 ### Four Team Types and Three Interaction Modes
 
@@ -225,7 +225,7 @@ Change the team working environment to help teams succeed.
 
 Actual communication lines look quite different from the org chart,
 
-![Figure 1.1: Org Chart with Actual Lines of Communication](/assets/img/team.topologies/1.1.org.chart.comm.png) 
+![Figure 1.1: Org Chart with Actual Lines of Communication](https://raw.githubusercontent.com/arafatm/assets/main/img/team.topologies/1.1.org.chart.comm.png) 
 In practice, people communicate laterally or “horizontally” with people from
 other reporting lines in order to get work done. This creativity and problem
 solving needs to be nurtured for the benefit of the organization, not
@@ -294,7 +294,7 @@ The number of services and components for which a product team is responsible
 However, the development of new services is often planned as if the team had
 full-time availability and zero cognitive load to start with.
 
-![Figure 1.2: Obstacles to Fast Flow](/assets/img/team.topologies/1.2.obstacles.to.flow.png)
+![Figure 1.2: Obstacles to Fast Flow](https://raw.githubusercontent.com/arafatm/assets/main/img/team.topologies/1.2.obstacles.to.flow.png)
 
 The eel sneaks into the crevices and scares off smaller fish, which are then
 forced to come out and become easy prey for the grouper. Enable the groupers
@@ -325,13 +325,13 @@ To increase an organization’s chances of building effective software systems o
 > between teams.
 > -- Accelerate: The Science of Dev Ops by Nicole Forsgren, PhD, Jez Humble, and Gene Kim
 
-![Figure 2.1: Four Teams Working on a Software System](/assets/img/team.topologies/2.1.four.teams.png) 
+![Figure 2.1: Four Teams Working on a Software System](https://raw.githubusercontent.com/arafatm/assets/main/img/team.topologies/2.1.four.teams.png) 
 Figure 2.1: Four Teams Working on a Software System
 - Four separate teams consisting of front-end and back-end developers work on a
   software system. Front-end devs communicate only with back-end devs, who
   communicate with a single DBA for the database changes.
 
-![Figure 2.2: Software Architecture from Four-Team Organization](/assets/img/team.topologies/2.2.arch.four.teams.png) 
+![Figure 2.2: Software Architecture from Four-Team Organization](https://raw.githubusercontent.com/arafatm/assets/main/img/team.topologies/2.2.arch.four.teams.png) 
 Figure 2.2: Software Architecture from Four-Team Organization
 - Four separate applications, each with a separate user interface (UI) and a
   back-end application tier that communicate with a single shared database.
@@ -342,12 +342,12 @@ The use of a shared DBA team is likely to drive the emergence of a single
 shared database; and the use of separate front-end and back-end developers is
 likely to drive a separation between UI and app tiers,
 
-![](/assets/img/team.topologies/2.3.micro.arch.png)
+![](https://raw.githubusercontent.com/arafatm/assets/main/img/team.topologies/2.3.micro.arch.png)
 Figure 2.3: Microservices Architecture with Independent Services and Data Stores 
 - A microservices-based architecture with four separate services, each with its
   own data store, API layer, and front-end client.
 
-![](/assets/img/team.topologies/2.4.team.design.micro.arch.png)
+![](https://raw.githubusercontent.com/arafatm/assets/main/img/team.topologies/2.4.team.design.micro.arch.png)
 Figure 2.4: Team Design for Microservices Architecture with Independent Services and Data Stores 
 - An organization design that anticipates the homomorphic force behind Conway’s
   law to help produce a software architecture with four independent
@@ -393,7 +393,7 @@ What we need is focused communication between specific teams.
 > modular systems.
 > -- Manuel Sosa and colleagues found in their 2004 research into aircraft manufacturing, 
 
-![](/assets/img/team.topologies/2.5.inter.team.comm.png)
+![](https://raw.githubusercontent.com/arafatm/assets/main/img/team.topologies/2.5.inter.team.comm.png)
 Figure 2.5: Inter-Team Communication Communication within teams is high
 bandwidth. 
 - Communication between two “paired” teams can be mid bandwidth. Communication
@@ -473,7 +473,7 @@ predictable behavior and interactions from those teams:
 - Divisions/streams/profit & loss (P&L) lines: groupings of no more than 150 or
   500 people
 
-![](/assets/img/team.topologies/3.1.scaling.teams.png)
+![](https://raw.githubusercontent.com/arafatm/assets/main/img/team.topologies/3.1.scaling.teams.png)
 Figure 3.1: Scaling Teams Using Dunbar’s Number 
 - Organizational groupings should follow Dunbar’s number
 - beginning with around five people (or eight for software teams)
@@ -612,7 +612,7 @@ not have any more domains assigned to them—not even a simple one**.
 The **last heuristic is to avoid a single team responsible for two complicated
 domains**.
 
-![](/assets/img/team.topologies/3.2.domain.per.team.png)
+![](https://raw.githubusercontent.com/arafatm/assets/main/img/team.topologies/3.2.domain.per.team.png)
 Figure 3.2: No More than One Complicated or Complex Domain per Team 
 - Before: a larger team is spread thin across four domains (two complicated and
   two complex) and struggles to perform well. Intra-team morale is negatively
@@ -625,7 +625,7 @@ Figure 3.2: No More than One Complicated or Complex Domain per Team
 Instead of choosing between a monolithic architecture or a microservices
 architecture, design the software to **fit the maximum team cognitive load**.
 
-![](/assets/img/team.topologies/3.3.boundaries.png)
+![](https://raw.githubusercontent.com/arafatm/assets/main/img/team.topologies/3.3.boundaries.png)
 Figure 3.3: Typical vs. Team-First Software Subsystem Boundaries
 
 Tune the ecosystem in which the team works in order to maximize the cognitive
@@ -744,13 +744,13 @@ Organizations seem to assume that software delivery is a one-way process,
 leading from specification to design, from design to coding, from coding to
 testing and releasing, and from releasing to business as usual
 
-![](/assets/img/team.topologies/4.1.flow.of.change.png)
+![](https://raw.githubusercontent.com/arafatm/assets/main/img/team.topologies/4.1.flow.of.change.png)
 Figure 4.1: Organization not Optimized for Flow of Change 
 - Traditional flow of change in an organization not optimized for flow, with a
   series of groups owning different activities and handing over the work to the
   next team.
 
-![](/assets/img/team.topologies/4.2.optimized.flow.of.change.png)
+![](https://raw.githubusercontent.com/arafatm/assets/main/img/team.topologies/4.2.optimized.flow.of.change.png)
 Figure 4.2: Organization Optimized for Flow of Change 
 - Organizations set up for fast flow avoid hand-offs by keeping work within the
   stream-aligned team, and they ensure that the rich set of operational
@@ -811,7 +811,7 @@ updates to application resources (by the product teams).
 > support
 > -- Ben Treynor, not every development team at Google uses SRE. 
 
-![](/assets/img/team.topologies/4.3.sre.png)
+![](https://raw.githubusercontent.com/arafatm/assets/main/img/team.topologies/4.3.sre.png)
 Figure 4.3: Relationship between SRE Team and Application Team
 
 The relationship between an SRE team and an application-development team
@@ -860,7 +860,7 @@ about initial achievements
 
 ##### Organization Size, Software Scale, and Engineering Maturity
 
-![](/assets/img/team.topologies/4.4.scale.png)
+![](https://raw.githubusercontent.com/arafatm/assets/main/img/team.topologies/4.4.scale.png)
 Figure 4.4: Influence of Size and Engineering Maturity on Choice of Topologies 
 - Organization size (or software scale) and engineering discipline influence
   the effectiveness of team interaction patterns.
@@ -896,7 +896,7 @@ Four fundamental team topologies:
 3. Complicated-subsystem team 
 4. Platform team
 
-![](/assets/img/team.topologies/5.1.topologies.png)
+![](https://raw.githubusercontent.com/arafatm/assets/main/img/team.topologies/5.1.topologies.png)
 Figure 5.1: The Four Fundamental Team Topologies
 
 ### Stream-Aligned Teams
@@ -1119,7 +1119,7 @@ internal streams of value within the platform to which stream-aligned teams
 align to help them deliver value to the customers of the platform: the teams
 that use the platform
 
-![](/assets/img/team.topologies/5.2.flow.png)
+![](https://raw.githubusercontent.com/arafatm/assets/main/img/team.topologies/5.2.flow.png)
 Figure 5.2: Platform Composed of Several Fundamental Team Topologies 
 - In a large organization, the platform is composed of several other
   fundamental team topologies: stream-aligned Dev teams, complicated-subsystem
@@ -1191,7 +1191,7 @@ service status pages), and so on. Naturally,
 
 #### Infrastructure Teams to Platform Teams
 
-![](/assets/img/team.topologies/5.3.infra.png)
+![](https://raw.githubusercontent.com/arafatm/assets/main/img/team.topologies/5.3.infra.png)
 Figure 5.3: Traditional Infrastructure Team Organization 
 - Many traditional infrastructure teams (on the right) blocked flow by being
   responsible for all changes to production infrastructure, including
@@ -1224,7 +1224,7 @@ The model for IT support that consistently seems to work best has two aspects:
 If dedicated support teams are needed, they are aligned to the stream of
 change, alongside a team or squad building the software systems.
 
-![](/assets/img/team.topologies/5.4.support.png)
+![](https://raw.githubusercontent.com/arafatm/assets/main/img/team.topologies/5.4.support.png)
 Figure 5.4: Support Teams Aligned to Stream of Change 
 - The new model for support teams: aligned to the flow of change, usually
   paired with one or more stream-aligned Dev teams. 
@@ -1385,7 +1385,7 @@ team as providing a service
 What must be avoided is the need for all teams to communicate with all other
 teams in order to achieve their ends;
 
-![](/assets/img/team.topologies/7.1.x.service.png)
+![](https://raw.githubusercontent.com/arafatm/assets/main/img/team.topologies/7.1.x.service.png)
 Figure 7.1: Collaboration vs. X-as-a-Service 
 - Collaboration means explicitly working together on defined areas.
 - X-as-a-Service means one team consumes something “as a service” from another
@@ -1403,13 +1403,13 @@ Figure 7.1: Collaboration vs. X-as-a-Service
 2. X-as-a-Service: consuming or providing something with minimal collaboration 
 3. Facilitating: helping (or being helped by) another team to clear impediments
 
-![](/assets/img/team.topologies/7.2.interaction.modes.png)
+![](https://raw.githubusercontent.com/arafatm/assets/main/img/team.topologies/7.2.interaction.modes.png)
 Figure 7.2: The Three Team Interaction Modes 
 - Collaboration mode is shown with diagonal cross-hatching
 - X-as-a-Service mode is shown with brackets 
 - Facilitating is shown with dots
 
-![](/assets/img/team.topologies/7.3.interaction.scenario.png) Figure 7.3: Team Interaction Modes Scenario 
+![](https://raw.githubusercontent.com/arafatm/assets/main/img/team.topologies/7.3.interaction.scenario.png) Figure 7.3: Team Interaction Modes Scenario 
 - Stream-aligned: Team A 
 - collaborates with complicated-subsystem Team B (shown with cross-hatching) 
 - while also consuming the platform provided by Team C, 
@@ -1459,7 +1459,7 @@ Typical Uses:
 With X-as-a-Service, there is great clarity about who owns what: one team
 consumes something that the other team provides.
 
-![](/assets/img/team.topologies/7.4.x.service.interaction.png) Figure 7.4: X-as-a-Service Team Interaction
+![](https://raw.githubusercontent.com/arafatm/assets/main/img/team.topologies/7.4.x.service.interaction.png) Figure 7.4: X-as-a-Service Team Interaction
 Mode 
 - In this case, the team on the right is providing something “as a service” to
   the team on the left (perhaps an API, some developer tooling, or even an
@@ -1564,7 +1564,7 @@ user experience of the thing being provided as a service.
 
 ### Choosing Suitable Team Interaction Modes
 
-![](/assets/img/team.topologies/7.5.primary.interaction.png) Figure 7.5: Primary Interaction Modes for the
+![](https://raw.githubusercontent.com/arafatm/assets/main/img/team.topologies/7.5.primary.interaction.png) Figure 7.5: Primary Interaction Modes for the
 Four Fundamental Team Topologies 
 - Stream-aligned teams use X-as-a-Service or collaboration
 - enabling teams use facilitation
@@ -1678,7 +1678,7 @@ teams together in collaboration mode for a few months can not only help to
 improve and define the API between the teams but also produce a step change in
 the capability of the second team.
 
-![](/assets/img/team.topologies/8.1.collab.png) Figure 8.1: Collaboration between Cloud and Embedded Teams 
+![](https://raw.githubusercontent.com/arafatm/assets/main/img/team.topologies/8.1.collab.png) Figure 8.1: Collaboration between Cloud and Embedded Teams 
 - Two teams (“cloud” and “embedded”) collaborate to share practices and
   increase awareness. 
 - The results will include heightened awareness of the options for future team
@@ -1692,12 +1692,12 @@ the capability of the second team.
 Interaction modes of different teams should be expected to change regularly,
 depending on what the teams need to achieve.
 
-![](/assets/img/team.topologies/8.6.evolution.png) Figure 8.6: Evolution of Team Topologies 
+![](https://raw.githubusercontent.com/arafatm/assets/main/img/team.topologies/8.6.evolution.png) Figure 8.6: Evolution of Team Topologies 
 - The evolution of Team Topologies from close collaboration to limited
   collaboration (discovery) through to X-as-a-Service for established,
   predictable delivery.
 
-![](/assets/img/team.topologies/8.7.evolution.enterprise.png) Figure 8.7: Evolution of Team Topologies in
+![](https://raw.githubusercontent.com/arafatm/assets/main/img/team.topologies/8.7.evolution.enterprise.png) Figure 8.7: Evolution of Team Topologies in
 an Enterprise 
 - Team 1 continues to collaborate with a platform team, discovering new
   patterns and ways of using new technologies. 
@@ -1747,7 +1747,7 @@ The solution to these kinds of multi-service integration problems is twofold:
 2. Use stream-aligned teams for each high-level business service responsible
    for operational telemetry and fault diagnosis
 
-![](/assets/img/team.topologies/8.8.platform.wrapper.png) Figure 8.8: Example of a “Platform Wrapper” 
+![](https://raw.githubusercontent.com/arafatm/assets/main/img/team.topologies/8.8.platform.wrapper.png) Figure 8.8: Example of a “Platform Wrapper” 
 - Increase flow predictability in higher-level business services (streams)
   through the use of a “platform wrapper” to “platformize” the lower-level
   services and APIs, allowing the streams to treat all their dependencies as a
@@ -1790,11 +1790,11 @@ DevOps** for modern, high-performing organizations:
 3. **Culture of continual experimentation and learning**: sensing and feedback
    for every team interaction
 
-![](/assets/img/team.topologies/8.9.teams.png) Figure 8.9: New-Service and “Business as Usual” (BAU) Teams 
+![](https://raw.githubusercontent.com/arafatm/assets/main/img/team.topologies/8.9.teams.png) Figure 8.9: New-Service and “Business as Usual” (BAU) Teams 
 - Having separate teams for “new stuff” and BAU tends to prevent learning,
   improvements and ability to self-steer. It is a non-cybernetic approach.
 
-![](/assets/img/team.topologies/8.10.new.teams.png) Figure 8.10: Side-by-Side New Service and BAU Teams 
+![](https://raw.githubusercontent.com/arafatm/assets/main/img/team.topologies/8.10.new.teams.png) Figure 8.10: Side-by-Side New Service and BAU Teams 
 - A cybernetic approach to maintaining older systems has a single
   stream-aligned team (or pair of teams) developing and running the new service
   and the older systems, enabling the team to retro-fit newer telemetry to the

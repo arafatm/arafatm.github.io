@@ -15,7 +15,7 @@ thoughtful use of slack instead of the mindless obsession with elimination of al
 
 # Part One Slack
 
-![Tiles](/assets/img/slack/tiles.png)
+![Tiles](https://raw.githubusercontent.com/arafatm/assets/main/img/slack/tiles.png)
 
 instead of eight tiles and one open space, we have a game with nine tiles and no open space.
 
@@ -299,7 +299,7 @@ All they can do is
 A more realistic model of how pressure impacts performance is, I believe, shown
 in the graph below.
 
-![Tiles](/assets/img/slack/pressure.png)
+![Tiles](https://raw.githubusercontent.com/arafatm/assets/main/img/slack/pressure.png)
 
 Here we see that pressure has a fairly limited capacity to reduce delivery
 time, **maybe 10 or 15 percent at the most**.
@@ -830,6 +830,6 @@ likely to be emotional.
 > The period of growth is one in which people are naturally less
 > change-resistant. It is therefore the optimal time to introduce any change.
 
-![Time for Change](/assets/img/slack/change.png)
+![Time for Change](https://raw.githubusercontent.com/arafatm/assets/main/img/slack/change.png)
 
 ## 25 What Middle Management Is There For

@@ -113,7 +113,7 @@ guide for aspiring COOs and their
 organizations_](https://www.ey.com/Publication/vwLUAssets/Aiming_for_the_top/$FILE/EY-Aiming-for-the-top.pdf)
 (2013). The graphic below summarizes the scope of the COO role.
 
-![Guide for aspiring COOs](/assets/img/so-you-want-to-be-a-coo/guide.png)
+![Guide for aspiring COOs](https://raw.githubusercontent.com/arafatm/assets/main/img/so-you-want-to-be-a-coo/guide.png)
 
 ## No two COO positions are the same
 
@@ -261,7 +261,7 @@ COO_](https://www.ey.com/Publication/vwLUAssetsPI/The_DNA_of_the_COO_-_Time_to_c
 **A diverse set of skills.** According to the EY report, there are many skills
 that successful COOs exhibit. Here’s one look at what’s needed.
 
-![Skills needed to succeed as a COO](/assets/img/so-you-want-to-be-a-coo/skills.png)
+![Skills needed to succeed as a COO](https://raw.githubusercontent.com/arafatm/assets/main/img/so-you-want-to-be-a-coo/skills.png)
 
 Note: percentage of respondents who have chosen 9 or 10 on a scale from 1= not
 needed at all to 10 = absolutely needed.

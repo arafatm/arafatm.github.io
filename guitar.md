@@ -43,7 +43,7 @@ title: Guitar Level 2 with Alex, Montavilla Guitar Center
     . . . . . .       . 3 . 4 . .
     . . . . . .       . . . . . .
 
-![common-open-chords.png](/assets/img/guitar/common-open-chords.png)
+![common-open-chords.png](https://raw.githubusercontent.com/arafatm/assets/main/img/guitar/common-open-chords.png)
 
 
 ## Montavilla Guitar
@@ -78,7 +78,7 @@ e.g.
 
 ### Stand By Me 
 
-[stand-by-me.png](/assets/img/guitar/stand-by-me.png)
+[stand-by-me.png](https://raw.githubusercontent.com/arafatm/assets/main/img/guitar/stand-by-me.png)
 <iframe width="560" height="315" src="https://www.youtube.com/embed/hwZNL7QVJjE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
     Capo 2
@@ -96,7 +96,7 @@ e.g.
 
 ### Beatles - Daytrippers 
 
-[day-tripper.png](/assets/img/guitar/day-tripper.png)
+[day-tripper.png](https://raw.githubusercontent.com/arafatm/assets/main/img/guitar/day-tripper.png)
 <iframe width="560" height="315" src="https://www.youtube.com/embed/AYZlME0mQB8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
     count   u d u d u d u d   u d u d u d u d 
@@ -175,7 +175,7 @@ e.g.
 
 ### Natural Notes on any String
 
-[natural-notes-on-any-string.png](/assets/img/guitar/natural-notes-on-any-string.png)
+[natural-notes-on-any-string.png](https://raw.githubusercontent.com/arafatm/assets/main/img/guitar/natural-notes-on-any-string.png)
 
     w = whole step     h = half step
 
@@ -212,7 +212,7 @@ e.g.
 
 ### 4 Non Blondes - What's Up
 
-[4-non-blondes-whats-up.png](/assets/img/guitar/4-non-blondes-whats-up.png)
+[4-non-blondes-whats-up.png](https://raw.githubusercontent.com/arafatm/assets/main/img/guitar/4-non-blondes-whats-up.png)
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/6NXnxTNIWkc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -223,7 +223,7 @@ e.g.
 
 ### Beatles - Let It Be
 
-[beatles-let-it-be.png)](/assets/img/guitar/beatles-let-it-be.png)
+[beatles-let-it-be.png)](https://raw.githubusercontent.com/arafatm/assets/main/img/guitar/beatles-let-it-be.png)
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/QDYfEBY9NM4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -243,7 +243,7 @@ e.g.
 
 ### Johnny Cash - Folsom Prison Blues
 
-[johnny-cash-folsom-prison-blues.png](/assets/img/guitar/johnny-cash-folsom-prison-blues.png)
+[johnny-cash-folsom-prison-blues.png](https://raw.githubusercontent.com/arafatm/assets/main/img/guitar/johnny-cash-folsom-prison-blues.png)
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/_Xyp63MaSBs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -265,11 +265,11 @@ e.g.
 
 ### Alternate Bass Notes
 
-![alternate-bass-notes.png](/assets/img/guitar/alternate-bass-notes.png)
+![alternate-bass-notes.png](https://raw.githubusercontent.com/arafatm/assets/main/img/guitar/alternate-bass-notes.png)
 
 ### Beginning Scales
 
-[beginning-scales.png](/assets/img/guitar/beginning-scales.png)
+[beginning-scales.png](https://raw.githubusercontent.com/arafatm/assets/main/img/guitar/beginning-scales.png)
 
 ##### E minor pentatonic (start at `->`)
 
@@ -326,7 +326,7 @@ e.g.
 
 ### C Major Scale
 
-[c-major-scale.png](/assets/img/guitar/c-major-scale.png)
+[c-major-scale.png](https://raw.githubusercontent.com/arafatm/assets/main/img/guitar/c-major-scale.png)
 
     | - - - - - - - - |
     | - - - - - - 0 1 |
@@ -345,7 +345,7 @@ e.g.
 
 ### Ode To Joy
 
-[ode-to-joy.png](/assets/img/guitar/ode-to-joy.png)
+[ode-to-joy.png](https://raw.githubusercontent.com/arafatm/assets/main/img/guitar/ode-to-joy.png)
 
     | 0 0 1 3 | 3 1 0 . | . . . 0 | 0 . . . |
     | . . . . | . . . 3 | 1 1 3 . | . 3 3 . |
@@ -377,7 +377,7 @@ e.g.
 
 ### Bill Withers - Ain't No Sunshine
 
-[bill-withers-aint-no-sunshine.png](/assets/img/guitar/bill-withers-aint-no-sunshine.png)
+[bill-withers-aint-no-sunshine.png](https://raw.githubusercontent.com/arafatm/assets/main/img/guitar/bill-withers-aint-no-sunshine.png)
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/CICIOJqEb5c" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -399,11 +399,11 @@ e.g.
 
 ### Al Green - For the Good Times
 
-[al-green-for-the-good-times-1.png](/assets/img/guitar/al-green-for-the-good-times-1.png)
+[al-green-for-the-good-times-1.png](https://raw.githubusercontent.com/arafatm/assets/main/img/guitar/al-green-for-the-good-times-1.png)
 
-[al-green-for-the-good-times-2.png](/assets/img/guitar/al-green-for-the-good-times-2.png)
+[al-green-for-the-good-times-2.png](https://raw.githubusercontent.com/arafatm/assets/main/img/guitar/al-green-for-the-good-times-2.png)
 
-[al-green-for-the-good-times-3.png](/assets/img/guitar/al-green-for-the-good-times-3.png)
+[al-green-for-the-good-times-3.png](https://raw.githubusercontent.com/arafatm/assets/main/img/guitar/al-green-for-the-good-times-3.png)
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Y2IpoTKnDPw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -438,9 +438,9 @@ e.g.
 
 ### Ottis Redding - Sittin' On The Dock Of The Bay
 
-[ottis-redding-sittin-on-the-dock-of-the-bay-1.png](/assets/img/guitar/ottis-redding-sittin-on-the-dock-of-the-bay-1.png)
+[ottis-redding-sittin-on-the-dock-of-the-bay-1.png](https://raw.githubusercontent.com/arafatm/assets/main/img/guitar/ottis-redding-sittin-on-the-dock-of-the-bay-1.png)
 
-[ottis-redding-sittin-on-the-dock-of-the-bay-2.png](/assets/img/guitar/ottis-redding-sittin-on-the-dock-of-the-bay-2.png)
+[ottis-redding-sittin-on-the-dock-of-the-bay-2.png](https://raw.githubusercontent.com/arafatm/assets/main/img/guitar/ottis-redding-sittin-on-the-dock-of-the-bay-2.png)
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/rTVjnBo96Ug" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -492,7 +492,7 @@ e.g.
 
 ### Moveable Chords - Triads
 
-[moveable-chords-triads.png](/assets/img/guitar/moveable-chords-triads.png)
+[moveable-chords-triads.png](https://raw.githubusercontent.com/arafatm/assets/main/img/guitar/moveable-chords-triads.png)
 
       1st fret            3rd fret            5th fret 
     F x - - - - - -   G x - - - - - -   A x - - - - - - -

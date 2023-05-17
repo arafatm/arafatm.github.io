@@ -46,70 +46,70 @@ https://8fit.com/fitness/full-body-stretching-routine-10-minute-guided-session/
 ## Daily Limber
 
 ###  Wrist Stretch Front 
-![](/assets/img/gymnasticbodies/wrist-stretch-front.png) 
+![](https://raw.githubusercontent.com/arafatm/assets/main/img/gymnasticbodies/wrist-stretch-front.png) 
 ### Wrist Stretch Back 
-![](/assets/img/gymnasticbodies/wrist-stretch-back.png)
+![](https://raw.githubusercontent.com/arafatm/assets/main/img/gymnasticbodies/wrist-stretch-back.png)
 ### Repeat 3x Seal/Cat
-![](/assets/img/gymnasticbodies/seal-stretch.png) 
-![](/assets/img/gymnasticbodies/cat-stretch.png)
+![](https://raw.githubusercontent.com/arafatm/assets/main/img/gymnasticbodies/seal-stretch.png) 
+![](https://raw.githubusercontent.com/arafatm/assets/main/img/gymnasticbodies/cat-stretch.png)
 ### Capsule Stretch
-![](/assets/img/gymnasticbodies/capsule-stretch.png) 
+![](https://raw.githubusercontent.com/arafatm/assets/main/img/gymnasticbodies/capsule-stretch.png) 
 ### Shoulder Extension
-![](/assets/img/gymnasticbodies/shoulder-extension.png)
+![](https://raw.githubusercontent.com/arafatm/assets/main/img/gymnasticbodies/shoulder-extension.png)
 ### Hip Swivels
-![](/assets/img/gymnasticbodies/hip-swivels.png) 
+![](https://raw.githubusercontent.com/arafatm/assets/main/img/gymnasticbodies/hip-swivels.png) 
 ### Pancake Front
-![](/assets/img/gymnasticbodies/pancake-front.png)
+![](https://raw.githubusercontent.com/arafatm/assets/main/img/gymnasticbodies/pancake-front.png)
 ### Pancake Left
-![](/assets/img/gymnasticbodies/pancake-left.png) 
+![](https://raw.githubusercontent.com/arafatm/assets/main/img/gymnasticbodies/pancake-left.png) 
 ### Pancake Right
-![](/assets/img/gymnasticbodies/pancake-right.png)
+![](https://raw.githubusercontent.com/arafatm/assets/main/img/gymnasticbodies/pancake-right.png)
 ### Butterfly
-![](/assets/img/gymnasticbodies/butterfly.png) 
+![](https://raw.githubusercontent.com/arafatm/assets/main/img/gymnasticbodies/butterfly.png) 
 ### Pike
-![](/assets/img/gymnasticbodies/pike-stretch.png)
+![](https://raw.githubusercontent.com/arafatm/assets/main/img/gymnasticbodies/pike-stretch.png)
 ### Shoulder Bridge
-![](/assets/img/gymnasticbodies/shoulder-bridge.png) 
+![](https://raw.githubusercontent.com/arafatm/assets/main/img/gymnasticbodies/shoulder-bridge.png) 
 ### Calf Stretch
-![](/assets/img/gymnasticbodies/calf-stretch.png)
+![](https://raw.githubusercontent.com/arafatm/assets/main/img/gymnasticbodies/calf-stretch.png)
 
 ## Front Split (45 min)
 
 https://my.gymnasticbodies.com/carousel-seat/stretch-front-split/
 
 ### Straight Calf x60 reps
-![](/assets/img/gymnasticbodies/fs-straight-calf.png)
+![](https://raw.githubusercontent.com/arafatm/assets/main/img/gymnasticbodies/fs-straight-calf.png)
 ### Elevated Seiza 2min
-![](/assets/img/gymnasticbodies/fs-seiza.png)
+![](https://raw.githubusercontent.com/arafatm/assets/main/img/gymnasticbodies/fs-seiza.png)
 ### Calves Outwards x60
-![](/assets/img/gymnasticbodies/fs-calves-outward.png)
+![](https://raw.githubusercontent.com/arafatm/assets/main/img/gymnasticbodies/fs-calves-outward.png)
 ### Squatted Seiza 2min
-![](/assets/img/gymnasticbodies/fs-squatted-seiza.png)
+![](https://raw.githubusercontent.com/arafatm/assets/main/img/gymnasticbodies/fs-squatted-seiza.png)
 ### Inward Calf x60
-![](/assets/img/gymnasticbodies/fs-inward-calf.png)
+![](https://raw.githubusercontent.com/arafatm/assets/main/img/gymnasticbodies/fs-inward-calf.png)
 ### Curled Seiza 2min
-![](/assets/img/gymnasticbodies/fs-curled-seiza.png)
+![](https://raw.githubusercontent.com/arafatm/assets/main/img/gymnasticbodies/fs-curled-seiza.png)
 ### 2 Squat 2 Pike x10 (bounce at both ends)
-![](/assets/img/gymnasticbodies/fs-2-pike.png)
-![](/assets/img/gymnasticbodies/fs-2-squat.png)
+![](https://raw.githubusercontent.com/arafatm/assets/main/img/gymnasticbodies/fs-2-pike.png)
+![](https://raw.githubusercontent.com/arafatm/assets/main/img/gymnasticbodies/fs-2-squat.png)
 ### Standing Pike 2min (flex quads)
-![](/assets/img/gymnasticbodies/fs-standing-pike.png)
+![](https://raw.githubusercontent.com/arafatm/assets/main/img/gymnasticbodies/fs-standing-pike.png)
 ### 2 Squat 2 Pike x10
-![](/assets/img/gymnasticbodies/fs-2-pike.png)
-![](/assets/img/gymnasticbodies/fs-2-squat.png)
+![](https://raw.githubusercontent.com/arafatm/assets/main/img/gymnasticbodies/fs-2-pike.png)
+![](https://raw.githubusercontent.com/arafatm/assets/main/img/gymnasticbodies/fs-2-squat.png)
 ### Kneeling Achiles 90s xSide 
-![](/assets/img/gymnasticbodies/fs-kneeling-achiles.png)
+![](https://raw.githubusercontent.com/arafatm/assets/main/img/gymnasticbodies/fs-kneeling-achiles.png)
 ### Straight Leg Calf Stretch 90s xSide
-![](/assets/img/gymnasticbodies/fs-straight-leg-calf-stretch.png)
+![](https://raw.githubusercontent.com/arafatm/assets/main/img/gymnasticbodies/fs-straight-leg-calf-stretch.png)
 ### Narrow Hurdler 90s xSide (keep back flat)
-![](/assets/img/gymnasticbodies/fs-narrow-hurdler.png)
+![](https://raw.githubusercontent.com/arafatm/assets/main/img/gymnasticbodies/fs-narrow-hurdler.png)
 ### Wide Hurdler 90s xSide (keep back flat)
-![](/assets/img/gymnasticbodies/fs-wide-hurdler.png)
+![](https://raw.githubusercontent.com/arafatm/assets/main/img/gymnasticbodies/fs-wide-hurdler.png)
 ### Standing Single Leg Pike 90s xSide
-![](/assets/img/gymnasticbodies/fs-single-leg-pike.png)
+![](https://raw.githubusercontent.com/arafatm/assets/main/img/gymnasticbodies/fs-single-leg-pike.png)
 ### Vertical Shin 90s xSide
-![](/assets/img/gymnasticbodies/fs-vertical-shin.png)
+![](https://raw.githubusercontent.com/arafatm/assets/main/img/gymnasticbodies/fs-vertical-shin.png)
 ### Vertical Shin w/ Straight Leg 90s xSide
-![](/assets/img/gymnasticbodies/fs-vertical-shin-straight-leg.png)
+![](https://raw.githubusercontent.com/arafatm/assets/main/img/gymnasticbodies/fs-vertical-shin-straight-leg.png)
 ### Wall Standing Pike 2min
-![](/assets/img/gymnasticbodies/fs-wall-standing-pike.png)
+![](https://raw.githubusercontent.com/arafatm/assets/main/img/gymnasticbodies/fs-wall-standing-pike.png)

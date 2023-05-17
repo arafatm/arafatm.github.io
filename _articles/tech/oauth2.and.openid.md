@@ -19,4 +19,4 @@ OAuth 2.0 terminology
 - Back channel (highly secure channel) 
 - Front channel (less secure channel)
 
-![](/assets/img/tech/oath2.authorization.code.flow.png)
+![](https://raw.githubusercontent.com/arafatm/assets/main/img/tech/oath2.authorization.code.flow.png)

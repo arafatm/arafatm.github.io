@@ -39,7 +39,7 @@ to both groups and then enforce compliance on the part of development
 personnel.
 
 *Figure 1. Implementation steps to deliver a small computer program for
-internal operations.* ![](/assets/img/royce/1.png)
+internal operations.* ![](https://raw.githubusercontent.com/arafatm/assets/main/img/royce/1.png)
 
 A more grandiose approach to software development is illustrated in Figure 2.
 The analysis and coding steps are still in the picture, but they are preceded
@@ -63,7 +63,7 @@ position that tends to maximize the extent of early work that is salvageable
 and preserved.
 
 *Figure 2. Implementation steps to develop a large computer program for
-delivery to a customer.* ![](/assets/img/royce/2.png)
+delivery to a customer.* ![](https://raw.githubusercontent.com/arafatm/assets/main/img/royce/2.png)
 
 **I believe in this concept, but the implementation described above is risky
 and invites failure**. The problem is illustrated in Figure 4. 
@@ -98,10 +98,10 @@ discussion presents five additional features that must be added to this basic
 approach to eliminate most of the development risks.
 
 *Figure 3: Hopefully, the iterative interaction between the various phases is
-confined to successive steps.*  ![](/assets/img/royce/3.png)
+confined to successive steps.*  ![](https://raw.githubusercontent.com/arafatm/assets/main/img/royce/3.png)
 
 *Figure 4. Unfortunately, for the process illustrated, the design iterations
-are never confined to the successive steps.* ![](/assets/img/royce/4.png)
+are never confined to the successive steps.* ![](https://raw.githubusercontent.com/arafatm/assets/main/img/royce/4.png)
 
 ## STEP 1: PROGRAM DESIGN COMES FIRST
 
@@ -145,7 +145,7 @@ How is this procedure implemented? The following steps are required.
    which comes partially from having had to write an overview document.
 
 *Figure 5. Step 1 : Insure that a preliminary program design is complete before
-analysis begins.* ![](/assets/img/royce/5.png)
+analysis begins.* ![](https://raw.githubusercontent.com/arafatm/assets/main/img/royce/5.png)
 
 ## STEP 2: DOCUMENT THE DESIGN
 
@@ -211,7 +211,7 @@ tangible situations that every program manager faces.
 
 *Figure 6 shows a documentation plan which is keyed to the steps previously
 shown. Note that six documents are produced, and at the time of delivery of the
-final product* ![](/assets/img/royce/6.png)
+final product* ![](https://raw.githubusercontent.com/arafatm/assets/main/img/royce/6.png)
 
 ## STEP 3: DO IT TWICE
 
@@ -252,7 +252,7 @@ computer program design (as in the estimation of takeoff gross weight, costs to
 complete, or the daily double) is invariably and seriously optimistic.
 
 *Figure 7. Step 3: Attempt to do the job twice - the first result provices an
-early simulation of the final product.* ![](/assets/img/royce/7.png)
+early simulation of the final product.* ![](https://raw.githubusercontent.com/arafatm/assets/main/img/royce/7.png)
 
 ## STEP 4: PLAN, CONTROL AND MONITOR TESTING
 
@@ -271,7 +271,7 @@ still important things to be done.
 Figure 8 lists some additional aspects to testing. 
 
 *Figure 8. Step 4: Plane, control, and monitor computer program testing.*
-![](/assets/img/royce/8.png)
+![](https://raw.githubusercontent.com/arafatm/assets/main/img/royce/8.png)
 
 In planning for testing, I would suggest the following for consideration.
 1. Many parts of the *test process are best handled by test specialists who did
@@ -317,7 +317,7 @@ insight, judgment, and commitment of the customer can bolster the development
 effort.
 
 *Figure 9. Step 5: Involve the customer. The involvement should be formal, in
-depth, and continuing.* ![](/assets/img/royce/9.png)
+depth, and continuing.* ![](https://raw.githubusercontent.com/arafatm/assets/main/img/royce/9.png)
 
 ## SUMMARY
 
@@ -336,5 +336,5 @@ finance the five-step process listed.
 4. **Testing must be planned, controlled, and monitored**
 5. **Involve the customer**
 
-*Figure 10. Summary* ![](/assets/img/royce/10.png)
+*Figure 10. Summary* ![](https://raw.githubusercontent.com/arafatm/assets/main/img/royce/10.png)
 

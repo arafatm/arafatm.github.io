@@ -107,7 +107,7 @@ of risk versus reward.
 
 Nearly all the money flows to treatment rather than prevention -- and
 
-![Mortality rates over time](/assets/img/outlive/1.mortality.png)
+![Mortality rates over time](https://raw.githubusercontent.com/arafatm/assets/main/img/outlive/1.mortality.png)
 Source: Gordon (2016). This graph shows how little real mortality rates have
 improved since 1900, once you remove the top eight contagious/infectious
 diseases, which were largely controlled by the advent of antibiotics in the
@@ -397,7 +397,7 @@ almost instantly.
 Think of fat as acting like a kind of metabolic buffer zone, absorbing excess
 energy and storing it safely until it is needed.
 
-![How Excess Fat Increases Cardiometabolic Risk](/assets/img/outlive/4.fat.png)
+![How Excess Fat Increases Cardiometabolic Risk](https://raw.githubusercontent.com/arafatm/assets/main/img/outlive/4.fat.png)
 As more calories flood into your subcutaneous fat tissue, it eventually reaches
 capacity and the surplus begins spilling over into other areas of your body:
 into your blood, as excess triglycerides; into your liver, contributing to
@@ -1439,7 +1439,7 @@ Seniors with the least muscle mass (also known as lean mass) are at the
 greatest risk of dying from all causes.
 
 
-![Accidental Deaths in the United States](/assets/img/outlive/10.deaths.png)
+![Accidental Deaths in the United States](https://raw.githubusercontent.com/arafatm/assets/main/img/outlive/10.deaths.png)
 Falls are by far the leading cause of accidental deaths in those ages
 sixty-five and older—and this is without even counting the people who die three
 or six or twelve months after their nonfatal but still serious fall pushed them
@@ -1633,7 +1633,7 @@ training after about five or six months of steady zone 2 work.
 It’s striking how steeply VO2 max declines with age, and how this decline
 corresponds to diminished functional capacity.
 
-![How VO2 Max Declines with Age](/assets/img/outlive/11.vo2.png)
+![How VO2 Max Declines with Age](https://raw.githubusercontent.com/arafatm/assets/main/img/outlive/11.vo2.png)
 Source: Graph by Jayson Gifford, Brigham Young University, based on data from
 Ligouri (2020).
 
@@ -1753,7 +1753,7 @@ something with one hand -- predicts how long you are likely to live, while low
 grip strength in the elderly is considered to be a symptom of sarcopenia,
 
 
-![Mortality rates over time](/assets/img/outlive/8.grip.png)
+![Mortality rates over time](https://raw.githubusercontent.com/arafatm/assets/main/img/outlive/8.grip.png)
 The incidence of dementia declines with increasing handgrip strength. Note that
 data are presented as hazard ratios in comparison with the weakest group (e.g.,
 0.4 = 40 percent reduction in risk). Thus, someone with 40 kg grip strength has
@@ -1776,7 +1776,7 @@ as you can.
 One of the tests we have our patients perform is stepping onto and off an
 eighteen-inch block and taking three full seconds to reach the ground
 
-![Mortality Risk for Non-Elite Fitness and Select Comorbidities](/assets/img/outlive/9.mortality.risk.png)
+![Mortality Risk for Non-Elite Fitness and Select Comorbidities](https://raw.githubusercontent.com/arafatm/assets/main/img/outlive/9.mortality.risk.png)
 This table expresses all-cause mortality risk for different fitness levels
 compared to individuals in the top 2% of VO2 max for their age and sex
 (“extreme fitness”) [TOP] and for various comorbidities—that is, people with

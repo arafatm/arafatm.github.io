@@ -309,7 +309,7 @@ Articulos: `el/la`
 
 - [ ] TODO
 
-![actividad clase 2](/assets/img/spanish/activida.clase.2.png)
+![actividad clase 2](https://raw.githubusercontent.com/arafatm/assets/main/img/spanish/activida.clase.2.png)
 
 # Wk 3
 
@@ -481,7 +481,7 @@ los adjetivos (gender specific)
 
 ### actividad clase 3 level 1
 
-![actividad clase 3](/assets/img/spanish/activida.clase.3.png)
+![actividad clase 3](https://raw.githubusercontent.com/arafatm/assets/main/img/spanish/activida.clase.3.png)
 
 | la aldea es pequena                      |  |
 | los hermanos son estudiosos              |  |
@@ -567,7 +567,7 @@ Verbos regulars *-ar*: escribe
 
 ### Activida 4 AR juego
 
-![actividad clase 4](/assets/img/spanish/activida.clase.4.png)
+![actividad clase 4](https://raw.githubusercontent.com/arafatm/assets/main/img/spanish/activida.clase.4.png)
 
 ### Más Presente -AR
 
@@ -651,7 +651,7 @@ Counting
 
 ### Juego La Hora
 
-[assets/img/spanish/activida.clase.5.hora.png](/assets/img/spanish/activida.clase.5.hora.png)
+[assets/img/spanish/activida.clase.5.hora.png](https://raw.githubusercontent.com/arafatm/assets/main/img/spanish/activida.clase.5.hora.png)
 
 Hours
 

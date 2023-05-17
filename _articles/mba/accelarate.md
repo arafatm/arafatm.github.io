@@ -26,9 +26,9 @@ CAPABILITIES TO DRIVE IMPROVEMENT
 - Lean Management and Monitoring 
 - Cultural
 
-![Figure A.1: Overall Research Program](/assets/img/accelerate/accelerate.png)
+![Figure A.1: Overall Research Program](https://raw.githubusercontent.com/arafatm/assets/main/img/accelerate/accelerate.png)
 
-![High-Performance Team, Management, and Leadership Behaviors and Practices](/assets/img/accelerate/accelerate_practices.png)
+![High-Performance Team, Management, and Leadership Behaviors and Practices](https://raw.githubusercontent.com/arafatm/assets/main/img/accelerate/accelerate_practices.png)
 
 ### CONTINUOUS DELIVERY CAPABILITIES 
 - Version control: Chapter 4 

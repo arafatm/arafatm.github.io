@@ -111,7 +111,7 @@ Pivoting to The Good Things we are doing to build a strong product culture…
 ##  The Root Causes of Failed Product Efforts
 
 > FIGURE 6.1 Root Causes of Failed Product Efforts
-![failed product](/assets/img/inspired/6.1.root.causes.of.failed.product.png)
+![failed product](https://raw.githubusercontent.com/arafatm/assets/main/img/inspired/6.1.root.causes.of.failed.product.png)
 
 The first truth is that at least half of our ideas are just not going to work.
 
@@ -164,7 +164,7 @@ underlying problem.
 ### Continuous Discovery and Delivery
 
 > FIGURE 8.1 Continuous Discovery and Delivery
-![failed product](/assets/img/inspired/8.1.continuous.delivery.png)
+![failed product](https://raw.githubusercontent.com/arafatm/assets/main/img/inspired/8.1.continuous.delivery.png)
 
 We are always working in parallel to both discover the necessary product to be
 built—which is primarily what the product manager and designer work on every
