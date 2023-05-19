@@ -5,10 +5,11 @@ author: NPR
 title: 50 Favorite Sci-Fi And Fantasy Books Of The Past Decade
 ---
 
+<a href="/"><img align="left" width="33%" src="https://i.stack.imgur.com/RJj4x.png"></a>Testing text
+
+<a href="/"><img align="left" height="20em" src="https://i.stack.imgur.com/RJj4x.png"></a>Testing text
+
 ## - [ ] The Imperial Radch Trilogy
-
-<img align="left" width="33%" src="https://i.stack.imgur.com/RJj4x.png">
-
 
 Breq is a human now — but once she was a starship. Once she was an AI with a vast and ancient metal body and troops of ancillaries, barely animate bodies that all carried her consciousness. Poll judge Ann Leckie has created a massive yet intricate interstellar empire where twisty galactic intrigues and multiple clashing cultures form a brilliant backdrop for the story of a starship learning to be a human being. Your humble editor got a copy of _Ancillary Justice_ when it came out and promptly forced her entire family to read it.
 [![Ancillary Justice, by Ann Leckie](https://media.npr.org/assets/img/2021/08/12/91dqqtm4u5l_custom-5d35b7fd36fde5c0ba428c542eacddf8f1c86c10-s400-c85.jpg){:width="30%" :align="right"}](https://multcolib.overdrive.com/search?query=Ancillary+Justice,+Ann+Leckie)
