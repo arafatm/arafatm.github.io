@@ -765,4 +765,4 @@ made it to the semifinals, and had we not included them, the final product
 would have been the less for it. So you'll find all four on the list. And we
 hope you enjoy going through it as much as we enjoyed putting it together!
 
-<style> img { align: left; max-height: 20em } </style>
+<style> img { float: right; display: inline-block; max-height: 20em } </style>
