@@ -5,11 +5,9 @@ author: NPR
 title: 50 Favorite Sci-Fi And Fantasy Books Of The Past Decade
 ---
 
-## The Imperial Radch Trilogy
+## - [ ] The Imperial Radch Trilogy
 
 [![Ancillary Justice, by Ann Leckie](https://media.npr.org/assets/img/2021/08/12/91dqqtm4u5l_custom-5d35b7fd36fde5c0ba428c542eacddf8f1c86c10-s400-c85.jpg)](https://multcolib.overdrive.com/search?query=Ancillary+Justice,+Ann+Leckie)
-
-https://multcolib.overdrive.com/search?query=the+age+of+madness+trilogy
 
 Breq is a human now — but once she was a starship. Once she was an AI with a
 vast and ancient metal body and troops of ancillaries, barely animate bodies
@@ -19,7 +17,7 @@ clashing cultures form a brilliant backdrop for the story of a starship
 learning to be a human being. Your humble editor got a copy of _Ancillary
 Justice_ when it came out and promptly forced her entire family to read it.
 
-## The Dead Djinn Universe (series)
+## - [ ] The Dead Djinn Universe (series)
 
 [![A Master of Djinn, by P.  DjÃ©lÃ¬Clarke](https://media.npr.org/assets/img/2021/08/12/81ur7lx3dil_custom-becbfc0ab750d3c8a5eb58494096c73fa9ccc55b-s400-c85.jpg)](https://multcolib.overdrive.com/search?query=A+Master+of+Djinn,+P.++DjÃ©lÃ¬Clarke)
 
@@ -33,7 +31,7 @@ explore. But you should still read _Ring Shout_, a wild ride of a read where
 gun-toting demon-hunters go up against Ku Klux Klan members who are actual,
 pointy-headed white demons. Go on, go get a copy! We'll wait.
 
-## The Age of Madness Trilogy
+## - [ ] The Age of Madness Trilogy
 
 [![A Little Hatred, by Joe Abercrombie](https://media.npr.org/assets/img/2021/08/12/91suvuu3atl_custom-b7ea4a9dc696081aa509ba880b72cffd3bfecd63-s400-c85.jpg)](https://multcolib.overdrive.com/search?query=A+Little+Hatred,+Joe+Abercrombie)
 
@@ -47,7 +45,7 @@ angry. This series works as a standalone — but you should also read the
 excellent First Law series (even though it's old enough to fall outside the
 scope of this list).
 
-## The Green Bone Saga
+## - [ ] The Green Bone Saga
 
 [![Jade City, by Fonda Lee](https://media.npr.org/assets/img/2021/08/12/91rabfn4fnl_custom-d37791aff66cca62af2e5e50d408d235804e84e3-s400-c85.jpg)](https://multcolib.overdrive.com/search?query=Jade+City,+Fonda+Lee)
 
@@ -62,7 +60,7 @@ still have to fight my husband for the advance copies of Fonda's books, and
 we're both THIS CLOSE to learning actual martial arts to assist us in our
 dueling for dibs."
 
-## The Expanse (series)
+## - [ ] The Expanse (series)
 
 [![Leviathan Wakes, by James  S.A.Corey](https://media.npr.org/assets/img/2021/08/12/91npjuxxkzl_custom-8922d3192c5efb876545dd4de5de3dc882f396ac-s400-c85.jpg)](https://multcolib.overdrive.com/search?query=Leviathan+Wakes,+James++S.A.Corey)
 
@@ -78,7 +76,7 @@ say you should watch _and_ read. The only downside?
 Book-[Avasarala](http://www.wbur.org/hereandnow/2017/03/20/shohreh-aghdashloo-the-expanse)
 doesn't show up until a few volumes in.
 
-## The Daevabad Trilogy
+## - [ ] The Daevabad Trilogy
 
 [![The City of Brass, S.A.Chakraborty](https://media.npr.org/assets/img/2021/08/12/51c3-n2jbvl_custom-8fdc8ec749ecb599c4e269ebf4bd744b19bd7221-s400-c85.jpg)](https://multcolib.overdrive.com/search?query=The+City+of+Brass,+S.A.Chakraborty)
 
@@ -95,7 +93,7 @@ interviewer](https://www.syfy.com/syfywire/sa-chakrabortys-the-city-of-brass-sta
 "I wanted to write a story for us, about us, with the grandeur and magic of a
 summer blockbuster."
 
-## Teixcalaan (series)
+## - [ ] Teixcalaan (series)
 
 [![A Memory Called Empire, by Arkady Martine](https://media.npr.org/assets/img/2021/08/12/81v45yuwqul_custom-f9f36a0c9bb9720251039bae8186c5970b781c37-s400-c85.jpg)](https://multcolib.overdrive.com/search?query=A+Memory+Called+Empire,+Arkady+Martine)
 
@@ -111,8 +109,7 @@ sucker for elegant worldbuilding that portrays all the finer nuances of society
 and culture in addition to the grandness of empire and the complexity of
 politics," says judge Fonda Lee. "Arkady Martine delivers all that in droves."
 
-
-## The Thessaly Trilogy
+## - [ ] The Thessaly Trilogy
 
 [![The Just City, by Jo Walton](https://media.npr.org/assets/img/2021/08/12/71gm8ya-yal_custom-3c7015ebb107f119cf832bdac70fb4cd9b09cc91-s400-c85.jpg)](https://multcolib.overdrive.com/search?query=The+Just+City,+Jo+Walton)
 
@@ -125,7 +122,7 @@ El-Mohtar](https://www.npr.org/2015/01/15/376093453/the-consolations-and-controv
 "this will do what your Intro to Philosophy courses probably couldn't: make you
 want to read _The Republic_."
 
-## Shades of Magic Trilogy
+## - [ ] Shades of Magic Trilogy
 
 [![A Darker Shade of Magic, by V. E.Schwab](https://media.npr.org/assets/img/2021/08/12/9780765376466_custom-a698f320d75def7026afc33bac150e0dcb51c866-s400-c85.jpg)](https://multcolib.overdrive.com/search?query=A+Darker+Shade+of+Magic,+V.+E.Schwab)
 
@@ -139,8 +136,7 @@ him, a stone that could upset the balance among the Londons. Rich world
 building, complex characters and really scary bad guys make Schwab's London a
 city — or cities — well worth spending time in.
 
-
-## The Divine Cities Trilogy
+## - [ ] The Divine Cities Trilogy
 
 [![City of Stairs, by Robert  JacksonBennett](https://media.npr.org/assets/img/2021/08/12/91alzfrzzrl_custom-1286bec819c8cc5f3467a76a69f64bf7abfe0d85-s400-c85.jpg)](https://multcolib.overdrive.com/search?query=City+of+Stairs,+Robert++JacksonBennett)
 
@@ -159,7 +155,7 @@ Sheehan](https://www.npr.org/2017/05/07/526913232/an-old-soldier-is-back-in-acti
 terrible, and that they can see a far and final horizon in the distance,
 quickly approaching."
 
-## The Wormwood Trilogy
+## - [ ] The Wormwood Trilogy
 
 [![Rosewater, by Tade Thompson](https://media.npr.org/assets/img/2021/08/12/81cc29dafvs_custom-7da70d64dc5bf76ce736f350f5c2b073696b591f-s400-c85.jpg)](https://multcolib.overdrive.com/search?query=Rosewater,+Tade+Thompson)
 
@@ -173,7 +169,7 @@ down until I got home, because Tade Thompson's work is no light beach read,"
 says judge Fonda Lee. "His writing demands your full attention — and amply
 rewards it."
 
-## Black Sun (series)
+## - [ ] Black Sun (series)
 
 [![Black Sun, by Rebecca Roanhorse](https://media.npr.org/assets/img/2021/08/18/71xj2v8ayis_custom-37d3043c9269b58972a80e26fd4234d8adc8387c-s400-c85.jpg)](https://multcolib.overdrive.com/search?query=Black+Sun,+Rebecca+Roanhorse)
 
@@ -186,8 +182,7 @@ and some very scary crows. (They hold grudges, did you know?) This is only Book
 1 of a forthcoming series, but we felt it was so strong it deserved to be here,
 no matter where Roanhorse goes next.
 
-
-## Piranesi
+## - [ ] Piranesi
 
 [![Piranesi, by Susanna Clarke](https://media.npr.org/assets/img/2021/08/12/81h-7env6hl_custom-b677df78f2bd5ab153188081abe376dc9e06e849-s400-c85.jpg)](https://multcolib.overdrive.com/search?query=Piranesi,+Susanna+Clarke)
 
@@ -202,7 +197,7 @@ Valentine](https://www.npr.org/2020/09/20/914369450/susanna-clarke-divines-magic
 "a magic that is seemingly part of the fabric of the universe and as powerful
 as a cosmic engine — yet fragile nonetheless."
 
-## Circe
+## - [ ] Circe
 
 [![Circe, by Madeline Miller](https://media.npr.org/assets/img/2021/08/12/71fnp7f9p2l_custom-799b55c738f6edaa6e985185de3b9c712725d1c2-s400-c85.jpg)](https://multcolib.overdrive.com/search?query=Circe,+Madeline+Miller)
 
@@ -218,7 +213,7 @@ Annalisa Quinn
 noted](https://www.npr.org/2018/04/11/599831473/circe-gives-the-witch-of-the-odyssey-a-new-life),
 Miller "extracts worlds of meaning from Homer's short phrases."
 
-## Mexican Gothic
+## - [ ] Mexican Gothic
 
 [![Mexican Gothic, by Silvia Moreno-Garcia](https://media.npr.org/assets/img/2021/08/12/714g8xmjrpl_custom-10a405588b6a00298a5d0ed486b3a12d5a9ec413-s400-c85.jpg)](https://multcolib.overdrive.com/search?query=Mexican+Gothic,+Silvia+Moreno-Garcia)
 
@@ -231,7 +226,7 @@ Moreno-Garcia "makes you uneasy about invisible things by writing around them,"
 diminished." Not to be too spoilery — but after reading this stylishly chilling
 novel, you'll never look at mushrooms the same way again.
 
-## The Paper Menagerie And Other Stories
+## - [ ] The Paper Menagerie And Other Stories
 
 [![The Paper Menagerie, by Ken Liu](https://media.npr.org/assets/img/2021/08/12/61zx66uolil_custom-b0e43f6162b38bcc4a4eb5407ccace038b3dde21-s400-c85.jpg)](https://multcolib.overdrive.com/search?query=The+Paper+Menagerie,+Ken+Liu)
 
@@ -243,7 +238,7 @@ those albums where the artist or record label just threw a bunch of songs
 together and said 'here,' and some collections arrive as a complete, cohesive,
 emotionally catholic whole. _The Paper Menagerie_ is that."
 
-## Spinning Silver
+## - [ ] Spinning Silver
 
 [![Spinning Silver, by Naomi Novik](https://media.npr.org/assets/img/2021/08/12/a1q86cjvzxl_custom-c92b9242567d7c26d90e9653ace6a69c275ed720-s400-c85.jpg)](https://multcolib.overdrive.com/search?query=Spinning+Silver,+Naomi+Novik)
 
@@ -259,7 +254,7 @@ wrote at the
 time](https://www.npr.org/2018/07/17/628882889/silver-spins-gold-from-the-moldiest-of-old-straw).
 "It's gold and silver all the way down."
 
-## Exhalation: Stories
+## - [ ] Exhalation: Stories
 
 [![Exhalation: Stories, by Ted Chiang](https://media.npr.org/assets/img/2021/08/12/71aethrqrrl_custom-b09b2a69076017f36d351bd50f5e0325543d091a-s400-c85.jpg)](https://multcolib.overdrive.com/search?query=Exhalation:+Stories,+Ted+Chiang)
 
@@ -270,7 +265,7 @@ This poll can be a discovery tool for editors and judges as much as audience,
 so hearing that, your humble editor went straight to the library and downloaded
 a copy of this collection.
 
-## Olondria (series)
+## - [ ] Olondria (series)
 
 [![A Stranger in Olondria, by Sofia Samatar](https://media.npr.org/assets/img/2021/08/12/51twzhi-mjl_custom-1b0c838df02eb8c66e906a1608345b81687c574f-s400-c85.jpg)](https://multcolib.overdrive.com/search?query=A+Stranger+in+Olondria,+Sofia+Samatar)
 
@@ -281,7 +276,7 @@ watch the light around it change for a whole day because every passing moment
 reveals even more unbearable loveliness and transforms you in ways you can't
 articulate?" asks judge Amal El-Mohtar. "You will if you read these books."
 
-## Her Body And Other Parties: Stories
+## - [ ] Her Body And Other Parties: Stories
 
 [![Her Body and Other Parties, by Carmen  MariaMachado](https://media.npr.org/assets/img/2021/08/12/91zoragmdrl_custom-0f7ed2c7eba02a26cd7c0d1b481e38e035ed75b0-s400-c85.jpg)](https://multcolib.overdrive.com/search?query=Her+Body+and+Other+Parties,+Carmen++MariaMachado)
 
@@ -297,8 +292,7 @@ wrote](https://www.npr.org/2017/10/08/553978325/-her-body-and-other-parties-be-y
 "Machado seems to answer: The world makes madwomen, and the least you can do is
 make sure the attic is your own."
 
-
-## The Buried Giant
+## - [ ] The Buried Giant
 
 [![The Buried Giant, by Kazuo Ishiguro](https://media.npr.org/assets/img/2021/08/12/71g4apxvpdl_custom-ac2cf69c86a12827a2d26a9705c81db944d64d46-s400-c85.jpg)](https://multcolib.overdrive.com/search?query=The+Buried+Giant,+Kazuo+Ishiguro)
 
@@ -313,7 +307,7 @@ with _The Buried Giant_, she says, [Kazuo
 Ishiguro](https://www.npr.org/2015/02/28/389530345/the-persistence-and-impermanence-of-memory-in-the-buried-giant)
 gets it solidly right.
 
-## Radiance
+## - [ ] Radiance
 
 [![Radiance, by Catherynne  M.Valente](https://media.npr.org/assets/img/2021/08/17/71esha-4kml_custom-08bc6b74d6b0a118bd326a7eda6c40c055703cbc-s400-c85.jpg)](https://multcolib.overdrive.com/search?query=Radiance,+Catherynne++M.Valente)
 
@@ -330,7 +324,7 @@ hardly speak at all: either stop at 'it's magnificent' or roll on to talk about
 form, voice, ambition, originality, innovation for more thousands of words than
 are available to me here before even touching on the plot."
 
-## The Changeling
+## - [ ] The Changeling
 
 [![The Changeling, by Victor LaValle](https://media.npr.org/assets/img/2021/08/13/a1gcfunpo3l_custom-cb373654858d16ab5a2f6d703f2c2d650d2296e6-s400-c85.jpeg)](https://multcolib.overdrive.com/search?query=The+Changeling,+Victor+LaValle)
 
@@ -342,7 +336,7 @@ and haunted forests, strange characters and shifting rhythms. _The Changeling_
 is a modern urban fairy tale with one toe over the line into horror, and
 wherever it goes, it will draw you along with it.
 
-## Wayfarers (series)
+## - [ ] Wayfarers (series)
 
 [![Wayfarers (series), by Becky Chambers](https://media.npr.org/assets/img/2021/08/13/816wmls1bzl_custom-c0858a4a7f42231418216ec0ac4d5db7b20f85de-s400-c85.jpeg)](https://multcolib.overdrive.com/search?query=Wayfarers+(series),+Becky+Chambers)
 
@@ -355,7 +349,7 @@ fugitives, gravediggers and fluffy, multi-limbed aliens who love pudding — the
 only flaw in this series is you'll wish you could spend more time with all of
 them.
 
-## Binti (series)
+## - [ ] Binti (series)
 
 [![Binti (series), by Nnedi Okorafor](https://media.npr.org/assets/img/2021/08/13/81iichfn4ll_custom-600c01e9627684a131a9fbfea6e06cca63a65a55-s400-c85.jpeg)](https://multcolib.overdrive.com/search?query=Binti+(series),+Nnedi+Okorafor)
 
@@ -370,7 +364,7 @@ stumbles, as judge and critic Amal El-Mohtar wrote, "Perhaps the point is just
 having a Black girl with tentacles for hair possessing the power and freedom to
 float among Saturn's rings."
 
-## Lady Astronaut (series)
+## - [ ] Lady Astronaut (series)
 
 [![Lady Astronaut (series), by Mary  RobinetteKowal](https://media.npr.org/assets/img/2021/08/13/711gd93ifkl_custom-4da4cd0caaee24686552a01b6a9a5fe365b0e08d-s400-c85.jpeg)](https://multcolib.overdrive.com/search?query=Lady+Astronaut+(series),+Mary++RobinetteKowal)
 
@@ -388,8 +382,7 @@ readings, you get to experience her wonderful performance with bonus production
 values. It's especially cool given that the seed for the series was an
 audio-first short story."
 
-
-## Children of Time (duology)
+## - [ ] Children of Time (duology)
 
 [![Children of Time (duology), by Adrian Tchaikovsky](https://media.npr.org/assets/img/2021/08/13/51gljgvc1il_custom-8e0aac25a70fbb531e3ed4e7467bb4a94d678dd2-s400-c85.jpeg)](https://multcolib.overdrive.com/search?query=Children+of+Time+(duology),+Adrian+Tchaikovsky)
 
@@ -402,7 +395,7 @@ arisen there. Poll judge Ann Leckie says she can't stand spiders (BIG SAME),
 but even so, she was adamant that the Children of Time books deserve their spot
 here.
 
-## Wayward Children (series)
+## - [ ] Wayward Children (series)
 
 [![Wayward Children (series), by Seanan McGuire](https://media.npr.org/assets/img/2021/08/13/81uu6bj0uyl_custom-c35f18678dccbb59fc76124ce53d869852423645-s400-c85.jpeg)](https://multcolib.overdrive.com/search?query=Wayward+Children+(series),+Seanan+McGuire)
 
@@ -418,7 +411,7 @@ fairy tale, fantasy and emotional heft — not to mention body positivity and
 solid queer and trans representation. (As with a lot of the also-rans, though,
 you should _really_ read _Middlegame_ too.)
 
-## The Space Between Worlds
+## - [ ] The Space Between Worlds
 
 [![The Space Between Worlds, by Micaiah Johnson](https://media.npr.org/assets/img/2021/08/13/911oodlg8-l_custom-75066efa88a6b437e2054d876410e7e63bb70f62-s400-c85.jpeg)](https://multcolib.overdrive.com/search?query=The+Space+Between+Worlds,+Micaiah+Johnson)
 
@@ -434,8 +427,7 @@ the cognitive demands of reading anything for work or pleasure, this book
 flooded me with oxygen and lit me on fire," says judge Amal El-Mohtar. "I can't
 say for certain that it enabled me to read again, but in its wake, I could."
 
-
-## Black Leopard, Red Wolf
+## - [ ] Black Leopard, Red Wolf
 
 [![Black Leopard, Red Wolf, by Marlon James](https://media.npr.org/assets/img/2021/08/13/91f1-i-0r5l_custom-0a9259ce3bfc619fcce6d97be0e03d943f3f5876-s400-c85.jpeg)](https://multcolib.overdrive.com/search?query=Black+Leopard,+Red+Wolf,+Marlon+James)
 
@@ -450,7 +442,7 @@ that, it's fairly indescribable, full of roof-crawling demons, dust-cloud
 assassins, blood and (fair warning) sexual violence. A gnarly book, a difficult
 book, sometimes actively hostile to the reader — yet necessary, and stunning.
 
-## Southern Reach (series)
+## - [ ] Southern Reach (series)
 
 [![Southern Reach (series), JeffVanderMeer](https://media.npr.org/assets/img/2021/08/13/9780374104115_custom-cfd8ec457d4f517274aee710708f7b825e054db5-s400-c85.jpeg)](https://multcolib.overdrive.com/search?query=Southern+Reach+(series),+JeffVanderMeer)
 
@@ -465,8 +457,7 @@ Sheehan
 wrote](https://www.npr.org/2014/09/02/343177566/accepting-the-strange-brilliance-of-acceptance),
 "the _Southern Reach_ trilogy is what they would've come up with."
 
-
-## The Echo Wife
+## - [ ] The Echo Wife
 
 [![The Echo Wife, by Sarah Gailey](https://media.npr.org/assets/img/2021/08/18/echowife_custom-c5374aa7c3e56fb568949c96c6e08f8c8b6e4af5-s400-c85.jpg)](https://multcolib.overdrive.com/search?query=The+Echo+Wife,+Sarah+Gailey)
 
@@ -479,7 +470,7 @@ Philippe watch," says poll judge Tochi Onyebuchi. "Seamlessly blends domestic
 thriller and science fiction," adds fellow judge Fonda Lee. "This book is going
 to haunt my thoughts for a long time."
 
-## The Locked Tomb (series)
+## - [ ] The Locked Tomb (series)
 
 [![The Locked Tomb (series), by Tamsyn Muir](https://media.npr.org/assets/img/2021/08/13/61d4tgmd4fl_custom-b9069833e4aa3b973be7291e6ba47078b5b86bb8-s400-c85.jpeg)](https://multcolib.overdrive.com/search?query=The+Locked+Tomb+(series),+Tamsyn+Muir)
 
@@ -496,7 +487,7 @@ romance," [says critic Jason
 Sheehan.](https://www.npr.org/2019/09/09/755170550/smart-snarky-gideon-the-ninth-swears-her-way-through-the-stars)
 "It is altogether its own thing."
 
-## Remembrance of Earth's Past (series)
+## - [ ] Remembrance of Earth's Past (series)
 
 [![Remembrance of Earth's Past (series), LiuCixin](https://media.npr.org/assets/img/2021/08/13/919xm42jqll_custom-7d585ed022461d39250af46cbce657ae586a154e-s400-c85.jpeg)](https://multcolib.overdrive.com/search?query=Remembrance+of+Earth's+Past+(series),+LiuCixin)
 
@@ -511,7 +502,7 @@ problem was, you will now), grafted onto the backbone of a high-stakes
 political thriller. Poll judge Tochi Onyebuchi says, "These books divided me by
 zero. And, yes, that is a compliment."
 
-## Machineries of Empire (series)
+## - [ ] Machineries of Empire (series)
 
 [![Machineries of Empire (series), by Yoon  HaLee](https://media.npr.org/assets/img/2021/08/13/81ay-cmrzel_custom-74a6d860bf4471f78aedff1ae0684dac8f8be0af-s400-c85.jpeg)](https://multcolib.overdrive.com/search?query=Machineries+of+Empire+(series),+Yoon++HaLee)
 
@@ -526,7 +517,7 @@ Jason Sheehan
 wrote](https://www.npr.org/2016/06/25/482023715/beautifully-alien-ninefox-gambit-mixes-math-and-magic).
 "That it's what you see in the numbers that matters most."
 
-## The Broken Earth (series)
+## - [ ] The Broken Earth (series)
 
 [![The Broken Earth (series), by N. K.Jemisin](https://media.npr.org/assets/img/2021/08/16/81w7-aqdfgl_custom-a78b243e271413ffdb132a97e1ceddc650f3d2bb-s400-c85.jpeg)](https://multcolib.overdrive.com/search?query=The+Broken+Earth+(series),+N.+K.Jemisin)
 
@@ -542,8 +533,7 @@ book in a series. These books upheaved the terrain of epic fantasy as surely
 and completely as Fifth Seasons transform the geography of the Stillness," says
 poll judge Amal El-Mohtar.
 
-
-## Station Eleven
+## - [ ] Station Eleven
 
 [![Station Eleven, by Emily  St. JohnMandel](https://media.npr.org/assets/img/2021/08/16/71b700ochdl_custom-6bd974e8c6d220b77fe0187fee5aad4cd11523df-s400-c85.jpeg)](https://multcolib.overdrive.com/search?query=Station+Eleven,+Emily++St.+JohnMandel)
 
@@ -558,8 +548,7 @@ _Star
 Trek_](https://www.npr.org/2015/06/20/415782006/survival-is-insufficient-station-eleven-preserves-art-after-the-apocalypse)),
 and that's a solid motto any time.
 
-
-## This Is How You Lose the Time War
+## - [ ] This Is How You Lose the Time War
 
 [![This Is How You Lose the Time War, Max Gladstone & AmalEl-Mohtar](https://media.npr.org/assets/img/2021/08/16/71d4a-qfanl_custom-f862d36374680eb5a779fb6f286c3320a7f9f86b-s400-c85.jpeg)](https://multcolib.overdrive.com/search?query=This+Is+How+You+Lose+the+Time+War,+Max+Gladstone+&+AmalEl-Mohtar)
 
@@ -579,8 +568,7 @@ make a second appearance for his outstanding solo work with the [Craft
 Sequence](https://www.npr.org/2015/06/27/416517818/the-craft-sequence-please-do-judge-these-books-by-their-covers).
 But you should absolutely read those, too.)
 
-
-## The Poppy War Trilogy
+## - [ ] The Poppy War Trilogy
 
 [![The Poppy War Trilogy, by R. F.Kuang](https://media.npr.org/assets/img/2021/08/16/81laymbisll_custom-6686a26e308c6eda3094f407041d7e0bd6f2bc29-s400-c85.jpeg)](https://multcolib.overdrive.com/search?query=The+Poppy+War+Trilogy,+R.+F.Kuang)
 
@@ -595,7 +583,7 @@ drag you along with it, all the way to the end. "If this were football, Kuang
 might be under investigation for PEDs," jokes judge Tochi Onyebuchi, referring
 to performance-enhancing drugs. "But, no, she's really just that good."
 
-## The Masquerade (series)
+## - [ ] The Masquerade (series)
 
 [![The Masquerade (series), by Seth Dickinson](https://media.npr.org/assets/img/2021/08/16/71xxe7rptll_custom-298daea8b634838edea251e9fed8dd613e498318-s400-c85.jpeg)](https://multcolib.overdrive.com/search?query=The+Masquerade+(series),+Seth+Dickinson)
 
@@ -609,8 +597,7 @@ devastatingly strong," says judge Amal El-Mohtar — [who said of that first
 volume,](https://www.npr.org/2015/09/27/437287631/baru-cormorant-will-catch-you-unawares)
 "This book is a tar pit, and I mean that as a compliment."
 
-
-## An Unkindness of Ghosts
+## - [ ] An Unkindness of Ghosts
 
 [![An Unkindness of Ghosts, by Rivers Solomon](https://media.npr.org/assets/img/2021/08/16/91ywh-2etdl_custom-a1f6f3375faec19803f2fc7115c82218c6e0a87c-s400-c85.jpeg)](http://www.akashicbooks.com/catalog/an-unkindness-of-ghosts/) 
 
@@ -624,8 +611,7 @@ the mystery of _Matilda_'s failing power source. Poll judge Amal El-Mohtar
 writing "What Solomon achieves with this debut — the sharpness, the depth, the
 precision — puts me in mind of a syringe full of stars."
 
-
-## The Bird King
+## - [ ] The Bird King
 
 [![The Bird King, by G.  WillowWilson](https://media.npr.org/assets/img/2021/08/16/81rsvlc4-kl_custom-7674336833ee441bbe38faedb7d80bd495717091-s400-c85.jpeg)](https://multcolib.overdrive.com/search?query=The+Bird+King,+G.++WillowWilson)
 
@@ -637,7 +623,7 @@ here we are," says judge Amal El-Mohtar. "This book is luminous. It is full of
 light, in searing mirror-flashes and warm candleflame flickers and dappled
 twists of heart-breaking insight into empire, war and religion."
 
-## American War
+## - [ ] American War
 
 [![American War, by Omar  ElAkkad](https://media.npr.org/assets/img/2021/08/16/81ewwp7dpul_custom-b8ae65251b59aa4c8fc2216c3e86b9c478fc9ecb-s400-c85.jpeg)](https://multcolib.overdrive.com/search?query=American+War,+Omar++ElAkkad)
 
@@ -650,7 +636,7 @@ War](https://www.npr.org/2017/04/02/522194002/american-war-explores-the-universa
 I truly felt that I'd glimpsed our future," Onyebuchi says. "Charred and
 scarred and shot through with shards of hope."
 
-## Riot Baby
+## - [ ] Riot Baby
 
 [![Riot Baby, by Tochi Onyebuchi](https://media.npr.org/assets/img/2021/08/16/81myf-tr-7l_custom-646e57b7f77290aa4bec988d5be7cbe18b101f35-s400-c85.jpeg)](https://multcolib.overdrive.com/search?query=Riot+Baby,+Tochi+Onyebuchi)
 
@@ -666,7 +652,7 @@ a punch with all the weight of history behind it; fellow judge Amal El-Mohtar
 says, "I've said it in reviews and I'll say it again here: This book reads like
 hot diamonds, as searing as it is precise."
 
-## On Fragile Waves
+## - [ ] On Fragile Waves
 
 [![On Fragile Waves, by E.  LilyYu](https://media.npr.org/assets/img/2021/08/16/91-mggwpnol_custom-eb7894d72f2ae8214a9df43f21bb69b6ccc9a022-s400-c85.jpeg)](https://multcolib.overdrive.com/search?query=On+Fragile+Waves,+E.++LilyYu)
 
@@ -679,7 +665,7 @@ now, but I have no chill about this one: It is so important, it is so
 beautiful, and I feel like maybe if everyone read it the world would be a
 slightly less terrible place."
 
-## The Goblin Emperor
+## - [ ] The Goblin Emperor
 
 [![The Goblin Emperor, by Katherine Addison](https://media.npr.org/assets/img/2021/08/13/91zn5qwi9ll_custom-76050634da0a79fe027a4d0e8f355af69fd1ceff-s400-c85.jpg)](https://multcolib.overdrive.com/search?query=The+Goblin+Emperor,+Katherine+Addison)
 
@@ -694,7 +680,7 @@ sequel, _The Witness for the Dead_ — so if you love the world Katherine Addiso
 has created, you've got a way back to it. "I just love this book utterly," says
 judge Amal El-Mohtar. "So warm, so kind, so generous."
 
-## Murderbot (series)
+## - [ ] Murderbot (series)
 
 [![All Systems Red, by Martha Wells](https://media.npr.org/assets/img/2021/08/13/61jtnttnlql_custom-4ecf61231801da3763b6f7c52cafe6d42946f5b5-s400-c85.jpg)](https://multcolib.overdrive.com/search?query=All+Systems+Red,+Martha+Wells)
 
@@ -708,10 +694,9 @@ Also, your humble poll editor deeply wishes that someone would write a fic in
 which Murderbot meets _Ancillary Justice_'s Breq and they swap tips about how
 to be human over tea (which Murderbot can't really drink).
 
-## The Interdependency (series)
+## - [ ] The Interdependency (series)
 
 [![The Collapsing Empire, by John Scalzi](https://media.npr.org/assets/img/2021/08/13/91dm63m69il_custom-2a142b8c19e22185a7a7f3bf54005d884fd34ad8-s400-c85.jpeg)](https://multcolib.overdrive.com/search?query=The+Collapsing+Empire,+John+Scalzi)
-
 
 John Scalzi didn't mean to be _quite_ so prescient when he started this trilogy
 about a galactic empire facing destruction as its interstellar routes collapse
@@ -722,8 +707,7 @@ Simon](https://www.npr.org/2020/04/11/832191830/set-1-500-years-from-now-the-las
 funny, heartfelt and ultimately hopeful, and packed with fantastic characters.
 To the reader who said they voted "because of Kiva Lagos," we say, us too.
 
-
-## The Martian
+## - [ ] The Martian
 
 [![The Martian, by Andy Weir.](https://media.npr.org/assets/img/2021/08/13/81wfmy9oafl_custom-802c8efaf5a131f94aa20663143c0a768f903b81-s400-c85.jpeg)](https://multcolib.overdrive.com/search?query=The+Martian,+Andy+Weir.)
 
@@ -736,7 +720,7 @@ there's so much more to dig into [in the
 book](https://www.npr.org/2016/02/27/468402296/-the-martian-started-as-a-self-published-book)
 (including, well, that very first line).
 
-## Sorcerer to the Crown/The True Queen
+## - [ ] Sorcerer to the Crown/The True Queen
 
 [![Sorcerer to the Crown/The True Queen, by Zen Cho](https://media.npr.org/assets/img/2021/08/13/91vhwgmkdkl_custom-f2bba58b47fc2eaca0a1bb976e32573afc329a51-s400-c85.jpeg)](https://multcolib.overdrive.com/search?query=Sorcerer+to+the+Crown+The+True+Queen,+Zen+Cho)
 
@@ -751,8 +735,7 @@ builds out from there, looking at the characters and events of the first book
 with a different, more serious perspective. But both volumes are charming,
 thoughtful and thoroughly enjoyable.
 
-
-## How We Built This
+## - [ ] How We Built This
 
 Wow, you're some dedicated readers! Thanks for coming all the way down here to
 find out more. As I said above, we decided to limit ourselves to 50 books this
@@ -764,7 +747,7 @@ pare them down to about 250 semifinalists, and then during a truly epic
 conference call, our panel of expert judges goes through those titles, cuts
 some, adds some and hammers out a final curated list.
 
-###### What Didn't Make It — And Why
+## - [ ]#### What Didn't Make It — And Why
 
 As always, there were works readers loved and voted for that didn't make our
 final list of 50 — it's not a favorites list if you can't argue about it,
@@ -796,7 +779,7 @@ excellent [Craft
 Sequence](https://www.npr.org/2015/06/27/416517818/the-craft-sequence-please-do-judge-these-books-by-their-covers).
 Which — as we said above — you should ABSOLUTELY read.
 
-###### One Final Note
+## - [ ]#### One Final Note
 
 Usually, readers will vote at least some works by members of our judging panel
 onto the list, and usually, we let the judges themselves decide whether or not
