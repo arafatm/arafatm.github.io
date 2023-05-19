@@ -223,4 +223,4 @@ And this year, because we had only 50 titles to play with, we did not apply the 
 
 Usually, readers will vote at least some works by members of our judging panel onto the list, and usually, we let the judges themselves decide whether or not to include them. But this year, I put my editorial foot down — all four judges made it to the semifinals, and had we not included them, the final product would have been the less for it. So you'll find all four on the list. And we hope you enjoy going through it as much as we enjoyed putting it together!
 
-<style> h2 {clear: both } p { clear: both } img { float: left; max-height: 20em } </style>
+<style> h2 {clear: both } p { clear: both } img { float: left; max-height: 20em; margin: 1em 1em 1em 0em; } </style>
