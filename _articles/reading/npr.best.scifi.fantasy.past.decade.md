@@ -39,6 +39,7 @@ dueling for dibs."
 
 [![Leviathan Wakes, by James  S.A.Corey](https://media.npr.org/assets/img/2021/08/12/91npjuxxkzl_custom-8922d3192c5efb876545dd4de5de3dc882f396ac-s400-c85.jpg){:max-width="30%" :align="right"}](https://multcolib.overdrive.com/search?query=Leviathan+Wakes,+James++S.A.Corey)
 
+<img align="left" width="33%" src="https://i.stack.imgur.com/RJj4x.png">
 Yes, sure, you've seen [the TV show](https://www.npr.org/sections/13.7/2017/03/28/521748974/the-expanse-how-great-science-fiction-preps-us-for-the-future) (you HAVE, right? Right?) about the ragtag crew of spacers caught up in a three-way power struggle between Earth, Mars and the society that's developed on far-off asteroid belts. But there's much, much more to explore in the books — other planets, other characters, storylines and concepts that didn't make it to the screen. Often, when a book gets adapted for film or TV, there's a clear argument about which version is better. With _The Expanse_, we can confidently say you should watch _and_ read. The only downside?  Book-[Avasarala](http://www.wbur.org/hereandnow/2017/03/20/shohreh-aghdashloo-the-expanse) doesn't show up until a few volumes in.
 
 ## - [ ] The Daevabad Trilogy
