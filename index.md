@@ -3,9 +3,11 @@ layout: home
 title: arafatm
 ---
 
+<!-- {% include_relative bookmarks.md %} -->
+[Bookmarks](/bookmarks/)
+
 # Todo
 
-- [ ] :a: https://www.bogleheads.org/wiki/Three-fund_portfolio
 - [ ] https://go.dev/blog/intro-generics
 - [ ] https://www.freecodecamp.org/news/how-to-create-microservices-with-fastapi/
 - [ ] https://www.coursera.org/learn/negotiation-skills
@@ -18,12 +20,7 @@ title: arafatm
 - [ ] https://arxiv.org/pdf/1904.09954.pdf
 - [ ] [Codecast: Getting Started with Rails 7 01: Install, Create Project, and Start Server - YouTube](https://www.youtube.com/watch?v=BPupLHjpKec&list=PL9kkbu1kLUePk2NNqMT14iL3Dis2mbMdK&index=9)
 - [ ] [(12) Hotwire modals, with zero JavaScript - YouTube](https://www.youtube.com/watch?v=WK16FeBfbxI)
-- [ ] [Legends & Lattes](https://www.amazon.com/Legends-Lattes-Novel-Fantasy-Stakes-ebook/dp/B09R9FSZB5)
 
-<!-- {% include_relative bookmarks.md %} -->
-
-# Links
-- [Portland Things to Do - Reddit Edition (2023 update) - Google Sheets](https://docs.google.com/spreadsheets/d/19HaN6KTVgQht60_qbsFLqsRihh600uK2pxxwwc9Jv6U/edit#gid=0)
 
 <style>
 table {
