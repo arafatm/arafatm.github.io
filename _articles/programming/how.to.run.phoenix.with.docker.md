@@ -5,6 +5,8 @@ source: https://pspdfkit.com/blog/2018/how-to-run-your-phoenix-application-with-
 title: How to Run Your Phoenix Application with Docker 
 ---
 
+2023.05.29
+
 At PSPDFKit, we invested in Elixir very early. [PSPDFKit
 Server](https://pspdfkit.com/guides/web/pspdfkit-server/get-started/) is
 written completely in Elixir, and it delivers magical real-time collaboration
@@ -26,13 +28,14 @@ container.
 ## Useful Commands
 
 Here’s a small list of useful commands when dealing with Docker:
--   `docker ps` lists all containers that are currently running
--   `docker container ls --all` lists all containers that are available
--   `docker logs <container>` shows the log of the given container
+-   `docker container ls --all`     lists all containers that are available
+-   `docker images`                 lists all available images
+-   `docker logs <container>`       shows the log of the given container
+-   `docker ps`                     lists all containers that are currently running
+-   `docker rm <container>`         removes a container
+-   `docker rmi <image>`            removes an image
 -   `docker start/stop <container>` starts or stops a container
--   `docker rm <container>` removes a container
--   `docker images` lists all available images
--   `docker rmi <image>` removes an image
+-   `docker-compose build`          Builds docker images from Dockerfile
 -   `docker-compose down --volumes` destroys the created volumes
 
 ## What Is Docker?
