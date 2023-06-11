@@ -6,73 +6,94 @@ author: Peter Attia MD
 title: Outlive - The Science and Art of Longevity
 ---
 
+## 
+[YT: OUTLIVE by Peter Attia, MD | Core Message - YouTube](https://www.youtube.com/watch?v=Qd75zEnkVp0)
+- Exercise
+  - Zone 2 trianing 4x45 mins / week
+  - Vo2 max trianing once a week: 4x 4min work, 4 min rest 
+  - Strength training 3x per week
+- Diet
+  - 1g protein per pound body weight
+  - 4 meals per day w/ 25% protein per meal
+  - Cut out refined carbs
+
+## Summary
+
 > Exercise is by far the most potent longevity "drug." No other intervention
 > does nearly as much to prolong our lifespan and preserve our cognitive and
 > physical function.
-> 
+
 > If you increase your muscle strength and improve your cardiorespiratory
 > fitness, you have also reduced your risk of dying from all causes by a far
 > greater magnitude than you could achieve by taking any cocktail of
 > medications.
-> 
+
 > The data are unambiguous: exercise not only delays actual death but also
 > prevents both cognitive and physical decline, better than any other
 > intervention.
-> 
+
 > The best science out there says that what you eat matters, but the
 > first-order term is how much you eat:
 > Next is sleep, which I and many others had ignored for far too long.
-> 
-> When I look at a patient’s blood panel for the first time, my eyes immediately dart to two numbers: apoB and Lp(a). 
-> 
+
+> When I look at a patient’s blood panel for the first time, my eyes
+> immediately dart to two numbers: apoB and Lp(a). 
+
 > Exercise is the only intervention shown to delay the progression of
 > Parkinson’s.
-> 
-> "Being unfit carried a greater risk than any of the cardiac risk factors examined," the authors concluded.
-> 
-> Strength may even trump cardiorespiratory fitness, at least one study suggests.
-> 
-> About three hours per week of zone 2, or four 45-minute sessions, is the minimum required for most people
+
+> "Being unfit carried a greater risk than any of the cardiac risk factors
+> examined," the authors concluded.
+
+> Strength may even trump cardiorespiratory fitness, at least one study
+> suggests.
+
+> About three hours per week of zone 2, or four 45-minute sessions, is the
+> minimum required for most people
 > - The tried-and-true formula for these intervals is to go four minutes at the
 >   maximum pace you can sustain for this amount of time. 
 > - Then ride or jog four minutes easy, which should be enough time for your
 >   heart rate to come back down to below about one hundred beats per minute. 
 > - Repeat this four to six times and cool down.
 > - A single workout per week in this zone will generally suffice.
-> 
-> A far more important measure of strength, I’ve concluded, is how much heavy stuff you can carry.
+
+> A far more important measure of strength, I’ve concluded, is how much heavy
+> stuff you can carry.
 > - (A good goal is to be able to carry one-quarter to one-third of your body
 >   weight once you develop enough strength and stamina.
-> - Here we like to see men hang for at least two minutes and women for at least
->   ninety seconds at the age of forty.
-> 
-> Conclusion: Stop overthinking nutrition so much. Put the book down. Go outside and exercise.
-> 
-> All of this is highly individual; everyone responds and adapts to trauma in a unique way
-> 
+> - Here we like to see men hang for at least two minutes and women for at
+>   least ninety seconds at the age of forty.
+
+> Conclusion: Stop overthinking nutrition so much. Put the book down. Go
+> outside and exercise.
+
+> All of this is highly individual; everyone responds and adapts to trauma in a
+> unique way
+
 > Read Terrence Real’s book I Don’t Want to Talk About It, a groundbreaking
 > treatise on the roots of male depression.
-> 
+
 > David Brooks’s book The Road to Character.
-> 
+
 > Practicing DBT means literally working through a workbook with a DBT
 > therapist, doing exercises every day.
-> 
+
 > Another way in which mindfulness helps is by reminding us that when we are
 > suffering, it is rarely because of some direct cause,
-> 
+
 > One obvious way this applies is in how we think about ourselves. What does
 > our inner dialogue sound like? Is it kind and forgiving and wise, or is it
 > harsh and judgmental,
-> 
+
 > Exposing oneself to the fractal geometric patterns in nature can reduce
 > physiological stress, and that these effects show up on an EEG.
-> 
+
 > I complement my therapy sessions by writing in my journal, a place where I
 > can practice articulating my emotions and understanding them, holding nothing
 > back.
-> 
-> I feel strongly that there is no substitute for this kind of work with a trained therapist.
+
+> I feel strongly that there is no substitute for this kind of work with a
+> trained therapist.
 
 ## PART I
 
