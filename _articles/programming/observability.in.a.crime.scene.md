@@ -1,4 +1,5 @@
 ---
+categories: SRE
 tags: SRE Observability
 author: Andy Smith
 title: Observability In a Crime Scene | 8th Light
