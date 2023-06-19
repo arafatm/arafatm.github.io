@@ -6,6 +6,7 @@ title: Quotes
 
 @SahilBloom `The Persuasion Paradox Have you noticed that argumentative people rarely persuade anyone of anything? Persuasive people don’t argue—they observe, listen, and ask questions. Argue less, persuade more. Persuasion is an art that requires a paintbrush, not a sledgehammer.`
 @ndwignall `🔥🧠 Tip: Never worry in your head. If you must worry, do it on paper, literally transcribe your worries. Constrain your worry to the speed of writing and you’ll rob it of 90% of its power.`
+Abraham Lincoln. `We can complain because rose bushes have thorns, or rejoice because thorns have roses.`
 Adam Savage `Beyond that, there is no magic formula for getting started, I promise. It merely requires that you participate in your world, that you pay attention to what interests you, that you follow the thrills they produce, and that you’re never afraid to go deep on them, to obsess over them, to dig through the bottom of the rabbit hole if necessary, and to find that great idea which has been waiting there for you all along.`
 Alan Watts `To cherish the ego is to cherish misery.`
 Anne Lamott `Almost everything will work again if you unplug it for a few minutes, including you.`
@@ -103,11 +104,14 @@ Ego Is The Enemy `You can't build a reputation on what you're going to do - Henr
 Ego Is The Enemy `You will be unappreciated. You will be sabotaged. You will experience surprising failures. Your expectations will not be met. You will lose. You will fail.`
 Ego Is The Enemy `You're becoming who you are going to be and so you might as well not be an.`
 Ego Is The Enemy `no adornment so becomes you as modesty, justice, and self-control; for these are the virtues by which, as all men are agreed, the character of the young is held in restraint - Isocrates.`
+Eleanor Roosevelt, from her book, “You Learn by Living.” `The future belongs to those who believe in the beauty of their dreams.`
 Emmanuel Kant `Act that you use humanity, whether in your own person or in the person of any other, always at the same time as an end, never merely as a means.`
 Fearless Feedback `It is your responsibility as the feedback receiver, whether you accept or reject it, to at least consider the feedback and be thoughtful about it.`
 Fort Minor `This is ten percent luck, twenty percent skill, fifteen percent concentrated power of will, five percent pleasure, fifty percent pain, And a hundred percent reason to remember the name`
 Francis Crick `It is amateurs who have one big bright beautiful idea that they can never abandon. Professionals know that they have to produce theory after theory before they are likely to hit the jackpot.`
 Frank Herbert, `What do you despise? By this are you truly known.`
+Franklin D. Roosevelt, from his first inaugural speech. `The only thing we have to fear is fear itself.`
+Franklin D. Roosevelt, in one of his radio addresses to the nation. `The only limit to our realization of tomorrow will be our doubts of today.`
 From The Art of Possibility `I will have to remember ‘I am here today to cross the swamp, not to fight all the alligators’.`
 Hell Divers - Nicholas Sansbury Smith `Accept your past without regrets. Handle your present with confidence. Face your future without fear.`
 How Luck Happens `Luck is what happens when preparation meets opportunity.`
@@ -115,6 +119,7 @@ How Luck Happens `Many of life’s failures are people who did not realise how c
 How Luck Happens `So trade out your map for a compass.`
 Immanuel Kant `Act that you use humanity, whether in your own person or in the person of any other, always at the same time as an end, never merely as a means.`
 Indian philosopher J Krishnamurti, Nonviolent Communication `Observing without evaluation is the highest form of intelligence.`
+J.K. Rowling, from her book “Harry Potter and the Philosopher’s Stone.” `It does not do to dwell on dreams and forget to live.`
 James Clear `A strategy for thinking clearly: Rather than trying to be right, assume you are wrong and try to be less wrong.`
 James Clear `How long will you put off what you are capable of doing, just to continue what you are comfortable doing?.`
 James Clear `You know yourself mostly by your thoughts. Everyone else in the world knows you only by your actions. Remember this when you feel misunderstood. You have to do or say something for others to know how you feel.`
@@ -137,6 +142,7 @@ Jim dethmer `Almost all life is lived from the triangle of victim villain hero.`
 Jim dethmer `The ability to to become self reflective, to pause, quiet the mind a bit, and turn attention back on itself.`
 Joe Rogan `Do you want to be the guy on the bumper sticker, he who dies with the most toys wins.`
 Joe Rogan `It’s hard to escape the momentum of your past. We define ourselves by our mistakes.`
+John C. Maxwell, from his book “[The 5 Levels of Leadership.”](https://www.blinkist.com/en/books/5-levels-of-leadership-en) `The best leaders are those most interested in surrounding themselves with assistants and associates smarter than they are.`
 Jose Raul Capablanca `To begin you must study the end.`
 Julie Rice `There is no elevator to success. You have to take the stairs.`
 Julie Rice `There is no elevator to success. You have to take the stairs.`
@@ -145,6 +151,9 @@ Kevin Systrom `Do the thing. Don't just write articles about starting.`
 Kevin Systrom `Never expect you'll get a No. Always put your name in.`
 Kurt Vonnegut `You are what you pretend to be.`
 Malcolm X `Sincerity is my only credential.`
+Mark Caine, from his book “[The Blueprint.”](https://www.blinkist.com/en/books/blueprint-en) `The first step toward success is taken when you refuse to be a captive of the environment in which you first find yourself.`
+Mark Twain, from his book “The Innocents Abroad.” `The secret of getting ahead is getting started.`
+Matt Haig, from his book “[Reasons to Stay Alive.”](https://www.blinkist.com/en/books/reasons-to-stay-alive-en) `The only person you should try to be better than is the person you were yesterday. `
 Michael Jordan `Always turn a negative situation into a positive situation.`
 Michael Jordan `Be true to the game, because the game will be true to you. If you try to shortcut the game, then the game will shortcut you. If you put forth the effort, good things will be bestowed upon you. That’s truly about the game, and in some ways that’s about life too.`
 Michael Jordan `Being Michael Jordan means acting the same as I always have.`
@@ -218,6 +227,7 @@ Michael Jordan `You have to expect things of yourself before you can do them.`
 Michael Jordan `You have to expect things of yourself before you can do them.`
 Michael Jordan `You must expect great things of yourself before you can do them.`
 Mohammad Ali, when asked how many situps he does `I don't start counting until it starts to hurt.`
+Nelson Mandela, from his autobiography “[Long Walk to Freedom](https://www.blinkist.com/en/books/long-walk-to-freedom-en).” `The greatest glory in living lies not in never falling, but in rising every time we fall.`
 Nicholas Boothman, How To Make People Like You In 90 Seconds Or Less `A visual person will tend to look up to the left or right as if he’s seeing the answer, an auditory person will look left or right (toward his ears), and a kinesthetic person will look down to either side, toward his hands and body.`
 Nicholas Boothman, How To Make People Like You In 90 Seconds Or Less `Be sure you’re the first one to smile.`
 Nicholas Boothman, How To Make People Like You In 90 Seconds Or Less `Direct eye contact is a great way to establish trust.`
@@ -228,10 +238,14 @@ Nonviolent Communication `Ask yourself "Why am I angry?" rather than "Who am I a
 Nonviolent Communication `Instead of saying "I feel a bit down", use sharper adjectives and clarify the reasons why.`
 On Arguments `"What proof would it take to change your mind?". If they can’t give you an answer, then stop wasting your time.`
 Oscar Wilde `To live is the rarest thing in the world. Most people exist, that is all.`
+Peter Drucker, from his book “[Managing Oneself.](https://www.blinkist.com/en/books/managing-oneself-en)” `The best way to predict your future is to create it.`
+Ralph Waldo Emerson, from his essay “Nature” `Do not go where the path may lead, go instead where there is no path and leave a trail.`
+Ralph Waldo Emerson, from his essay “Self-Reliance.” `To be yourself in a world that is constantly trying to make you something else is the greatest accomplishment.`
 Ray Dali `Ask yourself first if you have a right to have an opinion.`
 Red Moon - Kim Stanley Robinson `It’s the process of exploration itself that fascinates us, not the places we explore.`
 Ricky Gervais `Relax. No one else knows what they’re doing either.`
 Ricky Gervais `To lead the orchestra you have to turn your back on the public.`
+Robert Frost, from his poem “The Road Not Taken.” `In three words, I can sum up everything I’ve learned about life: it goes on.`
 Sam Altman `Life is not a dress rehearsal, this is probably it. Make it count.`
 Seth Godin `Authenticity is overrated. I want a professional to show up.`
 Seth Godin `It's easy to hide behind a grandiose idea. It's hard to hide when you have a small plan.`
@@ -243,7 +257,9 @@ Seth Godin `You are more powerful than you think you are. Act accordingly.`
 Seth godin `We can’t out-obedience the competition. Therefore we have to learn to be creative.`
 Sharon Salzburg `All beings own their own karma. Their happiness is dependent on their actions not my wishes for them.`
 Sheila Heen `It’s not usually good advice to be _emotional_. It is good advice to express emotion in a professial way.`
+Socrates, from his philosophical teachings `The more you know, the more you realize you know nothing.`
 Stephen Duneier `https://www.youtube.com/watch?v=TQMbvJNRpLE: What goals can I achieve by making marginal adjustments.`
+Steve Jobs, from his Stanford University commencement speech. `Your time is limited, don’t waste it living someone else’s life.`
 The 12 Week Year `Your 12 week plan should have *lead*, and *lag*, indicators.`
 The 12 Week Year `Your week should include three kinds of protected time: strategic blocks, buffer blocks, and breakout blocks.`
 The Big Short `He’ll say ‘explain that to me’ thirty different times. Or ‘could you explain that more, in English?’ Because once you do that, there’s a few things you learn. For a start, you figure out if they even know what they’re talking about.`
@@ -274,8 +290,13 @@ Under Pressure by Lisa Damour `Girls place more emphasis on the feedback they re
 Upton Sinclair `Try again, fail again , better.`
 Warren Buffett `Writing a check separates a commitment from a conversation.`
 Warren Buffett `You will continue to suffer if you have an emotional reaction to everything that is said to you. True power is sitting back and observing things with logic. True power is restraint. If words control you that means everyone else can control you. Breathe and allow things to pass.`
+Warren Buffett, from his book “The Essays of Warren Buffett: Lessons for Corporate America.” `The best investment you can make is in yourself.`
 William James `When we come down to the root of the matter, we see that [geniuses] differ from ordinary men less in the character of their attention than in the nature of the objects upon which it is successively bestowed.`
+Winston Churchill, from his book “My Early Life.” `Success is walking from failure to failure with no loss of enthusiasm.`
+Winston Churchill, from his speech to the House of Commons. `Success is not final, failure is not fatal: It is the courage to continue that counts.`
+Zig Ziglar, from his book [“See You at the Top”](https://www.blinkist.com/en/books/see-you-at-the-top-en) `You don’t have to be great to start, but you have to start to be great.`
 `Luck is what happens when preparation meets opportunity.`
+`Never apologize for showing feeling. When you do so, you apologize for the truth.`
 https://gen.medium.com/if-youre-angry-you-re-part-of-the-problem-not-the-solution-d50a74b119cb `Getting angry is not a strategy. It’s a distraction.`
 https://github.com/arafatm/notes/blob/master/lifehack/cracked_6_Harsh_Truths_That_Will_Make_You_a_Better_Person.md `Damn it, you have to kill those excuses. Or they will kill you.`
 https://github.com/arafatm/notes/blob/master/lifehack/cracked_6_Harsh_Truths_That_Will_Make_You_a_Better_Person.md `It's incredibly comforting to know that as long as you don't create anything in your life, then nobody can attack the thing you created.`
@@ -469,4 +490,3 @@ https://www.ted.com/talks/ian_dunbar_on_dog_friendly_dog_training `We have to en
 https://www.youtube.com/watch?v=STAqTwaojOM `Jiu Jitsu Perspective.`
 https://www.youtube.com/watch?v=eWJVvNptHZ4 `Arnold Schwarzenegger motivation.`
 https://www.youtube.com/watch?v=elrnAl6ygeM#action=share `Coffee is for closers only!.`
-`Never apologize for showing feeling. When you do so, you apologize for the truth.`
