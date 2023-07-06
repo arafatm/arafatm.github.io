@@ -2,7 +2,7 @@
 category: mba
 source: https://lethain.com/good-engineering-strategy-is-boring/
 author: Will Larson 
-title: Write five, then synthesize: good engineering strategy is boring. 
+title: Write five, then synthesize -  good engineering strategy is boring
 ---
 
 > I kind of think writing about engineering strategy is hard because good
