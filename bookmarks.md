@@ -4,6 +4,7 @@ permalink: /bookmarks/
 title: Bookmarks
 ---
 
+- #ai [There's An AI For That - The Biggest AI Aggregator](https://theresanaiforthat.com/)
 - #code #docker #wsl #windows [How To Develop a Docker Application on Windows using WSL, Visual Studio Code, and Docker Desktop | DigitalOcean](https://www.digitalocean.com/community/tutorials/how-to-develop-a-docker-application-on-windows-using-wsl-visual-studio-code-and-docker-desktop)
 - #dance [Bachata Tutorial For Couples - YouTube](https://www.youtube.com/watch?v=2PyZywgrQOQ)
 - #dance [Start Learning Bachata Today - No Partner Needed](https://www.bachatadanceacademyonline.com/solo-bachata-class-page?cid=c60961d4-4e3f-4cf4-865b-4deebb5baee7)
