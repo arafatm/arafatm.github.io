@@ -4,7 +4,7 @@ title: arafatm
 ---
 
 <!-- {% include_relative bookmarks.md %} -->
-[Bookmarks](/bookmarks/)
+[Bookmarks](/bookmarks/) || [Emoji](/emoji/) || [Math](/math) 
 
 # Todo
 
