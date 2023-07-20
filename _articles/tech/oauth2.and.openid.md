@@ -1,8 +1,8 @@
 ---
 categories: tech
 tags: OAuth OpenID
-OAuth 2.0 and OpenID Connect (in plain English) - YouTube
-source: https://www.youtube.com/watch?v=996OiexHze0)
+source: https://www.youtube.com/watch?v=996OiexHze0
+title: OAuth 2.0 and OpenID Connect (in plain English) - YouTube
 ---
 
 https://speakerdeck.com/nbarbettini/oauth-and-openid-connect-in-plain-english
