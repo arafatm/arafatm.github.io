@@ -17,7 +17,7 @@ tutorial and reference are available.
 | Superscripts (`^`) and subscripts (`_`)                   | $${x_1}^e$$
 | ---------- Fractions -------------------------            | --------------------
 | `\frac {a} {b}`                                           | $$\frac {a} {b}$$
-| `{ {x} \over {y} }`                                       | $${{x} \over {y} }$$
+| `{ {x} \over {y} }`                                       | $${ {x} \over {y} }$$
 | ---------- Unscaled parentheses ------------------------- | --------------------
 | `(...)`                                                   | $$(...)$$
 | `[...]`                                                   | $$[...]$$
