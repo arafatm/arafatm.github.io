@@ -15,10 +15,10 @@ tutorial and reference are available.
 | Displayed formulas                                        | $$[ ... ]$$
 | Curly braces `{}` to group pieces of formulas             | $${ .. }$$
 | Superscripts (`^`) and subscripts (`_`)                   | $${x_1}^e$$
-| --- Fractions --------------------                        | ---
+| ---------- Fractions -------------------------            | --------------------
 | `\frac {a} {b}`                                           | $$\frac {a} {b}$$
 | `{ {x} \over {y} }`                                       | $${{x} \over {y} }$$
-| --- Unscaled parentheses --------------------             | ---
+| ---------- Unscaled parentheses ------------------------- | --------------------
 | `(...)`                                                   | $$(...)$$
 | `[...]`                                                   | $$[...]$$
 | `\{ ... \}`                                               | $${ ... }$$
@@ -27,7 +27,7 @@ tutorial and reference are available.
 | `\langle ... \rangle`                                     | $$\langle ... \rangle$$
 | `\lceil ... \rceil`                                       | $$\lceil ... \rceil$$
 | `\lfloor ... \rfloor`                                     | $$\lfloor ... \rfloor$$
-| --- Scaled parentheses --------------------               | ---
+| ---------- Scaled parentheses -------------------------   | --------------------
 | `\left( ... \right)`                                      | $$\left( ... \right)$$
 | `\left[ ... \right]`                                      | $$\left[ ... \right]$$
 | `\left\{ ... \right\}`                                    | $$\left{ ... \right}$$
@@ -36,11 +36,11 @@ tutorial and reference are available.
 | `\left\langle ... \right\rangle`                          | $$\left\langle ... \right\rangle$$
 | `\left\lceil ... \right\rceil`                            | $$\left\lceil ... \right\rceil$$
 | `\left\lfloor ... \right\rfloor`                          | $$\left\lfloor ... \right\rfloor$$
-| --- Hidden parentheses --------------------               | ---
+| ---------- Hidden parentheses -------------------------   | --------------------
 | `\left\{ ... \right.`                                     | $$\left{ ... \right$$
 | `\left. ... \right]`                                      | $$\left ... \right]$$
 | `\Biggl(\biggl(\Bigl(\bigl((x)\bigr)\Bigr)\biggr)\Biggr)` | $$\Biggl(\biggl(\Bigl(\bigl((x)\bigr)\Bigr)\biggr)\Biggr)$$
-| --- Logical Symbols --------------------                  | ---
+| ---------- Logical Symbols -------------------------      | --------------------
 | `\lt`                                                     | $$\lt$$
 | `\gt`                                                     | $$\gt$$
 | `\le`                                                     | $$\le$$
@@ -70,7 +70,7 @@ tutorial and reference are available.
 | `\prec`                                                   | $$\prec$$
 | `\lhd`                                                    | $$\lhd$$
 | `\therefore`                                              | $$\therefore$$
-| --- Operators --------------------                        | ---
+| ---------- Operators -------------------------            | --------------------
 | `\times`                                                  | $$\times$$
 | `\div`                                                    | $$\div$$
 | `\pm`                                                     | $$\pm$$
@@ -81,7 +81,7 @@ tutorial and reference are available.
 | `\oplus`                                                  | $$\oplus$$
 | `\circ`                                                   | $$\circ$$
 | `\bullet`                                                 | $$\bullet$$
-| --- Set Symbols --------------------                      | ---
+| ---------- Set Symbols -------------------------          | --------------------
 | `\cup`                                                    | $$\cup$$
 | `\cap`                                                    | $$\cap$$
 | `\setminus`                                               | $$\setminus$$
@@ -93,7 +93,7 @@ tutorial and reference are available.
 | `\notin`                                                  | $$\notin$$
 | `\emptyset`                                               | $$\emptyset$$
 | `\varnothing`                                             | $$\varnothing$$
-| --- Arrows --------------------                           | ---
+| ---------- Arrows -------------------------               | --------------------
 | `\to`                                                     | $$\to$$
 | `\rightarrow`                                             | $$\rightarrow$$
 | `\leftarrow`                                              | $$\leftarrow$$
@@ -101,7 +101,7 @@ tutorial and reference are available.
 | `\Leftarrow`                                              | $$\Leftarrow$$
 | `\Leftrightarrow`                                         | $$\Leftrightarrow$$
 | `\mapsto`                                                 | $$\mapsto$$
-| --- Special Symbols --------------------                  | ---
+| ---------- Special Symbols -------------------------      | --------------------
 | `\infty`                                                  | $$\infty$$
 | `\nabla`                                                  | $$\nabla$$
 | `\partial`                                                | $$\partial$$
@@ -110,7 +110,7 @@ tutorial and reference are available.
 | `\ldots`                                                  | $$\ldots$$
 | `\cdots`                                                  | $$\cdots$$
 | `\ell`                                                    | $$\ell$$
-| --- Trigonometry --------------------                     | ---
+| ---------- Trigonometry -------------------------         | --------------------
 | `\sin x`                                                  | $$\sin x$$
 | `\cos x`                                                  | $$\cos x$$
 | `\tan x`                                                  | $$\tan x$$
@@ -120,7 +120,7 @@ tutorial and reference are available.
 | `\arcsin x`                                               | $$\arcsin x$$
 | `\arccos x`                                               | $$\arccos x$$
 | `\arctan x`                                               | $$\arctan x$$
-| --- Functional Symbols --------------------               | ---
+| ---------- Functional Symbols -------------------------   | --------------------
 | `\sqrt{x^3}`                                              | $$\sqrt{x^3}$$
 | `\sqrt[3]{\frac xy}`                                      | $$\sqrt[3]{\frac xy}$$
 | `\ln(x)`                                                  | $$\ln(x)$$
@@ -135,7 +135,7 @@ tutorial and reference are available.
 | `\min(3,4,5)`                                             | $$\min(3,4,5)$$
 | `{n+1 \choose 2k}`                                        | $${n+1 \choose 2k}$$
 | `\binom{n+1}{2k} (n+12k)`                                 | $$\binom{n+1}{2k} (n+12k)$$
-| --- Greek Letters --------------------                    | ---
+| ---------- Greek Letters -------------------------        | --------------------
 | `\alpha`                                                  | $$\alpha$$
 | `\beta`                                                   | $$\beta$$
 | `\gamma`                                                  | $$\gamma$$
@@ -166,7 +166,7 @@ tutorial and reference are available.
 | `\chi`                                                    | $$\chi$$
 | `\psi`                                                    | $$\psi$$
 | `\omega`                                                  | $$\omega$$
-| --- Uppercase Greek --------------------                  | ---
+| ---------- Uppercase Greek -------------------------      | --------------------
 | `\Gamma`                                                  | $$\Gamma$$
 | `\Delta`                                                  | $$\Delta$$
 | `\Theta`                                                  | $$\Theta$$
@@ -178,7 +178,7 @@ tutorial and reference are available.
 | `\Psi`                                                    | $$\Psi$$
 | `\Omega`                                                  | $$\Omega$$
 | Note: other greek uppercase letters == Roman letter.      |
-| --- Fonts --------------------                            | ---
+| ---------- Fonts -------------------------                | --------------------
 | `\mathbb{N}`                                              | $$\mathbb{N}$$
 | `\mathbb{Z}`                                              | $$\mathbb{Z}$$
 | `\mathbb{Q}`                                              | $$\mathbb{Q}$$
@@ -196,12 +196,12 @@ tutorial and reference are available.
 | `\mathcal{calligraphic letters}`                          | $$\mathcal{calligraphic letters}$$
 | `\mathscr{script letters}`                                | $$\mathscr{script letters}$$
 | `\mathfrak{Fraktur (old German style) letters}`           | $$\mathfrak{Fraktur (old German style) letters}$$
-| --- Spaces --------------------                           | ---
+| ---------- Spaces -------------------------               | --------------------
 | `Thin \ space`                                            | $$Thin \ space$$
 | `Normal \; space`                                         | $$Normal \; space$$
 | `Big \quad space`                                         | $$Big \quad space$$
 | `Bigger \qquad space`                                     | $$Bigger \qquad space$$
-| --- Accents & Marks --------------------                  | ---
+| ---------- Accents & Marks -------------------------      | --------------------
 | `\hat{x}`                                                 | $$\hat{x}$$
 | `\overline{xyz}`                                          | $$\overline{xyz}$$
 | `\vec{x}`                                                 | $$\vec{x}$$
@@ -211,7 +211,7 @@ tutorial and reference are available.
 | `\overleftrightarrow{xy}`                                 | $$\overleftrightarrow{xy}$$
 | `\dot{x}`                                                 | $$\dot{x}$$
 | `\ddot{x}`                                                | $$\ddot{x}$$
-| --- Examples --------------------                         |
+| ---------- Examples -------------------------             |
 | Plain text:                                               | $$\left\{ x \in \mathbb{N} \mid x \text{ is an even number} \right\}$$
 | The Einstein field equations (EFE)                        | $$R_{\mu \nu} - {1 \over 2} g_{\mu \nu}\,R + g_{\mu \nu} \Lambda = {8 \pi G \over c^4} T_{\mu \nu}$$
 
