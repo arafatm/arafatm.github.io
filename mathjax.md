@@ -20,7 +20,7 @@ tutorial and reference are available.
 | `{ {x} \over {y} }`                                       | $${x} \over {y} }$$
 | --- Unscaled parentheses --------------------             | ---
 | `(...)`                                                   | $$(...)$$
-| `[...]`                                                   | $$\[...\]$$
+| `[...]`                                                   | $$[...]$$
 | `\{ ... \}`                                               | $${ ... }$$
 | `\vert ... \vert`                                         | $$\vert ... \vert$$
 | `\Vert ... \Vert`                                         | $$\Vert ... \Vert$$
@@ -38,7 +38,7 @@ tutorial and reference are available.
 | `\left\lfloor ... \right\rfloor`                          | $$\left\lfloor ... \right\rfloor$$
 | --- Hidden parentheses --------------------               | ---
 | `\left\{ ... \right.`                                     | $$\left{ ... \right.$$
-| `\left. ... \right]`                                      | $$\left. ... \right\]$$
+| `\left. ... \right]`                                      | $$\left. ... \right]$$
 | `\Biggl(\biggl(\Bigl(\bigl((x)\bigr)\Bigr)\biggr)\Biggr)` | $$\Biggl(\biggl(\Bigl(\bigl((x)\bigr)\Bigr)\biggr)\Biggr)$$
 | --- Logical Symbols --------------------                  | ---
 | `\lt`                                                     | $$\lt$$
