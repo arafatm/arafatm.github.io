@@ -68,9 +68,9 @@ when you’re not looking for a job.
 Back to the initial problem though. Here’s the script that you probably get
 pretty frequently:
 
-Hi {{first-name}}, I was going through your profile and noticed your work as
-{{job-title}}. I have an open role with a {{startup|scale-up|fortune 500}} and
-we’re looking for your skillset. Would you have time to hop on a quick 15
+Hi `{{first-name}}`, I was going through your profile and noticed your work as
+`{{job-title}}`. I have an open role with a `{{startup|scale-up|fortune 500}}`
+and we’re looking for your skillset. Would you have time to hop on a quick 15
 minute call to discuss the opportunity?
 
 Of course, if the message comes in with a company name, job description and,
