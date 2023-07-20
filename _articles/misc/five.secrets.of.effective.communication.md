@@ -1,7 +1,7 @@
 ---
 category: misc
 tags: communication
-title: Five Secrets of Effective Communication (EAR: 🦻)
+title: Five Secrets of Effective Communication
 ---
 
 ## E = Empathy
