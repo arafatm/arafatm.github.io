@@ -29,7 +29,7 @@ tutorial and reference are available.
 | `\lfloor ... \rfloor`                                     | $$\lfloor ... \rfloor$$
 | --- Scaled parentheses --------------------               | ---
 | `\left( ... \right)`                                      | $$\left( ... \right)$$
-| `\left[ ... \right]`                                      | $$\left\[ ... \right\]$$
+| `\left[ ... \right]`                                      | $$\left[ ... \right]$$
 | `\left\{ ... \right\}`                                    | $$\left{ ... \right}$$
 | `\left\vert ... \right\vert`                              | $$\left\vert ... \right\vert$$
 | `\left\Vert ... \right\Vert`                              | $$\left\Vert ... \right\Vert$$
@@ -122,15 +122,15 @@ tutorial and reference are available.
 | `\arctan x`                                               | $$\arctan x$$
 | --- Functional Symbols --------------------               | ---
 | `\sqrt{x^3}`                                              | $$\sqrt{x^3}$$
-| `\sqrt[3]{\frac xy}`                                      | $$\sqrt\[3\]{\frac xy}$$
+| `\sqrt[3]{\frac xy}`                                      | $$\sqrt[3]{\frac xy}$$
 | `\ln(x)`                                                  | $$\ln(x)$$
-| `\log_{2}(x)`                                             | $$\log\_{2}(x)$$
-| `\sum_{n=1} ^{N} n`                                       | $$\sum\_{n=1} ^{N} n$$
-| `\prod_{n=1} ^{N} n`                                      | $$\prod\_{n=1} ^{N} n$$
-| `\int_{0} ^{\infty} x dx`                                 | $$\int\_{0} ^{\infty} x dx$$
-| `\iint_{0} ^{\infty} x dx`                                | $$\iint\_{0} ^{\infty} x dx$$
-| `\iiint_{0} ^{\infty} x dx`                               | $$\iiint\_{0} ^{\infty} x dx$$
-| `\lim_{x \to \infty} {1 \over x }`                        | $$\lim\_{x \to \infty} {1 \over x }$$
+| `\log_{2}(x)`                                             | $$\log_{2}(x)$$
+| `\sum_{n=1} ^{N} n`                                       | $$\sum_{n=1} ^{N} n$$
+| `\prod_{n=1} ^{N} n`                                      | $$\prod_{n=1} ^{N} n$$
+| `\int_{0} ^{\infty} x dx`                                 | $$\int_{0} ^{\infty} x dx$$
+| `\iint_{0} ^{\infty} x dx`                                | $$\iint_{0} ^{\infty} x dx$$
+| `\iiint_{0} ^{\infty} x dx`                               | $$\iiint_{0} ^{\infty} x dx$$
+| `\lim_{x \to \infty} {1 \over x }`                        | $$\lim_{x \to \infty} {1 \over x }$$
 | `\max(1,2,3)`                                             | $$\max(1,2,3)$$
 | `\min(3,4,5)`                                             | $$\min(3,4,5)$$
 | `{n+1 \choose 2k}`                                        | $${n+1 \choose 2k}$$
