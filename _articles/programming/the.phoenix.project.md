@@ -2,7 +2,7 @@
 category: programming
 tags: devops agile
 author: Gene Kim, Kevin Behr, and George Spafford
-title: The Phoenix Project: A Novel About IT, DevOps, and Helping Your Business Win
+title: The Phoenix Project - A Novel About IT, DevOps, and Helping Your Business Win
 ---
 
 Theory of Constraints, Lean production or the Toyota Production System, and
