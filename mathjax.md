@@ -11,10 +11,10 @@ tutorial and reference are available.
 
 | Symbol                                                    | Code                                                                                                 |
 | -:                                                        | :-                                                                                                   |
-| Inline formulas enclose                                   | $`( ... )`
-| Displayed formulas                                        | $`[ ... ]`
-| Curly braces$${}`$ to group pieces of formulas            | $`{ .. }$$
-| Superscripts (`^`) and subscripts (`_`)                   | `{x_1}^e`
+| Inline formulas enclose                                   | $$( ... )$$
+| Displayed formulas                                        | $$[ ... ]$$
+| Curly braces `{}` to group pieces of formulas             | $${ .. }$$
+| Superscripts (`^`) and subscripts (`_`)                   | $${x_1}^e$$
 | --- Fractions --------------------                        | ---
 | `\frac {a} {b}`                                           | $$\frac {a} {b}$$
 | `{ {x} \over {y} }`                                       | $${x} \over {y} }$$
