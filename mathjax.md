@@ -9,14 +9,6 @@ for math formula insertion has an extensive
 In [Mathjax quick sintax reference](https://math.meta.stackexchange.com/questions/5020/mathjax-basic-tutorial-and-quick-reference)
 tutorial and reference are available.
 
-__Examples__
-- Plain text: 
-  - $$\left\{ x \in \mathbb{N} \mid x \text{ is an even number} \right\}$$
-- The Einstein field equations (EFE) 
-  - $$R_{\mu \nu} - {1 \over 2} g_{\mu \nu}\,R g_{\mu \nu} \Lambda = {8 \pi G \over c^4} T_{\mu \nu}$$
-- `\Biggl(\biggl(\Bigl(\bigl((x)\bigr)\Bigr)\biggr)\Biggr)`
-  - $$\Biggl(\biggl(\Bigl(\bigl((x)\bigr)\Bigr)\biggr)\Biggr)$$
-
 | Symbol                                            | Code                                                 |
 | -:                                                | :-                                                   |
 | $$( ... )$$                                       | Inline formulas enclose
@@ -184,7 +176,6 @@ __Examples__
 | $$\Upsilon$$                                      | `\Upsilon`
 | $$\Psi$$                                          | `\Psi`
 | $$\Omega$$                                        | `\Omega`
-|                                                   | Note: other greek uppercase letters == Roman letter.
 | --------------------                              | __Fonts__
 | $$\mathbb{N}$$                                    | `\mathbb{N}`
 | $$\mathbb{Z}$$                                    | `\mathbb{Z}`
@@ -218,6 +209,16 @@ __Examples__
 | $$\overleftrightarrow{xy}$$                       | `\overleftrightarrow{xy}`
 | $$\dot{x}$$                                       | `\dot{x}`
 | $$\ddot{x}$$                                      | `\ddot{x}`
+
+- Note: other greek uppercase letters == Roman letter.
+
+__Examples__
+- Plain text: 
+  - $$\left\{ x \in \mathbb{N} \mid x \text{ is an even number} \right\}$$
+- The Einstein field equations (EFE) 
+  - $$R_{\mu \nu} - {1 \over 2} g_{\mu \nu}\,R g_{\mu \nu} \Lambda = {8 \pi G \over c^4} T_{\mu \nu}$$
+- `\Biggl(\biggl(\Bigl(\bigl((x)\bigr)\Bigr)\biggr)\Biggr)`
+  - $$\Biggl(\biggl(\Bigl(\bigl((x)\bigr)\Bigr)\biggr)\Biggr)$$
 
 <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
