@@ -6,6 +6,8 @@ title: arafatm
 <!-- {% include_relative bookmarks.md %} -->
 [Bookmarks](/bookmarks/) || [Emoji](/emoji/) || [Math](/math) 
 
+<div class="test">test</div>
+
 # Todo
 
 - [ ] https://go.dev/blog/intro-generics
