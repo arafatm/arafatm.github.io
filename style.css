@@ -1,5 +1,7 @@
+/*
 @import "https://cdn.simplecss.org/simple.css";
 @import "/css/syntax.css";
+*/
 
 html { background-color: darkgrey; }
 body { font: 16px/20px sans-serif; max-width: 1530px; background-color: white; margin: 0em auto; padding: 0.5em; border: 2px solid black; }

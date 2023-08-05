@@ -1,12 +1,9 @@
----
-layout: home
-title: arafatm
----
+# arafatm
 
-<!-- {% include_relative bookmarks.md %} -->
+{% include_relative bookmarks.md %}
 [Bookmarks](/bookmarks/) || [Emoji](/emoji) || [MathJAX](/mathjax) 
 
-# Todo
+## Todo
 
 - [ ] https://go.dev/blog/intro-generics
 - [ ] https://www.freecodecamp.org/news/how-to-create-microservices-with-fastapi/
