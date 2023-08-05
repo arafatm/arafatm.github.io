@@ -58,4 +58,4 @@ collections:
 #   - vendor/ruby/
 
 # theme: jekyll-theme-hacker
-theme: minima
+#theme: minima
