@@ -1,7 +1,7 @@
 ## arafatm
 
-{% include_relative bookmarks.md %}
 [Bookmarks](/bookmarks/) || [Emoji](/emoji) || [MathJAX](/mathjax) 
+{% include_relative bookmarks.md %}
 
 ## Todo
 
