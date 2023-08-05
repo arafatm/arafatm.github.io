@@ -3,5 +3,4 @@ _site
 .jekyll-metadata
 /vendor/
 /assets/img/
-Gemfile
 Gemfile.lock
