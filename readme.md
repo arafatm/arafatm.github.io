@@ -11,11 +11,4 @@ i = 56;
 puts "test #{i}"
 ```
 
-
 <!-- {% include_relative bookmarks.md %} -->
-
-<!-- vim: set textwidth=0: -->
-<!-- vim: set wrapmargin=0: -->
-<!-- vim: set nowrap: -->
-
-
