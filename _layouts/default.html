@@ -4,12 +4,20 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     {% seo %}
-    <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
-    <link rel="stylesheet" href="{{ './style.css?v=' | append: site.github.build_revision | relative_url }}">
+    <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url}}">
+    <link rel="stylesheet" href="{{ '/style.css?v=' | append: site.github.build_revision | relative_url }}">
     <script src="{{ '/assets/js/scale.fix.js' | relative_url }}"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
   </head>
   <body>
+    <ul>
+      <li>absolute_url {{ '/' | absolute_url }}</li>
+      <li>relative_url {{ '/' " | relative_url }}</li>
+      <li>site.url {{ site.url }}</li>
+      <li>site.baseurl {{ site.baseurl }}</li>
+      <li>page.title {{ page.title }}</li>
+      <li>page.url {{ page.url}}</li>
+    </ul>
     <div class="wrapper">
       {% comment %}
       <header {% unless site.description or site.github.project_tagline %} class="without-description" {% endunless %}>
@@ -35,12 +43,12 @@
     </div>
     <footer>
       <h1><a href="/">{{ site.title | default: site.github.repository_name }}</a></h1>
-      {% comment %}
       {% if site.github.is_project_page %}
-      <p>Project maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a></p>
+      <p>
+      <img class="ico" src="https://github.com/favicon.ico" /> 
+      <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a>
+      </p>
       {% endif %}
-      <p>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></p>
-      {% endcomment %}
     </footer>
     <!--[if !IE]><script>fixScale(document);</script><![endif]-->
 
@@ -57,8 +65,3 @@
   </body>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 </html>
-
-<!--  vim: set textwidth=0: -->
-<!--  vim: set wrapmargin=0: -->
-<!--  vim: set nowrap: -->
-<!--  vim: set foldlevel=9: -->
