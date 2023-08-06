@@ -3,7 +3,9 @@
 html { background-color: darkgrey; }
 body { font: 16px/20px sans-serif; max-width: 1530px; background-color: white; margin: 0em auto; padding: 0.5em; border: 2px solid black; }
 h1::before { content: "# " } h1 { text-transform: uppercase; }
-h2::before { content: "<hr />## " } h2 { text-transform: capitalize; }
+h2::before { content: "<hr />## " } 
+h2 { text-transform: capitalize; display: flex; align-items: center; }
+h2::after { content: ''; flex: 1; margin-left: 1rem; height: 0.1em; background-color: #000; }
 h3::before { content: "### " } h3 { text-transform: capitalize; }
 h4::before { content: "#### " }
 h5::before { content: "##### " }
