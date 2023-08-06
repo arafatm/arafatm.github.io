@@ -21,6 +21,7 @@ kramdown:
 plugins:
   - jekyll-feed
   - jemoji
+  - jekyll-redirect-from
 
 defaults:
   - scope:

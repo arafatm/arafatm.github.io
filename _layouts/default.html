@@ -7,19 +7,33 @@
     <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url}}">
     <link rel="stylesheet" href="{{ '/style.css?v=' | append: site.github.build_revision | relative_url }}">
     <script src="{{ '/assets/js/scale.fix.js' | relative_url }}"></script>
+    <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        TeX: {
+          equationNumbers: {
+            autoNumber: "AMS"
+          }
+        },
+        tex2jax: {
+        inlineMath: [ ['$', '$'] ],
+        displayMath: [ ['$$', '$$'] ],
+        processEscapes: true,
+      }
+    });
+    MathJax.Hub.Register.MessageHook("Math Processing Error",function (message) {
+        alert("Math Processing Error: "+message[1]);
+      });
+    MathJax.Hub.Register.MessageHook("TeX Jax - parse error",function (message) {
+        alert("Math Processing Error: "+message[1]);
+      });
+    </script>
+    <script type="text/javascript" async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML"> </script>
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
   </head>
   <body>
-    <ul>
-      <li>absolute_url {{ '/' | absolute_url }}</li>
-      <li>relative_url {{ '/' " | relative_url }}</li>
-      <li>site.url {{ site.url }}</li>
-      <li>site.baseurl {{ site.baseurl }}</li>
-      <li>page.title {{ page.title }}</li>
-      <li>page.url {{ page.url}}</li>
-    </ul>
     <div class="wrapper">
       {% comment %}
+      <ul>Debug variables: <li>absolute_url {{ '/' | absolute_url }}</li> <li>relative_url {{ '/' " | relative_url }}</li> <li>site.url {{ site.url }}</li> <li>site.baseurl {{ site.baseurl }}</li> <li>page.title {{ page.title }}</li> <li>page.url {{ page.url}}</li> </ul>
       <header {% unless site.description or site.github.project_tagline %} class="without-description" {% endunless %}>
         <h1><a href="/">{{ site.title | default: site.github.repository_name }}</a></h1> 
         {% if site.description or site.github.project_tagline %}
@@ -63,5 +77,5 @@
     </script>
     {% endif %}
   </body>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 </html>
+
