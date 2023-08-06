@@ -1,3 +1,6 @@
 [submodule ".github/workflow"]
 	path = .github/workflow
 	url = https://github.com/arafatm/ghp.workflow.git
+[submodule "ghp"]
+	path = ghp
+	url = https://github.com/arafatm/ghp

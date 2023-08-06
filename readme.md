@@ -1,12 +1,11 @@
-## arafatm
+Copy this folder and run `ggit_arafatm; ggit_pages`
 
-:bulb: ![Hal lightbulb](https://bigmemes.funnyjunk.com/gifs/Everyday+problems_690247_4723564.gif)
+Links
+- https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions
+- https://github.com/marketplace/actions/add-commit
 
-[Bookmarks](/bookmarks/) || [Emoji](/emoji) || [MathJAX](/mathjax) 
-
-<!-- {% include_relative bookmarks.md %} -->
-
-<!-- vim: set textwidth=0: -->
-<!-- vim: set wrapmargin=0: -->
-<!-- vim: set nowrap: -->
-
+Test Code
+```ruby
+i = 56;
+puts "test #{i}"
+```
