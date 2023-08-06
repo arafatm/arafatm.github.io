@@ -15,7 +15,9 @@ markdown: kramdown
 highlighter: rouge
 kramdown:
   input: GFM
-  toc_levels: 2..5
+  toc:
+    min_level: 2
+    max_level: 5
 plugins:
   - jekyll-feed
   - jemoji

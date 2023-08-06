@@ -21,7 +21,8 @@ layout: default
     <hr />
   </div>
   <div class="toc">
-  {% include toc.html html=content h_max=5 class="toc" %}
+  <div class="toc">TOC:</div>
+  {% include toc.html html=content h_max=5 h_min=2 class="toc" %}
   </div>
   <div class="post-content">
     {{ content }}

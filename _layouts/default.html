@@ -4,11 +4,8 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     {% seo %}
-    {% comment %}
-    <link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css">
-    {% endcomment %}
     <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
-    <link rel="stylesheet" href="{{ 'style.css?v=' | append: site.github.build_revision | relative_url }}">
+    <link rel="stylesheet" href="{{ './style.css?v=' | append: site.github.build_revision | relative_url }}">
     <script src="{{ '/assets/js/scale.fix.js' | relative_url }}"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
   </head>
@@ -43,8 +40,8 @@
       <p>Project maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a></p>
       {% endif %}
       <p>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></p>
+      {% endcomment %}
     </footer>
-    {% endcomment %}
     <!--[if !IE]><script>fixScale(document);</script><![endif]-->
 
     {% if site.google_analytics %}
