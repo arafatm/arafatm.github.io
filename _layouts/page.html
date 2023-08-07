@@ -3,7 +3,7 @@ layout: default
 ---
 <article class="post">
   <div class="post-header">
-    <h1 class="post-title">{{ page.url | append: " - " | append: page.title | escape }}</h1>
+    <h1 class="post-title">{{ page.title | escape  }}</h1>
     {% if page.author %} 
     <div>By: <strong>{{ page.author }}</strong></div>
     {% endif %}
@@ -27,4 +27,6 @@ layout: default
   <div class="post-content">
     {{ content }}
   </div>
+  <h2>Debug variables:</h2>
+  <ul><li>absolute_url {{ '/' | absolute_url }}</li> <li>relative_url {{ '/' " | relative_url }}</li> <li>site.url {{ site.url }}</li> <li>site.baseurl {{ site.baseurl }}</li> <li>page.title {{ page.title }}</li> <li>page.url {{ page.url}}</li> </ul>
 </article>
