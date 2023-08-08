@@ -1,8 +1,8 @@
 | [Bookmarks](/bookmarks/) | [Emoji](/emoji) | [MathJAX](/mathjax) |
 
-| "arafatm.github.io"
-| "awesome-scifi"
-| "coursera-machine-learning"
+| [awesome-scifi](https://arafatm.com/awesome-scifi) |
+| [coursera-machine-learning](https://arafatm.com/coursera-machine-learning) |
+| [presentation-working-remotely](https://arafatm.com/presentation-working-remotely) |
 
 ## lightbulb
 
