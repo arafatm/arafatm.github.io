@@ -4,7 +4,9 @@
 
 ## lightbulb
 
-:bulb: ![Hal lightbulb](https://bigmemes.funnyjunk.com/gifs/Everyday+problems_690247_4723564.gif)
+<details><summary>:bulb:</summary>
+![Hal lightbulb](https://bigmemes.funnyjunk.com/gifs/Everyday+problems_690247_4723564.gif)
+</details>
 
 ## Test Code
 
