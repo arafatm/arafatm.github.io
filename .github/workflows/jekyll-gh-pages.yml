@@ -40,6 +40,9 @@ jobs:
           fi
       - name: Add and Commit
         uses: EndBug/add-and-commit@v9
+        with:
+          author_name: Arafat Mohamed
+          author_email: 19172+arafatm@users.noreply.github.com
       - name: Setup Pages
         uses: actions/configure-pages@v3
       - name: Build with Jekyll
