@@ -2,7 +2,7 @@
 
 :bulb: ![Hal lightbulb](https://bigmemes.funnyjunk.com/gifs/Everyday+problems_690247_4723564.gif)
 
-[Bookmarks](/bookmarks/) || [Emoji](/emoji) || [MathJAX](/mathjax) 
+| [Bookmarks](/bookmarks/) | [Emoji](/emoji) | [MathJAX](/mathjax) |
 
 ## Test Code
 
