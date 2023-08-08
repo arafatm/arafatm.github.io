@@ -1,8 +1,6 @@
-| [Bookmarks](/bookmarks/) | [Emoji](/emoji) | [MathJAX](/mathjax) |
-
-| [awesome-scifi](https://arafatm.com/awesome-scifi) |
-| [coursera-machine-learning](https://arafatm.com/coursera-machine-learning) |
-| [presentation-working-remotely](https://arafatm.com/presentation-working-remotely) |
+| [Bookmarks](/bookmarks/) | [awesome-scifi](https://arafatm.com/awesome-scifi)                                 |
+| [Emoji](/emoji)          | [coursera-machine-learning](https://arafatm.com/coursera-machine-learning)         |
+| [MathJAX](/mathjax)      | [presentation-working-remotely](https://arafatm.com/presentation-working-remotely) |
 
 ## lightbulb
 
