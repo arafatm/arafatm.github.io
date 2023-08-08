@@ -29,16 +29,13 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v3
-        with:
-          submodules: recursive
       - name: copy GHP configs
         run: | 
+          git submodule update --remote
           if [[ -d "ghp" ]]; then 
             find ghp -maxdepth 1 -mindepth 1 ! \( -name ".git" -o -name "readme.md" -o -name "style.css" \) -exec cp -rf {} . \;
           fi
       - uses: EndBug/add-and-commit@v9
-        with:
-          default_author: github_actions
       - name: Setup Pages
         uses: actions/configure-pages@v3
       - name: Build with Jekyll
