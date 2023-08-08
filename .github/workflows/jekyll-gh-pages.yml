@@ -35,7 +35,8 @@ jobs:
         run: | 
           if [[ -d "ghp" ]]; then 
             find ghp -maxdepth 1 -mindepth 1 ! \( -name ".git" -o -name "readme.md" -o -name "style.css" \) -exec echo {} . \; -exec cp -rf {} \;
-            ls -Al ghp/
+            echo "######### ($date)" >> ghp.txt
+            ls -Al ghp/ >> ghp.txt
           fi
       - name: Add and Commit
         uses: EndBug/add-and-commit@v9
