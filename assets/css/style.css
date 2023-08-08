@@ -25,7 +25,8 @@ table { border-collapse: collapse; }
 td { border: 1px solid black; padding: 1ex; vertical-align: top;  }
 ul { margin: 1em; padding: 0 1em;}
 
-li code, p code,  { background-color: lavender; padding: 0.1ex 2ex; border-radius: 1ex; }
+div>code,  li>code, p>code { background-color: lavender; padding: 0.1ex 2ex; border-radius: 1ex; }
+
 blockquote { border-left: 1ex solid maroon; margin: 0; padding: 1ex 1ex; background-color: lavender; font-size: 1.3em; }
 
 del {}

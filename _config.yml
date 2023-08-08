@@ -1,3 +1,5 @@
+# Jekyll config
+#
 github_username:  arafatm
 markdown: kramdown
 highlighter: rouge
