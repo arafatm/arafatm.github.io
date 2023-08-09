@@ -37,12 +37,12 @@ jobs:
         run: | 
           if test -d "ghp" ; then 
             echo 'Found ghp/'
-            cp -rf Gemfile .
-            cp -rf _config.yml .
-            cp -rf _includes.
-            cp -rf _layouts .
-            cp -rf assets .
-            cp -rf favicon.ico .
+            cp -ruf Gemfile .
+            cp -ruf _config.yml .
+            cp -ruf _includes.
+            cp -ruf _layouts .
+            cp -ruf assets .
+            cp -ruf favicon.ico .
           fi
 
       - name: Commit
