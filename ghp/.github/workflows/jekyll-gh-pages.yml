@@ -8,7 +8,6 @@ on:
 permissions:
   contents: write
   pages: write
-  id-token: write
 
 # Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.
 # However, do NOT cancel in-progress runs as we want to allow these production deployments to complete.
@@ -33,15 +32,12 @@ jobs:
             echo "base_pwd: $(basename $(pwd))"
             rm -rf ghp 
             wget https://github.com/arafatm/ghp/tarball/main -O - | tar -xz --one-top-level=ghp --strip-components=1;
-            ghpArr=(".github" "_includes" "_layouts" "favicon.ico" "_config.yml")
-            for item in ${ghpArr[@]}; do echo $item; done
-            if [[ ! -d ".github/workflows" ]]; then mkdir -p .github/workflows; fi
-            if [[ ! -f ".github/workflows/ghp.yml" ]]; then rm -f .github/workflows/*.yml; fi
-            cp -u ghp/.github/workflows/ghp.yml .github/workflows/ghp.yml
-            cp -ru ghp/_includes . && echo "copied ghp/_includes"
-            cp -ru ghp/_layouts . && echo "copied ghp/_layouts"
-            cp -u ghp/favicon.ico . && echo "copied ghp/favicon.ico"
-            cp -u ghp/_config.yml . && echo "copied ghp/_config.yml"
+            ghpArr=( "Gemfile" "_config.yml" "_includes" "_layouts" "favicon.ico" )
+            for item in ${ghpArr[@]}; do 
+              rm -rf $item
+              cp -r ghp/$item .
+              echo "deleted and copied $item"
+            done
             if [[ -n $(git status --short) ]]; then
               git add .
               git commit -am "Github Action update"
