@@ -21,6 +21,4 @@ concurrency:
 
 jobs:
   deploy:
-    name: deploy GHP
-    steps:
-      - uses: arafatm/ghp/.github.workflows/jekyll-gh-pages.yml
+    uses: arafatm/ghp/.github.workflows/jekyll-gh-pages.yml@main
