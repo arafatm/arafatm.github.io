@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
   <script src="{{ '/assets/js/scale.fix.js' | relative_url }}"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="{{ '/assets/css/rouge.monokai.css?v=' | append: site.github.build_revision | relative_url }}">
+  <link rel="stylesheet" href="{{ '/assets/css/rouge.monokai.css' | relative_url }}">
   <script type="text/x-mathjax-config">
     MathJax.Hub.Config({
        extensions: ["tex2jax.js"], 
@@ -30,7 +30,7 @@
         ga('send', 'pageview');
   </script>
   {% endif %}
-  <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
-  {% comment %} TODO: Add this back in <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision }}"> {% endcomment %}
-  <link rel="stylesheet" href="{{ '/style.css?v=' | append: site.github.build_revision | relative_url }}">
+  <link rel="stylesheet" href="{{ '/assets/css/styles.css' | relative_url }}">
+  {% comment %} TODO: Add this back in <link rel="stylesheet" href="{{ '/assets/css/styles.css' }}"> {% endcomment %}
+  <link rel="stylesheet" href="{{ '/styles.css' | relative_url }}">
 </head>
