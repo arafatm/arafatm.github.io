@@ -2,21 +2,21 @@
 layout: default
 ---
 
-Home Layout
-<div class="container">
-  {%- if page.title -%}
-  <header class="post-header">
-    <h1 class="page-heading">{{ page.title }}</h1>
-  </header>
-  {%- endif -%}
-
-  {{ content }}
+<article>
+  <section class="body"> {{ content }} </section>
 
   {%- assign categories =  site.articles | map: 'categories' | 
   join: ','  | split: ',' | uniq | sort -%}
 
+  <nav><ul>
+      {%- for cat in categories -%}
+      <li><a href="#misc">{{ cat }}</a></li>
+      {%- endfor -%}
+    </ul>
+  </nav>
+
   {%- for cat in categories -%}
-  <h3>{{ cat }}</h3>
+  <h2><a id="{{cat}}">{{ cat }}</a></h3>
   <ul style="white-space: nowrap">
     {%- for article in site.articles -%}
     {%- if article.categories contains cat -%}
@@ -67,4 +67,4 @@ Home Layout
   <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
   {%- endif -%}
 
-</div>
+</article>
