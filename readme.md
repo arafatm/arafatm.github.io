@@ -20,4 +20,4 @@ i = 56;
 puts "test #{i}"
 ```
 
-<!-- {% include_relative bookmarks.md %} -->
+{% include_relative bookmarks.md %}
