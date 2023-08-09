@@ -1,0 +1,25 @@
+name: Using GHP deploy Jekyll with GitHub Pages dependencies preinstalled
+  uses: arafatm/ghp/.github/workflows/jekyll-gh-pages.yml@main
+
+on:
+  # Runs on pushes targeting the default branch
+  push:
+  schedule:
+    - cron: '0 3 * * *'
+  workflow_dispatch:
+
+# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+# Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.
+# However, do NOT cancel in-progress runs as we want to allow these production deployments to complete.
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    uses: arafatm/ghp/.github.workflows/jekyll-gh-pages.yml
