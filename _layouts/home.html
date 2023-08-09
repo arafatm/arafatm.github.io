@@ -16,7 +16,7 @@ layout: default
   </nav>
 
   {%- for cat in categories -%}
-  <h2><a id="{{cat}}">{{ cat }}</a></h3>
+  <h2><a id="{{cat}}">{{ cat }}</a></h2>
   <ul style="white-space: nowrap">
     {%- for article in site.articles -%}
     {%- if article.categories contains cat -%}
