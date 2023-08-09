@@ -27,6 +27,7 @@ jobs:
 
       - name: copy GHP configs
         run: | 
+          echo "--- Current hash: $(git rev-parse HEAD)"
           if [[ "$(basename $(pwd))" != "ghp" ]]; then
             git config user.name 'github'
             git config user.email 'noreply@github.com'
@@ -44,7 +45,7 @@ jobs:
               git commit -am "Github Action update"
               git push
             fi
-            echo "hash: $(git rev-parse HEAD)"
+            echo "--- Updated hash: $(git rev-parse HEAD)"
           fi
 
       - name: Setup Pages
