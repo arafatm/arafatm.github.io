@@ -27,21 +27,14 @@ jobs:
 
       - name: copy GHP configs
         run: | 
-          git config user.name 'github'
-          git config user.email 'noreply@github.com'
-          echo "base_pwd: $(basename $(pwd))"
           if [[ "$(basename $(pwd))" != "ghp" ]]; then
-            echo "Not GHP, continue..."
-            if [[ ! -d "ghp/" ]]; then
-              echo "git remote add ghp"
-              git remote add -f ghp https://github.com/arafatm/ghp.git
-              echo "git subtree add ghp"
-              git subtree add --prefix ghp ghp main --squash
-            fi
-            echo "Before subtree fetch & pull ghp/Gemfile - \n$(head -n 5 ghp/Gemfile)"
-            git fetch ghp main
-            git subtree pull --prefix ghp ghp main --squash
-            echo "After subtree fetch & pull ghp/Gemfile - \n$(head -n 5 ghp/Gemfile)"
+            git config user.name 'github'
+            git config user.email 'noreply@github.com'
+            echo "base_pwd: $(basename $(pwd))"
+            rm -rf ghp 
+            wget https://github.com/arafatm/ghp/tarball/main -O - | tar -xz --one-top-level=ghp --strip-components=1;
+            ghpArr=(".github" "_includes" "_layouts" "favicon.ico" "_config.yml")
+            for item in ${ghpArr[@]}; do echo $item; done
             if [[ ! -d ".github/workflows" ]]; then mkdir -p .github/workflows; fi
             if [[ ! -f ".github/workflows/ghp.yml" ]]; then rm -f .github/workflows/*.yml; fi
             cp -u ghp/.github/workflows/ghp.yml .github/workflows/ghp.yml
@@ -49,19 +42,12 @@ jobs:
             cp -ru ghp/_layouts . && echo "copied ghp/_layouts"
             cp -u ghp/favicon.ico . && echo "copied ghp/favicon.ico"
             cp -u ghp/_config.yml . && echo "copied ghp/_config.yml"
-            echo "git status: $(git status --short)"
-            echo $(date) >> touch.txt
             if [[ -n $(git status --short) ]]; then
               git add .
-              git commit -am "Git Action update"
+              git commit -am "Github Action update"
               git push
-              echo "hash: $(git rev-parse HEAD)"
             fi
-            echo "--- touch.txt --- "
-            tail -n 3 touch.txt
-            echo 'Done copying ghp/'
-          else
-            echo "Is GHP..."
+            echo "hash: $(git rev-parse HEAD)"
           fi
 
       - name: Setup Pages
