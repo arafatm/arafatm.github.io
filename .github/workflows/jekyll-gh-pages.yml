@@ -37,9 +37,10 @@ jobs:
         run: | 
           if test -d "ghp" ; then 
             echo 'Found ghp/'
+            cp -ru ghp/.github .
             cp -ru ghp/Gemfile .
             cp -ru ghp/_config.yml .
-            cp -ru ghp/_includes.
+            cp -ru ghp/_includes .
             cp -ru ghp/_layouts .
             cp -ru ghp/assets .
             cp -ru ghp/favicon.ico .
