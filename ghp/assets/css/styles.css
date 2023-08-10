@@ -57,7 +57,7 @@ section.header { margin-bottom: 1rem; padding: 0.5rem; border: 1px solid black; 
 
 del {}
 em { background-color: limegreen; padding: 0.1rem 0.3rem; font-style: normal; }
-strong { background-color: pink; padding: 0.1rem 0.3rem;  font-weight: 900; }
+strong { background-color: pink; padding: 0.1rem 0.3rem;  font-weight: normal; }
 
 a > img {border: 2px solid blue;}
 blockquote p { margin: 0; padding: 0;}
