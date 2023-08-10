@@ -10,7 +10,7 @@ title: arafatm
 ## lightbulb
 
 <details><summary>:bulb:</summary>
-![Hal lightbulb](https://bigmemes.funnyjunk.com/gifs/Everyday+problems_690247_4723564.gif)
+!<a href="https://bigmemes.funnyjunk.com/gifs/Everyday+problems_690247_4723564.gif">Hal lightbulb</a>
 </details>
 
 ## Test Code
