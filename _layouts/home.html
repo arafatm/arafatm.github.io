@@ -2,8 +2,33 @@
 layout: default
 ---
 
+{% if site.baseurl == "/ghp" %} 
+<section class="footer"> 
+  <h2>Debug variables: </h2> 
+  <ul>
+    <li>| absolute_url {{ '/' | absolute_url }} </li> 
+    <li>| relative_url {{ '/' | relative_url }} </li> 
+    <li>site.url {{ site.url }} </li> 
+    <li>site.baseurl {{ site.baseurl }} </li> 
+    <li>page.title {{ page.title }} </li> 
+    <li>page.url {{ page.url}} </li> 
+  </ul> 
+</section> 
+{% endif %}
+
 <article>
-  <section class="body"> {{ content }} </section>
+  <article class="body">
+    {% if page.author or page.source or page.tags %}
+    <section class="header">
+      {% comment %} <h1 class="post-title">{{ page.title | escape  }}</h1> {% endcomment %}
+      {% if page.author %} <div>By: <strong>{{ page.author }}</strong></div> {% endif %}
+      {% if page.source %} <div>Source: <a href="{{ page.source }}">{{ page.source }}</a></div> {% endif %}
+      {% if page.tags %} <div> Tags: {% for tag in page.tags %} <strong>{{ tag }}&nbsp;</strong> {% endfor %} </div> {% endif %}
+    </section>
+    {% endif %}
+    <nav class="toc">{% include toc.html html=content h_min=2 h_max=3 class="nav" %} </nav>
+    <section class="body"> {{ content }} </section>
+  </article>
 
   {%- assign categories =  site.articles | map: 'categories' | 
   join: ','  | split: ',' | uniq | sort -%}
