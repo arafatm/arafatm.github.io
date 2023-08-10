@@ -2,20 +2,6 @@
 layout: default
 ---
 
-{% if site.baseurl == "/ghp" %} 
-<section class="footer"> 
-  <h2>Debug variables: </h2> 
-  <ul>
-    <li>| absolute_url {{ '/' | absolute_url }} </li> 
-    <li>| relative_url {{ '/' | relative_url }} </li> 
-    <li>site.url {{ site.url }} </li> 
-    <li>site.baseurl {{ site.baseurl }} </li> 
-    <li>page.title {{ page.title }} </li> 
-    <li>page.url {{ page.url}} </li> 
-  </ul> 
-</section> 
-{% endif %}
-
 <article>
   <article class="body">
     {% if page.author or page.source or page.tags %}
@@ -93,3 +79,26 @@ layout: default
   {%- endif -%}
 
 </article>
+{% if site.baseurl == "/ghp" or site.url == 'http://localhost:4000'  %} 
+<section class="footer"> 
+  <h2>Debug variables: </h2> 
+  <ul>
+    <li>| absolute_url {{ '/' | absolute_url }} </li> 
+    <li>| relative_url {{ '/' | relative_url }} </li> 
+    <li>site.url {{ site.url }} </li> 
+    <li>site.baseurl {{ site.baseurl }} </li> 
+    <li>page.title {{ page.title }} </li> 
+    <li>page.url {{ page.url}} </li> 
+    <li>github_username: {{ github_username }}</li>
+    <li>site.github_username: {{ site.github_username }}</li>
+  </ul> 
+  <pre>
+    site: {{ site | jsonify | escape }}
+    page: {{ page | jsonify | escape }}
+    layout: {{ layout | jsonify | escape }}
+    content: {{ content | jsonify | escape }}
+    paginator: {{ paginator | jsonify | escape }}
+  </pre>
+
+</section> 
+{% endif %}

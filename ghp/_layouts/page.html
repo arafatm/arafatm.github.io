@@ -4,12 +4,13 @@ layout: default
 
 <article>
   {% if page.author or page.source or page.tags %}
-  <section class="header">
+  <table class="header">
     {% comment %} <h1 class="post-title">{{ page.title | escape  }}</h1> {% endcomment %}
-    {% if page.author %} <div>By: <strong>{{ page.author }}</strong></div> {% endif %}
-    {% if page.source %} <div>Source: <a href="{{ page.source }}">{{ page.source }}</a></div> {% endif %}
-    {% if page.tags %} <div> Tags: {% for tag in page.tags %} <strong>{{ tag }}&nbsp;</strong> {% endfor %} </div> {% endif %}
+    {% if page.author %} <tr><td>By:</td><td> {{ page.author }}</td></tr> {% endif %}
+    {% if page.source %} <tr><td>Source:</td><td> <a href="{{ page.source }}">{{ page.source }}</a></td></tr> {% endif %}
+    {% if page.tags %}   <tr><td>Tags:</td><td> {% for tag in page.tags %} {{ tag }}&nbsp;&nbsp;|&nsp;&nbsp;{% endfor %} </td></tr> {% endif %}
   </section>
+  </table>
   {% endif %}
   <nav class="toc">{% include toc.html html=content h_min=2 h_max=3 class="nav" %} </nav>
   <section class="body"> {{ content }} </section>
