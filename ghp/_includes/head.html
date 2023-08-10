@@ -3,7 +3,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   {% seo %}
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-  <script src="{{ '/ghp/scale.fix.js' | relative_url }}"></script>
+  <script src="{{ site.url | append: '/assets/js/scale.fix.js' }}"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <script type="text/x-mathjax-config">
     MathJax.Hub.Config({
@@ -29,8 +29,7 @@
         ga('send', 'pageview');
   </script>
   {% endif %}
-  <link rel="stylesheet" href="{{ '/ghp/rouge.monokai.css?v=' | append: site.github.build_revision }}">
-  <link rel="stylesheet" href="{{ '/ghp/styles.css?v=' | append: site.github.build_revision }}">
-  {% comment %} TODO: Add this back in <link rel="stylesheet" href="{{ '/assets/css/styles.css' }}"> {% endcomment %}
-  <link rel="stylesheet" href="{{ '/styles.css?v=' | append: site.github.build_revision | relative_url }}">
+  <link rel="stylesheet" href="{{ 'https://arafatm.com/ghp/assets/css/rouge.monokai.css' }}">
+  <link rel="stylesheet" href="{{ 'https://arafatm.com//ghp/assets/css/styles.css' }}">
+  <link rel="stylesheet" href="{{ 'assets/css/styles.css' | absolute_url }}">
 </head>

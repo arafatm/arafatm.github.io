@@ -53,13 +53,10 @@ Color `#0969DA`
 - [ ] :b: task C
 
 ![](https://images.unsplash.com/photo-1493612276216-ee3925520721)
-
-![](https://media.giphy.com/media/kSbETPzWRAtMEdszqc/giphy.gif)
 ![](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExcTM4eGtoNmlzcWZ3OGZyeXE3aDJqd2N3cjBia2owcTQ1bHZmaXh4bSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/ZaEUSTAoWGQDhJumTu/giphy.gif)
-
+![](https://media.giphy.com/media/kSbETPzWRAtMEdszqc/giphy.gif)
 ![](https://media.giphy.com/media/kSbETPzWRAtMEdszqc/giphy.gif) 
-Followed by some text Followed by some text on next line Followed by some text on next line Followed by some text on next line Followed by some text on next line Followed by some text on next line Followed by some text on next line Followed by some text on next line Followed by some text on next line Followed by some text on next line Followed by some text on next line Followed by some text on next line Followed by some text on next line Followed by some text on next line Followed by some text on next line Followed by some text on next line Followed by some text on next line Followed by some text on next line Followed by some text on next line Followed by some text on next line Followed by some text on next line Followed by some text on next line Followed by some text on next line Followed by some text on next line Followed by some text on next line
-
+Followed by some text Followed by some text on next line 
 
 ![](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExcTM4eGtoNmlzcWZ3OGZyeXE3aDJqd2N3cjBia2owcTQ1bHZmaXh4bSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/ZaEUSTAoWGQDhJumTu/giphy.gif)
 - followed by bullets
