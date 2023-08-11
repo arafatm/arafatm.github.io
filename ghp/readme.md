@@ -7,15 +7,6 @@ title: arafatm template
 - `gh api --paginate /users/arafatm/repos | jq '.[] | select(.has_pages == true) | .name'`
 - Create repo & `ggit_arafatm; ggit_pages`
 
-<!-- vim-markdown-toc GFM -->
-
-* [Useful Links](#useful-links)
-* [Syntax](#syntax)
-  * [Math](#math)
-  * [Code](#code)
-
-<!-- vim-markdown-toc -->
-
 ## Useful Links
 
 - [CloudCannon Academy - Advanced navigation](https://learn.cloudcannon.com/jekyll/advanced-navigation/)
@@ -27,6 +18,23 @@ title: arafatm template
 
 ## Syntax
 
+    Block Text
+
+<details><summary>:bulb: Testing Code</summary>
+
+```ruby
+world = "world"
+puts "Hello #{world}"
+```
+
+Color `#0969DA`
+</details>
+
+> Multiline Quote :cry: <newline>
+> :bulb: bulb :knot:
+
+:bulb:
+
 This is some random text **This is bold text** _This text is italicized_ ~~This
 was mistaken text~~ This is some random text **This is bold text** _This text
 is italicized_ ~~This was mistaken text~~ This is some random text **This is
@@ -35,18 +43,6 @@ random text `with some code in the middle` **This is bold text** _This text is
 italicized_ ~~This was mistaken text~~ This is some random text **This is bold
 text** _This text is italicized_ ~~This was mistaken text~~ This is some random
 text **This is bold text** _This text is italicized_ ~~This was mistaken text~~
-
-> Multiline Quote :cry: <newline>
-> :bulb: bulb :knot:
-
-    Block Text
-
-```ruby
-world = "world"
-puts "Hello #{world}"
-```
-
-Color `#0969DA`
 
 - [ ] task A
 - [ ] :a: task B
@@ -69,6 +65,7 @@ Followed by some text Followed by some text on next line
 - Inline: `$$` $$f_{w,b}(x) = wx + b$$ is equivalent to asdf
 
 Block: 
+
 $$
 \begin{aligned}
 \text{repeat until convergence \{} \\ 
@@ -91,3 +88,58 @@ Test Code
 i = 56;
 puts "test #{i}"
 ```
+
+## Heading 2
+### Heading 3
+### Heading 4
+### Heading 5
+### Heading 6
+
+## Heading 2
+### Heading 3
+### Heading 4
+### Heading 5
+### Heading 6
+
+## Heading 2
+### Heading 3
+### Heading 4
+### Heading 5
+### Heading 6
+
+## Heading 2
+### Heading 3
+### Heading 4
+### Heading 5
+### Heading 6
+
+## Heading 2
+### Heading 3
+### Heading 4
+### Heading 5
+### Heading 6
+
+## Heading 2
+### Heading 3
+### Heading 4
+### Heading 5
+### Heading 6
+
+## Heading 2
+### Heading 3
+### Heading 4
+### Heading 5
+### Heading 6
+
+## Heading 2
+### Heading Heading 3 
+### Heading Heading 4 Heading
+### Heading 5 Heading Heading Heading
+### Heading 6 Heading Heading Heading Heading
+
+## Heading 2
+### Heading 3
+#### Heading 4
+##### Heading 5
+###### Heading 6
+
