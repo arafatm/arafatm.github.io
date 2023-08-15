@@ -1036,6 +1036,7 @@ Here is my recommendation for a typical 20-minute practice session at this stage
 
     1  +  2  +  3  +  4  +  1  +  2  +  3  +  4  +  1  +  2  +  3  +  4  +  1  +  2  +  3  +  4  +
     7     7  10 7     5     3           2           7        7  10 7  5     3  5  3  2 
+
 ##### Songs For Module 3
 
 - [Sing – Ed Sheeran](https://www.justinguitar.com/songs/sg-031)
@@ -1061,7 +1062,7 @@ Here is my recommendation for a typical 20-minute practice session at this stage
 #### 13 - Blues Guitar & Easy Improvisation
 #### 14 - Beginners: Get a PRO Upgrade
 #### Nitsuj - Grade 2 Practice Left Handed
-### Grade 3
+### Grade 3"
 #### 15 - Practice Better & Finger Gym Exercise
 #### 16 - Playing Melodies & Moving Chords Up
 #### 17 - Finger Strums, Triads, & The Musician in You
