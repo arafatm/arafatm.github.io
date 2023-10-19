@@ -552,17 +552,20 @@ raises and weighted push-ups.
 
 ### Sample dynamic bench press workouts:
 
-#### Workout #1: bench press 8x3x45%/raw max using one chain per side 4- or 5-board
-press work up to 2–3x5 lat pull downs 3x15 rear delt raises 3x15 upper body
-sled work 2–3 trips with very light weight
+#### Workout #1: bench press 8x3x45%/raw max using one chain per side 4- or 5-board press 
 
-#### Workout #2: bench press 10x3x35%/meet best close grip press 5x5 elbows out
-extensions 2x20 hammer curls 2x20 reverse hypers 2–3 light sets each for 25–35
-reps ab work 2–3 light sets each for 25–35 reps
+work up to 2–3x5 lat pull downs 3x15 rear delt raises 3x15 upper body sled work
+2–3 trips with very light weight
 
-#### Workout #3: bench press 8x3x45%/raw max using mini bands dumbbell extensions
-5x12 lying on the floor chest supported rows 5x12 one arm side delt raise 2x15
-rotator cuff work 4–8 light sets
+#### Workout #2: bench press 10x3x35%/meet best close grip press 5x5 
+
+elbows out extensions 2x20 hammer curls 2x20 reverse hypers 2–3 light sets each
+for 25–35 reps ab work 2–3 light sets each for 25–35 reps
+
+#### Workout #3: bench press 8x3x45%/raw max using mini bands 
+
+dumbbell extensions 5x12 lying on the floor chest supported rows 5x12 one arm
+side delt raise 2x15 rotator cuff work 4–8 light sets
 
 ### Dynamic effort guidelines:
 
@@ -577,25 +580,19 @@ Use maximum force no matter what the bar weight is.
 Do heavier sets occasionally to monitor bar speed.
 
 ### Dynamic effort standards:
-
-Load: 40–60%
-
-DE exercises per workout: 1 (2 when doing deadlifts and box squats )
-
-DE exercises per week 1–2 for squat/deadlift and 1 for bench
-
-Reps 2 for squat, 3 for bench, 1 for deadlift
-
-Rest 30–90 seconds
-
-Weeks per DE exercise 3–4 week mini-periods
+- Load: 40–60%
+- DE exercises per workout: 1 (2 when doing deadlifts and box squats )
+- DE exercises per week 1–2 for squat/deadlift and 1 for bench
+- Reps 2 for squat, 3 for bench, 1 for deadlift
+- Rest 30–90 seconds
+- Weeks per DE exercise 3–4 week mini-periods
 
 ## DEVELOPING SPECIAL STRENGTHS
 
-Being fast won’t do it alone and being strong won’t do it alone.
+> Being fast won’t do it alone and being strong won’t do it alone.
 
-Remember two important points—be very explosive and accelerate throughout the
-movement and you only have so long to complete a max lift or a work set. When
+Remember two important points __be very explosive and accelerate throughout the
+movement__ and you only have so long to complete a max lift or a work set. When
 time runs out and your muscles don’t work under the load anymore, you will
 fail.
 
@@ -679,7 +676,7 @@ force as quickly as possible after an intense muscular stretch.
 Explosive strength is developed after a strong stretch that builds kinetic
 energy during the lowering phase in different forms.
 
-Shock training builds explosive strength.
+### Shock training builds explosive strength.
 
 Some examples include: hang cleans or hang snatches depth jumps push jerks
 
@@ -733,10 +730,7 @@ When performed slowly, it greatly contributes to muscle hypertrophy (growth).
 We also know that in an attempt to raise absolute strength, eccentric training
 alone fails miserably.
 
-research that shows that most injuries occur during the yielding or eccentric
-phase.
-
-most injuries occur during the yielding or eccentric phase.
+> most injuries occur during the yielding or eccentric phase.
 
 Vince told me that anything will make your deadlift go up, except eccentrics.
 
@@ -788,7 +782,7 @@ Because this myotatic reflex is counterbalanced by the Golgi tendon reflex, an
 inhibition of muscle action occurs, causing a less than maximal concentric
 phase.
 
-Simply said, the faster down, the faster up.
+> Simply said, the faster down, the faster up.
 
 Learn to relax to reduce some muscle tension in the eccentric phase to prevent
 inhibiting the stretch reflex,
@@ -908,7 +902,7 @@ A heavy effort means weights above 90% of a 1RM. Lifting weights at 90% or more
 for three weeks or longer will cause a negative effect on the central nervous
 system.
 
-switch the core lift each week.
+> switch the core lift each week.
 
 The same holds true for bench pressing. The floor press, board press, rack
 work, incline, decline, and others are conjugate exercises.
@@ -930,12 +924,12 @@ Bompa or Vladimir Zatsiorsky.
 > At Westside, we follow the “rule of 60%.” An extreme workout should occur
 > every 72 hours. The max effort day will be about 60% of the dynamic day.
 
-1. __First wave__: light band, 70 lbs of tension 325 10 sets 2 reps 375 10 sets 2
-   reps 415 8 sets 2 reps
-2. __Second wave__: medium band, 140 lbs of tension 325 10 sets 2 reps 375 10 sets
+1. __First wave__: light band, 70 lbs of tension 325 10 sets 2 reps 375 10 sets
    2 reps 415 8 sets 2 reps
-3. __Third wave__: strong band, 260 lbs of tension 325 8 sets 2 reps 375 8 sets 2
-   reps 415 6 sets 2 reps
+2. __Second wave__: medium band, 140 lbs of tension 325 10 sets 2 reps 375 10
+   sets 2 reps 415 8 sets 2 reps
+3. __Third wave__: strong band, 260 lbs of tension 325 8 sets 2 reps 375 8 sets
+   2 reps 415 6 sets 2 reps
 
 ### Intensity Zone Loading
 
@@ -1007,7 +1001,7 @@ Someone with little knowledge will try to build the quads to increase their
 squat. But this will reduce hip flexion, resulting in difficulty reaching a
 parallel position in the squat and destroying the lockout in the deadlift
 
-Beginners should learn form first and then add chains and later on bands.
+> Beginners should learn form first and then add chains and later on bands.
 
 > There should be no circa-max squatting until you can squat three and a half
 > times your body weight.
@@ -1017,10 +1011,12 @@ Beginners should learn form first and then add chains and later on bands.
 On Sunday, we use the dynamic method. We do 8–10 sets of 3 reps
 
 It’s best to use three or more grips in a workout. Most of the sets are done
-with a grip inside the power rings on the bar, or with the little finger inside the ring
+with a grip inside the power rings on the bar, or with the little finger inside
+the ring
 
 
-Using grips inside the rings will aid greatly in triceps and anterior delt development.
+Using grips inside the rings will aid greatly in triceps and anterior delt
+development.
 
 The reps must be very explosive. Lower the bar quickly but with control.
 
@@ -1047,12 +1043,15 @@ The palms should be facing inward toward the body when dumbbells are used for
 extensions. When a barbell is used, 40 reps should be done, bringing the bar to
 the forehead, chin, or throat.
 
-After triceps, do front raises with a bar, plate, or dumbbells. Use heavy weights.
+After triceps, do front raises with a bar, plate, or dumbbells. Use heavy
+weights.
 
 Also, do side delts with dumbbells or a cable, rear delts, 4–5 sets of lats,
-and a few hammer curls. Do delt and lat work by feel but continously do more and heavier weight.
+and a few hammer curls. Do delt and lat work by feel but continously do more
+and heavier weight.
 
-This workout is done on Sunday and should last no longer than one hour and ten minutes. 
+This workout is done on Sunday and should last no longer than one hour and ten
+minutes. 
 
 ### Here are a few examples
 
@@ -1064,13 +1063,13 @@ _Speed bench off power rack pins_: Set the pins at chest level. Lower the bar
 to the pins, relax for a second, and then blast the bar to completion. This is
 relaxed-overcome-by-dynamic-work. Use bands or chains.
 
-_Buffalo bar_: The same can be done with a Buffalo bar. It has a two-inch camber.
-Bill Gillespie of the Seattle Seahawks used this method and the previous one to
-their fullest and so far has a 782 bench to prove it.
+_Buffalo bar_: The same can be done with a Buffalo bar. It has a two-inch
+camber. Bill Gillespie of the Seattle Seahawks used this method and the
+previous one to their fullest and so far has a 782 bench to prove it.
 
-_Floor press_: Chuck Scherza uses the floor press for his dynamic work. His bench
-has gone from 525 to about 700 with this method. By the way, Chuck had triceps
-surgery after he did the 525 bench.
+_Floor press_: Chuck Scherza uses the floor press for his dynamic work. His
+bench has gone from 525 to about 700 with this method. By the way, Chuck had
+triceps surgery after he did the 525 bench.
 
 _Incline or decline press_: Incline and decline press with a bar can also be
 used. Use jump- stretch bands to accommodate resistance and to build starting
@@ -1078,19 +1077,22 @@ and accelerating strength. You can even use bands with dumbbells by placing the
 band around your back and looping the ends over your palms before you pick up
 the dumbbells.
 
-_Lightened method_: This is done by attaching bands at the top of a power rack or
-Monolift to reduce the bar weight at the chest.
+_Lightened method_: This is done by attaching bands at the top of a power rack
+or Monolift to reduce the bar weight at the chest.
 
-> Blue bands reduce the weight by 150 lbs at the chest, green bands by 95 lbs, and purple bands by 65…
+> Blue bands reduce the weight by 150 lbs at the chest, green bands by 95 lbs,
+> and purple bands by 65…
 
 ### Maximum Effort Day
 
 On Wednesday, the workout is called the maximum effort method day. When using a
 barbell, do singles. Naturally, work up slowly but always try a new max.
 
-We do many exercises on this day that resemble the bench press but are not regular bench presses.
+We do many exercises on this day that resemble the bench press but are not
+regular bench presses.
 
-We train at 100% plus all year long by changing a barbell exercise every 2-3 weeks.
+We train at 100% plus all year long by changing a barbell exercise every 2-3
+weeks.
 
 ### There are three standard methods of training.
 
@@ -1137,9 +1139,8 @@ or weight releasers to cause the reactive method effect.
 
 ### Dynamic method 
 
-Do regular benches with 40–55% of the shirtless max. Lower the
-bar quickly and reverse as fast as possible to completion. Do 8–10 sets of
-three reps.
+Do regular benches with 40–55% of the shirtless max. Lower the bar quickly and
+reverse as fast as possible to completion. Do 8–10 sets of three reps.
 
 ### Ballistic method 
 
@@ -1166,13 +1167,13 @@ Use two mini-bands in the same manner as above.
 
 ### Speed bench off power rack pins 
 
-Set the pins at chest level. Lower the bar to
-the pins and relax for a second. Then blast up to full completion.
+Set the pins at chest level. Lower the bar to the pins and relax for a second.
+Then blast up to full completion.
 
 ### Incline or decline press 
 
-The incline or decline press with a barbell can also
-be used. Use jump-stretch bands to accommodate resistance
+The incline or decline press with a barbell can also be used. Use jump-stretch
+bands to accommodate resistance
 
 You can even use bands with dumbbells by placing the band around your back and
 looping the ends over your palms before you pick up the dumbbells.
@@ -1205,10 +1206,9 @@ again and do a final set.
 will now outline a six-week program. The sequence can change to fit your
 preferences, and you can add or replace the core exercises in this program.
 
-#### Workout # 1: 
+#### Workout # 1: Do floor press with 200 lbs of chain draped over the sleeve. 
 
-Do floor press with 200 lbs of chain draped over the sleeve. Next, add weight
-to the bar until a max on that day results.
+Next, add weight to the bar until a max on that day results.
 
 Try a new max or the most on this day. Then, as on speed day, do triceps, lats,
 upper back, and rear and side delts.
@@ -1220,18 +1220,16 @@ Although anyone can use any amount of chain to set a record, you have five
 workouts to choose from if you use two different grips with all three chain
 weights.
 
-#### Workout #2: 
-
-Do overhead band presses or the lightened method by attaching a jump-stretch
-band at the top
+#### Workout #2: Do overhead band presses or the lightened method by attaching a jump-stretch band at the top
 
 Get a PR with a close grip and a wide grip with three different band strengths
 and two different grips. This represents five completely different workouts.
 
 Always follow with triceps, lats, upper back, and rear and side delts.
 
-#### Workout #3: Do football bar presses. This bar allows the palms to face each
-other.
+#### Workout #3: Do football bar presses. 
+
+This bar allows the palms to face each other.
 
 We use it by itself or with mini-bands, light bands, or a set(s) of chains.
 
@@ -1249,8 +1247,10 @@ Last, do upper back, rear and side delts, and hammer curls.
 two different band tensions, three chain weights, and three grips to choose
 from adds up to eight different workout PRs to break.
 
-#### Workout #4: Do illegally wide benching. Take a grip outside the power ring,
-wider than allowed at a contest. Work up to a max of six-reps.
+#### Workout #4: Do illegally wide benching. 
+
+Take a grip outside the power ring, wider than allowed at a contest. Work up to
+a max of six-reps.
 
 On the day after benching, do dumbbells on an incline or decline for several
 sets. This is primarily a hypertrophy day.
@@ -1278,11 +1278,12 @@ if you miss a heavy lift, it wasn’t too heavy but wasn’t lifted fast enough.
 
 ## THE SQUAT
 
-Using the Box in the Squat
+### Using the Box in the Squat
 
-Box squatting is the most effective method to produce a first-rate squat. This
-is, in my opinion, the safest way to squat because you don’t use as much weight
-as you would with a regular squat.
+> Box squatting is the most effective method to produce a first-rate squat. 
+
+This is, in my opinion, the safest way to squat because you don’t use as much
+weight as you would with a regular squat.
 
 By doing sets of two reps for at least eight sets with short rest periods, you
 will get about a 200-lb carryover to your regular squat.
@@ -1322,7 +1323,7 @@ off.
 Box squats are much harder than full squats! Do 8–12 sets of two reps with a
 one-minute rest between sets. This is a tough workout!
 
-Squat Training
+### Squat Training
 
 First, if you can’t sit back in the squat, your glutes and hamstrings are weak.
 Try glute ham raises.
@@ -1352,11 +1353,13 @@ you know how to squat, there is no need to do extra actual squatting. In fact,
 if your squat form is not correct, more squatting will reinforce the same bad
 form.
 
-If your back is weak, you will bend over causing bad form. If your glutes and
-hamstrings are weak, it is hard to sit back properly. If your abs are weak, you
-will be weak in the bottom and fold over.
+> If your back is weak, you will bend over causing bad form. 
 
-Periodization in Squat Training
+> If your glutes and hamstrings are weak, it is hard to sit back properly. 
+
+> If your abs are weak, you will be weak in the bottom and fold over.
+
+### Periodization in Squat Training
 
 One must develop speed-strength, which is the ability to accelerate with light
 to medium loads, creating explosive force.
@@ -1373,7 +1376,7 @@ reflex and providing an equally fast concentric phase.
 Several bars can be used on squat day. I use the safety squat bar on speed day
 quite often
 
-if the weights are too light, the bar moves too fast, and force is not
+If the weights are too light, the bar moves too fast, and force is not
 developed.
 
 The squat day on boxes is Friday and maximal effort day is Monday.
@@ -1382,7 +1385,7 @@ Monday is devoted to exercises for the squat as well as the deadlift. A core
 lift such as a good morning or a safety squat bar squat is done followed by 2–3
 special exercises for the trunk, glutes, hamstrings, or hips.
 
-Intensity Loading for the Squat
+### Intensity Loading for the Squat
 
 For squatting, we use a pendulum wave of three weeks. A squat cycle of a box is
 50–60% of contest max, always accommodating resistance.
@@ -1391,80 +1394,67 @@ The simplest method is to use chains.
 
 Weekly load is five sets of two reps.
 
-Sample Squat Workouts
+### Sample Squat Workouts
 
-First wave with the safety squat bar: Week 1: 8 sets of 2 reps with 325 plus
-light bands Week 2: 8 sets of 2 reps with 375 plus light bands Week 3: 6 sets
-of 2 reps with 415 plus light bands Week 4: 8 sets of 2 reps with 325 plus
-medium bands Week 5: 8 sets of 2 reps with 375 plus medium bands Week 6: 6 sets
-of 2 reps with 415 plus medium bands
+#### First wave with the safety squat bar: 
+- Week 1: 8 sets of 2 reps with 325 plus light bands
+- Week 2: 8 sets of 2 reps with 375 plus light bands
+- Week 3: 6 sets of 2 reps with 415 plus light bands
+- Week 4: 8 sets of 2 reps with 325 plus medium bands
+- Week 5: 8 sets of 2 reps with 375 plus medium bands
+- Week 6: 6 sets of 2 reps with 415 plus medium bands
 
-Switch to a 14-inch cambered bar: Week 7: 8 sets of 2 reps with 405 plus strong
-bands Week 8: 8 sets of 2 reps with 465 plus strong bands Week 9: 6 sets of 2
-reps with 505 plus strong bands
+#### Switch to a 14-inch cambered bar:
+- Week 7: 8 sets of 2 reps with 405 plus strong bands
+- Week 8: 8 sets of 2 reps with 465 plus strong bands
+- Week 9: 6 sets of 2 reps with 505 plus strong bands
 
-Circa-max phase: Week 10: 5 sets of 2 reps with 435 plus medium and strong
-bands Week 11: 4 sets of 2 reps with 465 plus medium and strong bands Week 12:
-work up to 565 with medium and strong bands, about 350 lbs of band tension at
-the top
+#### Circa-max phase:
+- Week 10: 5 sets of 2 reps with 435 plus medium and strong bands
+- Week 11: 4 sets of 2 reps with 465 plus medium and strong bands
+- Week 12: work up to 565 with medium and strong bands, about 350 lbs of band tension at the top
 
-Deload phase: Week 13: work up to 565 with one strong band for 1 rep Week 14:
-work up to 405 plus 120 lbs of chain for 3 sets of 2 reps Week 15 (meet): 2005
-IPA Nationals
+#### Deload phase:
+- Week 13: work up to 565 with one strong band for 1 rep
+- Week 14: work up to 405 plus 120 lbs of chain for 3 sets of 2 reps
+- Week 15 (meet): 2005 IPA Nationals
 
 After Friday’s squat workout:
-
-Speed pulls: 335 plus 100 lbs of band tension at the start and 220 at lockout,
-5–8 singles
-
-Forty-five-degree hypers: 3–5 sets with 45–135, 2–6 reps
-
-Calf/ham glute raises with a 45-lb plate, 4–6 sets of 3–6 reps
-
-Abs of some kind
-
-Roller reverse hyper machine, 280 for 3x10
-
-Strap reverse hyper machine, 380 for 3x10
+- Speed pulls: 335 plus 100 lbs of band tension at the start and 220 at lockout, 5–8 singles
+- Forty-five-degree hypers: 3–5 sets with 45–135, 2–6 reps
+- Calf/ham glute raises with a 45-lb plate, 4–6 sets of 3–6 reps
+- Abs of some kind
+- Roller reverse hyper machine, 280 for 3x10
+- Strap reverse hyper machine, 380 for 3x10
 
 ## DEADLIFT TRAINING
 
 There are close to hundred 700-lb benchers and over 50, 1000-lb squatters. But
-when one looks at the deadlift, there are only eight, 900 plus deadlifters.
+when one looks at the deadlift, there are __only eight, 900 plus deadlifters__.
 
-several reasons for this. One is the lack of supportive gear
+Several reasons for this. One is the lack of supportive gear
 
 Some lifters are born to deadlift (i.e., short back, long arms, and large
 hands). In fact, most big deadlifters lack a big bench except for Gary.
 
-Exercises for the Deadlift
+### Exercises for the Deadlift
+- Jump-stretch band pulls:
+- Ultra-wide deadlifts, sumo style:
+- Rack pulls:
+- Dave Draper’s squat device:
+- Belt squats:
+- Glute ham raises: These are to be done to 2–10 reps per set,
+- Pull-throughs:
+- Modified glute ham raises:
+- Band leg curls:
+- Band good mornings:
 
-Jump-stretch band pulls:
-
-Ultra-wide deadlifts, sumo style:
-
-Rack pulls:
-
-Dave Draper’s squat device:
-
-Belt squats:
-
-The deadlift is done for singles, squats 1–3 reps, and good mornings 1–5 reps.
-
-Glute ham raises: These are to be done to 2–10 reps per set,
-
-Pull-throughs:
-
-Modified glute ham raises:
-
-Band leg curls:
-
-Band good mornings:
+> The deadlift is done for singles, squats 1–3 reps, and good mornings 1–5 reps.
 
 For grip, Ed Coan told me to train the fingers to hold on to the bar. Training
 the forearms makes them bigger and your hands thicker, making your grip worse.
 
-Using the Conjugate Method in the Deadlift
+### Using the Conjugate Method in the Deadlift
 
 I like the safety squat bar for this exercise.
 
@@ -1480,7 +1470,7 @@ holding the bell end of a hex dumbbell.
 
 Pay attention to stretching and joint mobility work. Ab work is also essential.
 
-The Reverse Hyper Extension Machine
+### The Reverse Hyper Extension Machine
 
 will not only build the hamstrings, glutes, and spinal erectors but also
 traction the low back by rotating the sacrum and rehydrating the disks.
@@ -1488,87 +1478,66 @@ traction the low back by rotating the sacrum and rehydrating the disks.
 This machine is used at least four times a week.
 
 Westside Favorite Types of Deadlifts
+- Jump Stretch band pulls:
+- A second method is to drape chains over the bar.
+- Ultra-wide deadlifts, sumo style: This develops extremely strong hip muscles.
+- Box deadlifts: This is a productive method. These are done by standing on a platform
+- Rack pulls:
 
-Jump Stretch band pulls:
+### Periodization for the Deadlift
 
-A second method is to drape chains over the bar.
-
-Ultra-wide deadlifts, sumo style: This develops extremely strong hip muscles.
-
-Box deadlifts: This is a productive method. These are done by standing on a
-platform
-
-record.Rack pulls:
-
-Periodization for the Deadlift
-
-train the deadlift in a multi- year plan. An 8–12 week cycle won’t work.
+> Train the deadlift in a multi- year plan. An 8–12 week cycle won’t work.
 
 For the advanced lifter, do three lifts, all singles—one at roughly 90% and
 then a PR, and if it is truly a max, stop. If not, try one more.
 
-Here are several workouts for the deadlift that can be coupled any way you
-want.
+### Here are several workouts for the deadlift that can be coupled any way you want.
 
-Workout 1: Safety squat bar squats on a 12-inch box. Work up to max. Next,
-glute ham raises, the reverse hyper, and abs.
+- __Workout 1__: Safety squat bar squats on a 12-inch box. Work up to max. Next,
+  glute ham raises, the reverse hyper, and abs.
+- __Workout 2__: Bent-over good mornings to a max single or a three-rep max. Then
+  sled pulling for eight trips of 200 feet with moderate weight, the reverse
+  hyper, lat rows on a chest supported machine, and abs.
+- __Workout 3__: Deadlift using the lightened method by placing the jump-stretch
+  bands at 5 feet 6 inches off the floor to lighten the load by 65, 110, or 150
+  lbs. Work up to a max. Next, do pull-throughs, dumbbell rows, the reverse
+  hyper machine, and leg raises.
+- __Workout 4__: Front squat on a parallel box. Try a new max, a single or a
+  three-rep max. Next do glute ham raises, sled pulling with ankle straps, the
+  reverse hyper machine, and standing ab work.
+- __Workout 5__: Rack pulls with the plates two inches off the floor for a max
+  single, pull-throughs, incline sit ups,…
+- __Workout 6__: Heavy sled pulls with a belt around the waist for six pulls at 200
+  feet a pull. Then glute ham raises, dumbbell rows,…
+- __Workout 7__: Cambered bar good mornings. First bend over close to parallel. Now
+  squat as low as comfortable and then raise up. Work up to a single or a
+  three-rep max. Then do pull-throughs, snatch grip rows,…
+- __Workout 8__: Arched back good mornings. Remember, when doing a good morning,
+  the bar must be in front of the knees. If not, it is a quarter squat. Work up
+  to a max single or a triple. Pull a sled backward for six trips of 200 feet
+  each. Barbell rows…
+- __Workout 9__: Concentric safety squat bar good mornings. Crawl under a bar that
+  is suspended three feet off the floor and do good mornings. Do a max single.
+  Then glute ham raises, chest…
+- __Workout 10–14__: Band deadlifts on a platform. Here, you can use one or two
+  mini-bands, or purple, green, or blue bands. This is workout 10–14 if you use
+  a different strength band each of these weeks. Work up to a max single. Then
+  perform chest supported…
+- __Workout 15–17__: Suspend the Buffalo bar or 14-inch cambered bar or do Zercher
+  squats with a suspended bar. This is workout 15–17. Then pull a sled with a
+  power belt for four trips of 200 feet backwards. Then…
+- __Workout 18__: Box deadlifts off a four-inch box for…
+- __Workout 19__: Sumo deadlifts off a two-inch box. Then do hanging leg raises,
+  pull-throughs, and…
+- __Workout 20–22__: Belt squats off a low box. Workout 21 is off a parallel box.
+  Workout 22 is off a high box. For these workouts use a very wide stance. If
+  you use the same boxes but with a…
+- __Workout 26__: One-legged squats with a straddle stance. Support the back foot
+  on a box while the front foot is far out in front. This will build the entire
+  leg while increasing flexibility in the hip and groin. Then do Janda sit-ups,
+  backward sled pulling for six…
 
-Workout 2: Bent-over good mornings to a max single or a three-rep max. Then
-sled pulling for eight trips of 200 feet with moderate weight, the reverse
-hyper, lat rows on a chest supported machine, and abs.
-
-Workout 3: Deadlift using the lightened method by placing the jump-stretch
-bands at 5 feet 6 inches off the floor to lighten the load by 65, 110, or 150
-lbs. Work up to a max. Next, do pull-throughs, dumbbell rows, the reverse hyper
-machine, and leg raises.
-
-Workout 4: Front squat on a parallel box. Try a new max, a single or a
-three-rep max. Next do glute ham raises, sled pulling with ankle straps, the
-reverse hyper machine, and standing ab work.
-
-Workout 5: Rack pulls with the plates two inches off the floor for a max
-single, pull-throughs, incline sit ups,…
-
-Workout 6: Heavy sled pulls with a belt around the waist for six pulls at 200
-feet a pull. Then glute ham raises, dumbbell rows,…
-
-Workout 7: Cambered bar good mornings. First bend over close to parallel. Now
-squat as low as comfortable and then raise up. Work up to a single or a
-three-rep max. Then do pull-throughs, snatch grip rows,…
-
-Workout 8: Arched back good mornings. Remember, when doing a good morning, the
-bar must be in front of the knees. If not, it is a quarter squat. Work up to a
-max single or a triple. Pull a sled backward for six trips of 200 feet each.
-Barbell rows…
-
-Workout 9: Concentric safety squat bar good mornings. Crawl under a bar that is
-suspended three feet off the floor and do good mornings. Do a max single. Then
-glute ham raises, chest…
-
-Workout 10–14: Band deadlifts on a platform. Here, you can use one or two
-mini-bands, or purple, green, or blue bands. This is workout 10–14 if you use a
-different strength band each of these weeks. Work up to a max single. Then
-perform chest supported…
-
-Workout 15–17: Suspend the Buffalo bar or 14-inch cambered bar or do Zercher
-squats with a suspended bar. This is workout 15–17. Then pull a sled with a
-power belt for four trips of 200 feet backwards. Then…
-
-Workout 18: Box deadlifts off a four-inch box for…
-
-Workout 19: Sumo deadlifts off a two-inch box. Then do hanging leg raises,
-pull-throughs, and…
-
-Workout 20–22: Belt squats off a low box. Workout 21 is off a parallel box.
-Workout 22 is off a high box. For these workouts use a very wide stance. If you
-use the same boxes but with a…
-
-Workout 26: One-legged squats with a straddle stance. Support the back foot on
-a box while the front foot is far out in front. This will build the entire leg
-while increasing flexibility in the hip and groin. Then do Janda sit-ups,
-backward sled pulling for six…
-
-Speed Training for the…
+## Speed Training for the Deadlift
 
 These can be done on either dynamic squat day or max effort day. When using
 60–70%, do between 6–10 singles. The rest intervals are important, 30–45
@@ -1582,7 +1551,7 @@ work at all angles of a lift.
 
 “If you are going to a knife fight take your guns.”
 
-Accommodating Resistance
+### Accommodating Resistance
 
 Accommodation causes your performance to stagnate or decrease.
 
@@ -1605,7 +1574,7 @@ and acceleration.
 You must bring up your weaknesses through special work and develop special
 strength such as starting, accelerating, eccentric, and concentric strength.
 
-Using Chains in Training
+### Using Chains in Training
 
 There are many keys to success, but two invaluable ones are accelerating
 strength training and accommodating resistance by adding chains or bands or
@@ -1618,16 +1587,13 @@ A special note: Lower the bar fast and try to catch and reverse the weight as
 fast as possible. Never pause.
 
 Training with chains in this manner accomplishes three things:
-
-We have maintained our original weight in order to use the correct percentage
-for explosive training.
-
-We have overloaded the top portion of the lift, which normally does not receive
-sufficient work because of increased body leverage at this position.
-
-A neurological response to build explosive strength is developed. This training
-will train you to drive to the top because you can’t slack off at the top phase
-as you used to.
+- We have maintained our original weight in order to use the correct percentage
+  for explosive training.
+- We have overloaded the top portion of the lift, which normally does not
+  receive sufficient work because of increased body leverage at this position.
+- A neurological response to build explosive strength is developed. This
+  training will train you to drive to the top because you can’t slack off at
+  the top phase as you used to.
 
 about 10% of your squat weight should be added with chain weight.
 
