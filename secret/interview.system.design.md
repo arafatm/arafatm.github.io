@@ -482,107 +482,6 @@ scale the data tier.
 
 There are two broad approaches for database scaling: __vertical scaling and horizontal scaling__.
 
-### Vertical scaling
-
-Vertical scaling, also known as scaling up, is the scaling by adding more power
-(CPU, RAM, DISK, etc.) to an existing machine. There are some powerful database
-servers. According to Amazon Relational Database Service (RDS) [12], you can
-get a database server with 24 TB of RAM. This kind of powerful database server
-could store and handle lots of data. For example, stackoverflow.com in 2013 had
-over 10 million monthly unique visitors, but it only had 1 master database
-[13]. However, vertical scaling comes with some serious drawbacks:
-- You can _add more CPU, RAM, etc_. to your database server, but there are
-  __hardware limits__. If you have a large user base, a single server is not
-  enough.
-- Greater risk of __single point of failures__.
-- The __overall cost__ of vertical scaling is high. Powerful servers are much
-  more expensive.
-
-<!-- vim-markdown-toc GFM -->
-
-  * [Horizontal scaling](#horizontal-scaling)
-  * [Millions of users and beyond](#millions-of-users-and-beyond)
-  * [Reference materials](#reference-materials)
-* [CHAPTER 2: BACK-OF-THE-ENVELOPE ESTIMATION](#chapter-2-back-of-the-envelope-estimation)
-* [Notes](#notes)
-* [CHAPTER 3: A FRAMEWORK FOR SYSTEM DESIGN INTERVIEWS](#chapter-3-a-framework-for-system-design-interviews)
-* [CHAPTER 4: DESIGN A RATE LIMITER](#chapter-4-design-a-rate-limiter)
-* [CHAPTER 5: DESIGN CONSISTENT HASHING](#chapter-5-design-consistent-hashing)
-* [CHAPTER 6: DESIGN A KEY-VALUE STORE](#chapter-6-design-a-key-value-store)
-* [CHAPTER 7: DESIGN A UNIQUE ID GENERATOR IN DISTRIBUTED SYSTEMS](#chapter-7-design-a-unique-id-generator-in-distributed-systems)
-* [CHAPTER 8: DESIGN A URL SHORTENER](#chapter-8-design-a-url-shortener)
-* [CHAPTER 9: DESIGN A WEB CRAWLER](#chapter-9-design-a-web-crawler)
-* [CHAPTER 10: DESIGN A NOTIFICATION SYSTEM](#chapter-10-design-a-notification-system)
-* [CHAPTER 11: DESIGN A NEWS FEED SYSTEM](#chapter-11-design-a-news-feed-system)
-* [CHAPTER 12: DESIGN A CHAT SYSTEM](#chapter-12-design-a-chat-system)
-* [CHAPTER 13: DESIGN A SEARCH AUTOCOMPLETE SYSTEM](#chapter-13-design-a-search-autocomplete-system)
-* [CHAPTER 14: DESIGN YOUTUBE](#chapter-14-design-youtube)
-* [CHAPTER 15: DESIGN GOOGLE DRIVE](#chapter-15-design-google-drive)
-* [CHAPTER 16: THE LEARNING CONTINUES](#chapter-16-the-learning-continues)
-  * [Real-world systems](#real-world-systems)
-  * [Company engineering blogs](#company-engineering-blogs)
-* [AFTERWORD](#afterword)
-
-<!-- vim-markdown-toc -->
-### Horizontal scaling
-
-Horizontal scaling, also known as __sharding__, is the practice of adding more servers. Figure 1-
-20 compares vertical scaling with horizontal scaling.
-
-![vertical scaling](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/01.20.png)
-
-Sharding separates large databases into smaller, more easily managed parts
-called shards. Each shard shares the same schema, though the actual data on
-each shard is unique to the shard.
-
-Figure 1-21 shows an example of sharded databases. User data is allocated to a database
-server based on user IDs. Anytime you access data, a _hash function is used to find the
-corresponding shard_. In our example, `user_id % 4` is used as the hash
-function. If the result equals to 0, shard 0 is used to store and fetch data.
-If the result equals to 1, shard 1 is used.
-
-![sharding](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/01.21.png)
-
-The same logic applies to other shards.
-
-Figure 1-22 shows the user table in sharded databases.
-
-![DB sharding](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/01.21.png)
-
-The most important factor to consider when implementing a sharding strategy is
-the choice of the sharding key. Sharding key (known as a partition key)
-consists of one or more columns that determine how data is distributed. As
-shown in Figure 1-22, “user_id” is the sharding key. A sharding key allows you
-to retrieve and modify data efficiently by routing database queries to the
-correct database. When choosing a sharding key, one of the most important
-criteria is to choose a key that can evenly distributed data.
-
-Sharding is a great technique to scale the database but it is far from a
-perfect solution. It introduces complexities and new challenges to the system:
-- __Resharding data__: Resharding data is needed when 1) a single shard could
-  no longer hold more data due to rapid growth. 2) Certain shards might
-  experience shard exhaustion faster than others due to uneven data
-  distribution. When shard exhaustion happens, it requires updating the
-  sharding function and moving data around. _Consistent hashing_, which will be
-  discussed in Chapter 5, is a commonly used technique to solve this problem.
-- __Celebrity problem__: This is also called a hotspot key problem. Excessive
-  access to a specific shard could cause server overload. Imagine data for Katy
-  Perry, Justin Bieber, and Lady Gaga all end up on the same shard. For social
-  applications, that shard will be overwhelmed with read operations. To solve
-  this problem, we may need to allocate a shard for each celebrity. Each shard
-  might even require further partition.
-- __Join and de-normalization__: Once a database has been sharded across
-  multiple servers, it is hard to perform join operations across database
-  shards. A common workaround is to denormalize the database so that queries
-  can be performed in a single table.
-
-In Figure 1-23, we shard databases to support rapidly increasing data traffic.
-At the same time, some of the non-relational functionalities are moved to a
-NoSQL data store to reduce the database load. Here is an article that covers
-many use cases of NoSQL [14].
-
-![Final Architecture](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/01.23.png)
-
 ### Millions of users and beyond
 
 Scaling a system is an __iterative process__. Iterating on what we have learned
@@ -633,10 +532,10 @@ numbers to get a good feel for which designs will meet your requirements” [1].
 
 You need to have a good sense of scalability basics to effectively carry out
 back-of-theenvelope estimation. The following concepts should be well
-understood: power of two [2], latency numbers every programmer should know, and
-availability numbers.
+understood: __power of two__ [2], __latency__ numbers every programmer should know, and
+__availability__ numbers.
 
-Power of two
+### Power of two
 
 Although data volume can become enormous when dealing with distributed systems,
 calculation all boils down to the basics. To obtain correct calculations, it is critical to know
