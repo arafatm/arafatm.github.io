@@ -68,7 +68,7 @@ permalink: /interview/system-design
 
 ### Single server setup
 
-![single server setup](https://github.com/arafatm/assets/blob/main/img/system.design/01.02.png)
+![single server setup](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/01.02.png)
 
 To understand this setup, it is helpful to investigate the _request flow_ and _traffic source_. 
 
@@ -109,7 +109,7 @@ GET /users/12 – Retrieve user object for id = 12
 
 Split Web/DB to allow independent scaling
 
-![db](https://github.com/arafatm/assets/blob/main/img/system.design/01.03.png)
+![db](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/01.03.png)
 
 ##### Which databases to use?
 
@@ -157,7 +157,7 @@ technique to address these problems.
 A load balancer evenly _distributes incoming traffic_ among web servers that
 are defined in a load-balanced set. 
 
-![load balancer](https://github.com/arafatm/assets/blob/main/img/system.design/01.04.png)
+![load balancer](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/01.04.png)
 
 As shown in Figure 1-4, users connect to the public IP of the load balancer
 directly. With this setup, _web servers are unreachable directly by clients_
@@ -200,7 +200,7 @@ writes; thus, the number of slave databases in a system is usually larger than
 the number of master databases_. Figure 1-5 shows a master database with
 multiple slave databases.
 
-![master slave](https://github.com/arafatm/assets/blob/main/img/system.design/01.05.png)
+![master slave](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/01.05.png)
 
 _Advantages_ of database replication:
 - Better _performance_: In the master-slave model, all writes and updates
@@ -238,7 +238,7 @@ materials [4][5].
 
 Figure 1-6 shows the system design after adding the load balancer and database replication.
 
-![1-6 db replication](https://github.com/arafatm/assets/blob/main/img/system.design/01.06.png)
+![1-6 db replication](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/01.06.png)
 
 Let us take a look at the design:
 - A user gets the IP address of the load balancer from DNS.
@@ -270,7 +270,7 @@ database__. The benefits of having a separate cache tier include better system
 performance, ability to reduce database workloads, and the ability to scale the
 cache tier independently. Figure 1-7 shows a possible setup of a cache server:
 
-![1-7 Cache](https://github.com/arafatm/assets/blob/main/img/system.design/01.07.png)
+![1-7 Cache](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/01.07.png)
 
 After receiving a request, a web server _first checks if the cache has the
 available response_. If it has, it sends data back to the client. If not, it
@@ -344,11 +344,11 @@ if CDN servers are in San Francisco, users in Los Angeles will get content
 faster than users in Europe. Figure 1-9 is a great example that shows how CDN
 improves load time.
 
-![CDN](https://github.com/arafatm/assets/blob/main/img/system.design/01.09.png)
+![CDN](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/01.09.png)
 
 Figure 1-10 demonstrates the CDN workflow.
 
-![CDN workflow](https://github.com/arafatm/assets/blob/main/img/system.design/01.10.png)
+![CDN workflow](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/01.10.png)
 
 1. User A tries to get image.png by using an image URL. The URL’s domain is
    provided by the CDN provider. The following two image URLs are samples used
@@ -385,7 +385,7 @@ Considerations of using a CDN
     number. For example, version number 2 is added to the query string:
     `image.png?v=2`.
 
-![CDN & cache](https://github.com/arafatm/assets/blob/main/img/system.design/01.11.png)
+![CDN & cache](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/01.11.png)
 
 Figure 1-11 shows the design after the CDN and cache are added.
 1. Static assets (JS, CSS, images, etc.,) are no longer served by web servers.
@@ -406,7 +406,7 @@ A stateful server and stateless server has some key differences. A stateful
 server remembers client data (state) from one request to the next. A __stateless
 server keeps no state information__.
 
-![stateful architecture](https://github.com/arafatm/assets/blob/main/img/system.design/01.12.png)
+![stateful architecture](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/01.12.png)
 
 In Figure 1-12, user A’s session data and profile image are stored in Server 1.
 To authenticate User A, HTTP requests must be routed to Server 1. If a request
@@ -426,7 +426,7 @@ failures_.
 
 Figure 1-13 shows the stateless architecture.
 
-![stateless architecture](https://github.com/arafatm/assets/blob/main/img/system.design/01.13.png)
+![stateless architecture](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/01.13.png)
 
 In this stateless architecture, HTTP requests from users can be sent to any web
 servers, which fetch state data from a shared data store. State data is stored
@@ -435,7 +435,7 @@ simpler, more robust, and scalable.
 
 Figure 1-14 shows the updated design with a stateless web tier.
 
-![stateless web tier](https://github.com/arafatm/assets/blob/main/img/system.design/01.14.png)
+![stateless web tier](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/01.14.png)
 
 In Figure 1-14, we _move the session data out of the web tier and store them in
 the persistent data store_. The shared data store could be a relational
@@ -457,7 +457,7 @@ with a split traffic of x% in US-East and (100 – x)% in US-West. __geoDNS__ is
 a DNS service that allows domain names to be resolved to IP addresses based on
 the location of a user.
 
-![DC](https://github.com/arafatm/assets/blob/main/img/system.design/01.15.png)
+![DC](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/01.15.png)
 
 In the event of any significant data center outage, we direct all traffic to a
 healthy data center.
@@ -465,7 +465,7 @@ healthy data center.
 In Figure 1-16, data center 2 (US-West) is offline, and 100% of the traffic is
 routed to data center 1 (US-East).
 
-![DC offline](https://github.com/arafatm/assets/blob/main/img/system.design/01.16.png)
+![DC offline](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/01.16.png)
 
 Several _technical challenges_ must be resolved to achieve multi-data center
 setup:
@@ -495,7 +495,7 @@ called __producers/publishers__, create messages, and publish them to a message
 queue. Other services or servers, called consumers/subscribers, connect to the
 queue, and perform actions defined by the messages. The model is shown in Figure 1-17.
 
-![MQ](https://github.com/arafatm/assets/blob/main/img/system.design/01.17.png)
+![MQ](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/01.17.png)
 
 Decoupling makes the message queue a preferred architecture for building a
 scalable and reliable application. With the message queue, the _producer can
@@ -513,7 +513,7 @@ workers are added to reduce the processing time.
 
 However, if the queue is empty most of the time, the number of workers can be reduced.
 
-![MQ Photos](https://github.com/arafatm/assets/blob/main/img/system.design/01.18.png)
+![MQ Photos](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/01.18.png)
 
 #### Logging, metrics, automation
 
@@ -548,7 +548,7 @@ data center is shown in the figure.
    loosely coupled and failure resilient.
 2. Logging, monitoring, metrics, and automation tools are included.
 
-![LMA](https://github.com/arafatm/assets/blob/main/img/system.design/01.19.png)
+![LMA](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/01.19.png)
 
 As the data grows every day, your database gets more overloaded. It is time to
 scale the data tier.
@@ -578,7 +578,7 @@ over 10 million monthly unique visitors, but it only had 1 master database
 Horizontal scaling, also known as __sharding__, is the practice of adding more servers. Figure 1-
 20 compares vertical scaling with horizontal scaling.
 
-![vertical scaling](https://github.com/arafatm/assets/blob/main/img/system.design/01.20.png)
+![vertical scaling](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/01.20.png)
 
 Sharding separates large databases into smaller, more easily managed parts
 called shards. Each shard shares the same schema, though the actual data on
@@ -590,13 +590,13 @@ corresponding shard_. In our example, `user_id % 4` is used as the hash
 function. If the result equals to 0, shard 0 is used to store and fetch data.
 If the result equals to 1, shard 1 is used.
 
-![sharding](https://github.com/arafatm/assets/blob/main/img/system.design/01.21.png)
+![sharding](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/01.21.png)
 
 The same logic applies to other shards.
 
 Figure 1-22 shows the user table in sharded databases.
 
-![DB sharding](https://github.com/arafatm/assets/blob/main/img/system.design/01.21.png)
+![DB sharding](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/01.21.png)
 
 The most important factor to consider when implementing a sharding strategy is
 the choice of the sharding key. Sharding key (known as a partition key)
@@ -630,7 +630,7 @@ At the same time, some of the non-relational functionalities are moved to a
 NoSQL data store to reduce the database load. Here is an article that covers
 many use cases of NoSQL [14].
 
-![Final Architecture](https://github.com/arafatm/assets/blob/main/img/system.design/01.23.png)
+![Final Architecture](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/01.23.png)
 
 #### Millions of users and beyond
 
