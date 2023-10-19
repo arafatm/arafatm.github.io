@@ -5830,3 +5830,7 @@ https://bit.ly/3dtIcsE
 If you have comments or questions about this book, feel free to send us an email at
 systemdesigninsider@gmail.com. Besides, if you notice any errors, please let us know so we
 can make corrections in the next edition. Thank you!
+
+<style>
+img { width: 50%; margin: auto; }
+</style>
