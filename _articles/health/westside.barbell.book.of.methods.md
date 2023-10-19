@@ -1992,189 +1992,123 @@ Exercises can fall into three categories:
 - directed 
 - sports-specific
 
-General exercises include the reverse hyper machine, glute ham raises, box
-jumps, inverse curls, lat work, ab work, triceps extensions, and hip
-extensor/flexor work.
+### General exercises 
 
-Directed exercises include good mornings, belt squats, deadlifts on a box or
-from a rack, floor presses, rack or board presses, and dumbbell presses.
+include the reverse hyper machine, glute ham raises, box jumps, inverse curls,
+lat work, ab work, triceps extensions, and hip extensor/flexor work.
 
-Sports-specific exercises include legal depth box squats, close grip bench,
-wide bench, and deadlifting with the opposite style that you normally use (sumo
-versus conventional).
+### Directed exercises 
 
-Back Exercises
+include good mornings, belt squats, deadlifts on a box or from a rack, floor
+presses, rack or board presses, and dumbbell presses.
+
+### Sports-specific exercises 
+
+include legal depth box squats, close grip bench, wide bench, and deadlifting
+with the opposite style that you normally use (sumo versus conventional).
+
+### Back Exercises
 
 When squatting or deadlifting, a successful lift is dependent on keeping your
 back in a good position. This takes a strong back as well as strong abs.
 
-Good mornings
+### Good mornings
 
 The following variations of good mornings can be used:
+- __Bent over good mornings__
+- __Power arched good mornings__
+- __Combo squat/good morning__
+- __Seated good mornings on a box__
+- __Good mornings on floor__
+- __Suspended good mornings__
+- __Back attack__
+- __Back raises or hyperextensions__
+  - Lower the upper body until your head is close to the floor. 
+  - Then raise yourself up to parallel but no higher to avoid hyperextending the back.
+- __Pull-throughs with straight legs__
+- __Reverse hyper extensions®__
+  - Reverse hypers are the best exercise for lower back problems 
+  - People with bulging or herniated disks can do them without pain. 
+  - They rotate the sacrum in a very safe way with no compression on the lower spine. 
+  - At the same time, they build the glutes and hamstrings.
+- __Sled dragging__
+- __Upper back and lat work__
+- __Upper back__
+- __upright rows to thicken the traps.__
+- __inverted flies with dumbbells and dumbbell__
+- __Lat work__
+- __Chins are great either with weight or without.__
+- __Zercher squats__
+- __Deadlift using the opposite style__
 
-Bent over good mornings:
+### Leg Exercises
 
-Power arched good mornings:
+> Whenever you have a tight lower back, you will also have tight hamstrings. 
 
-Combo squat/good morning:
-
-Seated good mornings on a box:
-
-Good mornings on floor:
-
-Suspended good mornings:
-
-Back attack:
-
-Back raises or hyperextensions
-
-Lower the upper body until your head is close to the floor. Then raise yourself
-up to parallel but no higher to avoid hyperextending the back.
-
-Pull-throughs with straight legs
-
-Reverse hyper extensions®
-
-Reverse hypers are the best exercise for lower back problems that I’ve ever
-seen. People with bulging or herniated disks can do them without pain. They
-rotate the sacrum in a very safe way with virtually no compression on the lower
-spine. At the same time, they build the glutes and hamstrings.
-
-Sled dragging
-
-Upper back and lat work
-
-Upper back
-
-upright rows to thicken the traps.
-
-inverted flies with dumbbells and dumbbell
-
-Lat work
-
-Chins are great either with weight or without.
-
-Zercher squats
-
-Deadlift using the opposite style
-
-Leg Exercises
-
-Whenever you have a tight lower back, you will also have tight hamstrings. In
-addition, a weak back is almost always accompanied by weak hamstrings.
+In addition, a weak back is almost always accompanied by weak hamstrings.
 
 When doing any type of squat, occasionally wear shoes with heels because this
 places more of the work on the quads. Also, squat as deep as possible.
-
-Glute ham raise
-
-method is to lower yourself down to elastic bands located midway between the
-top and bottom positions. This will help re- duce your body weight while you
-are lowering yourself, and it will help spring you back up to a kneeling
-position.
-
-Dimel deadlifts
-
-Pull-through
-
-Belt squatting
-
-One-legged squat
-
-Leg curls with bands
-
-Deadlifts behind the back
+- __Glute ham raise__
+- __Dimel deadlifts__
+- __Pull-through__
+- __Belt squatting__
+- __One-legged squat__
+- __Leg curls with bands__
+- __Deadlifts behind the back__
 
 Squatting can also be done to develop flexibility.
-
-Lateral roll squat:
-
-Frog squat:
-
-Side-stepping squat:
-
-Uneven squat:
+- __Lateral roll squat__
+- __Frog squat__
+- __Side-stepping squat__
+- __Uneven squat__
+- __Wall squats__
+- You can also do __front squats, free squats, or Hindu squats for high reps__ in the 20–500 rep range.
 
 Many of these squats are illustrated in Twisted Conditioning by Bud Jeffries
 
-You can also do front squats, free squats, or Hindu squats for high reps in the
-20–500 rep range.
-
-Wall squats:
-
-Plyometrics and jumping
+### Plyometrics and jumping
 
 Paul Anderson was doing jumping exercises in the 1950s. He would jump onto
 boxes of different heights to build explosive leg power.
 
-Abdominal Exercises
+### Abdominal Exercises
 
-Abdominal strength is extremely important in preventing back injury.
+> Abdominal strength is extremely important in preventing back injury.
 
 learn to use your abs correctly while wearing a lifting belt. You must push out
 against the belt. It is very important to push out to the sides or exert
 outwardly with the obliques.
+- __Standing abdominal work__
+  - do a great deal of abdominal work standing up, and why not? 
+  - When you__ fight, wrestle, play ball, and, of course, lift weights, you are standing up, not sitting.
+- __Side bends__
+  - the side bend is the most important exercise for the abs.
+  - The obliques not only work as stabilizers but are responsible for hip extension when lifting off the floor or out of the bottom of the squat.
+- __Side bends with a dumbbell at a time__
+- __Side deadlifts__ which also work the abs and obliques.
+- __Standing sit-ups with the lat machine__
+- __Leg raises__
+  - raise the feet until you touch the bar that you are hanging from.
+  - Do them with bent legs until you are strong enough to keep your legs straight. Use weight if possible.
+- __Landmine__
+- __One-arm lifts__
+- __Sit-ups__
+  - A bent leg sit-up is worthless unless you have a very weak back and stomach.
+- __Sit-ups while holding a ball__ or cushion between the thighs will realign the lower back.
+- __Spread eagle sit-ups__
+- __Try doing sit-ups with different bench angles.__
+- __Do sit-ups with added weight or bands for extra resistance.__
+- __Use the static method.__
+- __The Russian twist is a great variation.__
 
-Standing abdominal work
-
-We do a great deal of abdominal work standing up, and why not? When you fight,
-wrestle, play ball, and, of course, lift weights, you are standing up, not
-sitting.
-
-Side bends
-
-the side bend is the most important exercise for the abs.
-
-The obliques not only work as stabilizers but are responsible for hip extension
-when lifting off the floor or out of the bottom of the squat.
-
-Side bends with a dumbbell at a time
-
-Side deadlifts Side deadlifts also work the abs and obliques.
-
-Standing sit-ups with the lat machine
-
-Leg raises
-
-raise the feet until you touch the bar that you are hanging from.
-
-Do them with bent legs until you are strong enough to keep your legs straight.
-Use weight if possible.
-
-Landmine
-
-One-arm lifts
-
-Sit-ups
-
-A bent leg sit-up is worthless unless you have a very weak back and stomach.
-
-Sit-ups while holding a ball or cushion between the thighs will realign the
-lower back.
-
-Spread eagle sit-ups
-
-Try doing sit-ups with different bench angels.
-
-Do sit-ups with added weight or bands for extra resistance.
-
-Use the static method.
-
-The Russian twist is a great variation.
-
-Triceps exercises
-
-a close grip bench will raise your contest bench press.
-
-Flared arm dumbbell extensions
-
-Dumbbell triceps extensions
-
-Exercises with bands
-
-JM press
-
-Straight bar triceps extensions
+### Triceps exercises
+- a __close grip bench__ will raise your contest bench press.
+- __Flared arm dumbbell extensions__
+- __Dumbbell triceps extensions__
+- __Exercises with bands__
+- __JM press__
+- __Straight bar triceps extensions__
 
 ## PLYOMETRICS & POWERLIFTING
 
@@ -2182,63 +2116,126 @@ Straight bar triceps extensions
 
 ## Books That Lou Recommends
 
-- Program of Multi-Year Training in Weightlifting by AS Medvedyev A System of
+- _Program of Multi-Year Training in Weightlifting_ by AS Medvedyev A System of
   Multi-Year Training in Weightlifting by AS Medvedyev Adaptation in Sports
   Training by Atko Viro
-- Basic Physics by Karl F. Kuhn
-- Beyond Stretching Russian Flexibility Breakthroughs by Pavel Tsatsouline
+- _Basic Physics_ by Karl F. Kuhn
+- _Beyond Stretching Russian Flexibility Breakthroughs_ by Pavel Tsatsouline
   Circuit Training for All Sports by Manfred Scholich, PhD
-- European Perspectives on Exercise and Sport Psychology by Stuart J. H. Biddle
+- _European Perspectives on Exercise and Sport Psychology_ by Stuart J. H. Biddle
   Explosive Power &
-- Explosive Power and Jumping Ability by Tadeusz Starzynski/Henry K Sozanski,
+- _Explosive Power and Jumping Ability_ by Tadeusz Starzynski/Henry K Sozanski,
   PhD Facts and Fallacies of Fitness by Dr. Mel Siff
-- Fitness and Strength Training for All Sports by Jurgen Hartmann,
-- PhD Fundamentals of Special Strength Training in Sports by YV Verkhoshansky
-- Manage the Training of Weightlifters by Nikolai Petrovich Laputin/Valentin
+- _Fitness and Strength Training for All Sports_ by Jurgen Hartmann,
+- _PhD Fundamentals of Special Strength Training in Sports_ by YV Verkhoshansky
+- _Manage the Training of Weightlifters_ by Nikolai Petrovich Laputin/Valentin
   Grigoryevich Oleshko
-- Periodization Theory and Methodology of Training by Tudor O. Bompa
-- Periodization Training for Sports by Tudor O. Bompa
-- Power Training for Sport by Tudor O. Bompa
-- Programming and Organization of Training by YV Verkhoshansky
-- Science and Practice of Strength Training by Vladimir Zatsiorsky
-- Science of Sports Training by Thomas Kurz
-- Westside Exercise Index
-- Westside Squat and Deadlift Exercise Index:
-- Good morning styles: regular bent over arched back standing on ramp from
-  chains (concentric) foot stance
-- Box squat styles: low box high box soft box (hassock or foam) foot stance
-  from chains (concentric)
-- Resistance variables on squats and good mornings: chains reverse band bands
-  from floor bands and chains together straight weight weight releasers
-- Different bars and tools to use on squats and good mornings: straight bar
-  cambered squat bar safety squat bar buffalo bar MantaRay Dave Draper's top
-  squat front squat harness
-- Resistance variables on deadlift: chains reverse band band platform straight
-  weight
-- Deadlift styles: regular box or platform sumo conventional rack pulls snatch
-  grip hack deadlifts
-- Different bars to use on deadlift: deadlift bar standard power bar thick
-  bars, squat bar, Apollo’s axle trap bar
+- _Periodization Theory and Methodology of Training_ by Tudor O. Bompa
+- _Periodization Training for Sports_ by Tudor O. Bompa
+- _Power Training for Sport_ by Tudor O. Bompa
+- _Programming and Organization of Training_ by YV Verkhoshansky
+- _Science and Practice of Strength Training_ by Vladimir Zatsiorsky
+- _Science of Sports Training_ by Thomas Kurz
 
-## WESTSIDE BENCH PRESS EXERCISE INDEX:
+## SQUAT AND DEADLIFT EXERCISE INDEX:
 
-Floor Press: chains bands reverse bands football bar fat bar
+- __Good morning styles__: 
+  - regular 
+    - bent over 
+    - arched back 
+    - standing on ramp from chains 
+    - (concentric) foot stance
+- __Box squat styles__: 
+  - low box 
+  - high box 
+  - soft box (hassock or foam) 
+  - foot stance from chains (concentric)
+- __Resistance variables on squats and good mornings__: 
+  - chains 
+  - reverse band 
+  - bands from floor 
+  - bands and chains together 
+  - straight weight 
+  - weight releasers
+- __Different bars and tools to use on squats and good mornings__: 
+  - straight bar 
+  - cambered squat bar 
+  - safety squat bar 
+  - buffalo bar 
+  - MantaRay 
+  - Dave Draper's top squat 
+  - front squat 
+  - harness
+- __Resistance variables on deadlift__: 
+  - chains 
+  - reverse band 
+  - band 
+  - platform 
+  - straight weight
+- __Deadlift styles__: 
+  - regular 
+  - box or platform 
+  - sumo 
+  - conventional 
+  - rack pulls 
+  - snatch grip 
+  - hack deadlifts
+- __Different bars to use on deadlift__: 
+  - deadlift bar 
+  - standard power bar 
+  - thick bars, 
+  - squat bar, 
+  - Apollo’s axle 
+  - trap bar
 
-Board Press: 1-2-3-boards 3-4-5-boards chains bands fat bar
+## BENCH PRESS EXERCISE INDEX:
 
-Regular bench Press: chains bands reverse bands all special bars incline
-decline
+- __Floor Press__: 
+  - chains 
+  - bands 
+  - reverse bands 
+  - football bar 
+  - fat bar
+- __Board Press__: 
+  - 1-2-3-boards 
+  - 3-4-5-boards 
+  - chains 
+  - bands 
+  - fat bar
+- __Regular bench Press__: 
+  - chains 
+  - bands 
+  - reverse bands 
+  - all special bars 
+  - incline 
+  - decline
+- __Repatition Work__: 
+  - dumbells 
+  - arc bar 
+  - football bar 
+  - all special bars 
+  - incline 
+  - decline 
+  - floor 
+  - stability ball
+- __Resistance variables on the bench__: 
+  - chains 
+  - reverse band 
+  - football bar 
+  - bands from floor 
+  - bands and chains together 
+  - straight weight 
+  - weight releasers
+- __Different bars and tools to use on the bench press__: 
+  - straight bar 
+  - cambered bar 
+  - buffalo bard 
+  - football bar 
+  - fat bars 
+  - foam 
+  - stability ball
 
-Repatition Work: dumbells arc bar football bar all special bars incline decline
-floor stability ball
-
-Resistance variables on the bench: chains reverse band football bar bands from
-floor bands and chains together straight weight weight releasers
-
-Different bars and tools to use on the bench press: straight bar cambered bar
-buffalo bard football bar fat bars foam stability ball
-
-Choose exercises based on your weak points or sticking points, lack of speed on
-big weights, ability to use equipment, or anyting else that may hold your
-progress back.
+> Choose exercises based on your weak points or sticking points, lack of speed
+> on big weights, ability to use equipment, or anyting else that may hold your
+> progress back.
 
