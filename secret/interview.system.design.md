@@ -14,57 +14,6 @@ permalink: /interview/system-design
 - [ ] [donnemartin/system-design-primer: Learn how to design large-scale systems. Prep for the system design interview. Includes Anki flashcards.](https://github.com/donnemartin/system-design-primer)
 - [ ] [Design Pinterest - TianPan.co](https://tianpan.co/notes/2016-02-13-crack-the-system-design-interview)
 
-## ToC
-
-<!-- vim-markdown-toc GFM -->
-
-* [CHAPTER 1: SCALE FROM ZERO TO MILLIONS OF USERS](#chapter-1-scale-from-zero-to-millions-of-users)
-  * [Single server setup](#single-server-setup)
-    * [request flow](#request-flow)
-    * [traffic source](#traffic-source)
-    * [Database](#database)
-      * [Which databases to use?](#which-databases-to-use)
-    * [Vertical scaling vs horizontal scaling](#vertical-scaling-vs-horizontal-scaling)
-    * [Load balancer](#load-balancer)
-    * [Database replication](#database-replication)
-    * [Cache](#cache)
-    * [Cache tier](#cache-tier)
-    * [Considerations for using cache](#considerations-for-using-cache)
-    * [Content delivery network (CDN)](#content-delivery-network-cdn)
-    * [Stateless web tier](#stateless-web-tier)
-    * [Stateful architecture](#stateful-architecture)
-    * [Stateless architecture](#stateless-architecture)
-    * [Data centers](#data-centers)
-    * [Message queue](#message-queue)
-    * [Logging, metrics, automation](#logging-metrics-automation)
-      * [Adding message queues and different tools](#adding-message-queues-and-different-tools)
-    * [Database scaling](#database-scaling)
-        * [Vertical scaling](#vertical-scaling)
-        * [Horizontal scaling](#horizontal-scaling)
-    * [Millions of users and beyond](#millions-of-users-and-beyond)
-    * [Reference materials](#reference-materials)
-* [CHAPTER 2: BACK-OF-THE-ENVELOPE ESTIMATION](#chapter-2-back-of-the-envelope-estimation)
-* [Notes](#notes)
-* [CHAPTER 3: A FRAMEWORK FOR SYSTEM DESIGN INTERVIEWS](#chapter-3-a-framework-for-system-design-interviews)
-* [CHAPTER 4: DESIGN A RATE LIMITER](#chapter-4-design-a-rate-limiter)
-* [CHAPTER 5: DESIGN CONSISTENT HASHING](#chapter-5-design-consistent-hashing)
-* [CHAPTER 6: DESIGN A KEY-VALUE STORE](#chapter-6-design-a-key-value-store)
-* [CHAPTER 7: DESIGN A UNIQUE ID GENERATOR IN DISTRIBUTED SYSTEMS](#chapter-7-design-a-unique-id-generator-in-distributed-systems)
-* [CHAPTER 8: DESIGN A URL SHORTENER](#chapter-8-design-a-url-shortener)
-* [CHAPTER 9: DESIGN A WEB CRAWLER](#chapter-9-design-a-web-crawler)
-* [CHAPTER 10: DESIGN A NOTIFICATION SYSTEM](#chapter-10-design-a-notification-system)
-* [CHAPTER 11: DESIGN A NEWS FEED SYSTEM](#chapter-11-design-a-news-feed-system)
-* [CHAPTER 12: DESIGN A CHAT SYSTEM](#chapter-12-design-a-chat-system)
-* [CHAPTER 13: DESIGN A SEARCH AUTOCOMPLETE SYSTEM](#chapter-13-design-a-search-autocomplete-system)
-* [CHAPTER 14: DESIGN YOUTUBE](#chapter-14-design-youtube)
-* [CHAPTER 15: DESIGN GOOGLE DRIVE](#chapter-15-design-google-drive)
-* [CHAPTER 16: THE LEARNING CONTINUES](#chapter-16-the-learning-continues)
-  * [Real-world systems](#real-world-systems)
-  * [Company engineering blogs](#company-engineering-blogs)
-* [AFTERWORD](#afterword)
-
-<!-- vim-markdown-toc -->
-
 ## CHAPTER 1: SCALE FROM ZERO TO MILLIONS OF USERS
 
 ### Single server setup
@@ -73,7 +22,7 @@ permalink: /interview/system-design
 
 To understand this setup, it is helpful to investigate the _request flow_ and _traffic source_. 
 
-#### request flow 
+### request flow 
 1. Users access websites through domain names, such as api.mysite.com. Usually,
    the Domain Name System (DNS) is a paid service provided by 3rd parties and
    not hosted by our servers.
@@ -83,7 +32,7 @@ To understand this setup, it is helpful to investigate the _request flow_ and _t
    requests are sent directly to your web server.
 4. The web server returns HTML pages or JSON response for rendering.
 
-#### traffic source
+### traffic source
 - Web application: it uses a combination of server-side languages (Java,
   Python, etc.) to handle business logic, storage, etc., and client-side
   languages (HTML and JavaScript) for presentation.
@@ -106,13 +55,13 @@ GET /users/12 – Retrieve user object for id = 12
 }
 ```
 
-#### Database
+### Database
 
 Split Web/DB to allow independent scaling
 
 ![db](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/01.03.png)
 
-##### Which databases to use?
+### Which databases to use?
 
 - __RDMBS__  MySQL, Oracle database, PostgreSQL, etc.
 - __NoSQL__ CouchDB, Neo4j, Cassandra, HBase, Amazon DynamoDB, etc. 
@@ -129,7 +78,7 @@ specific use cases, e.g.
 - You only need to _serialize and deserialize_ data (JSON, XML, YAML, etc.).
 - You need to store a _massive amount_ of data.
 
-#### Vertical scaling vs horizontal scaling
+### Vertical scaling vs horizontal scaling
 
 __Vertical scaling__, referred to as “scale up”, means the process of adding
 more power (CPU, RAM, etc.) to your servers. 
@@ -153,7 +102,7 @@ web server simultaneously and it reaches the web server’s load limit, users ge
 experience slower response or fail to connect to the server. A load balancer is the best
 technique to address these problems.
 
-#### Load balancer
+### Load balancer
 
 A load balancer evenly _distributes incoming traffic_ among web servers that
 are defined in a load-balanced set. 
@@ -185,7 +134,7 @@ one database, so it does not support failover and redundancy. Database
 replication is a common technique to address those problems. Let us take a
 look.
 
-#### Database replication
+### Database replication
 
 Quoted from Wikipedia: “Database replication can be used in many database
 management systems, usually with a master/slave relationship between the
@@ -254,7 +203,7 @@ improve the load/response time. This can be done by adding a cache layer and
 shifting static content (JavaScript/CSS/image/video files) to the content
 delivery network (CDN).
 
-#### Cache
+### Cache
 
 A cache is a temporary storage area that stores the result of expensive
 responses or frequently accessed data in memory so that subsequent requests are
@@ -264,7 +213,7 @@ performance is greatly affected by calling the database repeatedly.
 
 The cache can mitigate this problem.
 
-#### Cache tier
+### Cache tier
 
 The cache tier is a __temporary data store layer, much faster than the
 database__. The benefits of having a separate cache tier include better system
@@ -292,7 +241,7 @@ cache.set('myKey', 'hi there', 3600 * SECONDS)
 cache.get('myKey')
 ```
 
-#### Considerations for using cache
+### Considerations for using cache
 
 Here are a few considerations for using a cache system:
 - __Decide when to use cache__. Consider using cache when data is _read
@@ -326,7 +275,7 @@ Here are a few considerations for using a cache system:
   policy. Other eviction policies, such as the Least Frequently Used (_LFU_) or
   First in First Out (_FIFO_), can be adopted to satisfy different use cases.
 
-#### Content delivery network (CDN)
+### Content delivery network (CDN)
 
 A CDN is a network of geographically dispersed servers used to deliver static
 content. CDN servers cache static content like images, videos, CSS, JavaScript
@@ -393,7 +342,7 @@ Figure 1-11 shows the design after the CDN and cache are added.
    They are fetched from the CDN for better performance.
 2. The database load is lightened by caching data.
 
-#### Stateless web tier
+### Stateless web tier
 
 Now it is time to consider _scaling the web tier horizontally_. For this, we need
 to __move state (for instance user session data) out of the web tier__. A good
@@ -401,7 +350,7 @@ practice is to store session data in the persistent storage such as relational
 database or NoSQL. Each web server in the cluster can access state data from
 databases. This is called stateless web tier.
 
-#### Stateful architecture
+### Stateful architecture
 
 A stateful server and stateless server has some key differences. A stateful
 server remembers client data (state) from one request to the next. A __stateless
@@ -423,7 +372,7 @@ same server_. This can be done with sticky sessions in most load balancers
 difficult_ with this approach. It is also _challenging to handle server
 failures_.
 
-#### Stateless architecture
+### Stateless architecture
 
 Figure 1-13 shows the stateless architecture.
 
@@ -450,7 +399,7 @@ Your website grows rapidly and attracts a significant number of users
 internationally. To improve availability and provide a better user experience
 across wider geographical areas, supporting multiple data centers is crucial.
 
-#### Data centers
+### Data centers
 
 Figure 1-15 shows an example setup with two data centers. In normal operation,
 users are geoDNS-routed, also known as geo-routed, to the closest data center,
@@ -487,7 +436,7 @@ To further scale our system, we need to decouple different components of the
 system so they can be scaled independently. Messaging queue is a key strategy
 employed by many realworld distributed systems to solve this problem.
 
-#### Message queue
+### Message queue
 
 A message queue is a durable component, stored in memory, that supports
 asynchronous communication. It serves as a buffer and distributes asynchronous
@@ -516,32 +465,7 @@ However, if the queue is empty most of the time, the number of workers can be re
 
 ![MQ Photos](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/01.18.png)
 
-#### Logging, metrics, automation
-
-When working with a small website that runs on a few servers, logging, metrics,
-and automation support are good practices but not a necessity. However, now
-that your site has grown to serve a large business, investing in those tools is
-essential.
-
-__Logging__: Monitoring error logs is important because it helps to identify errors and problems
-in the system. You can monitor error logs at per server level or use tools to aggregate them to
-a centralized service for easy search and viewing.
-
-__Metrics__: Collecting different types of metrics help us to gain business
-insights and understand the health status of the system. Some of the following
-metrics are useful:
-- _Host level metrics_: CPU, Memory, disk I/O, etc.
-- _Aggregated level metrics_: for example, the performance of the entire database
-  tier, cache tier, etc.
-- _Key business metrics_: daily active users, retention, revenue, etc.
-
-__Automation__: When a system gets big and complex, we need to build or leverage automation
-tools to improve productivity. Continuous integration is a good practice, in which each code
-check-in is verified through automation, allowing teams to detect problems early. Besides,
-automating your build, test, deploy process, etc. could improve developer productivity
-significantly.
-
-##### Adding message queues and different tools
+### Adding message queues and different tools
 
 Figure 1-19 shows the updated design. Due to the space constraint, only one
 data center is shown in the figure.
@@ -554,11 +478,11 @@ data center is shown in the figure.
 As the data grows every day, your database gets more overloaded. It is time to
 scale the data tier.
 
-#### Database scaling
+### Database scaling
 
 There are two broad approaches for database scaling: __vertical scaling and horizontal scaling__.
 
-###### Vertical scaling
+### Vertical scaling
 
 Vertical scaling, also known as scaling up, is the scaling by adding more power
 (CPU, RAM, DISK, etc.) to an existing machine. There are some powerful database
@@ -574,7 +498,33 @@ over 10 million monthly unique visitors, but it only had 1 master database
 - The __overall cost__ of vertical scaling is high. Powerful servers are much
   more expensive.
 
-###### Horizontal scaling
+<!-- vim-markdown-toc GFM -->
+
+  * [Horizontal scaling](#horizontal-scaling)
+  * [Millions of users and beyond](#millions-of-users-and-beyond)
+  * [Reference materials](#reference-materials)
+* [CHAPTER 2: BACK-OF-THE-ENVELOPE ESTIMATION](#chapter-2-back-of-the-envelope-estimation)
+* [Notes](#notes)
+* [CHAPTER 3: A FRAMEWORK FOR SYSTEM DESIGN INTERVIEWS](#chapter-3-a-framework-for-system-design-interviews)
+* [CHAPTER 4: DESIGN A RATE LIMITER](#chapter-4-design-a-rate-limiter)
+* [CHAPTER 5: DESIGN CONSISTENT HASHING](#chapter-5-design-consistent-hashing)
+* [CHAPTER 6: DESIGN A KEY-VALUE STORE](#chapter-6-design-a-key-value-store)
+* [CHAPTER 7: DESIGN A UNIQUE ID GENERATOR IN DISTRIBUTED SYSTEMS](#chapter-7-design-a-unique-id-generator-in-distributed-systems)
+* [CHAPTER 8: DESIGN A URL SHORTENER](#chapter-8-design-a-url-shortener)
+* [CHAPTER 9: DESIGN A WEB CRAWLER](#chapter-9-design-a-web-crawler)
+* [CHAPTER 10: DESIGN A NOTIFICATION SYSTEM](#chapter-10-design-a-notification-system)
+* [CHAPTER 11: DESIGN A NEWS FEED SYSTEM](#chapter-11-design-a-news-feed-system)
+* [CHAPTER 12: DESIGN A CHAT SYSTEM](#chapter-12-design-a-chat-system)
+* [CHAPTER 13: DESIGN A SEARCH AUTOCOMPLETE SYSTEM](#chapter-13-design-a-search-autocomplete-system)
+* [CHAPTER 14: DESIGN YOUTUBE](#chapter-14-design-youtube)
+* [CHAPTER 15: DESIGN GOOGLE DRIVE](#chapter-15-design-google-drive)
+* [CHAPTER 16: THE LEARNING CONTINUES](#chapter-16-the-learning-continues)
+  * [Real-world systems](#real-world-systems)
+  * [Company engineering blogs](#company-engineering-blogs)
+* [AFTERWORD](#afterword)
+
+<!-- vim-markdown-toc -->
+### Horizontal scaling
 
 Horizontal scaling, also known as __sharding__, is the practice of adding more servers. Figure 1-
 20 compares vertical scaling with horizontal scaling.
@@ -633,7 +583,7 @@ many use cases of NoSQL [14].
 
 ![Final Architecture](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/01.23.png)
 
-#### Millions of users and beyond
+### Millions of users and beyond
 
 Scaling a system is an __iterative process__. Iterating on what we have learned
 in this chapter could get us far. More fine-tuning and new strategies are
@@ -654,7 +604,7 @@ our system to support millions of users:
 Congratulations on getting this far! Now give yourself a pat on the back. Good
 job!
 
-#### Reference materials
+### Reference materials
 
 - [1] Hypertext Transfer Protocol: https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol
 - [2] Should you go Beyond Relational Databases?: https://blog.teamtreehouse.com/should-you-go-beyond-relational-databases
@@ -673,15 +623,18 @@ job!
 
 ## CHAPTER 2: BACK-OF-THE-ENVELOPE ESTIMATION
 
-In a system design interview, sometimes you are asked to estimate system capacity or
-performance requirements using a back-of-the-envelope estimation. According to Jeff Dean,
+In a system design interview, sometimes you are asked to estimate system
+capacity or performance requirements using a back-of-the-envelope estimation.
+According to Jeff Dean,
 
-Google Senior Fellow, “back-of-the-envelope calculations are estimates you create using a
-combination of thought experiments and common performance numbers to get a good feel for
-which designs will meet your requirements” [1].
+Google Senior Fellow, “back-of-the-envelope calculations are estimates you
+create using a combination of thought experiments and common performance
+numbers to get a good feel for which designs will meet your requirements” [1].
 
-You need to have a good sense of scalability basics to effectively carry out back-of-theenvelope estimation. The following concepts should be well understood: power of two [2],
-latency numbers every programmer should know, and availability numbers.
+You need to have a good sense of scalability basics to effectively carry out
+back-of-theenvelope estimation. The following concepts should be well
+understood: power of two [2], latency numbers every programmer should know, and
+availability numbers.
 
 Power of two
 
@@ -5830,7 +5783,3 @@ https://bit.ly/3dtIcsE
 If you have comments or questions about this book, feel free to send us an email at
 systemdesigninsider@gmail.com. Besides, if you notice any errors, please let us know so we
 can make corrections in the next edition. Thank you!
-
-<style>
-img { max-width: 50%; max-height: 50%; margin: auto; }
-</style>
