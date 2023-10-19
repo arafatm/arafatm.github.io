@@ -13,6 +13,8 @@ permalink: /interview/system-design
 - [ ] [donnemartin/system-design-primer: Learn how to design large-scale systems. Prep for the system design interview. Includes Anki flashcards.](https://github.com/donnemartin/system-design-primer)
 - [ ] [Design Pinterest - TianPan.co](https://tianpan.co/notes/2016-02-13-crack-the-system-design-interview)
 
+## ToC
+
 <!-- vim-markdown-toc GFM -->
 
 * [CHAPTER 1: SCALE FROM ZERO TO MILLIONS OF USERS](#chapter-1-scale-from-zero-to-millions-of-users)
