@@ -1595,9 +1595,9 @@ Training with chains in this manner accomplishes three things:
   training will train you to drive to the top because you can’t slack off at
   the top phase as you used to.
 
-about 10% of your squat weight should be added with chain weight.
+> about 10% of your squat weight should be added with chain weight.
 
-The Force—Velocity Curve, Science Behind Bands
+### The Force—Velocity Curve, Science Behind Bands
 
 while using light loads an increase in speed has little effect.
 
@@ -1609,7 +1609,7 @@ relationship between force and posture. At different joint angle positions, the
 amount of weightlifted will differ because of one’s mini-max, or sticking
 point. At some joint angles, great force can be generated.
 
-The Effect of Bands—Virtual Force
+### The Effect of Bands—Virtual Force
 
 Using a large load of chain at the bottom teaches you to explode at the start
 to enable you to overcome the additional load as it reloads onto the bar
@@ -1625,7 +1625,7 @@ lasts a full two seconds so there is no need to touch and go off the box.
 
 When using chains, the chain must be almost totally deloaded onto the floor.
 
-Training with the Bands – An Overview
+### Training with the Bands – An Overview
 
 To use bands for squatting, if you squat 650 or less, use green bands. If you
 squat more than 650, use blue bands.
@@ -1638,38 +1638,45 @@ until you break a PR or miss.
 
 ## OVERCOMING PLATEAUS
 
-There are basically four reasons for failing or succeeding: physiological
-psychological technical exercise selection
+There are basically four reasons for failing or succeeding: 
+- physiological
+- psychological 
+- technical 
+- exercise selection
 
 On maximum effort day, go until only the top man is left. On a dynamic day, try
 to hurt your training partner with short rest periods. To win, you have to put
 yourself through hell.
 
 While striving to develop the best method of resistance training, we are led
-down many paths. The three most common approaches are: accentuation peak
-contraction accommodating
+down many paths. The three most common approaches are: 
+- accentuation peak
+- contraction 
+- accommodating
 
-Accentuation: Accentuation occurs when exercises are used at precise angular
+__Accentuation__: Accentuation occurs when exercises are used at precise angular
 positions in which maximal efforts are developed during a specific, sport
 movement. The greater the force, the greater the velocity.
 
-Peak contraction: With the peak contraction principle, maximal force is
+__Peak contraction__: With the peak contraction principle, maximal force is
 developed at the weakest body position such as at the start of a pec deck.
 
-Accommodating resistance: Accommodating resistance refers to maximizing
+__Accommodating resistance__: Accommodating resistance refers to maximizing
 muscular tension throughout the entire range of motion. This is done with bands
 or chains
 
-The Mini-max Point
+### The Mini-max Point
 
-using only bar weight causes the optimal training weight to be too heavy at the
+Using only bar weight causes the optimal training weight to be too heavy at the
 bottom and too light at the top of the lift.
 
-Box squatting is a must. Use a box that is slightly below parallel. Sit fully
-on the box, keeping all muscles tight, most importantly the abs and the
-obliques. By releasing only the hip muscles, you are going from a relaxed state
-to a dynamic phase. This is one of the best methods of developing absolute
-strength as well as explosive strength.
+> Box squatting is a must. 
+
+Use a box that is slightly below parallel. Sit fully on the box, keeping all
+muscles tight, most importantly the abs and the obliques. By releasing only the
+hip muscles, you are going from a relaxed state to a dynamic phase. This is one
+of the best methods of developing absolute strength as well as explosive
+strength.
 
 Train on a box with 50–60% of your best contest squat.
 
@@ -1698,8 +1705,8 @@ The obliques are the most important ab muscles. When you flex a weight off the
 floor or start out of a heavy squat, it is the lower obliques that initiate the
 entire upward motion.
 
-Leg extensions are a waste. It’s true that they isolate the quads, but the
-amount of weight is insignificant.
+> Leg extensions are a waste. It’s true that they isolate the quads, but the
+> amount of weight is insignificant.
 
 Leg press machines are very dangerous in general. They place a tremendous
 amount of strain on the lower back.
@@ -1709,7 +1716,7 @@ A glute ham machine works both the knee and hip extenders simultaneously.
 As in running and jumping, the quads do very little in squatting. So don’t
 waste too much of your time on quads.
 
-The Bench Press
+### The Bench Press
 
 The bar should be lowered with the lats, not the arms.
 
@@ -1720,8 +1727,8 @@ The path of the bar in the concentric phase (raising) should be a straight
 line.
 
 When the Clemson University coaching staff wanted to know which are the most
-important muscle groups for benching, George Halbert told them triceps are
-first, lats second, upper back third, and delts last.
+important muscle groups for benching, George Halbert told them __triceps are
+first, lats second, upper back third, and delts last__.
 
 It is also important to have strong forearms.
 
@@ -1730,7 +1737,7 @@ The tighter your grip, the easier it is to activate the triceps.
 To use the biceps fully when benching, imagine you are stretching the bar
 apart.
 
-The Deadlift
+### The Deadlift
 
 Most lifters deadlift too often and too heavy. This has an ill effect on the
 central nervous system.
@@ -1739,13 +1746,13 @@ A better method is to use a variety of exercises that mimic the deadlift or
 special exercises that develop the individual muscles that are used while
 deadlifting
 
-The good morning is a valuable exercise in the conjugate method. For
-deadlifting, the bent over version is the best.
+> The good morning is a valuable exercise in the conjugate method. For
+> deadlifting, the bent over version is the best.
 
 Bend at the upper back first and round over while lowering the bar. The legs
 can be slightly bent to prevent hyperextension of the knee.
 
-by doing a variety of special exercises for the upper back, the muscles of the
+By doing a variety of special exercises for the upper back, the muscles of the
 entire back are more likely to receive equal work. These exercises include
 shrugs, lat work, spinal erector work, good mornings, back raises, reverse
 hyperextensions, glute ham raises, sled work, and pull-throughs.
@@ -1761,7 +1768,7 @@ be 45–60 seconds between sets for explosive and speed work.
 The muscles should be in an excitable state or slightly fatigued. This will
 cause an increase in difficulty of training.
 
-Sled Work
+### Sled Work
 
 There are several ways of raising work capacity. One method that we use at
 Westside is pulling the sled for the hips and glutes.
@@ -1801,9 +1808,9 @@ forward the hands go, the more the upper lats are worked.
 By walking backward, you can do rear delt work, upright rowing, and external
 shoulder work.
 
-Extra Workouts
+### Extra Workouts
 
-if you are to become better, you must do more work.
+> if you are to become better, you must do more work.
 
 We know that a workout should last 45 minutes, 60 minutes at the most. Your
 energy and testosterone levels will fall off greatly after that.
@@ -1825,24 +1832,21 @@ press).
 
 This is followed by pushing the triceps, lats, and delts to the max.
 
-There are three main methods of restoration:
-
-Anabolic: This is, of course, out of the question for the truly drug-free
-lifter.
-
-Therapeutic: This includes massage, sauna, whirlpool, ice, electric
-stimulation, and so forth.
-
-Small workouts: these should last 20–30 minutes and should be done 24 hours
-after major workouts.
+### There are three main methods of restoration:
+- _Anabolic_: This is, of course, out of the question for the truly drug-free
+  lifter.
+- _Therapeutic_: This includes massage, sauna, whirlpool, ice, electric
+  stimulation, and so forth.
+- _Small workouts_: these should last 20–30 minutes and should be done 24 hours
+  after major workouts.
 
 In the old Soviet system, 10–16 workouts per week were prescribed. In football,
 three a day workouts are quite common.
 
 you can work the legs everyday as long as you switch exercises.
 
-Large muscle groups can be trained every 72 hours and smaller muscle groups
-every 24 hours or less.
+> Large muscle groups can be trained every 72 hours and smaller muscle groups
+> every 24 hours or less.
 
 for benching only, add two workouts per week. They must consist of special
 exercises for the pressing muscles: triceps, delts, lats, upper back, and abs.
@@ -1855,65 +1859,52 @@ Again, only do 2–3 exercises per workout.
 
 Always work the abs in each workout plus 1–2 other exercises.
 
-Designing Your Extra Workouts
+### Designing Your Extra Workouts
 
-bench pressing
-
-#### Workout #1: Lat pull-downs, dumbbell extensions, and side delt raises. Always
-do abdominal work.
-
-#### Workout #2: Barbell rows and four sets of dumbbell presses to failure. Use a
-weight where 15–20 reps can be done. Rotate from flat, incline, decline, and
-seated press. Also do abs.
-
-#### Workout #3: Three sets of seated dumbbell power cleans. Use a weight where 20
-reps can be done but with much effort. Also do one-arm dumbbell rows, 2–4 sets,
-and two sets of push-ups to failure as well as abs.
-
-#### Workout #4: Two sets of benching for 25 reps. Use a different grip—wide, close,
-thumb or thumbless, or even reverse. Also do chin-ups, inverted flies, and abs.
-
-#### Workout #5: < One of our 198s, Sonny Kerschner, had a 410 bench and was stuck.
-He began doing triceps push- downs with a pink flex band looped over a door at
-his house. Using strict form and a moderate tempo, he did 100 total reps three
-times a week.
+#### Bench pressing
+- __Workout #1__: Lat pull-downs, dumbbell extensions, and side delt raises. Always
+  do abdominal work.
+- __Workout #2__: Barbell rows and four sets of dumbbell presses to failure. Use a
+  weight where 15–20 reps can be done. Rotate from flat, incline, decline, and
+  seated press. Also do abs.
+- __Workout #3__: Three sets of seated dumbbell power cleans. Use a weight where 20
+  reps can be done but with much effort. Also do one-arm dumbbell rows, 2–4
+  sets, and two sets of push-ups to failure as well as abs.
+- __Workout #4__: Two sets of benching for 25 reps. Use a different grip—wide,
+  close, thumb or thumbless, or even reverse. Also do chin-ups, inverted flies,
+  and abs.
+- __Workout #5__: < One of our 198s, Sonny Kerschner, had a 410 bench and was
+  stuck. He began doing triceps push- downs with a pink flex band looped over a
+  door at his house. Using strict form and a moderate tempo, he did 100 total
+  reps three times a week.
 
 All of the above workouts must be brisk and almost nonstop.
 
-For the squat and deadlift, the same exercises will work for both.
+#### For the squat and deadlift, the same exercises will work for both. 
 
 It is important to do ab work in every workout. Sometimes abs can be the only
 muscle group worked.
-
-#### Workout #1: Pull-throughs, leg raises, and dumbbell rows.
-
-#### Workout #2: Reverse hypers, stability ball, and abdominal work.
-
-#### Workout #3: Pulling a sled from a belt, rows, and standing abdominals.
-
-#### Workout #4: Pulling a sled from the ankles and lat pull-downs.
-
-#### Workout #5: Glute ham raises, weighted leg raises, and dumbbell power cleans.
-
-#### Workout #6: < Walking lunges, side bends, and sit-ups.
-
-#### Workout #7: Flex band good mornings and chest supported rows.
-
-#### Workout #8: Box squat with a band looped through your belt and stand through
-both ends. Don’t remove the band between sets. Then hook a band to the top of a
-rack and over your head to do standing abs.
-
-#### Workout #9: Choke a band around the base of a rack and do seated leg curls.
-Then do lying leg raises with chains draped over your ankles.
-
-#### Workout #10: Good mornings with a band looped through your belt, standing in
-the loops, plus a second band over the neck and under the feet.
+- __Workout #1__: Pull-throughs, leg raises, and dumbbell rows.
+- __Workout #2__: Reverse hypers, stability ball, and abdominal work.
+- __Workout #3__: Pulling a sled from a belt, rows, and standing abdominals.
+- __Workout #4__: Pulling a sled from the ankles and lat pull-downs.
+- __Workout #5__: Glute ham raises, weighted leg raises, and dumbbell power
+  cleans.
+- __Workout #6__: < Walking lunges, side bends, and sit-ups.
+- __Workout #7__: Flex band good mornings and chest supported rows.
+- __Workout #8__: Box squat with a band looped through your belt and stand
+  through both ends. Don’t remove the band between sets. Then hook a band to
+  the top of a rack and over your head to do standing abs.
+- __Workout #9__: Choke a band around the base of a rack and do seated leg
+  curls. Then do lying leg raises with chains draped over your ankles.
+- __Workout #10__: Good mornings with a band looped through your belt, standing
+  in the loops, plus a second band over the neck and under the feet.
 
 Use 1–3 exercises per workout. Limit the workout time to 30 minutes including
 abdominal work. This time can also be used for flexibility work, which is
 important but often overlooked.
 
-Foundational Training for the Powerlifts
+### Foundational Training for the Powerlifts
 
 By doing so much chest work, the body will automatically let the arms turn out
 prematurely in the bench press, thus placing all the stress on the pecs and
@@ -1925,7 +1916,7 @@ work as stabilizers to keep the bar in line.
 Lowering the bar with the lats primarily and the arms secondarily allows for an
 explosive start by contracting the triceps in the concentric phase.
 
-The Squat and Deadlift
+### The Squat and Deadlift
 
 Almost every time a squat article is written, it concludes with assistance work
 for the legs such as leg presses, leg extensions, and leg curls. With the
@@ -1996,7 +1987,10 @@ Special work is raised throughout the first three weeks in an upward wave.
 we recommend training special work as hard as possible. By doing this, you’re
 able to make further gains after three weeks.
 
-Exercises can fall into three categories: general directed sports-specific
+Exercises can fall into three categories: 
+- general 
+- directed 
+- sports-specific
 
 General exercises include the reverse hyper machine, glute ham raises, box
 jumps, inverse curls, lat work, ab work, triceps extensions, and hip
