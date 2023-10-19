@@ -3,6 +3,8 @@
 [System Design Interview PDF](system.design.interview.pdf)
 
 - [ ] https://tianpan.co/notes/2016-02-13-crack-the-system-design-interview
+- [ ] [donnemartin/system-design-primer: Learn how to design large-scale systems. Prep for the system design interview. Includes Anki flashcards.](https://github.com/donnemartin/system-design-primer)
+- [ ] [Design Pinterest - TianPan.co](https://tianpan.co/notes/2016-02-13-crack-the-system-design-interview)
 
 <!-- vim-markdown-toc GFM -->
 
