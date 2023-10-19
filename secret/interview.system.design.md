@@ -532,60 +532,91 @@ numbers to get a good feel for which designs will meet your requirements” [1].
 
 You need to have a good sense of scalability basics to effectively carry out
 back-of-theenvelope estimation. The following concepts should be well
-understood: __power of two__ [2], __latency__ numbers every programmer should know, and
-__availability__ numbers.
+understood: __power of two__ [2], __latency__ numbers every programmer should
+know, and __availability__ numbers.
 
 ### Power of two
 
 Although data volume can become enormous when dealing with distributed systems,
-calculation all boils down to the basics. To obtain correct calculations, it is critical to know
-the data volume unit using the power of 2. A byte is a sequence of 8 bits. An ASCII character
-uses one byte of memory (8 bits). Below is a table explaining the data volume unit (Table 2-
-1).
+calculation all boils down to the basics. To obtain correct calculations, it is
+critical to know the data volume unit using the power of 2. A byte is a
+sequence of 8 bits. An ASCII character uses one byte of memory (8 bits). Below
+is a table explaining the data volume unit (Table 2- 1).
 
-Latency numbers every programmer should know
+| Power | Approx Value  | Full Name  | Short Name |
+| --    | --            | --         | --         |
+| 10    | 1 Thousand    | 1 Kilobyte | 1 KB       |
+| 20    | 1 Million     | 1 Megabyte | 1 MB       |
+| 30    | 1 Billion     | 1 Gigabyte | 1 GB       |
+| 40    | 1 Trillion    | 1 Terabyte | 1 TB       |
+| 50    | 1 Quadrillion | 1 Petabyte | 1 PB       |
 
-Dr. Dean from Google reveals the length of typical computer operations in 2010 [1]. Some
-numbers are outdated as computers become faster and more powerful. However, those
-numbers should still be able to give us an idea of the fastness and slowness of different
-computer operations.
 
-Notes
------------
-ns = nanosecond, µs = microsecond, ms = millisecond
-1 ns = 10^-9 seconds
-1 µs= 10^-6 seconds = 1,000 ns
-1 ms = 10^-3 seconds = 1,000 µs = 1,000,000 ns
+### Latency numbers every programmer should know
 
-A Google software engineer built a tool to visualize Dr. Dean’s numbers. The tool also takes
-the time factor into consideration. Figures 2-1 shows the visualized latency numbers as of
-2020 (source of figures: reference material [3]).
+Dr. Dean from Google reveals the length of typical computer operations in 2010
+[1]. Some numbers are outdated as computers become faster and more powerful.
+However, those numbers should still be able to give us an idea of the fastness
+and slowness of different computer operations.
+
+| Operation Name                          | Time             |
+| --                                      | --               |
+| L1 cache reference                      | 0.5 ns           |
+| Branch mispredict                       | 5 ns             |
+| L2 cache reference                      | 7 ns             |
+| Mutex lock/unlock                       | 100 ns           |
+| Main memory reference                   | 100 ns           |
+| Compress 1K bytes with Zippy            | 10k ns = 10 µs   |
+| Send 2K bytes over 1 Gbps network       | 20k ns = 20 µs   |
+| Read 1 MB sequentially from memory      | 250k ns = 250 µs |
+| Round trip within the same datacenter   | 500k ns = 500 µs |
+| Disk seek                               | 10m ns = 10 ms   |
+| Read 1 MB sequentially from the network | 10m ns = 10 ms   |
+| Read 1 MB sequentially from disk        | 30m ns = 30 ms   |
+| Send packet CA -> ND -> CA              | 150m ns = 150 ms |
+
+A Google software engineer built a tool to visualize Dr. Dean’s numbers. The
+tool also takes the time factor into consideration. Figures 2-1 shows the
+visualized latency numbers as of 2020 (source of figures: reference material
+[3]).
+
+![latency](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/02.01.png)
 
 By analyzing the numbers in Figure 2-1, we get the following conclusions:
 - Memory is fast but the disk is slow.
 - Avoid disk seeks if possible.
 - Simple compression algorithms are fast.
 - Compress data before sending it over the internet if possible.
-- Data centers are usually in different regions, and it takes time to send data between them.
+- Data centers are usually in different regions, and it takes time to send data
+  between them.
 
-Availability numbers
+### Availability numbers
 
-High availability is the ability of a system to be continuously operational for a desirably long
-period of time. High availability is measured as a percentage, with 100% means a service that
-has 0 downtime. Most services fall between 99% and 100%.
+High availability is the ability of a system to be continuously operational for
+a desirably long period of time. High availability is measured as a percentage,
+with 100% means a service that has 0 downtime. Most services fall between 99%
+and 100%.
 
-A service level agreement (SLA) is a commonly used term for service providers. This is an
-agreement between you (the service provider) and your customer, and this agreement
-formally defines the level of uptime your service will deliver. Cloud providers Amazon [4],
+A service level agreement (__SLA__) is a commonly used term for service providers.
+This is an agreement between you (the service provider) and your customer, and
+this agreement formally defines the level of uptime your service will deliver.
+Cloud providers Amazon [4], Google [5] and Microsoft [6] set their SLAs at
+99.9% or above. Uptime is traditionally measured in nines. The more the nines,
+the better. As shown in Table 2-3, the number of nines correlate to the
+expected system downtime.
 
-Google [5] and Microsoft [6] set their SLAs at 99.9% or above. Uptime is traditionally
-measured in nines. The more the nines, the better. As shown in Table 2-3, the number of
-nines correlate to the expected system downtime.
+| Availability | Downtime / day | Downtime / year |
+| --           | --             | --              |
+| 99%          | 14.40 min      | 3.65 days       |
+| 99.9%        | 1.44 min       | 8.77 hours      |
+| 99.99%       | 8.64 sec       | 52.60 mins      |
+| 99.999%      | 864 ms         | 5.26 mins       |
+| 99.9999%     | 86.4 ms        | 31.56 sec       |
 
-Example: Estimate Twitter QPS and storage requirements
+### Example: Estimate Twitter QPS and storage requirements
 
-Please note the following numbers are for this exercise only as they are not real numbers
-from Twitter.
+Please note the following numbers are for this exercise only as they are not
+real numbers from Twitter.
 
 Assumptions:
 - 300 million monthly active users.
@@ -595,319 +626,339 @@ Assumptions:
 - Data is stored for 5 years.
 
 Estimations:
-
-Query per second (QPS) estimate:
-- Daily active users (DAU) = 300 million * 50% = 150 million
-- Tweets QPS = 150 million * 2 tweets / 24 hour / 3600 seconds = ~3500
-- Peek QPS = 2 * QPS = ~7000
-
-We will only estimate media storage here.
-- Average tweet size:
-- tweet_id 64 bytes
-- text 140 bytes
-- media 1 MB
+- Query per second (QPS) estimate:
+  - Daily active users (DAU) = 300 million * 50% = 150 million
+  - Tweets QPS = 150 million * 2 tweets / 24 hour / 3600 seconds = ~3500
+  - Peek QPS = 2 * QPS = ~7000
+- Average tweet size.: We will only estimate media storage here.
+  - tweet_id 64 bytes
+  - text 140 bytes
+  - media 1 MB
 - Media storage: 150 million * 2 * 10% * 1 MB = 30 TB per day
 - 5-year media storage: 30 TB * 365 * 5 = ~55 PB
 
-Tips
+### Tips
 
-Back-of-the-envelope estimation is all about the process. Solving the problem is more
-important than obtaining results. Interviewers may test your problem-solving skills. Here are
-a few tips to follow:
-- Rounding and Approximation. It is difficult to perform complicated math operations
-during the interview. For example, what is the result of “99987 / 9.1”? There is no need to
-spend valuable time to solve complicated math problems. Precision is not expected. Use
-round numbers and approximation to your advantage. The division question can be
-simplified as follows: “100,000 / 10”.
-- Write down your assumptions. It is a good idea to write down your assumptions to be
-referenced later.
-- Label your units. When you write down “5”, does it mean 5 KB or 5 MB? You might
-confuse yourself with this. Write down the units because “5 MB” helps to remove
-ambiguity.
-- Commonly asked back-of-the-envelope estimations: QPS, peak QPS, storage, cache,
-number of servers, etc. You can practice these calculations when preparing for an
-interview. Practice makes perfect.
+Back-of-the-envelope estimation is all about the process. Solving the problem
+is more important than obtaining results. Interviewers may test your
+problem-solving skills. 
 
-Congratulations on getting this far! Now give yourself a pat on the back. Good job!
+Here are a few tips to follow:
+- Rounding and Approximation. It is difficult to perform complicated math
+  operations during the interview. For example, what is the result of “99987 /
+  9.1”? There is no need to spend valuable time to solve complicated math
+  problems. Precision is not expected. _Use round numbers and approximation to
+  your advantage_. The division question can be simplified as follows: “100,000
+  / 10”.
+- Write down your assumptions. It is a good idea to write down your assumptions
+  to be referenced later.
+- Label your units. When you write down “5”, does it mean 5 KB or 5 MB? You
+  might confuse yourself with this. Write down the units because “5 MB” helps
+  to remove ambiguity.
+- __Commonly asked back-of-the-envelope estimations__: QPS, peak QPS, storage,
+  cache, number of servers, etc. You can practice these calculations when
+  preparing for an interview. Practice makes perfect.
 
-Reference materials
-[1] J. Dean.Google Pro Tip: Use Back-Of-The-Envelope-Calculations To Choose The Best
+Congratulations on getting this far! Now give yourself a pat on the back. Good
+job!
 
-Design:
-http://highscalability.com/blog/2011/1/26/google-pro-tip-use-back-of-the-envelopecalculations-to-choo.html
-[2] System design primer: https://github.com/donnemartin/system-design-primer
-[3] Latency Numbers Every Programmer Should Know:
-https://colin-scott.github.io/personal_website/research/interactive_latency.html
-[4] Amazon Compute Service Level Agreement:
-https://aws.amazon.com/compute/sla/
-[5] Compute Engine Service Level Agreement (SLA):
-https://cloud.google.com/compute/sla
-[6] SLA summary for Azure services: https://azure.microsoft.com/enus/support/legal/sla/summary/
+### Reference materials
+
+- [1] J. Dean.Google Pro Tip: Use Back-Of-The-Envelope-Calculations To Choose The Best Design: http://highscalability.com/blog/2011/1/26/google-pro-tip-use-back-of-the-envelopecalculations-to-choo.html
+- [2] System design primer: https://github.com/donnemartin/system-design-primer
+- [3] Latency Numbers Every Programmer Should Know: https://colin-scott.github.io/personal_website/research/interactive_latency.html
+- [4] Amazon Compute Service Level Agreement: https://aws.amazon.com/compute/sla/
+- [5] Compute Engine Service Level Agreement (SLA): https://cloud.google.com/compute/sla
+- [6] SLA summary for Azure services: https://azure.microsoft.com/enus/support/legal/sla/summary/
 
 ## CHAPTER 3: A FRAMEWORK FOR SYSTEM DESIGN INTERVIEWS
 
-You have just landed a coveted on-site interview at your dream company. The hiring
-coordinator sends you a schedule for that day. Scanning down the list, you feel pretty good
-about it until your eyes land on this interview session - System Design Interview.
+You have just landed a coveted on-site interview at your dream company. The
+hiring coordinator sends you a schedule for that day. Scanning down the list,
+you feel pretty good about it until your eyes land on this interview session -
+System Design Interview.
 
-System design interviews are often intimidating. It could be as vague as “designing a wellknown product X?”. The questions are ambiguous and seem unreasonably broad. Your
-weariness is understandable. After all, how could anyone design a popular product in an hour
-that has taken hundreds if not thousands of engineers to build?
+System design interviews are often intimidating. It could be as vague as
+“designing a wellknown product X?”. The questions are ambiguous and seem
+unreasonably broad. Your weariness is understandable. After all, how could
+anyone design a popular product in an hour that has taken hundreds if not
+thousands of engineers to build?
 
-The good news is that no one expects you to. Real-world system design is extremely
-complicated. For example, Google search is deceptively simple; however, the amount of
-technology that underpins that simplicity is truly astonishing. If no one expects you to design
-a real-world system in an hour, what is the benefit of a system design interview?
+The good news is that no one expects you to. Real-world system design is
+extremely complicated. For example, Google search is deceptively simple;
+however, the amount of technology that underpins that simplicity is truly
+astonishing. If no one expects you to design a real-world system in an hour,
+what is the benefit of a system design interview?
 
-The system design interview simulates real-life problem solving where two co-workers
-collaborate on an ambiguous problem and come up with a solution that meets their goals. The
-problem is open-ended, and there is no perfect answer. The final design is less important
-compared to the work you put in the design process. This allows you to demonstrate your
-design skill, defend your design choices, and respond to feedback in a constructive manner.
+The system design interview simulates real-life problem solving where two
+co-workers collaborate on an ambiguous problem and come up with a solution that
+meets their goals. The problem is open-ended, and there is no perfect answer.
+_The final design is less important compared to the work you put in the design
+process_. This allows you to demonstrate your design skill, defend your design
+choices, and respond to feedback in a constructive manner.
 
-Let us flip the table and consider what goes through the interviewer’s head as she walks into
-the conference room to meet you. The primary goal of the interviewer is to accurately assess
-your abilities. The last thing she wants is to give an inconclusive evaluation because the
-session has gone poorly and there are not enough signals. What is an interviewer looking for
-in a system design interview?
+Let us flip the table and consider what goes through the interviewer’s head as
+she walks into the conference room to meet you. The primary goal of the
+interviewer is to accurately assess your abilities. The last thing she wants is
+to give an inconclusive evaluation because the session has gone poorly and
+there are not enough signals. What is an interviewer looking for in a system
+design interview?
 
-Many think that system design interview is all about a person's technical design skills. It is
-much more than that. An effective system design interview gives strong signals about a
-person's ability to collaborate, to work under pressure, and to resolve ambiguity
-constructively. The ability to ask good questions is also an essential skill, and many
-interviewers specifically look for this skill.
+Many think that system design interview is all about a person's technical
+design skills. It is much more than that. An effective system design interview
+gives strong signals about a person's ability to collaborate, to work under
+pressure, and to resolve ambiguity constructively. The ability to ask good
+questions is also an essential skill, and many interviewers specifically look
+for this skill.
 
-A good interviewer also looks for red flags. Over-engineering is a real disease of many
-engineers as they delight in design purity and ignore tradeoffs. They are often unaware of the
-compounding costs of over-engineered systems, and many companies pay a high price for
-that ignorance. You certainly do not want to demonstrate this tendency in a system design
-interview. Other red flags include narrow mindedness, stubbornness, etc.
+A good interviewer also looks for red flags. Over-engineering is a real disease
+of many engineers as they delight in design purity and ignore tradeoffs. They
+are often unaware of the compounding costs of over-engineered systems, and many
+companies pay a high price for that ignorance. You certainly do not want to
+demonstrate this tendency in a system design interview. Other red flags include
+narrow mindedness, stubbornness, etc.
 
-In this chapter, we will go over some useful tips and introduce a simple and effective
-framework to solve system design interview problems.
+In this chapter, we will go over some useful tips and introduce a simple and
+effective framework to solve system design interview problems.
 
-A 4-step process for effective system design interview
+### A 4-step process for effective system design interview
 
-Every system design interview is different. A great system design interview is open-ended
-and there is no one-size-fits-all solution. However, there are steps and common ground to
-cover in every system design interview.
+Every system design interview is different. A great system design interview is
+open-ended and there is no one-size-fits-all solution. However, there are steps
+and common ground to cover in every system design interview.
 
-Step 1 - Understand the problem and establish design scope
-"Why did the tiger roar?"
+##### Step 1 - Understand the problem and establish design scope
 
-A hand shot up in the back of the class.
-"Yes, Jimmy?", the teacher responded.
-"Because he was HUNGRY".
-"Very good Jimmy."
+    "Why did the tiger roar?"
+    A hand shot up in the back of the class.
+    "Yes, Jimmy?", the teacher responded.
+    "Because he was HUNGRY".
+    "Very good Jimmy."
 
-Throughout his childhood, Jimmy has always been the first to answer questions in the class.
+Throughout his childhood, Jimmy has always been the first to answer questions
+in the class.
 
-Whenever the teacher asks a question, there is always a kid in the classroom who loves to
-take a crack at the question, no matter if he knows the answer or not. That is Jimmy.
+Whenever the teacher asks a question, there is always a kid in the classroom
+who loves to take a crack at the question, no matter if he knows the answer or
+not. That is Jimmy.
 
-Jimmy is an ace student. He takes pride in knowing all the answers fast. In exams, he is
-usually the first person to finish the questions. He is a teacher's top choice for any academic
-competition.
+Jimmy is an ace student. He takes pride in knowing all the answers fast. In
+exams, he is usually the first person to finish the questions. He is a
+teacher's top choice for any academic competition.
 
-DON'T be like Jimmy.
+_DON'T be like Jimmy_.
 
-In a system design interview, giving out an answer quickly without thinking gives you no
-bonus points. Answering without a thorough understanding of the requirements is a huge red
-flag as the interview is not a trivia contest. There is no right answer.
+In a system design interview, giving out an answer quickly without thinking
+gives you no bonus points. Answering without a thorough understanding of the
+requirements is a huge red flag as the interview is not a trivia contest. There
+is no right answer.
 
-So, do not jump right in to give a solution. Slow down. Think deeply and ask questions to
-clarify requirements and assumptions. This is extremely important.
+So, do not jump right in to give a solution. Slow down. Think deeply and ask
+questions to clarify requirements and assumptions. This is extremely important.
 
-As an engineer, we like to solve hard problems and jump into the final design; however, this
-approach is likely to lead you to design the wrong system. One of the most important skills as
-an engineer is to ask the right questions, make the proper assumptions, and gather all the
-information needed to build a system. So, do not be afraid to ask questions.
+As an engineer, we like to solve hard problems and jump into the final design;
+however, this approach is likely to lead you to design the wrong system. One of
+the most important skills as an engineer is to ask the right questions, make
+the proper assumptions, and gather all the information needed to build a
+system. So, do not be afraid to ask questions.
 
-When you ask a question, the interviewer either answers your question directly or asks you to
-make your assumptions. If the latter happens, write down your assumptions on the
-whiteboard or paper. You might need them later.
+When you ask a question, the interviewer either answers your question directly
+or asks you to make your assumptions. If the latter happens, write down your
+assumptions on the whiteboard or paper. You might need them later.
 
-What kind of questions to ask? Ask questions to understand the exact requirements. Here is a
-list of questions to help you get started:
-- What specific features are we going to build?
-- How many users does the product have?
-- How fast does the company anticipate to scale up? What are the anticipated scales in 3
-months, 6 months, and a year?
-- What is the company’s technology stack? What existing services you might leverage to
-simplify the design?
+What kind of questions to ask? Ask questions to understand the exact
+requirements. Here is a list of questions to help you get started:
+
+> What specific features are we going to build?
+> How many users does the product have?
+> How fast does the company anticipate to scale up? 
+> What are the anticipated scales in 3 months, 6 months, and a year?
+> What is the company’s technology stack? 
+> What existing services you might leverage to simplify the design?
+
+### Example
+
+If you are asked to design a news feed system, you want to ask questions that
+help you clarify the requirements. The conversation between you and the
+interviewer might look like this:
+
+- Candidate: Is this a mobile app? Or a web app? Or both?
+- Interviewer: Both.
+- Candidate: What are the most important features for the product?
+- Interviewer: Ability to make a post and see friends’ news feed.
+- Candidate: Is the news feed sorted in reverse chronological order or a
+  particular order? The particular order means each post is given a different
+  weight. For instance, posts from your close friends are more important than
+  posts from a group.
+- Interviewer: To keep things simple, let us assume the feed is sorted by
+  reverse chronological order.
+- Candidate: How many friends can a user have?
+- Interviewer: 5000
+- Candidate: What is the traffic volume?
+- Interviewer: 10 million daily active users (DAU)
+- Candidate: Can feed contain images, videos, or just text?
+- Interviewer: It can contain media files, including both images and videos.
+- Above are some sample questions that you can ask your interviewer. It is
+  important to understand the requirements and clarify ambiguities
+
+### Step 2 - Propose high-level design and get buy-in
+
+In this step, we aim to develop a high-level design and reach an agreement with
+the interviewer on the design. It is a great idea to collaborate with the
+interviewer during the process.
+- Come up with an __initial blueprint__ for the design. Ask for __feedback__.
+  Treat your interviewer as a teammate and work together. Many good
+  interviewers love to talk and get involved.
+- Draw __box diagrams__ with key components on the whiteboard or paper. This
+  might include clients (mobile/web), APIs, web servers, data stores, cache,
+  CDN, message queue, etc.
+- Do __back-of-the-envelope__ calculations to evaluate if your blueprint fits
+  the scale constraints. Think out loud. Communicate with your interviewer if
+  back-of-the-envelope is necessary before diving into it.
+
+If possible, go through a few concrete use cases. This will help you frame the
+high-level design. It is also likely that the use cases would help you discover
+edge cases you have not yet considered.
+
+Should we include API endpoints and database schema here? This depends on the
+problem.
+
+For large design problems like “Design Google search engine”, this is a bit of
+too low level.
+
+For a problem like designing the backend for a multi-player poker game, this is
+a fair game.
+
+### Communicate with your interviewer.
 
 Example
 
-If you are asked to design a news feed system, you want to ask questions that help you clarify
-the requirements. The conversation between you and the interviewer might look like this:
+Let us use “Design a news feed system” to demonstrate how to approach the
+high-level design. Here you are not required to understand how the system
+actually works. All the details will be explained in Chapter 11.
 
-Candidate: Is this a mobile app? Or a web app? Or both?
-
-Interviewer: Both.
-
-Candidate: What are the most important features for the product?
-
-Interviewer: Ability to make a post and see friends’ news feed.
-
-Candidate: Is the news feed sorted in reverse chronological order or a particular order? The
-particular order means each post is given a different weight. For instance, posts from your
-close friends are more important than posts from a group.
-
-Interviewer: To keep things simple, let us assume the feed is sorted by reverse chronological
-order.
-
-Candidate: How many friends can a user have?
-
-Interviewer: 5000
-
-Candidate: What is the traffic volume?
-
-Interviewer: 10 million daily active users (DAU)
-
-Candidate: Can feed contain images, videos, or just text?
-
-Interviewer: It can contain media files, including both images and videos.
-
-Above are some sample questions that you can ask your interviewer. It is important to
-understand the requirements and clarify ambiguities
-
-Step 2 - Propose high-level design and get buy-in
-
-In this step, we aim to develop a high-level design and reach an agreement with the
-interviewer on the design. It is a great idea to collaborate with the interviewer during the
-process.
-- Come up with an initial blueprint for the design. Ask for feedback. Treat your
-interviewer as a teammate and work together. Many good interviewers love to talk and get
-involved.
-- Draw box diagrams with key components on the whiteboard or paper. This might include
-clients (mobile/web), APIs, web servers, data stores, cache, CDN, message queue, etc.
-- Do back-of-the-envelope calculations to evaluate if your blueprint fits the scale
-constraints. Think out loud. Communicate with your interviewer if back-of-the-envelope is
-necessary before diving into it.
-
-If possible, go through a few concrete use cases. This will help you frame the high-level
-design. It is also likely that the use cases would help you discover edge cases you have not
-yet considered.
-
-Should we include API endpoints and database schema here? This depends on the problem.
-
-For large design problems like “Design Google search engine”, this is a bit of too low level.
-
-For a problem like designing the backend for a multi-player poker game, this is a fair game.
-
-Communicate with your interviewer.
-
-Example
-
-Let us use “Design a news feed system” to demonstrate how to approach the high-level
-design. Here you are not required to understand how the system actually works. All the
-details will be explained in Chapter 11.
-
-At the high level, the design is divided into two flows: feed publishing and news feed
-building.
-- Feed publishing: when a user publishes a post, corresponding data is written into
-cache/database, and the post will be populated into friends’ news feed.
-- Newsfeed building: the news feed is built by aggregating friends’ posts in a reverse
-chronological order.
+At the high level, the design is divided into two flows: feed publishing and
+news feed building.
+- Feed publishing: when a user publishes a post, corresponding data is written
+  into cache/database, and the post will be populated into friends’ news feed.
+- Newsfeed building: the news feed is built by aggregating friends’ posts in a
+  reverse chronological order.
 
 Figure 3-1 and Figure 3-2 present high-level designs for feed publishing and news feed
 building flows, respectively.
 
-Step 3 - Design deep dive
+![feed publishing](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/03.01.png)
+![news feed](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/03.02.png)
 
-At this step, you and your interviewer should have already achieved the following objectives:
+### Step 3 - Design deep dive
+
+At this step, you and your interviewer should have already achieved the
+following objectives:
 - Agreed on the overall goals and feature scope
 - Sketched out a high-level blueprint for the overall design
 - Obtained feedback from your interviewer on the high-level design
-- Had some initial ideas about areas to focus on in deep dive based on her feedback
+- Had some initial ideas about areas to focus on in deep dive based on her
+  feedback
 
-You shall work with the interviewer to identify and prioritize components in the architecture.
+You shall work with the interviewer to identify and prioritize components in
+the architecture.
 
-It is worth stressing that every interview is different. Sometimes, the interviewer may give off
-hints that she likes focusing on high-level design. Sometimes, for a senior candidate
-interview, the discussion could be on the system performance characteristics, likely focusing
-on the bottlenecks and resource estimations. In most cases, the interviewer may want you to
-dig into details of some system components. For URL shortener, it is interesting to dive into
-the hash function design that converts a long URL to a short one. For a chat system, how to
-reduce latency and how to support online/offline status are two interesting topics.
+It is worth stressing that every interview is different. Sometimes, the
+interviewer may give off hints that she likes focusing on high-level design.
+Sometimes, for a senior candidate interview, the discussion could be on the
+system performance characteristics, likely focusing on the bottlenecks and
+resource estimations. In most cases, the interviewer may want you to dig into
+details of some system components. For URL shortener, it is interesting to dive
+into the hash function design that converts a long URL to a short one. For a
+chat system, how to reduce latency and how to support online/offline status are
+two interesting topics.
 
-Time management is essential as it is easy to get carried away with minute details that do not
-demonstrate your abilities. You must be armed with signals to show your interviewer. Try not
-to get into unnecessary details. For example, talking about the EdgeRank algorithm of
+Time management is essential as it is easy to get carried away with minute
+details that do not demonstrate your abilities. You must be armed with signals
+to show your interviewer. Try not to get into unnecessary details. For example,
+talking about the EdgeRank algorithm of Facebook feed ranking in detail is not
+ideal during a system design interview as this takes much precious time and
+does not prove your ability in designing a scalable system.
 
-Facebook feed ranking in detail is not ideal during a system design interview as this takes
-much precious time and does not prove your ability in designing a scalable system.
+### Example
 
-Example
-
-At this point, we have discussed the high-level design for a news feed system, and the
-interviewer is happy with your proposal. Next, we will investigate two of the most important
-use cases:
+At this point, we have discussed the high-level design for a news feed system,
+and the interviewer is happy with your proposal. Next, we will investigate two
+of the most important use cases:
 1. Feed publishing
 2. News feed retrieval
 
-Figure 3-3 and Figure 3-4 show the detailed design for the two use cases, which will be
-explained in detail in Chapter 11.
+Figure 3-3 and Figure 3-4 show the detailed design for the two use cases, which
+will be explained in detail in Chapter 11.
 
-Step 4 - Wrap up
+![feed publishing](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/03.03.png)
+![news feed](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/03.04.png)
 
-In this final step, the interviewer might ask you a few follow-up questions or give you the
-freedom to discuss other additional points. Here are a few directions to follow:
-- The interviewer might want you to identify the system bottlenecks and discuss potential
-improvements. Never say your design is perfect and nothing can be improved. There is
-always something to improve upon. This is a great opportunity to show your critical
-thinking and leave a good final impression.
-- It could be useful to give the interviewer a recap of your design. This is particularly
-important if you suggested a few solutions. Refreshing your interviewer’s memory can be
-helpful after a long session.
-- Error cases (server failure, network loss, etc.) are interesting to talk about.
-- Operation issues are worth mentioning. How do you monitor metrics and error logs?
+### Step 4 - Wrap up
+
+In this final step, the interviewer might ask you a few follow-up questions or
+give you the freedom to discuss other additional points. Here are a few
+directions to follow:
+- The interviewer might want you to identify the system bottlenecks and discuss
+  potential improvements. Never say your design is perfect and nothing can be
+  improved. There is always something to improve upon. This is a great
+  opportunity to show your critical thinking and leave a good final impression.
+- It could be useful to give the interviewer a recap of your design. This is
+  particularly important if you suggested a few solutions. Refreshing your
+  interviewer’s memory can be helpful after a long session.
+- Error cases (server failure, network loss, etc.) are interesting to talk
+  about.
+- Operation issues are worth mentioning. How do you monitor metrics and error
+  logs?
 
 How to roll out the system?
-- How to handle the next scale curve is also an interesting topic. For example, if your
-current design supports 1 million users, what changes do you need to make to support 10
-million users?
+- How to handle the next scale curve is also an interesting topic. For example,
+  if your current design supports 1 million users, what changes do you need to
+  make to support 10 million users?
 - Propose other refinements you need if you had more time.
 
 To wrap up, we summarize a list of the Dos and Don’ts.
 
-Dos
+### Dos
 - Always ask for clarification. Do not assume your assumption is correct.
 - Understand the requirements of the problem.
-- There is neither the right answer nor the best answer. A solution designed to solve the
-problems of a young startup is different from that of an established company with millions
-of users. Make sure you understand the requirements.
-- Let the interviewer know what you are thinking. Communicate with your interview.
+- There is neither the right answer nor the best answer. A solution designed to
+  solve the problems of a young startup is different from that of an
+  established company with millions of users. Make sure you understand the
+  requirements.
+- Let the interviewer know what you are thinking. Communicate with your
+  interview.
 - Suggest multiple approaches if possible.
-- Once you agree with your interviewer on the blueprint, go into details on each
-component. Design the most critical components first.
-- Bounce ideas off the interviewer. A good interviewer works with you as a teammate.
+- Once you agree with your interviewer on the blueprint, go into details on
+  each component. Design the most critical components first.
+- Bounce ideas off the interviewer. A good interviewer works with you as a
+  teammate.
 - Never give up.
 
-Don’ts
+### Don’ts
 - Don't be unprepared for typical interview questions.
-- Don’t jump into a solution without clarifying the requirements and assumptions.
-- Don’t go into too much detail on a single component in the beginning. Give the highlevel design first then drills down.
+- Don’t jump into a solution without clarifying the requirements and
+  assumptions.
+- Don’t go into too much detail on a single component in the beginning. Give
+  the highlevel design first then drills down.
 - If you get stuck, don't hesitate to ask for hints.
 - Again, communicate. Don't think in silence.
-- Don’t think your interview is done once you give the design. You are not done until your
-interviewer says you are done. Ask for feedback early and often.
+- Don’t think your interview is done once you give the design. You are not done
+  until your interviewer says you are done. Ask for feedback early and often.
 
-Time allocation on each step
+### Time allocation on each step
 
-System design interview questions are usually very broad, and 45 minutes or an hour is not
-enough to cover the entire design. Time management is essential. How much time should you
-spend on each step? The following is a very rough guide on distributing your time in a 45-
-minute interview session. Please remember this is a rough estimate, and the actual time
-distribution depends on the scope of the problem and the requirements from the interviewer.
+System design interview questions are usually very broad, and 45 minutes or an
+hour is not enough to cover the entire design. Time management is essential.
+How much time should you spend on each step? The following is a very rough
+guide on distributing your time in a 45- minute interview session. Please
+remember this is a rough estimate, and the actual time distribution depends on
+the scope of the problem and the requirements from the interviewer.
 
-Step 1 Understand the problem and establish design scope: 3 - 10 minutes
-
-Step 2 Propose high-level design and get buy-in: 10 - 15 minutes
-
-Step 3 Design deep dive: 10 - 25 minutes
-
-Step 4 Wrap: 3 - 5 minutes
+- Step 1 __Understand the problem and establish design scope__: 3 - 10 minutes
+- Step 2 __Propose high-level design and get buy-in__: 10 - 15 minutes
+- Step 3 __Design deep dive__: 10 - 25 minutes
+- Step 4 __Wrap__: 3 - 5 minutes
 
 ## CHAPTER 4: DESIGN A RATE LIMITER
 
