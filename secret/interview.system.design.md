@@ -5832,5 +5832,5 @@ systemdesigninsider@gmail.com. Besides, if you notice any errors, please let us 
 can make corrections in the next edition. Thank you!
 
 <style>
-img { width: 50%; margin: auto; }
+img { max-width: 50%; max-height: 50%; margin: auto; }
 </style>
