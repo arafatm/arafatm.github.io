@@ -10,7 +10,7 @@ permalink: /interview/system-design
 
 - [ ] [Software Engineering Manager, Initial Interview Guide](https://scontent-sea1-1.xx.fbcdn.net/v/t39.2365-6/332855504_1602132406878983_5340602504034862758_n.pdf?_nc_cat=101&ccb=1-7&_nc_sid=e280be&_nc_ohc=848xg9KBa0QAX_xpHmm&_nc_ht=scontent-sea1-1.xx&oh=00_AfDSUqgQ7RMaz0WFKptthIPKxFeHdprBefsnF6uDCO-j3g&oe=654B9C4B)
 - [ ] [7 steps of Facebook / Meta interview process & how to ace them - IGotAnOffer](https://igotanoffer.com/blogs/tech/facebook-interview-process)
-- [ ] [Tech Interview (Updating in Progress ...) - Google Sheets](https://docs.google.com/spreadsheets/d/14aVAyDsQmz50TxhldNV5lmsyvYOJrAT9gzi7sGfMu9k/edit#gid=1051045762)
+- [ ] Craig: [Tech Interview (Updating in Progress ...) - Google Sheets](https://docs.google.com/spreadsheets/d/14aVAyDsQmz50TxhldNV5lmsyvYOJrAT9gzi7sGfMu9k/edit#gid=1051045762)
 - [ ] [(214) TOP FACEBOOK SYSTEM DESIGN INTERVIEW QUESTIONS (PART 1) | Facebook Pirate Interview Round - YouTube](https://www.youtube.com/watch?v=hykjbT5Z0oE)
 - [ ] https://tianpan.co/notes/2016-02-13-crack-the-system-design-interview
 - [ ] [donnemartin/system-design-primer: Learn how to design large-scale systems. Prep for the system design interview. Includes Anki flashcards.](https://github.com/donnemartin/system-design-primer)
