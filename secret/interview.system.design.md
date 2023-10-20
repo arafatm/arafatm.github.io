@@ -6,7 +6,7 @@ title: System Design Interview - An Insider’s Guide
 
 ```
 :execute getline(".")
-iab png ![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/04.07.png)
+inoremap png ![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/05.11.png)<ESC>5<left>r
 ```
 
 [System Design Interview PDF](system.design.interview.pdf)
@@ -1263,99 +1263,119 @@ are defined as those older than the start of the current time window.
 Otherwise, it is rejected.
 
 We explain the algorithm with an example as revealed in Figure 4-10.
+![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/04.10.png) 
 
-In this example, the rate limiter allows 2 requests per minute. Usually, Linux timestamps are
-stored in the log. However, human-readable representation of time is used in our example for
-better readability.
-- The log is empty when a new request arrives at 1:00:01. Thus, the request is allowed.
-- A new request arrives at 1:00:30, the timestamp 1:00:30 is inserted into the log. After the
-insertion, the log size is 2, not larger than the allowed count. Thus, the request is allowed.
-- A new request arrives at 1:00:50, and the timestamp is inserted into the log. After the
-insertion, the log size is 3, larger than the allowed size 2. Therefore, this request is rejected
-even though the timestamp remains in the log.
-- A new request arrives at 1:01:40. Requests in the range [1:00:40,1:01:40) are within the
-latest time frame, but requests sent before 1:00:40 are outdated. Two outdated timestamps,
-1:00:01 and 1:00:30, are removed from the log. After the remove operation, the log size
-becomes 2; therefore, the request is accepted.
+In this example, the rate limiter allows 2 requests per minute. Usually, Linux
+timestamps are stored in the log. However, human-readable representation of
+time is used in our example for better readability.
+- The log is empty when a new request arrives at 1:00:01. Thus, the request is
+  allowed.
+- A new request arrives at 1:00:30, the timestamp 1:00:30 is inserted into the
+  log. After the insertion, the log size is 2, not larger than the allowed
+  count. Thus, the request is allowed.
+- A new request arrives at 1:00:50, and the timestamp is inserted into the log.
+  After the insertion, the log size is 3, larger than the allowed size 2.
+  Therefore, this request is rejected even though the timestamp remains in the
+  log.
+- A new request arrives at 1:01:40. Requests in the range [1:00:40,1:01:40) are
+  within the latest time frame, but requests sent before 1:00:40 are outdated.
+  Two outdated timestamps, 1:00:01 and 1:00:30, are removed from the log. After
+  the remove operation, the log size becomes 2; therefore, the request is
+  accepted.
 
 Pros:
-- Rate limiting implemented by this algorithm is very accurate. In any rolling window,
-requests will not exceed the rate limit.
+- Rate limiting implemented by this algorithm is very accurate. In any rolling
+  window, requests will not exceed the rate limit.
 
 Cons:
-- The algorithm consumes a lot of memory because even if a request is rejected, its
-timestamp might still be stored in memory.
+- The algorithm consumes a lot of memory because even if a request is rejected,
+  its timestamp might still be stored in memory.
 
 ##### Sliding window counter algorithm
 
-The sliding window counter algorithm is a hybrid approach that combines the fixed window
-counter and sliding window log. The algorithm can be implemented by two different
-approaches. We will explain one implementation in this section and provide reference for the
-other implementation at the end of the section. Figure 4-11 illustrates how this algorithm
-works.
+The sliding window counter algorithm is a hybrid approach that combines the
+fixed window counter and sliding window log. The algorithm can be implemented
+by two different approaches. We will explain one implementation in this section
+and provide reference for the other implementation at the end of the section.
 
-Assume the rate limiter allows a maximum of 7 requests per minute, and there are 5 requests
-in the previous minute and 3 in the current minute. For a new request that arrives at a 30%
-position in the current minute, the number of requests in the rolling window is calculated
-using the following formula:
-- Requests in current window + requests in the previous window * overlap percentage of
-the rolling window and previous window
-- Using this formula, we get 3 + 5 * 0.7% = 6.5 request. Depending on the use case, the
-number can either be rounded up or down. In our example, it is rounded down to 6.
+Figure 4-11 illustrates how this algorithm works.
+![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/04.11.png) 
 
-Since the rate limiter allows a maximum of 7 requests per minute, the current request can go
-through. However, the limit will be reached after receiving one more request.
+Assume the rate limiter allows a maximum of 7 requests per minute, and there
+are 5 requests in the previous minute and 3 in the current minute. For a new
+request that arrives at a 30% position in the current minute, the number of
+requests in the rolling window is calculated using the following formula:
+- Requests in current window + requests in the previous window * overlap
+  percentage of the rolling window and previous window
+- Using this formula, we get 3 + 5 * 0.7% = 6.5 request. Depending on the use
+  case, the number can either be rounded up or down. In our example, it is
+  rounded down to 6.
 
-Due to the space limitation, we will not discuss the other implementation here. Interested
-readers should refer to the reference material [9]. This algorithm is not perfect. It has pros and
-cons.
+Since the rate limiter allows a maximum of 7 requests per minute, the current
+request can go through. However, the limit will be reached after receiving one
+more request.
+
+Due to the space limitation, we will not discuss the other implementation here.
+Interested readers should refer to the reference material [9]. This algorithm
+is not perfect. It has pros and cons.
 
 Pros
-- It smooths out spikes in traffic because the rate is based on the average rate of the
-previous window.
+- It smooths out spikes in traffic because the rate is based on the average
+  rate of the previous window.
 - Memory efficient.
 
 Cons
-- It only works for not-so-strict look back window. It is an approximation of the actual rate
-because it assumes requests in the previous window are evenly distributed. However, this
-problem may not be as bad as it seems. According to experiments done by Cloudflare [10],
-only 0.003% of requests are wrongly allowed or rate limited among 400 million requests.
+- It only works for not-so-strict look back window. It is an approximation of
+  the actual rate because it assumes requests in the previous window are evenly
+  distributed. 
+- However, this problem may not be as bad as it seems. According to experiments
+  done by Cloudflare [10], only 0.003% of requests are wrongly allowed or rate
+  limited among 400 million requests.
 
-High-level architecture
+#### High-level architecture
 
-The basic idea of rate limiting algorithms is simple. At the high-level, we need a counter to
-keep track of how many requests are sent from the same user, IP address, etc. If the counter is
-larger than the limit, the request is disallowed.
+The basic idea of rate limiting algorithms is simple. At the high-level, we
+need a counter to keep track of how many requests are sent from the same user,
+IP address, etc. If the counter is larger than the limit, the request is
+disallowed.
 
-Where shall we store counters? Using the database is not a good idea due to slowness of disk
-access. In-memory cache is chosen because it is fast and supports time-based expiration
-strategy. For instance, Redis [11] is a popular option to implement rate limiting. It is an inmemory store that offers two commands: INCR and EXPIRE.
+Where shall we store counters? Using the database is not a good idea due to
+slowness of disk access. In-memory cache is chosen because it is fast and
+supports time-based expiration strategy. For instance, Redis [11] is a popular
+option to implement rate limiting. It is an inmemory store that offers two
+commands: INCR and EXPIRE.
 - INCR: It increases the stored counter by 1.
-- EXPIRE: It sets a timeout for the counter. If the timeout expires, the counter is
-automatically deleted.
+- EXPIRE: It sets a timeout for the counter. If the timeout expires, the
+  counter is automatically deleted.
 
-Figure 4-12 shows the high-level architecture for rate limiting, and this works as follows:
+Figure 4-12 shows the high-level architecture for rate limiting, and this works
+as follows:
+![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/04.12.png) 
 - The client sends a request to rate limiting middleware.
-- Rate limiting middleware fetches the counter from the corresponding bucket in Redis and
-checks if the limit is reached or not.
+- Rate limiting middleware fetches the counter from the corresponding bucket in
+  Redis and checks if the limit is reached or not.
 - If the limit is reached, the request is rejected.
-- If the limit is not reached, the request is sent to API servers. Meanwhile, the system
-increments the counter and saves it back to Redis.
+- If the limit is not reached, the request is sent to API servers. Meanwhile,
+  the system increments the counter and saves it back to Redis.
 
-Step 3 - Design deep dive
+### Step 3 - Design deep dive
 
 The high-level design in Figure 4-12 does not answer the following questions:
-- How are rate limiting rules created? Where are the rules stored?
+- How are rate limiting rules created? 
+- Where are the rules stored?
 - How to handle requests that are rate limited?
 
-In this section, we will first answer the questions regarding rate limiting rules and then go
-over the strategies to handle rate-limited requests. Finally, we will discuss rate limiting in
-distributed environment, a detailed design, performance optimization and monitoring.
+In this section, we will first answer the questions regarding rate limiting
+rules and then go over the strategies to handle rate-limited requests. Finally,
+we will discuss rate limiting in distributed environment, a detailed design,
+performance optimization and monitoring.
 
-Rate limiting rules
+#### Rate limiting rules
 
-Lyft open-sourced their rate-limiting component [12]. We will peek inside of the component
-and look at some examples of rate limiting rules:
+Lyft open-sourced their rate-limiting component [12]. We will peek inside of
+the component and look at some examples of rate limiting rules:
+
+```yaml
 domain: messaging
 descriptors:
 - key: message_type
@@ -1364,9 +1384,12 @@ Value: marketing
 rate_limit:
 unit: day
 requests_per_unit: 5
+```
 
-In the above example, the system is configured to allow a maximum of 5 marketing messages
-per day. Here is another example:
+In the above example, the system is configured to allow a maximum of 5
+marketing messages per day. Here is another example:
+
+```yaml
 domain: auth
 descriptors:
 - key: auth_type
@@ -1375,120 +1398,146 @@ Value: login
 rate_limit:
 unit: minute
 requests_per_unit: 5
+```
 
-This rule shows that clients are not allowed to login more than 5 times in 1 minute. Rules are
-generally written in configuration files and saved on disk.
+This rule shows that clients are not allowed to login more than 5 times in 1
+minute. Rules are generally written in configuration files and saved on disk.
 
-Exceeding the rate limit
+#### Exceeding the rate limit
 
-In case a request is rate limited, APIs return a HTTP response code 429 (too many requests)
-to the client. Depending on the use cases, we may enqueue the rate-limited requests to be
-processed later. For example, if some orders are rate limited due to system overload, we may
-keep those orders to be processed later.
+In case a request is rate limited, APIs return a HTTP response code 429 (too
+many requests) to the client. Depending on the use cases, we may enqueue the
+rate-limited requests to be processed later. For example, if some orders are
+rate limited due to system overload, we may keep those orders to be processed
+later.
 
-Rate limiter headers
+#### Rate limiter headers
 
-How does a client know whether it is being throttled? And how does a client know the
-number of allowed remaining requests before being throttled? The answer lies in HTTP
-response headers. The rate limiter returns the following HTTP headers to clients:
+How does a client know whether it is being throttled? And how does a client
+know the number of allowed remaining requests before being throttled? The
+answer lies in HTTP response headers. The rate limiter returns the following
+HTTP headers to clients:
 
-X-Ratelimit-Remaining: The remaining number of allowed requests within the window.
+- `X-Ratelimit-Remaining`: The remaining number of allowed requests within the
+  window.
+- `X-Ratelimit-Limit`: It indicates how many calls the client can make per time
+  window.
+- `X-Ratelimit-Retry-After`: The number of seconds to wait until you can make a
+  request again without being throttled.
 
-X-Ratelimit-Limit: It indicates how many calls the client can make per time window.
+When a user has sent too many requests, a 429 too many requests error and
+X-Ratelimit-Retry-After header are returned to the client.
 
-X-Ratelimit-Retry-After: The number of seconds to wait until you can make a request again
-without being throttled.
-
-When a user has sent too many requests, a 429 too many requests error and X-Ratelimit-
-
-Retry-After header are returned to the client.
-
-Detailed design
+#### Detailed design
 
 Figure 4-13 presents a detailed design of the system.
-- Rules are stored on the disk. Workers frequently pull rules from the disk and store them
-in the cache.
-- When a client sends a request to the server, the request is sent to the rate limiter
-middleware first.
-- Rate limiter middleware loads rules from the cache. It fetches counters and last request
-timestamp from Redis cache. Based on the response, the rate limiter decides:
+![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/04.13.png) 
+
+- Rules are stored on the disk. Workers frequently pull rules from the disk and
+  store them in the cache.
+- When a client sends a request to the server, the request is sent to the rate
+  limiter middleware first.
+- Rate limiter middleware loads rules from the cache. It fetches counters and
+  last request timestamp from Redis cache. Based on the response, the rate
+  limiter decides:
 - if the request is not rate limited, it is forwarded to API servers.
-- if the request is rate limited, the rate limiter returns 429 too many requests error to
-the client. In the meantime, the request is either dropped or forwarded to the queue.
+- if the request is rate limited, the rate limiter returns 429 too many
+  requests error to the client. In the meantime, the request is either dropped
+  or forwarded to the queue.
 
-Rate limiter in a distributed environment
+#### Rate limiter in a distributed environment
 
-Building a rate limiter that works in a single server environment is not difficult. However,
-scaling the system to support multiple servers and concurrent threads is a different story.
+Building a rate limiter that works in a single server environment is not
+difficult. However, scaling the system to support multiple servers and
+concurrent threads is a different story.
 
 There are two challenges:
 - Race condition
 - Synchronization issue
 
-Race condition
+##### Race condition
 
 As discussed earlier, rate limiter works as follows at the high-level:
 - Read the counter value from Redis.
 - Check if ( counter + 1 ) exceeds the threshold.
 - If not, increment the counter value by 1 in Redis.
 
-Race conditions can happen in a highly concurrent environment as shown in Figure 4-14.
+Race conditions can happen in a highly concurrent environment as shown in
+Figure 4-14.
+![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/04.14.png) 
 
-Assume the counter value in Redis is 3. If two requests concurrently read the counter value
-before either of them writes the value back, each will increment the counter by one and write
-it back without checking the other thread. Both requests (threads) believe they have the
-correct counter value 4. However, the correct counter value should be 5.
+Assume the counter value in Redis is 3. If two requests concurrently read the
+counter value before either of them writes the value back, each will increment
+the counter by one and write it back without checking the other thread. Both
+requests (threads) believe they have the correct counter value 4. However, the
+correct counter value should be 5.
 
-Locks are the most obvious solution for solving race condition. However, locks will
-significantly slow down the system. Two strategies are commonly used to solve the problem:
+__Locks are the most obvious solution for solving race condition__. However,
+locks will significantly slow down the system. Two strategies are commonly used
+to solve the problem:
 
-Lua script [13] and sorted sets data structure in Redis [8]. For readers interested in these
-strategies, refer to the corresponding reference materials [8] [13].
+Lua script [13] and sorted sets data structure in Redis [8]. For readers
+interested in these strategies, refer to the corresponding reference materials
+[8] [13].
 
-Synchronization issue
+##### Synchronization issue
 
-Synchronization is another important factor to consider in a distributed environment. To
-support millions of users, one rate limiter server might not be enough to handle the traffic.
+Synchronization is another important factor to consider in a distributed
+environment. To support millions of users, one rate limiter server might not be
+enough to handle the traffic.
 
-When multiple rate limiter servers are used, synchronization is required. For example, on the
-left side of Figure 4-15, client 1 sends requests to rate limiter 1, and client 2 sends requests to
-rate limiter 2. As the web tier is stateless, clients can send requests to a different rate limiter
-as shown on the right side of Figure 4-15. If no synchronization happens, rate limiter 1 does
-not contain any data about client 2. Thus, the rate limiter cannot work properly.
+_When multiple rate limiter servers are used, synchronization is required_. For
+example, on the left side of Figure 4-15, client 1 sends requests to rate
+limiter 1, and client 2 sends requests to rate limiter 2. As the web tier is
+stateless, clients can send requests to a different rate limiter as shown on
+the right side of Figure 4-15. If no synchronization happens, rate limiter 1
+does not contain any data about client 2. Thus, the rate limiter cannot work
+properly.
 
-One possible solution is to use sticky sessions that allow a client to send traffic to the same
-rate limiter. This solution is not advisable because it is neither scalable nor flexible. A better
-approach is to use centralized data stores like Redis. The design is shown in Figure 4-16.
+![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/04.15.png) 
 
-Performance optimization
+One possible solution is to use sticky sessions that allow a client to send
+traffic to the same rate limiter. This solution is not advisable because it is
+neither scalable nor flexible. A better approach is to use centralized data
+stores like Redis. The design is shown in Figure 4-16.
+
+![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/04.16.png) 
+
+#### Performance optimization
 
 Performance optimization is a common topic in system design interviews. We will cover two
 areas to improve.
 
-First, multi-data center setup is crucial for a rate limiter because latency is high for users
-located far away from the data center. Most cloud service providers build many edge server
-locations around the world. For example, as of 5/20 2020, Cloudflare has 194 geographically
-distributed edge servers [14]. Traffic is automatically routed to the closest edge server to
-reduce latency.
+First, multi-data center setup is crucial for a rate limiter because latency is
+high for users located far away from the data center. Most cloud service
+providers build many edge server locations around the world. For example, as of
+5/20 2020, Cloudflare has 194 geographically distributed edge servers [14].
+Traffic is automatically routed to the closest edge server to reduce latency.
 
-Second, synchronize data with an eventual consistency model. If you are unclear about the
-eventual consistency model, refer to the “Consistency” section in “Chapter 6: Design a Keyvalue Store.”
+![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/04.17.png) 
 
-Monitoring
+Second, synchronize data with an eventual consistency model. If you are unclear
+about the eventual consistency model, refer to the “Consistency” section in
+“Chapter 6: Design a Keyvalue Store.”
 
-After the rate limiter is put in place, it is important to gather analytics data to check whether
-the rate limiter is effective. Primarily, we want to make sure:
+#### Monitoring
+
+After the rate limiter is put in place, it is important to gather analytics
+data to check whether the rate limiter is effective. Primarily, we want to make
+sure:
 - The rate limiting algorithm is effective.
 - The rate limiting rules are effective.
 
-For example, if rate limiting rules are too strict, many valid requests are dropped. In this case,
-we want to relax the rules a little bit. In another example, we notice our rate limiter becomes
-ineffective when there is a sudden increase in traffic like flash sales. In this scenario, we may
-replace the algorithm to support burst traffic. Token bucket is a good fit here.
+For example, if rate limiting rules are too strict, many valid requests are
+dropped. In this case, we want to relax the rules a little bit. In another
+example, we notice our rate limiter becomes ineffective when there is a sudden
+increase in traffic like flash sales. In this scenario, we may replace the
+algorithm to support burst traffic. Token bucket is a good fit here.
 
-Step 4 - Wrap up
+### Step 4 - Wrap up
 
-In this chapter, we discussed different algorithms of rate limiting and their pros/cons.
+In this chapter, we discussed different algorithms of rate limiting and their
+pros/cons.
 
 Algorithms discussed include:
 - Token bucket
@@ -1497,27 +1546,26 @@ Algorithms discussed include:
 - Sliding window log
 - Sliding window counter
 
-Then, we discussed the system architecture, rate limiter in a distributed environment,
-performance optimization and monitoring. Similar to any system design interview questions,
-there are additional talking points you can mention if time allows:
+Then, we discussed the system architecture, rate limiter in a distributed
+environment, performance optimization and monitoring. Similar to any system
+design interview questions, there are additional talking points you can mention
+if time allows:
 - Hard vs soft rate limiting.
-- Hard: The number of requests cannot exceed the threshold.
-- Soft: Requests can exceed the threshold for a short period.
-- Rate limiting at different levels. In this chapter, we only talked about rate limiting at the
-application level (HTTP: layer 7). It is possible to apply rate limiting at other layers. For
-example, you can apply rate limiting by IP addresses using Iptables [15] (IP: layer 3).
-
-Note: The Open Systems Interconnection model (OSI model) has 7 layers [16]: Layer 1:
-
-Physical layer, Layer 2: Data link layer, Layer 3: Network layer, Layer 4: Transport layer,
-
-Layer 5: Session layer, Layer 6: Presentation layer, Layer 7: Application layer.
+  - Hard: The number of requests cannot exceed the threshold.
+  - Soft: Requests can exceed the threshold for a short period.
+- Rate limiting at different levels. In this chapter, we only talked about rate
+  limiting at the application level (HTTP: layer 7). It is possible to apply
+  rate limiting at other layers. For example, you can apply rate limiting by IP
+  addresses using Iptables [15] (IP: layer 3). Note: The Open Systems
+  Interconnection model (OSI model) has 7 layers [16]: Layer 1: Physical layer,
+  Layer 2: Data link layer, Layer 3: Network layer, Layer 4: Transport layer,
+  Layer 5: Session layer, Layer 6: Presentation layer, Layer 7: Application
+  layer.
 - Avoid being rate limited. Design your client with best practices:
-- Use client cache to avoid making frequent API calls.
-- Understand the limit and do not send too many requests in a short time frame.
-- Include code to catch exceptions or errors so your client can gracefully recover from
-exceptions.
-- Add sufficient back off time to retry logic.
+  - Use client cache to avoid making frequent API calls.
+  - Understand the limit and do not send too many requests in a short time frame.
+  - Include code to catch exceptions or errors so your client can gracefully recover from exceptions.
+  - Add sufficient back off time to retry logic.
 
 Congratulations on getting this far! Now give yourself a pat on the back. Good job!
 
@@ -1546,191 +1594,231 @@ https://gist.github.com/ptarjan/e38f45f2dfe601419ca3af937fff574d#request-rate-li
 
 ## CHAPTER 5: DESIGN CONSISTENT HASHING
 
-To achieve horizontal scaling, it is important to distribute requests/data efficiently and evenly
-across servers. Consistent hashing is a commonly used technique to achieve this goal. But
-first, let us take an in-depth look at the problem.
+To achieve horizontal scaling, it is important to distribute requests/data
+efficiently and evenly across servers. Consistent hashing is a commonly used
+technique to achieve this goal. But first, let us take an in-depth look at the
+problem.
 
-The rehashing problem
+### The rehashing problem
 
-If you have n cache servers, a common way to balance the load is to use the following hash
-method:
-serverIndex = hash(key) % N, where N is the size of the server pool.
+If you have n cache servers, a common way to balance the load is to use the
+following hash method: `serverIndex = hash(key) % N`, where N is the size of
+the server pool.
 
-Let us use an example to illustrate how it works. As shown in Table 5-1, we have 4 servers
-and 8 string keys with their hashes.
+Let us use an example to illustrate how it works. As shown in Table 5-1, we
+have 4 servers and 8 string keys with their hashes.
 
-To fetch the server where a key is stored, we perform the modular operation f(key) % 4. For
-instance, hash(key0) % 4 = 1 means a client must contact server 1 to fetch the cached data.
+![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/05.01.t.png)
 
-Figure 5-1 shows the distribution of keys based on Table 5-1.
+To fetch the server where a key is stored, we perform the modular operation
+f(key) % 4. For instance, hash(key0) % 4 = 1 means a client must contact server
+1 to fetch the cached data.
 
-This approach works well when the size of the server pool is fixed, and the data distribution
-is even. However, problems arise when new servers are added, or existing servers are
-removed. For example, if server 1 goes offline, the size of the server pool becomes 3. Using
-the same hash function, we get the same hash value for a key. But applying modular
-operation gives us different server indexes because the number of servers is reduced by 1. We
-get the results as shown in Table 5-2 by applying hash % 3:
+This approach works well when the size of the server pool is fixed, and the
+data distribution is even. However, problems arise when new servers are added,
+or existing servers are removed. For example, if server 1 goes offline, the
+size of the server pool becomes 3. Using the same hash function, we get the
+same hash value for a key. But applying modular operation gives us different
+server indexes because the number of servers is reduced by 1. We get the
+results as shown in Table 5-2 by applying hash % 3:
+
+![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/05.02.t.png)
 
 Figure 5-2 shows the new distribution of keys based on Table 5-2.
 
-As shown in Figure 5-2, most keys are redistributed, not just the ones originally stored in the
-offline server (server 1). This means that when server 1 goes offline, most cache clients will
-connect to the wrong servers to fetch data. This causes a storm of cache misses. Consistent
-hashing is an effective technique to mitigate this problem.
+![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/05.02.png)
 
-Consistent hashing
+As shown in Figure 5-2, most keys are redistributed, not just the ones
+originally stored in the offline server (server 1). This means that when server
+1 goes offline, most cache clients will connect to the wrong servers to fetch
+data. This causes a storm of cache misses. Consistent hashing is an effective
+technique to mitigate this problem.
 
-Quoted from Wikipedia: "Consistent hashing is a special kind of hashing such that when a
-hash table is re-sized and consistent hashing is used, only k/n keys need to be remapped on
-average, where k is the number of keys, and n is the number of slots. In contrast, in most
-traditional hash tables, a change in the number of array slots causes nearly all keys to be
-remapped [1]”.
+### Consistent hashing
 
-Hash space and hash ring
+Quoted from Wikipedia: "Consistent hashing is a special kind of hashing such
+that when a hash table is re-sized and consistent hashing is used, only k/n
+keys need to be remapped on average, where k is the number of keys, and n is
+the number of slots. In contrast, in most traditional hash tables, _a change in
+the number of array slots causes nearly all keys to be remapped_ [1]”.
 
-Now we understand the definition of consistent hashing, let us find out how it works. Assume
+#### Hash space and hash ring
 
-SHA-1 is used as the hash function f, and the output range of the hash function is: x0, x1, x2,
-x3, …, xn. In cryptography, SHA-1’s hash space goes from 0 to 2^160 - 1. That means x0
-corresponds to 0, xn corresponds to 2^160 – 1, and all the other hash values in the middle fall
-between 0 and 2^160 - 1. Figure 5-3 shows the hash space.
+Now we understand the definition of consistent hashing, let us find out how it
+works. 
 
-By collecting both ends, we get a hash ring as shown in Figure 5-4:
+Assume SHA-1 is used as the hash function f, and the output range of the hash
+function is: `x0, x1, x2, x3, …, xn`. In cryptography, SHA-1’s hash space goes
+from `0 to 2^160 - 1`. That means x0 corresponds to 0, xn corresponds to 2^160 –
+1, and all the other hash values in the middle fall between 0 and 2^160 - 1.
 
-Hash servers
+Figure 5-3 shows the hash space. By collecting both ends, we get a hash ring as
+shown in Figure 5-4:
 
-Using the same hash function f, we map servers based on server IP or name onto the ring.
+![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/05.04.png)
+
+### Hash servers
+
+Using the same hash function f, we _map servers based on server IP or name onto
+the ring_.
 
 Figure 5-5 shows that 4 servers are mapped on the hash ring.
+![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/05.05.png)
 
-Hash keys
+### Hash keys
 
-One thing worth mentioning is that hash function used here is different from the one in “the
-rehashing problem,” and there is no modular operation. As shown in Figure 5-6, 4 cache keys
-(key0, key1, key2, and key3) are hashed onto the hash ring
+One thing worth mentioning is that hash function used here is different from
+the one in “the rehashing problem,” and there is no modular operation. As shown
+in Figure 5-6, 4 cache keys (key0, key1, key2, and key3) are hashed onto the
+hash ring
 
-Server lookup
+![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/05.06.png)
 
-To determine which server a key is stored on, we go clockwise from the key position on the
-ring until a server is found. Figure 5-7 explains this process. Going clockwise, key0 is stored
-on server 0; key1 is stored on server 1; key2 is stored on server 2 and key3 is stored on server
-3.
+### Server lookup
 
-Add a server
+To determine which server a key is stored on, we go clockwise from the key
+position on the ring until a server is found. Figure 5-7 explains this process.
+Going clockwise, key0 is stored on server 0; key1 is stored on server 1; key2
+is stored on server 2 and key3 is stored on server 3.
 
-Using the logic described above, adding a new server will only require redistribution of a
-fraction of keys.
+![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/05.07.png)
 
-In Figure 5-8, after a new server 4 is added, only key0 needs to be redistributed. k1, k2, and
-k3 remain on the same servers. Let us take a close look at the logic. Before server 4 is added,
-key0 is stored on server 0. Now, key0 will be stored on server 4 because server 4 is the first
-server it encounters by going clockwise from key0’s position on the ring. The other keys are
-not redistributed based on consistent hashing algorithm.
+### Add a server
 
-Remove a server
+Using the logic described above, adding a new server will only require
+redistribution of a fraction of keys.
 
-When a server is removed, only a small fraction of keys require redistribution with consistent
-hashing. In Figure 5-9, when server 1 is removed, only key1 must be remapped to server 2.
+In Figure 5-8, after a new server 4 is added, only key0 needs to be
+redistributed. k1, k2, and k3 remain on the same servers. Let us take a close
+look at the logic. Before server 4 is added, key0 is stored on server 0. Now,
+key0 will be stored on server 4 because server 4 is the first server it
+encounters by going clockwise from key0’s position on the ring. The other keys
+are not redistributed based on consistent hashing algorithm.
 
-The rest of the keys are unaffected.
+![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/05.08.png)
 
-Two issues in the basic approach
+### Remove a server
+
+When a server is removed, only a small fraction of keys require redistribution
+with consistent hashing. In Figure 5-9, when server 1 is removed, only key1
+must be remapped to server 2. The rest of the keys are unaffected.
+
+![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/05.09.png)
+
+### Two issues in the basic approach
 
 The consistent hashing algorithm was introduced by Karger et al. at MIT [1]. The basic steps
 are:
-- Map servers and keys on to the ring using a uniformly distributed hash function.
-- To find out which server a key is mapped to, go clockwise from the key position until the
-first server on the ring is found.
+- Map servers and keys on to the ring using a uniformly distributed hash
+  function.
+- To find out which server a key is mapped to, go clockwise from the key
+  position until the first server on the ring is found.
 
-Two problems are identified with this approach. First, it is impossible to keep the same size
-of partitions on the ring for all servers considering a server can be added or removed. A
-partition is the hash space between adjacent servers. It is possible that the size of the
-partitions on the ring assigned to each server is very small or fairly large. In Figure 5-10, if s1
-is removed, s2’s partition (highlighted with the bidirectional arrows) is twice as large as s0
-and s3’s partition.
+Two problems are identified with this approach. First, it is impossible to keep
+the same size of partitions on the ring for all servers considering a server
+can be added or removed. A partition is the hash space between adjacent
+servers. It is possible that the size of the partitions on the ring assigned to
+each server is very small or fairly large. In Figure 5-10, if s1 is removed,
+s2’s partition (highlighted with the bidirectional arrows) is twice as large as
+s0 and s3’s partition.
 
-Second, it is possible to have a non-uniform key distribution on the ring. For instance, if
-servers are mapped to positions listed in Figure 5-11, most of the keys are stored on server 2.
+![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/05.10.png)
+
+Second, it is possible to have a non-uniform key distribution on the ring. For
+instance, if servers are mapped to positions listed in Figure 5-11, most of the
+keys are stored on server 2.
 
 However, server 1 and server 3 have no data.
 
+![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/05.11.png)
+
 A technique called virtual nodes or replicas is used to solve these problems.
 
-Virtual nodes
+### Virtual nodes
 
-A virtual node refers to the real node, and each server is represented by multiple virtual nodes
-on the ring. In Figure 5-12, both server 0 and server 1 have 3 virtual nodes. The 3 is
-arbitrarily chosen; and in real-world systems, the number of virtual nodes is much larger.
+A virtual node refers to the real node, and each server is represented by
+multiple virtual nodes on the ring. In Figure 5-12, both server 0 and server 1
+have 3 virtual nodes. The 3 is arbitrarily chosen; and in real-world systems,
+the number of virtual nodes is much larger.
 
-Instead of using s0, we have s0_0, s0_1, and s0_2 to represent server 0 on the ring. Similarly,
-s1_0, s1_1, and s1_2 represent server 1 on the ring. With virtual nodes, each server is
-responsible for multiple partitions. Partitions (edges) with label s0 are managed by server 0.
+Instead of using s0, we have s0_0, s0_1, and s0_2 to represent server 0 on the
+ring. Similarly, s1_0, s1_1, and s1_2 represent server 1 on the ring. With
+virtual nodes, each server is responsible for multiple partitions. Partitions
+(edges) with label s0 are managed by server 0.
 
 On the other hand, partitions with label s1 are managed by server 1.
 
-To find which server a key is stored on, we go clockwise from the key’s location and find the
-first virtual node encountered on the ring. In Figure 5-13, to find out which server k0 is stored
-on, we go clockwise from k0’s location and find virtual node s1_1, which refers to server 1.
+![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/05.12.png)
 
-As the number of virtual nodes increases, the distribution of keys becomes more balanced.
+To find which server a key is stored on, we go clockwise from the key’s
+location and find the first virtual node encountered on the ring. In Figure
+5-13, to find out which server k0 is stored on, we go clockwise from k0’s
+location and find virtual node s1_1, which refers to server 1.
 
-This is because the standard deviation gets smaller with more virtual nodes, leading to
-balanced data distribution. Standard deviation measures how data are spread out. The
-outcome of an experiment carried out by online research [2] shows that with one or two
-hundred virtual nodes, the standard deviation is between 5% (200 virtual nodes) and 10%
-(100 virtual nodes) of the mean. The standard deviation will be smaller when we increase the
-number of virtual nodes. However, more spaces are needed to store data about virtual nodes.
+![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/05.13.png)
 
-This is a tradeoff, and we can tune the number of virtual nodes to fit our system requirements.
+As the number of virtual nodes increases, the distribution of keys becomes more
+balanced.
 
-Find affected keys
+This is because the standard deviation gets smaller with more virtual nodes,
+leading to balanced data distribution. Standard deviation measures how data are
+spread out. The outcome of an experiment carried out by online research [2]
+shows that with one or two hundred virtual nodes, the standard deviation is
+between 5% (200 virtual nodes) and 10% (100 virtual nodes) of the mean. The
+standard deviation will be smaller when we increase the number of virtual
+nodes. However, more spaces are needed to store data about virtual nodes.
 
-When a server is added or removed, a fraction of data needs to be redistributed. How can we
-find the affected range to redistribute the keys?
+This is a tradeoff, and we can tune the number of virtual nodes to fit our
+system requirements.
+
+### Find affected keys
+
+When a server is added or removed, a fraction of data needs to be
+redistributed. How can we find the affected range to redistribute the keys?
 
 In Figure 5-14, server 4 is added onto the ring. The affected range starts from s4 (newly
 added node) and moves anticlockwise around the ring until a server is found (s3). Thus, keys
 located between s3 and s4 need to be redistributed to s4.
 
+![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/05.14.png)
+
 When a server (s1) is removed as shown in Figure 5-15, the affected range starts from s1
 (removed node) and moves anticlockwise around the ring until a server is found (s0). Thus,
 keys located between s0 and s1 must be redistributed to s2.
 
-Wrap up
+![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/05.15.png)
 
-In this chapter, we had an in-depth discussion about consistent hashing, including why it is
-needed and how it works. The benefits of consistent hashing include:
+### Wrap up
+
+In this chapter, we had an in-depth discussion about consistent hashing,
+including why it is needed and how it works. The benefits of consistent hashing
+include:
 - Minimized keys are redistributed when servers are added or removed.
 - It is easy to scale horizontally because data are more evenly distributed.
-- Mitigate hotspot key problem. Excessive access to a specific shard could cause server
-overload. Imagine data for Katy Perry, Justin Bieber, and Lady Gaga all end up on the
-same shard. Consistent hashing helps to mitigate the problem by distributing the data more
-evenly.
+- Mitigate hotspot key problem. Excessive access to a specific shard could
+  cause server overload. Imagine data for Katy Perry, Justin Bieber, and Lady
+  Gaga all end up on the same shard. Consistent hashing helps to mitigate the
+  problem by distributing the data more evenly.
 
-Consistent hashing is widely used in real-world systems, including some notable ones:
+Consistent hashing is widely used in real-world systems, including some notable
+ones:
 - Partitioning component of Amazon’s Dynamo database [3]
 - Data partitioning across the cluster in Apache Cassandra [4]
 - Discord chat application [5]
 - Akamai content delivery network [6]
 - Maglev network load balancer [7]
 
-Congratulations on getting this far! Now give yourself a pat on the back. Good job!
+Congratulations on getting this far! Now give yourself a pat on the back. Good
+job!
 
 Reference materials
-[1] Consistent hashing: https://en.wikipedia.org/wiki/Consistent_hashing
-[2] Consistent Hashing:
-https://tom-e-white.com/2007/11/consistent-hashing.html
-[3] Dynamo: Amazon’s Highly Available Key-value Store:
-https://www.allthingsdistributed.com/files/amazon-dynamo-sosp2007.pdf
-[4] Cassandra - A Decentralized Structured Storage System:
-http://www.cs.cornell.edu/Projects/ladis2009/papers/Lakshman-ladis2009.PDF
-[5] How Discord Scaled Elixir to 5,000,000 Concurrent Users:
-https://blog.discord.com/scaling-elixir-f9b8e1e7c29b
-[6] CS168: The Modern Algorithmic Toolbox Lecture #1: Introduction and Consistent
-
-Hashing: http://theory.stanford.edu/~tim/s16/l/l1.pdf
-[7] Maglev: A Fast and Reliable Software Network Load Balancer:
-https://static.googleusercontent.com/media/research.google.com/en//pubs/archive/44824.pdf
+- [1] Consistent hashing: https://en.wikipedia.org/wiki/Consistent_hashing
+- [2] Consistent Hashing: https://tom-e-white.com/2007/11/consistent-hashing.html
+- [3] Dynamo: Amazon’s Highly Available Key-value Store: https://www.allthingsdistributed.com/files/amazon-dynamo-sosp2007.pdf
+- [4] Cassandra - A Decentralized Structured Storage System: http://www.cs.cornell.edu/Projects/ladis2009/papers/Lakshman-ladis2009.PDF
+- [5] How Discord Scaled Elixir to 5,000,000 Concurrent Users: https://blog.discord.com/scaling-elixir-f9b8e1e7c29b
+- [6] CS168: The Modern Algorithmic Toolbox Lecture #1: Introduction and Consistent Hashing: http://theory.stanford.edu/~tim/s16/l/l1.pdf
+- [7] Maglev: A Fast and Reliable Software Network Load Balancer: https://static.googleusercontent.com/media/research.google.com/en//pubs/archive/44824.pdf
 
 ## CHAPTER 6: DESIGN A KEY-VALUE STORE
 
