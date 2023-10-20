@@ -1,8 +1,8 @@
 ---
 permalink: /interview/system-design
+author: Alex Xu
+title: System Design Interview - An Insider’s Guide 
 ---
-
-# System Design Interview: An Insider’s Guide by Alex Xu
 
 [System Design Interview PDF](system.design.interview.pdf)
 
@@ -15,6 +15,30 @@ permalink: /interview/system-design
 - [ ] https://tianpan.co/notes/2016-02-13-crack-the-system-design-interview
 - [ ] [donnemartin/system-design-primer: Learn how to design large-scale systems. Prep for the system design interview. Includes Anki flashcards.](https://github.com/donnemartin/system-design-primer)
 - [ ] [Design Pinterest - TianPan.co](https://tianpan.co/notes/2016-02-13-crack-the-system-design-interview)
+
+## Notes
+
+### 1 Scale
+- 5 DB types: RDMBS vs NoSQL (KV, Graph, Column, Document)
+- Load Balancer
+- shard DB: main (write) vs replica(s) (read)
+  - Performance, Reliability, HA
+- Cache for temporary, (mostly) RO data
+- CDN for static assets
+- Stateless servers for autoscaling. Use persistent nosql (redis) to store state
+- geoDNS for DC geo-routing
+- MQ for long-running tasks
+
+### 2 Estimation
+- memory > compression > disk > network
+- Commonly back-of-the-envelope: QPS, peak QPS, storage, cache, number of servers
+
+### 3 Interview
+- __communicate with interviewer__
+1. Understand problem and establish design scope 
+2. Step 2 - Propose High-Level Design And Get Buy-In
+3. Design Deep Dive
+4. Wrap Up
 
 ## CHAPTER 1: SCALE FROM ZERO TO MILLIONS OF USERS
 
