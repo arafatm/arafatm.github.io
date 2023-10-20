@@ -4,6 +4,11 @@ author: Alex Xu
 title: System Design Interview - An Insider’s Guide 
 ---
 
+```
+:execute getline(".")
+iab png ![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/04.07.png)
+```
+
 [System Design Interview PDF](system.design.interview.pdf)
 
 ## TODO/Links
@@ -988,245 +993,262 @@ the scope of the problem and the requirements from the interviewer.
 
 ## CHAPTER 4: DESIGN A RATE LIMITER
 
-In a network system, a rate limiter is used to control the rate of traffic sent by a client or a
-service. In the HTTP world, a rate limiter limits the number of client requests allowed to be
-sent over a specified period. If the API request count exceeds the threshold defined by the
-rate limiter, all the excess calls are blocked. Here are a few examples:
-- A user can write no more than 2 posts per second.
-- You can create a maximum of 10 accounts per day from the same IP address.
-- You can claim rewards no more than 5 times per week from the same device.
+In a network system, a rate limiter is used to control the rate of traffic sent
+by a client or a service. In the HTTP world, a rate limiter limits the number
+of client requests allowed to be sent over a specified period. If the API
+request count exceeds the threshold defined by the rate limiter, all the excess
+calls are blocked. Here are a few examples:
+- A user can _write no more than 2 posts per second_.
+- You can create a _maximum of 10 accounts per day_ from the same IP address.
+- You can _claim rewards no more than 5 times per week_ from the same device.
 
-In this chapter, you are asked to design a rate limiter. Before starting the design, we first look
-at the benefits of using an API rate limiter:
-- Prevent resource starvation caused by Denial of Service (DoS) attack [1]. Almost all
+In this chapter, you are asked to design a rate limiter. Before starting the
+design, we first look at the benefits of using an API rate limiter:
+- __Prevent resource starvation caused by Denial of Service (DoS)__ attack [1].
+  Almost all APIs published by large tech companies enforce some form of rate
+  limiting. For example, Twitter limits the number of tweets to 300 per 3 hours
+  [2]. Google docs APIs have the following default limit: 300 per user per 60
+  seconds for read requests [3]. A rate limiter prevents DoS attacks, either
+  intentional or unintentional, by blocking the excess calls.
+- __Reduce cost__. Limiting excess requests means fewer servers and allocating
+  more resources to high priority APIs. Rate limiting is extremely important
+  for companies that use paid third party APIs. For example, you are charged on
+  a per-call basis for the following external APIs: check credit, make a
+  payment, retrieve health records, etc. Limiting the number of calls is
+  essential to reduce costs.
+- __Prevent servers from being overloaded__. To reduce server load, a rate
+  limiter is used to filter out excess requests caused by bots or users’
+  misbehavior.
 
-APIs published by large tech companies enforce some form of rate limiting. For example,
+### Step 1 - Understand the problem and establish design scope
 
-Twitter limits the number of tweets to 300 per 3 hours [2]. Google docs APIs have the
-following default limit: 300 per user per 60 seconds for read requests [3]. A rate limiter
-prevents DoS attacks, either intentional or unintentional, by blocking the excess calls.
-- Reduce cost. Limiting excess requests means fewer servers and allocating more
-resources to high priority APIs. Rate limiting is extremely important for companies that
-use paid third party APIs. For example, you are charged on a per-call basis for the
-following external APIs: check credit, make a payment, retrieve health records, etc.
+Rate limiting can be implemented using different algorithms, each with its pros
+and cons. The interactions between an interviewer and a candidate help to
+clarify the type of rate limiters we are trying to build.
 
-Limiting the number of calls is essential to reduce costs.
-- Prevent servers from being overloaded. To reduce server load, a rate limiter is used to
-filter out excess requests caused by bots or users’ misbehavior.
-
-Step 1 - Understand the problem and establish design scope
-
-Rate limiting can be implemented using different algorithms, each with its pros and cons. The
-interactions between an interviewer and a candidate help to clarify the type of rate limiters we
-are trying to build.
-
-Candidate: What kind of rate limiter are we going to design? Is it a client-side rate limiter or
-server-side API rate limiter?
-
-Interviewer: Great question. We focus on the server-side API rate limiter.
-
-Candidate: Does the rate limiter throttle API requests based on IP, the user ID, or other
-properties?
-
-Interviewer: The rate limiter should be flexible enough to support different sets of throttle
-rules.
-
-Candidate: What is the scale of the system? Is it built for a startup or a big company with a
-large user base?
-
-Interviewer: The system must be able to handle a large number of requests.
-
-Candidate: Will the system work in a distributed environment?
-
-Interviewer: Yes.
-
-Candidate: Is the rate limiter a separate service or should it be implemented in application
-code?
-
-Interviewer: It is a design decision up to you.
-
-Candidate: Do we need to inform users who are throttled?
-
-Interviewer: Yes.
-
-Requirements
+- Candidate: What kind of rate limiter are we going to design? Is it a
+  _client-side rate limiter or server-side_ API rate limiter?
+- Interviewer: Great question. We focus on the server-side API rate limiter.
+- Candidate: Does the rate limiter throttle API requests _based on IP, the user
+  ID, or other properties_?
+- Interviewer: The rate limiter should be flexible enough to support different
+  sets of throttle rules.
+- Candidate: What is the _scale of the system_? Is it built for a startup or a
+  big company with a large user base?
+- Interviewer: The system must be able to handle a large number of requests.
+- Candidate: Will the system work in a _distributed environment_?
+- Interviewer: Yes.
+- Candidate: Is the rate limiter a _separate service_ or should it be
+  implemented in application code?
+- Interviewer: It is a design decision up to you.
+- Candidate: Do we need to _inform users_ who are throttled?
+- Interviewer: Yes.
 
 Here is a summary of the requirements for the system:
-- Accurately limit excessive requests.
-- Low latency. The rate limiter should not slow down HTTP response time.
-- Use as little memory as possible.
-- Distributed rate limiting. The rate limiter can be shared across multiple servers or
-processes.
-- Exception handling. Show clear exceptions to users when their requests are throttled.
-- High fault tolerance. If there are any problems with the rate limiter (for example, a cache
-server goes offline), it does not affect the entire system.
+- _Accurately limit_ excessive requests.
+- _Low latency_. The rate limiter should not slow down HTTP response time.
+- Use as _little memory_ as possible.
+- _Distributed rate limiting_. The rate limiter can be shared across multiple
+  servers or processes.
+- _Exception handling_. Show clear exceptions to users when their requests are
+  throttled.
+- _High fault tolerance_. If there are any problems with the rate limiter (for
+  example, a cache server goes offline), it does not affect the entire system.
 
-Step 2 - Propose high-level design and get buy-in
+### Step 2 - Propose high-level design and get buy-in
 
 Let us keep things simple and use a basic client and server model for communication.
 
-Where to put the rate limiter?
+#### Where to put the rate limiter?
 
-Intuitively, you can implement a rate limiter at either the client or server-side.
-- Client-side implementation. Generally speaking, client is an unreliable place to enforce
-rate limiting because client requests can easily be forged by malicious actors. Moreover,
-we might not have control over the client implementation.
-- Server-side implementation. Figure 4-1 shows a rate limiter that is placed on the serverside.
+Intuitively, you can implement a rate limiter at either the client or
+server-side.
+- _Client-side_ implementation. Generally speaking, client is an unreliable place
+  to enforce rate limiting because client requests can easily be forged by
+  malicious actors. Moreover, we might not have control over the client
+  implementation.
+- _Server-side_ implementation. Figure 4-1 shows a rate limiter that is placed on
+  the server side.
 
-Besides the client and server-side implementations, there is an alternative way. Instead of
-putting a rate limiter at the API servers, we create a rate limiter middleware, which throttles
-requests to your APIs as shown in Figure 4-2.
+![server-side](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/04.01.png)
 
-Let us use an example in Figure 4-3 to illustrate how rate limiting works in this design.
+Besides the client and server-side implementations, there is an alternative
+way. Instead of putting a rate limiter at the API servers, we create a rate
+limiter _middleware_, which throttles requests to your APIs as shown in Figure
+4-2.
 
-Assume our API allows 2 requests per second, and a client sends 3 requests to the server
-within a second. The first two requests are routed to API servers. However, the rate limiter
-middleware throttles the third request and returns a HTTP status code 429. The HTTP 429
-response status code indicates a user has sent too many requests.
+![middleware](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/04.02.png)
+
+Let us use an example in Figure 4-3 to illustrate how rate limiting works in
+this design.
+
+Assume our API allows 2 requests per second, and a client sends 3 requests to
+the server within a second. The first two requests are routed to API servers.
+However, the rate limiter middleware throttles the third request and returns a
+HTTP status code 429. The HTTP 429 response status code indicates a user has
+sent too many requests.
+
+![rate-limiting](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/04.03.png)
 
 Cloud microservices [4] have become widely popular and rate limiting is usually
-implemented within a component called API gateway. API gateway is a fully managed
-service that supports rate limiting, SSL termination, authentication, IP whitelisting, servicing
-static content, etc. For now, we only need to know that the API gateway is a middleware that
-supports rate limiting.
+implemented within a component called __API gateway__. API gateway is a fully
+managed service that supports rate limiting, SSL termination, authentication,
+IP whitelisting, servicing static content, etc. For now, we only need to know
+that the API gateway is a middleware that supports rate limiting.
 
-While designing a rate limiter, an important question to ask ourselves is: where should the
-rater limiter be implemented, on the server-side or in a gateway? There is no absolute answer.
+While designing a rate limiter, an important question to ask ourselves is:
+where should the rater limiter be implemented, on the server-side or in a
+gateway? There is no absolute answer.
 
-It depends on your company’s current technology stack, engineering resources, priorities,
-goals, etc. Here are a few general guidelines:
-- Evaluate your current technology stack, such as programming language, cache service,
-etc. Make sure your current programming language is efficient to implement rate limiting
-on the server-side.
-- Identify the rate limiting algorithm that fits your business needs. When you implement
-everything on the server-side, you have full control of the algorithm. However, your
-choice might be limited if you use a third-party gateway.
-- If you have already used microservice architecture and included an API gateway in the
-design to perform authentication, IP whitelisting, etc., you may add a rate limiter to the
+It depends on your company’s current technology stack, engineering resources,
+priorities, goals, etc. Here are a few general guidelines:
+- Evaluate your current technology stack, such as programming language, cache
+  service, etc. _Make sure your current programming language is efficient to
+  implement rate limiting on the server-side_.
+- Identify the rate limiting algorithm that fits your business needs. When you
+  implement everything on the server-side, you have full control of the
+  algorithm. However, your _choice might be limited if you use a third-party
+  gateway_.
+- If you have already used microservice architecture and included an API
+  gateway in the design to perform authentication, IP whitelisting, etc., you
+  may add a rate limiter to the API gateway.
+- _Building your own rate limiting service takes time_. If you do not have
+  enough engineering resources to implement a rate limiter, a commercial API
+  gateway is a better option.
 
-API gateway.
-- Building your own rate limiting service takes time. If you do not have enough
-engineering resources to implement a rate limiter, a commercial API gateway is a better
-option.
+#### Algorithms for rate limiting
 
-Algorithms for rate limiting
-
-Rate limiting can be implemented using different algorithms, and each of them has distinct
-pros and cons. Even though this chapter does not focus on algorithms, understanding them at
-high-level helps to choose the right algorithm or combination of algorithms to fit our use
-cases. Here is a list of popular algorithms:
+Rate limiting can be implemented using different algorithms, and each of them
+has distinct pros and cons. Even though this chapter does not focus on
+algorithms, understanding them at high-level helps to choose the right
+algorithm or combination of algorithms to fit our use cases. Here is a list of
+_popular algorithms_:
 - Token bucket
 - Leaking bucket
 - Fixed window counter
 - Sliding window log
 - Sliding window counter
 
-Token bucket algorithm
+##### Token bucket algorithm
 
-The token bucket algorithm is widely used for rate limiting. It is simple, well understood and
-commonly used by internet companies. Both Amazon [5] and Stripe [6] use this algorithm to
-throttle their API requests.
+The token bucket algorithm is widely used for rate limiting. It is simple, well
+understood and commonly used by internet companies. Both Amazon [5] and Stripe
+[6] use this algorithm to throttle their API requests.
 
 The token bucket algorithm work as follows:
-- A token bucket is a container that has pre-defined capacity. Tokens are put in the bucket
-at preset rates periodically. Once the bucket is full, no more tokens are added. As shown in
-
-Figure 4-4, the token bucket capacity is 4. The refiller puts 2 tokens into the bucket every
-second. Once the bucket is full, extra tokens will overflow.
-- Each request consumes one token. When a request arrives, we check if there are enough
-tokens in the bucket. Figure 4-5 explains how it works.
-- If there are enough tokens, we take one token out for each request, and the request
-goes through.
+- A token bucket is a container that has __pre-defined capacity__. 
+- Tokens are put in the bucket at preset rates periodically. 
+- Once the bucket is full, no more tokens are added. As shown in Figure 4-4,
+  the token bucket capacity is 4. The refiller puts 2 tokens into the bucket
+  every second. Once the bucket is full, extra tokens will overflow.
+  ![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/04.04.png)
+- Each request consumes one token. When a request arrives, we check if there
+  are enough tokens in the bucket. Figure 4-5 explains how it works.
+- If there are enough tokens, we take one token out for each request, and the
+  request goes through.
 - If there are not enough tokens, the request is dropped.
+  ![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/04.05.png)
 
-Figure 4-6 illustrates how token consumption, refill, and rate limiting logic work. In this
-example, the token bucket size is 4, and the refill rate is 4 per 1 minute.
+Figure 4-6 illustrates how token consumption, refill, and rate limiting logic
+work. In this example, the token bucket size is 4, and the refill rate is 4 per
+1 minute.
+![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/04.06.png)
 
-The token bucket algorithm takes two parameters:
-- Bucket size: the maximum number of tokens allowed in the bucket
-- Refill rate: number of tokens put into the bucket every second
+The token bucket algorithm takes _two parameters_:
+- _Bucket size_: the maximum number of tokens allowed in the bucket
+- _Refill rate_: number of tokens put into the bucket every second
 
-How many buckets do we need? This varies, and it depends on the rate-limiting rules. Here
-are a few examples.
-- It is usually necessary to have different buckets for different API endpoints. For instance,
-if a user is allowed to make 1 post per second, add 150 friends per day, and like 5 posts per
-second, 3 buckets are required for each user.
-- If we need to throttle requests based on IP addresses, each IP address requires a bucket.
-- If the system allows a maximum of 10,000 requests per second, it makes sense to have a
-global bucket shared by all requests.
+How many buckets do we need? This varies, and it depends on the rate-limiting
+rules. Here are a few examples.
+- It is usually necessary to have different buckets for different API
+  endpoints. For instance, if a user is allowed to make 1 post per second, add
+  150 friends per day, and like 5 posts per second, 3 buckets are required for
+  each user.
+- If we need to throttle requests based on IP addresses, each IP address
+  requires a bucket.
+- If the system allows a maximum of 10,000 requests per second, it makes sense
+  to have a global bucket shared by all requests.
 
 Pros:
 - The algorithm is easy to implement.
 - Memory efficient.
-- Token bucket allows a burst of traffic for short periods. A request can go through as long
-as there are tokens left.
+- Token bucket allows a burst of traffic for short periods. A request can go
+  through as long as there are tokens left.
 
 Cons:
-- Two parameters in the algorithm are bucket size and token refill rate. However, it might
-be challenging to tune them properly.
+- Two parameters in the algorithm are bucket size and token refill rate.
+- However, it might be challenging to tune them properly.
 
-Leaking bucket algorithm
+##### Leaking bucket algorithm
 
-The leaking bucket algorithm is similar to the token bucket except that requests are processed
-at a fixed rate. It is usually implemented with a first-in-first-out (FIFO) queue. The algorithm
-works as follows:
-- When a request arrives, the system checks if the queue is full. If it is not full, the request
-is added to the queue.
+The leaking bucket algorithm is similar to the token bucket except that
+requests are processed at a fixed rate. It is usually implemented with a
+first-in-first-out (__FIFO__) queue. The algorithm works as follows:
+- When a request arrives, the system checks if the queue is full. If it is not
+  full, the request is added to the queue.
 - Otherwise, the request is dropped.
 - Requests are pulled from the queue and processed at regular intervals.
 
 Figure 4-7 explains how the algorithm works.
+![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/04.07.png)
 
 Leaking bucket algorithm takes the following two parameters:
-- Bucket size: it is equal to the queue size. The queue holds the requests to be processed at
-a fixed rate.
-- Outflow rate: it defines how many requests can be processed at a fixed rate, usually in
-seconds.
+- _Bucket size_: it is equal to the queue size. The queue holds the requests to
+  be processed at a fixed rate.
+- _Outflow rate_: it defines how many requests can be processed at a fixed
+  rate, usually in seconds.
 
 Shopify, an ecommerce company, uses leaky buckets for rate-limiting [7].
 
 Pros:
 - Memory efficient given the limited queue size.
-- Requests are processed at a fixed rate therefore it is suitable for use cases that a stable
-outflow rate is needed.
+- Requests are processed at a fixed rate therefore it is suitable for use cases
+  that a stable outflow rate is needed.
 
 Cons:
-- A burst of traffic fills up the queue with old requests, and if they are not processed in
-time, recent requests will be rate limited.
-- There are two parameters in the algorithm. It might not be easy to tune them properly.
+- A burst of traffic fills up the queue with old requests, and if they are not
+  processed in time, recent requests will be rate limited.
+- There are two parameters in the algorithm. It might not be easy to tune them
+  properly.
 
-Fixed window counter algorithm
+##### Fixed window counter algorithm
 
 Fixed window counter algorithm works as follows:
-- The algorithm divides the timeline into fix-sized time windows and assign a counter for
-each window.
+- The algorithm divides the timeline into fix-sized time windows and assign a
+  counter for each window.
 - Each request increments the counter by one.
-- Once the counter reaches the pre-defined threshold, new requests are dropped until a new
-time window starts.
+- Once the counter reaches the pre-defined threshold, new requests are dropped
+  until a new time window starts.
 
-Let us use a concrete example to see how it works. In Figure 4-8, the time unit is 1 second
-and the system allows a maximum of 3 requests per second. In each second window, if more
-than 3 requests are received, extra requests are dropped as shown in Figure 4-8.
+Let us use a concrete example to see how it works. In Figure 4-8, the time unit
+is 1 second and the system allows a maximum of 3 requests per second. In each
+second window, if more than 3 requests are received, extra requests are dropped
+as shown in Figure 4-8.
+![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/04.08.png)
 
-A major problem with this algorithm is that a burst of traffic at the edges of time windows
-could cause more requests than allowed quota to go through. Consider the following case:
+A major problem with this algorithm is that a burst of traffic at the edges of
+time windows could cause more requests than allowed quota to go through.
 
-In Figure 4-9, the system allows a maximum of 5 requests per minute, and the available quota
-resets at the human-friendly round minute. As seen, there are five requests between 2:00:00
-and 2:01:00 and five more requests between 2:01:00 and 2:02:00. For the one-minute window
-between 2:00:30 and 2:01:30, 10 requests go through. That is twice as many as allowed
-requests.
+Consider the following case:
+![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/04.09.png)
+
+In Figure 4-9, the system allows a maximum of 5 requests per minute, and the
+available quota resets at the human-friendly round minute. As seen, there are
+five requests between 2:00:00 and 2:01:00 and five more requests between
+2:01:00 and 2:02:00. For the one-minute window between 2:00:30 and 2:01:30, 10
+requests go through. That is twice as many as allowed requests.
 
 Pros:
 - Memory efficient.
 - Easy to understand.
-- Resetting available quota at the end of a unit time window fits certain use cases.
+- Resetting available quota at the end of a unit time window fits certain use
+  cases.
 
 Cons:
-- Spike in traffic at the edges of a window could cause more requests than the allowed
-quota to go through.
+- Spike in traffic at the edges of a window could cause more requests than the
+  allowed quota to go through.
 
-Sliding window log algorithm
+##### Sliding window log algorithm
 
 As discussed previously, the fixed window counter algorithm has a major issue: it allows
 more requests to go through at the edges of a window. The sliding window log algorithm
@@ -1264,7 +1286,7 @@ Cons:
 - The algorithm consumes a lot of memory because even if a request is rejected, its
 timestamp might still be stored in memory.
 
-Sliding window counter algorithm
+##### Sliding window counter algorithm
 
 The sliding window counter algorithm is a hybrid approach that combines the fixed window
 counter and sliding window log. The algorithm can be implemented by two different
@@ -5759,3 +5781,4 @@ https://bit.ly/3dtIcsE
 If you have comments or questions about this book, feel free to send us an email at
 systemdesigninsider@gmail.com. Besides, if you notice any errors, please let us know so we
 can make corrections in the next edition. Thank you!
+
