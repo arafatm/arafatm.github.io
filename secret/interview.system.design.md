@@ -6,7 +6,7 @@ title: System Design Interview - An Insider’s Guide
 
 ```
 :execute getline(".")
-inoremap png ![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/05.11.png)<ESC>5<left>r
+inoremap png ![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/06.01.png)<ESC>5<left>r
 ```
 
 [System Design Interview PDF](system.design.interview.pdf)
@@ -1822,109 +1822,126 @@ Reference materials
 
 ## CHAPTER 6: DESIGN A KEY-VALUE STORE
 
-A key-value store, also referred to as a key-value database, is a non-relational database. Each
-unique identifier is stored as a key with its associated value. This data pairing is known as a
-“key-value” pair.
+A key-value store, also referred to as a key-value database, is a
+non-relational database. Each unique identifier is stored as a key with its
+associated value. This data pairing is known as a “key-value” pair.
 
-In a key-value pair, the key must be unique, and the value associated with the key can be
-accessed through the key. Keys can be plain text or hashed values. For performance reasons,
-a short key works better. What do keys look like? Here are a few examples:
+In a key-value pair, the key must be unique, and the value associated with the
+key can be accessed through the key. Keys can be plain text or hashed values.
+For performance reasons, a short key works better. What do keys look like? Here
+are a few examples:
 - Plain text key: “last_logged_in_at”
 - Hashed key: 253DDEC4
 
-The value in a key-value pair can be strings, lists, objects, etc. The value is usually treated as
-an opaque object in key-value stores, such as Amazon dynamo [1], Memcached [2], Redis
-[3], etc.
+The value in a key-value pair can be strings, lists, objects, etc. The value is
+usually treated as an opaque object in key-value stores, such as Amazon dynamo
+[1], Memcached [2], Redis [3], etc.
 
 Here is a data snippet in a key-value store:
 
-In this chapter, you are asked to design a key-value store that supports the following
-operations:
-- put(key, value) // insert “value” associated with “key”
-- get(key) // get “value” associated with “key”
+| key | value |
+| --  | --    |
+| 145 | john  |
+| 147 | bob   |
+| 525 | julia |
 
-Understand the problem and establish design scope
+In this chapter, you are asked to design a key-value store that supports the
+following operations:
+- `put(key, value)` // insert “value” associated with “key”
+- `get(key)` // get “value” associated with “key”
 
-There is no perfect design. Each design achieves a specific balance regarding the tradeoffs of
-the read, write, and memory usage. Another tradeoff has to be made was between consistency
-and availability. In this chapter, we design a key-value store that comprises of the following
-characteristics:
+### Understand the problem and establish design scope
+
+There is no perfect design. Each design achieves a specific balance regarding
+the tradeoffs of the read, write, and memory usage. Another tradeoff has to be
+made was between consistency and availability. In this chapter, we design a
+key-value store that comprises of the following characteristics:
 - The size of a key-value pair is small: less than 10 KB.
 - Ability to store big data.
 - High availability: The system responds quickly, even during failures.
 - High scalability: The system can be scaled to support large data set.
-- Automatic scaling: The addition/deletion of servers should be automatic based on traffic.
+- Automatic scaling: The addition/deletion of servers should be automatic based
+  on traffic.
 - Tunable consistency.
 - Low latency.
 
-Single server key-value store
+### Single server key-value store
 
-Developing a key-value store that resides in a single server is easy. An intuitive approach is
-to store key-value pairs in a hash table, which keeps everything in memory. Even though
-memory access is fast, fitting everything in memory may be impossible due to the space
-constraint. Two optimizations can be done to fit more data in a single server:
-- Data compression
-- Store only frequently used data in memory and the rest on disk
+Developing a key-value store that resides in a single server is easy. An
+intuitive approach is to store key-value pairs in a hash table, which keeps
+everything in memory. Even though memory access is fast, fitting everything in
+memory may be impossible due to the space constraint. Two __optimizations__ can be
+done to fit more data in a single server:
+- Data _compression_
+- Store only _frequently used data_ in memory and the rest on disk
 
-Even with these optimizations, a single server can reach its capacity very quickly. A
-distributed key-value store is required to support big data.
+Even with these optimizations, a single server can reach its capacity very
+quickly. A distributed key-value store is required to support big data.
 
-Distributed key-value store
+### Distributed key-value store
 
-A distributed key-value store is also called a distributed hash table, which distributes keyvalue pairs across many servers. When designing a distributed system, it is important to
-understand CAP (Consistency, Availability, Partition Tolerance) theorem.
+A distributed key-value store is also called a distributed hash table, which
+distributes keyvalue pairs across many servers. When designing a distributed
+system, it is important to understand __CAP (Consistency, Availability, Partition
+Tolerance) theorem__.
 
-CAP theorem
+### CAP theorem
 
-CAP theorem states it is impossible for a distributed system to simultaneously provide more
-than two of these three guarantees: consistency, availability, and partition tolerance. Let us
-establish a few definitions.
+CAP theorem states it is impossible for a distributed system to simultaneously
+provide more than two of these three guarantees: 
+1. consistency, 
+2. availability, and
+3. partition tolerance. 
 
-Consistency: consistency means all clients see the same data at the same time no matter
-which node they connect to.
+__Consistency__: consistency means all clients see the same data at the same
+time no matter which node they connect to.
 
-Availability: availability means any client which requests data gets a response even if some
-of the nodes are down.
+__Availability__: availability means any client which requests data gets a
+response even if some of the nodes are down.
 
-Partition Tolerance: a partition indicates a communication break between two nodes.
-
-Partition tolerance means the system continues to operate despite network partitions.
+__Partition Tolerance__: a partition indicates a communication break between
+two nodes. Partition tolerance means the system continues to operate despite network partitions.
 
 CAP theorem states that one of the three properties must be sacrificed to support 2 of the 3
 properties as shown in Figure 6-1.
 
-Nowadays, key-value stores are classified based on the two CAP characteristics they support:
+![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/06.01.png)
 
-CP (consistency and partition tolerance) systems: a CP key-value store supports
-consistency and partition tolerance while sacrificing availability.
+Nowadays, key-value stores are classified based on the two CAP characteristics
+they support:
+- __CP__ (consistency and partition tolerance) systems: a CP key-value store
+  supports consistency and partition tolerance while sacrificing availability.
+- __AP__ (availability and partition tolerance) systems: an AP key-value store
+  supports availability and partition tolerance while sacrificing consistency.
+- __CA__ (consistency and availability) systems: a CA key-value store supports
+  consistency and availability while sacrificing partition tolerance. Since
+  network failure is unavoidable, a distributed system must tolerate network
+  partition. Thus, _a CA system cannot exist in real-world applications_.
 
-AP (availability and partition tolerance) systems: an AP key-value store supports
-availability and partition tolerance while sacrificing consistency.
+What you read above is mostly the definition part. To make it easier to
+understand, let us take a look at some concrete examples. In distributed
+systems, data is usually replicated multiple times. Assume data are replicated
+on three replica nodes, n1, n2 and n3 as shown in Figure 6- 2.
 
-CA (consistency and availability) systems: a CA key-value store supports consistency and
-availability while sacrificing partition tolerance. Since network failure is unavoidable, a
-distributed system must tolerate network partition. Thus, a CA system cannot exist in realworld applications.
+### Ideal situation
 
-What you read above is mostly the definition part. To make it easier to understand, let us take
-a look at some concrete examples. In distributed systems, data is usually replicated multiple
-times. Assume data are replicated on three replica nodes, n1, n2 and n3 as shown in Figure 6-
-2.
+In the ideal world, network partition never occurs. Data written to n1 is
+automatically replicated to n2 and n3. Both consistency and availability are
+achieved.
 
-Ideal situation
+![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/06.02.png)
 
-In the ideal world, network partition never occurs. Data written to n1 is automatically
-replicated to n2 and n3. Both consistency and availability are achieved.
+### Real-world distributed systems
 
-Real-world distributed systems
+In a distributed system, partitions cannot be avoided, and when a partition
+occurs, we must choose between consistency and availability. In Figure 6-3, n3
+goes down and cannot communicate with n1 and n2. If clients write data to n1 or
+n2, data cannot be propagated to n3. If data is written to n3 but not
+propagated to n1 and n2 yet, n1 and n2 would have stale data.
+![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/06.03.png)
 
-In a distributed system, partitions cannot be avoided, and when a partition occurs, we must
-choose between consistency and availability. In Figure 6-3, n3 goes down and cannot
-communicate with n1 and n2. If clients write data to n1 or n2, data cannot be propagated to
-n3. If data is written to n3 but not propagated to n1 and n2 yet, n1 and n2 would have stale
-data.
-
-If we choose consistency over availability (CP system), we must block all write operations to
-n1 and n2 to avoid data inconsistency among these three servers, which makes the system
+If we choose consistency over availability __(CP system), we must block all write operations to
+n1 and n2 to avoid data inconsistency__ among these three servers, which makes the system
 unavailable. Bank systems usually have extremely high consistent requirements. For
 example, it is crucial for a bank system to display the most up-to-date balance info. If
 inconsistency occurs due to a network partition, the bank system returns an error before the
