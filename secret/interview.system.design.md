@@ -2669,33 +2669,39 @@ with 301 redirect.
 The detailed communication between clients and servers is shown in Figure 8-2.
 ![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/08.02.png)
 
-One thing worth discussing here is 301 redirect vs 302 redirect.
-301 redirect. A 301 redirect shows that the requested URL is “permanently” moved to the
-long URL. Since it is permanently redirected, the browser caches the response, and
-subsequent requests for the same URL will not be sent to the URL shortening service.
+One thing worth discussing here is _301 redirect vs 302 redirect_.
 
-Instead, requests are redirected to the long URL server directly.
-302 redirect. A 302 redirect means that the URL is “temporarily” moved to the long URL,
-meaning that subsequent requests for the same URL will be sent to the URL shortening
-service first. Then, they are redirected to the long URL server.
+__301 redirect__. A 301 redirect shows that the requested URL is
+__“permanently” moved__ to the long URL. Since it is permanently redirected,
+the browser caches the response, and subsequent requests for the same URL will
+not be sent to the URL shortening service.
 
-Each redirection method has its pros and cons. If the priority is to reduce the server load,
-using 301 redirect makes sense as only the first request of the same URL is sent to URL
-shortening servers. However, if analytics is important, 302 redirect is a better choice as it can
-track click rate and source of the click more easily.
+Instead, _requests are redirected to the long URL server directly_.
 
-The most intuitive way to implement URL redirecting is to use hash tables. Assuming the
-hash table stores <shortURL, longURL> pairs, URL redirecting can be implemented by the
-following:
+__302 redirect__. A 302 redirect means that the URL is __“temporarily” moved__
+to the long URL, meaning that subsequent requests for the same URL will be sent
+to the URL shortening service first. Then, they are redirected to the long URL
+server.
+
+Each redirection method has its pros and cons. 
+- If the priority is to _reduce the server load_, using 301 redirect makes
+  sense as only the first request of the same URL is sent to URL shortening
+  servers. 
+- However, if _analytics_ is important, 302 redirect is a better choice as it
+  can track click rate and source of the click more easily.
+
+The most intuitive way to implement URL redirecting is to use hash tables.
+Assuming the hash table stores `<shortURL, longURL>` pairs, URL redirecting can
+be implemented by the following:
 - Get longURL: longURL = hashTable.get(shortURL)
 - Once you get the longURL, perform the URL redirect.
 
-URL shortening
+### URL shortening
 
-Let us assume the short URL looks like this: www.tinyurl.com/{hashValue}. To support the
-
-URL shortening use case, we must find a hash function fx that maps a long URL to the
-hashValue, as shown in Figure 8-3.
+Let us assume the short URL looks like this: `www.tinyurl.com/{hashValue}`. To
+support the URL shortening use case, we must find a hash function fx that maps
+a long URL to the hashValue, as shown in Figure 8-3.
+![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/08.03.png)
 
 The hash function must satisfy the following requirements:
 - Each longURL must be hashed to one hashValue.
@@ -2703,154 +2709,179 @@ The hash function must satisfy the following requirements:
 
 Detailed design for the hash function is discussed in deep dive.
 
-Step 3 - Design deep dive
+### Step 3 - Design deep dive
 
 Up until now, we have discussed the high-level design of URL shortening and URL
-redirecting. In this section, we dive deep into the following: data model, hash function, URL
-shortening and URL redirecting.
+redirecting. In this section, we dive deep into the following: data model, hash
+function, URL shortening and URL redirecting.
 
-Data model
+### Data model
 
-In the high-level design, everything is stored in a hash table. This is a good starting point;
-however, this approach is not feasible for real-world systems as memory resources are limited
-and expensive. A better option is to store <shortURL, longURL> mapping in a relational
-database. Figure 8-4 shows a simple database table design. The simplified version of the table
-contains 3 columns: id, shortURL, longURL.
+In the high-level design, everything is stored in a hash table. This is a good
+starting point; however, this approach is not feasible for real-world systems
+as memory resources are limited and expensive. A better option is to store
+<shortURL, longURL> mapping in a relational database. Figure 8-4 shows a simple
+database table design. The simplified version of the table contains 3 columns:
+id, shortURL, longURL.
 
-Hash function
+![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/08.04.png)
 
-Hash function is used to hash a long URL to a short URL, also known as hashValue.
+### Hash function
 
-Hash value length
+Hash function is used to hash a long URL to a short URL, also known as
+hashValue.
+
+### Hash value length
 
 The hashValue consists of characters from [0-9, a-z, A-Z], containing 10 + 26 + 26 = 62
-possible characters. To figure out the length of hashValue, find the smallest n such that 62^n
-≥ 365 billion. The system must support up to 365 billion URLs based on the back of the
-envelope estimation. Table 8-1 shows the length of hashValue and the corresponding
-maximal number of URLs it can support.
+possible characters. To figure out the length of hashValue, _find the smallest n
+such that 62^n ≥ 365 billion_. The system must support up to 365 billion URLs
+based on the back of the envelope estimation. Table 8-1 shows the length of
+hashValue and the corresponding maximal number of URLs it can support.
 
-When n = 7, 62 ^ n = ~3.5 trillion, 3.5 trillion is more than enough to hold 365 billion URLs,
-so the length of hashValue is 7.
+When n = 7, 62 ^ n = ~3.5 trillion, 3.5 trillion is more than enough to hold
+365 billion URLs, so the length of hashValue is 7.
 
-We will explore two types of hash functions for a URL shortener. The first one is “hash +
-collision resolution”, and the second one is “base 62 conversion.” Let us look at them one by
-one.
+We will explore two types of hash functions for a URL shortener. The first one
+is “hash + collision resolution”, and the second one is “base 62 conversion.”
+Let us look at them one by one.
 
-Hash + collision resolution
+### Hash + collision resolution
 
 To shorten a long URL, we should implement a hash function that hashes a long URL to a 7-
-character string. A straightforward solution is to use well-known hash functions like CRC32,
+character string. A straightforward solution is to use well-known hash
+functions like CRC32, MD5, or SHA-1. The following table compares the hash
+results after applying different hash functions on this URL:
+https://en.wikipedia.org/wiki/Systems_design.
+![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/08.t.02.png)
 
-MD5, or SHA-1. The following table compares the hash results after applying different hash
-functions on this URL: https://en.wikipedia.org/wiki/Systems_design.
+As shown in Table 8-2, even the shortest hash value (from CRC32) is too long
+(more than 7 characters). How can we make it shorter?
 
-As shown in Table 8-2, even the shortest hash value (from CRC32) is too long (more than 7
-characters). How can we make it shorter?
+The first approach is to collect the first 7 characters of a hash value;
+however, this method can lead to __hash collisions__. To resolve hash
+collisions, we can recursively append a new predefined string until no more
+collision is discovered. This process is explained in Figure 8-5.
+![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/08.05.png)
 
-The first approach is to collect the first 7 characters of a hash value; however, this method
-can lead to hash collisions. To resolve hash collisions, we can recursively append a new
-predefined string until no more collision is discovered. This process is explained in Figure 8-
-5.
+This method can eliminate collision; however, it is _expensive to query_ the
+database to check if a shortURL exists for every request. 
 
-This method can eliminate collision; however, it is expensive to query the database to check
-if a shortURL exists for every request. A technique called bloom filters [2] can improve
-performance. A bloom filter is a space-efficient probabilistic technique to test if an element is
-a member of a set. Refer to the reference material [2] for more details.
+A technique called __bloom filters__ [2] can improve performance. A bloom
+filter is a space-efficient probabilistic technique to test if an element is a
+member of a set. Refer to the reference material [2] for more details.
 
-Base 62 conversion
+### Base 62 conversion
 
-Base conversion is another approach commonly used for URL shorteners. Base conversion
-helps to convert the same number between its different number representation systems. Base
-62 conversion is used as there are 62 possible characters for hashValue. Let us use an
-example to explain how the conversion works: convert 1115710
-to base 62 representation
-(1115710 represents 11157 in a base 10 system).
-- From its name, base 62 is a way of using 62 characters for encoding. The mappings are:
-0-0, ..., 9-9, 10-a, 11-b, ..., 35-z, 36-A, ..., 61-Z, where ‘a’ stands for 10, ‘Z’ stands for 61,
-etc.
-- 1115710 = 2 x 62
-2 + 55 x 62
-1 + 59 x 62
-0 = [2, 55, 59] -> [2, T, X] in base 62
-representation. Figure 8-6 shows the conversation process.
-- Thus, the short URL is https://tinyurl.com /2TX
+Base conversion is another approach commonly used for URL shorteners. Base
+conversion helps to convert the same number between its different number
+representation systems. Base 62 conversion is used as there are 62 possible
+characters for hashValue. 
 
-Comparison of the two approaches
+Let us use an example to explain how the conversion
+works: convert `1115710 base 10` to base 62 representation (1115710 represents
+11157 in a base 10 system).
+- From its name, base 62 is a way of using 62 characters for encoding. The
+  mappings are: 0-0, ..., 9-9, 10-a, 11-b, ..., 35-z, 36-A, ..., 61-Z, where
+  ‘a’ stands for 10, ‘z’ stands for 61, etc.
+- 1115710 = 2 x 62^2 + 55 x 62^1 + 59 x 62^0 = [2, 55, 59] -> [2, T, X] in base
+  62 representation. Figure 8-6 shows the conversation process.
+
+Thus, the short URL is https://tinyurl.com/2TX
+![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/08.06.png)
+
+### Comparison of the two approaches
 
 Table 8-3 shows the differences of the two approaches.
 
-URL shortening deep dive
+| Hash + collision resolution                          | Base 62 conversion                                                                     |
+| --                                                   | --                                                                                     |
+| Fixed short URL length                               | The short URL length is not fixed. Goes up with ID                                     |
+| Does not need a unique ID generator                  | Depends on a unique ID generator                                                       |
+| Collision is possible and must be resolved           | Collision impossible                                                                   |
+| Impossible to figure out the next available shortURL | Can figure out next available shortUL as Id increments by 1. Possible security concern |
 
-As one of the core pieces of the system, we want the URL shortening flow to be logically
-simple and functional. Base 62 conversion is used in our design. We build the following
-diagram (Figure 8-7) to demonstrate the flow.
+### URL shortening deep dive
+
+As one of the core pieces of the system, we want the URL shortening flow to be
+logically simple and functional. Base 62 conversion is used in our design. We
+build the following diagram (Figure 8-7) to demonstrate the flow.
+![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/08.07.png)
+
 1. longURL is the input.
 2. The system checks if the longURL is in the database.
-3. If it is, it means the longURL was converted to shortURL before. In this case, fetch the
-shortURL from the database and return it to the client.
-4. If not, the longURL is new. A new unique ID (primary key) Is generated by the unique
-
-ID generator.
+3. If it is, it means the longURL was converted to shortURL before. In this
+   case, fetch the shortURL from the database and return it to the client.
+4. If not, the longURL is new. A new unique ID (primary key) Is generated by
+   the unique ID generator.
 5. Convert the ID to shortURL with base 62 conversion.
 6. Create a new database row with the ID, shortURL, and longURL.
 
 To make the flow easier to understand, let us look at a concrete example.
 - Assuming the input longURL is: https://en.wikipedia.org/wiki/Systems_design
 - Unique ID generator returns ID: 2009215674938.
-- Convert the ID to shortURL using the base 62 conversion. ID (2009215674938) is
-converted to “zn9edcu”.
+- Convert the ID to shortURL using the base 62 conversion. ID (2009215674938)
+  is converted to “zn9edcu”.
 - Save ID, shortURL, and longURL to the database as shown in Table 8-4.
 
-The distributed unique ID generator is worth mentioning. Its primary function is to generate
-globally unique IDs, which are used for creating shortURLs. In a highly distributed
-environment, implementing a unique ID generator is challenging. Luckily, we have already
-discussed a few solutions in “Chapter 7: Design A Unique ID Generator in Distributed
+| id            | shortURL | longURL                                      |
+| --            | --       | --                                           |
+| 2009215674938 | zn9edcu  | https://en.wikipedia.org/wiki/Systems_design |
 
-Systems”. You can refer back to it to refresh your memory.
+The distributed unique ID generator is worth mentioning. Its primary function
+is to generate globally unique IDs, which are used for creating shortURLs. In a
+highly distributed environment, implementing a unique ID generator is
+challenging. Luckily, we have already discussed a few solutions in “Chapter 7:
+Design A Unique ID Generator in Distributed Systems”. You can refer back to it
+to refresh your memory.
 
-URL redirecting deep dive
+### URL redirecting deep dive
 
-Figure 8-8 shows the detailed design of the URL redirecting. As there are more reads than
-writes, <shortURL, longURL> mapping is stored in a cache to improve performance.
+Figure 8-8 shows the detailed design of the URL redirecting. As there are more
+reads than writes, <shortURL, longURL> mapping is stored in a cache to improve
+performance.
+
+![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/08.08.png)
 
 The flow of URL redirecting is summarized as follows:
 1. A user clicks a short URL link: https://tinyurl.com/zn9edcu
 2. The load balancer forwards the request to web servers.
 3. If a shortURL is already in the cache, return the longURL directly.
-4. If a shortURL is not in the cache, fetch the longURL from the database. If it is not in the
-database, it is likely a user entered an invalid shortURL.
+4. If a shortURL is not in the cache, fetch the longURL from the database. If
+   it is not in the database, it is likely a user entered an invalid shortURL.
 5. The longURL is returned to the user.
 
-Step 4 - Wrap up
+### Step 4 - Wrap up
 
-In this chapter, we talked about the API design, data model, hash function, URL shortening,
-and URL redirecting.
+In this chapter, we talked about the API design, data model, hash function, URL
+shortening, and URL redirecting.
 
-If there is extra time at the end of the interview, here are a few additional talking points.
-- Rate limiter: A potential security problem we could face is that malicious users send an
-overwhelmingly large number of URL shortening requests. Rate limiter helps to filter out
-requests based on IP address or other filtering rules. If you want to refresh your memory
-about rate limiting, refer to “Chapter 4: Design a rate limiter”.
-- Web server scaling: Since the web tier is stateless, it is easy to scale the web tier by
-adding or removing web servers.
-- Database scaling: Database replication and sharding are common techniques.
-- Analytics: Data is increasingly important for business success. Integrating an analytics
-solution to the URL shortener could help to answer important questions like how many
-people click on a link? When do they click the link? etc.
-- Availability, consistency, and reliability. These concepts are at the core of any large
-system’s success. We discussed them in detail in Chapter 1, please refresh your memory
-on these topics.
+If there is extra time at the end of the interview, here are a few additional
+talking points.
+- _Rate limiter_: A potential security problem we could face is that malicious
+  users send an overwhelmingly large number of URL shortening requests. Rate
+  limiter helps to filter out requests based on IP address or other filtering
+  rules. If you want to refresh your memory about rate limiting, refer to
+  “Chapter 4: Design a rate limiter”.
+- _Web server scaling_: Since the web tier is stateless, it is easy to scale
+  the web tier by adding or removing web servers.
+- _Database scaling_: Database replication and sharding are common techniques.
+- _Analytics_: Data is increasingly important for business success. Integrating
+  an analytics solution to the URL shortener could help to answer important
+  questions like how many people click on a link? When do they click the link?
+  etc.
+- _Availability, consistency, and reliability_. These concepts are at the core
+  of any large system’s success. We discussed them in detail in Chapter 1,
+  please refresh your memory on these topics.
 
-Congratulations on getting this far! Now give yourself a pat on the back. Good job!
-
-Reference materials
-[1] A RESTful Tutorial: https://www.restapitutorial.com/index.html
-[2] Bloom filter: https://en.wikipedia.org/wiki/Bloom_filter
+### Reference materials
+- [1] A RESTful Tutorial: https://www.restapitutorial.com/index.html
+- [2] Bloom filter: https://en.wikipedia.org/wiki/Bloom_filter
 
 ## CHAPTER 9: DESIGN A WEB CRAWLER
 
-In this chapter, we focus on web crawler design: an interesting and classic system design
-interview question.
+In this chapter, we focus on web crawler design: an interesting and classic
+system design interview question.
 
 A web crawler is known as a robot or spider. It is widely used by search engines to discover
 new or updated content on the web. Content can be a web page, an image, a video, a PDF
