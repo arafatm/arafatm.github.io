@@ -4051,6 +4051,8 @@ http://geekswithblogs.net/brendonpage/archive/2015/10/26/friend-of-friendrecomme
 
 ## CHAPTER 12: DESIGN A CHAT SYSTEM
 
+xxx
+
 In this chapter we explore the design of a chat system. Almost everyone uses a chat app.
 
 Figure 12-1 shows some of the most popular apps in the marketplace.
