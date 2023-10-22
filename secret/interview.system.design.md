@@ -3890,7 +3890,8 @@ Figure 11-2 shows the high-level design of the feed publishing flow.
 - _Notification service_: inform friends that new content is available and send
   out push notifications.
 
-Newsfeed building
+### Newsfeed building
+xxx
 
 In this section, we discuss how news feed is built behind the scenes. Figure 11-3 shows the
 high-level design:
@@ -4050,8 +4051,6 @@ https://www.facebook.com/help/327131014036297/
 http://geekswithblogs.net/brendonpage/archive/2015/10/26/friend-of-friendrecommendations-with-neo4j.aspx
 
 ## CHAPTER 12: DESIGN A CHAT SYSTEM
-
-xxx
 
 In this chapter we explore the design of a chat system. Almost everyone uses a chat app.
 
