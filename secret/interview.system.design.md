@@ -6,7 +6,7 @@ title: System Design Interview - An Insider’s Guide
 
 ```
 :execute getline(".")
-inoremap png ![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/09.10.png)<ESC>5<left>r
+inoremap png ![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/10.01.png)<ESC>5<left>r
 ```
 
 [System Design Interview PDF](system.design.interview.pdf)
@@ -3391,75 +3391,65 @@ still miss many relevant talking points:
 
 ## CHAPTER 10: DESIGN A NOTIFICATION SYSTEM
 
-A notification system has already become a very popular feature for many applications in
-recent years. A notification alerts a user with important information like breaking news,
-product updates, events, offerings, etc. It has become an indispensable part of our daily life.
+A notification system has already become a very popular feature for many
+applications in recent years. A notification alerts a user with important
+information like breaking news, product updates, events, offerings, etc. It has
+become an indispensable part of our daily life.
 
-In this chapter, you are asked to design a notification system.
+A notification is more than just mobile push notification. Three types of
+notification formats are: mobile push notification, SMS message, and Email.
+Figure 10-1 shows an example of each of these notifications.
+![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/10.01.png)
 
-A notification is more than just mobile push notification. Three types of notification formats
-are: mobile push notification, SMS message, and Email. Figure 10-1 shows an example of
-each of these notifications.
+### Step 1 - Understand the problem and establish design scope
 
-Step 1 - Understand the problem and establish design scope
+Building a scalable system that sends out millions of notifications a day is
+not an easy task. It requires a deep understanding of the notification
+ecosystem. The interview question is purposely designed to be open-ended and
+ambiguous, and it is your responsibility to ask questions to clarify the
+requirements.
+- Candidate: What _types of notifications_ does the system support?
+- Interviewer: Push notification, SMS message, and email.
+- Candidate: Is it a _real-time system_?
+- Interviewer: Let us say it is a soft real-time system. We want a user to
+  receive notifications as soon as possible. However, if the system is under a
+  high workload, a slight delay is acceptable.
+- Candidate: What are the _supported devices_?
+- Interviewer: iOS devices, android devices, and laptop/desktop.
+- Candidate: What _triggers notifications_?
+- Interviewer: Notifications can be triggered by client applications. They can
+  also be scheduled on the server-side.
+- Candidate: Will users be able to _opt-out_?
+- Interviewer: Yes, users who choose to opt-out will no longer receive
+  notifications.
+- Candidate: How many notifications are _sent out each day_?
+- Interviewer: 10 million mobile push notifications, 1 million SMS messages,
+  and 5 million emails.
 
-Building a scalable system that sends out millions of notifications a day is not an easy task. It
-requires a deep understanding of the notification ecosystem. The interview question is
-purposely designed to be open-ended and ambiguous, and it is your responsibility to ask
-questions to clarify the requirements.
+### Step 2 - Propose high-level design and get buy-in
 
-Candidate: What types of notifications does the system support?
+This section shows the high-level design that supports various notification
+types: iOS push notification, Android push notification, SMS message, and
+Email. It is structured as follows:
+- Different _types_ of notifications
+- _Contact info gathering_ flow
+- Notification _sending/receiving flow_
 
-Interviewer: Push notification, SMS message, and email.
-
-Candidate: Is it a real-time system?
-
-Interviewer: Let us say it is a soft real-time system. We want a user to receive notifications
-as soon as possible. However, if the system is under a high workload, a slight delay is
-acceptable.
-
-Candidate: What are the supported devices?
-
-Interviewer: iOS devices, android devices, and laptop/desktop.
-
-Candidate: What triggers notifications?
-
-Interviewer: Notifications can be triggered by client applications. They can also be
-scheduled on the server-side.
-
-Candidate: Will users be able to opt-out?
-
-Interviewer: Yes, users who choose to opt-out will no longer receive notifications.
-
-Candidate: How many notifications are sent out each day?
-
-Interviewer: 10 million mobile push notifications, 1 million SMS messages, and 5 million
-emails.
-
-Step 2 - Propose high-level design and get buy-in
-
-This section shows the high-level design that supports various notification types: iOS push
-notification, Android push notification, SMS message, and Email. It is structured as follows:
-- Different types of notifications
-- Contact info gathering flow
-- Notification sending/receiving flow
-
-Different types of notifications
+### Different types of notifications
 
 We start by looking at how each notification type works at a high level.
-iOS push notification
+
+### iOS push notification
 
 We primary need three components to send an iOS push notification:
-- Provider. A provider builds and sends notification requests to Apple Push Notification
-
-Service (APNS). To construct a push notification, the provider provides the following
-data:
-- Device token: This is a unique identifier used for sending push notifications.
-- Payload: This is a JSON dictionary that contains a notification’s payload. Here is an
-example:
-- APNS: This is a remote service provided by Apple to propagate push notifications to iOS
-devices.
-- iOS Device: It is the end client, which receives push notifications.
+- _Provider_. A provider builds and sends notification requests to Apple Push
+  Notification Service (APNS). To construct a push notification, the provider
+  provides the following data:
+  - _Device token_: This is a unique identifier used for sending push notifications.
+  - _Payload_: This is a JSON dictionary that contains a notification’s payload. Below is an example.
+- _APNS_: This is a remote service provided by Apple to propagate push
+  notifications to iOS devices.
+- _iOS Device_: It is the end client, which receives push notifications.
 
 Android push notification
 
