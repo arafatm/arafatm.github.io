@@ -6,7 +6,7 @@ title: System Design Interview - An Insider’s Guide
 
 ```
 :execute getline(".")
-inoremap png ![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/10.01.png)<ESC>5<left>r
+inoremap png ![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/11.01.png)<ESC>5<left>r
 ```
 
 [System Design Interview PDF](system.design.interview.pdf)
@@ -3441,6 +3441,8 @@ We start by looking at how each notification type works at a high level.
 
 ### iOS push notification
 
+![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/10.02.png)
+
 We primary need three components to send an iOS push notification:
 - _Provider_. A provider builds and sends notification requests to Apple Push
   Notification Service (APNS). To construct a push notification, the provider
@@ -3451,91 +3453,125 @@ We primary need three components to send an iOS push notification:
   notifications to iOS devices.
 - _iOS Device_: It is the end client, which receives push notifications.
 
-Android push notification
+```json
+{
+  "aps":{
+    "alert":{
+      "title": "Game Request",
+      "body": "bob wants to play chess",
+      "action-loc-key": "PLAY"
+    },
+    "badge":5
+  }
+}
+```
 
-Android adopts a similar notification flow. Instead of using APNs, Firebase Cloud Messaging
-(FCM) is commonly used to send push notifications to android devices.
+### Android push notification
 
-SMS message
+Android adopts a similar notification flow. Instead of using APNs, Firebase
+Cloud Messaging (FCM) is commonly used to send push notifications to android
+devices.
+![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/10.03.png)
 
-For SMS messages, third party SMS services like Twilio [1], Nexmo [2], and many others are
-commonly used. Most of them are commercial services.
+### SMS message
 
-Email
+For SMS messages, _third party SMS services_ like Twilio [1], Nexmo [2], and
+many others are commonly used. Most of them are commercial services.
+![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/10.04.png)
 
-Although companies can set up their own email servers, many of them opt for commercial
-email services. Sendgrid [3] and Mailchimp [4] are among the most popular email services,
-which offer a better delivery rate and data analytics.
+### Email
+
+Although companies can set up their own email servers, many of them opt for
+_commercial email services_. Sendgrid [3] and Mailchimp [4] are among the most
+popular email services, which offer a better delivery rate and data analytics.
+![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/10.05.png)
 
 Figure 10-6 shows the design after including all the third-party services.
+![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/10.06.png)
 
-Contact info gathering flow
+### Contact info gathering flow
 
-To send notifications, we need to gather mobile device tokens, phone numbers, or email
-addresses. As shown in Figure 10-7, when a user installs our app or signs up for the first time,
+To send notifications, we need to gather mobile device tokens, phone numbers,
+or email addresses. As shown in Figure 10-7, when a user installs our app or
+signs up for the first time, API servers collect user contact info and store it
+in the database.
+![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/10.07.png)
 
-API servers collect user contact info and store it in the database.
+Figure 10-8 shows simplified database tables to store contact info. Email
+addresses and phone numbers are stored in the user table, whereas device tokens
+are stored in the device table. A user can have multiple devices, indicating
+that a push notification can be sent to all the user devices.
+![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/10.08.png)
 
-Figure 10-8 shows simplified database tables to store contact info. Email addresses and phone
-numbers are stored in the user table, whereas device tokens are stored in the device table. A
-user can have multiple devices, indicating that a push notification can be sent to all the user
-devices.
-
-Notification sending/receiving flow
+### Notification sending/receiving flow
 
 We will first present the initial design; then, propose some optimizations.
 
-High-level design
+#### High-level design
 
 Figure 10-9 shows the design, and each system component is explained below.
+![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/10.09.png)
 
-Service 1 to N: A service can be a micro-service, a cron job, or a distributed system that
-triggers notification sending events. For example, a billing service sends emails to remind
-customers of their due payment or a shopping website tells customers that their packages will
-be delivered tomorrow via SMS messages.
+#### Service 1 to N: 
 
-Notification system: The notification system is the centerpiece of sending/receiving
-notifications. Starting with something simple, only one notification server is used. It provides
+A service can be a micro-service, a cron job, or a distributed system that
+triggers notification sending events. For example, a billing service sends
+emails to remind customers of their due payment or a shopping website tells
+customers that their packages will be delivered tomorrow via SMS messages.
 
-APIs for services 1 to N, and builds notification payloads for third party services.
+#### Notification system: 
 
-Third-party services: Third party services are responsible for delivering notifications to
-users. While integrating with third-party services, we need to pay extra attention to
-extensibility. Good extensibility means a flexible system that can easily plugging or
-unplugging of a third-party service. Another important consideration is that a third-party
-service might be unavailable in new markets or in the future. For instance, FCM is
-unavailable in China. Thus, alternative third-party services such as Jpush, PushY, etc are used
-there.
-iOS, Android, SMS, Email: Users receive notifications on their devices.
+The notification system is the centerpiece of sending/receiving notifications.
+Starting with something simple, only one notification server is used. It
+provides APIs for services 1 to N, and builds notification payloads for third party services.
+
+#### Third-party services: 
+
+Third party services are responsible for delivering notifications to users.
+While integrating with third-party services, we need to pay extra attention to
+extensibility. Good extensibility means a flexible system that can easily
+plugging or unplugging of a third-party service. Another important
+consideration is that a third-party service might be unavailable in new markets
+or in the future. For instance, FCM is unavailable in China. Thus, alternative
+third-party services such as Jpush, PushY, etc are used there. 
+
+#### iOS, Android, SMS, Email: Users receive notifications on their devices.
 
 Three problems are identified in this design:
-- Single point of failure (SPOF): A single notification server means SPOF.
-- Hard to scale: The notification system handles everything related to push notifications in
-one server. It is challenging to scale databases, caches, and different notification
-processing components independently.
-- Performance bottleneck: Processing and sending notifications can be resource intensive.
+- Single point of failure (_SPOF_): A single notification server means SPOF.
+- _Hard to scale_: The notification system handles everything related to push
+  notifications in one server. It is challenging to scale databases, caches,
+  and different notification processing components independently.
+- _Performance bottleneck_: Processing and sending notifications can be
+  resource intensive.
 
 For example, constructing HTML pages and waiting for responses from third party
-services could take time. Handling everything in one system can result in the system
-overload, especially during peak hours.
+services could take time. Handling everything in one system can result in the
+system overload, especially during peak hours.
 
-High-level design (improved)
+### High-level design (improved)
 
-After enumerating challenges in the initial design, we improve the design as listed below:
+After enumerating challenges in the initial design, we improve the design as
+listed below:
 - Move the database and cache out of the notification server.
 - Add more notification servers and set up automatic horizontal scaling.
 - Introduce message queues to decouple the system components.
 
 Figure 10-10 shows the improved high-level design.
+![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/10.10.png)
 
 The best way to go through the above diagram is from left to right:
 
-Service 1 to N: They represent different services that send notifications via APIs provided by
+#### Service 1 to N: 
+
+They represent different services that send notifications via APIs provided by
 notification servers.
 
-Notification servers: They provide the following functionalities:
-- Provide APIs for services to send notifications. Those APIs are only accessible internally
-or by verified clients to prevent spams.
+#### Notification servers: 
+
+They provide the following functionalities:
+- Provide APIs for services to send notifications. Those APIs are only
+  accessible internally or by verified clients to prevent spams.
 - Carry out basic validations to verify emails, phone numbers, etc.
 - Query the database or cache to fetch data needed to render a notification.
 - Put notification data to message queues for parallel processing.
@@ -3545,280 +3581,314 @@ Here is an example of the API to send an email:
 POST https://api.example.com/v/sms/send
 
 Request body
+```json
+{
+  "to": [
+    {
+      "user_id": 123456
+    }
+  ],
+  "from": {
+    "email": "from@examples.com"
+  },
+  "subject": "Hello world",
+  "content": [
+    {
+      "type": "text/plain",
+      "value": "hellow world"
+    }
+  ]
+}
+```
 
-Cache: User info, device info, notification templates are cached.
+#### Cache: 
 
-DB: It stores data about user, notification, settings, etc.
+User info, device info, notification templates are cached.
 
-Message queues: They remove dependencies between components. Message queues serve as
-buffers when high volumes of notifications are to be sent out. Each notification type is
-assigned with a distinct message queue so an outage in one third-party service will not affect
-other notification types.
+#### DB: 
 
-Workers: Workers are a list of servers that pull notification events from message queues and
-send them to the corresponding third-party services.
+It stores data about user, notification, settings, etc.
 
-Third-party services: Already explained in the initial design.
-iOS, Android, SMS, Email: Already explained in the initial design.
+#### Message queues: 
+
+They remove dependencies between components. Message queues serve as buffers
+when high volumes of notifications are to be sent out. Each notification type
+is assigned with a distinct message queue so an outage in one third-party
+service will not affect other notification types.
+
+#### Workers: 
+
+Workers are a list of servers that pull notification events from message queues
+and send them to the corresponding third-party services.
+
+#### Third-party services: 
+
+Already explained in the initial design.
+
+#### iOS, Android, SMS, Email: 
+
+Already explained in the initial design.
 
 Next, let us examine how every component works together to send a notification:
-1. A service calls APIs provided by notification servers to send notifications.
-2. Notification servers fetch metadata such as user info, device token, and notification
-setting from the cache or database.
-3. A notification event is sent to the corresponding queue for processing. For instance, an
-iOS push notification event is sent to the iOS PN queue.
-4. Workers pull notification events from message queues.
-5. Workers send notifications to third party services.
-6. Third-party services send notifications to user devices.
+1. A _service calls APIs provided by notification servers_ to send notifications.
+2. _Notification servers fetch metadata_ such as user info, device token, and
+   notification setting from the cache or database.
+3. A _notification event is sent to the corresponding queue_ for processing. For
+   instance, an iOS push notification event is sent to the iOS PN queue.
+4. _Workers pull notification events_ from message queues.
+5. _Workers send notifications_ to third party services.
+6. _Third-party services send notifications_ to user devices.
 
-Step 3 - Design deep dive
+### Step 3 - Design deep dive
 
-In the high-level design, we discussed different types of notifications, contact info gathering
-flow, and notification sending/receiving flow. We will explore the following in deep dive:
+In the high-level design, we discussed different types of notifications,
+contact info gathering flow, and notification sending/receiving flow. We will
+explore the following in deep dive:
 - Reliability.
-- Additional component and considerations: notification template, notification settings,
-rate limiting, retry mechanism, security in push notifications, monitor queued notifications
-and event tracking.
+- Additional component and considerations: notification template, notification
+  settings, rate limiting, retry mechanism, security in push notifications,
+  monitor queued notifications and event tracking.
 - Updated design.
 
-Reliability
+### Reliability
 
-We must answer a few important reliability questions when designing a notification system in
-distributed environments.
+We must answer a few important reliability questions when designing a
+notification system in distributed environments.
 
-How to prevent data loss?
+#### How to prevent data loss?
 
-One of the most important requirements in a notification system is that it cannot lose data.
+One of the most important requirements in a notification system is that it
+_cannot lose data_.
 
-Notifications can usually be delayed or re-ordered, but never lost. To satisfy this requirement,
-the notification system persists notification data in a database and implements a retry
-mechanism. The notification log database is included for data persistence, as shown in Figure
-10-11.
+Notifications can usually be delayed or re-ordered, but never lost. To satisfy
+this requirement, the notification system persists notification data in a
+database and implements a retry mechanism. The notification log _database is
+included for data persistence_.
 
-Will recipients receive a notification exactly once?
+#### Will recipients receive a notification exactly once?
 
-The short answer is no. Although notification is delivered exactly once most of the time, the
-distributed nature could result in duplicate notifications. To reduce the duplication
-occurrence, we introduce a dedupe mechanism and handle each failure case carefully. Here is
-a simple dedupe logic:
+The short answer is no. Although notification is delivered exactly once most of
+the time, the distributed nature could result in duplicate notifications. To
+reduce the duplication occurrence, we introduce a dedupe mechanism and handle
+each failure case carefully. Here is a _simple dedupe logic_:
 
-When a notification event first arrives, we check if it is seen before by checking the event ID.
+1. When a notification event first arrives, we check if it is seen before by
+   checking the event ID. 
+2. If it is seen before, it is discarded. 
+3. Otherwise, we will send out the notification. 
 
-If it is seen before, it is discarded. Otherwise, we will send out the notification. For interested
-readers to explore why we cannot have exactly once delivery, refer to the reference material
-[5].
+For interested readers to explore why we cannot have exactly once delivery,
+refer to the reference material [5].
 
-Additional components and considerations
+### Additional components and considerations
 
-We have discussed how to collect user contact info, send, and receive a notification. A
-notification system is a lot more than that. Here we discuss additional components including
-template reusing, notification settings, event tracking, system monitoring, rate limiting, etc.
+We have discussed how to collect user contact info, send, and receive a
+notification. A notification system is a lot more than that. Here we discuss
+additional components including template reusing, notification settings, event
+tracking, system monitoring, rate limiting, etc.
 
-Notification template
+#### Notification template
 
-A large notification system sends out millions of notifications per day, and many of these
-notifications follow a similar format. Notification templates are introduced to avoid building
-every notification from scratch. A notification template is a preformatted notification to
-create your unique notification by customizing parameters, styling, tracking links, etc. Here is
-an example template of push notifications.
+A large notification system sends out millions of notifications per day, and
+many of these notifications follow a similar format. Notification templates are
+introduced to _avoid building every notification from scratch_. A notification
+template is a preformatted notification to create your unique notification by
+customizing parameters, styling, tracking links, etc. Here is an example
+template of push notifications.
 
-BODY:
+- BODY: `You dreamed of it. We dared it. [ITEM NAME] is back — only until
+  [DATE].`
+- CTA: `Order Now. Or, Save My [ITEM NAME]`
 
-You dreamed of it. We dared it. [ITEM NAME] is back — only until [DATE].
+The benefits of using notification templates include maintaining a consistent
+format, reducing the margin error, and saving time.
 
-CTA:
+#### Notification setting
 
-Order Now. Or, Save My [ITEM NAME]
+Users generally receive way too many notifications daily and they can easily
+feel overwhelmed. Thus, many websites and apps give users fine-grained control
+over notification settings. This information is stored in the notification
+setting table, with the following fields:
 
-The benefits of using notification templates include maintaining a consistent format, reducing
-the margin error, and saving time.
-
-Notification setting
-
-Users generally receive way too many notifications daily and they can easily feel
-overwhelmed. Thus, many websites and apps give users fine-grained control over notification
-settings. This information is stored in the notification setting table, with the following fields:
+```
 user_id bigInt
 channel varchar # push notification, email or SMS
 opt_in boolean # opt-in to receive notification
+```
 
-Before any notification is sent to a user, we first check if a user is opted-in to receive this type
-of notification.
+Before any notification is sent to a user, we first check if a user is opted-in
+to receive this type of notification.
 
-Rate limiting
+#### Rate limiting
 
-To avoid overwhelming users with too many notifications, we can limit the number of
-notifications a user can receive. This is important because receivers could turn off
-notifications completely if we send too often.
+To avoid overwhelming users with too many notifications, we can limit the
+number of notifications a user can receive. This is important because receivers
+could turn off notifications completely if we send too often.
 
-Retry mechanism
+#### Retry mechanism
 
-When a third-party service fails to send a notification, the notification will be added to the
-message queue for retrying. If the problem persists, an alert will be sent out to developers.
+When a third-party service fails to send a notification, the notification will
+be added to the message queue for retrying. If the problem persists, an alert
+will be sent out to developers.
 
-Security in push notifications
+#### Security in push notifications
 
-For iOS or Android apps, appKey and appSecret are used to secure push notification APIs
-[6]. Only authenticated or verified clients are allowed to send push notifications using our
+For iOS or Android apps, appKey and appSecret are used to secure push
+notification APIs [6]. Only authenticated or verified clients are allowed to
+send push notifications using our APIs. Interested users should refer to the
+reference material [6].
 
-APIs. Interested users should refer to the reference material [6].
+#### Monitor queued notifications
 
-Monitor queued notifications
+A key metric to monitor is the total number of queued notifications. If the
+number is large, the notification events are not processed fast enough by
+workers. To avoid delay in the notification delivery, more workers are needed.
+Figure 10-12 (credit to [7]) shows an example of queued messages to be
+processed.
+![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/10.12.png)
 
-A key metric to monitor is the total number of queued notifications. If the number is large,
-the notification events are not processed fast enough by workers. To avoid delay in the
-notification delivery, more workers are needed. Figure 10-12 (credit to [7]) shows an
-example of queued messages to be processed.
+#### Events tracking
 
-Figure 10-12
+Notification metrics, such as open rate, click rate, and engagement are
+important in understanding customer behaviors. Analytics service implements
+events tracking. Integration between the notification system and the analytics
+service is usually required. Figure 10-13 shows an example of events that might
+be tracked for analytics purposes.
+![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/10.13.png)
 
-Events tracking
+### Updated design
 
-Notification metrics, such as open rate, click rate, and engagement are important in
-understanding customer behaviors. Analytics service implements events tracking. Integration
-between the notification system and the analytics service is usually required. Figure 10-13
-shows an example of events that might be tracked for analytics purposes.
+![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/10.14.png)
 
-Updated design
+In this design, many new components are added in comparison with the previous
+design.
+- The notification servers are equipped with two more critical features:
+  _authentication and rate-limiting_.
+- We also add a _retry mechanism_ to handle notification failures. If the
+  system fails to send notifications, they are put back in the messaging queue
+  and the workers will retry for a predefined number of times.
+- Furthermore, _notification templates_ provide a consistent and efficient
+  notification creation process.
+- Finally, _monitoring and tracking_ systems are added for system health checks
+  and future improvements.
 
-Putting everything together, Figure 10-14 shows the updated notification system design.
+### Step 4 - Wrap up
 
-In this design, many new components are added in comparison with the previous design.
-- The notification servers are equipped with two more critical features: authentication and
-rate-limiting.
-- We also add a retry mechanism to handle notification failures. If the system fails to send
-notifications, they are put back in the messaging queue and the workers will retry for a
-predefined number of times.
-- Furthermore, notification templates provide a consistent and efficient notification
-creation process.
-- Finally, monitoring and tracking systems are added for system health checks and future
-improvements.
+Notifications are indispensable because they keep us posted with important
+information. It could be a push notification about your favorite movie on
+Netflix, an email about discounts on new products, or a message about your
+online shopping payment confirmation.
 
-Step 4 - Wrap up
+In this chapter, we described the design of a scalable notification system that
+supports multiple notification formats: push notification, SMS message, and
+email. We adopted message queues to decouple system components.
 
-Notifications are indispensable because they keep us posted with important information. It
-could be a push notification about your favorite movie on Netflix, an email about discounts
-on new products, or a message about your online shopping payment confirmation.
+Besides the high-level design, we dug deep into more components and
+optimizations.
+- _Reliability_: We proposed a robust retry mechanism to minimize the failure
+  rate.
+- _Security_: AppKey/appSecret pair is used to ensure only verified clients can
+  send notifications.
+- _Tracking and monitoring_: These are implemented in any stage of a
+  notification flow to capture important stats.
+- _Respect user settings: Users may opt-out of receiving notifications. Our
+  system checks user settings first before sending notifications.
+- _Rate limiting_: Users will appreciate a frequency capping on the number of
+  notifications they receive.
 
-In this chapter, we described the design of a scalable notification system that supports
-multiple notification formats: push notification, SMS message, and email. We adopted
-message queues to decouple system components.
+### Reference materials
 
-Besides the high-level design, we dug deep into more components and optimizations.
-- Reliability: We proposed a robust retry mechanism to minimize the failure rate.
-- Security: AppKey/appSecret pair is used to ensure only verified clients can send
-notifications.
-- Tracking and monitoring: These are implemented in any stage of a notification flow to
-capture important stats.
-- Respect user settings: Users may opt-out of receiving notifications. Our system checks
-user settings first before sending notifications.
-- Rate limiting: Users will appreciate a frequency capping on the number of notifications
-they receive.
-
-Congratulations on getting this far! Now give yourself a pat on the back. Good job!
-
-Reference materials
-[1] Twilio SMS: https://www.twilio.com/sms
-[2] Nexmo SMS: https://www.nexmo.com/products/sms
-[3] Sendgrid: https://sendgrid.com/
-[4] Mailchimp: https://mailchimp.com/
-[5] You Cannot Have Exactly-Once Delivery: https://bravenewgeek.com/you-cannot-haveexactly-once-delivery/
-[6] Security in Push Notifications: https://cloud.ibm.com/docs/services/mobilepush?
-topic=mobile-pushnotification-security-in-push-notifications
-[7] RadditMQ: https://bit.ly/2sotIa6
+- [1] Twilio SMS: https://www.twilio.com/sms
+- [2] Nexmo SMS: https://www.nexmo.com/products/sms
+- [3] Sendgrid: https://sendgrid.com/
+- [4] Mailchimp: https://mailchimp.com/
+- [5] You Cannot Have Exactly-Once Delivery: https://bravenewgeek.com/you-cannot-haveexactly-once-delivery/
+- [6] Security in Push Notifications: https://cloud.ibm.com/docs/services/mobilepush?topic=mobile-pushnotification-security-in-push-notifications
+- [7] RadditMQ: https://bit.ly/2sotIa6
 
 ## CHAPTER 11: DESIGN A NEWS FEED SYSTEM
 
-In this chapter, you are asked to design a news feed system. What is news feed? According to
-the Facebook help page, “News feed is the constantly updating list of stories in the middle of
-your home page. News Feed includes status updates, photos, videos, links, app activity, and
-likes from people, pages, and groups that you follow on Facebook” [1]. This is a popular
-interview question. Similar questions commonly asked are: design Facebook news feed,
+In this chapter, you are asked to design a news feed system. What is news feed?
+According to the Facebook help page, “News feed is the constantly updating list
+of stories in the middle of your home page. News Feed includes status updates,
+photos, videos, links, app activity, and likes from people, pages, and groups
+that you follow on Facebook” [1]. This is a popular interview question. Similar
+questions commonly asked are: design Facebook news feed, Instagram feed,
+Twitter timeline, etc.
 
-Instagram feed, Twitter timeline, etc.
+### Step 1 - Understand the problem and establish design scope
 
-Step 1 - Understand the problem and establish design scope
+The first set of clarification questions are to understand what the interviewer
+has in mind when she asks you to design a news feed system. At the very least,
+you should figure out what features to support. Here is an example of
+candidate-interviewer interaction:
+- Candidate: Is this a _mobile_ app? Or a _web app_? Or both?
+- Interviewer: Both
+- Candidate: What are the _important features_?
+- Interview: A user can publish a post and see her friends’ posts on the news
+  feed page.
+- Candidate: Is the news feed _sorted_ by reverse chronological order or any
+  particular order such as topic scores? For instance, posts from your close
+  friends have higher scores.
+- Interviewer: To keep things simple, let us assume the feed is sorted by
+  reverse chronological order.
+- Candidate: How many _friends_ can a user have?
+- Interviewer: 5000
+- Candidate: What is the _traffic volume_?
+- Interviewer: 10 million DAU
+- Candidate: Can feed contain images, videos, or _just text_?
+- Interviewer: It can contain media files, including both images and videos.
+- Now you have gathered the requirements, we focus on designing the system.
 
-The first set of clarification questions are to understand what the interviewer has in mind
-when she asks you to design a news feed system. At the very least, you should figure out
-what features to support. Here is an example of candidate-interviewer interaction:
-
-Candidate: Is this a mobile app? Or a web app? Or both?
-
-Interviewer: Both
-
-Candidate: What are the important features?
-
-Interview: A user can publish a post and see her friends’ posts on the news feed page.
-
-Candidate: Is the news feed sorted by reverse chronological order or any particular order
-such as topic scores? For instance, posts from your close friends have higher scores.
-
-Interviewer: To keep things simple, let us assume the feed is sorted by reverse chronological
-order.
-
-Candidate: How many friends can a user have?
-
-Interviewer: 5000
-
-Candidate: What is the traffic volume?
-
-Interviewer: 10 million DAU
-
-Candidate: Can feed contain images, videos, or just text?
-
-Interviewer: It can contain media files, including both images and videos.
-
-Now you have gathered the requirements, we focus on designing the system.
-
-Step 2 - Propose high-level design and get buy-in
+### Step 2 - Propose high-level design and get buy-in
 
 The design is divided into two flows: feed publishing and news feed building.
-- Feed publishing: when a user publishes a post, corresponding data is written into cache
-and database. A post is populated to her friends’ news feed.
-- Newsfeed building: for simplicity, let us assume the news feed is built by aggregating
-friends’ posts in reverse chronological order.
+- _Feed publishing_: when a user publishes a post, corresponding data is
+  written into cache and database. A post is populated to her friends’ news
+  feed.
+- _Newsfeed building_: for simplicity, let us assume the news feed is built by
+  aggregating friends’ posts in reverse chronological order.
 
-Newsfeed APIs
+### Newsfeed APIs
 
-The news feed APIs are the primary ways for clients to communicate with servers. Those
+The news feed APIs are the primary ways for clients to communicate with
+servers. Those APIs are HTTP based that allow clients to perform actions, which
+include posting a status, retrieving news feed, adding friends, etc. We discuss
+two most important APIs: feed publishing API and news feed retrieval API.
 
-APIs are HTTP based that allow clients to perform actions, which include posting a status,
-retrieving news feed, adding friends, etc. We discuss two most important APIs: feed
-publishing API and news feed retrieval API.
-
-Feed publishing API
+#### Feed publishing API
 
 To publish a post, a HTTP POST request will be sent to the server. The API is shown below:
 
-POST /v1/me/feed
+`POST /v1/me/feed`
 
 Params:
 - content: content is the text of the post.
 - auth_token: it is used to authenticate API requests.
 
-Newsfeed retrieval API
+#### Newsfeed retrieval API
 
 The API to retrieve news feed is shown below:
 
-GET /v1/me/feed
+`GET /v1/me/feed`
 
 Params:
 - auth_token: it is used to authenticate API requests.
 
-Feed publishing
+### Feed publishing
 
 Figure 11-2 shows the high-level design of the feed publishing flow.
-- User: a user can view news feeds on a browser or mobile app. A user makes a post with
-content “Hello” through API:
-/v1/me/feed?content=Hello&auth_token={auth_token}
-- Load balancer: distribute traffic to web servers.
-- Web servers: web servers redirect traffic to different internal services.
-- Post service: persist post in the database and cache.
-- Fanout service: push new content to friends’ news feed. Newsfeed data is stored in the
-cache for fast retrieval.
-- Notification service: inform friends that new content is available and send out push
-notifications.
+![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/11.02.png)
+- _User_: a user can view news feeds on a browser or mobile app. A user makes a
+  post with content “Hello” through API:
+  `/v1/me/feed?content=Hello&auth_token={auth_token}`
+- _Load balancer_: distribute traffic to web servers.
+- _Web servers_: web servers redirect traffic to different internal services.
+- _Post service_: persist post in the database and cache.
+- _Fanout service_: push new content to friends’ news feed. Newsfeed data is
+  stored in the cache for fast retrieval.
+- _Notification service_: inform friends that new content is available and send
+  out push notifications.
 
 Newsfeed building
 
