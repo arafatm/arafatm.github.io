@@ -65,7 +65,7 @@ I call all of this **glue work.**
 It's technical leadership, so we do get some signal for it on leadership
 interviews for senior engineers.  
 
-But sometimes a team ends up someone who _isn't_ senior, but who happens to be
+But sometimes a team ends up someone who isn't senior, but who happens to be
 good at this stuff. Someone who acts senior before they're senior. This kind of
 work makes the team better -- there's plenty of it to go around. But people
 _aren't always rewarded for doing it_.
@@ -104,7 +104,7 @@ Ok, story time.
 ## [1. Once upon a time there was a software engineer](https://images.squarespace-cdn.com/content/v1/5a05ececd55b4165f250f032/1556571242884-7I315JKOQ73RSB4WSSZK/Slide7.jpeg)
 
 Here she is, first day in a new team. She's been out of college a few years,
-had her first couple of tech jobs. She's not _wildly_ confident in her skills,
+had her first couple of tech jobs. She's not wildly confident in her skills,
 but likes the work.
 
 ### [Her new team is friendly but busy](https://images.squarespace-cdn.com/content/v1/5a05ececd55b4165f250f032/1556571242941-1AQIALBNY0AIDT3HU1FK/Slide8.jpeg)
@@ -345,9 +345,9 @@ on your team.
 ## [3. To manage or not to manage?](https://images.squarespace-cdn.com/content/v1/5a05ececd55b4165f250f032/1556571246092-YXAWT72Q504U6UQAOFOG/Slide37.jpeg)
 
 Ok, back to our friend. Folks are now suggesting that she change to a role
-where that same work **would be** promotable. And I've seen this a lot of
+where that same work would be promotable. And I've seen this a lot of
 times: this message of "you're doing work that's not promotable, so change your
-_role_". I haven't seen as much emphasis on "so change your _work_" or indeed
+role". I haven't seen as much emphasis on "so change your work" or indeed
 "so change _how you tell the story_ of your work".  
 
 Let's talk about changing roles. I have read a lot of articles about deciding
@@ -383,7 +383,7 @@ skills do you wish you had? The vast majority of our learning happens on the
 job.  
 
 But I see people not considering the roles they want because they don't feel
-like they _already_ have all the skills of that job. I've had a lot of CS
+like they already have all the skills of that job. I've had a lot of CS
 college students tell me they're not applying for programming jobs because they
 don't feel like they're strong programmers.  
 
@@ -479,7 +479,7 @@ retire and buy a little boat. I want to help with that.
 
 I don’t know what her right career choice is. Only she can make that decision.
 She should choose deliberately, based on:
-* what would she _love to get better at
+* what would she _love to get better at_
 * What is a job that she'll feel _happy and proud_ to do?
 * What _doors is she comfortable making hard to reopen_?  
 
@@ -550,7 +550,7 @@ Due to her work and her technical judgement, this thing happened.
 
 Her manager should be telling the same story. If you see this situation, where
 a glue person is the only reason something launched, publicly give them credit!
-And not for **helping**, but for **leading**.  
+And _not for helping, but for_ __leading__.  
 
 She should be creating and saving artifacts that back up this narrative: design
 proposals, meeting notes, group emails, crucial points where she made the thing
