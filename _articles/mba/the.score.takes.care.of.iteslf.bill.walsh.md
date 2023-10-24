@@ -5,25 +5,22 @@ author: Bill Walsh, Steve Jamison, and Craig Walsh
 title: The Score Takes Care of Itself
 ---
 
-
-
-
 > Do all the right things to precision and “the score will take care of itself”
 
 > you aim for perfection and miss, you’re still pretty good, but if you aim for mediocre and miss?
 
-## To Succeed You Must Fail
+### To Succeed You Must Fail
 
 However, a resolute and resourceful leader understands that there are a
 multitude of means to increase the probability of success.
 
-# PART I My Standard of Performance: An Environment of Excellence
+## PART I My Standard of Performance: An Environment of Excellence
 
 The ability to help the people around me self-actualize their goals underlines
 the single aspect of my abilities and the label that I value most—teacher.
 —BILL WALSH
 
-## How to Know if You’re Doing the Job
+### How to Know if You’re Doing the Job
 
 “If you’re up at 3 A.M. every night talking into a tape recorder and writing
 notes on scraps of paper, have a knot in your stomach and a rash on your skin,
@@ -31,7 +28,7 @@ are losing sleep and losing touch with your wife and kids, have no appetite or
 sense of humor, and feel that everything might turn out wrong, then you’re
 probably doing the job.”
 
-## Coaches Aren’t Supposed to Cry: Survive One Minute at a Time
+### Coaches Aren’t Supposed to Cry: Survive One Minute at a Time
 
 I must stand and fight again, stand and fight or it was all over.
 
@@ -54,13 +51,13 @@ MY FIVE DON’TS:
 4. Don’t keep accepting condolences. 
 5. Don’t blame others.
 
-## My Standard of Performance: High Requirements for Actions and Attitudes
+### My Standard of Performance: High Requirements for Actions and Attitudes
 
 Regardless of your specific job, it is vital to our team that you do that job
 at the highest possible level in all its various aspects, both mental and
 physical (i.e., good talent with bad attitude equals bad talent).
 
-## An Organization Has a Conscience
+### An Organization Has a Conscience
 
 My Standard of Performance:
 - Exhibit a ferocious and intelligently applied work ethic directed at continual
@@ -87,18 +84,18 @@ seek the latter;
 If you were lucky enough to receive a 49er paycheck, it meant you were part of
 an organization that had high expectations of itself and of you,
 
-## Specifics of My New Standards
+### Specifics of My New Standards
 
 That perfect appearance was a predicate of perfect performance.
 
-## The Prime Directive Was Not Victory
+### The Prime Directive Was Not Victory
 
 hiring personnel with four characteristics I value most highly: talent,
 character, functional intelligence (beyond basic intelligence, the ability to
 think on your feet, quickly and spontaneously), and an eagerness to adopt my
 way of doing things, my philosophy.
 
-## The Top Priority Is Teaching
+### The Top Priority Is Teaching
 
 Everybody was connected, each of us an extension of the others, each of us with
 ownership in our organization.
@@ -120,15 +117,15 @@ media, “Scotty Pippen did a great job on defense; Dennis [Rodman] got a couple
 of key rebounds, and our bench really picked up the slack in the third quarter
 to give us a little breather. It was a great effort by everybody.”
 
-## Winners Act Like Winners (Before They’re Winners)
+### Winners Act Like Winners (Before They’re Winners)
 
 The exceptional assembly line comes first, before the quality car.
 
 Before you can win the fight, you’ve got to be in the fight.
 
-## Seek to Be Near the Summit
+### Seek to Be Near the Summit
 
-## Establishing Your Standard of Performance
+### Establishing Your Standard of Performance
 
 1. Start with a comprehensive recognition of, reverence for, and identification
    of the specific actions and attitudes relevant to your team’s performance
@@ -143,7 +140,7 @@ Before you can win the fight, you’ve got to be in the fight.
 6. Make the expectations and metrics of competence that you demand in action
    and attitudes from personnel the new reality of your organization.
 
-## How I Avoid Becoming a Victim of Myself
+### How I Avoid Becoming a Victim of Myself
 
 The key to performing under pressure at the highest possible level, regardless
 of circumstance, is preparation in the context of your Standard of Performance
@@ -158,15 +155,15 @@ Some leaders drive their team past being able to perform with poise and
 presence and into a state of anxiety where they’re not thinking as clearly as
 they should.
 
-# PART II Success Is Not Spelled G-E-N-I-U-S: Innovation, Planning, and Common Sense
+## PART II Success Is Not Spelled G-E-N-I-U-S: Innovation, Planning, and Common Sense
 
-## Opportunity Is in the Eye of the Beholder
+### Opportunity Is in the Eye of the Beholder
 
 Creating gold from dross is alchemy; making lemonade when you’re given lemons
 is leadership; making lemonade when you don’t have any lemons is great
 leadership.
 
-## The West Coast Offense: From Checkers to Chess
+### The West Coast Offense: From Checkers to Chess
 
 They were locked into the past and unwittingly locking themselves out of the
 future.
@@ -174,7 +171,7 @@ future.
 It’s often the case that a “game changer” takes a while to change the way the
 game is played.
 
-## Lessons of the Bill Walsh Offense
+### Lessons of the Bill Walsh Offense
 
 1. Success doesn’t care which road you take to get to its doorstep.
 2. Be bold. Remove fear of the unknown—that is, change—from your mind.
@@ -183,15 +180,15 @@ game is played.
 
 > “What assets do we have right now that we’re not taking advantage of?”
 
-## Welcome Skeptics to Your Team
+### Welcome Skeptics to Your Team
 
 perceptive, astute, and shrewd listener who did not fear change.
 
-## Share the Glory
+### Share the Glory
 
 Few things offer greater return on less investment than praise—offering
 
-## Write Your Own Script for Success: Flying by the Seat of Your Pants (Is No Way to Travel)
+### Write Your Own Script for Success: Flying by the Seat of Your Pants (Is No Way to Travel)
 
 The local fire department was called in to help rescue a cat stuck up in a tall
 tree.  During all the congratulations afterward, the fire truck drove off and
@@ -232,7 +229,7 @@ engulfed by stress, anxiety, fear, tension, or turmoil.
 
 When it counts is before all hell breaks loose.
 
-## Control What You Can Control: Let the Score Take Care of Itself
+### Control What You Can Control: Let the Score Take Care of Itself
 
 scripting, adapted to your own environment in your own way, can have the same
 tremendous benefit for you that it did for me, and I offer this summary as a
@@ -245,7 +242,7 @@ good point of reference:
 5. In the face of massive and often conflicting pressures, an organization must be resolute in its vision of the future and the contingent plans to get where it wants to go.
 6. You bring on failure by reacting in an inappropriate manner to pressure or adversity. Your version of “scripting” helps ensure that you will offer the appropriate response in a professional manner, that you will act like a leader.
 
-## Protect Your Blind Side: The Leadership Two-Step: Move/Countermove
+### Protect Your Blind Side: The Leadership Two-Step: Move/Countermove
 
 When Lawrence Taylor entered the NFL, not everyone understood how much his
 presence changed things. I did.
@@ -258,7 +255,7 @@ The key is to quickly recognize the nature of the threat and then to creatively
 and expeditiously respond to it. Otherwise, the game will be over before it
 begins.
 
-## The Archaeology of Leadership: Seek Reward in the Ruins
+### The Archaeology of Leadership: Seek Reward in the Ruins
 
 Every leader does year-end reviews and comes to conclusions of one sort or
 another.
@@ -267,7 +264,7 @@ My observation is that two leaders—coaches—looking at the same information w
 not see the same thing. The one who’s a more skilled analyst, who digs deeper
 and wider, will benefit more.
 
-## THE WALSH WAY The Problem Solver Mike White, Assistant Coach, San Francisco 49ers
+### THE WALSH WAY The Problem Solver Mike White, Assistant Coach, San Francisco 49ers
 
 Every organization has them, influential people who’ve got your back—or are
 putting a knife in it.
@@ -277,16 +274,16 @@ supportive and at the other end influential players who were very negative.
 Most important, he understood that all the guys in the middle could go one way
 or the other; they were up for grabs.
 
-# PART III Fundamentals of Leadership: Concepts, Conceits, and Conclusions
+## PART III Fundamentals of Leadership: Concepts, Conceits, and Conclusions
 
-## “I Am the Leader!”
+### “I Am the Leader!”
 
 others follow you based on the quality of your actions rather than the
 magnitude of your declarations.
 
 It’s like announcing, “I am rich!” when you’re broke.
 
-## The Common Denominator of Leadership: Strength of Will
+### The Common Denominator of Leadership: Strength of Will
 
 They simply would not quit in their effort to install their own system, to push
 forward with their plan, not someone else’s or a committee’s.
@@ -305,7 +302,7 @@ difference between working for the leader and being the leader.
 a problem this prerequisite leadership trait—strength of will—can pose, namely,
 the problem of determining when “my way” is the wrong way.
 
-## Be Wrong for the Right Reasons
+### Be Wrong for the Right Reasons
 
 It’s a delicate balance: You must persevere to achieve anything of import, but
 at what stage does perseverance become pigheadedness?
@@ -320,12 +317,12 @@ A leader must be keen and alert to what drives a decision, a plan of action.
 One of the great leadership challenges is to recognize when hubris has you in
 its grip before it is too late to change.
 
-## Protect Your Turf
+### Protect Your Turf
 
 Leaders who don’t understand what their territory is and how to protect it will
 soon find themselves with no turf to protect.
 
-## Be a Leader—Twelve Habits Plus One
+### Be a Leader—Twelve Habits Plus One
 
 When you fall prey to the naysayers who eagerly provide you with all the
 reasons why you won’t succeed, why you can’t win, and why you should quit, you
@@ -361,7 +358,7 @@ leader:
 2. Believe in yourself.  belief derives from expertise.
 3. Be a leader.
 
-## Sweat the Right Small Stuff: Sharp Pencils Do Not Translate into Sharp Performance
+### Sweat the Right Small Stuff: Sharp Pencils Do Not Translate into Sharp Performance
 
 Coach George Allen head coach of the Washington Redskins, sent a staff member
 out to the Coliseum for an entire afternoon to chart the movement of the sun
@@ -394,7 +391,7 @@ Ten additional nails you can pound into your professional coffin:
    the misbelief that the workplace should be fun, lighthearted, and free from
    appropriate levels of tension and urgency.
 
-## Good Leadership Percolates Down
+### Good Leadership Percolates Down
 
 trademark of a well-led organization in sports or business is that it’s
 virtually self-sustaining and self-directed—almost autonomous.
@@ -410,7 +407,7 @@ If everything goes great when you’re around but slows or stops in its tracks
 when you’re not there, you are not fulfilling your responsibilities. Your
 leadership has not percolated down.
 
-## Nameless, Faceless Objects
+### Nameless, Faceless Objects
 
 Demonizing the competition is a common but contrived method for stirring up
 emotions.
@@ -420,13 +417,13 @@ demon, he was lacking something I couldn’t give him.
 
 Of course, there are exceptions to every rule.
 
-## The Rules May Change, But the Game Goes On: I Strike Out the First Time, Not the Second
+### The Rules May Change, But the Game Goes On: I Strike Out the First Time, Not the Second
 
 don’t assume because of odd circumstances that everything will somehow sort
 itself out. Rather, play for keeps all the time. The clock never stops running;
 there is never a “time-out” when what you do is somehow less meaningful.
 
-## You Must Have a Hard Edge
+### You Must Have a Hard Edge
 
 a leader needs a very hard edge inside; it has to lurk in there somewhere and
 come out on occasion.
@@ -434,7 +431,7 @@ come out on occasion.
 You must be able to make and carry out harsh and, at times, ruthless decisions
 in a manner that is fast, firm, and fair.
 
-## The Inner Voice vs. the Outer Voice
+### The Inner Voice vs. the Outer Voice
 
 Leadership is expertise. It is not rhetoric or cheerleading speeches.
 
@@ -451,7 +448,7 @@ four messages in common:
 3. We can win if we improve. And there is always room for improvement.
 4. I know what is required for us to win. I will show you what it is.
 
-## Montana’s Leadership by Example: Cool, Calm, and Collected
+### Montana’s Leadership by Example: Cool, Calm, and Collected
 
 Of course, Joe had the talent, but talent alone won’t make you a leader
 
@@ -501,7 +498,7 @@ Knew It), offered six key dictates.
 
 You will alleviate this burden by eliminating non-essential demands.
 
-## Don’t Let Anybody Call You a Genius
+### Don’t Let Anybody Call You a Genius
 
 an inflated label like “Genius,” or any other form of hyperbole, comes with a
 big downside—that
@@ -516,7 +513,7 @@ suddenly become,
 that the hard work and applied intelligence you utilized initially are not as
 crucial as they once were.
 
-## The Leverage of Language
+### The Leverage of Language
 
 You demonstrate a lack of assuredness when you talk constantly in negatives.
 
@@ -527,7 +524,7 @@ afterward.
 When I criticized or gave feedback to someone, it wasn’t defeatist. It was
 always focused on the here and now
 
-## Don’t Beat Around the Bush (When Describing a Bush)
+### Don’t Beat Around the Bush (When Describing a Bush)
 
 clear, specific, and comprehensive without an ounce of ambiguity.
 
@@ -543,7 +540,7 @@ of them—even when those expectations are very high.
 
 don’t be subtle, don’t be coy, don’t be vague.
 
-## Don’t Mistake Grabbin’ for Tackling
+### Don’t Mistake Grabbin’ for Tackling
 
 Lombardi could see that his defensive players were not getting it done, were
 not really doing the hard job of tackling runners.
@@ -553,7 +550,7 @@ going through the motions was going to get them beat.
 
 John Wooden summed it up like this: “Don’t mistake activity for achievement.”
 
-## Communication Creates Collaboration: Big Ears Are Better Than Big Egos
+### Communication Creates Collaboration: Big Ears Are Better Than Big Egos
 
 Quality collaboration is only possible in the presence of quality
 communication;
@@ -576,7 +573,7 @@ his or her job.  “management by walking around.”
 if your left hand doesn’t know what your right hand is doing, you’ll get
 knocked out.
 
-## Be a King Without a Crown
+### Be a King Without a Crown
 
 coach John Wooden has always urged, “Be more concerned with finding the right
 way than in having it your way.”
@@ -592,7 +589,7 @@ If you’re doing your job, the team will recognize your abilities.
 someone told me that leadership is as easy as one, two, three, I’d reply, “Only
 if the one, two, and three are as follows: 1. Listen 2. Learn 3. Lead”
 
-## Create Uncertainty
+### Create Uncertainty
 
 comfort zone is dangerous because it creates an often almost imperceptible
 lowering of intensity, focus, and energy, which leads directly to reduced
@@ -603,31 +600,31 @@ predictably comfortable.
 
 feeling comfortable is first cousin to being complacent.
 
-## Play with Poise
+### Play with Poise
 
 Leadership requires poise under pressure.
 
 Knowing in advance what I would do in various situations—for example, scripting
 a game—was insurance that I could stay poised when it counted.
 
-## Teaching Defines Your Leadership
+### Teaching Defines Your Leadership
 
 There are winners, and there are people who would like to be winners but just
 don’t know how to do it.
 
-### 1. Passion is not just having a desire to do the job of teaching.
+#### 1. Passion is not just having a desire to do the job of teaching.
 
 Passion is a love for the act of teaching itself—believing in your heart that
 it is not a means to an end, but an end in itself.
 
-### 2. Expertise is the inventory of knowledge and experience you possess on a particular subject.
+#### 2. Expertise is the inventory of knowledge and experience you possess on a particular subject.
 
 The greater your expertise, the greater your potential to teach, the stronger
 and more productive you can be as a leader.
 
 good rule of thumb: “The more you know, the higher you go.”
 
-### 3. Communication is the ability to organize and then successfully convey your informed thoughts.
+#### 3. Communication is the ability to organize and then successfully convey your informed thoughts.
 
 Many mistakenly believe that just presenting facts—information—is teaching.
 Successful teaching is a two-way process.
@@ -642,7 +639,7 @@ I did it with facial and body language—moving assuredly and with energy,
 started and finished my description with nothing but optimism, enthusiasm, and
 belief. Never a caveat, no “ifs,” no hesitancy.
 
-### 4. Persistence is essential because knowledge is rarely imparted on the first attempt.
+#### 4. Persistence is essential because knowledge is rarely imparted on the first attempt.
 
 practices to facilitate what you do as a leader who is a great teacher:
 1. Use straightforward language.
@@ -659,7 +656,7 @@ practices to facilitate what you do as a leader who is a great teacher:
 10. Use visual aids.
 11. Remember Sun-tzu: “With more sophistication comes more control.”
 
-## The Thrill of Teaching
+### The Thrill of Teaching
 
 Companies led by good teachers, those with passion, expertise, communication
 skills, and persistence, do very well.
@@ -671,9 +668,9 @@ even harder for you because they’ll feel sorry for you.”
 He wanted input, but once the decision was made, he wanted it carried out
 precisely.
 
-# PART IV Essentials of a Winning Team: People, Priorities, and Performance
+## PART IV Essentials of a Winning Team: People, Priorities, and Performance
 
-## Money Talks. Treating People Right Talks Louder.
+### Money Talks. Treating People Right Talks Louder.
 
 From the first day I took over, we treated people right. More than money,
 that’s what made the San Francisco 49ers a first-class organization
@@ -718,7 +715,7 @@ checklist for keeping good staff members on the same page:
    championship: “Personal contact is part of hands-on management. Go to the
    other guy’s office; tell him what you have in mind
 
-## The Over and Under: The Art of Managing Confidence
+### The Over and Under: The Art of Managing Confidence
 
 More people are more familiar with losing than with winning.
 
@@ -754,21 +751,21 @@ Fend off the fallout from achievement; specifically, Success Disease:
 
 in the history of the Super Bowl, no team has been able to win three in a row.
 
-## The Under: Strive to Be a One-Point Underdog
+### The Under: Strive to Be a One-Point Underdog
 
 instill in each member of our group the belief that, regardless of the
 opponent, we were a one-point underdog, that the upcoming team was just a
 little better than we were or had motivation enough to really raise their level
 of play—the
 
-## Seek Character. Beware Characters.
+### Seek Character. Beware Characters.
 
 While he was capable of being a leader under positive circumstances, he was not
 capable of doing it under losing circumstances.
 
 It takes extraordinary fortitude to stay with it when times are bad.
 
-## A Big Cheer for a Big Ego
+### A Big Cheer for a Big Ego
 
 Don’t let anybody tell you that a big ego is a bad thing. Tiger Woods, Bill
 Gates, Warren Buffett, and Cal Ripken Jr. have lots of ego, and so does anyone
@@ -788,7 +785,7 @@ Most of those who strutted around were the less intelligent players. And being
 less intelligent, they couldn’t understand my message and ended up being
 isolated by their teammates—ostracized
 
-## The Bottom 20 Percent May Determine Your Success
+### The Bottom 20 Percent May Determine Your Success
 
 At the beginning of each year’s training camp, I made the following promise to
 our team: “Every single one of you guys will have at least one chance to win a
@@ -809,7 +806,7 @@ of the other 80 percent.
 
 whiners seem to have a disproportionate impact.
 
-## Avoid the Dance of the Doomed
+### Avoid the Dance of the Doomed
 
 a “dance of death” occurs when a wildebeest is run into exhaustion by a lion.
 Waiting to be killed as the lion circles, the wildebeest meekly submits to its
@@ -828,7 +825,7 @@ even if the cause appears to be lost; act like professionals.
 Your competitor must never look at you across the field, conference table, or
 anywhere else and conclude, “I not only beat you, I broke your spirit.”
 
-## Use the Four Most Powerful Words
+### Use the Four Most Powerful Words
 
 having the courage to say, “I believe in you,” in whatever words and way are
 comfortable for you. These four words—or their equivalents—constitute the most
@@ -837,7 +834,7 @@ inspirational message a leader can convey.
 Nobody will ever come back to you later and say “thank you” for expecting too
 little of them.
 
-## Extreme Effort Requires Extreme Prudence
+### Extreme Effort Requires Extreme Prudence
 
 One of your great challenges is finding the middle ground between the
 well-being of the people who work with you and the achievement of your goals.
@@ -852,19 +849,19 @@ We got beat because we were beat.
 What’s difficult to do is recognize when extra effort, extreme exertion,
 working “as hard as possible” starts to produce diminishing returns.
 
-## The Bubba Diet: You Can’t Transplant Willpower
+### The Bubba Diet: You Can’t Transplant Willpower
 
 we must try our best to encourage, support, and inspire, but
 eventually—ultimately—people must do it for themselves.
 
-## “Conventional Wisdom” Is an Oxymoron
+### “Conventional Wisdom” Is an Oxymoron
 
 trusting your own judgment enough to be resourceful, innovative, and
 imaginative. It means resisting the herd mentality.
 
 Conventional thinking didn’t produce Jerry Rice.
 
-## Make Friends, Not Enemies: Al Davis, Howard Cosell, and Monday Night Football
+### Make Friends, Not Enemies: Al Davis, Howard Cosell, and Monday Night Football
 
 necessary to initiate communication after a conflict, even if the other person
 had misunderstood you or wrongfully ridiculed you.
@@ -876,7 +873,7 @@ transformed from an adversary into an advocate.
 by minimizing the forces working against you, you do away with resultant
 distractions and free your mind and conserve your energy to focus on your work.
 
-## Hold on Until Help Arrives: Keep Your Boss in the Loop
+### Hold on Until Help Arrives: Keep Your Boss in the Loop
 
 This included providing him with a budget manual (thick), an operations manual
 (thick), a personnel manual (thick), an overall set of job descriptions that
@@ -896,7 +893,7 @@ time to actually do it.
 Whether they read it or not, flood your superiors with information that is
 documented—projections,
 
-## Keep Your Eye on the Ball
+### Keep Your Eye on the Ball
 
 1. Concentrate on what will produce results rather than on the results, the
    process rather than the prize.  
@@ -918,7 +915,7 @@ documented—projections,
 11. Avoid continual threatening or chastising.  
 12. Deal with your immediate superior(s) on a one-to-one, ongoing basis.
 
-## Make Your Own Mentors: A PhD from the University of Paul Brown, et al.
+### Make Your Own Mentors: A PhD from the University of Paul Brown, et al.
 
 We learn in many ways from many sources. One of the most powerful is a mentor,
 
