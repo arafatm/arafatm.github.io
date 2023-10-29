@@ -3823,22 +3823,21 @@ has in mind when she asks you to design a news feed system. At the very least,
 you should figure out what features to support. Here is an example of
 candidate-interviewer interaction:
 - Candidate: Is this a _mobile_ app? Or a _web app_? Or both?
-- Interviewer: Both
+  - Interviewer: Both
 - Candidate: What are the _important features_?
-- Interview: A user can publish a post and see her friends’ posts on the news
-  feed page.
+  - Interview: A user can publish a post and see her friends’ posts on the news feed page.
 - Candidate: Is the news feed _sorted_ by reverse chronological order or any
   particular order such as topic scores? For instance, posts from your close
   friends have higher scores.
-- Interviewer: To keep things simple, let us assume the feed is sorted by
-  reverse chronological order.
+  - Interviewer: To keep things simple, let us assume the feed is sorted by reverse chronological order.
 - Candidate: How many _friends_ can a user have?
-- Interviewer: 5000
+  - Interviewer: 5000
 - Candidate: What is the _traffic volume_?
-- Interviewer: 10 million DAU
+  - Interviewer: 10 million DAU
 - Candidate: Can feed contain images, videos, or _just text_?
-- Interviewer: It can contain media files, including both images and videos.
-- Now you have gathered the requirements, we focus on designing the system.
+  - Interviewer: It can contain media files, including both images and videos.
+
+Now you have gathered the requirements, we focus on designing the system.
 
 ### Step 2 - Propose high-level design and get buy-in
 
@@ -3891,142 +3890,165 @@ Figure 11-2 shows the high-level design of the feed publishing flow.
   out push notifications.
 
 ### Newsfeed building
-xxx
 
 In this section, we discuss how news feed is built behind the scenes. Figure 11-3 shows the
 high-level design:
-- User: a user sends a request to retrieve her news feed. The request looks like this:
-/ v1/me/feed.
+
+![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/11.03.png)
+
+- User: a user sends a request to retrieve her news feed. The request looks
+  like this: `/v1/me/feed`.
 - Load balancer: load balancer redirects traffic to web servers.
 - Web servers: web servers route requests to newsfeed service.
-- Newsfeed service: news feed service fetches news feed from the cache.
-- Newsfeed cache: store news feed IDs needed to render the news feed.
+- Newsfeed _service_: news feed service fetches news feed from the cache.
+- Newsfeed _cache_: store news feed IDs needed to render the news feed.
 
-Step 3 - Design deep dive
+### Step 3 - Design deep dive
 
-The high-level design briefly covered two flows: feed publishing and news feed building.
+The high-level design briefly covered two flows: feed publishing and news feed
+building. Here, we discuss those topics in more depth.
 
-Here, we discuss those topics in more depth.
-
-Feed publishing deep dive
+### Feed publishing deep dive
 
 Figure 11-4 outlines the detailed design for feed publishing. We have discussed most of
 components in high-level design, and we will focus on two components: web servers and
 fanout service.
 
-Web servers
+![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/11.04.png)
 
-Besides communicating with clients, web servers enforce authentication and rate-limiting.
+#### Web servers
 
-Only users signed in with valid auth_token are allowed to make posts. The system limits the
-number of posts a user can make within a certain period, vital to prevent spam and abusive
-content.
+Besides communicating with clients, web servers enforce authentication and
+rate-limiting.
 
-Fanout service
+Only users signed in with valid `auth_token` are allowed to make posts. The
+system limits the number of posts a user can make within a certain period,
+vital to prevent spam and abusive content.
 
-Fanout is the process of delivering a post to all friends. Two types of fanout models are:
-fanout on write (also called push model) and fanout on read (also called pull model). Both
-models have pros and cons. We explain their workflows and explore the best approach to
-support our system.
+#### Fanout service
 
-Fanout on write. With this approach, news feed is pre-computed during write time. A new
-post is delivered to friends’ cache immediately after it is published.
+Fanout is the process of delivering a post to all friends. Two types of fanout
+models are: _fanout on write_ (also called push model) and _fanout on read_
+(also called pull model). Both models have pros and cons. We explain their
+workflows and explore the best approach to support our system.
 
-Pros:
-- The news feed is generated in real-time and can be pushed to friends immediately.
-- Fetching news feed is fast because the news feed is pre-computed during write time.
-
-Cons:
-- If a user has many friends, fetching the friend list and generating news feeds for all of
-them are slow and time consuming. It is called hotkey problem.
-- For inactive users or those rarely log in, pre-computing news feeds waste computing
-resources.
-
-Fanout on read. The news feed is generated during read time. This is an on-demand model.
-
-Recent posts are pulled when a user loads her home page.
+##### Fanout on write. 
+With this approach, news feed is pre-computed during write time. A new post is
+delivered to friends’ cache immediately after it is published.
 
 Pros:
-- For inactive users or those who rarely log in, fanout on read works better because it will
-not waste computing resources on them.
-- Data is not pushed to friends so there is no hotkey problem.
+- The news feed is generated in _real-time_ and can be pushed to friends
+  immediately.
+- _Fetching news feed is fast_ because the news feed is pre-computed during
+  write time.
 
 Cons:
-- Fetching the news feed is slow as the news feed is not pre-computed.
+- If a _user has many friends_, fetching the friend list and generating news
+  feeds for all of them are slow and time consuming. It is called hotkey
+  problem.
+- For _inactive users_ or those rarely log in, pre-computing news feeds waste
+  computing resources.
 
-We adopt a hybrid approach to get benefits of both approaches and avoid pitfalls in them.
+##### Fanout on read. 
+The news feed is generated during read time. This is an on-demand model. Recent
+posts are pulled when a user loads her home page.
 
-Since fetching the news feed fast is crucial, we use a push model for the majority of users.
+Pros:
+- For inactive users or those who rarely log in, fanout on read works better
+  because it will _not waste computing_ resources on them.
+- Data is not pushed to friends so there is _no hotkey problem_.
 
-For celebrities or users who have many friends/followers, we let followers pull news content
-on-demand to avoid system overload. Consistent hashing is a useful technique to mitigate the
-hotkey problem as it helps to distribute requests/data more evenly.
+Cons:
+- _Fetching the news feed is slow_ as the news feed is not pre-computed.
+
+We adopt a __hybrid approach__ to get benefits of both approaches and avoid
+pitfalls in them.
+
+Since fetching the news feed fast is crucial, we use a push model for the
+majority of users.
+
+For celebrities or users who have many friends/followers, we let followers pull
+news content on-demand to avoid system overload. Consistent hashing is a useful
+technique to mitigate the hotkey problem as it helps to distribute
+requests/data more evenly.
 
 Let us take a close look at the fanout service as shown in Figure 11-5.
 
-The fanout service works as follows:
-1. Fetch friend IDs from the graph database. Graph databases are suited for managing
-friend relationship and friend recommendations. Interested readers wishing to learn more
-about this concept should refer to the reference material [2].
-2. Get friends info from the user cache. The system then filters out friends based on user
-settings. For example, if you mute someone, her posts will not show up on your news feed
-even though you are still friends. Another reason why posts may not show is that a user
-could selectively share information with specific friends or hide it from other people.
-3. Send friends list and new post ID to the message queue.
-4. Fanout workers fetch data from the message queue and store news feed data in the news
-feed cache. You can think of the news feed cache as a <post_id, user_id> mapping table.
+![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/11.05.png)
 
-Whenever a new post is made, it will be appended to the news feed table as shown in
+### The fanout service works as follows:
+1. _Fetch friend IDs from the graph database_. Graph databases are suited for
+   managing friend relationship and friend recommendations. Interested readers
+   wishing to learn more about this concept should refer to the reference
+   material [2].
+2. _Get friends info from the user cache_. The system then filters out friends
+   based on user settings. For example, if you mute someone, her posts will not
+   show up on your news feed even though you are still friends. Another reason
+   why posts may not show is that a user could selectively share information
+   with specific friends or hide it from other people.
+3. Send friends list and new post ID to the _message queue_.
+4. _Fanout workers fetch data from the message queue and store news feed data
+   in the news feed cache_. You can think of the news feed cache as a
+   `<post_id, user_id>` mapping table. Whenever a new post is made, it will be
+   appended to the news feed table as shown in Figure 11-6. The memory
+   consumption can become very large if we store the entire user and post
+   objects in the cache. Thus, only IDs are stored. To keep the memory size
+   small, we set a configurable limit. The chance of a user scrolling through
+   thousands of posts in news feed is slim. Most users are only interested in
+   the latest content, so the cache miss rate is low.
+5. Store <post_id, user_id > in news feed cache. Figure 11-6 shows an example
+   of what the news feed looks like in cache.
 
-Figure 11-6. The memory consumption can become very large if we store the entire user
-and post objects in the cache. Thus, only IDs are stored. To keep the memory size small,
-we set a configurable limit. The chance of a user scrolling through thousands of posts in
-news feed is slim. Most users are only interested in the latest content, so the cache miss
-rate is low.
-5. Store <post_id, user_id > in news feed cache. Figure 11-6 shows an example of what
-the news feed looks like in cache.
+| post_id | user_id |
+| --      | --      |
+| 123     | 456     |
 
-Newsfeed retrieval deep dive
+### Newsfeed retrieval deep dive
 
 Figure 11-7 illustrates the detailed design for news feed retrieval.
+![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/11.07.png)
 
-As shown in Figure 11-7, media content (images, videos, etc.) are stored in CDN for fast
-retrieval. Let us look at how a client retrieves news feed.
-1. A user sends a request to retrieve her news feed. The request looks like this: /v1/me/feed
-2. The load balancer redistributes requests to web servers.
-3. Web servers call the news feed service to fetch news feeds.
-4. News feed service gets a list post IDs from the news feed cache.
-5. A user’s news feed is more than just a list of feed IDs. It contains username, profile
-picture, post content, post image, etc. Thus, the news feed service fetches the complete
-user and post objects from caches (user cache and post cache) to construct the fully
-hydrated news feed.
-6. The fully hydrated news feed is returned in JSON format back to the client for
-rendering.
+As shown in Figure 11-7, media content (images, videos, etc.) are stored in _CDN
+for fast retrieval_. Let us look at how a client retrieves news feed.
+1. A _user sends a request_ to retrieve her news feed. The request looks like
+   this: /v1/me/feed
+2. The _load balancer redistributes requests_ to web servers.
+3. Web servers _call the news feed service_ to fetch news feeds.
+4. News feed service _gets a list post IDs_ from the news feed cache.
+5. A user’s news feed is _more than just a list of feed IDs_. It contains
+   username, profile picture, post content, post image, etc. Thus, the news
+   feed service fetches the complete user and post objects from caches (user
+   cache and post cache) to construct the fully hydrated news feed.
+6. The fully hydrated news feed is _returned in JSON format_ back to the client
+   for rendering.
 
-Cache architecture
+### Cache architecture
 
-Cache is extremely important for a news feed system. We divide the cache tier into 5 layers
-as shown in Figure 11-8.
-- News Feed: It stores IDs of news feeds.
-- Content: It stores every post data. Popular content is stored in hot cache.
-- Social Graph: It stores user relationship data.
-- Action: It stores info about whether a user liked a post, replied a post, or took other
-actions on a post.
-- Counters: It stores counters for like, reply, follower, following, etc.
+Cache is extremely important for a news feed system. We divide the cache tier
+into 5 layers as shown in Figure 11-8.
+![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/11.08.png)
+- _News Feed_: It stores IDs of news feeds.
+- _Content_: It stores every post data. Popular content is stored in hot cache.
+- _Social Graph: It stores user relationship data.
+- _Action_: It stores info about whether a user liked a post, replied a post,
+  or took other actions on a post.
+- _Counters_: It stores counters for like, reply, follower, following, etc.
 
-Step 4 - Wrap up
+### Step 4 - Wrap up
 
-In this chapter, we designed a news feed system. Our design contains two flows: feed
-publishing and news feed retrieval.
+In this chapter, we designed a news feed system. Our design contains two flows:
+feed publishing and news feed retrieval.
 
-Like any system design interview questions, there is no perfect way to design a system. Every
-company has its unique constraints, and you must design a system to fit those constraints.
+Like any system design interview questions, there is no perfect way to design a
+system. Every company has its unique constraints, and you must design a system
+to fit those constraints.
 
-Understanding the tradeoffs of your design and technology choices are important. If there are
-a few minutes left, you can talk about scalability issues. To avoid duplicated discussion, only
-high-level talking points are listed below.
+Understanding the tradeoffs of your design and technology choices are
+important. If there are a few minutes left, you can talk about scalability
+issues. To avoid duplicated discussion, only high-level talking points are
+listed below.
 
-Scaling the database:
+#### Scaling the database:
 - Vertical scaling vs Horizontal scaling
 - SQL vs NoSQL
 - Master-slave replication
@@ -4034,21 +4056,17 @@ Scaling the database:
 - Consistency models
 - Database sharding
 
-Other talking points:
+#### Other talking points:
 - Keep web tier stateless
 - Cache data as much as you can
 - Support multiple data centers
 - Lose couple components with message queues
-- Monitor key metrics. For instance, QPS during peak hours and latency while users
-refreshing their news feed are interesting to monitor.
+- Monitor key metrics. For instance, QPS during peak hours and latency while
+  users refreshing their news feed are interesting to monitor.
 
-Congratulations on getting this far! Now give yourself a pat on the back. Good job!
-
-Reference materials
-[1] How News Feed Works:
-https://www.facebook.com/help/327131014036297/
-[2] Friend of Friend recommendations Neo4j and SQL Sever:
-http://geekswithblogs.net/brendonpage/archive/2015/10/26/friend-of-friendrecommendations-with-neo4j.aspx
+### Reference materials
+1. How News Feed Works: https://www.facebook.com/help/327131014036297/
+2. Friend of Friend recommendations Neo4j and SQL Sever: http://geekswithblogs.net/brendonpage/archive/2015/10/26/friend-of-friendrecommendations-with-neo4j.aspx
 
 ## CHAPTER 12: DESIGN A CHAT SYSTEM
 
