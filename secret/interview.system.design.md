@@ -140,7 +140,7 @@ are defined in a load-balanced set.
 
 ![load balancer](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/01.04.png)
 
-As shown in ![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/01.04.png), users connect to the public IP of the load balancer
+As shown in Figure 1-4, users connect to the public IP of the load balancer
 directly. With this setup, _web servers are unreachable directly by clients_
 anymore. 
 
@@ -149,7 +149,7 @@ private IP is an IP address reachable only between servers in the same network;
 however, it is unreachable over the internet. The load balancer _communicates
 with web servers through private IPs_.
 
-In ![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/01.04.png), after a load balancer and a second web server are added, we
+In Figure 1-4, after a load balancer and a second web server are added, we
 successfully solved no failover issue and improved the availability of the web
 tier. Details are explained below:
 - If server 1 goes offline, all the traffic will be routed to server 2. This
@@ -178,7 +178,7 @@ operations_.
 All the data-modifying commands like insert, delete, or update must be sent to
 the master database. Most applications _require a much higher ratio of reads to
 writes; thus, the number of slave databases in a system is usually larger than
-the number of master databases_. ![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/01.05.png) shows a master database with
+the number of master databases_. Figure 1-5 shows a master database with
 multiple slave databases.
 
 ![master slave](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/01.05.png)
@@ -198,9 +198,8 @@ _Advantages_ of database replication:
 
 In the previous section, we discussed how a load balancer helped to _improve
 system availability_. We ask the same question here: what if one of the
-databases goes offline? The architectural design discussed in
-![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/01.05.png)
-can handle this case:
+databases goes offline? The architectural design discussed in Figure 1-5 can
+handle this case:
 - If only one slave database is available and it goes offline, _read operations
   will be directed to the master database temporarily_. As soon as the issue is
   found, a new slave database will replace the old one. In case multiple slave
@@ -218,12 +217,9 @@ replication could help, those setups are more complicated; and their discussions
 beyond the scope of this book. Interested readers should refer to the listed reference
 materials [4][5].
 
-![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/01.06.png)
-shows the system design after adding the load balancer and database
-replication.
+Figure 1-6 shows the system design after adding the load balancer and database replication.
 
-![1-6 db
-replication](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/01.06.png)
+![1-6 db replication](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/01.06.png)
 
 Let us take a look at the design:
 - A user gets the IP address of the load balancer from DNS.
@@ -242,7 +238,7 @@ delivery network (CDN).
 
 A cache is a temporary storage area that stores the result of expensive
 responses or frequently accessed data in memory so that subsequent requests are
-served more quickly. As illustrated in ![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/01.06.png), every time a new web page
+served more quickly. As illustrated in Figure 1-6, every time a new web page
 loads, one or more database calls are executed to fetch data. The application
 performance is greatly affected by calling the database repeatedly.
 
@@ -253,7 +249,7 @@ The cache can mitigate this problem.
 The cache tier is a __temporary data store layer, much faster than the
 database__. The benefits of having a separate cache tier include better system
 performance, ability to reduce database workloads, and the ability to scale the
-cache tier independently. ![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/01.07.png) shows a possible setup of a cache server:
+cache tier independently. Figure 1-7 shows a possible setup of a cache server:
 
 ![1-7 Cache](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/01.07.png)
 
@@ -326,12 +322,12 @@ Here is how CDN works at the high-level: when a user visits a website, a _CDN
 server closest to the user will deliver static content_. Intuitively, the
 further users are from CDN servers, the slower the website loads. For example,
 if CDN servers are in San Francisco, users in Los Angeles will get content
-faster than users in Europe. ![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/01.09.png) is a great example that shows how CDN
+faster than users in Europe. Figure 1-9 is a great example that shows how CDN
 improves load time.
 
 ![CDN](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/01.09.png)
 
-![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/01.10.png) demonstrates the CDN workflow.
+Figure 1-10 demonstrates the CDN workflow.
 
 ![CDN workflow](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/01.10.png)
 
@@ -372,7 +368,7 @@ Considerations of using a CDN
 
 ![CDN & cache](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/01.11.png)
 
-![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/01.11.png) shows the design after the CDN and cache are added.
+Figure 1-11 shows the design after the CDN and cache are added.
 1. Static assets (JS, CSS, images, etc.,) are no longer served by web servers.
    They are fetched from the CDN for better performance.
 2. The database load is lightened by caching data.
@@ -393,7 +389,7 @@ server keeps no state information__.
 
 ![stateful architecture](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/01.12.png)
 
-In ![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/01.12.png), user A’s session data and profile image are stored in Server 1.
+In Figure 1-12, user A’s session data and profile image are stored in Server 1.
 To authenticate User A, HTTP requests must be routed to Server 1. If a request
 is sent to other servers like Server 2, authentication would fail because
 Server 2 does not contain User A’s session data.
@@ -409,7 +405,7 @@ failures_.
 
 ### Stateless architecture
 
-![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/01.13.png) shows the stateless architecture.
+Figure 1-13 shows the stateless architecture.
 
 ![stateless architecture](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/01.13.png)
 
@@ -418,11 +414,11 @@ servers, which fetch state data from a shared data store. State data is stored
 in a shared data store and kept out of web servers. A stateless system is
 simpler, more robust, and scalable.
 
-![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/01.14.png) shows the updated design with a stateless web tier.
+Figure 1-14 shows the updated design with a stateless web tier.
 
 ![stateless web tier](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/01.14.png)
 
-In ![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/01.14.png), we _move the session data out of the web tier and store them in
+In Figure 1-14, we _move the session data out of the web tier and store them in
 the persistent data store_. The shared data store could be a relational
 database, Memcached/Redis, NoSQL, etc. The NoSQL data store is chosen as it is
 easy to scale. Autoscaling means adding or removing web servers automatically
@@ -436,7 +432,7 @@ across wider geographical areas, supporting multiple data centers is crucial.
 
 ### Data centers
 
-![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/01.15.png) shows an example setup with two data centers. In normal operation,
+Figure 1-15 shows an example setup with two data centers. In normal operation,
 users are geoDNS-routed, also known as geo-routed, to the closest data center,
 with a split traffic of x% in US-East and (100 – x)% in US-West. __geoDNS__ is
 a DNS service that allows domain names to be resolved to IP addresses based on
@@ -447,7 +443,7 @@ the location of a user.
 In the event of any significant data center outage, we direct all traffic to a
 healthy data center.
 
-In ![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/01.16.png), data center 2 (US-West) is offline, and 100% of the traffic is
+In Figure 1-16, data center 2 (US-West) is offline, and 100% of the traffic is
 routed to data center 1 (US-East).
 
 ![DC offline](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/01.16.png)
@@ -478,7 +474,7 @@ asynchronous communication. It serves as a buffer and distributes asynchronous
 requests. The basic architecture of a message queue is simple. Input services,
 called __producers/publishers__, create messages, and publish them to a message
 queue. Other services or servers, called consumers/subscribers, connect to the
-queue, and perform actions defined by the messages. The model is shown in ![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/01.17.png).
+queue, and perform actions defined by the messages. The model is shown in Figure 1-17.
 
 ![MQ](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/01.17.png)
 
@@ -490,7 +486,7 @@ unavailable.
 
 Consider the following use case: your application supports photo customization, including
 cropping, sharpening, blurring, etc. Those customization tasks take time to
-complete. In ![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/01.18.png), web servers publish photo processing jobs to the
+complete. In Figure 1-18, web servers publish photo processing jobs to the
 message queue. Photo processing workers pick up jobs from the message queue and
 asynchronously perform photo customization tasks. The producer and the consumer
 can be scaled independently. When the size of the queue becomes large, more
@@ -502,7 +498,7 @@ However, if the queue is empty most of the time, the number of workers can be re
 
 ### Adding message queues and different tools
 
-![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/01.19.png) shows the updated design. Due to the space constraint, only one
+Figure 1-19 shows the updated design. Due to the space constraint, only one
 data center is shown in the figure.
 1. The design includes a message queue, which helps to make the system more
    loosely coupled and failure resilient.
@@ -617,7 +613,7 @@ visualized latency numbers as of 2020 (source of figures: reference material
 
 ![latency](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/02.01.png)
 
-By analyzing the numbers in ![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/02.01.png), we get the following conclusions:
+By analyzing the numbers in Figure 2-1, we get the following conclusions:
 - Memory is fast but the disk is slow.
 - Avoid disk seeks if possible.
 - Simple compression algorithms are fast.
@@ -879,7 +875,7 @@ news feed building.
 - Newsfeed building: the news feed is built by aggregating friends’ posts in a
   reverse chronological order.
 
-![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/03.01.png) and Figure 3-2 present high-level designs for feed publishing and news feed
+Figure 3-1 and Figure 3-2 present high-level designs for feed publishing and news feed
 building flows, respectively.
 
 ![feed publishing](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/03.01.png)
@@ -923,7 +919,7 @@ of the most important use cases:
 1. Feed publishing
 2. News feed retrieval
 
-![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/03.03.png) and Figure 3-4 show the detailed design for the two use cases, which
+Figure 3-3 and Figure 3-4 show the detailed design for the two use cases, which
 will be explained in detail in Chapter 11.
 
 ![feed publishing](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/03.03.png)
@@ -1071,7 +1067,7 @@ server-side.
   to enforce rate limiting because client requests can easily be forged by
   malicious actors. Moreover, we might not have control over the client
   implementation.
-- _Server-side_ implementation. ![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/04.01.png) shows a rate limiter that is placed on
+- _Server-side_ implementation. Figure 4-1 shows a rate limiter that is placed on
   the server side.
 
 ![server-side](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/04.01.png)
@@ -1083,7 +1079,7 @@ limiter _middleware_, which throttles requests to your APIs as shown in Figure
 
 ![middleware](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/04.02.png)
 
-Let us use an example in ![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/04.03.png) to illustrate how rate limiting works in
+Let us use an example in Figure 4-3 to illustrate how rate limiting works in
 this design.
 
 Assume our API allows 2 requests per second, and a client sends 3 requests to
@@ -1142,21 +1138,21 @@ understood and commonly used by internet companies. Both Amazon [5] and Stripe
 The token bucket algorithm work as follows:
 - A token bucket is a container that has __pre-defined capacity__. 
 - Tokens are put in the bucket at preset rates periodically. 
-- Once the bucket is full, no more tokens are added. As shown in ![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/04.04.png),
+- Once the bucket is full, no more tokens are added. As shown in Figure 4-4,
   the token bucket capacity is 4. The refiller puts 2 tokens into the bucket
   every second. Once the bucket is full, extra tokens will overflow.
   ![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/04.04.png)
 - Each request consumes one token. When a request arrives, we check if there
-  are enough tokens in the bucket. ![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/04.05.png) explains how it works.
+  are enough tokens in the bucket. Figure 4-5 explains how it works.
 - If there are enough tokens, we take one token out for each request, and the
   request goes through.
 - If there are not enough tokens, the request is dropped.
   ![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/04.05.png)
 
-![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/04.06.png) illustrates how token consumption, refill, and rate limiting logic
+Figure 4-6 illustrates how token consumption, refill, and rate limiting logic
 work. In this example, the token bucket size is 4, and the refill rate is 4 per
 1 minute.
-
+![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/04.06.png)
 
 The token bucket algorithm takes _two parameters_:
 - _Bucket size_: the maximum number of tokens allowed in the bucket
@@ -1193,8 +1189,8 @@ first-in-first-out (__FIFO__) queue. The algorithm works as follows:
 - Otherwise, the request is dropped.
 - Requests are pulled from the queue and processed at regular intervals.
 
-![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/04.07.png) explains how the algorithm works.
-
+Figure 4-7 explains how the algorithm works.
+![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/04.07.png)
 
 Leaking bucket algorithm takes the following two parameters:
 - _Bucket size_: it is equal to the queue size. The queue holds the requests to
@@ -1224,19 +1220,19 @@ Fixed window counter algorithm works as follows:
 - Once the counter reaches the pre-defined threshold, new requests are dropped
   until a new time window starts.
 
-Let us use a concrete example to see how it works. In ![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/04.08.png), the time unit
+Let us use a concrete example to see how it works. In Figure 4-8, the time unit
 is 1 second and the system allows a maximum of 3 requests per second. In each
 second window, if more than 3 requests are received, extra requests are dropped
-as shown in ![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/04.08.png).
-
+as shown in Figure 4-8.
+![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/04.08.png)
 
 A major problem with this algorithm is that a burst of traffic at the edges of
 time windows could cause more requests than allowed quota to go through.
 
 Consider the following case:
+![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/04.09.png)
 
-
-In ![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/04.09.png), the system allows a maximum of 5 requests per minute, and the
+In Figure 4-9, the system allows a maximum of 5 requests per minute, and the
 available quota resets at the human-friendly round minute. As seen, there are
 five requests between 2:00:00 and 2:01:00 and five more requests between
 2:01:00 and 2:02:00. For the one-minute window between 2:00:30 and 2:01:30, 10
@@ -1266,8 +1262,8 @@ are defined as those older than the start of the current time window.
 
 Otherwise, it is rejected.
 
-We explain the algorithm with an example as revealed in ![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/04.10.png).
-
+We explain the algorithm with an example as revealed in Figure 4-10.
+![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/04.10.png) 
 
 In this example, the rate limiter allows 2 requests per minute. Usually, Linux
 timestamps are stored in the log. However, human-readable representation of
@@ -1302,8 +1298,8 @@ fixed window counter and sliding window log. The algorithm can be implemented
 by two different approaches. We will explain one implementation in this section
 and provide reference for the other implementation at the end of the section.
 
-![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/04.11.png) illustrates how this algorithm works.
-
+Figure 4-11 illustrates how this algorithm works.
+![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/04.11.png) 
 
 Assume the rate limiter allows a maximum of 7 requests per minute, and there
 are 5 requests in the previous minute and 3 in the current minute. For a new
@@ -1352,9 +1348,9 @@ commands: INCR and EXPIRE.
 - EXPIRE: It sets a timeout for the counter. If the timeout expires, the
   counter is automatically deleted.
 
-![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/04.12.png) shows the high-level architecture for rate limiting, and this works
+Figure 4-12 shows the high-level architecture for rate limiting, and this works
 as follows:
-
+![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/04.12.png) 
 - The client sends a request to rate limiting middleware.
 - Rate limiting middleware fetches the counter from the corresponding bucket in
   Redis and checks if the limit is reached or not.
@@ -1364,7 +1360,7 @@ as follows:
 
 ### Step 3 - Design deep dive
 
-The high-level design in ![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/04.12.png) does not answer the following questions:
+The high-level design in Figure 4-12 does not answer the following questions:
 - How are rate limiting rules created? 
 - Where are the rules stored?
 - How to handle requests that are rate limited?
@@ -1434,8 +1430,8 @@ X-Ratelimit-Retry-After header are returned to the client.
 
 #### Detailed design
 
-![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/04.13.png) presents a detailed design of the system.
-
+Figure 4-13 presents a detailed design of the system.
+![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/04.13.png) 
 
 - Rules are stored on the disk. Workers frequently pull rules from the disk and
   store them in the cache.
@@ -1467,8 +1463,8 @@ As discussed earlier, rate limiter works as follows at the high-level:
 - If not, increment the counter value by 1 in Redis.
 
 Race conditions can happen in a highly concurrent environment as shown in
-![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/04.14.png).
-
+Figure 4-14.
+![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/04.14.png) 
 
 Assume the counter value in Redis is 3. If two requests concurrently read the
 counter value before either of them writes the value back, each will increment
@@ -1491,21 +1487,21 @@ environment. To support millions of users, one rate limiter server might not be
 enough to handle the traffic.
 
 _When multiple rate limiter servers are used, synchronization is required_. For
-example, on the left side of ![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/04.15.png), client 1 sends requests to rate
+example, on the left side of Figure 4-15, client 1 sends requests to rate
 limiter 1, and client 2 sends requests to rate limiter 2. As the web tier is
 stateless, clients can send requests to a different rate limiter as shown on
-the right side of ![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/04.15.png). If no synchronization happens, rate limiter 1
+the right side of Figure 4-15. If no synchronization happens, rate limiter 1
 does not contain any data about client 2. Thus, the rate limiter cannot work
 properly.
 
-
+![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/04.15.png) 
 
 One possible solution is to use sticky sessions that allow a client to send
 traffic to the same rate limiter. This solution is not advisable because it is
 neither scalable nor flexible. A better approach is to use centralized data
-stores like Redis. The design is shown in ![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/04.16.png).
+stores like Redis. The design is shown in Figure 4-16.
 
-
+![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/04.16.png) 
 
 #### Performance optimization
 
@@ -1518,7 +1514,7 @@ providers build many edge server locations around the world. For example, as of
 5/20 2020, Cloudflare has 194 geographically distributed edge servers [14].
 Traffic is automatically routed to the closest edge server to reduce latency.
 
-
+![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/04.17.png) 
 
 Second, synchronize data with an eventual consistency model. If you are unclear
 about the eventual consistency model, refer to the “Consistency” section in
@@ -1612,7 +1608,7 @@ the server pool.
 Let us use an example to illustrate how it works. As shown in Table 5-1, we
 have 4 servers and 8 string keys with their hashes.
 
-
+![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/05.01.t.png)
 
 To fetch the server where a key is stored, we perform the modular operation
 f(key) % 4. For instance, hash(key0) % 4 = 1 means a client must contact server
@@ -1626,13 +1622,13 @@ same hash value for a key. But applying modular operation gives us different
 server indexes because the number of servers is reduced by 1. We get the
 results as shown in Table 5-2 by applying hash % 3:
 
+![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/05.02.t.png)
 
+Figure 5-2 shows the new distribution of keys based on Table 5-2.
 
-![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/05.02.png) shows the new distribution of keys based on Table 5-2.
+![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/05.02.png)
 
-
-
-As shown in ![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/05.02.png), most keys are redistributed, not just the ones
+As shown in Figure 5-2, most keys are redistributed, not just the ones
 originally stored in the offline server (server 1). This means that when server
 1 goes offline, most cache clients will connect to the wrong servers to fetch
 data. This causes a storm of cache misses. Consistent hashing is an effective
@@ -1656,58 +1652,58 @@ function is: `x0, x1, x2, x3, …, xn`. In cryptography, SHA-1’s hash space go
 from `0 to 2^160 - 1`. That means x0 corresponds to 0, xn corresponds to 2^160 –
 1, and all the other hash values in the middle fall between 0 and 2^160 - 1.
 
-![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/05.03.png) shows the hash space. By collecting both ends, we get a hash ring as
-shown in ![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/05.04.png):
+Figure 5-3 shows the hash space. By collecting both ends, we get a hash ring as
+shown in Figure 5-4:
 
-
+![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/05.04.png)
 
 ### Hash servers
 
 Using the same hash function f, we _map servers based on server IP or name onto
 the ring_.
 
-![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/05.05.png) shows that 4 servers are mapped on the hash ring.
-
+Figure 5-5 shows that 4 servers are mapped on the hash ring.
+![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/05.05.png)
 
 ### Hash keys
 
 One thing worth mentioning is that hash function used here is different from
 the one in “the rehashing problem,” and there is no modular operation. As shown
-in ![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/05.06.png), 4 cache keys (key0, key1, key2, and key3) are hashed onto the
+in Figure 5-6, 4 cache keys (key0, key1, key2, and key3) are hashed onto the
 hash ring
 
-
+![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/05.06.png)
 
 ### Server lookup
 
 To determine which server a key is stored on, we go clockwise from the key
-position on the ring until a server is found. ![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/05.07.png) explains this process.
+position on the ring until a server is found. Figure 5-7 explains this process.
 Going clockwise, key0 is stored on server 0; key1 is stored on server 1; key2
 is stored on server 2 and key3 is stored on server 3.
 
-
+![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/05.07.png)
 
 ### Add a server
 
 Using the logic described above, adding a new server will only require
 redistribution of a fraction of keys.
 
-In ![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/05.08.png), after a new server 4 is added, only key0 needs to be
+In Figure 5-8, after a new server 4 is added, only key0 needs to be
 redistributed. k1, k2, and k3 remain on the same servers. Let us take a close
 look at the logic. Before server 4 is added, key0 is stored on server 0. Now,
 key0 will be stored on server 4 because server 4 is the first server it
 encounters by going clockwise from key0’s position on the ring. The other keys
 are not redistributed based on consistent hashing algorithm.
 
-
+![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/05.08.png)
 
 ### Remove a server
 
 When a server is removed, only a small fraction of keys require redistribution
-with consistent hashing. In ![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/05.09.png), when server 1 is removed, only key1
+with consistent hashing. In Figure 5-9, when server 1 is removed, only key1
 must be remapped to server 2. The rest of the keys are unaffected.
 
-
+![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/05.09.png)
 
 ### Two issues in the basic approach
 
@@ -1722,26 +1718,26 @@ Two problems are identified with this approach. First, it is impossible to keep
 the same size of partitions on the ring for all servers considering a server
 can be added or removed. A partition is the hash space between adjacent
 servers. It is possible that the size of the partitions on the ring assigned to
-each server is very small or fairly large. In ![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/05.10.png), if s1 is removed,
+each server is very small or fairly large. In Figure 5-10, if s1 is removed,
 s2’s partition (highlighted with the bidirectional arrows) is twice as large as
 s0 and s3’s partition.
 
-
+![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/05.10.png)
 
 Second, it is possible to have a non-uniform key distribution on the ring. For
-instance, if servers are mapped to positions listed in ![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/05.11.png), most of the
+instance, if servers are mapped to positions listed in Figure 5-11, most of the
 keys are stored on server 2.
 
 However, server 1 and server 3 have no data.
 
-
+![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/05.11.png)
 
 A technique called virtual nodes or replicas is used to solve these problems.
 
 ### Virtual nodes
 
 A virtual node refers to the real node, and each server is represented by
-multiple virtual nodes on the ring. In ![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/05.12.png), both server 0 and server 1
+multiple virtual nodes on the ring. In Figure 5-12, both server 0 and server 1
 have 3 virtual nodes. The 3 is arbitrarily chosen; and in real-world systems,
 the number of virtual nodes is much larger.
 
@@ -1752,14 +1748,14 @@ virtual nodes, each server is responsible for multiple partitions. Partitions
 
 On the other hand, partitions with label s1 are managed by server 1.
 
-
+![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/05.12.png)
 
 To find which server a key is stored on, we go clockwise from the key’s
 location and find the first virtual node encountered on the ring. In Figure
 5-13, to find out which server k0 is stored on, we go clockwise from k0’s
 location and find virtual node s1_1, which refers to server 1.
 
-
+![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/05.13.png)
 
 As the number of virtual nodes increases, the distribution of keys becomes more
 balanced.
@@ -1780,17 +1776,17 @@ system requirements.
 When a server is added or removed, a fraction of data needs to be
 redistributed. How can we find the affected range to redistribute the keys?
 
-In ![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/05.14.png), server 4 is added onto the ring. The affected range starts from s4 (newly
+In Figure 5-14, server 4 is added onto the ring. The affected range starts from s4 (newly
 added node) and moves anticlockwise around the ring until a server is found (s3). Thus, keys
 located between s3 and s4 need to be redistributed to s4.
 
+![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/05.14.png)
 
-
-When a server (s1) is removed as shown in ![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/05.15.png), the affected range starts from s1
+When a server (s1) is removed as shown in Figure 5-15, the affected range starts from s1
 (removed node) and moves anticlockwise around the ring until a server is found (s0). Thus,
 keys located between s0 and s1 must be redistributed to s2.
 
-
+![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/05.15.png)
 
 ### Wrap up
 
@@ -1907,9 +1903,9 @@ __Partition Tolerance__: a partition indicates a communication break between
 two nodes. Partition tolerance means the system continues to operate despite network partitions.
 
 CAP theorem states that one of the three properties must be sacrificed to support 2 of the 3
-properties as shown in ![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/06.01.png).
+properties as shown in Figure 6-1.
 
-
+![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/06.01.png)
 
 Nowadays, key-value stores are classified based on the two CAP characteristics
 they support:
@@ -1933,16 +1929,16 @@ In the ideal world, network partition never occurs. Data written to n1 is
 automatically replicated to n2 and n3. Both consistency and availability are
 achieved.
 
-
+![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/06.02.png)
 
 ### Real-world distributed systems
 
 In a distributed system, partitions cannot be avoided, and when a partition
-occurs, we must choose between consistency and availability. In ![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/06.03.png), n3
+occurs, we must choose between consistency and availability. In Figure 6-3, n3
 goes down and cannot communicate with n1 and n2. If clients write data to n1 or
 n2, data cannot be propagated to n3. If data is written to n3 but not
 propagated to n1 and n2 yet, n1 and n2 would have stale data.
-
+![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/06.03.png)
 
 If we choose consistency over availability __(CP system), we must block all
 write operations to n1 and n2 to avoid data inconsistency__ among these three
@@ -1988,13 +1984,13 @@ while partitioning the data:
 
 Consistent hashing discussed in Chapter 5 is a great technique to solve these
 problems. Let us revisit how consistent hashing works at a high-level.
-- First, servers are placed on a hash ring. In ![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/06.04.png), eight servers,
+- First, servers are placed on a hash ring. In Figure 6-4, eight servers,
   represented by s0, s1, …, s7, are placed on the hash ring.
 - Next, a key is hashed onto the same ring, and it is stored on the first
   server encountered while moving in the clockwise direction. For instance,
   key0 is stored in s1 using this logic.
 
-
+![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/06.04.png)
 
 Using consistent hashing to partition data has the following advantages:
 - _Automatic scaling_: servers could be added and removed automatically
@@ -2009,9 +2005,9 @@ To achieve high availability and reliability, data must be replicated
 asynchronously over N servers, where N is a configurable parameter. These N
 servers are chosen using the following logic: after a key is mapped to a
 position on the hash ring, walk clockwise from that position and choose the
-first N servers on the ring to store data copies. In ![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/06.05.png) (N = 3), key0
+first N servers on the ring to store data copies. In Figure 6-5 (N = 3), key0
 is replicated at s1, s2, and s3.
-
+![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/06.05.png)
 
 With virtual nodes, the first N nodes on the ring may be owned by fewer than N
 physical servers. To avoid this issue, we only choose unique servers while
@@ -2033,11 +2029,11 @@ operations. Let us establish a few definitions first.
 - `R` = A _read quorum_ of size R. For a read operation to be considered as
   successful, read operation must wait for responses from at least R replicas.
 
-Consider the following example shown in ![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/06.06.png) with N = 3.
-
+Consider the following example shown in Figure 6-6 with N = 3.
+![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/06.06.png)
 
 W = 1 does not mean data is written on one server. For instance, with the
-configuration in ![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/06.06.png), data is replicated at s0, s1, and s2. W = 1 means
+configuration in Figure 6-6, data is replicated at s0, s1, and s2. W = 1 means
 that the coordinator must receive at least one acknowledgment before the write
 operation is considered as successful. For instance, if we get an
 acknowledgment from s1, we no longer need to wait for acknowledgements from s0
@@ -2099,15 +2095,15 @@ Versioning means treating each data modification as a new immutable version of
 data. Before we talk about versioning, let us use an example to explain how
 inconsistency happens:
 
-As shown in ![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/06.07.png), both replica nodes n1 and n2 have the same value. Let
+As shown in Figure 6-7, both replica nodes n1 and n2 have the same value. Let
 us call this value the original value. Server 1 and server 2 get the same value
 for get(“name”) operation.
-
+![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/06.07.png)
 
 Next, server 1 changes the name to “johnSanFrancisco”, and server 2 changes the
-name to “johnNewYork” as shown in ![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/06.08.png). These two changes are performed
+name to “johnNewYork” as shown in Figure 6-8. These two changes are performed
 simultaneously.
-
+![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/06.08.png)
 
 Now, we have conflicting values, called versions v1 and v2.
 
@@ -2132,8 +2128,8 @@ Si, the system must perform one of the following tasks.
 - Otherwise, create a new entry [Si, 1].
 
 The above abstract logic is explained with a concrete example as shown in
-![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/06.09.png).
-
+Figure 6-9.
+![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/06.09.png)
 
 1. A client writes a data item D1 to the system, and the write is handled by
    server Sx, which now has the vector clock D1[(Sx, 1)].
@@ -2192,9 +2188,9 @@ In a distributed system, it is insufficient to believe that a server is down
 because another server says so. Usually, it requires at least two independent
 sources of information to mark a server down.
 
-As shown in ![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/06.10.png), all-to-all multicasting is a straightforward solution. However, this is
+As shown in Figure 6-10, all-to-all multicasting is a straightforward solution. However, this is
 inefficient when many servers are in the system.
-
+![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/06.10.png)
 
 A better solution is to use decentralized failure detection methods like gossip
 protocol.
@@ -2210,9 +2206,9 @@ __Gossip protocol__ works as follows:
 - If the heartbeat has not increased for more than predefined periods, the
   member is _considered as offline_.
 
+![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/06.11.png)
 
-
-As shown in ![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/06.11.png):
+As shown in Figure 6-11:
 - Node s0 maintains a node membership list shown on the left side.
 - Node s0 notices that node s2’s (member ID = 2) heartbeat counter has not
   increased for a long time.
@@ -2240,7 +2236,7 @@ handoff_. Since s2 is unavailable in Figure 6- 12, reads and writes will be
 handled by s3 temporarily. When s2 comes back online, s3 will hand the data
 back to s2.
 
-
+![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/06.12.png)
 
 ### Handling permanent failures
 
@@ -2267,18 +2263,18 @@ Highlighted boxes indicate inconsistency.
 ### Step 1: _Divide key space into buckets_ (4 in our example) as shown in Figure
 6-13. A bucket is used as the root level node to maintain a limited depth of
 the tree.
-
+![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/06.13.png)
 
 ### Step 2: Once the buckets are created, _hash each key in a bucket_ using a uniform
-hashing method ![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/06.14.png).
+hashing method (Figure 6-14).
+![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/06.14.png)
 
-
-### Step 3: _Create a single hash node per bucket_ ![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/06.15.png).
-
+### Step 3: _Create a single hash node per bucket_ (Figure 6-15).
+![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/06.15.png)
 
 ### Step 4: Build the tree upwards till root by _calculating hashes of children_
-![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/06.16.png).
-
+(Figure 6-16).
+![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/06.16.png)
 
 To compare two Merkle trees, _start by comparing the root hashes_. If root hashes
 match, both servers have the same data. If root hashes disagree, then the left
@@ -2305,8 +2301,8 @@ completely offline, users can still access data through the other data centers.
 
 Now that we have discussed different technical considerations in designing a
 key-value store, we can shift our focus on the architecture diagram, shown in
-![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/06.17.png).
-
+Figure 6-17.
+![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/06.17.png)
 
 _Main features of the architecture_ are listed as follows:
 - Clients communicate with the key-value store through simple APIs: get(key)
@@ -2321,15 +2317,15 @@ _Main features of the architecture_ are listed as follows:
   responsibilities.
 
 As the design is decentralized, each node performs many tasks as presented in
-![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/06.18.png).
-
+Figure 6-18.
+![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/06.18.png)
 
 ### Write path
 
-![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/06.19.png) explains what happens after a write request is directed to a
+Figure 6-19 explains what happens after a write request is directed to a
 specific node. Please note the proposed designs for write/read paths are
 _primary based on the architecture of Cassandra_ [8].
-
+![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/06.19.png)
 1. The _write request is persisted on a commit log file_.
 2. _Data is saved in the memory cache_.
 3. When the memory cache is full or reaches a predefined threshold, data is
@@ -2343,16 +2339,16 @@ material [9].
 
 After a read request is directed to a specific node, it first checks if data is
 in the memory cache. If so, the data is returned to the client as shown in
-![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/06.20.png).
-
+Figure 6-20.
+![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/06.20.png)
 
 If the data is not in memory, it will be retrieved from the disk instead. We
 need an efficient way to find out which SSTable contains the key. 
 
 __Bloom filter__ [10] is commonly used to solve this problem.
 
-The read path is shown in ![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/06.21.png) when data is not in memory.
-
+The read path is shown in Figure 6-21 when data is not in memory.
+![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/06.21.png)
 1. The system first checks if data is in memory. If not, go to step 2.
 2. If data is not in memory, the system checks the bloom filter.
 3. The bloom filter is used to figure out which SSTables might contain the key.
@@ -2443,11 +2439,11 @@ Let us look at each of them, how they work, and the pros/cons of each option.
 
 ### Multi-master replication
 
-As shown in ![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/07.02.png), the first approach is multi-master replication.
+As shown in Figure 7-2, the first approach is multi-master replication.
 
 This approach uses the _databases’ auto_increment feature_. Instead of increasing
 the next ID by 1, we increase it by k, where k is the number of database
-servers in use. As illustrated in ![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/07.02.png), next ID to be generated is equal
+servers in use. As illustrated in Figure 7-2, next ID to be generated is equal
 to the previous ID in the same server plus 2. This solves some scalability
 issues because IDs can scale with the number of database servers.
 
@@ -2510,10 +2506,10 @@ need another approach. Twitter’s unique ID generation system called “snowfla
 3. is inspiring and can satisfy our requirements.
 
 Divide and conquer is our friend. Instead of generating an ID directly, we
-divide an ID into different sections. ![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/07.05.png) shows the layout of a 64-bit
+divide an ID into different sections. Figure 7-5 shows the layout of a 64-bit
 ID.
 
-
+![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/07.05.png)
 
 Each section is explained below.
 - _Sign bit_: 1 bit. It will always be 0. This is reserved for future uses. It
@@ -2542,11 +2538,11 @@ generator is running.
 #### Timestamp
 
 The most important 41 bits make up the timestamp section. As timestamps grow
-with time, IDs are sortable by time. ![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/07.07.png) shows an example of how binary
+with time, IDs are sortable by time. Figure 7-7 shows an example of how binary
 representation is converted to UTC. You can also convert UTC back to binary
 representation using a similar method.
 
-
+![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/07.07.png)
 
 The _maximum timestamp_ that can be represented in 41 bits is
 2 ^ 41 - 1 = 2199023255551 milliseconds (ms), which gives us: ~ 69 years =
@@ -2665,13 +2661,13 @@ GET api/v1/shortUrl
 
 ### URL redirecting
 
-![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/08.01.png) shows what happens when you enter a tinyurl onto the browser. Once
+Figure 8-1 shows what happens when you enter a tinyurl onto the browser. Once
 the server receives a tinyurl request, it changes the short URL to the long URL
 with 301 redirect.
+![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/08.01.png)
 
-
-The detailed communication between clients and servers is shown in ![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/08.02.png).
-
+The detailed communication between clients and servers is shown in Figure 8-2.
+![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/08.02.png)
 
 One thing worth discussing here is _301 redirect vs 302 redirect_.
 
@@ -2704,8 +2700,8 @@ be implemented by the following:
 
 Let us assume the short URL looks like this: `www.tinyurl.com/{hashValue}`. To
 support the URL shortening use case, we must find a hash function fx that maps
-a long URL to the hashValue, as shown in ![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/08.03.png).
-
+a long URL to the hashValue, as shown in Figure 8-3.
+![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/08.03.png)
 
 The hash function must satisfy the following requirements:
 - Each longURL must be hashed to one hashValue.
@@ -2724,11 +2720,11 @@ function, URL shortening and URL redirecting.
 In the high-level design, everything is stored in a hash table. This is a good
 starting point; however, this approach is not feasible for real-world systems
 as memory resources are limited and expensive. A better option is to store
-<shortURL, longURL> mapping in a relational database. ![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/08.04.png) shows a simple
+<shortURL, longURL> mapping in a relational database. Figure 8-4 shows a simple
 database table design. The simplified version of the table contains 3 columns:
 id, shortURL, longURL.
 
-
+![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/08.04.png)
 
 ### Hash function
 
@@ -2757,7 +2753,7 @@ character string. A straightforward solution is to use well-known hash
 functions like CRC32, MD5, or SHA-1. The following table compares the hash
 results after applying different hash functions on this URL:
 https://en.wikipedia.org/wiki/Systems_design.
-
+![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/08.t.02.png)
 
 As shown in Table 8-2, even the shortest hash value (from CRC32) is too long
 (more than 7 characters). How can we make it shorter?
@@ -2765,8 +2761,8 @@ As shown in Table 8-2, even the shortest hash value (from CRC32) is too long
 The first approach is to collect the first 7 characters of a hash value;
 however, this method can lead to __hash collisions__. To resolve hash
 collisions, we can recursively append a new predefined string until no more
-collision is discovered. This process is explained in ![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/08.05.png).
-
+collision is discovered. This process is explained in Figure 8-5.
+![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/08.05.png)
 
 This method can eliminate collision; however, it is _expensive to query_ the
 database to check if a shortURL exists for every request. 
@@ -2789,10 +2785,10 @@ works: convert `1115710 base 10` to base 62 representation (1115710 represents
   mappings are: 0-0, ..., 9-9, 10-a, 11-b, ..., 35-z, 36-A, ..., 61-Z, where
   ‘a’ stands for 10, ‘z’ stands for 61, etc.
 - 1115710 = 2 x 62^2 + 55 x 62^1 + 59 x 62^0 = [2, 55, 59] -> [2, T, X] in base
-  62 representation. ![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/08.06.png) shows the conversation process.
+  62 representation. Figure 8-6 shows the conversation process.
 
 Thus, the short URL is https://tinyurl.com/2TX
-
+![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/08.06.png)
 
 ### Comparison of the two approaches
 
@@ -2809,8 +2805,8 @@ Table 8-3 shows the differences of the two approaches.
 
 As one of the core pieces of the system, we want the URL shortening flow to be
 logically simple and functional. Base 62 conversion is used in our design. We
-build the following diagram ![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/08.07.png) to demonstrate the flow.
-
+build the following diagram (Figure 8-7) to demonstrate the flow.
+![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/08.07.png)
 
 1. longURL is the input.
 2. The system checks if the longURL is in the database.
@@ -2841,11 +2837,11 @@ to refresh your memory.
 
 ### URL redirecting deep dive
 
-![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/08.08.png) shows the detailed design of the URL redirecting. As there are more
+Figure 8-8 shows the detailed design of the URL redirecting. As there are more
 reads than writes, <shortURL, longURL> mapping is stored in a cache to improve
 performance.
 
-
+![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/08.08.png)
 
 The flow of URL redirecting is summarized as follows:
 1. A user clicks a short URL link: https://tinyurl.com/zn9edcu
@@ -2891,8 +2887,8 @@ A web crawler is known as a robot or spider. It is widely used by search
 engines to discover new or updated content on the web. Content can be a web
 page, an image, a video, a PDF file, etc. A web crawler starts by collecting a
 few web pages and then follows links on those pages to collect new content.
-![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/09.01.png) shows a visual example of the crawl process.
-
+Figure 9-1 shows a visual example of the crawl process.
+![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/09.01.png)
 
 A crawler is used for many purposes:
 - Search engine indexing: This is the most common use case. A crawler collects
@@ -2979,9 +2975,9 @@ communicate with the interviewer to be on the same page.
 
 Once the requirements are clear, we move on to the high-level design. Inspired
 by previous studies on web crawling [4] [5], we propose a high-level design as
-shown in ![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/09.02.png).
+shown in Figure 9-2.
 
-
+![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/09.02.png)
 
 First, we explore each design component to understand their functionalities.
 Then, we examine the crawler workflow step-by-step.
@@ -3054,10 +3050,10 @@ are used.
 
 ### URL Extractor
 
-URL Extractor parses and extracts links from HTML pages. ![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/09.03.png) shows an example of
+URL Extractor parses and extracts links from HTML pages. Figure 9-3 shows an example of
 a link extraction process. Relative paths are converted to absolute URLs by adding the
 “https://en.wikipedia.org” prefix.
-
+![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/09.03.png)
 
 ### URL Filter
 
@@ -3086,8 +3082,8 @@ explain the workflow.
 ### Web crawler workflow
 
 To better explain the workflow step-by-step, sequence numbers are added in the
-design diagram as shown in ![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/09.04.png).
-
+design diagram as shown in Figure 9-4.
+![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/09.04.png)
 - Step 1: Add seed URLs to the URL Frontier
 - Step 2: HTML Downloader fetches a list of URLs from URL Frontier.
 - Step 3: HTML Downloader gets IP addresses of URLs from DNS resolver and
@@ -3142,7 +3138,7 @@ enqueued. However, this implementation has two problems:
   Therefore, we may want to prioritize URLs according to their page ranks, web
   traffic, update frequency, etc.
 
-
+![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/09.05.png)
 
 ### URL frontier
 
@@ -3168,8 +3164,8 @@ constraint is implemented by maintain a mapping from website hostnames to
 download (worker) threads.
 
 Each downloader thread has a separate FIFO queue and only downloads URLs
-obtained from that queue. ![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/09.06.png) shows the design that manages politeness.
-
+obtained from that queue. Figure 9-6 shows the design that manages politeness.
+![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/09.06.png)
 - Queue router: It ensures that each queue (b1, b2, … bn) only contains URLs
   from the same host.
 - Mapping table: It maps each host to a queue.
@@ -3191,16 +3187,16 @@ traffic, update frequency, etc. “Prioritizer” is the component that handles 
 
 Refer to the reference materials [5] [10] for in-depth information about this concept.
 
-![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/09.07.png) shows the design that manages URL priority.
-
+Figure 9-7 shows the design that manages URL priority.
+![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/09.07.png)
 - Prioritizer: It takes URLs as input and computes the priorities.
 - Queue f1 to fn: Each queue has an assigned priority. Queues with high
   priority are selected with higher probability.
 - Queue selector: Randomly choose a queue with a bias towards queues with
   higher priority.
 
-![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/09.08.png) presents the URL frontier design, and it contains two modules:
-
+Figure 9-8 presents the URL frontier design, and it contains two modules:
+![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/09.08.png)
 - Front queues: manage prioritization
 - Back queues: manage politeness
 
@@ -3267,8 +3263,8 @@ Below is a list of performance optimizations for HTML downloader.
 To achieve high performance, crawl jobs are distributed into multiple servers,
 and each server runs multiple threads. The URL space is partitioned into
 smaller pieces; so, each downloader is responsible for a subset of the URLs.
-![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/09.09.png) shows an example of a distributed crawl.
-
+Figure 9-9 shows an example of a distributed crawl.
+![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/09.09.png)
 
 #### 2. Cache DNS Resolver
 
@@ -3311,8 +3307,8 @@ consideration. We present a few approaches to improve the system robustness:
 
 As almost every system evolves, one of the design goals is to make the system flexible
 enough to support new content types. The crawler can be extended by plugging in new
-modules. ![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/09.10.png) shows how to add new modules.
-
+modules. Figure 9-10 shows how to add new modules.
+![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/09.10.png)
 - PNG Downloader module is plugged-in to download PNG files.
 - Web Monitor module is added to monitor the web and prevent copyright and
   trademark infringements.
@@ -3402,8 +3398,8 @@ become an indispensable part of our daily life.
 
 A notification is more than just mobile push notification. Three types of
 notification formats are: mobile push notification, SMS message, and Email.
-![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/10.01.png) shows an example of each of these notifications.
-
+Figure 10-1 shows an example of each of these notifications.
+![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/10.01.png)
 
 ### Step 1 - Understand the problem and establish design scope
 
@@ -3445,7 +3441,7 @@ We start by looking at how each notification type works at a high level.
 
 ### iOS push notification
 
-
+![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/10.02.png)
 
 We primary need three components to send an iOS push notification:
 - _Provider_. A provider builds and sends notification requests to Apple Push
@@ -3475,37 +3471,37 @@ We primary need three components to send an iOS push notification:
 Android adopts a similar notification flow. Instead of using APNs, Firebase
 Cloud Messaging (FCM) is commonly used to send push notifications to android
 devices.
-
+![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/10.03.png)
 
 ### SMS message
 
 For SMS messages, _third party SMS services_ like Twilio [1], Nexmo [2], and
 many others are commonly used. Most of them are commercial services.
-
+![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/10.04.png)
 
 ### Email
 
 Although companies can set up their own email servers, many of them opt for
 _commercial email services_. Sendgrid [3] and Mailchimp [4] are among the most
 popular email services, which offer a better delivery rate and data analytics.
+![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/10.05.png)
 
-
-![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/10.06.png) shows the design after including all the third-party services.
-
+Figure 10-6 shows the design after including all the third-party services.
+![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/10.06.png)
 
 ### Contact info gathering flow
 
 To send notifications, we need to gather mobile device tokens, phone numbers,
-or email addresses. As shown in ![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/10.07.png), when a user installs our app or
+or email addresses. As shown in Figure 10-7, when a user installs our app or
 signs up for the first time, API servers collect user contact info and store it
 in the database.
+![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/10.07.png)
 
-
-![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/10.08.png) shows simplified database tables to store contact info. Email
+Figure 10-8 shows simplified database tables to store contact info. Email
 addresses and phone numbers are stored in the user table, whereas device tokens
 are stored in the device table. A user can have multiple devices, indicating
 that a push notification can be sent to all the user devices.
-
+![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/10.08.png)
 
 ### Notification sending/receiving flow
 
@@ -3513,8 +3509,8 @@ We will first present the initial design; then, propose some optimizations.
 
 #### High-level design
 
-![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/10.09.png) shows the design, and each system component is explained below.
-
+Figure 10-9 shows the design, and each system component is explained below.
+![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/10.09.png)
 
 #### Service 1 to N: 
 
@@ -3561,8 +3557,8 @@ listed below:
 - Add more notification servers and set up automatic horizontal scaling.
 - Introduce message queues to decouple the system components.
 
-![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/10.10.png) shows the improved high-level design.
-
+Figure 10-10 shows the improved high-level design.
+![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/10.10.png)
 
 The best way to go through the above diagram is from left to right:
 
@@ -3747,22 +3743,22 @@ reference material [6].
 A key metric to monitor is the total number of queued notifications. If the
 number is large, the notification events are not processed fast enough by
 workers. To avoid delay in the notification delivery, more workers are needed.
-![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/10.12.png) (credit to [7]) shows an example of queued messages to be
+Figure 10-12 (credit to [7]) shows an example of queued messages to be
 processed.
-
+![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/10.12.png)
 
 #### Events tracking
 
 Notification metrics, such as open rate, click rate, and engagement are
 important in understanding customer behaviors. Analytics service implements
 events tracking. Integration between the notification system and the analytics
-service is usually required. ![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/10.13.png) shows an example of events that might
+service is usually required. Figure 10-13 shows an example of events that might
 be tracked for analytics purposes.
-
+![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/10.13.png)
 
 ### Updated design
 
-
+![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/10.14.png)
 
 In this design, many new components are added in comparison with the previous
 design.
@@ -3880,8 +3876,8 @@ Params:
 
 ### Feed publishing
 
-![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/11.02.png) shows the high-level design of the feed publishing flow.
-
+Figure 11-2 shows the high-level design of the feed publishing flow.
+![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/11.02.png)
 - _User_: a user can view news feeds on a browser or mobile app. A user makes a
   post with content “Hello” through API:
   `/v1/me/feed?content=Hello&auth_token={auth_token}`
@@ -3895,10 +3891,10 @@ Params:
 
 ### Newsfeed building
 
-In this section, we discuss how news feed is built behind the scenes. ![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/11.03.png) shows the
+In this section, we discuss how news feed is built behind the scenes. Figure 11-3 shows the
 high-level design:
 
-
+![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/11.03.png)
 
 - User: a user sends a request to retrieve her news feed. The request looks
   like this: `/v1/me/feed`.
@@ -3914,11 +3910,11 @@ building. Here, we discuss those topics in more depth.
 
 ### Feed publishing deep dive
 
-![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/11.04.png) outlines the detailed design for feed publishing. We have discussed most of
+Figure 11-4 outlines the detailed design for feed publishing. We have discussed most of
 components in high-level design, and we will focus on two components: web servers and
 fanout service.
 
-
+![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/11.04.png)
 
 #### Web servers
 
@@ -3976,9 +3972,9 @@ news content on-demand to avoid system overload. Consistent hashing is a useful
 technique to mitigate the hotkey problem as it helps to distribute
 requests/data more evenly.
 
-Let us take a close look at the fanout service as shown in ![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/11.05.png).
+Let us take a close look at the fanout service as shown in Figure 11-5.
 
-
+![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/11.05.png)
 
 ### The fanout service works as follows:
 1. _Fetch friend IDs from the graph database_. Graph databases are suited for
@@ -3994,13 +3990,13 @@ Let us take a close look at the fanout service as shown in ![](https://raw.githu
 4. _Fanout workers fetch data from the message queue and store news feed data
    in the news feed cache_. You can think of the news feed cache as a
    `<post_id, user_id>` mapping table. Whenever a new post is made, it will be
-   appended to the news feed table as shown in ![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/11.06.png). The memory
+   appended to the news feed table as shown in Figure 11-6. The memory
    consumption can become very large if we store the entire user and post
    objects in the cache. Thus, only IDs are stored. To keep the memory size
    small, we set a configurable limit. The chance of a user scrolling through
    thousands of posts in news feed is slim. Most users are only interested in
    the latest content, so the cache miss rate is low.
-5. Store <post_id, user_id > in news feed cache. ![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/11.06.png) shows an example
+5. Store <post_id, user_id > in news feed cache. Figure 11-6 shows an example
    of what the news feed looks like in cache.
 
 | post_id | user_id |
@@ -4009,10 +4005,10 @@ Let us take a close look at the fanout service as shown in ![](https://raw.githu
 
 ### Newsfeed retrieval deep dive
 
-![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/11.07.png) illustrates the detailed design for news feed retrieval.
+Figure 11-7 illustrates the detailed design for news feed retrieval.
+![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/11.07.png)
 
-
-As shown in ![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/11.07.png), media content (images, videos, etc.) are stored in _CDN
+As shown in Figure 11-7, media content (images, videos, etc.) are stored in _CDN
 for fast retrieval_. Let us look at how a client retrieves news feed.
 1. A _user sends a request_ to retrieve her news feed. The request looks like
    this: /v1/me/feed
@@ -4029,8 +4025,8 @@ for fast retrieval_. Let us look at how a client retrieves news feed.
 ### Cache architecture
 
 Cache is extremely important for a news feed system. We divide the cache tier
-into 5 layers as shown in ![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/11.08.png).
-
+into 5 layers as shown in Figure 11-8.
+![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/11.08.png)
 - _News Feed_: It stores IDs of news feeds.
 - _Content_: It stores every post data. Popular content is stored in hot cache.
 - _Social Graph: It stores user relationship data.
@@ -4075,8 +4071,8 @@ listed below.
 ## CHAPTER 12: DESIGN A CHAT SYSTEM
 
 In this chapter we explore the design of a chat system. Almost everyone uses a
-chat app. ![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/12.01.png) shows some of the most popular apps in the marketplace.
-
+chat app. Figure 12-1 shows some of the most popular apps in the marketplace.
+![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/12.01.png)
 
 A chat app performs different functions for different people. It is extremely
 important to nail down the exact requirements. For example, you do not want to
@@ -4146,16 +4142,16 @@ service must support the following functions:
 - _If a recipient is not online, hold the messages_ for that recipient on the
   server until she is online.
 
-![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/12.02.png) shows the relationships between clients (sender and receiver) and the chat
+Figure 12-2 shows the relationships between clients (sender and receiver) and the chat
 service.
-
+![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/12.02.png)
 
 When a client intends to start a chat, it connects the chats service using one
 or more network protocols. For a chat service, the choice of network protocols
 is important. Let us discuss this with the interviewer.
 
 Requests are initiated by the client for most client/server applications. This
-is also true for the sender side of a chat application. In ![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/12.02.png), when
+is also true for the sender side of a chat application. In Figure 12-2, when
 the sender sends a message to the receiver via the chat service, it uses the
 time-tested _HTTP protocol_, which is the most common web protocol. In this
 scenario, the client opens a HTTP connection with the chat service and sends
@@ -4175,34 +4171,34 @@ used in system design interviews so let us examine each of them.
 
 #### Polling
 
-As shown in ![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/12.03.png), polling is a technique that the client periodically
+As shown in Figure 12-3, polling is a technique that the client periodically
 asks the server if there are messages available. Depending on polling
 frequency, polling could be costly. It could consume precious server resources
 to answer a question that offers no as an answer most of the time.
-
+![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/12.03.png)
 
 #### Long polling
 
 Because polling could be inefficient, the next progression is long polling
-![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/12.04.png).
+(Figure 12-4).
+![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/12.04.png)
 
+In long polling, a client holds the connection open until there are actually
+new messages available or a timeout threshold has been reached. Once the client
+receives new messages, it immediately sends another request to the server,
+restarting the process. Long polling has a few drawbacks:
+- Sender and receiver may not connect to the same chat server. _HTTP based
+  servers are usually stateless_. If you use round robin for load balancing, the
+  server that receives the message might not have a long-polling connection
+  with the client who receives the message.
+- A server has _no good way to tell if a client is disconnected_.
+- It is _inefficient_. If a user does not chat much, long polling still makes
+  periodic connections after timeouts.
 
-In long polling, a client holds the connection open until there are actually new messages
-available or a timeout threshold has been reached. Once the client receives new messages, it
-immediately sends another request to the server, restarting the process. Long polling has a
-few drawbacks:
-- Sender and receiver may not connect to the same chat server. HTTP based servers are
-usually stateless. If you use round robin for load balancing, the server that receives the
-message might not have a long-polling connection with the client who receives the
-message.
-- A server has no good way to tell if a client is disconnected.
-- It is inefficient. If a user does not chat much, long polling still makes periodic
-connections after timeouts.
-
-WebSocket
+### WebSocket
 
 WebSocket is the most common solution for sending asynchronous updates from server to
-client. ![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/12.05.png) shows how it works.
+client. Figure 12-5 shows how it works.
 
 WebSocket connection is initiated by the client. It is bi-directional and persistent. It starts its
 life as a HTTP connection and could be “upgraded” via some well-defined handshake to a
@@ -4212,7 +4208,7 @@ client. WebSocket connections generally work even if a firewall is in place. Thi
 they use port 80 or 443 which are also used by HTTP/HTTPS connections.
 
 Earlier we said that on the sender side HTTP is a fine protocol to use, but since WebSocket is
-bidirectional, there is no strong technical reason not to use it also for sending. ![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/12.06.png)
+bidirectional, there is no strong technical reason not to use it also for sending. Figure 12-6
 shows how WebSockets (ws) is used for both sender and receiver sides.
 
 By using WebSocket for both sending and receiving, it simplifies the design and makes
@@ -4228,7 +4224,7 @@ profile, etc) of a chat application could use the traditional request/response m
 
 HTTP. Let us drill in a bit and look at the high-level components of the system.
 
-As shown in ![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/12.07.png), the chat system is broken down into three major categories:
+As shown in Figure 12-7, the chat system is broken down into three major categories:
 stateless services, stateful services, and third-party integration.
 
 Stateless Services
@@ -4276,7 +4272,7 @@ However, it is perfectly fine to start with a single server design. Just make su
 interviewer knows this is a starting point. Putting everything we mentioned together, Figure
 12-8 shows the adjusted high-level design.
 
-In ![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/12.08.png), the client maintains a persistent WebSocket connection to a chat server for
+In Figure 12-8, the client maintains a persistent WebSocket connection to a chat server for
 real-time messaging.
 - Chat servers facilitate message sending/receiving.
 - Presence servers manage online/offline status.
@@ -4328,13 +4324,13 @@ data is message data. Let us take a close look.
 
 Message table for 1 on 1 chat
 
-![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/12.09.png) shows the message table for 1 on 1 chat. The primary key is message_id, which
+Figure 12-9 shows the message table for 1 on 1 chat. The primary key is message_id, which
 helps to decide message sequence. We cannot rely on created_at to decide the message
 sequence because two messages can be created at the same time.
 
 Message table for group chat
 
-![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/12.10.png) shows the message table for group chat. The composite primary key is
+Figure 12-10 shows the message table for group chat. The composite primary key is
 (channel_id, message_id). Channel and group represent the same meaning here. channel_id
 is the partition key because all queries in a group chat operate in a channel.
 
@@ -4372,7 +4368,7 @@ on the criteria like geographical location, server capacity, etc. Apache Zookeep
 popular open-source solution for service discovery. It registers all the available chat servers
 and picks the best chat server for a client based on predefined criteria.
 
-![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/12.11.png) shows how service discovery (Zookeeper) works.
+Figure 12-11 shows how service discovery (Zookeeper) works.
 1. User A tries to log in to the app.
 2. The load balancer sends the login request to API servers.
 3. After the backend authenticates the user, service discovery finds the best chat server for
@@ -4387,7 +4383,7 @@ explore 1 on 1 chat flow, message synchronization across multiple devices and gr
 flow.
 1 on 1 chat flow
 
-![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/12.12.png) explains what happens when User A sends a message to User B.
+Figure 12-12 explains what happens when User A sends a message to User B.
 1. User A sends a chat message to Chat server 1.
 2. Chat server 1 obtains a message ID from the ID generator.
 3. Chat server 1 sends the message to the message sync queue.
@@ -4401,9 +4397,9 @@ connection between User B and Chat server 2.
 Message synchronization across multiple devices
 
 Many users have multiple devices. We will explain how to sync messages across multiple
-devices. ![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/12.13.png) shows an example of message synchronization.
+devices. Figure 12-13 shows an example of message synchronization.
 
-In ![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/12.13.png), user A has two devices: a phone and a laptop. When User A logs in to the
+In Figure 12-13, user A has two devices: a phone and a laptop. When User A logs in to the
 chat app with her phone, it establishes a WebSocket connection with Chat server 1. Similarly,
 there is a connection between the laptop and Chat server 1.
 
@@ -4421,7 +4417,7 @@ Small group chat flow
 In comparison to the one-on-one chat, the logic of group chat is more complicated. Figures
 12-14 and 12-15 explain the flow.
 
-![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/12.14.png) explains what happens when User A sends a message in a group chat. Assume
+Figure 12-14 explains what happens when User A sends a message in a group chat. Assume
 there are 3 members in the group (User A, User B and user C). First, the message from User
 
 A is copied to each group member’s message sync queue: one for User B and the second for
@@ -4459,7 +4455,7 @@ online after she logs in.
 
 User logout
 
-When a user logs out, it goes through the user logout flow as shown in ![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/12.17.png). The
+When a user logs out, it goes through the user logout flow as shown in Figure 12-17. The
 online status is changed to offline in the KV store. The presence indicator shows a user is
 offline.
 
@@ -4480,14 +4476,14 @@ sends a heartbeat event to presence servers. If presence servers receive a heart
 within a certain time, say x seconds from the client, a user is considered as online. Otherwise,
 it is offline.
 
-In ![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/12.18.png), the client sends a heartbeat event to the server every 5 seconds. After
+In Figure 12-18, the client sends a heartbeat event to the server every 5 seconds. After
 sending 3 heartbeat events, the client is disconnected and does not reconnect within x = 30
 seconds (This number is arbitrarily chosen to demonstrate the logic). The online status is
 changed to offline.
 
 Online status fanout
 
-How do user A’s friends know about the status changes? ![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/12.19.png) explains how it works.
+How do user A’s friends know about the status changes? Figure 12-19 explains how it works.
 
 Presence servers use a publish-subscribe model, in which each friend pair maintains a
 channel. When User A’s online status changes, it publishes the event to three channels,
@@ -4552,7 +4548,7 @@ https://slack.engineering/flannel-an-application-level-edge-cache-to-make-slack-
 
 When searching on Google or shopping at Amazon, as you type in the search box, one or
 more matches for the search term are presented to you. This feature is referred to as
-autocomplete, typeahead, search-as-you-type, or incremental search. ![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/13.01.png) presents an
+autocomplete, typeahead, search-as-you-type, or incremental search. Figure 13-1 presents an
 example of a Google search showing a list of autocompleted results when “dinner” is typed
 into the search box. Search autocomplete is an important feature of many products. This leads
 us to the interview question: design a search autocomplete system, also called “design top k”
@@ -4634,9 +4630,9 @@ point. We will explore a more realistic solution in deep dive.
 Data gathering service
 
 Let us use a simplified example to see how data gathering service works. Assume we have a
-frequency table that stores the query string and its frequency as shown in ![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/13.02.png). In the
+frequency table that stores the query string and its frequency as shown in Figure 13-2. In the
 beginning, the frequency table is empty. Later, users enter queries “twitch”, “twitter”,
-“twitter,” and “twillo” sequentially. ![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/13.02.png) shows how the frequency table is updated.
+“twitter,” and “twillo” sequentially. Figure 13-2 shows how the frequency table is updated.
 
 Query service
 
@@ -4645,7 +4641,7 @@ Assume we have a frequency table as shown in Table 13-1. It has two fields.
 - Frequency: it represents the number of times a query has been searched.
 
 When a user types “tw” in the search box, the following top 5 searched queries are displayed
-![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/13.03.png), assuming the frequency table is based on Table 13-1.
+(Figure 13-3), assuming the frequency table is based on Table 13-1.
 
 To get top 5 frequently searched queries, execute the following SQL query:
 
@@ -4684,14 +4680,14 @@ operations. The main idea of trie consists of the following:
 save space, we do not draw empty links.
 - Each tree node represents a single word or a prefix string.
 
-![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/13.05.png) shows a trie with search queries “tree”, “try”, “true”, “toy”, “wish”, “win”.
+Figure 13-5 shows a trie with search queries “tree”, “try”, “true”, “toy”, “wish”, “win”.
 
 Search queries are highlighted with a thicker border.
 
 Basic trie data structure stores characters in nodes. To support sorting by frequency,
 frequency info needs to be included in nodes. Assume we have the following frequency table.
 
-After adding frequency info to nodes, updated trie data structure is shown in ![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/13.06.png).
+After adding frequency info to nodes, updated trie data structure is shown in Figure 13-6.
 
 How does autocomplete work with trie? Before diving into the algorithm, let us define some
 terms.
@@ -4705,7 +4701,7 @@ Steps to get top k most searched queries are listed below:
 can form a valid query string. Time complexity: O(c)
 3. Sort the children and get top k. Time complexity: O(clogc)
 
-Let us use an example as shown in ![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/13.07.png) to explain the algorithm. Assume k equals to
+Let us use an example as shown in Figure 13-7 to explain the algorithm. Assume k equals to
 2 and a user types “tr” in the search box. The algorithm works as follows:
 - Step 1: Find the prefix node “tr”.
 - Step 2: Traverse the subtree to get all valid children. In this case, nodes [tree: 10], [true:
@@ -4742,7 +4738,7 @@ By caching top search queries at every node, we significantly reduce the time co
 retrieve the top 5 queries. However, this design requires a lot of space to store top queries at
 every node. Trading space for time is well worth it as fast response time is very important.
 
-![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/13.08.png) shows the updated trie data structure. Top 5 queries are stored on each node. For
+Figure 13-8 shows the updated trie data structure. Top 5 queries are stored on each node. For
 example, the node with prefix “be” stores the following: [best: 35, bet: 29, bee: 20, be: 15,
 beer: 10].
 
@@ -4774,7 +4770,7 @@ Despite the differences in use cases, the underlying foundation for data gatheri
 remains the same because data used to build the trie is usually from analytics or logging
 services.
 
-![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/13.09.png) shows the redesigned data gathering service. Each component is examined one
+Figure 13-9 shows the redesigned data gathering service. Each component is examined one
 by one.
 
 Analytics Logs. It stores raw data about search queries. Logs are append-only and are not
@@ -4813,16 +4809,16 @@ following logic:
 - Every prefix in the trie is mapped to a key in a hash table.
 - Data on each trie node is mapped to a value in a hash table.
 
-![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/13.10.png) shows the mapping between the trie and hash table.
+Figure 13-10 shows the mapping between the trie and hash table.
 
-In ![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/13.10.png), each trie node on the left is mapped to the <key, value> pair on the right. If
+In Figure 13-10, each trie node on the left is mapped to the <key, value> pair on the right. If
 you are unclear how key-value stores work, refer to Chapter 6: Design a key-value store.
 
 Query service
 
 In the high-level design, query service calls the database directly to fetch the top 5 results.
 
-![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/13.11.png) shows the improved design as previous design is inefficient.
+Figure 13-11 shows the improved design as previous design is inefficient.
 1. A search query is sent to the load balancer.
 2. The load balancer routes the request to API servers.
 3. API servers get trie data from Trie Cache and construct autocomplete suggestions for
@@ -4838,7 +4834,7 @@ request/response does not refresh the whole web page.
 - Browser caching. For many applications, autocomplete search suggestions may not
 change much within a short time. Thus, autocomplete suggestions can be saved in browser
 cache to allow subsequent requests to get results from the cache directly. Google search
-engine uses the same cache mechanism. ![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/13.12.png) shows the response header when
+engine uses the same cache mechanism. Figure 13-12 shows the response header when
 you type “system design interview” on the Google search engine. As you can see, Google
 caches the results in the browser for 1 hour. Please note: “private” in cache-control means
 results are intended for a single user and must not be cached by a shared cache. “maxage=3600” means the cache is valid for 3600 seconds, aka, an hour.
@@ -4867,14 +4863,14 @@ one.
 Option 2: Update individual trie node directly. We try to avoid this operation because it is
 slow. However, if the size of the trie is small, it is an acceptable solution. When we update a
 trie node, its ancestors all the way up to the root must be updated because ancestors store top
-queries of children. ![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/13.13.png) shows an example of how the update operation works. On
+queries of children. Figure 13-13 shows an example of how the update operation works. On
 the left side, the search query “beer” has the original value 10. On the right side, it is updated
 to 30. As you can see, the node and its ancestors have the “beer” value updated to 30.
 
 Delete
 
 We have to remove hateful, violent, sexually explicit, or dangerous autocomplete
-suggestions. We add a filter layer ![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/13.14.png) in front of the Trie Cache to filter out
+suggestions. We add a filter layer (Figure 13-14) in front of the Trie Cache to filter out
 unwanted suggestions. Having a filter layer gives us the flexibility of removing results based
 on different filter rules. Unwanted suggestions are removed physically from the database
 asynchronically so the correct data set will be used to build trie in the next update cycle.
@@ -4899,7 +4895,7 @@ At the first glance this approach seems reasonable, until you realize that there
 words that start with the letter ‘c’ than ‘x’. This creates uneven distribution.
 
 To mitigate the data imbalance problem, we analyze historical data distribution pattern and
-apply smarter sharding logic as shown in ![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/13.15.png). The shard map manager maintains a
+apply smarter sharding logic as shown in Figure 13-15. The shard map manager maintains a
 lookup database for identifying where rows should be stored. For example, if there are a
 similar number of historical queries for ‘s’ and for ‘u’, ‘v’, ‘w’, ‘x’, ‘y’ and ‘z’ combined, we
 can maintain two shards: one for ‘s’ and one for ‘u’ to ‘z’.
@@ -4957,7 +4953,7 @@ https://people.eecs.berkeley.edu/~sylvia/papers/pht.pdf
 In this chapter, you are asked to design YouTube. The solution to this question can be applied
 to other interview questions like designing a video sharing platform such as Netflix and Hulu.
 
-![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/14.01.png) shows the YouTube homepage.
+Figure 14-1 shows the YouTube homepage.
 
 YouTube looks simple: content creators upload videos and viewers click play. Is it really that
 simple? Not really. There are lots of complex technologies underneath the simplicity. Let us
@@ -4974,7 +4970,7 @@ From these statistics, we know YouTube is enormous, global and makes a lot of mo
 
 ### Step 1 - Understand the problem and establish design scope
 
-As revealed in ![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/14.01.png), besides watching a video, you can do a lot more on YouTube. For
+As revealed in Figure 14-1, besides watching a video, you can do a lot more on YouTube. For
 example, comment, share, or like a video, save a video to playlists, subscribe to a channel,
 etc. It is impossible to design everything within a 45- or 60-minute interview. Thus, it is
 important to ask questions to narrow down the scope.
@@ -5031,7 +5027,7 @@ with the interviewer to make sure she is on the same page.
 - When cloud CDN serves a video, you are charged for data transferred out of the
 
 CDN.
-- Let us use Amazon’s CDN CloudFront for cost estimation ![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/14.02.png) [3]. Assume
+- Let us use Amazon’s CDN CloudFront for cost estimation (Figure 14-2) [3]. Assume
 100% of traffic is served from the United States. The average cost per GB is $0.02.
 
 For simplicity, we only calculate the cost of video streaming.
@@ -5059,7 +5055,7 @@ companies like Netflix or Facebook do not build everything themselves. Netflix l
 
 Amazon’s cloud services [4], and Facebook uses Akamai’s CDN [5].
 
-At the high-level, the system comprises three components ![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/14.03.png).
+At the high-level, the system comprises three components (Figure 14-3).
 
 Client: You can watch YouTube on your computer, mobile phone, and smartTV.
 
@@ -5077,7 +5073,7 @@ We will explore the high-level design for each of them.
 
 Video uploading flow
 
-![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/14.04.png) shows the high-level design for the video uploading.
+Figure 14-4 shows the high-level design for the video uploading.
 
 It consists of the following components:
 - User: A user watches YouTube on devices such as a computer, mobile phone, or smart
@@ -5111,7 +5107,7 @@ resolution, format, user info, etc.
 
 Flow a: upload the actual video
 
-![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/14.05.png) shows how to upload the actual video. The explanation is shown below:
+Figure 14-5 shows how to upload the actual video. The explanation is shown below:
 1. Videos are uploaded to the original storage.
 2. Transcoding servers fetch videos from the original storage and start transcoding.
 3. Once transcoding is complete, the following two steps are executed in parallel:
@@ -5128,7 +5124,7 @@ streaming.
 Flow b: update the metadata
 
 While a file is being uploaded to the original storage, the client in parallel sends a request to
-update the video metadata as shown in ![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/14.06.png). The request contains video metadata,
+update the video metadata as shown in Figure 14-6. The request contains video metadata,
 including file name, size, format, etc. API servers update the metadata cache and database.
 
 Video streaming flow
@@ -5156,7 +5152,7 @@ streaming protocol to support our use cases. To learn more about streaming proto
 an excellent article [7].
 
 Videos are streamed from CDN directly. The edge server closest to you will deliver the
-video. Thus, there is very little latency. ![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/14.07.png) shows a high level of design for video
+video. Thus, there is very little latency. Figure 14-7 shows a high level of design for video
 streaming.
 
 ### Step 3 - Design deep dive
@@ -5205,13 +5201,13 @@ to add some level of abstraction and let client programmers define what tasks to
 example, Facebook’s streaming video engine uses a directed acyclic graph (DAG)
 programming model, which defines tasks in stages so they can be executed sequentially or
 parallelly [8]. In our design, we adopt a similar DAG model to achieve flexibility and
-parallelism. ![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/14.08.png) represents a DAG for video transcoding.
+parallelism. Figure 14-8 represents a DAG for video transcoding.
 
-In ![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/14.08.png), the original video is split into video, audio, and metadata. Here are some of
+In Figure 14-8, the original video is split into video, audio, and metadata. Here are some of
 the tasks that can be applied on a video file:
 - Inspection: Make sure videos have good quality and are not malformed.
 - Video encodings: Videos are converted to support different resolutions, codec, bitrates,
-etc. ![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/14.09.png) shows an example of video encoded files.
+etc. Figure 14-9 shows an example of video encoded files.
 - Thumbnail. Thumbnails can either be uploaded by a user or automatically generated by
 the system.
 - Watermark: An image overlay on top of your video contains identifying information
@@ -5221,7 +5217,7 @@ Video transcoding architecture
 
 The proposed video transcoding architecture that leverages the cloud services, is shown in
 
-![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/14.10.png).
+Figure 14-10.
 
 The architecture has six main components: preprocessor, DAG scheduler, resource manager,
 task workers, temporary storage, and encoded video as the output. Let us take a close look at
@@ -5236,10 +5232,10 @@ independently playable unit, usually a few seconds in length.
 2. Some old mobile devices or browsers might not support video splitting. Preprocessor split
 videos by GOP alignment for old clients.
 3. DAG generation. The processor generates DAG based on configuration files client
-programmers write. ![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/14.12.png) is a simplified DAG representation which has 2 nodes and
+programmers write. Figure 14-12 is a simplified DAG representation which has 2 nodes and
 1 edge:
 
-This DAG representation is generated from the two configuration files below ![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/14.13.png):
+This DAG representation is generated from the two configuration files below (Figure 14-13):
 4. Cache data. The preprocessor is a cache for segmented videos. For better reliability, the
 preprocessor stores GOPs and metadata in temporary storage. If video encoding fails, the
 system could use persisted data for retry operations.
@@ -5247,16 +5243,16 @@ system could use persisted data for retry operations.
 DAG scheduler
 
 The DAG scheduler splits a DAG graph into stages of tasks and puts them in the task queue
-in the resource manager. ![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/14.15.png) shows an example of how the DAG scheduler works.
+in the resource manager. Figure 14-15 shows an example of how the DAG scheduler works.
 
-As shown in ![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/14.15.png), the original video is split into three stages: Stage 1: video, audio,
+As shown in Figure 14-15, the original video is split into three stages: Stage 1: video, audio,
 and metadata. The video file is further split into two tasks in stage 2: video encoding and
 thumbnail. The audio file requires audio encoding as part of the stage 2 tasks.
 
 Resource manager
 
 The resource manager is responsible for managing the efficiency of resource allocation. It
-contains 3 queues and a task scheduler as shown in ![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/14.17.png).
+contains 3 queues and a task scheduler as shown in Figure 14-17.
 - Task queue: It is a priority queue that contains tasks to be executed.
 - Worker queue: It is a priority queue that contains worker utilization info.
 - Running queue: It contains info about the currently running tasks and workers running
@@ -5274,7 +5270,7 @@ The resource manager works as follows:
 Task workers
 
 Task workers run the tasks which are defined in the DAG. Different task workers may run
-different tasks as shown in ![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/14.19.png).
+different tasks as shown in Figure 14-19.
 
 Temporary storage
 
@@ -5299,17 +5295,17 @@ Speed optimization: parallelize video uploading
 
 Uploading a video as a whole unit is inefficient. We can split a video into smaller chunks by
 
-GOP alignment as shown in ![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/14.22.png).
+GOP alignment as shown in Figure 14-22.
 
 This allows fast resumable uploads when the previous upload failed. The job of splitting a
 video file by GOP can be implemented by the client to improve the upload speed as shown in
 
-![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/14.23.png).
+Figure 14-23.
 
 Speed optimization: place upload centers close to users
 
 Another way to improve the upload speed is by setting up multiple upload centers across the
-globe ![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/14.24.png). People in the United States can upload videos to the North America
+globe (Figure 14-24). People in the United States can upload videos to the North America
 upload center, and people in China can upload videos to the Asian upload center. To achieve
 this, we use CDN as upload centers.
 
@@ -5335,7 +5331,7 @@ encoding module can execute those jobs in parallel.
 Safety optimization: pre-signed upload URL
 
 Safety is one of the most important aspects of any product. To ensure only authorized users
-upload videos to the right location, we introduce pre-signed URLs as shown in ![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/14.27.png).
+upload videos to the right location, we introduce pre-signed URLs as shown in Figure 14-27.
 
 The upload flow is updated as follows:
 1. The client makes a HTTP request to API servers to fetch the pre-signed URL, which
@@ -5372,7 +5368,7 @@ Previous research shows that YouTube video streams follow long-tail distribution
 It means a few popular videos are accessed frequently but many others have few or no
 viewers. Based on this observation, we implement a few optimizations:
 1. Only serve the most popular videos from CDN and other videos from our high capacity
-storage video servers ![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/14.28.png).
+storage video servers (Figure 14-28).
 2. For less popular content, we may not need to store many encoded video versions. Short
 videos can be encoded on-demand.
 3. Some videos are popular only in certain regions. There is no need to distribute these
@@ -5478,7 +5474,7 @@ Let us take a moment to understand Google Drive before jumping into the design. 
 Drive is a file storage and synchronization service that helps you store documents, photos,
 videos, and other files in the cloud. You can access your files from any computer,
 smartphone, and tablet. You can easily share those files with friends, family, and coworkers
-[1]. ![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/15.01.png) and 15-2 show what Google drive looks like on a browser and mobile
+[1]. Figure 15-1 and 15-2 show what Google drive looks like on a browser and mobile
 application, respectively.
 
 ### Step 1 - Understand the problem and establish design scope
@@ -5557,7 +5553,7 @@ of directories, known as namespaces. Each namespace contains all the uploaded fi
 user. The filename on the server is kept the same as the original file name. Each file or folder
 can be uniquely identified by joining the namespace and the relative path.
 
-![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/15.03.png) shows an example of how the /drive directory looks like on the left side and its
+Figure 15-3 shows an example of how the /drive directory looks like on the left side and its
 expanded view on the right side.
 
 APIs
@@ -5612,11 +5608,11 @@ protects data transfer between the client and backend servers.
 
 Move away from single server
 
-As more files are uploaded, eventually you get the space full alert as shown in ![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/15.04.png).
+As more files are uploaded, eventually you get the space full alert as shown in Figure 15-4.
 
 Only 10 MB of storage space is left! This is an emergency as users cannot upload files
 anymore. The first solution comes to mind is to shard the data, so it is stored on multiple
-storage servers. ![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/15.05.png) shows an example of sharding based on user_id .
+storage servers. Figure 15-5 shows an example of sharding based on user_id .
 
 You pull an all-nighter to set up database sharding and monitor it closely. Everything works
 smoothly again. You have stopped the fire, but you are still worried about potential data
@@ -5651,33 +5647,28 @@ files are replicated in two separate geographical regions.
 After applying the above improvements, you have successfully decoupled web servers,
 metadata database, and file storage from a single server. The updated design is shown in
 
-![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/15.07.png).
+Figure 15-7.
 
 Sync conflicts
 
 For a large storage system like Google Drive, sync conflicts happen from time to time. When
 two users modify the same file or folder at the same time, a conflict happens. How can we
 resolve the conflict? Here is our strategy: the first version that gets processed wins, and the
-version that gets processed later receives a conflict. ![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/15.08.png) shows an example of a sync
+version that gets processed later receives a conflict. Figure 15-8 shows an example of a sync
 conflict.
 
-In
-![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/15.08.png),
-user 1 and user 2 tries to update the same file at the same time, but user 1’s
-file is processed by our system first. User 1’s update operation goes through,
-but, user 2 gets a sync conflict. How can we resolve the conflict for user 2?
-Our system presents both copies of the same file: user 2’s local copy and the
-latest version from the server
-![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/15.09.png).
-User 2 has the option to merge both files or override one version with the
-other.
+In Figure 15-8, user 1 and user 2 tries to update the same file at the same time, but user 1’s
+file is processed by our system first. User 1’s update operation goes through, but, user 2 gets
+a sync conflict. How can we resolve the conflict for user 2? Our system presents both copies
+of the same file: user 2’s local copy and the latest version from the server (Figure 15-9). User
+2 has the option to merge both files or override one version with the other.
 
 While multiple users are editing the same document at the same, it is challenging to keep the
 document synchronized. Interested readers should refer to the reference material [4] [5].
 
 High-level design
 
-![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/15.10.png) illustrates the proposed high-level design. Let us examine each component of
+Figure 15-10 illustrates the proposed high-level design. Let us examine each component of
 the system.
 
 User: A user uses the application either through a browser or mobile app.
@@ -5738,13 +5729,13 @@ process files passed from clients by splitting a file into blocks, compressing e
 encrypting them. Instead of uploading the whole file to the storage system, only modified
 blocks are transferred.
 
-![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/15.11.png) shows how a block server works when a new file is added.
+Figure 15-11 shows how a block server works when a new file is added.
 - A file is split into smaller blocks.
 - Each block is compressed using compression algorithms.
 - To ensure security, each block is encrypted before it is sent to cloud storage.
 - Blocks are uploaded to the cloud storage.
 
-![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/15.12.png) illustrates delta sync, meaning only modified blocks are transferred to cloud
+Figure 15-12 illustrates delta sync, meaning only modified blocks are transferred to cloud
 storage. Highlighted blocks “block 2” and “block 5” represent changed blocks. Using delta
 sync, only those two blocks are uploaded to the cloud storage.
 
@@ -5770,7 +5761,7 @@ the ACID is natively supported.
 
 Metadata database
 
-![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/15.13.png) shows the database schema design. Please note this is a highly simplified
+Figure 15-13 shows the database schema design. Please note this is a highly simplified
 version as it only includes the most important tables and interesting fields.
 
 User: The user table contains basic information about the user such as username, email,
@@ -5792,9 +5783,9 @@ by joining all the blocks in the correct order.
 Upload flow
 
 Let us discuss what happens when a client uploads a file. To better understand the flow, we
-draw the sequence diagram as shown in ![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/15.14.png).
+draw the sequence diagram as shown in Figure 15-14.
 
-In ![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/15.14.png), two requests are sent in parallel: add file metadata and upload the file to
+In Figure 15-14, two requests are sent in parallel: add file metadata and upload the file to
 cloud storage. Both requests originate from client 1.
 - Add file metadata.
 1. Client 1 sends a request to add the metadata of the new file.
@@ -5826,7 +5817,7 @@ inform client A that changes are made somewhere so it needs to pull the latest d
 cache. When the offline client is online again, it pulls the latest changes.
 
 Once a client knows a file is changed, it first requests metadata via API servers, then
-downloads blocks to construct the file. ![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/15.15.png) shows the detailed flow. Note, only the
+downloads blocks to construct the file. Figure 15-15 shows the detailed flow. Note, only the
 most important components are shown in the diagram due to space constraint.
 1. Notification service informs client 2 that a file is changed somewhere else.
 2. Once client 2 knows that new updates are available, it sends a request to fetch metadata.
