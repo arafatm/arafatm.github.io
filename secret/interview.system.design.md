@@ -5875,155 +5875,186 @@ __Figure__ 15-10 illustrates the proposed high-level design. Let us examine
 each component of the system.
 ![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/15.10.png)
 
-User: A user uses the application either through a browser or mobile app.
+##### User: 
+A user uses the application either through a browser or mobile app.
 
-Block servers: Block servers upload blocks to cloud storage. Block storage, referred to as
-block-level storage, is a technology to store data files on cloud-based environments. A file
-can be split into several blocks, each with a unique hash value, stored in our metadata
-database. Each block is treated as an independent object and stored in our storage system
-(S3). To reconstruct a file, blocks are joined in a particular order. As for the block size, we
-use Dropbox as a reference: it sets the maximal size of a block to 4MB [6].
+##### Block servers: 
+Block servers upload blocks to cloud storage. Block storage, referred to as
+block-level storage, is a technology to store data files on cloud-based
+environments. A file can be split into several blocks, each with a unique hash
+value, stored in our metadata database. Each block is treated as an independent
+object and stored in our storage system (S3). To reconstruct a file, blocks are
+joined in a particular order. As for the block size, we use Dropbox as a
+reference: it sets the maximal size of a block to 4MB [6].
 
-Cloud storage: A file is split into smaller blocks and stored in cloud storage.
+##### Cloud storage
+A file is split into smaller blocks and stored in cloud storage.
 
-Cold storage: Cold storage is a computer system designed for storing inactive data, meaning
+##### Cold storage
+Cold storage is a computer system designed for storing inactive data, meaning
 files are not accessed for a long time.
 
-Load balancer: A load balancer evenly distributes requests among API servers.
+##### Load balancer
+A load balancer evenly distributes requests among API servers.
 
-API servers: These are responsible for almost everything other than the uploading flow. API
-servers are used for user authentication, managing user profile, updating file metadata, etc.
+##### API servers
+These are responsible for almost everything other than the uploading flow. API
+servers are used for user authentication, managing user profile, updating file
+metadata, etc.
 
-Metadata database: It stores metadata of users, files, blocks, versions, etc. Please note that
+##### Metadata database
+It stores metadata of users, files, blocks, versions, etc. Please note that
 files are stored in the cloud and the metadata database only contains metadata.
 
-Metadata cache: Some of the metadata are cached for fast retrieval.
+##### Metadata cache
+Some of the metadata are cached for fast retrieval.
 
-Notification service: It is a publisher/subscriber system that allows data to be transferred
-from notification service to clients as certain events happen. In our specific case, notification
-service notifies relevant clients when a file is added/edited/removed elsewhere so they can
-pull the latest changes.
+##### Notification service
+It is a publisher/subscriber system that allows data to be transferred from
+notification service to clients as certain events happen. In our specific case,
+notification service notifies relevant clients when a file is
+added/edited/removed elsewhere so they can pull the latest changes.
 
-Offline backup queue: If a client is offline and cannot pull the latest file changes, the offline
-backup queue stores the info so changes will be synced when the client is online.
+##### Offline backup queue
+If a client is offline and cannot pull the latest file changes, the offline
+backup queue stores the info so changes will be synced when the client is
+online.
 
 We have discussed the design of Google Drive at the high-level. Some of the components are
 complicated and worth careful examination; we will discuss these in detail in the deep dive.
 
 ### Step 3 - Design deep dive
 
-In this section, we will take a close look at the following: block servers, metadata database,
-upload flow, download flow, notification service, save storage space and failure handling.
+In this section, we will take a close look at the following: block servers,
+metadata database, upload flow, download flow, notification service, save
+storage space and failure handling.
 
-Block servers
+#### Block servers
 
-For large files that are updated regularly, sending the whole file on each update consumes a
-lot of bandwidth. Two optimizations are proposed to minimize the amount of network traffic
-being transmitted:
-- Delta sync. When a file is modified, only modified blocks are synced instead of the
-whole file using a sync algorithm [7] [8].
-- Compression. Applying compression on blocks can significantly reduce the data size.
+For large files that are updated regularly, sending the whole file on each
+update consumes a lot of bandwidth. Two optimizations are proposed to minimize
+the amount of network traffic being transmitted:
+- _Delta sync_. When a file is modified, only modified blocks are synced
+  instead of the whole file using a sync algorithm [7] [8].
+- _Compression_. Applying compression on blocks can significantly reduce the
+  data size.
 
-Thus, blocks are compressed using compression algorithms depending on file types. For
-example, gzip and bzip2 are used to compress text files. Different compression algorithms
-are needed to compress images and videos.
+Thus, blocks are compressed using compression algorithms depending on file
+types. For example, gzip and bzip2 are used to compress text files. Different
+compression algorithms are needed to compress images and videos.
 
-In our system, block servers do the heavy lifting work for uploading files. Block servers
-process files passed from clients by splitting a file into blocks, compressing each block, and
-encrypting them. Instead of uploading the whole file to the storage system, only modified
-blocks are transferred.
+In our system, block servers do the heavy lifting work for uploading files.
+Block servers process files passed from clients by splitting a file into
+blocks, compressing each block, and encrypting them. Instead of uploading the
+whole file to the storage system, only modified blocks are transferred.
 
 __Figure__ 15-11 shows how a block server works when a new file is added.
 - A file is split into smaller blocks.
 - Each block is compressed using compression algorithms.
-- To ensure security, each block is encrypted before it is sent to cloud storage.
+- To ensure security, each block is encrypted before it is sent to cloud
+  storage.
 - Blocks are uploaded to the cloud storage.
+![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/15.11.png)
 
-__Figure__ 15-12 illustrates delta sync, meaning only modified blocks are transferred to cloud
-storage. Highlighted blocks “block 2” and “block 5” represent changed blocks. Using delta
-sync, only those two blocks are uploaded to the cloud storage.
+__Figure__ 15-12 illustrates delta sync, meaning only modified blocks are
+transferred to cloud storage. Highlighted blocks “block 2” and “block 5”
+represent changed blocks. Using delta sync, only those two blocks are uploaded
+to the cloud storage.
+![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/15.12.png)
 
-Block servers allow us to save network traffic by providing delta sync and compression.
+Block servers allow us to save network traffic by providing delta sync and
+compression.
 
-High consistency requirement
+#### High consistency requirement
 
-Our system requires strong consistency by default. It is unacceptable for a file to be shown
-differently by different clients at the same time. The system needs to provide strong
-consistency for metadata cache and database layers.
+Our system requires strong consistency by default. It is unacceptable for a
+file to be shown differently by different clients at the same time. The system
+needs to provide strong consistency for metadata cache and database layers.
 
-Memory caches adopt an eventual consistency model by default, which means different
-replicas might have different data. To achieve strong consistency, we must ensure the
-following:
+Memory caches adopt an eventual consistency model by default, which means
+different replicas might have different data. To achieve strong consistency, we
+must ensure the following:
 - Data in cache replicas and the master is consistent.
-- Invalidate caches on database write to ensure cache and database hold the same value.
+- Invalidate caches on database write to ensure cache and database hold the
+  same value.
 
-Achieving strong consistency in a relational database is easy because it maintains the ACID
-(Atomicity, Consistency, Isolation, Durability) properties [9]. However, NoSQL databases do
-not support ACID properties by default. ACID properties must be programmatically
-incorporated in synchronization logic. In our design, we choose relational databases because
-the ACID is natively supported.
+Achieving strong consistency in a relational database is easy because it
+maintains the ACID (Atomicity, Consistency, Isolation, Durability) properties
+[9]. However, NoSQL databases do not support ACID properties by default. ACID
+properties must be programmatically incorporated in synchronization logic. In
+our design, we choose relational databases because the ACID is natively
+supported.
 
-Metadata database
+#### Metadata database
 
-__Figure__ 15-13 shows the database schema design. Please note this is a highly simplified
-version as it only includes the most important tables and interesting fields.
+__Figure__ 15-13 shows the database schema design. Please note this is a highly
+simplified version as it only includes the most important tables and
+interesting fields.
+![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/15.13.png)
 
-User: The user table contains basic information about the user such as username, email,
-profile photo, etc.
+##### User
+The user table contains basic information about the user such as username,
+email, profile photo, etc.
 
-Device: Device table stores device info. Push_id is used for sending and receiving mobile
-push notifications. Please note a user can have multiple devices.
+##### Device
+Device table stores device info. Push_id is used for sending and receiving
+mobile push notifications. Please note a user can have multiple devices.
 
-Namespace: A namespace is the root directory of a user.
+##### Namespace
+A namespace is the root directory of a user.
 
-File: File table stores everything related to the latest file.
+##### File
+File table stores everything related to the latest file.
 
-File_version: It stores version history of a file. Existing rows are read-only to keep the
+##### File_version
+It stores version history of a file. Existing rows are read-only to keep the
 integrity of the file revision history.
 
-Block: It stores everything related to a file block. A file of any version can be reconstructed
-by joining all the blocks in the correct order.
+##### Block
+It stores everything related to a file block. A file of any version can be
+reconstructed by joining all the blocks in the correct order.
 
-Upload flow
+#### Upload flow
 
-Let us discuss what happens when a client uploads a file. To better understand the flow, we
-draw the sequence diagram as shown in __Figure__ 15-14.
+Let us discuss what happens when a client uploads a file. To better understand
+the flow, we draw the sequence diagram as shown in __Figure__ 15-14.
+![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/15.14.png)
 
-In __Figure__ 15-14, two requests are sent in parallel: add file metadata and upload the file to
-cloud storage. Both requests originate from client 1.
+In __Figure__ 15-14, two requests are sent in parallel: add file metadata and
+upload the file to cloud storage. Both requests originate from client 1.
 - Add file metadata.
-1. Client 1 sends a request to add the metadata of the new file.
-2. Store the new file metadata in metadata DB and change the file upload status to
-“pending.”
-3. Notify the notification service that a new file is being added.
-4. The notification service notifies relevant clients (client 2) that a file is being
-uploaded.
+  1. Client 1 sends a request to add the metadata of the new file.
+  2. Store the new file metadata in metadata DB and change the file upload status to “pending.”
+  3. Notify the notification service that a new file is being added.
+  4. The notification service notifies relevant clients (client 2) that a file is being uploaded.
 - Upload files to cloud storage.
-2.1 Client 1 uploads the content of the file to block servers.
-2.2 Block servers chunk the files into blocks, compress, encrypt the blocks, and
-upload them to cloud storage.
-2.3 Once the file is uploaded, cloud storage triggers upload completion callback. The
-request is sent to API servers.
-2.4 File status changed to “uploaded” in Metadata DB.
-2.5 Notify the notification service that a file status is changed to “uploaded.”
-2.6 The notification service notifies relevant clients (client 2) that a file is fully
-uploaded.
+  - 2.1 Client 1 uploads the content of the file to block servers.
+  - 2.2 Block servers chunk the files into blocks, compress, encrypt the blocks, and upload them to cloud storage.
+  - 2.3 Once the file is uploaded, cloud storage triggers upload completion callback. The request is sent to API servers.
+  - 2.4 File status changed to “uploaded” in Metadata DB.
+  - 2.5 Notify the notification service that a file status is changed to “uploaded.”
+  - 2.6 The notification service notifies relevant clients (client 2) that a file is fully uploaded.
 
 When a file is edited, the flow is similar, so we will not repeat it.
 
-Download flow
+#### Download flow
 
-Download flow is triggered when a file is added or edited elsewhere. How does a client know
-if a file is added or edited by another client? There are two ways a client can know:
-- If client A is online while a file is changed by another client, notification service will
-inform client A that changes are made somewhere so it needs to pull the latest data.
-- If client A is offline while a file is changed by another client, data will be saved to the
-cache. When the offline client is online again, it pulls the latest changes.
+Download flow is triggered when a file is added or edited elsewhere. How does a
+client know if a file is added or edited by another client? There are two ways
+a client can know:
+- If client A is online while a file is changed by another client, notification
+  service will inform client A that changes are made somewhere so it needs to
+  pull the latest data.
+- If client A is offline while a file is changed by another client, data will
+  be saved to the cache. When the offline client is online again, it pulls the
+  latest changes.
 
 Once a client knows a file is changed, it first requests metadata via API
 servers, then downloads blocks to construct the file. __Figure__ 15-15 shows the
 detailed flow. Note, only the most important components are shown in the
 diagram due to space constraint.
+![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/15.15.png)
+
 1. Notification service informs client 2 that a file is changed somewhere else.
 2. Once client 2 knows that new updates are available, it sends a request to
    fetch metadata.
@@ -6036,112 +6067,121 @@ diagram due to space constraint.
 8. Cloud storage returns blocks to the block servers.
 9. Client 2 downloads all the new blocks to reconstruct the file.
 
-Notification service
+#### Notification service
 
-To maintain file consistency, any mutation of a file performed locally needs to be informed to
-other clients to reduce conflicts. Notification service is built to serve this purpose. At the
-high-level, notification service allows data to be transferred to clients as events happen. Here
-are a few options:
-- Long polling. Dropbox uses long polling [10].
-- WebSocket. WebSocket provides a persistent connection between the client and the
-server. Communication is bi-directional.
+To maintain file consistency, any mutation of a file performed locally needs to
+be informed to other clients to reduce conflicts. Notification service is built
+to serve this purpose. At the high-level, notification service allows data to
+be transferred to clients as events happen. Here are a few options:
+- _Long polling_. Dropbox uses long polling [10].
+- _WebSocket_. WebSocket provides a persistent connection between the client and
+  the server. Communication is bi-directional.
 
-Even though both options work well, we opt for long polling for the following two reasons:
-- Communication for notification service is not bi-directional. The server sends
-information about file changes to the client, but not vice versa.
-- WebSocket is suited for real-time bi-directional communication such as a chat app. For
+Even though both options work well, we opt for long polling for the following
+two reasons:
+- _Communication for notification service is not bi-directional_. The server
+  sends information about file changes to the client, but not vice versa.
+- _WebSocket is suited for real-time bi-directional communication_ such as a chat
+  app. For
 
 Google Drive, notifications are sent infrequently with no burst of data.
 
-With long polling, each client establishes a long poll connection to the notification service. If
-changes to a file are detected, the client will close the long poll connection. Closing the
-connection means a client must connect to the metadata server to download the latest
-changes. After a response is received or connection timeout is reached, a client immediately
-sends a new request to keep the connection open.
+With long polling, each client establishes a long poll connection to the
+notification service. If changes to a file are detected, the client will close
+the long poll connection. Closing the connection means a client must connect to
+the metadata server to download the latest changes. After a response is
+received or connection timeout is reached, a client immediately sends a new
+request to keep the connection open.
 
-Save storage space
+#### Save storage space
 
-To support file version history and ensure reliability, multiple versions of the same file are
-stored across multiple data centers. Storage space can be filled up quickly with frequent
-backups of all file revisions. Three techniques are proposed to reduce storage costs:
-- De-duplicate data blocks. Eliminating redundant blocks at the account level is an easy
-way to save space. Two blocks are identical if they have the same hash value.
-- Adopt an intelligent data backup strategy. Two optimization strategies can be applied:
-- Set a limit: We can set a limit for the number of versions to store. If the limit is
-reached, the oldest version will be replaced with the new version.
-- Keep valuable versions only: Some files might be edited frequently. For example,
-saving every edited version for a heavily modified document could mean the file is
-saved over 1000 times within a short period. To avoid unnecessary copies, we could
-limit the number of saved versions. We give more weight to recent versions.
+To support file version history and ensure reliability, multiple versions of
+the same file are stored across multiple data centers. Storage space can be
+filled up quickly with frequent backups of all file revisions. Three techniques
+are proposed to reduce storage costs:
+- _De-duplicate data blocks_. Eliminating redundant blocks at the account level
+  is an easy way to save space. Two blocks are identical if they have the same
+  hash value.
+- Adopt an _intelligent data backup strategy_. Two optimization strategies can
+  be applied:
+- _Set a limit_: We can set a limit for the number of versions to store. If the
+  limit is reached, the oldest version will be replaced with the new version.
+- _Keep valuable versions only_: Some files might be edited frequently. For
+  example, saving every edited version for a heavily modified document could
+  mean the file is saved over 1000 times within a short period. To avoid
+  unnecessary copies, we could limit the number of saved versions. We give more
+  weight to recent versions. Experimentation is helpful to figure out the
+  optimal number of versions to save.
+- _Moving infrequently used data to cold storage_. Cold data is the data that
+  has not been active for months or years. Cold storage like Amazon S3 glacier
+  [11] is much cheaper than S3.
 
-Experimentation is helpful to figure out the optimal number of versions to save.
-- Moving infrequently used data to cold storage. Cold data is the data that has not been
-active for months or years. Cold storage like Amazon S3 glacier [11] is much cheaper than
+#### Failure Handling
 
-S3.
-
-Failure Handling
-
-Failures can occur in a large-scale system and we must adopt design strategies to address
-these failures. Your interviewer might be interested in hearing about how you handle the
-following system failures:
-- Load balancer failure: If a load balancer fails, the secondary would become active and
-pick up the traffic. Load balancers usually monitor each other using a heartbeat, a periodic
-signal sent between load balancers. A load balancer is considered as failed if it has not sent
-a heartbeat for some time.
-- Block server failure: If a block server fails, other servers pick up unfinished or pending
-jobs.
-- Cloud storage failure: S3 buckets are replicated multiple times in different regions. If
-files are not available in one region, they can be fetched from different regions.
-- API server failure: It is a stateless service. If an API server fails, the traffic is redirected
-to other API servers by a load balancer.
-- Metadata cache failure: Metadata cache servers are replicated multiple times. If one node
-goes down, you can still access other nodes to fetch data. We will bring up a new cache
-server to replace the failed one.
-- Metadata DB failure.
-- Master down: If the master is down, promote one of the slaves to act as a new master
-and bring up a new slave node.
-- Slave down: If a slave is down, you can use another slave for read operations and
-bring another database server to replace the failed one.
-- Notification service failure: Every online user keeps a long poll connection with the
-notification server. Thus, each notification server is connected with many users. According
-to the Dropbox talk in 2012 [6], over 1 million connections are open per machine. If a
-server goes down, all the long poll connections are lost so clients must reconnect to a
-different server. Even though one server can keep many open connections, it cannot
-reconnect all the lost connections at once. Reconnecting with all the lost clients is a
-relatively slow process.
-- Offline backup queue failure: Queues are replicated multiple times. If one queue fails,
-consumers of the queue may need to re-subscribe to the backup queue.
+Failures can occur in a large-scale system and we must adopt design strategies
+to address these failures. Your interviewer might be interested in hearing
+about how you handle the following system failures:
+- _Load balancer failure_: If a load balancer fails, the secondary would become
+  active and pick up the traffic. Load balancers usually monitor each other
+  using a heartbeat, a periodic signal sent between load balancers. A load
+  balancer is considered as failed if it has not sent a heartbeat for some
+  time.
+- _Block server failure_: If a block server fails, other servers pick up
+  unfinished or pending jobs.
+- _Cloud storage failure_: S3 buckets are replicated multiple times in different
+  regions. If files are not available in one region, they can be fetched from
+  different regions.
+- _API server failure_: It is a stateless service. If an API server fails, the
+  traffic is redirected to other API servers by a load balancer.
+- _Metadata cache failure_: Metadata cache servers are replicated multiple times.
+  If one node goes down, you can still access other nodes to fetch data. We
+  will bring up a new cache server to replace the failed one.
+- _Metadata DB failure.
+- _Master down_: If the master is down, promote one of the slaves to act as a new
+  master and bring up a new slave node.
+- _Slave down_: If a slave is down, you can use another slave for read operations
+  and bring another database server to replace the failed one.
+- _Notification service failure_: Every online user keeps a long poll connection
+  with the notification server. Thus, each notification server is connected
+  with many users. According to the Dropbox talk in 2012 [6], over 1 million
+  connections are open per machine. If a server goes down, all the long poll
+  connections are lost so clients must reconnect to a different server. Even
+  though one server can keep many open connections, it cannot reconnect all the
+  lost connections at once. Reconnecting with all the lost clients is a
+  relatively slow process.
+- _Offline backup queue failure_: Queues are replicated multiple times. If one
+  queue fails, consumers of the queue may need to re-subscribe to the backup
+  queue.
 
 ### Step 4 - Wrap up
 
-In this chapter, we proposed a system design to support Google Drive. The combination of
-strong consistency, low network bandwidth and fast sync make the design interesting. Our
-design contains two flows: manage file metadata and file sync. Notification service is another
-important component of the system. It uses long polling to keep clients up to date with file
-changes.
+In this chapter, we proposed a system design to support Google Drive. The
+combination of strong consistency, low network bandwidth and fast sync make the
+design interesting. Our design contains two flows: manage file metadata and
+file sync. Notification service is another important component of the system.
+It uses long polling to keep clients up to date with file changes.
 
-Like any system design interview questions, there is no perfect solution. Every company has
-its unique constraints and you must design a system to fit those constraints. Knowing the
-tradeoffs of your design and technology choices are important. If there are a few minutes left,
-you can talk about different design choices.
+Like any system design interview questions, there is no perfect solution. Every
+company has its unique constraints and you must design a system to fit those
+constraints. Knowing the tradeoffs of your design and technology choices are
+important. If there are a few minutes left, you can talk about different design
+choices.
 
-For example, we can upload files directly to cloud storage from the client instead of going
-through block servers. The advantage of this approach is that it makes file upload faster
-because a file only needs to be transferred once to the cloud storage. In our design, a file is
-transferred to block servers first, and then to the cloud storage. However, the new approach
-has a few drawbacks:
-- First, the same chunking, compression, and encryption logic must be implemented on
-different platforms (iOS, Android, Web). It is error-prone and requires a lot of engineering
-effort. In our design, all those logics are implemented in a centralized place: block servers.
-- Second, as a client can easily be hacked or manipulated, implementing encrypting logic
-on the client side is not ideal.
+For example, we can upload files directly to cloud storage from the client
+instead of going through block servers. The advantage of this approach is that
+it makes file upload faster because a file only needs to be transferred once to
+the cloud storage. In our design, a file is transferred to block servers first,
+and then to the cloud storage. However, the new approach has a few drawbacks:
+- First, the same chunking, compression, and encryption logic must be
+  implemented on different platforms (iOS, Android, Web). It is error-prone and
+  requires a lot of engineering effort. In our design, all those logics are
+  implemented in a centralized place: block servers.
+- Second, as a client can easily be hacked or manipulated, implementing
+  encrypting logic on the client side is not ideal.
 
 Another interesting evolution of the system is moving online/offline logic to a separate
 service. Let us call it presence service. By moving presence service out of notification
 servers, online/offline functionality can easily be integrated by other services.
-
-Congratulations on getting this far! Now give yourself a pat on the back. Good job!
 
 ### Reference Materials
 1. Google Drive: https://www.google.com/drive/
@@ -6158,11 +6198,12 @@ Congratulations on getting this far! Now give yourself a pat on the back. Good j
 
 ## CHAPTER 16: THE LEARNING CONTINUES
 
-Designing good systems requires years of accumulation of knowledge. One shortcut is to dive
-into real-world system architectures. Below is a collection of helpful reading materials. We
-highly recommend you pay attention to both the shared principles and the underlying
-technologies. Researching each technology and understanding what problems it solves is a
-great way to strengthen your knowledge base and refine the design process.
+Designing good systems requires years of accumulation of knowledge. One
+shortcut is to dive into real-world system architectures. Below is a collection
+of helpful reading materials. We highly recommend you pay attention to both the
+shared principles and the underlying technologies. Researching each technology
+and understanding what problems it solves is a great way to strengthen your
+knowledge base and refine the design process.
 
 ### Real-world systems
 
@@ -6271,4 +6312,3 @@ https://bit.ly/3dtIcsE
 If you have comments or questions about this book, feel free to send us an email at
 systemdesigninsider@gmail.com. Besides, if you notice any errors, please let us know so we
 can make corrections in the next edition. Thank you!
-
