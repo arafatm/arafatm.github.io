@@ -6,7 +6,7 @@ title: System Design Interview - An Insider’s Guide
 
 ```
 :execute getline(".")
-inoremap png ![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/13.01.png)<ESC>5<left>r
+inoremap png ![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/15.10.png)<ESC>5<left>r
 ```
 
 [System Design Interview PDF](system.design.interview.pdf)
@@ -4867,169 +4867,190 @@ examined one by one.
 _Analytics Logs_. It stores raw data about search queries. Logs are append-only
 and are not indexed. Table 13-3 shows an example of the log file.
 
-_Aggregators_. The size of analytics logs is usually very large, and data is not in the right
-format. We need to aggregate data so it can be easily processed by our system.
+_Aggregators_. The size of analytics logs is usually very large, and data is
+not in the right format. We need to aggregate data so it can be easily
+processed by our system.
 
-Depending on the use case, we may aggregate data differently. For real-time applications
-such as Twitter, we aggregate data in a shorter time interval as real-time results are important. On the other hand, aggregating data less frequently, say once per week, might be good
-enough for many use cases. During an interview session, verify whether real-time results are
-important. We assume trie is rebuilt weekly.
+Depending on the use case, we may aggregate data differently. For real-time
+applications such as Twitter, we aggregate data in a shorter time interval as
+real-time results are important. On the other hand, aggregating data less
+frequently, say once per week, might be good enough for many use cases. During
+an interview session, verify whether real-time results are important. We assume
+trie is rebuilt weekly.
 
 #### Aggregated Data.
 
 Table 13-4 shows an example of aggregated weekly data. “time” field represents the start
 time of a week. “frequency” field is the sum of the occurrences for the corresponding query
 in that week.
+![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/13.04.t.png)
 
-Workers. Workers are a set of servers that perform asynchronous jobs at regular intervals.
+_Workers_. Workers are a set of servers that perform asynchronous jobs at regular intervals. They build the trie data structure and store it in Trie DB.
 
-They build the trie data structure and store it in Trie DB.
+_Trie Cache_. Trie Cache is a distributed cache system that keeps trie in
+memory for fast read. It takes a weekly snapshot of the DB.
 
-Trie Cache. Trie Cache is a distributed cache system that keeps trie in memory for fast read.
-
-It takes a weekly snapshot of the DB.
-
-Trie DB. Trie DB is the persistent storage. Two options are available to store the data:
-1. Document store: Since a new trie is built weekly, we can periodically take a snapshot of it,
-serialize it, and store the serialized data in the database. Document stores like MongoDB [4]
-are good fits for serialized data.
-2. Key-value store: A trie can be represented in a hash table form [4] by applying the
-following logic:
-- Every prefix in the trie is mapped to a key in a hash table.
-- Data on each trie node is mapped to a value in a hash table.
+_Trie DB_. Trie DB is the persistent storage. Two options are available to
+store the data:
+1. Document store: Since a new trie is built weekly, we can periodically take a
+   snapshot of it, serialize it, and store the serialized data in the database.
+   Document stores like MongoDB [4] are good fits for serialized data.
+2. Key-value store: A trie can be represented in a hash table form [4] by
+   applying the following logic:
+  - Every prefix in the trie is mapped to a key in a hash table.
+  - Data on each trie node is mapped to a value in a hash table.
 
 __Figure__ 13-10 shows the mapping between the trie and hash table.
+![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/13.10.png)
 
-In __Figure__ 13-10, each trie node on the left is mapped to the <key, value> pair on the right. If
-you are unclear how key-value stores work, refer to Chapter 6: Design a key-value store.
+In __Figure__ 13-10, each trie node on the left is mapped to the `<key, value>`
+pair on the right. If you are unclear how key-value stores work, refer to
+Chapter 6: Design a key-value store.
 
-Query service
+#### Query service
 
-In the high-level design, query service calls the database directly to fetch the top 5 results.
+In the high-level design, query service calls the database directly to fetch
+the top 5 results.
 
 __Figure__ 13-11 shows the improved design as previous design is inefficient.
+![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/13.11.png)
+
 1. A search query is sent to the load balancer.
 2. The load balancer routes the request to API servers.
-3. API servers get trie data from Trie Cache and construct autocomplete suggestions for
-the client.
-4. In case the data is not in Trie Cache, we replenish data back to the cache. This way, all
-subsequent requests for the same prefix are returned from the cache. A cache miss can
-happen when a cache server is out of memory or offline.
+3. API servers get trie data from Trie Cache and construct autocomplete
+   suggestions for the client.
+4. In case the data is not in Trie Cache, we replenish data back to the cache.
+   This way, all subsequent requests for the same prefix are returned from the
+   cache. A cache miss can happen when a cache server is out of memory or
+   offline.
 
-Query service requires lightning-fast speed. We propose the following optimizations:
-- AJAX request. For web applications, browsers usually send AJAX requests to fetch
-autocomplete results. The main benefit of AJAX is that sending/receiving a
-request/response does not refresh the whole web page.
-- Browser caching. For many applications, autocomplete search suggestions may not
-change much within a short time. Thus, autocomplete suggestions can be saved in browser
-cache to allow subsequent requests to get results from the cache directly. Google search
-engine uses the same cache mechanism. __Figure__ 13-12 shows the response header when
-you type “system design interview” on the Google search engine. As you can see, Google
-caches the results in the browser for 1 hour. Please note: “private” in cache-control means
-results are intended for a single user and must not be cached by a shared cache. “maxage=3600” means the cache is valid for 3600 seconds, aka, an hour.
-- Data sampling: For a large-scale system, logging every search query requires a lot of
-processing power and storage. Data sampling is important. For instance, only 1 out of
-every N requests is logged by the system.
+Query service requires lightning-fast speed. We propose the following
+__optimizations__:
+- _AJAX request_. For web applications, browsers usually send AJAX requests to
+  fetch autocomplete results. The main benefit of AJAX is that
+  sending/receiving a request/response does not refresh the whole web page.
+- _Browser caching_. For many applications, autocomplete search suggestions may
+  not change much within a short time. Thus, autocomplete suggestions can be
+  saved in browser cache to allow subsequent requests to get results from the
+  cache directly. Google search engine uses the same cache mechanism.
+  __Figure__ 13-12 shows the response header when you type “system design
+  interview” on the Google search engine. As you can see, Google caches the
+  results in the browser for 1 hour. Please note: “private” in cache-control
+  means results are intended for a single user and must not be cached by a
+  shared cache. “maxage=3600” means the cache is valid for 3600 seconds, aka,
+  an hour. 
+- _Data sampling_: For a large-scale system, logging every search query
+  requires a lot of processing power and storage. Data sampling is important.
+  For instance, only 1 out of every N requests is logged by the system.
 
-Trie operations
+![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/13.12.png)
 
-Trie is a core component of the autocomplete system. Let us look at how trie operations
-(create, update, and delete) work.
+#### Trie operations
 
-Create
+Trie is a core component of the autocomplete system. Let us look at how trie
+operations (create, update, and delete) work.
 
-Trie is created by workers using aggregated data. The source of data is from Analytics
+##### Create
 
-Log/DB.
+Trie is created by workers using aggregated data. The source of data is from Analytics Log/DB.
 
-Update
+##### Update
 
 There are two ways to update the trie.
 
-Option 1: Update the trie weekly. Once a new trie is created, the new trie replaces the old
-one.
+1. Update the trie weekly. Once a new trie is created, the new trie replaces
+   the old one.
+2. Update individual trie node directly. We try to avoid this operation because
+   it is slow. However, if the size of the trie is small, it is an acceptable
+   solution. When we update a trie node, its ancestors all the way up to the
+   root must be updated because ancestors store top queries of children.
+   __Figure__ 13-13 shows an example of how the update operation works. On the
+   left side, the search query “beer” has the original value 10. On the right
+   side, it is updated to 30. As you can see, the node and its ancestors have
+   the “beer” value updated to 30.
 
-Option 2: Update individual trie node directly. We try to avoid this operation because it is
-slow. However, if the size of the trie is small, it is an acceptable solution. When we update a
-trie node, its ancestors all the way up to the root must be updated because ancestors store top
-queries of children. __Figure__ 13-13 shows an example of how the update operation works. On
-the left side, the search query “beer” has the original value 10. On the right side, it is updated
-to 30. As you can see, the node and its ancestors have the “beer” value updated to 30.
+![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/13.13.png)
 
-Delete
+##### Delete
 
-We have to remove hateful, violent, sexually explicit, or dangerous autocomplete
-suggestions. We add a filter layer (__Figure__ 13-14) in front of the Trie Cache to filter out
-unwanted suggestions. Having a filter layer gives us the flexibility of removing results based
-on different filter rules. Unwanted suggestions are removed physically from the database
-asynchronically so the correct data set will be used to build trie in the next update cycle.
+We have to remove hateful, violent, sexually explicit, or dangerous
+autocomplete suggestions. We add a filter layer (__Figure__ 13-14) in front of
+the Trie Cache to filter out unwanted suggestions. Having a filter layer gives
+us the flexibility of removing results based on different filter rules.
+Unwanted suggestions are removed physically from the database asynchronically
+so the correct data set will be used to build trie in the next update cycle.
 
-Scale the storage
+![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/13.14.png)
 
-Now that we have developed a system to bring autocomplete queries to users, it is time to
-solve the scalability issue when the trie grows too large to fit in one server.
+#### Scale the storage
 
-Since English is the only supported language, a naive way to shard is based on the first
-character. Here are some examples.
-- If we need two servers for storage, we can store queries starting with ‘a’ to ‘m’ on the
-first server, and ‘n’ to ‘z’ on the second server.
-- If we need three servers, we can split queries into ‘a’ to ‘i’, ‘j’ to ‘r’ and ‘s’ to ‘z’.
+Now that we have developed a system to bring autocomplete queries to users, it
+is time to solve the scalability issue when the trie grows too large to fit in
+one server.
 
-Following this logic, we can split queries up to 26 servers because there are 26 alphabetic
-characters in English. Let us define sharding based on the first character as first level
-sharding. To store data beyond 26 servers, we can shard on the second or even at the third
-level. For example, data queries that start with ‘a’ can be split into 4 servers: ‘aa-ag’, ‘ahan’, ‘ao-au’, and ‘av-az’.
+Since English is the only supported language, a naive way to shard is based on
+the first character. Here are some examples.
+- If we need two servers for storage, we can store queries starting with ‘a’ to
+  ‘m’ on the first server, and ‘n’ to ‘z’ on the second server.
+- If we need three servers, we can split queries into ‘a’ to ‘i’, ‘j’ to ‘r’
+  and ‘s’ to ‘z’.
 
-At the first glance this approach seems reasonable, until you realize that there are a lot more
-words that start with the letter ‘c’ than ‘x’. This creates uneven distribution.
+Following this logic, we can split queries up to 26 servers because there are
+26 alphabetic characters in English. Let us define sharding based on the first
+character as first level sharding. To store data beyond 26 servers, we can
+shard on the second or even at the third level. For example, data queries that
+start with ‘a’ can be split into 4 servers: ‘aa-ag’, ‘ahan’, ‘ao-au’, and
+‘av-az’.
 
-To mitigate the data imbalance problem, we analyze historical data distribution pattern and
-apply smarter sharding logic as shown in __Figure__ 13-15. The shard map manager maintains a
-lookup database for identifying where rows should be stored. For example, if there are a
-similar number of historical queries for ‘s’ and for ‘u’, ‘v’, ‘w’, ‘x’, ‘y’ and ‘z’ combined, we
-can maintain two shards: one for ‘s’ and one for ‘u’ to ‘z’.
+At the first glance this approach seems reasonable, until you realize that
+there are a _lot more words that start with the letter ‘c’ than ‘x’_. This
+creates _uneven distribution_.
+
+To mitigate the data imbalance problem, we analyze historical data distribution
+pattern and apply smarter sharding logic as shown in __Figure__ 13-15. The
+shard map manager maintains a lookup database for identifying where rows should
+be stored. For example, if there are a similar number of historical queries for
+‘s’ and for ‘u’, ‘v’, ‘w’, ‘x’, ‘y’ and ‘z’ combined, we can maintain two
+shards: one for ‘s’ and one for ‘u’ to ‘z’.
+
+![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/13.15.png)
 
 ### Step 4 - Wrap up
 
 After you finish the deep dive, your interviewer might ask you some follow up questions.
 
 Interviewer: How do you extend your design to support multiple languages?
-
-To support other non-English queries, we store Unicode characters in trie nodes. If you are
-not familiar with Unicode, here is the definition: “an encoding standard covers all the
-characters for all the writing systems of the world, modern and ancient” [5].
+- To support other non-English queries, we store Unicode characters in trie
+  nodes. If you are not familiar with Unicode, here is the definition: “an
+  encoding standard covers all the characters for all the writing systems of
+  the world, modern and ancient” [5].
 
 Interviewer: What if top search queries in one country are different from others?
-
-In this case, we might build different tries for different countries. To improve the response
-time, we can store tries in CDNs.
+- In this case, we might build different tries for different countries. To
+  improve the response time, we can store tries in CDNs.
 
 Interviewer: How can we support the trending (real-time) search queries?
-
-Assuming a news event breaks out, a search query suddenly becomes popular. Our original
-design will not work because:
-- Offline workers are not scheduled to update the trie yet because this is scheduled to run
-on weekly basis.
+- Assuming a news event breaks out, a search query suddenly becomes popular.
+  Our original design will not work because:
+- Offline workers are not scheduled to update the trie yet because this is
+  scheduled to run on weekly basis.
 - Even if it is scheduled, it takes too long to build the trie.
 
-Building a real-time search autocomplete is complicated and is beyond the scope of this book
-so we will only give a few ideas:
+Building a real-time search autocomplete is complicated and is beyond the scope
+of this book so we will only give a few ideas:
 - Reduce the working data set by sharding.
 - Change the ranking model and assign more weight to recent search queries.
-- Data may come as streams, so we do not have access to all the data at once. Streaming
-data means data is generated continuously. Stream processing requires a different set of
-systems: Apache Hadoop MapReduce [6], Apache Spark Streaming [7], Apache Storm
-[8], Apache Kafka [9], etc. Because all those topics require specific domain knowledge,
-we are not going into detail here.
-
-Congratulations on getting this far! Now give yourself a pat on the back. Good job!
+- Data may come as streams, so we do not have access to all the data at once.
+  Streaming data means data is generated continuously. Stream processing
+  requires a different set of systems: Apache Hadoop MapReduce [6], Apache
+  Spark Streaming [7], Apache Storm [8], Apache Kafka [9], etc. Because all
+  those topics require specific domain knowledge, we are not going into detail
+  here.
 
 ### Reference Materials
 1. The Life of a Typeahead Query: https://www.facebook.com/notes/facebookengineering/the-life-of-a-typeahead-query/389105248919/
-2. How We Built Prefixy: A Scalable Prefix Search Service for Powering Autocomplete:
-https://medium.com/@prefixyteam/how-we-built-prefixy-a-scalable-prefix-search-servicefor-powering-autocomplete-c20f98e2eff1
-3. Prefix Hash Tree An Indexing Data Structure over Distributed Hash Tables:
-https://people.eecs.berkeley.edu/~sylvia/papers/pht.pdf
+2. How We Built Prefixy: A Scalable Prefix Search Service for Powering Autocomplete: https://medium.com/@prefixyteam/how-we-built-prefixy-a-scalable-prefix-search-servicefor-powering-autocomplete-c20f98e2eff1
+3. Prefix Hash Tree An Indexing Data Structure over Distributed Hash Tables: https://people.eecs.berkeley.edu/~sylvia/papers/pht.pdf
 4. MongoDB wikipedia: https://en.wikipedia.org/wiki/MongoDB
 5. Unicode frequently asked questions: https://www.unicode.org/faq/basic_q.html
 6. Apache hadoop: https://hadoop.apache.org/
@@ -5039,23 +5060,25 @@ https://people.eecs.berkeley.edu/~sylvia/papers/pht.pdf
 
 ## CHAPTER 14: DESIGN YOUTUBE
 
-In this chapter, you are asked to design YouTube. The solution to this question can be applied
-to other interview questions like designing a video sharing platform such as Netflix and Hulu.
+In this chapter, you are asked to design YouTube. The solution to this question
+can be applied to other interview questions like designing a video sharing
+platform such as Netflix and Hulu.
 
-__Figure__ 14-1 shows the YouTube homepage.
+YouTube looks simple: content creators upload videos and viewers click play. Is
+it really that simple? Not really. There are lots of complex technologies
+underneath the simplicity. Let us look at some impressive statistics,
+demographics, and fun facts of YouTube in 2020 [1] [2].
+- Total number of _monthly active users_: 2 billion.
+- Number of _videos watched per day_: 5 billion.
+- _73% of US adults_ use YouTube.
+- _50 million creators_ on YouTube.
+- _YouTube’s Ad revenue was $15.1 billion_ for the full year 2019, up 36% from
+  2018.
+- YouTube is responsible for _37% of all mobile internet traffic_.
+- YouTube is available in _80 different languages_.
 
-YouTube looks simple: content creators upload videos and viewers click play. Is it really that
-simple? Not really. There are lots of complex technologies underneath the simplicity. Let us
-look at some impressive statistics, demographics, and fun facts of YouTube in 2020 [1] [2].
-- Total number of monthly active users: 2 billion.
-- Number of videos watched per day: 5 billion.
-- 73% of US adults use YouTube.
-- 50 million creators on YouTube.
-- YouTube’s Ad revenue was $15.1 billion for the full year 2019, up 36% from 2018.
-- YouTube is responsible for 37% of all mobile internet traffic.
-- YouTube is available in 80 different languages.
-
-From these statistics, we know YouTube is enormous, global and makes a lot of money.
+From these statistics, we know YouTube is enormous, global and makes a lot of
+money.
 
 ### Step 1 - Understand the problem and establish design scope
 
@@ -5064,38 +5087,37 @@ example, comment, share, or like a video, save a video to playlists, subscribe t
 etc. It is impossible to design everything within a 45- or 60-minute interview. Thus, it is
 important to ask questions to narrow down the scope.
 
-- Candidate: What features are important?
+- Candidate: What features are _important_?
   - Interviewer: Ability to upload a video and watch a video. 
 
-- Candidate: What clients do we need to support?
+- Candidate: What _clients_ do we need to support?
   - Interviewer: Mobile apps, web browsers, and smart TV. 
 
-- Candidate: How many daily active users do we have?
+- Candidate: How many _daily active users_ do we have?
   - Interviewer: 5 million 
 
-- Candidate: What is the average daily time spent on the product?
+- Candidate: What is the _average daily time spent_ on the product?
   - Interviewer: 30 minutes. 
 
-- Candidate: Do we need to support international users?
+- Candidate: Do we need to support _international users_?
   - Interviewer: Yes, a large percentage of users are international users. 
 
-- Candidate: What are the supported video resolutions?
+- Candidate: What are the supported _video resolutions_?
   - Interviewer: The system accepts most of the video resolutions and formats. 
 
-- Candidate: Is encryption required?
+- Candidate: Is _encryption_ required?
   - Interviewer: Yes 
 
-- Candidate: Any file size requirement for videos?
+- Candidate: Any _file size requirement_ for videos?
   - Interviewer: Our platform focuses on small and medium-sized videos. The maximum 
 allowed video size is 1GB.
 
-- Candidate: Can we leverage some of the existing cloud infrastructures provided by Amazon,
-  - Google, or Microsoft? 
+- Candidate: Can we leverage some of the _existing cloud infrastructures_ provided by Amazon, Google, or Microsoft? 
+  - Interviewer: That is a great question. Building everything from scratch is unrealistic for most companies
+  - it is recommended to leverage some of the existing cloud services.
 
-Interviewer: That is a great question. Building everything from scratch is unrealistic for most
-companies, it is recommended to leverage some of the existing cloud services.
-
-In the chapter, we focus on designing a video streaming service with the following features:
+In the chapter, we focus on designing a video streaming service with the
+following features:
 - Ability to upload videos fast
 - Smooth video streaming
 - Ability to change video quality
@@ -5103,56 +5125,59 @@ In the chapter, we focus on designing a video streaming service with the followi
 - High availability, scalability, and reliability requirements
 - Clients supported: mobile apps, web browser, and smart TV
 
-Back of the envelope estimation
+#### Back of the envelope estimation
 
-The following estimations are based on many assumptions, so it is important to communicate
-with the interviewer to make sure she is on the same page.
+The following estimations are based on many assumptions, so it is important to
+communicate with the interviewer to make sure she is on the same page.
 - Assume the product has 5 million daily active users (DAU).
 - Users watch 5 videos per day.
 - 10% of users upload 1 video per day.
 - Assume the average video size is 300 MB.
 - Total daily storage space needed: 5 million * 10% * 300 MB = 150TB
 - CDN cost.
-- When cloud CDN serves a video, you are charged for data transferred out of the
+  - When cloud CDN serves a video, you are charged for data transferred out of the CDN.
+  - Let us use Amazon’s CDN CloudFront for cost estimation (__Figure__ 14-2) [3].
+  - Assume 100% of traffic is served from the United States. 
+  - The average cost per GB is $0.02.
+  - For simplicity, we only calculate the cost of video streaming. 5 million * 5 videos * 0.3GB * $0.02 = $150,000 per day.
 
-CDN.
-- Let us use Amazon’s CDN CloudFront for cost estimation (__Figure__ 14-2) [3]. Assume
-100% of traffic is served from the United States. The average cost per GB is $0.02.
+![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/14.01.png)
 
-For simplicity, we only calculate the cost of video streaming.
-- 5 million * 5 videos * 0.3GB * $0.02 = $150,000 per day.
+From the rough cost estimation, we know serving videos from the CDN costs lots
+of money.
 
-From the rough cost estimation, we know serving videos from the CDN costs lots of money.
-
-Even though cloud providers are willing to lower the CDN costs significantly for big
-customers, the cost is still substantial. We will discuss ways to reduce CDN costs in deep
-dive.
+Even though cloud providers are willing to lower the CDN costs significantly
+for big customers, the cost is still substantial. We will discuss ways to
+reduce CDN costs in deep dive.
 
 ### Step 2 - Propose high-level design and get buy-in
 
-As discussed previously, the interviewer recommended leveraging existing cloud services
-instead of building everything from scratch. CDN and blob storage are the cloud services we
-will leverage. Some readers might ask why not building everything by ourselves? Reasons
-are listed below:
-- System design interviews are not about building everything from scratch. Within the
-limited time frame, choosing the right technology to do a job right is more important than
-explaining how the technology works in detail. For instance, mentioning blob storage for
-storing source videos is enough for the interview. Talking about the detailed design for
-blob storage could be an overkill.
-- Building scalable blob storage or CDN is extremely complex and costly. Even large
-companies like Netflix or Facebook do not build everything themselves. Netflix leverages
-
-Amazon’s cloud services [4], and Facebook uses Akamai’s CDN [5].
+As discussed previously, the interviewer recommended leveraging existing cloud
+services instead of building everything from scratch. _CDN and blob storage_
+are the cloud services we will leverage. Some readers might ask why not
+building everything by ourselves? Reasons are listed below:
+- System design interviews are not about building everything from scratch.
+  Within the limited time frame, choosing the right technology to do a job
+  right is more important than explaining how the technology works in detail.
+  For instance, mentioning blob storage for storing source videos is enough for
+  the interview. Talking about the detailed design for blob storage could be an
+  overkill.
+- Building scalable blob storage or CDN is extremely complex and costly. Even
+  large companies like Netflix or Facebook do not build everything themselves.
+  Netflix leverages Amazon’s cloud services [4], and Facebook uses Akamai’s CDN
+  [5].
 
 At the high-level, the system comprises three components (__Figure__ 14-3).
+![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/14.03.png)
 
-Client: You can watch YouTube on your computer, mobile phone, and smartTV.
+_Client_: You can watch YouTube on your computer, mobile phone, and smartTV.
 
-CDN: Videos are stored in CDN. When you press play, a video is streamed from the CDN.
+_CDN_: Videos are stored in CDN. When you press play, a video is streamed from
+the CDN.
 
-API servers: Everything else except video streaming goes through API servers. This includes
-feed recommendation, generating video upload URL, updating metadata database and cache,
-user signup, etc.
+_API servers_: Everything else except video streaming goes through API servers.
+This includes feed recommendation, generating video upload URL, updating
+metadata database and cache, user signup, etc.
 
 In the question/answer session, the interviewer showed interests in two flows:
 - Video uploading flow
@@ -5160,194 +5185,233 @@ In the question/answer session, the interviewer showed interests in two flows:
 
 We will explore the high-level design for each of them.
 
-Video uploading flow
+#### Video uploading flow
 
 __Figure__ 14-4 shows the high-level design for the video uploading.
+![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/14.04.png)
 
 It consists of the following components:
-- User: A user watches YouTube on devices such as a computer, mobile phone, or smart
+- _User_: A user watches YouTube on devices such as a computer, mobile phone,
+  or smart TV.
+- _Load balancer_: A load balancer evenly distributes requests among API
+  servers.
+- _API servers_: All user requests go through API servers except video
+  streaming.
+- _Metadata DB_: Video metadata are stored in Metadata DB. It is sharded and
+  replicated to meet performance and high availability requirements.
+- _Metadata cache_: For better performance, video metadata and user objects are
+  cached.
+- _Original storage_: A blob storage system is used to store original videos. A
+  quotation in Wikipedia regarding blob storage shows that: “A Binary Large
+  Object (BLOB) is a collection of binary data stored as a single entity in a
+  database management system” [6].
+- _Transcoding servers_: Video transcoding is also called video encoding. It is
+  the process of converting a video format to other formats (MPEG, HLS, etc),
+  which provide the best video streams possible for different devices and
+  bandwidth capabilities.
+- _Transcoded storage_: It is a blob storage that stores transcoded video
+  files.
+- _CDN_: Videos are cached in CDN. When you click the play button, a video is
+  streamed from the CDN.
+- _Completion queue_: It is a message queue that stores information about video
+  transcoding completion events.
+- _Completion handler_: This consists of a list of workers that pull event data
+  from the completion queue and update metadata cache and database.
 
-TV.
-- Load balancer: A load balancer evenly distributes requests among API servers.
-- API servers: All user requests go through API servers except video streaming.
-- Metadata DB: Video metadata are stored in Metadata DB. It is sharded and replicated to
-meet performance and high availability requirements.
-- Metadata cache: For better performance, video metadata and user objects are cached.
-- Original storage: A blob storage system is used to store original videos. A quotation in
+Now that we understand each component individually, let us examine how the
+video uploading flow works. The flow is broken down into two processes running
+in parallel.
+1. Upload the actual video.
+2. Update video metadata. Metadata contains information about video URL, size,
+   resolution, format, user info, etc.
 
-Wikipedia regarding blob storage shows that: “A Binary Large Object (BLOB) is a
-collection of binary data stored as a single entity in a database management system” [6].
-- Transcoding servers: Video transcoding is also called video encoding. It is the process of
-converting a video format to other formats (MPEG, HLS, etc), which provide the best
-video streams possible for different devices and bandwidth capabilities.
-- Transcoded storage: It is a blob storage that stores transcoded video files.
-- CDN: Videos are cached in CDN. When you click the play button, a video is streamed
-from the CDN.
-- Completion queue: It is a message queue that stores information about video transcoding
-completion events.
-- Completion handler: This consists of a list of workers that pull event data from the
-completion queue and update metadata cache and database.
+#### Flow 1: upload the actual video
 
-Now that we understand each component individually, let us examine how the video
-uploading flow works. The flow is broken down into two processes running in parallel.
-a. Upload the actual video.
-b. Update video metadata. Metadata contains information about video URL, size,
-resolution, format, user info, etc.
+![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/14.05.png)
 
-Flow a: upload the actual video
-
-__Figure__ 14-5 shows how to upload the actual video. The explanation is shown below:
+__Figure__ 14-5 shows how to upload the actual video. The explanation is shown
+below:
 1. Videos are uploaded to the original storage.
-2. Transcoding servers fetch videos from the original storage and start transcoding.
-3. Once transcoding is complete, the following two steps are executed in parallel:
-3a. Transcoded videos are sent to transcoded storage.
-3b. Transcoding completion events are queued in the completion queue.
-3a.1. Transcoded videos are distributed to CDN.
-3b.1. Completion handler contains a bunch of workers that continuously pull event data
-from the queue.
-3b.1.a. and 3b.1.b. Completion handler updates the metadata database and cache when
-video transcoding is complete.
-4. API servers inform the client that the video is successfully uploaded and is ready for
-streaming.
+2. Transcoding servers fetch videos from the original storage and start
+   transcoding.
+3. Once transcoding is complete, the following two steps are executed in
+   parallel: 
+   - 3a. Transcoded videos are sent to transcoded storage. 
+   - 3b. Transcoding completion events are queued in the completion queue. 
+   - 3a.1. Transcoded videos are distributed to CDN. 
+   - 3b.1. Completion handler contains a bunch of workers that continuously pull event data from the queue. 
+   - 3b.1.a. and 3b.1.b. Completion handler updates the metadata database and cache when video transcoding is complete.
+4. API servers inform the client that the video is successfully uploaded and is
+   ready for streaming.
 
-Flow b: update the metadata
+#### Flow b: update the metadata
 
-While a file is being uploaded to the original storage, the client in parallel sends a request to
-update the video metadata as shown in __Figure__ 14-6. The request contains video metadata,
-including file name, size, format, etc. API servers update the metadata cache and database.
+While a file is being uploaded to the original storage, the client in parallel
+sends a request to update the video metadata as shown in __Figure__ 14-6. The
+request contains video metadata, including file name, size, format, etc. API
+servers update the metadata cache and database.
+![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/14.06.png)
 
-Video streaming flow
+#### Video streaming flow
 
-Whenever you watch a video on YouTube, it usually starts streaming immediately and you
-do not wait until the whole video is downloaded. Downloading means the whole video is
-copied to your device, while streaming means your device continuously receives video
-streams from remote source videos. When you watch streaming videos, your client loads a
-little bit of data at a time so you can watch videos immediately and continuously.
+Whenever you watch a video on YouTube, it usually starts streaming immediately
+and you do not wait until the whole video is downloaded. Downloading means the
+whole video is copied to your device, while streaming means your device
+continuously receives video streams from remote source videos. When you watch
+streaming videos, your client loads a little bit of data at a time so you can
+watch videos immediately and continuously.
 
-Before we discuss video streaming flow, let us look at an important concept: streaming
-protocol. This is a standardized way to control data transfer for video streaming. Popular
-streaming protocols are:
+Before we discuss video streaming flow, let us look at an important concept:
+_streaming protocol_. This is a standardized way to control data transfer for
+video streaming. Popular streaming protocols are:
 - MPEG–DASH. MPEG stands for “Moving Picture Experts Group” and DASH stands for
-"Dynamic Adaptive Streaming over HTTP".
+  "Dynamic Adaptive Streaming over HTTP".
 - Apple HLS. HLS stands for “HTTP Live Streaming”.
 - Microsoft Smooth Streaming.
 - Adobe HTTP Dynamic Streaming (HDS).
 
-You do not need to fully understand or even remember those streaming protocol names as
-they are low-level details that require specific domain knowledge. The important thing here is
-to understand that different streaming protocols support different video encodings and
-playback players. When we design a video streaming service, we have to choose the right
-streaming protocol to support our use cases. To learn more about streaming protocols, here is
-an excellent article [7].
+You do not need to fully understand or even remember those streaming protocol
+names as they are low-level details that require specific domain knowledge. The
+important thing here is to understand that different streaming protocols
+support different video encodings and playback players. When we design a video
+streaming service, we have to choose the right streaming protocol to support
+our use cases. To learn more about streaming protocols, here is an excellent
+article [7].
 
 Videos are streamed from CDN directly. The edge server closest to you will deliver the
 video. Thus, there is very little latency. __Figure__ 14-7 shows a high level of design for video
 streaming.
+![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/14.07.png)
 
 ### Step 3 - Design deep dive
 
-In the high-level design, the entire system is broken down in two parts: video uploading flow
-and video streaming flow. In this section, we will refine both flows with important
-optimizations and introduce error handling mechanisms.
+In the high-level design, the entire system is broken down in two parts: video
+uploading flow and video streaming flow. In this section, we will refine both
+flows with important optimizations and introduce error handling mechanisms.
 
-Video transcoding
+#### Video transcoding
 
-When you record a video, the device (usually a phone or camera) gives the video file a
-certain format. If you want the video to be played smoothly on other devices, the video must
-be encoded into compatible bitrates and formats. Bitrate is the rate at which bits are processed
-over time. A higher bitrate generally means higher video quality. High bitrate streams need
-more processing power and fast internet speed.
+When you record a video, the device (usually a phone or camera) gives the video
+file a certain format. If you want the video to be played smoothly on other
+devices, the video must be encoded into compatible bitrates and formats.
+Bitrate is the rate at which bits are processed over time. A higher bitrate
+generally means higher video quality. High bitrate streams need more processing
+power and fast internet speed.
 
-Video transcoding is important for the following reasons:
-- Raw video consumes large amounts of storage space. An hour-long high definition video
-recorded at 60 frames per second can take up a few hundred GB of space.
-- Many devices and browsers only support certain types of video formats. Thus, it is
-important to encode a video to different formats for compatibility reasons.
-- To ensure users watch high-quality videos while maintaining smooth playback, it is a
-good idea to deliver higher resolution video to users who have high network bandwidth
-and lower resolution video to users who have low bandwidth.
-- Network conditions can change, especially on mobile devices. To ensure a video is
-played continuously, switching video quality automatically or manually based on network
-conditions is essential for smooth user experience.
+_Video transcoding is important_ for the following reasons:
+- Raw video consumes large amounts of storage space. An hour-long high
+  definition video recorded at 60 frames per second can take up a few hundred
+  GB of space.
+- Many devices and browsers only support certain types of video formats. Thus,
+  it is important to encode a video to different formats for compatibility
+  reasons.
+- To ensure users watch high-quality videos while maintaining smooth playback,
+  it is a good idea to deliver higher resolution video to users who have high
+  network bandwidth and lower resolution video to users who have low bandwidth.
+- Network conditions can change, especially on mobile devices. To ensure a
+  video is played continuously, switching video quality automatically or
+  manually based on network conditions is essential for smooth user experience.
 
-Many types of encoding formats are available; however, most of them contain two parts:
-- Container: This is like a basket that contains the video file, audio, and metadata. You can
-tell the container format by the file extension, such as .avi, .mov, or .mp4.
-- Codecs: These are compression and decompression algorithms aim to reduce the video
-size while preserving the video quality. The most used video codecs are H.264, VP9, and
+Many types of _encoding formats_ are available; however, most of them _contain
+two parts_:
+- Container: This is like a basket that contains the video file, audio, and
+  metadata. You can tell the container format by the file extension, such as
+  .avi, .mov, or .mp4.
+- Codecs: These are compression and decompression algorithms aim to reduce the
+  video size while preserving the video quality. The most used video codecs are
+  H.264, VP9, and HEVC.
 
-HEVC.
+#### Directed acyclic graph (DAG) model
 
-Directed acyclic graph (DAG) model
+Transcoding a video is computationally expensive and time-consuming. Besides,
+different content creators may have different video processing requirements.
+For instance, some content creators require watermarks on top of their videos,
+some provide thumbnail images themselves, and some upload high definition
+videos, whereas others do not.
 
-Transcoding a video is computationally expensive and time-consuming. Besides, different
-content creators may have different video processing requirements. For instance, some
-content creators require watermarks on top of their videos, some provide thumbnail images
-themselves, and some upload high definition videos, whereas others do not.
+To support different video processing pipelines and maintain high parallelism,
+it is important to add some level of abstraction and let client programmers
+define what tasks to execute. For example, Facebook’s streaming video engine
+uses a directed acyclic graph (DAG) programming model, which defines tasks in
+stages so they can be executed sequentially or parallelly [8]. In our design,
+we adopt a similar DAG model to achieve flexibility and parallelism. __Figure__
+14-8 represents a DAG for video transcoding.
+![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/14.08.png)
 
-To support different video processing pipelines and maintain high parallelism, it is important
-to add some level of abstraction and let client programmers define what tasks to execute. For
-example, Facebook’s streaming video engine uses a directed acyclic graph (DAG)
-programming model, which defines tasks in stages so they can be executed sequentially or
-parallelly [8]. In our design, we adopt a similar DAG model to achieve flexibility and
-parallelism. __Figure__ 14-8 represents a DAG for video transcoding.
+In __Figure__ 14-8, the original video is split into video, audio, and
+metadata. Here are some of the tasks that can be applied on a video file:
+- _Inspection_: Make sure videos have good quality and are not malformed.
+- _Video encodings_: Videos are converted to support different resolutions,
+  codec, bitrates, etc. __Figure__ 14-9 shows an example of video encoded
+  files.
+- _Thumbnail_. Thumbnails can either be uploaded by a user or automatically
+  generated by the system.
+- _Watermark_: An image overlay on top of your video contains identifying
+  information about your video.
 
-In __Figure__ 14-8, the original video is split into video, audio, and metadata. Here are some of
-the tasks that can be applied on a video file:
-- Inspection: Make sure videos have good quality and are not malformed.
-- Video encodings: Videos are converted to support different resolutions, codec, bitrates,
-etc. __Figure__ 14-9 shows an example of video encoded files.
-- Thumbnail. Thumbnails can either be uploaded by a user or automatically generated by
-the system.
-- Watermark: An image overlay on top of your video contains identifying information
-about your video.
+![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/14.09.png)
 
-Video transcoding architecture
+#### Video transcoding architecture
 
-The proposed video transcoding architecture that leverages the cloud services, is shown in
+The proposed video transcoding architecture that leverages the cloud services,
+is shown in __Figure__ 14-10.
+![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/14.10.png)
 
-__Figure__ 14-10.
+The architecture has _six main components_: preprocessor, DAG scheduler,
+resource manager, task workers, temporary storage, and encoded video as the
+output. Let us take a close look at each component.
 
-The architecture has six main components: preprocessor, DAG scheduler, resource manager,
-task workers, temporary storage, and encoded video as the output. Let us take a close look at
-each component.
+#### Preprocessor
 
-Preprocessor
+![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/14.11.png)
 
 The preprocessor has 4 responsibilities:
-1. Video splitting. Video stream is split or further split into smaller Group of Pictures (GOP)
-alignment. GOP is a group/chunk of frames arranged in a specific order. Each chunk is an
-independently playable unit, usually a few seconds in length.
-2. Some old mobile devices or browsers might not support video splitting. Preprocessor split
-videos by GOP alignment for old clients.
-3. DAG generation. The processor generates DAG based on configuration files client
-programmers write. __Figure__ 14-12 is a simplified DAG representation which has 2 nodes and
-1 edge:
+1. Video splitting. Video stream is split or further split into smaller Group
+   of Pictures (GOP) alignment. GOP is a group/chunk of frames arranged in a
+   specific order. Each chunk is an independently playable unit, usually a few
+   seconds in length.
+2. Some old mobile devices or browsers might not support video splitting.
+   Preprocessor split videos by GOP alignment for old clients.
+3. DAG generation. The processor generates DAG based on configuration files
+   client programmers write. __Figure__ 14-12 is a simplified DAG
+   representation which has 2 nodes and 1 edge: 
+   - This DAG representation is generated from the two configuration files below (__Figure__ 14-13):
+4. Cache data. The preprocessor is a cache for segmented videos. For better
+   reliability, the preprocessor stores GOPs and metadata in temporary storage.
+   If video encoding fails, the system could use persisted data for retry
+   operations.
 
-This DAG representation is generated from the two configuration files below (__Figure__ 14-13):
-4. Cache data. The preprocessor is a cache for segmented videos. For better reliability, the
-preprocessor stores GOPs and metadata in temporary storage. If video encoding fails, the
-system could use persisted data for retry operations.
+![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/14.12.png)
 
-DAG scheduler
+![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/14.13.png)
+
+#### DAG scheduler
+
+![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/14.14.png)
 
 The DAG scheduler splits a DAG graph into stages of tasks and puts them in the task queue
 in the resource manager. __Figure__ 14-15 shows an example of how the DAG scheduler works.
+![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/14.15.png)
 
 As shown in __Figure__ 14-15, the original video is split into three stages: Stage 1: video, audio,
 and metadata. The video file is further split into two tasks in stage 2: video encoding and
 thumbnail. The audio file requires audio encoding as part of the stage 2 tasks.
 
-Resource manager
+#### Resource manager
 
-The resource manager is responsible for managing the efficiency of resource allocation. It
-contains 3 queues and a task scheduler as shown in __Figure__ 14-17.
+![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/14.16.png)
+
+The resource manager is responsible for managing the efficiency of resource
+allocation. It contains 3 queues and a task scheduler as shown in __Figure__
+14-17.
 - Task queue: It is a priority queue that contains tasks to be executed.
 - Worker queue: It is a priority queue that contains worker utilization info.
-- Running queue: It contains info about the currently running tasks and workers running
-the tasks.
-- Task scheduler: It picks the optimal task/worker, and instructs the chosen task worker to
-execute the job.
+- Running queue: It contains info about the currently running tasks and workers
+  running the tasks.
+- Task scheduler: It picks the optimal task/worker, and instructs the chosen
+  task worker to execute the job.
+
+![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/14.17.png)
 
 The resource manager works as follows:
 - The task scheduler gets the highest priority task from the task queue.
@@ -5356,220 +5420,241 @@ The resource manager works as follows:
 - The task scheduler binds the task/worker info and puts it in the running queue.
 - The task scheduler removes the job from the running queue once the job is done.
 
-Task workers
+#### Task workers
 
-Task workers run the tasks which are defined in the DAG. Different task workers may run
-different tasks as shown in __Figure__ 14-19.
+![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/14.19.png)
 
-Temporary storage
+Task workers run the tasks which are defined in the DAG. Different task workers
+may run different tasks as shown in __Figure__ 14-19.
+![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/14.19.png)
 
-Multiple storage systems are used here. The choice of storage system depends on factors like
-data type, data size, access frequency, data life span, etc. For instance, metadata is frequently
-accessed by workers, and the data size is usually small. Thus, caching metadata in memory is
-a good idea. For video or audio data, we put them in blob storage. Data in temporary storage
-is freed up once the corresponding video processing is complete.
+#### Temporary storage
 
-Encoded video
+![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/14.20.png)
 
-Encoded video is the final output of the encoding pipeline. Here is an example of the output:
-funny_720p.mp4 .
+Multiple storage systems are used here. The choice of storage system depends on
+factors like data type, data size, access frequency, data life span, etc. For
+instance, metadata is frequently accessed by workers, and the data size is
+usually small. Thus, caching metadata in memory is a good idea. For video or
+audio data, we put them in blob storage. Data in temporary storage is freed up
+once the corresponding video processing is complete.
 
-System optimizations
+#### Encoded video
 
-At this point, you ought to have good understanding about the video uploading flow, video
-streaming flow and video transcoding. Next, we will refine the system with optimizations,
-including speed, safety, and cost-saving.
+![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/14.21.png)
+
+Encoded video is the final output of the encoding pipeline. Here is an example
+of the output: funny_720p.mp4 .
+
+#### System optimizations
+
+At this point, you ought to have good understanding about the video uploading
+flow, video streaming flow and video transcoding. Next, we will refine the
+system with optimizations, including speed, safety, and cost-saving.
 
 Speed optimization: parallelize video uploading
 
 Uploading a video as a whole unit is inefficient. We can split a video into smaller chunks by
 
 GOP alignment as shown in __Figure__ 14-22.
+![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/14.22.png)
 
-This allows fast resumable uploads when the previous upload failed. The job of splitting a
-video file by GOP can be implemented by the client to improve the upload speed as shown in
+This allows fast resumable uploads when the previous upload failed. The job of
+splitting a video file by GOP can be implemented by the client to improve the
+upload speed as shown in __Figure__ 14-23.
+![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/14.23.png)
 
-__Figure__ 14-23.
-
-Speed optimization: place upload centers close to users
+#### Speed optimization: place upload centers close to users
 
 Another way to improve the upload speed is by setting up multiple upload centers across the
 globe (__Figure__ 14-24). People in the United States can upload videos to the North America
 upload center, and people in China can upload videos to the Asian upload center. To achieve
 this, we use CDN as upload centers.
 
-Speed optimization: parallelism everywhere
+![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/14.24.png)
 
-Achieving low latency requires serious efforts. Another optimization is to build a loosely
-coupled system and enable high parallelism.
+#### Speed optimization: parallelism everywhere
 
-Our design needs some modifications to achieve high parallelism. Let us zoom in to the flow
-of how a video is transferred from original storage to the CDN. The flow is shown in __Figure__
-14-25, revealing that the output depends on the input of the previous step. This dependency
-makes parallelism difficult.
+Achieving low latency requires serious efforts. Another optimization is to
+build a loosely coupled system and enable high parallelism.
 
-To make the system more loosely coupled, we introduced message queues as shown in __Figure__
-14-26. Let us use an example to explain how message queues make the system more loosely
-coupled.
-- Before the message queue is introduced, the encoding module must wait for the output of
-the download module.
-- After the message queue is introduced, the encoding module does not need to wait for the
-output of the download module anymore. If there are events in the message queue, the
-encoding module can execute those jobs in parallel.
+Our design needs some modifications to achieve high parallelism. Let us zoom in
+to the flow of how a video is transferred from original storage to the CDN. The
+flow is shown in __Figure__ 14-25, revealing that the output depends on the
+input of the previous step. This dependency makes parallelism difficult.
+![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/14.25.png)
 
-Safety optimization: pre-signed upload URL
+To make the system more loosely coupled, we introduced message queues as shown
+in __Figure__ 14-26. Let us use an example to explain how message queues make
+the system more loosely coupled.
+- Before the message queue is introduced, the encoding module must wait for the
+  output of the download module.
+- After the message queue is introduced, the encoding module does not need to
+  wait for the output of the download module anymore. If there are events in
+  the message queue, the encoding module can execute those jobs in parallel.
+
+![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/14.26.png)
+
+#### Safety optimization: pre-signed upload URL
 
 Safety is one of the most important aspects of any product. To ensure only authorized users
 upload videos to the right location, we introduce pre-signed URLs as shown in __Figure__ 14-27.
 
+![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/14.27.png)
+
 The upload flow is updated as follows:
-1. The client makes a HTTP request to API servers to fetch the pre-signed URL, which
-gives the access permission to the object identified in the URL. The term pre-signed URL
-is used by uploading files to Amazon S3. Other cloud service providers might use a
-different name. For instance, Microsoft Azure blob storage supports the same feature, but
-call it “Shared Access Signature” [10].
+1. The client makes a HTTP request to API servers to fetch the pre-signed URL,
+   which gives the access permission to the object identified in the URL. The
+   term pre-signed URL is used by uploading files to Amazon S3. Other cloud
+   service providers might use a different name. For instance, Microsoft Azure
+   blob storage supports the same feature, but call it “Shared Access
+   Signature” [10].
 2. API servers respond with a pre-signed URL.
-3. Once the client receives the response, it uploads the video using the pre-signed URL.
+3. Once the client receives the response, it uploads the video using the
+   pre-signed URL.
 
-Safety optimization: protect your videos
+#### Safety optimization: protect your videos
 
-Many content makers are reluctant to post videos online because they fear their original
-videos will be stolen. To protect copyrighted videos, we can adopt one of the following three
-safety options:
+Many content makers are reluctant to post videos online because they fear their
+original videos will be stolen. To protect copyrighted videos, we can adopt one
+of the following three safety options:
 - Digital rights management (DRM) systems: Three major DRM systems are Apple
+  FairPlay, Google Widevine, and Microsoft PlayReady.
+- AES encryption: You can encrypt a video and configure an authorization
+  policy. The encrypted video will be decrypted upon playback. This ensures
+  that only authorized users can watch an encrypted video.
+- Visual watermarking: This is an image overlay on top of your video that
+  contains identifying information for your video. It can be your company logo
+  or company name.
 
-FairPlay, Google Widevine, and Microsoft PlayReady.
-- AES encryption: You can encrypt a video and configure an authorization policy. The
-encrypted video will be decrypted upon playback. This ensures that only authorized users
-can watch an encrypted video.
-- Visual watermarking: This is an image overlay on top of your video that contains
-identifying information for your video. It can be your company logo or company name.
+#### Cost-saving optimization
 
-Cost-saving optimization
+CDN is a crucial component of our system. It ensures fast video delivery on a
+global scale.
 
-CDN is a crucial component of our system. It ensures fast video delivery on a global scale.
+However, from the back of the envelope calculation, we know CDN is expensive,
+especially when the data size is large. How can we reduce the cost?
 
-However, from the back of the envelope calculation, we know CDN is expensive, especially
-when the data size is large. How can we reduce the cost?
+Previous research shows that YouTube video streams follow long-tail
+distribution [11] [12].
 
-Previous research shows that YouTube video streams follow long-tail distribution [11] [12].
+![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/14.28.png)
 
-It means a few popular videos are accessed frequently but many others have few or no
-viewers. Based on this observation, we implement a few optimizations:
-1. Only serve the most popular videos from CDN and other videos from our high capacity
-storage video servers (__Figure__ 14-28).
-2. For less popular content, we may not need to store many encoded video versions. Short
-videos can be encoded on-demand.
-3. Some videos are popular only in certain regions. There is no need to distribute these
-videos to other regions.
-4. Build your own CDN like Netflix and partner with Internet Service Providers (ISPs).
+It means a few popular videos are accessed frequently but many others have few
+or no viewers. Based on this observation, we implement a few optimizations:
+1. _Only serve the most popular videos from CDN_ and other videos from our high
+   capacity storage video servers (__Figure__ 14-28).
+2. For less popular content, we may not need to store many encoded video
+   versions. _Short videos can be encoded on-demand_.
+3. _Some videos are popular only in certain regions_. There is no need to
+   distribute these videos to other regions.
+4. _Build your own CDN_ like Netflix and partner with Internet Service
+   Providers (ISPs).
 
-Building your CDN is a giant project; however, this could make sense for large streaming
-companies. An ISP can be Comcast, AT&T, Verizon, or other internet providers. ISPs are
-located all around the world and are close to users. By partnering with ISPs, you can
-improve the viewing experience and reduce the bandwidth charges.
+Building your CDN is a giant project; however, this could make sense for large
+streaming companies. An ISP can be Comcast, AT&T, Verizon, or other internet
+providers. ISPs are located all around the world and are close to users. By
+partnering with ISPs, you can improve the viewing experience and reduce the
+bandwidth charges.
 
-All those optimizations are based on content popularity, user access pattern, video size, etc. It
-is important to analyze historical viewing patterns before doing any optimization. Here are
-some of the interesting articles on this topic: [12] [13].
+All those optimizations are based on content popularity, user access pattern,
+video size, etc. It is important to analyze historical viewing patterns before
+doing any optimization. Here are some of the interesting articles on this
+topic: [12] [13].
 
-Error handling
+#### Error handling
 
-For a large-scale system, system errors are unavoidable. To build a highly fault-tolerant
-system, we must handle errors gracefully and recover from them fast. Two types of errors
-exist:
-- Recoverable error. For recoverable errors such as video segment fails to transcode, the
-general idea is to retry the operation a few times. If the task continues to fail and the
-system believes it is not recoverable, it returns a proper error code to the client.
-- Non-recoverable error. For non-recoverable errors such as malformed video format, the
-system stops the running tasks associated with the video and returns the proper error code
-to the client.
+For a large-scale system, system errors are unavoidable. To build a highly
+fault-tolerant system, we must handle errors gracefully and recover from them
+fast. Two types of errors exist:
+- _Recoverable error_. For recoverable errors such as video segment fails to
+  transcode, the general idea is to retry the operation a few times. If the
+  task continues to fail and the system believes it is not recoverable, it
+  returns a proper error code to the client.
+- _Non-recoverable error_. For non-recoverable errors such as malformed video
+  format, the system stops the running tasks associated with the video and
+  returns the proper error code to the client.
 
-Typical errors for each system component are covered by the following playbook:
+_Typical errors_ for each system component are covered by the following playbook:
 - Upload error: retry a few times.
-- Split video error: if older versions of clients cannot split videos by GOP alignment, the
-entire video is passed to the server. The job of splitting videos is done on the server-side.
+- Split video error: if older versions of clients cannot split videos by GOP
+  alignment, the entire video is passed to the server. The job of splitting
+  videos is done on the server-side.
 - Transcoding error: retry.
 - Preprocessor error: regenerate DAG diagram.
 - DAG scheduler error: reschedule a task.
 - Resource manager queue down: use a replica.
 - Task worker down: retry the task on a new worker.
-- API server down: API servers are stateless so requests will be directed to a different API
-server.
-- Metadata cache server down: data is replicated multiple times. If one node goes down,
-you can still access other nodes to fetch data. We can bring up a new cache server to
-replace the dead one.
+- API server down: API servers are stateless so requests will be directed to a
+  different API server.
+- Metadata cache server down: data is replicated multiple times. If one node
+  goes down, you can still access other nodes to fetch data. We can bring up a
+  new cache server to replace the dead one.
 - Metadata DB server down:
-- Master is down. If the master is down, promote one of the slaves to act as the new
-master.
-- Slave is down. If a slave goes down, you can use another slave for reads and bring
-up another database server to replace the dead one.
+- Master is down. If the master is down, promote one of the slaves to act as
+  the new master.
+- Slave is down. If a slave goes down, you can use another slave for reads and
+  bring up another database server to replace the dead one.
 
 ### Step 4 - Wrap up
 
-In this chapter, we presented the architecture design for video streaming services like
+In this chapter, we presented the architecture design for video streaming
+services like YouTube. If there is extra time at the end of the interview, here
+are a few additional points:
+- Scale the API tier: Because API servers are stateless, it is _easy to scale
+  API tier horizontally_.
+- Scale the database: You can talk about _database replication and sharding_.
+- Live streaming: It refers to the process of how a video is recorded and
+  broadcasted in real time. Although our system is not designed specifically
+  for live streaming, _live streaming and non-live streaming have some
+  similarities_: both require uploading, encoding, and streaming. The notable
+  differences are:
+- _Live streaming has a higher latency requirement_, so it might need a
+  different streaming protocol.
+- _Live streaming has a lower requirement for parallelism_ because small chunks
+  of data are already processed in real-time.
+- _Live streaming requires different sets of error handling_. Any error
+  handling that takes too much time is not acceptable.
+- _Video takedowns_: Videos that violate copyrights, pornography, or other
+  illegal acts shall be removed. Some can be discovered by the system during
+  the upload process, while others might be discovered through user flagging.
 
-YouTube. If there is extra time at the end of the interview, here are a few additional points:
-- Scale the API tier: Because API servers are stateless, it is easy to scale API tier
-horizontally.
-- Scale the database: You can talk about database replication and sharding.
-- Live streaming: It refers to the process of how a video is recorded and broadcasted in real
-time. Although our system is not designed specifically for live streaming, live streaming
-and non-live streaming have some similarities: both require uploading, encoding, and
-streaming. The notable differences are:
-- Live streaming has a higher latency requirement, so it might need a different
-streaming protocol.
-- Live streaming has a lower requirement for parallelism because small chunks of data
-are already processed in real-time.
-- Live streaming requires different sets of error handling. Any error handling that
-takes too much time is not acceptable.
-- Video takedowns: Videos that violate copyrights, pornography, or other illegal acts shall
-be removed. Some can be discovered by the system during the upload process, while
-others might be discovered through user flagging.
-
-Congratulations on getting this far! Now give yourself a pat on the back. Good job!
+Congratulations on getting this far! Now give yourself a pat on the back. Good
+job!
 
 ### Reference Materials
 1. YouTube by the numbers: https://www.omnicoreagency.com/youtube-statistics/
-2. 2019 YouTube Demographics:
-https://blog.hubspot.com/marketing/youtube-demographics
+2. 2019 YouTube Demographics: https://blog.hubspot.com/marketing/youtube-demographics
 3. Cloudfront Pricing: https://aws.amazon.com/cloudfront/pricing/
 4. Netflix on AWS: https://aws.amazon.com/solutions/case-studies/netflix/
 5. Akamai homepage: https://www.akamai.com/
 6. Binary large object: https://en.wikipedia.org/wiki/Binary_large_object
-7. Here’s What You Need to Know About Streaming Protocols:
-https://www.dacast.com/blog/streaming-protocols/
-8. SVE: Distributed Video Processing at Facebook Scale:
-https://www.cs.princeton.edu/~wlloyd/papers/sve-sosp17.pdf
-9. Weibo video processing architecture (in Chinese):
-https://www.upyun.com/opentalk/399.html
-10. Delegate access with a shared access signature:
-https://docs.microsoft.com/en-us/rest/api/storageservices/delegate-access-with-shared-accesssignature
-11. YouTube scalability talk by early YouTube employee: https://www.youtube.com/watch?
-v=w5WVu624fY8
-12. Understanding the characteristics of internet short video sharing: A youtube-based
-measurement study. https://arxiv.org/pdf/0707.3670.pdf
-13. Content Popularity for Open Connect:
-https://netflixtechblog.com/content-popularity-for-open-connect-b86d56f613b
+7. Here’s What You Need to Know About Streaming Protocols: https://www.dacast.com/blog/streaming-protocols/
+8. SVE: Distributed Video Processing at Facebook Scale: https://www.cs.princeton.edu/~wlloyd/papers/sve-sosp17.pdf
+9. Weibo video processing architecture (in Chinese): https://www.upyun.com/opentalk/399.html
+10. Delegate access with a shared access signature: https://docs.microsoft.com/en-us/rest/api/storageservices/delegate-access-with-shared-accesssignature
+11. YouTube scalability talk by early YouTube employee: https://www.youtube.com/watch?v=w5WVu624fY8
+12. Understanding the characteristics of internet short video sharing: A youtube-based measurement study. https://arxiv.org/pdf/0707.3670.pdf
+13. Content Popularity for Open Connect: https://netflixtechblog.com/content-popularity-for-open-connect-b86d56f613b
 
 ## CHAPTER 15: DESIGN GOOGLE DRIVE
 
-In recent years, cloud storage services such as Google Drive, Dropbox, Microsoft
-OneDrive, and Apple iCloud have become very popular. In this chapter, you are
-asked to design Google Drive.
+In recent years, cloud storage services such as Google Drive, Dropbox,
+Microsoft OneDrive, and Apple iCloud have become very popular. In this chapter,
+you are asked to design Google Drive.
 
-Let us take a moment to understand Google Drive before jumping into the design. Google
-
-Drive is a file storage and synchronization service that helps you store documents, photos,
-videos, and other files in the cloud. You can access your files from any computer,
-smartphone, and tablet. You can easily share those files with friends, family, and coworkers
-[1]. __Figure__ 15-1 and 15-2 show what Google drive looks like on a browser and mobile
-application, respectively.
+Let us take a moment to understand Google Drive before jumping into the design.
+Google Drive is a file storage and synchronization service that helps you store
+documents, photos, videos, and other files in the cloud. You can access your
+files from any computer, smartphone, and tablet. You can easily share those
+files with friends, family, and coworkers [1]. __Figure__ 15-1 and 15-2 show
+what Google drive looks like on a browser and mobile application, respectively.
+![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/15.02.png)
 
 ### Step 1 - Understand the problem and establish design scope
 
-Designing a Google drive is a big project, so it is important to ask questions to narrow down
-the scope.
+Designing a Google drive is a big project, so it is important to ask questions
+to narrow down the scope.
 
 - Candidate: What are the most important features?
   - Interviewer: _Upload and download files, file sync, and notifications_. 
@@ -5600,21 +5685,22 @@ In this chapter, we focus on the following features:
 - _Send a notification_ when a file is edited, deleted, or shared with you.
 
 Features not discussed in this chapter include:
-- Google doc editing and collaboration. Google doc allows multiple people to edit the
-same document simultaneously. This is out of our design scope.
+- Google doc editing and collaboration. Google doc allows multiple people to
+  edit the same document simultaneously. This is out of our design scope.
 
-Other than clarifying requirements, it is important to understand non-functional requirements:
-- Reliability. Reliability is extremely important for a storage system. Data loss is
-unacceptable.
-- Fast sync speed. If file sync takes too much time, users will become impatient and
-abandon the product.
-- Bandwidth usage. If a product takes a lot of unnecessary network bandwidth, users will
-be unhappy, especially when they are on a mobile data plan.
-- Scalability. The system should be able to handle high volumes of traffic.
-- High availability. Users should still be able to use the system when some servers are
-offline, slowed down, or have unexpected network errors.
+Other than clarifying requirements, it is important to understand
+non-functional requirements:
+- _Reliability_. Reliability is extremely important for a storage system. Data
+  loss is unacceptable.
+- _Fast sync speed_. If file sync takes too much time, users will become
+  impatient and abandon the product.
+- _Bandwidth usage_. If a product takes a lot of unnecessary network bandwidth,
+  users will be unhappy, especially when they are on a mobile data plan.
+- _Scalability_. The system should be able to handle high volumes of traffic.
+- _High availability_. Users should still be able to use the system when some
+  servers are offline, slowed down, or have unexpected network errors.
 
-Back of the envelope estimation
+_Back of the envelope estimation_
 - Assume the application has 50 million signed up users and 10 million DAU.
 - Users get 10 GB free space.
 - Assume users upload 2 files per day. The average file size is 500 KB.
@@ -5625,36 +5711,43 @@ Back of the envelope estimation
 
 ### Step 2 - Propose high-level design and get buy-in
 
-Instead of showing the high-level design diagram from the beginning, we will use a slightly
-different approach. We will start with something simple: build everything in a single server.
+Instead of showing the high-level design diagram from the beginning, we will
+use a slightly different approach. We will start with something simple: build
+everything in a single server.
 
-Then, gradually scale it up to support millions of users. By doing this exercise, it will refresh
-your memory about some important topics covered in the book.
+Then, gradually scale it up to support millions of users. By doing this
+exercise, it will refresh your memory about some important topics covered in
+the book.
 
 Let us start with a single server setup as listed below:
-- A web server to upload and download files.
-- A database to keep track of metadata like user data, login info, files info, etc.
-- A storage system to store files. We allocate 1TB of storage space to store files.
+- A _web server to upload and download_ files.
+- A _database to keep track of metadata_ like user data, login info, files info,
+  etc.
+- A _storage system to store files_. We allocate 1TB of storage space to store
+  files.
 
-We spend a few hours setting up an Apache web server, a MySql database, and a directory
-called drive/ as the root directory to store uploaded files. Under drive/ directory, there is a list
-of directories, known as namespaces. Each namespace contains all the uploaded files for that
-user. The filename on the server is kept the same as the original file name. Each file or folder
-can be uniquely identified by joining the namespace and the relative path.
+We spend a few hours setting up an Apache web server, a MySql database, and a
+directory called drive/ as the root directory to store uploaded files. Under
+drive/ directory, there is a list of directories, known as namespaces. Each
+namespace contains all the uploaded files for that user. The filename on the
+server is kept the same as the original file name. Each file or folder can be
+uniquely identified by joining the namespace and the relative path.
 
-__Figure__ 15-3 shows an example of how the /drive directory looks like on the left side and its
-expanded view on the right side.
+__Figure__ 15-3 shows an example of how the /drive directory looks like on the
+left side and its expanded view on the right side.
+![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/15.03.png)
 
-APIs
+#### APIs
 
-What do the APIs look like? We primary need 3 APIs: upload a file, download a file, and get
-file revisions.
-1. Upload a file to Google Drive
+What do the APIs look like? We primary need 3 APIs: upload a file, download a
+file, and get file revisions.
+
+##### 1. Upload a file to Google Drive
 
 Two types of uploads are supported:
 - Simple upload. Use this upload type when the file size is small.
-- Resumable upload. Use this upload type when the file size is large and there is high
-chance of network interruption.
+- Resumable upload. Use this upload type when the file size is large and there
+  is high chance of network interruption.
 
 Here is an example of resumable upload API:
 https://api.example.com/files/upload?uploadType=resumable
@@ -5667,18 +5760,23 @@ A resumable upload is achieved by the following 3 steps [2]:
 - Send the initial request to retrieve the resumable URL.
 - Upload the data and monitor upload state.
 - If upload is disturbed, resume the upload.
-2. Download a file from Google Drive
+
+##### 2. Download a file from Google Drive
 
 Example API: https://api.example.com/files/download
 
 Params:
 - path: download file path.
 
+
+```
 Example params:
 {
 "path": "/recipes/soup/best_soup.txt"
 }
-3. Get file revisions
+```
+
+##### 3. Get file revisions
 
 Example API: https://api.example.com/files/list_revisions
 
@@ -5686,79 +5784,96 @@ Params:
 - path: The path to the file you want to get the revision history.
 - limit: The maximum number of revisions to return.
 
+
 Example params:
+
+```
 {
 "path": "/recipes/soup/best_soup.txt",
 "limit": 20
 }
+```
 
-All the APIs require user authentication and use HTTPS. Secure Sockets Layer (SSL)
-protects data transfer between the client and backend servers.
+All the APIs require user authentication and use HTTPS. Secure Sockets Layer
+(SSL) protects data transfer between the client and backend servers.
 
-Move away from single server
+#### Move away from single server
 
-As more files are uploaded, eventually you get the space full alert as shown in __Figure__ 15-4.
+As more files are uploaded, eventually you get the space full alert as shown in
+__Figure__ 15-4.
+![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/15.04.png)
 
-Only 10 MB of storage space is left! This is an emergency as users cannot upload files
-anymore. The first solution comes to mind is to shard the data, so it is stored on multiple
-storage servers. __Figure__ 15-5 shows an example of sharding based on user_id .
+Only 10 MB of storage space is left! This is an emergency as users cannot
+upload files anymore. The first solution comes to mind is to shard the data, so
+it is stored on multiple storage servers. __Figure__ 15-5 shows an example of
+sharding based on user_id .
+![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/15.05.png)
 
-You pull an all-nighter to set up database sharding and monitor it closely. Everything works
-smoothly again. You have stopped the fire, but you are still worried about potential data
-losses in case of storage server outage. You ask around and your backend guru friend Frank
-told you that many leading companies like Netflix and Airbnb use Amazon S3 for storage.
-“Amazon Simple Storage Service (Amazon S3) is an object storage service that offers
-industry-leading scalability, data availability, security, and performance” [3]. You decide to
+You pull an all-nighter to set up database sharding and monitor it closely.
+Everything works smoothly again. You have stopped the fire, but you are still
+worried about potential data losses in case of storage server outage. You ask
+around and your backend guru friend Frank told you that many leading companies
+like Netflix and Airbnb use Amazon S3 for storage. “Amazon Simple Storage
+Service (_Amazon S3_) is an object storage service that offers industry-leading
+scalability, data availability, security, and performance” [3]. You decide to
 do some research to see if it is a good fit.
 
-After a lot of reading, you gain a good understanding of the S3 storage system and decide to
-store files in S3. Amazon S3 supports same-region and cross-region replication. A region is a
-geographic area where Amazon web services (AWS) have data centers. As shown in __Figure__
-15-6, data can be replicated on the same-region (left side) and cross-region (right side).
+After a lot of reading, you gain a good understanding of the S3 storage system
+and decide to store files in S3. Amazon S3 supports same-region and
+cross-region replication. A region is a geographic area where Amazon web
+services (AWS) have data centers. As shown in __Figure__ 15-6, data can be
+replicated on the same-region (left side) and cross-region (right side).
+![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/15.06.png)
 
-Redundant files are stored in multiple regions to guard against data loss and ensure
-availability. A bucket is like a folder in file systems.
+Redundant files are stored in multiple regions to guard against data loss and
+ensure availability. A bucket is like a folder in file systems.
 
-After putting files in S3, you can finally have a good night's sleep without worrying about
-data losses. To stop similar problems from happening in the future, you decide to do further
-research on areas you can improve. Here are a few areas you find:
-- Load balancer: Add a load balancer to distribute network traffic. A load balancer ensures
-evenly distributed traffic, and if a web server goes down, it will redistribute the traffic.
-- Web servers: After a load balancer is added, more web servers can be added/removed
-easily, depending on the traffic load.
-- Metadata database: Move the database out of the server to avoid single point of failure.
-
-In the meantime, set up data replication and sharding to meet the availability and
-scalability requirements.
-- File storage: Amazon S3 is used for file storage. To ensure availability and durability,
-files are replicated in two separate geographical regions.
+After putting files in S3, you can finally have a good night's sleep without
+worrying about data losses. To stop similar problems from happening in the
+future, you decide to do further research on areas you can improve. Here are a
+few areas you find:
+- _Load balancer_: Add a load balancer to distribute network traffic. A load
+  balancer ensures evenly distributed traffic, and if a web server goes down,
+  it will redistribute the traffic.
+- _Web servers_: After a load balancer is added, more web servers can be
+  added/removed easily, depending on the traffic load.
+- _Metadata database_: Move the database out of the server to avoid single
+  point of failure. In the meantime, set up data replication and sharding to
+  meet the availability and scalability requirements.
+- _File storage_: Amazon S3 is used for file storage. To ensure availability
+  and durability, files are replicated in two separate geographical regions.
 
 After applying the above improvements, you have successfully decoupled web servers,
-metadata database, and file storage from a single server. The updated design is shown in
+metadata database, and file storage from a single server. The updated design is
+shown in __Figure__ 15-7.
+![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/15.07.png)
 
-__Figure__ 15-7.
+#### Sync conflicts
 
-Sync conflicts
+For a large storage system like Google Drive, sync conflicts happen from time
+to time. When two users modify the same file or folder at the same time, a
+conflict happens. How can we resolve the conflict? Here is our strategy: the
+first version that gets processed wins, and the version that gets processed
+later receives a conflict. __Figure__ 15-8 shows an example of a sync conflict.
+![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/15.08.png)
 
-For a large storage system like Google Drive, sync conflicts happen from time to time. When
-two users modify the same file or folder at the same time, a conflict happens. How can we
-resolve the conflict? Here is our strategy: the first version that gets processed wins, and the
-version that gets processed later receives a conflict. __Figure__ 15-8 shows an example of a sync
-conflict.
+In __Figure__ 15-8, user 1 and user 2 tries to update the same file at the same
+time, but user 1’s file is processed by our system first. User 1’s update
+operation goes through, but, user 2 gets a sync conflict. How can we resolve
+the conflict for user 2? Our system presents both copies of the same file: user
+2’s local copy and the latest version from the server (__Figure__ 15-9). User 2
+has the option to merge both files or override one version with the other.
+![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/15.09.png)
 
-In __Figure__ 15-8, user 1 and user 2 tries to update the same file at the same time, but user 1’s
-file is processed by our system first. User 1’s update operation goes through, but, user 2 gets
-a sync conflict. How can we resolve the conflict for user 2? Our system presents both copies
-of the same file: user 2’s local copy and the latest version from the server (__Figure__ 15-9). User
-2 has the option to merge both files or override one version with the other.
+While multiple users are editing the same document at the same, it is
+challenging to keep the document synchronized. Interested readers should refer
+to the reference material [4] [5].
 
-While multiple users are editing the same document at the same, it is challenging to keep the
-document synchronized. Interested readers should refer to the reference material [4] [5].
+#### High-level design
 
-High-level design
-
-__Figure__ 15-10 illustrates the proposed high-level design. Let us examine each component of
-the system.
+__Figure__ 15-10 illustrates the proposed high-level design. Let us examine
+each component of the system.
+![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/15.10.png)
 
 User: A user uses the application either through a browser or mobile app.
 
