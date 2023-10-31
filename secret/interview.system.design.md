@@ -215,25 +215,77 @@ requests_per_unit: 5`
 
 ### [CHAPTER 6: DESIGN A KEY-VALUE STORE](#chapter-6-design-a-key-value-store)
 * [Understand the problem and establish design scope](#understand-the-problem-and-establish-design-scope)
+- The size of a key-value pair is small: less than 10 KB.
+- Ability to store big data.
+- High availability: The system responds quickly, even during failures.
+- High scalability: The system can be scaled to support large data set.
+- Automatic scaling: The addition/deletion of servers should be automatic based on traffic.
+- Tunable consistency.
+- Low latency.
 * [Single server key-value store](#single-server-key-value-store)
+- Two **optimizations** can be done to fit more data in a single server:
+- 1. Data _compression_
+- 2. Store only _frequently used data_ in memory and the rest on disk
 * [Distributed key-value store](#distributed-key-value-store)
+- Consider __CAP__
 * [CAP theorem](#cap-theorem)
+- **Consistency**: consistency means all clients see the same data at the same time no matter which node they connect to.
+- **Availability**: availability means any client which requests data gets a response even if some of the nodes are down.
+- **Partition Tolerance**: a partition indicates a communication break between two nodes. Partition tolerance means the system continues to operate despite network partitions.
 * [Ideal situation](#ideal-situation)
+- In the ideal world, network partition never occurs. Data written to n1 is automatically replicated to n2 and n3. Both consistency and availability are achieved.
 * [Real-world distributed systems](#real-world-distributed-systems)
+- ![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/06.03.png)
+- If we choose consistency over availability (CP system), we must block all write operations to n1 and n2 to avoid data inconsistency among these three servers, which makes the system unavailable. 
+  - Bank systems usually have extremely high consistent requirements.
+- if we choose availability over consistency (AP system), the system keeps accepting reads, even though it might return stale data. 
+  - For writes, n1 and n2 will keep accepting writes, and data will be synced to n3 when the network partition is resolved.
 * [System components](#system-components)
+- discuss the following core components and techniques used to build a key-value store:
+  - Data partition
+  - Data replication
+  - Consistency
+  - Inconsistency resolution
+  - Handling failures
+  - System architecture diagram
+  - Write path
+  - Read path
 * [Data partition](#data-partition)
+- Use a hash ring for scaling allowing auto scaling and heterogeneity
 * [Data replication](#data-replication)
+- For better reliability, replicas are placed in distinct data centers, and data centers are connected through high-speed networks.
 * [Consistency](#consistency)
+- Quorum consensus can guarantee consistency for both read and write
+- ![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/06.06.png)
+- `N` = The _number of replicas_
+- `W` = A _write quorum_ of size W. For a write operation to be considered as successful, write operation must be acknowledged from W replicas.
+- `R` = A _read quorum_ of size R. For a read operation to be considered as successful, read operation must wait for responses from at least R replicas.
+- If R = 1 and W = N, the system is _optimized for a fast read_.
+- If W = 1 and R = N, the system is _optimized for fast write_.
+- If W + R > N, _strong consistency is guaranteed_ (Usually N = 3, W = R = 2).
+- If W + R <= N, _strong consistency is not guaranteed_.
 * [Consistency models](#consistency-models)
+- **Strong consistency**: any read operation returns a value corresponding to the result of the most updated write data item. A client never sees out-of-date data.
+- **Weak consistency**: subsequent read operations may not see the most updated value.
+- **Eventual consistency**: this is a specific form of weak consistency. Given enough time, all updates are propagated, and all replicas are consistent.
 * [Inconsistency resolution: versioning](#inconsistency-resolution-versioning)
+- ![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/06.08.png)
+- A **vector clock** is a [server, version] pair associated with a data item. It can be used to check if one version precedes, succeeds, or in conflict with others.
+- ![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/06.09.png)
 * [Handling failures](#handling-failures)
 * [Failure detection](#failure-detection)
+- Gossip Protocol
+- ![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/06.11.png)
 * [Handling temporary failures](#handling-temporary-failures)
+- sloppy quorum: Instead of enforcing the quorum requirement, the system chooses the first W healthy servers for writes and first R healthy servers for reads on the hash ring. Offline servers are ignored.
 * [Handling permanent failures](#handling-permanent-failures)
-* [Step 1: _Divide key space into buckets_ (4 in our example) as shown in Figure](#step-1-_divide-key-space-into-buckets_-4-in-our-example-as-shown-in-__figure)
-* [Step 2: Once the buckets are created, _hash each key in a bucket_ using a uniform](#step-2-once-the-buckets-are-created-_hash-each-key-in-a-bucket_-using-a-uniform)
-* [Step 3: _Create a single hash node per bucket_ (Figure 6-15).](#step-3-_create-a-single-hash-node-per-bucket_-__figure__-6-15)
-* [Step 4: Build the tree upwards till root by _calculating hashes of children_](#step-4-build-the-tree-upwards-till-root-by-_calculating-hashes-of-children)
+- Anti-entropy involves comparing each piece of data on replicas and updating each replica to the newest version. 
+- A __Merkle tree__ is used for inconsistency detection and minimizing the amount of data transferred.
+  - a possible configuration is one million buckets per one billion keys, so each bucket only contains 1000 keys.
+  - [Step 1: _Divide key space into buckets_ (4 in our example) as shown in Figure](#step-1-_divide-key-space-into-buckets_-4-in-our-example-as-shown-in-__figure)
+  - [Step 2: Once the buckets are created, _hash each key in a bucket_ using a uniform](#step-2-once-the-buckets-are-created-_hash-each-key-in-a-bucket_-using-a-uniform)
+  - [Step 3: _Create a single hash node per bucket_ (Figure 6-15).](#step-3-_create-a-single-hash-node-per-bucket_-__figure__-6-15)
+  - [Step 4: Build the tree upwards till root by _calculating hashes of children_](#step-4-build-the-tree-upwards-till-root-by-_calculating-hashes-of-children)
 * [Handling data center outage](#handling-data-center-outage)
 * [System architecture diagram](#system-architecture-diagram)
 * [Write path](#write-path)
