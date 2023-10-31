@@ -305,19 +305,48 @@ requests_per_unit: 5`
 
 ### [CHAPTER 7: DESIGN A UNIQUE ID GENERATOR IN DISTRIBUTED SYSTEMS](#chapter-7-design-a-unique-id-generator-in-distributed-systems)
 * [Step 1 - Understand the problem and establish design scope](#step-1---understand-the-problem-and-establish-design-scope-2)
+- IDs must be unique.
+- IDs are numerical values only.
+- IDs fit into 64-bit.
+- IDs are ordered by date.
+- Ability to generate over 10,000 unique IDs per second.
 * [Step 2 - Propose high-level design and get buy-in](#step-2---propose-high-level-design-and-get-buy-in-2)
+- The options we considered are:
+  - Multi-master replication
+  - Universally unique identifier (UUID)
+  - Ticket server
+  - Twitter snowflake approach
 * [Multi-master replication](#multi-master-replication)
+- Use inherent DB auto_increment. Scalability concerns and doesn't meet ID tied to time
 * [UUID](#uuid)
+- Too long (128 bits) and not time based
 * [Ticket Server](#ticket-server)
+- Central (SPOF) Db to generate IDs
 * [Twitter snowflake approach](#twitter-snowflake-approach)
+- ![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/07.05.png)
 * [Step 3 - Design deep dive](#step-3---design-deep-dive-2)
-  * [Timestamp](#timestamp)
-  * [Sequence number](#sequence-number)
+* [Timestamp](#timestamp)
+- The maximum timestamp that can be represented in 41 bits is 2 ^ 41 - 1 = 2199023255551 milliseconds (ms), which gives us: ~ 69 years = 2199023255551 ms / 1000 seconds / 365 days / 24 hours/ 3600 seconds.
+* [Sequence number](#sequence-number)
 * [Step 4 - Wrap up](#step-4---wrap-up-2)
-* [Reference materials](#reference-materials-5)
+- If there is extra time at the end of the interview, here are a few additional talking points:
+  - _Clock synchronization_. In our design, we assume ID generation servers have the same clock. This assumption might not be true when a server is running on multiple cores. The same challenge exists in multi-machine scenarios. Solutions to clock synchronization are out of the scope of this book; however, it is important to understand the problem exists. Network Time Protocol is the most popular solution to this problem. For interested readers, refer to the reference material \[4\].
+  - _Section length tuning_. For example, fewer sequence numbers but more timestamp bits are effective for low concurrency and long-term applications.
+  - _High availability_. Since an ID generator is a mission-critical system, it must be highly available.
 
 ### [CHAPTER 8: DESIGN A URL SHORTENER](#chapter-8-design-a-url-shortener)
 * [Step 1 - Understand the problem and establish design scope](#step-1---understand-the-problem-and-establish-design-scope-3)
+- Here are the basic use cases:
+  1. _URL shortening_: given a long URL => return a much shorter URL
+  2. _URL redirecting_: given a shorter URL => redirect to the original URL
+  3. _High availability_, scalability, and fault tolerance considerations
+- Back of the envelope estimation
+  - _Write operation_: 100 million URLs are generated per day.
+  - _Write operation per second_: 100 million / 24 /3600 = 1160
+  - _Read operation_: Assuming ratio of read operation to write operation is 10:1, read operation per second: 1160 \* 10 = 11,600
+  - _Assuming the URL shortener service will run for 10 years_, this means we must support 100 million \* 365 \* 10 = 365 billion records.
+  - _Assume average URL length is 100_.
+  - _Storage requirement over 10 years_: 365 billion \* 100 bytes \* 10 years = 365 TB
 * [Step 2 - Propose high-level design and get buy-in](#step-2---propose-high-level-design-and-get-buy-in-3)
 * [API Endpoints](#api-endpoints)
 * [URL redirecting](#url-redirecting)
