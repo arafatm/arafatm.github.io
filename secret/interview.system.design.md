@@ -287,9 +287,19 @@ requests_per_unit: 5`
   - [Step 3: _Create a single hash node per bucket_ (Figure 6-15).](#step-3-_create-a-single-hash-node-per-bucket_-__figure__-6-15)
   - [Step 4: Build the tree upwards till root by _calculating hashes of children_](#step-4-build-the-tree-upwards-till-root-by-_calculating-hashes-of-children)
 * [Handling data center outage](#handling-data-center-outage)
+- replicate across DCs
 * [System architecture diagram](#system-architecture-diagram)
+- ![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/06.17.png)
+- Clients communicate with the key-value store through simple APIs: get(key) and put(key, value).
+- A coordinator is a node that acts as a proxy between the client and the key-value store.
+- Nodes are distributed on a ring using consistent hashing.
+- The system is completely decentralized so adding and moving nodes can be automatic.
+- Data is replicated at multiple nodes.
+- There is no single point of failure as every node has the same set of responsibilities.
 * [Write path](#write-path)
+- ![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/06.19.png)
 * [Read path](#read-path)
+- ![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/06.20.png)
 * [Summary](#summary)
 * [Reference materials](#reference-materials-4)
 
