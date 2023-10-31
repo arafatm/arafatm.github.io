@@ -349,18 +349,45 @@ requests_per_unit: 5`
   - _Storage requirement over 10 years_: 365 billion \* 100 bytes \* 10 years = 365 TB
 * [Step 2 - Propose high-level design and get buy-in](#step-2---propose-high-level-design-and-get-buy-in-3)
 * [API Endpoints](#api-endpoints)
+- ![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/08.01.png)
 * [URL redirecting](#url-redirecting)
+- If the priority is to reduce the server load, using 301 redirect makes sense as only the first request of the same URL is sent to URL shortening servers.
+- However, if analytics is important, 302 redirect is a better choice as it can track click rate and source of the click more easily.
 * [URL shortening](#url-shortening)
+- `www.tinyurl.com/{hashValue}`
 * [Step 3 - Design deep dive](#step-3---design-deep-dive-3)
 * [Data model](#data-model)
+- A hash table can be expensive and resource hungry. RDBMS is probably more ideal
 * [Hash function](#hash-function)
 * [Hash value length](#hash-value-length)
+- The hashValue consists of characters from [0-9, a-z, A-Z], containing 10 + 26 + 26 = 62 possible characters. 
+- To figure out the length of hashValue, find the smallest n such that 62^n ≥ 365 billion. 
+- The system must support up to 365 billion URLs based on the back of the envelope estimation. 
+- When n = 7, 62 ^ n = ~3.5 trillion, 3.5 trillion is more than enough to hold 365 billion URLs, so the length of hashValue is 7.
 * [Hash + collision resolution](#hash--collision-resolution)
+- ![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/08.t.02.png)
+- Use __bloom filter__ to detect hash collisions
 * [Base 62 conversion](#base-62-conversion)
 * [Comparison of the two approaches](#comparison-of-the-two-approaches)
+- Base 62:
+  - URL length is not fixed
+  - depends on unique ID generator (CHAP 7)
+  - collision impossible (based on unique ID)
+  - security concern that you can rev eng the next shorturl
 * [URL shortening deep dive](#url-shortening-deep-dive)
+- Assuming the input longURL is: [https://en.wikipedia.org/wiki/Systems\_design](https://en.wikipedia.org/wiki/Systems_design)
+- Unique ID generator returns ID: 2009215674938.
+- Convert the ID to shortURL using the base 62 conversion. ID (2009215674938) is converted to “zn9edcu”.
+- Save ID, shortURL, and longURL to the database as shown in Table 8-4.
 * [URL redirecting deep dive](#url-redirecting-deep-dive)
+- ![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/08.08.png)
 * [Step 4 - Wrap up](#step-4---wrap-up-3)
+- here are a few additional talking points.
+  - _Rate limiter_: A potential security problem we could face is that malicious users send an overwhelmingly large number of URL shortening requests. Rate limiter helps to filter out requests based on IP address or other filtering rules. If you want to refresh your memory about rate limiting, refer to “Chapter 4: Design a rate limiter”.
+  - _Web server scaling_: Since the web tier is stateless, it is easy to scale the web tier by adding or removing web servers.
+  - _Database scaling_: Database replication and sharding are common techniques.
+  - _Analytics_: Data is increasingly important for business success. Integrating an analytics solution to the URL shortener could help to answer important questions like how many people click on a link? When do they click the link? etc.
+  - _Availability, consistency, and reliability_. These concepts are at the core of any large system’s success. We discussed them in detail in Chapter 1, please refresh your memory on these topics.
 * [Reference materials](#reference-materials-6)
 
 ### [CHAPTER 9: DESIGN A WEB CRAWLER](#chapter-9-design-a-web-crawler)
