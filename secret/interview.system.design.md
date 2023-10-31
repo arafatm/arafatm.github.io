@@ -29,6 +29,7 @@ inoremap png ![](https://raw.githubusercontent.com/arafatm/assets/main/img/syste
 * [Database replication](#database-replication)
 - Primary DB for write, (multiple) Secondary for Read
   - Performance, Reliability, HA
+  - Secondary Data will be stale
 * [Cache](#cache)
 * [Cache tier](#cache-tier)
 * [Considerations for using cache](#considerations-for-using-cache)
