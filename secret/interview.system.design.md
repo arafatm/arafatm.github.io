@@ -2948,9 +2948,12 @@ minimal delay is challenging.
 
 Here are a few examples of unique IDs:
 
-| user_id    | | --         | | 1234567890 | | 2345678901 | | 3456789012 | |
-4567890123 | | 5678901234 | | 6789012345 | | 7890123456 | | 8901234567 | |
-9012345678 | | 9876543210 |
+| user_id    | 
+| --         | 
+| 1234567890 | 
+| 2345678901 | 
+| 3456789012 | 
+| 4567890123 | 
 
 ### Step 1 - Understand the problem and establish design scope
 
