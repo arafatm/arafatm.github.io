@@ -14,35 +14,44 @@ inoremap png ![](https://raw.githubusercontent.com/arafatm/assets/main/img/syste
 ## Notes
 
 ### [CHAPTER 1: SCALE FROM ZERO TO MILLIONS OF USERS](#chapter-1-scale-from-zero-to-millions-of-users)
-* [Single server setup](#single-server-setup)
-* [request flow](#request-flow)
-* [traffic source](#traffic-source)
-* [Database](#database)
-- split web/db for independent scaling
-* [Which databases to use?](#which-databases-to-use)
-- RDBMS vs NoSQL
-* [Vertical scaling vs horizontal scaling](#vertical-scaling-vs-horizontal-scaling)
-- Vert has hard limit and no failover/redundancy
-- Vert is easier to scale
-* [Load balancer](#load-balancer)
-- distribute incoming traffic
-* [Database replication](#database-replication)
-- Primary DB for write, (multiple) Secondary for Read
+https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/01.19.png
+
+- [Single server setup](#single-server-setup)
+- [request flow](#request-flow)
+- [traffic source](#traffic-source)
+- [Database](#database)
+  - split web/db for independent scaling
+- [Which databases to use?](#which-databases-to-use)
+  - RDBMS vs NoSQL
+- [Vertical scaling vs horizontal scaling](#vertical-scaling-vs-horizontal-scaling)
+  - Vert has hard limit and no failover/redundancy
+  - Vert is easier to scale
+- [Load balancer](#load-balancer)
+  - distribute incoming traffic
+- [Database replication](#database-replication)
+  - Primary DB for write, (multiple) Secondary for Read
   - Performance, Reliability, HA
-  - Secondary Data will be stale
-* [Cache](#cache)
-* [Cache tier](#cache-tier)
-* [Considerations for using cache](#considerations-for-using-cache)
-* [Content delivery network (CDN)](#content-delivery-network-cdn)
-* [Stateless web tier](#stateless-web-tier)
-* [Stateful architecture](#stateful-architecture)
-* [Stateless architecture](#stateless-architecture)
-* [Data centers](#data-centers)
-* [Message queue](#message-queue)
-* [Adding message queues and different tools](#adding-message-queues-and-different-tools)
-* [Database scaling](#database-scaling)
-* [Millions of users and beyond](#millions-of-users-and-beyond)
-* [Reference materials](#reference-materials)
+  - Consider Secondary Data will be stale
+- [Cache](#cache)
+  - Cache frequently read, rarely updated data for faster retrieval
+  - e.g. memcache
+  - Temp data store, faster than db
+  - consider for "write-rarely" data, 
+  - expiration policy, 
+  - consistency (hard to sync across datastores), 
+  - spof (can use multi cache across DC), 
+  - eviction policy
+- [Content delivery network (CDN)](#content-delivery-network-cdn)
+  - Use for static content, 
+  - expiration policy as can be expensive
+- [Stateless web tier](#stateless-web-tier)
+  - allows horizontal scaling of web tier
+  - cache state in memcache/redis/nosql
+- [Data centers](#data-centers)
+  - georouting w/ geoDNS for "nearest DC"
+- [Message queue](#message-queue)
+  - defer long running jobs e.g. photo processing (blur/crop/etc)
+
 ### [CHAPTER 2: BACK-OF-THE-ENVELOPE ESTIMATION](#chapter-2-back-of-the-envelope-estimation)
 * [Power of two](#power-of-two)
 * [Latency numbers every programmer should know](#latency-numbers-every-programmer-should-know)
