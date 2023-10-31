@@ -105,51 +105,112 @@ inoremap png ![](https://raw.githubusercontent.com/arafatm/assets/main/img/syste
 - get feedback
 - draw diagrams
 - do back-of-envolope calculations
-* [Communicate with your interviewer.](#communicate-with-your-interviewer)
+* [__Communicate with your interviewer__.](#communicate-with-your-interviewer)
 * [Step 3 - Design deep dive](#step-3---design-deep-dive)
-* [Example](#example-1)
 * [Step 4 - Wrap up](#step-4---wrap-up)
 * [Dos](#dos)
+- Always ask for clarification. Do not assume your assumption is correct.
+- Understand the requirements of the problem.
+- There is neither the right answer nor the best answer. A solution designed to
+  solve the problems of a young startup is different from that of an
+  established company with millions of users. Make sure you understand the
+  requirements.
+- Let the interviewer know what you are thinking. Communicate with your
+  interview.
+- Suggest multiple approaches if possible.
+- Once you agree with your interviewer on the blueprint, go into details on
+  each component. Design the most critical components first.
+- Bounce ideas off the interviewer. A good interviewer works with you as a
+  teammate.
+- Never give up.
 * [Don’ts](#donts)
+- Don't be unprepared for typical interview questions.
+- Don’t jump into a solution without clarifying the requirements and
+  assumptions.
+- Don’t go into too much detail on a single component in the beginning. Give
+  the highlevel design first then drills down.
+- If you get stuck, don't hesitate to ask for hints.
+- Again, communicate. Don't think in silence.
+- Don’t think your interview is done once you give the design. You are not done
+  until your interviewer says you are done. Ask for feedback early and often.
 * [Time allocation on each step](#time-allocation-on-each-step)
+- 3-10 mins: Step 1 __Understand the problem and establish design scope__: 3 - 10 minutes
+- 10-15 mins: Step 2 __Propose high-level design and get buy-in__: 10 - 15 minutes
+- 10-25 mins: Step 3 __Design deep dive__: 10 - 25 minutes
+- 5 mins: Step 4 __Wrap__: 3 - 5 minutes
 
 ### [CHAPTER 4: DESIGN A RATE LIMITER](#chapter-4-design-a-rate-limiter)
 * [Step 1 - Understand the problem and establish design scope](#step-1---understand-the-problem-and-establish-design-scope-1)
+- Accurately limit excessive requests.
+- Low latency. The rate limiter should not slow down HTTP response time.
+- Use as little memory as possible.
+- Distributed rate limiting. The rate limiter can be shared across multiple servers or processes.
+- Exception handling. Show clear exceptions to users when their requests are throttled.
+- High fault tolerance. If there are any problems with the rate limiter (for example, a cache server goes offline), it does not affect the entire system.
 * [Step 2 - Propose high-level design and get buy-in](#step-2---propose-high-level-design-and-get-buy-in-1)
-  * [Where to put the rate limiter?](#where-to-put-the-rate-limiter)
-  * [Algorithms for rate limiting](#algorithms-for-rate-limiting)
-    * [Token bucket algorithm](#token-bucket-algorithm)
-    * [Leaking bucket algorithm](#leaking-bucket-algorithm)
-    * [Fixed window counter algorithm](#fixed-window-counter-algorithm)
-    * [Sliding window log algorithm](#sliding-window-log-algorithm)
-    * [Sliding window counter algorithm](#sliding-window-counter-algorithm)
-  * [High-level architecture](#high-level-architecture)
+* [Where to put the rate limiter?](#where-to-put-the-rate-limiter)
+- _middleware_ vs client vs server side
+  - e.g. cloudflare or AWS API Gateway
+* [Algorithms for rate limiting](#algorithms-for-rate-limiting) vs [Token bucket algorithm](#token-bucket-algorithm) vs [Leaking bucket algorithm](#leaking-bucket-algorithm) vs [Fixed window counter algorithm](#fixed-window-counter-algorithm) vs [Sliding window log algorithm](#sliding-window-log-algorithm) vs [Sliding window counter algorithm](#sliding-window-counter-algorithm)
+- Hard vs Soft rate limiting
+- ![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/04.12.png)
+* [High-level architecture](#high-level-architecture)
 * [Step 3 - Design deep dive](#step-3---design-deep-dive-1)
-  * [Rate limiting rules](#rate-limiting-rules)
-  * [Exceeding the rate limit](#exceeding-the-rate-limit)
-  * [Rate limiter headers](#rate-limiter-headers)
-  * [Detailed design](#detailed-design)
-  * [Rate limiter in a distributed environment](#rate-limiter-in-a-distributed-environment)
-    * [Race condition](#race-condition)
-    * [Synchronization issue](#synchronization-issue)
-  * [Performance optimization](#performance-optimization)
-  * [Monitoring](#monitoring)
+* [Rate limiting rules](#rate-limiting-rules)
+```
+domain: auth 
+descriptors: 
+- key: auth_type 
+Value: login 
+rate_limit: 
+unit: minute 
+requests_per_unit: 5`
+```
+* [Exceeding the rate limit](#exceeding-the-rate-limit)
+- HTTP response code `429` (too many requests)
+* [Rate limiter headers](#rate-limiter-headers)
+- `X-Ratelimit-Remaining`: The remaining number of allowed requests within the window.
+- `X-Ratelimit-Limit`: It indicates how many calls the client can make per time window.
+- `X-Ratelimit-Retry-After`: The number of seconds to wait until you can make a request again without being throttled.
+* [Detailed design](#detailed-design)
+- ![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/04.13.png)
+* [Rate limiter in a distributed environment](#rate-limiter-in-a-distributed-environment)
+- Can lead to race condition
+- Can lock, but that slows system design
+- Use sorted sets data structure in Redis
+* [Synchronization issue](#synchronization-issue)
+- Use central data store like Redis
+- ![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/04.16.png)
+* [Performance optimization](#performance-optimization)
+- Route to closest edge server
+- eventual consistency of data
+* [Monitoring](#monitoring)
 * [Step 4 - Wrap up](#step-4---wrap-up-1)
 * [Reference Materials](#reference-materials-2)
 
 ### [CHAPTER 5: DESIGN CONSISTENT HASHING](#chapter-5-design-consistent-hashing)
 * [The rehashing problem](#the-rehashing-problem)
+- `serverIndex = hash(key) % N`
 * [Consistent hashing](#consistent-hashing)
-  * [Hash space and hash ring](#hash-space-and-hash-ring)
+- Avoid having to rekey hashes when server is added/removed
+* [Hash space and hash ring](#hash-space-and-hash-ring)
 * [Hash servers](#hash-servers)
 * [Hash keys](#hash-keys)
 * [Server lookup](#server-lookup)
 * [Add a server](#add-a-server)
+- ![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/05.08.png)
 * [Remove a server](#remove-a-server)
 * [Two issues in the basic approach](#two-issues-in-the-basic-approach)
+1. Keeping server sizes relatively equal
 * [Virtual nodes](#virtual-nodes)
+- ![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/05.12.png)
+- As the number of virtual nodes increases, the distribution of keys becomes more balanced.
 * [Find affected keys](#find-affected-keys)
 * [Wrap up](#wrap-up)
+- The benefits of consistent hashing include:
+- Minimized keys are redistributed when servers are added or removed.
+- It is easy to scale horizontally because data are more evenly distributed.
+- Mitigate hotspot key problem. Excessive access to a specific shard could cause server overload. Imagine data for Katy Perry, Justin Bieber, and Lady Gaga all end up on the same shard. Consistent hashing helps to mitigate the problem by distributing the data more evenly.
 * [Reference Materials](#reference-materials-3)
 
 ### [CHAPTER 6: DESIGN A KEY-VALUE STORE](#chapter-6-design-a-key-value-store)
