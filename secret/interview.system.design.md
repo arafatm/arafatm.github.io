@@ -54,17 +54,57 @@ inoremap png ![](https://raw.githubusercontent.com/arafatm/assets/main/img/syste
   - Logging/metrics/monitoring/automation
 
 ### [CHAPTER 2: BACK-OF-THE-ENVELOPE ESTIMATION](#chapter-2-back-of-the-envelope-estimation)
+![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/02.01.png)
+- Memory is fast but the disk is slow.
+- Avoid disk seeks if possible.
+- Simple compression algorithms are fast.
+- Compress data before sending it over the internet if possible.
+- Data centers are usually in different regions, and it takes time to send data between them.
 * [Power of two](#power-of-two)
+  - ASCII is 8 bits (1 byte)
 * [Latency numbers every programmer should know](#latency-numbers-every-programmer-should-know)
 * [Availability numbers](#availability-numbers)
+- 99% = 3.65 days / year
+- 99.9%	= 8.77 hours / year
+- 99.99%	= 52.60 mins / year
+- 99.999%	= 5.26 mins / year
+- 99.9999%	= 31.56 sec / year
 * [Example: Estimate Twitter QPS and storage requirements](#example-estimate-twitter-qps-and-storage-requirements)
-* [Tips](#tips)
-* [Reference materials](#reference-materials-1)
+
+- Assumptions:
+- 300 million monthly active users.
+- 50% of users use Twitter daily.
+- Users post 2 tweets per day on average.
+- 10% of tweets contain media.
+- Data is stored for 5 years.
+
+- Estimations:
+- Query per second (QPS) estimate:
+  - Daily active users (DAU) = 300 million * 50% = 150 million
+  - Tweets QPS = 150 million * 2 tweets / 24 hour / 3600 seconds = ~3500
+  - Peek QPS = 2 * QPS = ~7000
+- Average tweet size.: We will only estimate media storage here.
+  - tweet_id 64 bytes
+  - text 140 bytes
+  - media 1 MB
+- Media storage: 150 million * 2 * 10% * 1 MB = 30 TB per day
+- 5-year media storage: 30 TB * 365 * 5 = ~55 PB
+
 ### [CHAPTER 3: A FRAMEWORK FOR SYSTEM DESIGN INTERVIEWS](#chapter-3-a-framework-for-system-design-interviews)
 * [A 4-step process for effective system design interview](#a-4-step-process-for-effective-system-design-interview)
-    * [Step 1 - Understand the problem and establish design scope](#step-1---understand-the-problem-and-establish-design-scope)
+* [Step 1 - Understand the problem and establish design scope](#step-1---understand-the-problem-and-establish-design-scope)
+- What specific features are we going to build?
+- How many users does the product have?
+- How fast does the company anticipate to scale up?
+- What are the anticipated scales in 3 months, 6 months, and a year?
+- What is the company’s technology stack?
+- What existing services you might leverage to simplify the design?
 * [Example](#example)
 * [Step 2 - Propose high-level design and get buy-in](#step-2---propose-high-level-design-and-get-buy-in)
+- start with initial blueprint
+- get feedback
+- draw diagrams
+- do back-of-envolope calculations
 * [Communicate with your interviewer.](#communicate-with-your-interviewer)
 * [Step 3 - Design deep dive](#step-3---design-deep-dive)
 * [Example](#example-1)
@@ -72,6 +112,7 @@ inoremap png ![](https://raw.githubusercontent.com/arafatm/assets/main/img/syste
 * [Dos](#dos)
 * [Don’ts](#donts)
 * [Time allocation on each step](#time-allocation-on-each-step)
+
 ### [CHAPTER 4: DESIGN A RATE LIMITER](#chapter-4-design-a-rate-limiter)
 * [Step 1 - Understand the problem and establish design scope](#step-1---understand-the-problem-and-establish-design-scope-1)
 * [Step 2 - Propose high-level design and get buy-in](#step-2---propose-high-level-design-and-get-buy-in-1)
@@ -95,6 +136,7 @@ inoremap png ![](https://raw.githubusercontent.com/arafatm/assets/main/img/syste
   * [Monitoring](#monitoring)
 * [Step 4 - Wrap up](#step-4---wrap-up-1)
 * [Reference Materials](#reference-materials-2)
+
 ### [CHAPTER 5: DESIGN CONSISTENT HASHING](#chapter-5-design-consistent-hashing)
 * [The rehashing problem](#the-rehashing-problem)
 * [Consistent hashing](#consistent-hashing)
@@ -109,6 +151,7 @@ inoremap png ![](https://raw.githubusercontent.com/arafatm/assets/main/img/syste
 * [Find affected keys](#find-affected-keys)
 * [Wrap up](#wrap-up)
 * [Reference Materials](#reference-materials-3)
+
 ### [CHAPTER 6: DESIGN A KEY-VALUE STORE](#chapter-6-design-a-key-value-store)
 * [Understand the problem and establish design scope](#understand-the-problem-and-establish-design-scope)
 * [Single server key-value store](#single-server-key-value-store)
@@ -136,6 +179,7 @@ inoremap png ![](https://raw.githubusercontent.com/arafatm/assets/main/img/syste
 * [Read path](#read-path)
 * [Summary](#summary)
 * [Reference materials](#reference-materials-4)
+
 ### [CHAPTER 7: DESIGN A UNIQUE ID GENERATOR IN DISTRIBUTED SYSTEMS](#chapter-7-design-a-unique-id-generator-in-distributed-systems)
 * [Step 1 - Understand the problem and establish design scope](#step-1---understand-the-problem-and-establish-design-scope-2)
 * [Step 2 - Propose high-level design and get buy-in](#step-2---propose-high-level-design-and-get-buy-in-2)
@@ -148,6 +192,7 @@ inoremap png ![](https://raw.githubusercontent.com/arafatm/assets/main/img/syste
   * [Sequence number](#sequence-number)
 * [Step 4 - Wrap up](#step-4---wrap-up-2)
 * [Reference materials](#reference-materials-5)
+
 ### [CHAPTER 8: DESIGN A URL SHORTENER](#chapter-8-design-a-url-shortener)
 * [Step 1 - Understand the problem and establish design scope](#step-1---understand-the-problem-and-establish-design-scope-3)
 * [Step 2 - Propose high-level design and get buy-in](#step-2---propose-high-level-design-and-get-buy-in-3)
@@ -165,6 +210,7 @@ inoremap png ![](https://raw.githubusercontent.com/arafatm/assets/main/img/syste
 * [URL redirecting deep dive](#url-redirecting-deep-dive)
 * [Step 4 - Wrap up](#step-4---wrap-up-3)
 * [Reference materials](#reference-materials-6)
+
 ### [CHAPTER 9: DESIGN A WEB CRAWLER](#chapter-9-design-a-web-crawler)
 * [Step 1 - Understand the problem and establish design scope](#step-1---understand-the-problem-and-establish-design-scope-4)
 * [Back of the envelope estimation](#back-of-the-envelope-estimation)
@@ -203,6 +249,7 @@ inoremap png ![](https://raw.githubusercontent.com/arafatm/assets/main/img/syste
   * [3. Data noise](#3-data-noise)
   * [Step 4 - Wrap up](#step-4---wrap-up-4)
 * [Reference materials](#reference-materials-7)
+
 ### [CHAPTER 10: DESIGN A NOTIFICATION SYSTEM](#chapter-10-design-a-notification-system)
 * [Step 1 - Understand the problem and establish design scope](#step-1---understand-the-problem-and-establish-design-scope-5)
 * [Step 2 - Propose high-level design and get buy-in](#step-2---propose-high-level-design-and-get-buy-in-5)
@@ -242,6 +289,7 @@ inoremap png ![](https://raw.githubusercontent.com/arafatm/assets/main/img/syste
 * [Updated design](#updated-design)
 * [Step 4 - Wrap up](#step-4---wrap-up-5)
 * [Reference materials](#reference-materials-8)
+
 ### [CHAPTER 11: DESIGN A NEWS FEED SYSTEM](#chapter-11-design-a-news-feed-system)
 * [Step 1 - Understand the problem and establish design scope](#step-1---understand-the-problem-and-establish-design-scope-6)
 * [Step 2 - Propose high-level design and get buy-in](#step-2---propose-high-level-design-and-get-buy-in-6)
@@ -263,6 +311,7 @@ inoremap png ![](https://raw.githubusercontent.com/arafatm/assets/main/img/syste
   * [Scaling the database:](#scaling-the-database)
   * [Other talking points:](#other-talking-points)
 * [Reference materials](#reference-materials-9)
+
 ### [CHAPTER 12: DESIGN A CHAT SYSTEM](#chapter-12-design-a-chat-system)
 * [Step 1 - Understand the problem and establish design scope](#step-1---understand-the-problem-and-establish-design-scope-7)
 * [Step 2 - Propose high-level design and get buy-in](#step-2---propose-high-level-design-and-get-buy-in-7)
@@ -292,6 +341,7 @@ inoremap png ![](https://raw.githubusercontent.com/arafatm/assets/main/img/syste
     * [Online status fanout](#online-status-fanout)
 * [Step 4 - Wrap up](#step-4---wrap-up-7)
 * [Reference Materials](#reference-materials-10)
+
 ### [CHAPTER 13: DESIGN A SEARCH AUTOCOMPLETE SYSTEM](#chapter-13-design-a-search-autocomplete-system)
 * [Step 1 - Understand the problem and establish design scope](#step-1---understand-the-problem-and-establish-design-scope-8)
   * [Requirements](#requirements)
@@ -312,6 +362,7 @@ inoremap png ![](https://raw.githubusercontent.com/arafatm/assets/main/img/syste
   * [Scale the storage](#scale-the-storage)
 * [Step 4 - Wrap up](#step-4---wrap-up-8)
 * [Reference Materials](#reference-materials-11)
+
 ### [CHAPTER 14: DESIGN YOUTUBE](#chapter-14-design-youtube)
 * [Step 1 - Understand the problem and establish design scope](#step-1---understand-the-problem-and-establish-design-scope-9)
   * [Back of the envelope estimation](#back-of-the-envelope-estimation-1)
@@ -339,6 +390,7 @@ inoremap png ![](https://raw.githubusercontent.com/arafatm/assets/main/img/syste
   * [Error handling](#error-handling)
 * [Step 4 - Wrap up](#step-4---wrap-up-9)
 * [Reference Materials](#reference-materials-12)
+
 ### [CHAPTER 15: DESIGN GOOGLE DRIVE](#chapter-15-design-google-drive)
 * [Step 1 - Understand the problem and establish design scope](#step-1---understand-the-problem-and-establish-design-scope-10)
 * [Step 2 - Propose high-level design and get buy-in](#step-2---propose-high-level-design-and-get-buy-in-10)
@@ -376,9 +428,11 @@ inoremap png ![](https://raw.githubusercontent.com/arafatm/assets/main/img/syste
   * [Failure Handling](#failure-handling)
 * [Step 4 - Wrap up](#step-4---wrap-up-10)
 * [Reference Materials](#reference-materials-13)
+
 ### [CHAPTER 16: THE LEARNING CONTINUES](#chapter-16-the-learning-continues)
 * [Real-world systems](#real-world-systems)
 * [Company engineering blogs](#company-engineering-blogs)
+
 ### [AFTERWORD](#afterword)
 
 ## TODO/Links
