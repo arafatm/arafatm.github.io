@@ -14,8 +14,7 @@ inoremap png ![](https://raw.githubusercontent.com/arafatm/assets/main/img/syste
 ## Notes
 
 ### [CHAPTER 1: SCALE FROM ZERO TO MILLIONS OF USERS](#chapter-1-scale-from-zero-to-millions-of-users)
-https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/01.19.png
-
+![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/01.19.png)
 - [Single server setup](#single-server-setup)
 - [request flow](#request-flow)
 - [traffic source](#traffic-source)
@@ -31,7 +30,7 @@ https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/01.19.pn
 - [Database replication](#database-replication)
   - Primary DB for write, (multiple) Secondary for Read
   - Performance, Reliability, HA
-  - Consider Secondary Data will be stale
+  - Secondary Data will be stale
 - [Cache](#cache)
   - Cache frequently read, rarely updated data for faster retrieval
   - e.g. memcache
@@ -51,6 +50,8 @@ https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/01.19.pn
   - georouting w/ geoDNS for "nearest DC"
 - [Message queue](#message-queue)
   - defer long running jobs e.g. photo processing (blur/crop/etc)
+- Tools
+  - Logging/metrics/monitoring/automation
 
 ### [CHAPTER 2: BACK-OF-THE-ENVELOPE ESTIMATION](#chapter-2-back-of-the-envelope-estimation)
 * [Power of two](#power-of-two)
