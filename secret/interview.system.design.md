@@ -586,18 +586,40 @@ requests_per_unit: 5`
 
 ### [CHAPTER 9: DESIGN A WEB CRAWLER](#chapter-9-design-a-web-crawler)
 #### [Step 1 - Understand the problem and establish design scope](#step-1---understand-the-problem-and-establish-design-scope-4)
+
+1. Given a set of URLs, download all the web pages addressed by the URLs.
+2. Extract URLs from these web pages
+3. Add new URLs to the list of URLs to be downloaded. Repeat these 3 steps.
+Also:
+- _Scalability_: The web is very large. There are billions of web pages out there. Web crawling should be extremely efficient using parallelization.
+- _Robustness_: The web is full of traps. Bad HTML, unresponsive servers, crashes, malicious links, etc. are all common. The crawler must handle all those edge cases.
+- _Politeness_: The crawler should not make too many requests to a website within a short time interval.
+- _Extensibility_: The system is flexible so that minimal changes are needed to support new content types. For example, if we want to crawl image files in the future, we should not need to redesign the entire system.
 #### [Back of the envelope estimation](#back-of-the-envelope-estimation)
+- Assume _1 billion_ web pages are downloaded every month.
+- QPS: 1,000,000,000 / 30 days / 24 hours / 3600 seconds = ~400 pages per second.
+- _Peak QPS_ = 2 \* QPS = 800
+- Assume the _average web page size_ is 500k.
+- 1-billion-page x 500k = _500 TB storage per month_. If you are unclear about digital storage units, go through “Power of 2” section in Chapter 2 again.
+- Assuming data are stored for five years, 500 TB \* 12 months \* 5 years = 30 PB. A _30 PB storage is needed to store five-year_ content.
 #### [Step 2 - Propose high-level design and get buy-in](#step-2---propose-high-level-design-and-get-buy-in-4)
+![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/09.04.png)
 #### [Seed URLs](#seed-urls)
 #### [URL Frontier](#url-frontier)
+- _To be_ downloaded vs _already_ downloaded
 #### [HTML Downloader](#html-downloader)
 #### [DNS Resolver](#dns-resolver)
 #### [Content Parser](#content-parser)
 #### [Content Seen?](#content-seen)
+- compare _hash_ of content
 #### [Content Storage](#content-storage)
+- store popular content in memory to reduce latency
+- everything else on disk
 #### [URL Extractor](#url-extractor)
+- track all links on this page
 #### [URL Filter](#url-filter)
 #### [URL Seen?](#url-seen)
+- _bloom filter_ to avoid revisiting a seen page
 #### [URL Storage](#url-storage)
 #### [Web crawler workflow](#web-crawler-workflow)
 #### [Step 3 - Design deep dive](#step-3---design-deep-dive-4)
@@ -843,8 +865,6 @@ requests_per_unit: 5`
 4. Wrap Up
 
 ### Vertical vs Horizontal
-
-
 
 ## CHAPTER 1: SCALE FROM ZERO TO MILLIONS OF USERS
 
