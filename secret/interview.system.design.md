@@ -255,75 +255,66 @@ Availability numbers
 - 99.99%	= 52.60 mins / year
 - 99.999%	= 5.26 mins / year
 - 99.9999%	= 31.56 sec / year
-[Example: Estimate Twitter QPS and storage requirements](#example-estimate-twitter-qps-and-storage-requirements)
-
-- Assumptions:
-- 300 million monthly active users.
-- 50% of users use Twitter daily.
-- Users post 2 tweets per day on average.
-- 10% of tweets contain media.
-- Data is stored for 5 years.
-
-- Estimations:
-- Query per second (QPS) estimate:
-  - Daily active users (DAU) = 300 million * 50% = 150 million
-  - Tweets QPS = 150 million * 2 tweets / 24 hour / 3600 seconds = ~3500
-  - Peek QPS = 2 * QPS = ~7000
-- Average tweet size.: We will only estimate media storage here.
-  - tweet_id 64 bytes
-  - text 140 bytes
-  - media 1 MB
-- Media storage: 150 million * 2 * 10% * 1 MB = 30 TB per day
-- 5-year media storage: 30 TB * 365 * 5 = ~55 PB
+- Example: Estimate Twitter QPS and storage requirements
+  - Assumptions:
+    - 300 million monthly active users.
+    - 50% of users use Twitter daily.
+    - Users post 2 tweets per day on average.
+    - 10% of tweets contain media.
+    - Data is stored for 5 years.
+  - Query per second (QPS) estimate:
+    - Daily active users (DAU) = 300 million * 50% = 150 million
+    - Tweets QPS = 150 million * 2 tweets / 24 hour / 3600 seconds = ~3500
+    - Peek QPS = 2 * QPS = ~7000
+  - Average tweet size.: We will only estimate media storage here.
+    - tweet_id 64 bytes
+    - text 140 bytes
+    - media 1 MB
+  - Media storage: 150 million * 2 * 10% * 1 MB = 30 TB per day
+  - 5-year media storage: 30 TB * 365 * 5 = ~55 PB
 
 ### [CHAPTER 3: A FRAMEWORK FOR SYSTEM DESIGN INTERVIEWS](#chapter-3-a-framework-for-system-design-interviews)
-#### [A 4-step process for effective system design interview](#a-4-step-process-for-effective-system-design-interview)
-#### [Step 1 - Understand the problem and establish design scope](#step-1---understand-the-problem-and-establish-design-scope)
-- What specific features are we going to build?
-- How many users does the product have?
-- How fast does the company anticipate to scale up?
-- What are the anticipated scales in 3 months, 6 months, and a year?
-- What is the company’s technology stack?
-- What existing services you might leverage to simplify the design?
-#### [Example](#example)
-#### [Step 2 - Propose high-level design and get buy-in](#step-2---propose-high-level-design-and-get-buy-in)
-- start with initial blueprint
-- get feedback
-- draw diagrams
-- do back-of-envolope calculations
-#### [__Communicate with your interviewer__.](#communicate-with-your-interviewer)
-#### [Step 3 - Design deep dive](#step-3---design-deep-dive)
-#### [Step 4 - Wrap up](#step-4---wrap-up)
-#### [Dos](#dos)
-- Always ask for clarification. Do not assume your assumption is correct.
-- Understand the requirements of the problem.
-- There is neither the right answer nor the best answer. A solution designed to
-  solve the problems of a young startup is different from that of an
-  established company with millions of users. Make sure you understand the
-  requirements.
-- Let the interviewer know what you are thinking. Communicate with your
-  interview.
-- Suggest multiple approaches if possible.
-- Once you agree with your interviewer on the blueprint, go into details on
-  each component. Design the most critical components first.
-- Bounce ideas off the interviewer. A good interviewer works with you as a
-  teammate.
-- Never give up.
-#### [Don’ts](#donts)
-- Don't be unprepared for typical interview questions.
-- Don’t jump into a solution without clarifying the requirements and
-  assumptions.
-- Don’t go into too much detail on a single component in the beginning. Give
-  the highlevel design first then drills down.
-- If you get stuck, don't hesitate to ask for hints.
-- Again, communicate. Don't think in silence.
-- Don’t think your interview is done once you give the design. You are not done
-  until your interviewer says you are done. Ask for feedback early and often.
-#### [Time allocation on each step](#time-allocation-on-each-step)
-- 3-10 mins: Step 1 __Understand the problem and establish design scope__: 3 - 10 minutes
-- 10-15 mins: Step 2 __Propose high-level design and get buy-in__: 10 - 15 minutes
-- 10-25 mins: Step 3 __Design deep dive__: 10 - 25 minutes
-- 5 mins: Step 4 __Wrap__: 3 - 5 minutes
+- _Step 1_ - Understand the problem and establish design scope
+  - What specific features are we going to build?
+  - How many users does the product have?
+  - How fast does the company anticipate to scale up?
+  - What are the anticipated scales in 3 months, 6 months, and a year?
+  - What is the company’s technology stack?
+  - What existing services you might leverage to simplify the design?
+- _Step 2_ - Propose high-level design and get buy-in
+  - start with initial blueprint
+  - get feedback
+  - draw diagrams
+  - do back-of-envolope calculations
+- __Communicate with your interviewer__
+- _Step 3_ - Design deep dive
+- _Step 4_ - Wrap up
+- Dos
+  - Always ask for clarification. Do not assume your assumption is correct.
+  - Understand the requirements of the problem.
+  - There is neither the right answer nor the best answer. 
+  - A solution designed to solve the problems of a young startup is different from that of an established company with millions of users. 
+  - Make sure you understand the requirements.
+  - Let the interviewer know what you are thinking. Communicate with your interview.
+  - Suggest multiple approaches if possible.
+  - Once you agree with your interviewer on the blueprint, go into details on each component. 
+  - Design the most critical components first.
+  - Bounce ideas off the interviewer. A good interviewer works with you as a teammate.
+  - _Never give up_.
+- Don’ts
+  - Don't be unprepared for typical interview questions.
+  - Don’t jump into a solution without clarifying the requirements and assumptions.
+  - Don’t go into too much detail on a single component in the beginning. Give the highlevel design first then drills down.
+  - If you get stuck, don't hesitate to ask for hints.
+  - Again, communicate. Don't think in silence.
+  - Don’t think your interview is done once you give the design. 
+  - You are not done until your interviewer says you are done. 
+  - _Ask for feedback early and often_.
+- Time allocation on each step
+  - 3-10 mins: Step 1 __Understand the problem and establish design scope__: 3 - 10 minutes
+  - 10-15 mins: Step 2 __Propose high-level design and get buy-in__: 10 - 15 minutes
+  - 10-25 mins: Step 3 __Design deep dive__: 10 - 25 minutes
+  - 5 mins: Step 4 __Wrap__: 3 - 5 minutes
 
 ### [CHAPTER 4: DESIGN A RATE LIMITER](#chapter-4-design-a-rate-limiter)
 #### [Step 1 - Understand the problem and establish design scope](#step-1---understand-the-problem-and-establish-design-scope-1)
