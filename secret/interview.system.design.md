@@ -209,23 +209,16 @@ Storage
 
 ### [CHAPTER 1: SCALE FROM ZERO TO MILLIONS OF USERS](#chapter-1-scale-from-zero-to-millions-of-users)
 ![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/01.19.png)
-- [Single server setup](#single-server-setup)
-- [request flow](#request-flow)
-- [traffic source](#traffic-source)
-- [Database](#database)
-  - split web/db for independent scaling
-- [Which databases to use?](#which-databases-to-use)
-  - RDBMS vs NoSQL
-- [Vertical scaling vs horizontal scaling](#vertical-scaling-vs-horizontal-scaling)
-  - Vert has hard limit and no failover/redundancy
-  - Vert is easier to scale
-- [Load balancer](#load-balancer)
-  - distribute incoming traffic
-- [Database replication](#database-replication)
+- split web/db for independent scaling
+- RDBMS vs NoSQL
+- Vertical scaling has hard limit and no failover/redundancy
+- Vertical is easier to scale
+- Load balancer distributes incoming traffic
+- Database replication
   - Primary DB for write, (multiple) Secondary for Read
   - Performance, Reliability, HA
   - Secondary Data will be stale
-- [Cache](#cache)
+- Cache
   - Cache frequently read, rarely updated data for faster retrieval
   - e.g. memcache
   - Temp data store, faster than db
@@ -234,15 +227,15 @@ Storage
   - consistency (hard to sync across datastores), 
   - spof (can use multi cache across DC), 
   - eviction policy
-- [Content delivery network (CDN)](#content-delivery-network-cdn)
+- CDN: Content delivery network (CDN)
   - Use for static content, 
   - expiration policy as can be expensive
-- [Stateless web tier](#stateless-web-tier)
+- Stateless web tier
   - allows horizontal scaling of web tier
   - cache state in memcache/redis/nosql
-- [Data centers](#data-centers)
+- Data centers
   - georouting w/ geoDNS for "nearest DC"
-- [Message queue](#message-queue)
+- Message queue
   - defer long running jobs e.g. photo processing (blur/crop/etc)
 - Tools
   - Logging/metrics/monitoring/automation
@@ -645,13 +638,22 @@ Also:
   * [3. Locality](#3-locality)
   * [4. Short timeout](#4-short-timeout)
 #### [Robustness](#robustness)
+- _Consistent hashing_: This helps to distribute loads among downloaders. A new downloader server can be added or removed using consistent hashing. Refer to Chapter 5: Design consistent hashing for more details.
+- _Save crawl states and data_: To guard against failures, crawl states and data are written to a storage system. A disrupted crawl can be restarted easily by loading saved states and data.
+- _Exception handling_: Errors are inevitable and common in a large-scale system. The crawler must handle exceptions gracefully without crashing the system.
+- _Data validation_: This is an important measure to prevent system errors.
 #### [Extensibility](#extensibility)
+- Can separate specific downloaders e.g. Image downloader, Link Extractor, etc
+- ![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/09.10.png)
 #### [Detect and avoid problematic content](#detect-and-avoid-problematic-content)
-  * [1. Redundant content](#1-redundant-content)
-  * [2. Spider traps](#2-spider-traps)
-  * [3. Data noise](#3-data-noise)
-  * [Step 4 - Wrap up](#step-4---wrap-up-4)
-#### [Reference materials](#reference-materials-7)
+#### [Step 4 - Wrap up](#step-4---wrap-up-4)
+- relevant talking points:
+- Server-side rendering: Numerous websites use scripts like JavaScript, AJAX, etc to generate links on the fly. If we download and parse web pages directly, we will not be able to retrieve dynamically generated links. To solve this problem, we _perform server-side rendering (also called dynamic rendering) first before parsing a page_ \[12\].
+- _Filter out unwanted pages_: With finite storage capacity and crawl resources, an anti-spam component is beneficial in filtering out low quality and spam pages \[13\] \[14\].
+- _Database replication and sharding_: Techniques like replication and sharding are used to improve the data layer availability, scalability, and reliability.
+- _Horizontal scaling_: For large scale crawl, hundreds or even thousands of servers are needed to perform download tasks. The key is to keep servers stateless.
+- _Availability, consistency, and reliability_: These concepts are at the core of any large system’s success. We discussed these concepts in detail in Chapter 1. Refresh your memory on these topics.
+- _Analytics_: Collecting and analyzing data are important parts of any system because data is key ingredient for fine-tuning.
 
 ### [CHAPTER 10: DESIGN A NOTIFICATION SYSTEM](#chapter-10-design-a-notification-system)
 #### [Step 1 - Understand the problem and establish design scope](#step-1---understand-the-problem-and-establish-design-scope-5)
