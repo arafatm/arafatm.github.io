@@ -624,9 +624,17 @@ Also:
 #### [Web crawler workflow](#web-crawler-workflow)
 #### [Step 3 - Design deep dive](#step-3---design-deep-dive-4)
 #### [DFS vs BFS](#dfs-vs-bfs)
+- ![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/09.05.png)
+- Treat links as a graph
+- Depth vs Breadth first
+- Prefer BFS as deep links might not be as valuable
+- Avoid hammering single url as that's _impolite_
 #### [URL frontier](#url-frontier-1)
 #### [Politeness](#politeness)
+- Use a queue to avoid DOS'ing
 #### [Priority](#priority)
+- Prioritize crawl e.g. PageRank, traffic data, update frequency, etc
+- ![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/09.08.png)
 #### [Freshness](#freshness)
 #### [Storage for URL Frontier](#storage-for-url-frontier)
 #### [HTML Downloader](#html-downloader-1)
