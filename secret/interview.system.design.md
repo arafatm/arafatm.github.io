@@ -74,18 +74,133 @@ Push Model (Fan out on write)
 
 ![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/yt.2.status.search.png)
 
+Provide search bar to allow searching posts/status/video/content posted by friends and pages they follow
+
+#### Key Features
+1. User can search status posted by friends and followed pages
+2. Status only contains text
+
+#### Design Goals
+1. minimum latency
+2. HA
+3. Eventual consistency (CAP)
+4. Read heavy service
+
+#### Scale estimations
+1. 1B DAU
+2. 5B daily search
+3. 1B status generated a day
+
+#### REST APIs
+
+`/searchStatuses`
+1. Read API to fetch search results
+2. Params: UserID, search query, max results, page number, timestamp
+
+`/postStatus`
+1. write API to post new status
+2. Params: UID, Status content, timestamp
+
+#### High Level Design
+1. Store status in a DB
+2. Build search index to keep track of which word appears in which status
+3. Index to quickly find status
+
+#### Important Questions
+1. How is search index built for quick retrieval
+2. How to store and shard search index
+3. How to rebuild index with fault-tolerant design
+4. What happens if app server dies
+5. How to balance load across multiple app servers
+
 ### 3. Live Commenting
 
 ![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/yt.3.live.commenting.png)
+
+#### Key Features
+1. enable real-time commenting on posts
+2. User sees new comments real-time as they're posted
+
+Challenging
+1. Users are continuously scrolling news feed
+2. Posts that are visible change frequently
+
+#### Scale Estimations
+1. Every minute, FB servers 100M content that may receive comments
+2. Each minute, users submits 1M comments
+
+#### High Level Design
+*Push (Fan-out-on-write) vs Pull(Fan-out-on-load)*
+1. *Push*: maintains connection with client directly to send new comments (websockets?)
+2. *Pull*: User has to request updates
+
+Storage
+1. need to store millions of viewer-to-content associations per second
+2. 2 Approaches:
+  1. Write locally, Read globally
+  2. Write globally, Read locally 
 
 ### 4. Messenger/WhatsApp
 
 ![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/yt.4.messenger.png)
 
+#### Key Features
+- support 1-1 conversation
+- track online/offline status of user
+- group conversations
+- push notifications
+
+#### Design Goals
+
+1. minimum latency
+2. high consistency
+3. CAP: tolerate lower avialability for high consistency
+
+#### Scale Estimations
+1. 1B DAU
+2. Each user sends ~50 messages daily
+
+#### High Level Design
+1. chat server as main component of design. Orchestrate communication between users
+2. User connects to server to send message
+3. server passes message to user and stores in DB
+
+#### Use Cases
+1. receive incoming messages
+2. deliver outgoing messages
+3. store and retrieve messages form db
+4. keep user status and notify "friends" of change
+
 ### 5. Instagram
 
 ![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/yt.5.instagram.png)
 
+#### Key Features
+1. User can upload and share photos
+2. Follow users
+3. Like photos
+4. Get a scrollable feed of photos posted by followed users
+
+#### Design Goals
+1. minimum latency
+2. HA
+3. Eventually consistency (CAP)
+4. Read-heavy
+
+#### Scale Estimations
+1. 1B DAU
+2. 5B feed requests daily
+3. 500M photos uploaded daily
+4. each photo liked 5 times avg
+5. Avg user follows 100 other users
+
+#### Feed Generation
+
+1. Obtain IDs of all users followed
+2. retrieve most recent/popular photos
+3. rank photos based on relevance and store in cache
+4. Top photos, about 20 in number will be returned and displayed on UI
+5. When end of feed is reached, retreive next set of top photos
 
 ## Notes
 
