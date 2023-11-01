@@ -202,6 +202,9 @@ Storage
 4. Top photos, about 20 in number will be returned and displayed on UI
 5. When end of feed is reached, retreive next set of top photos
 
+#### Feed Publishing
+*Pull vs Push*
+
 ## Notes
 
 ### [CHAPTER 1: SCALE FROM ZERO TO MILLIONS OF USERS](#chapter-1-scale-from-zero-to-millions-of-users)
