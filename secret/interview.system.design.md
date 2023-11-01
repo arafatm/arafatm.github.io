@@ -249,12 +249,12 @@ Storage
 - Simple compression algorithms are fast.
 - Compress data before sending it over the internet if possible.
 - Data centers are usually in different regions, and it takes time to send data between them.
-Availability numbers
-- 99% = 3.65 days / year
-- 99.9%	= 8.77 hours / year
-- 99.99%	= 52.60 mins / year
-- 99.999%	= 5.26 mins / year
-- 99.9999%	= 31.56 sec / year
+- Availability numbers
+  - 99% = 3.65 days / year
+  - 99.9%	= 8.77 hours / year
+  - 99.99%	= 52.60 mins / year
+  - 99.999%	= 5.26 mins / year
+  - 99.9999%	= 31.56 sec / year
 - Example: Estimate Twitter QPS and storage requirements
   - Assumptions:
     - 300 million monthly active users.
