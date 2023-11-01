@@ -11,6 +11,11 @@ inoremap png ![](https://raw.githubusercontent.com/arafatm/assets/main/img/syste
 
 [System Design Interview PDF](system.design.interview.pdf)
 
+Craig's Diagram
+![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/craig.meta.png)
+
+## [(223) TOP FACEBOOK SYSTEM DESIGN INTERVIEW QUESTIONS (PART 1) | Facebook Pirate Interview Round - YouTube](https://www.youtube.com/watch?v=hykjbT5Z0oE)
+
 ## Notes
 
 ### [CHAPTER 1: SCALE FROM ZERO TO MILLIONS OF USERS](#chapter-1-scale-from-zero-to-millions-of-users)
