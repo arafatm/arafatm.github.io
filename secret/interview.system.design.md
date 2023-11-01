@@ -16,6 +16,77 @@ Craig's Diagram
 
 ## [(223) TOP FACEBOOK SYSTEM DESIGN INTERVIEW QUESTIONS (PART 1) | Facebook Pirate Interview Round - YouTube](https://www.youtube.com/watch?v=hykjbT5Z0oE)
 
+### 1. Design Facebook News Feed
+
+![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/yt.1.news.feed.png)
+
+#### Key features
+
+- User sees news feed of posts & status from friends and pages followed 
+- Post and Like status ocntining text/images/videos
+- Send friend requests
+- Follow Pages
+
+#### Design Goals:
+- Minimum Latency: e.g. on news feed generation
+- High Availability: e.g. server goes down
+- Eventually Consistent system (CAP)
+- Read-heavy service: more reads than writes
+
+#### Scale Estimations:
+
+- 1B DAU
+- Each user fetching timeline 10/day ie 10B requests a day
+- Avg user posts 2/day
+- Avg post is liked 5/day
+- Avg user has 200 friends, follows 100 pages
+
+#### Feed Generation
+
+1. Obtain IDs of all friends and pages followed
+2. Retrieve most recent and popular posts
+3. Rank these posts based on relevance, and store in cache
+4. Top posts, ~30, returned and displayed on UI
+5. When end of feed is reached, next 30 top posts will be displayed
+
+Updating Feed?
+1. Run feed generation on a 5 min queue
+2. Notify user of updated feed
+
+#### Feed Publishing (Pull vs Push)
+
+Pull (Fan out on load) 
+- recent feed data is kept in memory on server 
+- User can pull feed manual or on schedule 
+- Issues: 
+  - Stale data unless pull is requested 
+  - Pull request may result in empty response (no new feed) which is a waste of resources
+
+Push Model (Fan out on write)
+- Server immediately pushes updates
+- User has to maintain Long Poll request
+- Issues:
+  - Server has to push lots of updates for popular users (Celebrity User issue)
+
+> Ideal solution is hybrid
+
+### 2. Status Search
+
+![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/yt.2.status.search.png)
+
+### 3. Live Commenting
+
+![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/yt.3.live.commenting.png)
+
+### 4. Messenger/WhatsApp
+
+![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/yt.4.messenger.png)
+
+### 5. Instagram
+
+![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/yt.5.instagram.png)
+
+
 ## Notes
 
 ### [CHAPTER 1: SCALE FROM ZERO TO MILLIONS OF USERS](#chapter-1-scale-from-zero-to-millions-of-users)
