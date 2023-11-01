@@ -208,7 +208,7 @@ Storage
 ## Notes
 
 ### [CHAPTER 1: SCALE FROM ZERO TO MILLIONS OF USERS](#chapter-1-scale-from-zero-to-millions-of-users)
-![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/01.19.png)
+- ![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/01.19.png)
 - split web/db for independent scaling
 - RDBMS vs NoSQL
 - Vertical scaling has hard limit and no failover/redundancy
@@ -218,6 +218,8 @@ Storage
   - Primary DB for write, (multiple) Secondary for Read
   - Performance, Reliability, HA
   - Secondary Data will be stale
+    - test
+      - test 2
 - Cache
   - Cache frequently read, rarely updated data for faster retrieval
   - e.g. memcache
@@ -241,22 +243,19 @@ Storage
   - Logging/metrics/monitoring/automation
 
 ### [CHAPTER 2: BACK-OF-THE-ENVELOPE ESTIMATION](#chapter-2-back-of-the-envelope-estimation)
-![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/02.01.png)
+- ![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/02.01.png)
 - Memory is fast but the disk is slow.
 - Avoid disk seeks if possible.
 - Simple compression algorithms are fast.
 - Compress data before sending it over the internet if possible.
 - Data centers are usually in different regions, and it takes time to send data between them.
-#### [Power of two](#power-of-two)
-  - ASCII is 8 bits (1 byte)
-#### [Latency numbers every programmer should know](#latency-numbers-every-programmer-should-know)
-#### [Availability numbers](#availability-numbers)
+Availability numbers
 - 99% = 3.65 days / year
 - 99.9%	= 8.77 hours / year
 - 99.99%	= 52.60 mins / year
 - 99.999%	= 5.26 mins / year
 - 99.9999%	= 31.56 sec / year
-#### [Example: Estimate Twitter QPS and storage requirements](#example-estimate-twitter-qps-and-storage-requirements)
+[Example: Estimate Twitter QPS and storage requirements](#example-estimate-twitter-qps-and-storage-requirements)
 
 - Assumptions:
 - 300 million monthly active users.
