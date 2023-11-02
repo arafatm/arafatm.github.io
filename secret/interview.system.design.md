@@ -205,7 +205,41 @@ Storage
 #### Feed Publishing
 *Pull vs Push*
 
+## TODO/Links
+
+- [ ] [Software Engineering Manager, Initial Interview Guide](https://scontent-sea1-1.xx.fbcdn.net/v/t39.2365-6/332855504_1602132406878983_5340602504034862758_n.pdf?_nc_cat=101&ccb=1-7&_nc_sid=e280be&_nc_ohc=848xg9KBa0QAX_xpHmm&_nc_ht=scontent-sea1-1.xx&oh=00_AfDSUqgQ7RMaz0WFKptthIPKxFeHdprBefsnF6uDCO-j3g&oe=654B9C4B)
+- [ ] [7 steps of Facebook / Meta interview process & how to ace them - IGotAnOffer](https://igotanoffer.com/blogs/tech/facebook-interview-process)
+- [ ] Craig: [Tech Interview (Updating in Progress ...) - Google Sheets](https://docs.google.com/spreadsheets/d/14aVAyDsQmz50TxhldNV5lmsyvYOJrAT9gzi7sGfMu9k/edit#gid=1051045762)
+- [ ] [(214) TOP FACEBOOK SYSTEM DESIGN INTERVIEW QUESTIONS (PART 1) | Facebook Pirate Interview Round - YouTube](https://www.youtube.com/watch?v=hykjbT5Z0oE)
+- [ ] https://tianpan.co/notes/2016-02-13-crack-the-system-design-interview
+- [ ] [donnemartin/system-design-primer: Learn how to design large-scale systems. Prep for the system design interview. Includes Anki flashcards.](https://github.com/donnemartin/system-design-primer)
+- [ ] [Design Pinterest - TianPan.co](https://tianpan.co/notes/2016-02-13-crack-the-system-design-interview)
+
 ## Notes
+
+### 1 Scale
+- 5 DB types: RDMBS vs NoSQL (KV, Graph, Column, Document)
+- Load Balancer
+- shard DB: main (write) vs replica(s) (read)
+  - Performance, Reliability, HA
+- Cache for temporary, (mostly) RO data
+- CDN for static assets
+- Stateless servers for autoscaling. Use persistent nosql (redis) to store state
+- geoDNS for DC geo-routing
+- MQ for long-running tasks
+
+### 2 Estimation
+- memory > compression > disk > network
+- Commonly back-of-the-envelope: QPS, peak QPS, storage, cache, number of servers
+
+### 3 Interview
+- __communicate with interviewer__
+1. Understand problem and establish design scope 
+2. Step 2 - Propose High-Level Design And Get Buy-In
+3. Design Deep Dive
+4. Wrap Up
+
+### Vertical vs Horizontal Scaling
 
 ### [CHAPTER 1: SCALE FROM ZERO TO MILLIONS OF USERS](#chapter-1-scale-from-zero-to-millions-of-users)
 - ![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/01.19.png)
@@ -316,21 +350,21 @@ Storage
 
 ### [CHAPTER 4: DESIGN A RATE LIMITER](#chapter-4-design-a-rate-limiter)
 - ![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/04.13.png)
-- **Step 1** - Understand the problem and establish design scope](#step-1---understand-the-problem-and-establish-design-scope-1)
+- **Step 1** - Understand the problem and establish design scope
   - Accurately limit excessive requests.
   - Low latency. The rate limiter should not slow down HTTP response time.
   - Use as little memory as possible.
   - Distributed rate limiting. The rate limiter can be shared across multiple servers or processes.
   - Exception handling. Show clear exceptions to users when their requests are throttled.
   - High fault tolerance. If there are any problems with the rate limiter (for example, a cache server goes offline), it does not affect the entire system.
-- **Step 2** - Propose high-level design and get buy-in](#step-2---propose-high-level-design-and-get-buy-in-1)
-  - Where to put the rate limiter?](#where-to-put-the-rate-limiter)
+- **Step 2** - Propose high-level design and get buy-in
+  - Where to put the rate limiter?
     - _middleware_ vs client vs server side
     - e.g. cloudflare or AWS API Gateway
-- Algorithms for rate limiting](#algorithms-for-rate-limiting) vs [Token bucket algorithm](#token-bucket-algorithm) vs [Leaking bucket algorithm](#leaking-bucket-algorithm) vs [Fixed window counter algorithm](#fixed-window-counter-algorithm) vs [Sliding window log algorithm](#sliding-window-log-algorithm) vs [Sliding window counter algorithm](#sliding-window-counter-algorithm)
+- [Algorithms for rate limiting](#algorithms-for-rate-limiting) vs [Token bucket algorithm](#token-bucket-algorithm) vs [Leaking bucket algorithm](#leaking-bucket-algorithm) vs [Fixed window counter algorithm](#fixed-window-counter-algorithm) vs [Sliding window log algorithm](#sliding-window-log-algorithm) vs [Sliding window counter algorithm](#sliding-window-counter-algorithm)
   - Hard vs Soft rate limiting
-- **Step 3** - Design deep dive](#step-3---design-deep-dive-1)
-  - Rate limiting rules](#rate-limiting-rules)
+- **Step 3** - Design deep dive
+  - Rate limiting rules
     - `domain: auth `
     - `descriptors: `
     - `- key: auth_type `
@@ -343,29 +377,29 @@ Storage
     - `X-Ratelimit-Remaining`: The remaining number of allowed requests within the window.
     - `X-Ratelimit-Limit`: It indicates how many calls the client can make per time window.
     - `X-Ratelimit-Retry-After`: The number of seconds to wait until you can make a request again without being throttled.
-  - Rate limiter in a distributed environment](#rate-limiter-in-a-distributed-environment)
+  - Rate limiter in a distributed environment
     - Can lead to race condition
     - Can lock, but that slows system design
     - Use sorted sets data structure in Redis
-  - Synchronization issue](#synchronization-issue)
+  - Synchronization issue
     - Use central data store like Redis
     - ![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/04.16.png)
-  - [Performance optimization](#performance-optimization)
+  - Performance optimization
     - Route to closest edge server
     - opt for eventual consistency of data
 
 ### [CHAPTER 5: DESIGN CONSISTENT HASHING](#chapter-5-design-consistent-hashing)
 - ![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/05.08.png)
 - ![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/05.12.png)
-- The rehashing problem](#the-rehashing-problem)
+- The rehashing problem
 - Given `N` cache servers we want to distribute keys across
 - `serverIndex = hash(key) % N`
 - Avoid having to rekey hashes when server is added/removed
-- Hash space and hash ring](#hash-space-and-hash-ring)
+- Hash space and hash ring
 - Keeping server sizes relatively equal
-- Balance load across servers w/ Virtual nodes](#virtual-nodes)
+- Balance load across servers w/ Virtual nodes
 - As the number of virtual nodes increases, the distribution of keys becomes more balanced.
-- Wrap up](#wrap-up)
+- Wrap up
   - The benefits of consistent hashing include:
   - Minimized keys are redistributed when servers are added or removed.
   - It is easy to scale horizontally because data are more evenly distributed.
@@ -373,7 +407,7 @@ Storage
 
 ### [CHAPTER 6: DESIGN A KEY-VALUE STORE](#chapter-6-design-a-key-value-store)
 - ![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/06.03.png)
-- Understand the problem and establish design scope](#understand-the-problem-and-establish-design-scope)
+- Understand the problem and establish design scope
   - The size of a key-value pair is small: less than 10 KB.
   - Ability to store big data.
   - High availability: The system responds quickly, even during failures.
@@ -381,11 +415,11 @@ Storage
   - Automatic scaling: The addition/deletion of servers should be automatic based on traffic.
   - Tunable consistency.
   - Low latency.
-- Single server key-value store](#single-server-key-value-store)
+- Single server key-value store
 - Two _optimizations_ can be done to fit more data in a single server:
   1. Data _compression_
   2. Store only _frequently used data_ in memory and the rest on disk
-- **CAP theorem**](#cap-theorem)
+- **CAP theorem**
   - **Consistency**: consistency means all clients see the same data at the same time no matter which node they connect to.
   - **Availability**: availability means any client which requests data gets a response even if some of the nodes are down.
   - **Partition Tolerance**: a partition indicates a communication break between two nodes. Partition tolerance means the system continues to operate despite network partitions.
@@ -394,7 +428,7 @@ Storage
   - Bank systems usually have extremely high consistent requirements.
 - if we choose availability over consistency (AP system), the system keeps accepting reads, even though it might return stale data. 
   - For writes, n1 and n2 will keep accepting writes, and data will be synced to n3 when the network partition is resolved.
-- System components](#system-components)
+- System components
   - Data partition
   - Data replication
   - Consistency
@@ -403,11 +437,11 @@ Storage
   - System architecture diagram
   - Write path
   - Read path
-- Data partition](#data-partition)
+- Data partition
   - Use a hash ring for scaling allowing auto scaling and heterogeneity
-- Data replication](#data-replication)
+- Data replication
   - For better reliability, replicas are placed in distinct data centers, and data centers are connected through high-speed networks.
-- Consistency](#consistency)
+- Consistency
 - **Quorum consensus** can guarantee consistency for both read and write
 - ![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/06.06.png)
   - `N` = The _number of replicas_
@@ -417,19 +451,19 @@ Storage
   - If W = 1 and R = N, the system is _optimized for fast write_.
   - If W + R > N, _strong consistency is guaranteed_ (Usually N = 3, W = R = 2).
   - If W + R <= N, _strong consistency is not guaranteed_.
-- Consistency models](#consistency-models)
+- Consistency models
   - **Strong consistency**: any read operation returns a value corresponding to the result of the most updated write data item. A client never sees out-of-date data.
   - **Weak consistency**: subsequent read operations may not see the most updated value.
   - **Eventual consistency**: this is a specific form of weak consistency. Given enough time, all updates are propagated, and all replicas are consistent.
-- Inconsistency resolution: versioning](#inconsistency-resolution-versioning)
+- Inconsistency resolution: versioning
   - ![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/06.08.png)
   - A **vector clock** is a [server, version] pair associated with a data item. It can be used to check if one version precedes, succeeds, or in conflict with others.
   - ![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/06.09.png)
 - Failure detection w/ _Gossip Protocol_
 - ![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/06.11.png)
-- Handling temporary failures](#handling-temporary-failures)
+- Handling temporary failures
   - sloppy quorum: Instead of enforcing the quorum requirement, the system chooses the first W healthy servers for writes and first R healthy servers for reads on the hash ring. Offline servers are ignored.
-- Handling permanent failures](#handling-permanent-failures)
+- Handling permanent failures
   - Anti-entropy involves comparing each piece of data on replicas and updating each replica to the newest version. 
   - A __Merkle tree__ is used for inconsistency detection and minimizing the amount of data transferred.
     - a possible configuration is one million buckets per one billion keys, so each bucket only contains 1000 keys.
@@ -439,7 +473,7 @@ Storage
     - [Step 4: Build the tree upwards till root by _calculating hashes of children_](#step-4-build-the-tree-upwards-till-root-by-_calculating-hashes-of-children)
 - ![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/06.16.png)
 - Handling data center outage by replicate across DCs
-- System architecture diagram](#system-architecture-diagram)
+- System architecture diagram
   - ![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/06.17.png)
   - Clients communicate with the key-value store through simple APIs: get(key) and put(key, value).
   - A coordinator is a node that acts as a proxy between the client and the key-value store.
@@ -451,13 +485,13 @@ Storage
 - :point_up: is similar to what Casandra does
 
 ### [CHAPTER 7: DESIGN A UNIQUE ID GENERATOR IN DISTRIBUTED SYSTEMS](#chapter-7-design-a-unique-id-generator-in-distributed-systems)
-- Step 1 - Understand the problem and establish design scope](#step-1---understand-the-problem-and-establish-design-scope-2)
+- Step 1 - Understand the problem and establish design scope
   - IDs must be unique.
   - IDs are numerical values only.
   - IDs fit into 64-bit.
   - IDs are ordered by date.
   - Ability to generate over 10,000 unique IDs per second.
-- Step 2 - Propose high-level design and get buy-in](#step-2---propose-high-level-design-and-get-buy-in-2)
+- Step 2 - Propose high-level design and get buy-in
   - The options we considered are:
     - Multi-master replication
     - Universally unique identifier (UUID)
@@ -468,177 +502,138 @@ Storage
 - A ticket Server => Central (SPOF) Db to generate IDs
 - Twitter snowflake approach
 - ![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/07.05.png)
-- Step 3 - Design deep dive](#step-3---design-deep-dive-2)
+- Step 3 - Design deep dive
   - The maximum timestamp that can be represented in 41 bits is 2 ^ 41 - 1 = 2199023255551 milliseconds (ms), which gives us: ~ 69 years = 2199023255551 ms / 1000 seconds / 365 days / 24 hours/ 3600 seconds.
-- Step 4 - Wrap up](#step-4---wrap-up-2)
+- Step 4 - Wrap up
   - If there is extra time at the end of the interview, here are a few additional talking points:
     - _Clock synchronization_. In our design, we assume ID generation servers have the same clock. This assumption might not be true when a server is running on multiple cores. The same challenge exists in multi-machine scenarios. Solutions to clock synchronization are out of the scope of this book; however, it is important to understand the problem exists. Network Time Protocol is the most popular solution to this problem. For interested readers, refer to the reference material \[4\].
     - _Section length tuning_. For example, fewer sequence numbers but more timestamp bits are effective for low concurrency and long-term applications.
     - _High availability_. Since an ID generator is a mission-critical system, it must be highly available.
 
 ### [CHAPTER 8: DESIGN A URL SHORTENER](#chapter-8-design-a-url-shortener)
-- Step 1 - Understand the problem and establish design scope](#step-1---understand-the-problem-and-establish-design-scope-3)
-  - Here are the basic use cases:
-    1. _URL shortening_: given a long URL => return a much shorter URL
-    2. _URL redirecting_: given a shorter URL => redirect to the original URL
-    3. _High availability_, scalability, and fault tolerance considerations
-  - Back of the envelope estimation
-    - _Write operation_: 100 million URLs are generated per day.
-    - _Write operation per second_: 100 million / 24 /3600 = 1160
-    - _Read operation_: Assuming ratio of read operation to write operation is 10:1, read operation per second: 1160 \* 10 = 11,600
-    - _Assuming the URL shortener service will run for 10 years_, this means we must support 100 million \* 365 \* 10 = 365 billion records.
-    - _Assume average URL length is 100_.
-    - _Storage requirement over 10 years_: 365 billion \* 100 bytes \* 10 years = 365 TB
-#### [Step 2 - Propose high-level design and get buy-in](#step-2---propose-high-level-design-and-get-buy-in-3)
-#### [API Endpoints](#api-endpoints)
-- ![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/08.01.png)
-#### [URL redirecting](#url-redirecting)
-- If the priority is to reduce the server load, using 301 redirect makes sense as only the first request of the same URL is sent to URL shortening servers.
-- However, if analytics is important, 302 redirect is a better choice as it can track click rate and source of the click more easily.
-#### [URL shortening](#url-shortening)
-- `www.tinyurl.com/{hashValue}`
-#### [Step 3 - Design deep dive](#step-3---design-deep-dive-3)
-#### [Data model](#data-model)
-- A hash table can be expensive and resource hungry. RDBMS is probably more ideal
-#### [Hash function](#hash-function)
-#### [Hash value length](#hash-value-length)
-- The hashValue consists of characters from [0-9, a-z, A-Z], containing 10 + 26 + 26 = 62 possible characters. 
-- To figure out the length of hashValue, find the smallest n such that 62^n ≥ 365 billion. 
-- The system must support up to 365 billion URLs based on the back of the envelope estimation. 
-- When n = 7, 62 ^ n = ~3.5 trillion, 3.5 trillion is more than enough to hold 365 billion URLs, so the length of hashValue is 7.
-#### [Hash + collision resolution](#hash--collision-resolution)
 - ![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/08.t.02.png)
-- Use __bloom filter__ to detect hash collisions
-#### [Base 62 conversion](#base-62-conversion)
-#### [Comparison of the two approaches](#comparison-of-the-two-approaches)
-- Base 62:
-  - URL length is not fixed
-  - depends on unique ID generator (CHAP 7)
-  - collision impossible (based on unique ID)
-  - security concern that you can rev eng the next shorturl
-#### [URL shortening deep dive](#url-shortening-deep-dive)
-- Assuming the input longURL is: [https://en.wikipedia.org/wiki/Systems\_design](https://en.wikipedia.org/wiki/Systems_design)
-- Unique ID generator returns ID: 2009215674938.
-- Convert the ID to shortURL using the base 62 conversion. ID (2009215674938) is converted to “zn9edcu”.
-- Save ID, shortURL, and longURL to the database as shown in Table 8-4.
-#### [URL redirecting deep dive](#url-redirecting-deep-dive)
+- `www.tinyurl.com/{hashValue}`
+- Step 1 - Understand the problem and establish design scope
+- Here are the basic use cases:
+  1. _URL shortening_: given a long URL => return a much shorter URL
+  2. _URL redirecting_: given a shorter URL => redirect to the original URL
+  3. _High availability_, scalability, and fault tolerance considerations
+- Back of the envelope estimation
+  - _Write operation_: 100 million URLs are generated per day.
+  - _Write operation per second_: 100 million / 24 /3600 = 1160
+  - _Read operation_: Assuming ratio of read operation to write operation is 10:1, read operation per second: 1160 \* 10 = 11,600
+  - _Assuming the URL shortener service will run for 10 years_, this means we must support 100 million \* 365 \* 10 = 365 billion records.
+  - _Assume average URL length is 100_.
+  - _Storage requirement over 10 years_: 365 billion \* 100 bytes \* 10 years = 365 TB
+- Step 2 - Propose high-level design and get buy-in
+- API Endpoints
+- ![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/08.01.png)
+- URL redirecting
+  - If the priority is to reduce the server load, using 301 redirect makes sense as only the first request of the same URL is sent to URL shortening servers.
+  - However, if analytics is important, 302 redirect is a better choice as it can track click rate and source of the click more easily.
+- Step 3   - Design deep dive
+  - A hash table can be expensive and resource hungry. RDBMS is probably more ideal
+  - The hashValue consists of characters from [0-9, a-z, A-Z], containing 10 + 26 + 26 = 62 possible characters. 
+  - To figure out the length of hashValue, find the smallest n such that 62^n ≥ 365 billion. 
+  - The system must support up to 365 billion URLs based on the back of the envelope estimation. 
+  - When n = 7, 62 ^ n = ~3.5 trillion, 3.5 trillion is more than enough to hold 365 billion URLs, so the length of hashValue is 7.
+  - Use __bloom filter__ to detect hash collisions
+- Can use [Base 62 conversion](#base-62-conversion) for hash function
+    - URL length is not fixed
+    - depends on unique ID generator (CHAP 7)
+    - collision impossible (based on unique ID)
+    - security concern that you can rev eng the next shorturl
+- URL shortening deep dive
+  - Assuming the input longURL is: [https://en.wikipedia.org/wiki/Systems\_design](https://en.wikipedia.org/wiki/Systems_design)
+  - Unique ID generator returns ID: 2009215674938.
+  - Convert the ID to shortURL using the base 62 conversion. ID (2009215674938) is converted to “zn9edcu”.
+  - Save ID, shortURL, and longURL to the database as shown in Table 8-4.
 - ![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/08.08.png)
-#### [Step 4 - Wrap up](#step-4---wrap-up-3)
 - here are a few additional talking points.
   - _Rate limiter_: A potential security problem we could face is that malicious users send an overwhelmingly large number of URL shortening requests. Rate limiter helps to filter out requests based on IP address or other filtering rules. If you want to refresh your memory about rate limiting, refer to “Chapter 4: Design a rate limiter”.
   - _Web server scaling_: Since the web tier is stateless, it is easy to scale the web tier by adding or removing web servers.
   - _Database scaling_: Database replication and sharding are common techniques.
   - _Analytics_: Data is increasingly important for business success. Integrating an analytics solution to the URL shortener could help to answer important questions like how many people click on a link? When do they click the link? etc.
   - _Availability, consistency, and reliability_. These concepts are at the core of any large system’s success. We discussed them in detail in Chapter 1, please refresh your memory on these topics.
-#### [Reference materials](#reference-materials-6)
 
 ### [CHAPTER 9: DESIGN A WEB CRAWLER](#chapter-9-design-a-web-crawler)
-#### [Step 1 - Understand the problem and establish design scope](#step-1---understand-the-problem-and-establish-design-scope-4)
-
+- ![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/09.04.png)
+- _Step 1_ - Understand the problem and establish design scope
 1. Given a set of URLs, download all the web pages addressed by the URLs.
 2. Extract URLs from these web pages
 3. Add new URLs to the list of URLs to be downloaded. Repeat these 3 steps.
-Also:
+- Also address:
 - _Scalability_: The web is very large. There are billions of web pages out there. Web crawling should be extremely efficient using parallelization.
 - _Robustness_: The web is full of traps. Bad HTML, unresponsive servers, crashes, malicious links, etc. are all common. The crawler must handle all those edge cases.
 - _Politeness_: The crawler should not make too many requests to a website within a short time interval.
 - _Extensibility_: The system is flexible so that minimal changes are needed to support new content types. For example, if we want to crawl image files in the future, we should not need to redesign the entire system.
-#### [Back of the envelope estimation](#back-of-the-envelope-estimation)
-- Assume _1 billion_ web pages are downloaded every month.
-- QPS: 1,000,000,000 / 30 days / 24 hours / 3600 seconds = ~400 pages per second.
-- _Peak QPS_ = 2 \* QPS = 800
-- Assume the _average web page size_ is 500k.
-- 1-billion-page x 500k = _500 TB storage per month_. If you are unclear about digital storage units, go through “Power of 2” section in Chapter 2 again.
-- Assuming data are stored for five years, 500 TB \* 12 months \* 5 years = 30 PB. A _30 PB storage is needed to store five-year_ content.
-#### [Step 2 - Propose high-level design and get buy-in](#step-2---propose-high-level-design-and-get-buy-in-4)
-![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/09.04.png)
-#### [Seed URLs](#seed-urls)
-#### [URL Frontier](#url-frontier)
-- _To be_ downloaded vs _already_ downloaded
-#### [HTML Downloader](#html-downloader)
-#### [DNS Resolver](#dns-resolver)
-#### [Content Parser](#content-parser)
-#### [Content Seen?](#content-seen)
-- compare _hash_ of content
-#### [Content Storage](#content-storage)
-- store popular content in memory to reduce latency
-- everything else on disk
-#### [URL Extractor](#url-extractor)
-- track all links on this page
-#### [URL Filter](#url-filter)
-#### [URL Seen?](#url-seen)
-- _bloom filter_ to avoid revisiting a seen page
-#### [URL Storage](#url-storage)
-#### [Web crawler workflow](#web-crawler-workflow)
-#### [Step 3 - Design deep dive](#step-3---design-deep-dive-4)
-#### [DFS vs BFS](#dfs-vs-bfs)
-- ![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/09.05.png)
-- Treat links as a graph
-- Depth vs Breadth first
-- Prefer BFS as deep links might not be as valuable
-- Avoid hammering single url as that's _impolite_
-#### [URL frontier](#url-frontier-1)
-#### [Politeness](#politeness)
-- Use a queue to avoid DOS'ing
-#### [Priority](#priority)
+- Back of the envelope estimation
+  - Assume _1 billion_ web pages are downloaded every month.
+  - QPS: 1,000,000,000 / 30 days / 24 hours / 3600 seconds = ~400 pages per second.
+  - _Peak QPS_ = 2 \* QPS = 800
+  - Assume the _average web page size_ is 500k.
+  - 1-billion-page x 500k = _500 TB storage per month_. If you are unclear about digital storage units, go through “Power of 2” section in Chapter 2 again.
+  - Assuming data are stored for five years, 500 TB \* 12 months \* 5 years = 30 PB. A _30 PB storage is needed to store five-year_ content.
+- Step 2 - Propose high-level design and get buy-in
+- URL Frontier to decide if _To be_ downloaded vs _already_ downloaded
+- Content Seen to compare _hash_ of content
+- Content Storage
+  - store popular content in memory to reduce latency
+  - everything else on disk
+- URL Extractor to track all links on this page
+- URL Seen? Use _bloom filter_ to avoid revisiting a seen page
+- Step 3 - Design deep dive
+- DFS vs BFS
+  - Treat links as a graph
+  - Depth vs Breadth first
+  - Prefer BFS as deep links might not be as valuable
+  - Avoid hammering single url as that's _impolite_
+- Be _polite_, use a queue to avoid DOS'ing
 - Prioritize crawl e.g. PageRank, traffic data, update frequency, etc
 - ![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/09.08.png)
-#### [Freshness](#freshness)
-#### [Storage for URL Frontier](#storage-for-url-frontier)
-#### [HTML Downloader](#html-downloader-1)
-#### [Robots.txt](#robotstxt)
-#### [Performance optimization](#performance-optimization-1)
+- Consider Robots.txt
+- Performance optimization
   * [1. Distributed crawl](#1-distributed-crawl)
   * [2. Cache DNS Resolver](#2-cache-dns-resolver)
   * [3. Locality](#3-locality)
   * [4. Short timeout](#4-short-timeout)
-#### [Robustness](#robustness)
-- _Consistent hashing_: This helps to distribute loads among downloaders. A new downloader server can be added or removed using consistent hashing. Refer to Chapter 5: Design consistent hashing for more details.
-- _Save crawl states and data_: To guard against failures, crawl states and data are written to a storage system. A disrupted crawl can be restarted easily by loading saved states and data.
-- _Exception handling_: Errors are inevitable and common in a large-scale system. The crawler must handle exceptions gracefully without crashing the system.
-- _Data validation_: This is an important measure to prevent system errors.
-#### [Extensibility](#extensibility)
-- Can separate specific downloaders e.g. Image downloader, Link Extractor, etc
-- ![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/09.10.png)
-#### [Detect and avoid problematic content](#detect-and-avoid-problematic-content)
-#### [Step 4 - Wrap up](#step-4---wrap-up-4)
-- relevant talking points:
-- Server-side rendering: Numerous websites use scripts like JavaScript, AJAX, etc to generate links on the fly. If we download and parse web pages directly, we will not be able to retrieve dynamically generated links. To solve this problem, we _perform server-side rendering (also called dynamic rendering) first before parsing a page_ \[12\].
-- _Filter out unwanted pages_: With finite storage capacity and crawl resources, an anti-spam component is beneficial in filtering out low quality and spam pages \[13\] \[14\].
-- _Database replication and sharding_: Techniques like replication and sharding are used to improve the data layer availability, scalability, and reliability.
-- _Horizontal scaling_: For large scale crawl, hundreds or even thousands of servers are needed to perform download tasks. The key is to keep servers stateless.
-- _Availability, consistency, and reliability_: These concepts are at the core of any large system’s success. We discussed these concepts in detail in Chapter 1. Refresh your memory on these topics.
-- _Analytics_: Collecting and analyzing data are important parts of any system because data is key ingredient for fine-tuning.
+- Robustness
+  - _Consistent hashing_: This helps to distribute loads among downloaders. A new downloader server can be added or removed using consistent hashing. Refer to Chapter 5: Design consistent hashing for more details.
+  - _Save crawl states and data_: To guard against failures, crawl states and data are written to a storage system. A disrupted crawl can be restarted easily by loading saved states and data.
+  - _Exception handling_: Errors are inevitable and common in a large-scale system. The crawler must handle exceptions gracefully without crashing the system.
+  - _Data validation_: This is an important measure to prevent system errors.
+- Extensibility
+  - Can separate specific downloaders e.g. Image downloader, Link Extractor, etc
+  - ![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/09.10.png)
+- Detect and avoid problematic content
+- Step 4 - Wrap up
+  - relevant talking points:
+  - Server-side rendering: Numerous websites use scripts like JavaScript, AJAX, etc to generate links on the fly. If we download and parse web pages directly, we will not be able to retrieve dynamically generated links. To solve this problem, we _perform server-side rendering (also called dynamic rendering) first before parsing a page_ \[12\].
+  - _Filter out unwanted pages_: With finite storage capacity and crawl resources, an anti-spam component is beneficial in filtering out low quality and spam pages \[13\] \[14\].
+  - _Database replication and sharding_: Techniques like replication and sharding are used to improve the data layer availability, scalability, and reliability.
+  - _Horizontal scaling_: For large scale crawl, hundreds or even thousands of servers are needed to perform download tasks. The key is to keep servers stateless.
+  - _Availability, consistency, and reliability_: These concepts are at the core of any large system’s success. We discussed these concepts in detail in Chapter 1. Refresh your memory on these topics.
+  - _Analytics_: Collecting and analyzing data are important parts of any system because data is key ingredient for fine-tuning.
 
 ### [CHAPTER 10: DESIGN A NOTIFICATION SYSTEM](#chapter-10-design-a-notification-system)
-#### [Step 1 - Understand the problem and establish design scope](#step-1---understand-the-problem-and-establish-design-scope-5)
-#### [Step 2 - Propose high-level design and get buy-in](#step-2---propose-high-level-design-and-get-buy-in-5)
-#### [Different types of notifications](#different-types-of-notifications)
-#### [iOS push notification](#ios-push-notification)
-#### [Android push notification](#android-push-notification)
-#### [SMS message](#sms-message)
-#### [Email](#email)
-#### [Contact info gathering flow](#contact-info-gathering-flow)
-#### [Notification sending/receiving flow](#notification-sendingreceiving-flow)
-  * [High-level design](#high-level-design)
-  * [Service 1 to N:](#service-1-to-n)
-  * [Notification system:](#notification-system)
-  * [Third-party services:](#third-party-services)
-  * [iOS, Android, SMS, Email: Users receive notifications on their devices.](#ios-android-sms-email-users-receive-notifications-on-their-devices)
-#### [High-level design (improved)](#high-level-design-improved)
-  * [Service 1 to N:](#service-1-to-n-1)
-  * [Notification servers:](#notification-servers)
-  * [Cache:](#cache-1)
-  * [DB:](#db)
-  * [Message queues:](#message-queues)
-  * [Workers:](#workers)
-  * [Third-party services:](#third-party-services-1)
-  * [iOS, Android, SMS, Email:](#ios-android-sms-email)
-#### [Step 3 - Design deep dive](#step-3---design-deep-dive-5)
-#### [Reliability](#reliability)
+- ![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/10.14.png)
+- Step 1 - Understand the problem and establish design scope
+  - Candidate: What _types of notifications_ does the system support? Interviewer: Push notification, SMS message, and email.
+  - Candidate: Is it a _real-time system_? Interviewer: Let us say it is a soft real-time system. We want a user to receive notifications as soon as possible. However, if the system is under a high workload, a slight delay is acceptable.
+  - Candidate: What are the _supported devices_? Interviewer: iOS devices, android devices, and laptop/desktop.
+  - Candidate: What _triggers notifications_? Interviewer: Notifications can be triggered by client applications. They can also be scheduled on the server-side.
+  - Candidate: Will users be able to _opt-out_? Interviewer: Yes, users who choose to opt-out will no longer receive notifications.
+  - Candidate: How many notifications are _sent out each day_? Interviewer: 10 million mobile push notifications, 1 million SMS messages, and 5 million emails.
+- Step 2 - Propose high-level design and get buy-in
+  - Notification systems: iOS, Android, Email, SMS
+  - Contact Info gathering Flow
+  - Notification sending/receiving flow
+    - User & Device info
+# Step 3 - Design deep dive
+# Reliability
   * [How to prevent data loss?](#how-to-prevent-data-loss)
   * [Will recipients receive a notification exactly once?](#will-recipients-receive-a-notification-exactly-once)
-#### [Additional components and considerations](#additional-components-and-considerations)
+# Additional components and considerations
   * [Notification template](#notification-template)
   * [Notification setting](#notification-setting)
   * [Rate limiting](#rate-limiting)
@@ -646,38 +641,38 @@ Also:
   * [Security in push notifications](#security-in-push-notifications)
   * [Monitor queued notifications](#monitor-queued-notifications)
   * [Events tracking](#events-tracking)
-#### [Updated design](#updated-design)
-#### [Step 4 - Wrap up](#step-4---wrap-up-5)
-#### [Reference materials](#reference-materials-8)
+# Updated design
+# Step 4 - Wrap up
+# Reference materials
 
 ### [CHAPTER 11: DESIGN A NEWS FEED SYSTEM](#chapter-11-design-a-news-feed-system)
-#### [Step 1 - Understand the problem and establish design scope](#step-1---understand-the-problem-and-establish-design-scope-6)
-#### [Step 2 - Propose high-level design and get buy-in](#step-2---propose-high-level-design-and-get-buy-in-6)
-#### [Newsfeed APIs](#newsfeed-apis)
+# Step 1 - Understand the problem and establish design scope
+# Step 2 - Propose high-level design and get buy-in
+# Newsfeed APIs
   * [Feed publishing API](#feed-publishing-api)
   * [Newsfeed retrieval API](#newsfeed-retrieval-api)
-#### [Feed publishing](#feed-publishing)
-#### [Newsfeed building](#newsfeed-building)
-#### [Step 3 - Design deep dive](#step-3---design-deep-dive-6)
-#### [Feed publishing deep dive](#feed-publishing-deep-dive)
+# Feed publishing
+# Newsfeed building
+# Step 3 - Design deep dive
+# Feed publishing deep dive
   * [Web servers](#web-servers)
   * [Fanout service](#fanout-service)
     * [Fanout on write.](#fanout-on-write)
     * [Fanout on read.](#fanout-on-read)
-#### [The fanout service works as follows:](#the-fanout-service-works-as-follows)
-#### [Newsfeed retrieval deep dive](#newsfeed-retrieval-deep-dive)
-#### [Cache architecture](#cache-architecture)
-#### [Step 4 - Wrap up](#step-4---wrap-up-6)
+# The fanout service works as follows:
+# Newsfeed retrieval deep dive
+# Cache architecture
+# Step 4 - Wrap up
   * [Scaling the database:](#scaling-the-database)
   * [Other talking points:](#other-talking-points)
-#### [Reference materials](#reference-materials-9)
+# Reference materials
 
 ### [CHAPTER 12: DESIGN A CHAT SYSTEM](#chapter-12-design-a-chat-system)
-#### [Step 1 - Understand the problem and establish design scope](#step-1---understand-the-problem-and-establish-design-scope-7)
-#### [Step 2 - Propose high-level design and get buy-in](#step-2---propose-high-level-design-and-get-buy-in-7)
+# Step 1 - Understand the problem and establish design scope
+# Step 2 - Propose high-level design and get buy-in
   * [Polling](#polling)
   * [Long polling](#long-polling)
-#### [WebSocket](#websocket)
+# WebSocket
   * [High-level design](#high-level-design-1)
   * [Stateless Services](#stateless-services)
   * [Stateful Service](#stateful-service)
@@ -688,7 +683,7 @@ Also:
     * [Message table for 1 on 1 chat](#message-table-for-1-on-1-chat)
     * [Message table for group chat](#message-table-for-group-chat)
     * [Message ID](#message-id)
-#### [Step 3 - Design deep dive](#step-3---design-deep-dive-7)
+# Step 3 - Design deep dive
   * [Service discovery](#service-discovery)
   * [Message flows](#message-flows)
     * [1 on 1 chat flow](#1-on-1-chat-flow)
@@ -699,16 +694,16 @@ Also:
     * [User logout](#user-logout)
     * [User disconnection](#user-disconnection)
     * [Online status fanout](#online-status-fanout)
-#### [Step 4 - Wrap up](#step-4---wrap-up-7)
-#### [Reference Materials](#reference-materials-10)
+# Step 4 - Wrap up
+# Reference Materials
 
 ### [CHAPTER 13: DESIGN A SEARCH AUTOCOMPLETE SYSTEM](#chapter-13-design-a-search-autocomplete-system)
-#### [Step 1 - Understand the problem and establish design scope](#step-1---understand-the-problem-and-establish-design-scope-8)
+# Step 1 - Understand the problem and establish design scope
   * [Requirements](#requirements)
-#### [Step 2 - Propose high-level design and get buy-in](#step-2---propose-high-level-design-and-get-buy-in-8)
+# Step 2 - Propose high-level design and get buy-in
   * [Data gathering service](#data-gathering-service)
   * [Query service](#query-service)
-#### [Step 3 - Design deep dive](#step-3---design-deep-dive-8)
+# Step 3 - Design deep dive
   * [Trie data structure](#trie-data-structure)
   * [Limit the max length of a prefix](#limit-the-max-length-of-a-prefix)
   * [Cache top search queries at each node](#cache-top-search-queries-at-each-node)
@@ -720,18 +715,18 @@ Also:
     * [Update](#update)
     * [Delete](#delete)
   * [Scale the storage](#scale-the-storage)
-#### [Step 4 - Wrap up](#step-4---wrap-up-8)
-#### [Reference Materials](#reference-materials-11)
+# Step 4 - Wrap up
+# Reference Materials
 
 ### [CHAPTER 14: DESIGN YOUTUBE](#chapter-14-design-youtube)
-#### [Step 1 - Understand the problem and establish design scope](#step-1---understand-the-problem-and-establish-design-scope-9)
+# Step 1 - Understand the problem and establish design scope
   * [Back of the envelope estimation](#back-of-the-envelope-estimation-1)
-#### [Step 2 - Propose high-level design and get buy-in](#step-2---propose-high-level-design-and-get-buy-in-9)
+# Step 2 - Propose high-level design and get buy-in
   * [Video uploading flow](#video-uploading-flow)
   * [Flow 1: upload the actual video](#flow-1-upload-the-actual-video)
   * [Flow b: update the metadata](#flow-b-update-the-metadata)
   * [Video streaming flow](#video-streaming-flow)
-#### [Step 3 - Design deep dive](#step-3---design-deep-dive-9)
+# Step 3 - Design deep dive
   * [Video transcoding](#video-transcoding)
   * [Directed acyclic graph (DAG) model](#directed-acyclic-graph-dag-model)
   * [Video transcoding architecture](#video-transcoding-architecture)
@@ -748,12 +743,12 @@ Also:
   * [Safety optimization: protect your videos](#safety-optimization-protect-your-videos)
   * [Cost-saving optimization](#cost-saving-optimization)
   * [Error handling](#error-handling)
-#### [Step 4 - Wrap up](#step-4---wrap-up-9)
-#### [Reference Materials](#reference-materials-12)
+# Step 4 - Wrap up
+# Reference Materials
 
 ### [CHAPTER 15: DESIGN GOOGLE DRIVE](#chapter-15-design-google-drive)
-#### [Step 1 - Understand the problem and establish design scope](#step-1---understand-the-problem-and-establish-design-scope-10)
-#### [Step 2 - Propose high-level design and get buy-in](#step-2---propose-high-level-design-and-get-buy-in-10)
+# Step 1 - Understand the problem and establish design scope
+# Step 2 - Propose high-level design and get buy-in
   * [APIs](#apis)
     * [1. Upload a file to Google Drive](#1-upload-a-file-to-google-drive)
     * [2. Download a file from Google Drive](#2-download-a-file-from-google-drive)
@@ -771,7 +766,7 @@ Also:
     * [Metadata cache](#metadata-cache)
     * [Notification service](#notification-service)
     * [Offline backup queue](#offline-backup-queue)
-#### [Step 3 - Design deep dive](#step-3---design-deep-dive-10)
+# Step 3 - Design deep dive
   * [Block servers](#block-servers-1)
   * [High consistency requirement](#high-consistency-requirement)
   * [Metadata database](#metadata-database-1)
@@ -786,50 +781,9 @@ Also:
   * [Notification service](#notification-service-1)
   * [Save storage space](#save-storage-space)
   * [Failure Handling](#failure-handling)
-#### [Step 4 - Wrap up](#step-4---wrap-up-10)
-#### [Reference Materials](#reference-materials-13)
+# Step 4 - Wrap up
+# Reference Materials
 
-### [CHAPTER 16: THE LEARNING CONTINUES](#chapter-16-the-learning-continues)
-#### [Real-world systems](#real-world-systems)
-#### [Company engineering blogs](#company-engineering-blogs)
-
-### [AFTERWORD](#afterword)
-
-## TODO/Links
-
-- [ ] [Software Engineering Manager, Initial Interview Guide](https://scontent-sea1-1.xx.fbcdn.net/v/t39.2365-6/332855504_1602132406878983_5340602504034862758_n.pdf?_nc_cat=101&ccb=1-7&_nc_sid=e280be&_nc_ohc=848xg9KBa0QAX_xpHmm&_nc_ht=scontent-sea1-1.xx&oh=00_AfDSUqgQ7RMaz0WFKptthIPKxFeHdprBefsnF6uDCO-j3g&oe=654B9C4B)
-- [ ] [7 steps of Facebook / Meta interview process & how to ace them - IGotAnOffer](https://igotanoffer.com/blogs/tech/facebook-interview-process)
-- [ ] Craig: [Tech Interview (Updating in Progress ...) - Google Sheets](https://docs.google.com/spreadsheets/d/14aVAyDsQmz50TxhldNV5lmsyvYOJrAT9gzi7sGfMu9k/edit#gid=1051045762)
-- [ ] [(214) TOP FACEBOOK SYSTEM DESIGN INTERVIEW QUESTIONS (PART 1) | Facebook Pirate Interview Round - YouTube](https://www.youtube.com/watch?v=hykjbT5Z0oE)
-- [ ] https://tianpan.co/notes/2016-02-13-crack-the-system-design-interview
-- [ ] [donnemartin/system-design-primer: Learn how to design large-scale systems. Prep for the system design interview. Includes Anki flashcards.](https://github.com/donnemartin/system-design-primer)
-- [ ] [Design Pinterest - TianPan.co](https://tianpan.co/notes/2016-02-13-crack-the-system-design-interview)
-
-## Notes
-
-### 1 Scale
-- 5 DB types: RDMBS vs NoSQL (KV, Graph, Column, Document)
-- Load Balancer
-- shard DB: main (write) vs replica(s) (read)
-  - Performance, Reliability, HA
-- Cache for temporary, (mostly) RO data
-- CDN for static assets
-- Stateless servers for autoscaling. Use persistent nosql (redis) to store state
-- geoDNS for DC geo-routing
-- MQ for long-running tasks
-
-### 2 Estimation
-- memory > compression > disk > network
-- Commonly back-of-the-envelope: QPS, peak QPS, storage, cache, number of servers
-
-### 3 Interview
-- __communicate with interviewer__
-1. Understand problem and establish design scope 
-2. Step 2 - Propose High-Level Design And Get Buy-In
-3. Design Deep Dive
-4. Wrap Up
-
-### Vertical vs Horizontal
 
 ## CHAPTER 1: SCALE FROM ZERO TO MILLIONS OF USERS
 
