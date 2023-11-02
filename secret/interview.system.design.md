@@ -11,8 +11,176 @@ inoremap png ![](https://raw.githubusercontent.com/arafatm/assets/main/img/syste
 
 [System Design Interview PDF](system.design.interview.pdf)
 
-Craig's Diagram
+## Craig
+
+
 ![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/craig.meta.png)
+
+### Ask a lot of questions
+
+*   Why
+*   Requirements
+*   *   What features are required?
+    *   Nice to have?
+    *   Out of scope
+*   Design considerations
+*   *   Pre-compute
+*   Capacity estimation and constraints
+*   *   Remember CAP Theorem
+    *   How many users
+    *   How fast
+    *   Storage (Characters are 8 bytes)
+    *   *   Metadata - perhaps key-value store (NoSQL fast reads)
+    *   Bandwidth
+*   Usage Metrics
+*   *   Capacity estimation
+    *   What’s the average user usage pattern (reads to writes)
+*   Availability/Latency
+*   System interface design (API)
+*   *   postTweet(user\_id, tweet\_text, image\_url, user\_location, timestamp,...)
+*   Data Model
+*   High level design
+*   Detailed design for selected components
+*   Identifying and resolving bottlenecks
+
+### Twitter
+
+*   ![](https://lh7-us.googleusercontent.com/Zp-tzCmjK4H7G59PWyCfNN-tYJxZPEZH8wglS6VSIaCBD287HEiquf60RMzDFLYTnwjFsDf2uPX9-7qy0xawfcuRsLSMk0Dt0pZMbXCbD_aedjK_w9w0l5gNQKcYBc0Rck42KTQxkGiCnJwkf688Mg)
+
+### Youtube
+
+*   ![](https://lh7-us.googleusercontent.com/iOoNcnpk6kVXcvLIo8mTgUfA-PsnmUyLSdnCFG-o9Y6mi2yfq--ZycMQi5jy5atRoWi_qhxP6mI0J8Q-N2t-t6PHd45Nx_aPdwddflH82crjGNXH4sc75jKxlYqG-jJCE58FEutC76SkiDnEvB-GaA)
+
+### URL Shortener
+
+![](https://lh7-us.googleusercontent.com/KIj-bGvay7gaLMSY3pwWCNDpOcttM7OG16tb-pKvJiWmjCVgnTpk4poHAeo8_0ADhwbfFm7FhU9keqZYJKNjYOc9Bqc1ddqCm9tlEQhOsh75MPfmvbgywYnNe-F29LMC22BIR6Gu3QlpKXmBxUmZxA)
+
+*   Functional
+*   *   API
+    *   Throttling 
+    *   *   Noisy neighbors
+        *   Thundering herd
+        *   DDOS
+*   Non Functional
+*   *   Instagram example - pictures can wait, feed cannot
+    *   What does “top picture” mean
+    *   What does “follow” mean
+    *   Calculate space requirements
+    *   What type of storage
+    *   Object storage - will likely need a db entry for path
+    *   DB Storage
+    *   *   Size of each column \* number (i.e. users, pictures, etc) \* retention length 
+    *   Sharding/Partitioning will be an interesting conversation
+    *   20/80 rule - 20% of the reads account for 80% of the traffic
+    *   What type of traffic are we looking at
+    *   Users 
+    *   *   Daily vs. total
+    *   Deduplication
+
+
+### Solutions
+
+*   Segregate traffic
+*   *   Read vs. write
+    *   Replication (primary - Secondaries). This can lead to stale data (eventual consistency) but that may be ok
+    *   Consistent hashing [https://www.youtube.com/watch?​v=tHEyzVbl4bg](https://www.youtube.com/watch?v=tHEyzVbl4bg) 
+*   Need to research tree designs
+*   Dynamic Programming
+*   *   Recursion, Store (memoize), Bottom up
+    *   Example [https://www.youtube.com/watch?​v=vYquumk4nWw](https://www.youtube.com/watch?v=vYquumk4nWw) 
+*   Caching
+*   *   If it hits the database draw a route back to caching
+    *   LRU
+*   Load balancing
+*   *   Round robin
+    *   Least traffic
+*   CDN - don’t forget
+*   SQL vs. NoSQL
+*   *   Sql easier to update (no duplicate data)
+    *   NoSQL - faster reads, no schema or relations
+    *   *   Updates more difficult
+        *   Horizontal scaling easier
+        *   Great performance for mass (simple) read/write requests
+    *   SQL - data distributed across tables
+
+
+### Interesting examples
+
+*   Dropbox - chunk the images
+*   *   Reduces duplicates, retry only failed chunks, diff only affected chunks
+*   Long polling
+*   *   Keeps a connection open until there’s a response
+*   Instagram
+*   *   [https://www.youtube.com/watch?​v=QmX2NPkJTKg](https://www.youtube.com/watch?v=QmX2NPkJTKg)
+
+
+## Common Questions
+
+*   Design goals
+*   System scale
+*   Apply CAP Theorem
+*   Ask - read vs. write heavy
+
+### Video Description of a lot of these designs
+
+[https://www.youtube.com/​channel/​UC1HEtidkUVwmofYXnR3PYtg](https://www.youtube.com/channel/UC1HEtidkUVwmofYXnR3PYtg) 
+
+### Design Facebook news feed - 
+
+[TOP FACEBOOK SYSTEM DESIGN INTERVIEW QUESTIONS (PART 1) | Facebook Pirate Interview Round](https://www.youtube.com/watch?v=hykjbT5Z0oE)
+
+*   Latency concerns
+*   Highly available - eventually consistent
+*   Read heavy in nature - caching
+*   Walk through the experience -log in, formulate feed, pagination
+*   ![](https://lh7-us.googleusercontent.com/vx14S2qhirOo_Cf9djw_fjgXB-p7pmwQIA61IwLWQdAy5P3KXZufNKG7izIS1Jh_ErAYWi73M2GPb6b_uCjiFTKWw546AiQ-o5vLP3KK-qd0MiPDLfOx9YMr6CS-N34teZMop6GoRV6md_PIEPMUCg)
+
+### Design Facebook Status Search
+
+![](https://lh7-us.googleusercontent.com/7ilhrl8gCEBGaKfe-6Od-X19dmlJHf9xXtpffKyjFJY8ETZx4g-1JpREuEPw63xO3HuQ7yy77zJQ88p8Tn0KDKHVrzSCFXid62j3NCPagF6j5OVcx4ZvQLnCOFkSYo42Gv9-6_wdyNu3bVAKz2osQQ)
+
+### Design live commenting
+
+![](https://lh7-us.googleusercontent.com/QuDZivcIhs9h9I7eY5Fq6bdkY7htezriC3-obSwQAiKS0uIlZrrI9Ra5Sx881FZXfTcd0e7C61jjRlxtlqn1X4omYYINiWlOMpMIk2lbaoBDtVMGLYwmvQoYd3WiwMz54WqZt7MEoTpHeUlbw9kmlw)
+
+### Facebook Chat
+
+![](https://lh7-us.googleusercontent.com/LiPq_CQc8qaS-oxn21XhFZuF68_qsHCDbxqqpnDwLWj3kFvSs_ASB08LzfexGylEFRKsLtkqCHIDVw4EHPGCtfvQXwuOrUyqpvHy5fOoHZz9joxnCCdzZjDMKp9E38pqQKf8IRe7m1zrv0gfb1QSlg)
+
+### Design Instagram
+
+![](https://lh7-us.googleusercontent.com/OtsxcqVLxRCsr3jtQNyq6VcyydZJM7fyvqFPT6ZQJZTrxkhZ8_JmtGycBTjrwg1TO3WYRuI7xOjeNEyyJ50vafzBzUy5Z41kRTic5QfNJKZDLq8APT9Q7AnkiDtWOYCE0ZeFS7Vr2Ihp7Use_MnYqA)
+
+### Design Proximity Server
+
+![](https://lh7-us.googleusercontent.com/hBF3Au7LMlnG_REWwZ_hnFT6r3TUZCi9JSTTnj3-tcCw-oik0e2mKOpEEV4r2qQ4MY6o08tICwbXmzdqf8mOMr1hcfJHGLw3rnCmGqClItcyFf_Rsm1vseBNpmPSegxPB5skXnEzxtaazLSMqSox3w)
+
+### Typeahead 
+
+![](https://lh7-us.googleusercontent.com/G1lVNoZWD0vcZEpxOyhV-1-Yh1cvl7BcUotPRZeowbwGPeymmvALC_3ElvH8sZJf3Ib7_gezPlTYZkFruNNfbbpRHAiRHRuea1A4a5KK0rhwDG56VvwUihEQ_L6Af07m2DuKZsS0mOTf989BsyEAWA)
+
+### Top N Songs
+
+![](https://lh7-us.googleusercontent.com/Lctbtex0potgsm2IC02LnfXbFYPfUAbsZAidkxMlRn_zWLIVNs9oBtUZ-7sfKKnji1iKVXm8bTbDLJDe-JRJ_KWYQ5m8bZCUkKBJc3PnQSVYImRbYlaBS6UwKku47hHJvPSDpiauT2ihsl4r_WSHqg)
+
+### Design Privacy Settings
+
+![](https://lh7-us.googleusercontent.com/uwiTHZ0hJxnp2FWeHmOopIYh1WxR38qiWuf4XwncAf5iUlmnCBevd77h4Jv4Ui8PIoWw7XWJGPlh8qnkvNNKQwoo6H_lY78tttNiGQI-bZEgtmxuZMQ4IPUhHFsY7CgkuedikKQQV3vkkHBRpVtkGw)
+
+### Design Web Crawler
+
+![](https://lh7-us.googleusercontent.com/dsuM-BXK61AyW1Ji4YDhIUzBNsSxmMRNOPHJBjdxoVG8Hw9BeSxGfahWy3EHm2CVb8pvdoz9WD5816nVJskJtBp4zK_fqAhzIv9eYUO_s6OWWVpp2nDcdhjp6t7S-0QW1hOmOB77iNfy8WAXBiZEbg)
+
+### Netflix Design Interview
+
+![](https://lh7-us.googleusercontent.com/MrrGVoIh6ITjG9ewTlVpf8iUvdzO4OhqCiJ_okgivQOyDcBGZ2OhgI-JXzeAZNuRAYlqUUuN9uOTEE5jtxdKXAuY__tvhPmSk1Qy39DRTJQ-9uiyDJdOTUchFW6FXHnaRZ-f6gCVcMvTlEQ0hGw2uw)
+
+![](https://lh7-us.googleusercontent.com/i_OgW8HLMfRHn8vIL0mn7uVZsYayQuIg2V38hxotHvtrg5pSC0azGG98bSIL1VnkkNB8fitG7EsddOcdbgBgiCPo5Si0b_0FGwF98lOB5NJbGDyowrJjMVgiiLCJYEXBnL_RHlE28-GABlXHj7hU2g)
+
+*   Read vs. Write load
+*   Distribution
+*   CDN 
+*   Chunking the files to resolution, codecs, etc
 
 ## [(223) TOP FACEBOOK SYSTEM DESIGN INTERVIEW QUESTIONS (PART 1) | Facebook Pirate Interview Round - YouTube](https://www.youtube.com/watch?v=hykjbT5Z0oE)
 
