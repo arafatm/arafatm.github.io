@@ -721,20 +721,43 @@ Storage
   - 1 on 1 chat flow ![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/12.12.png)
   - Small group chat flow ![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/12.14.png)
   - Online presence
-  - User login
-  - User logout
-  - User disconnection
-  - Online status fanout
+    - ![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/12.16.png)
+    - ![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/12.17.png)
+  - Online status fanout ![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/12.19.png)
+    - For large groups, this is a lot of events. Can limit by fetching only when a user enters a group or manually refreshes list 
 - Step 4 - Wrap up
+  - Extend the chat app to support media files such as photos and videos. Media files are significantly larger than text in size. Compression, cloud storage, and thumbnails are interesting topics to talk about.
+  - End-to-end encryption. Whatsapp supports end-to-end encryption for messages. Only the sender and the recipient can read messages. Interested readers should refer to the article in the reference materials [9].
+  - Caching messages on the client-side is effective to reduce the data transfer between the client and server.
+  - Improve load time. Slack built a geographically distributed network to cache users’ data, channels, etc. for better load time [10].
+  - Error handling.
+  - The chat server error. There might be hundreds of thousands, or even more persistent connections to a chat server. If a chat server goes offline, service discovery (Zookeeper) will provide a new chat server for clients to establish new connections with.
+  - Message resent mechanism. Retry and queueing are common techniques for resending messages.
 
 ### [CHAPTER 13: DESIGN A SEARCH AUTOCOMPLETE SYSTEM](#chapter-13-design-a-search-autocomplete-system)
 - Step 1 - Understand the problem and establish design scope
-  - Requirements
+  - Candidate: Is the matching only supported at the _beginning of a search query or in the middle as well_? Interviewer: Only at the beginning of a search query.
+  - Candidate: _How many autocomplete suggestions_ should the system return? Interviewer: 5
+  - Candidate: How does the system know _which 5 suggestions_ to return? Interviewer: This is determined by popularity, decided by the historical query frequency.
+  - Candidate: Does the system support _spell check_? Interviewer: No, spell check or autocorrect is not supported.
+  - Candidate: Are search _queries in English_? Interviewer: Yes. If time allows at the end, we can discuss multi-language support.
+  - Candidate: Do we allow _capitalization and special characters_? Interviewer: No, we assume all search queries have lowercase alphabetic characters.
+  - Candidate: _How many users_ use the product? Interviewer: 10 million DAU.
 - Step 2 - Propose high-level design and get buy-in
-  - Data gathering service
-  - Query service
+  - Data gathering service ![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/13.02.png)
+  - Query service ![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/13.01.t.png)
 - Step 3 - Design deep dive
-  - Trie data structure
+  - Trie data structure ![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/13.06.png)
+    - `p`: length of a prefix
+    - `n`: total number of nodes in a trie
+    - `c`: number of children of a given node
+    - Find the prefix. Time complexity: `O(p)`.
+    - Traverse the subtree from the prefix node to get all valid children. A child is valid if it can form a valid query string. Time complexity: `O(c)`
+    - Sort the children and get top k. Time complexity: `O(clogc)`
+    - The time complexity of this algorithm is the sum of time spent on each step mentioned above: `O(p) + O(c) + O(clogc)` 
+    - two optimizations:
+      - Limit the max length of a prefix: reduces to `O(small constant), aka O(1)`
+      - Cache top search queries at each node ![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/13.08.png)
   - Limit the max length of a prefix
   - Cache top search queries at each node
   - Data gathering service
