@@ -760,22 +760,58 @@ Storage
       - Cache top search queries at each node ![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/13.08.png)
   - Limit the max length of a prefix
   - Cache top search queries at each node
-  - Data gathering service
+  - Data gathering service ![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/13.09.png)
+    - Update cache on a schedule to reduce load
+    - Analytics log stores raw search queries
+    - Aggregators run on a schedule depending on how 'recent' you need results to be
   - Aggregated Data.
-  - Query service
-  - Trie operations
-    - Create
-    - Update
-    - Delete
+    - Workers to run async jobs on schedule
+    - Trie cache: Distributed for fast read
+    - Trie DB: long term store. Can be put in document store or KV
+    - Example Trie KV ![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/13.10.png)
+  - Query service ![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/13.11.png)
+  - Optimizations
+    - AJAX request. For web applications, browsers usually send AJAX requests to fetch autocomplete results. The main benefit of AJAX is that sending/receiving a request/response does not refresh the whole web page.
+    - Browser caching. For many applications, autocomplete search suggestions may not change much within a short time. Thus, autocomplete suggestions can be saved in browser cache to allow subsequent requests to get results from the cache directly. Google search engine uses the same cache mechanism. Figure 13-12 shows the response header when you type “system design interview” on the Google search engine. As you can see, Google caches the results in the browser for 1 hour. Please note: “private” in cache-control means results are intended for a single user and must not be cached by a shared cache. “maxage=3600” means the cache is valid for 3600 seconds, aka, an hour.
+    - Data sampling: For a large-scale system, logging every search query requires a lot of processing power and storage. Data sampling is important. For instance, only 1 out of every N requests is logged by the system.
+  - Trie operations: Create, Update, Delete
+    - Delete for spam/adult content
   - Scale the storage
+    - Can shard data e.g. shard for each letter in alphabet ![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/13.15.png)
 - Step 4 - Wrap up
+  - support multiple languages
+  - different tries for each locale
+  - real-time queries
+    - reduce working data set by sharding
+    - change ranking model to weigh recent queries
 - Reference Materials
 
 ### [CHAPTER 14: DESIGN YOUTUBE](#chapter-14-design-youtube)
 - Step 1 - Understand the problem and establish design scope
+  - Candidate: What features are important? Interviewer: Ability to _upload_ a video and _watch_ a video.
+  - Candidate: What _clients_ do we need to support? Interviewer: Mobile apps, web browsers, and smart TV.
+  - Candidate: How many _daily active users_ do we have? Interviewer: 5 million
+  - Candidate: What is the _average daily time spent_ on the product? Interviewer: 30 minutes.
+  - Candidate: Do we need to support _international users_? Interviewer: Yes, a large percentage of users are international users.
+  - Candidate: What are the supported _video resolutions_? Interviewer: The system accepts most of the video resolutions and formats.
+  - Candidate: Is _encryption_ required? Interviewer: Yes
+  - Candidate: Any _file size requirement_ for videos? Interviewer: Our platform focuses on small and medium-sized videos. The maximum allowed video size is 1GB.
+  - Candidate: Can we leverage some of the _existing cloud infrastructures_ provided by Amazon, Google, or Microsoft? Interviewer: That is a great question. Building everything from scratch is unrealistic for most companies it is recommended to leverage some of the existing cloud services.
   - Back of the envelope estimation
+    - Assume the product has 5 million daily active users (DAU).
+    - Users watch 5 videos per day.
+    - 10% of users upload 1 video per day.
+    - Assume the average video size is 300 MB.
+    - Total daily storage space needed: 5 million * 10% * 300 MB = 150TB
+    - CDN cost.
+      - When cloud CDN serves a video, you are charged for data transferred out of the CDN.
+      - Let us use Amazon’s CDN CloudFront for cost estimation (Figure 14-2) [3].
+      - Assume 100% of traffic is served from the United States.
+      - The average cost per GB is $0.02.
+      - For simplicity, we only calculate the cost of video streaming. 5 million * 5 videos * 0.3GB * 0.02= 150,000 per day
 - Step 2 - Propose high-level design and get buy-in
-  - Video uploading flow
+  - ![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/14.03.png)
+  - Video uploading flow ![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/14.04.png)
   - Flow 1: upload the actual video
   - Flow b: update the metadata
   - Video streaming flow
