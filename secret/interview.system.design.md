@@ -15,7 +15,7 @@ inoremap png ![](https://raw.githubusercontent.com/arafatm/assets/main/img/syste
 ```
 test
 ```
-  - bullet
+  - indent bullet
 
 [System Design Interview PDF](system.design.interview.pdf)
 
@@ -23,108 +23,108 @@ test
 
 ### Ask a lot of questions
 
-*   Why
-*   Requirements
-*   *   What features are required?
-    *   Nice to have?
-    *   Out of scope
-*   Design considerations
-*   *   Pre-compute
-*   Capacity estimation and constraints
-*   *   Remember CAP Theorem
-    *   How many users
-    *   How fast
-    *   Storage (Characters are 8 bytes)
-    *   *   Metadata - perhaps key-value store (NoSQL fast reads)
-    *   Bandwidth
-*   Usage Metrics
-*   *   Capacity estimation
-    *   What’s the average user usage pattern (reads to writes)
-*   Availability/Latency
-*   System interface design (API)
-*   *   postTweet(user\_id, tweet\_text, image\_url, user\_location, timestamp,...)
-*   Data Model
-*   High level design
-*   Detailed design for selected components
-*   Identifying and resolving bottlenecks
+* Why
+* Requirements
+* * What features are required?
+  * Nice to have?
+  * Out of scope
+* Design considerations
+* * Pre-compute
+* Capacity estimation and constraints
+* * Remember CAP Theorem
+  * How many users
+  * How fast
+  * Storage (Characters are 8 bytes)
+  * * Metadata - perhaps key-value store (NoSQL fast reads)
+  * Bandwidth
+* Usage Metrics
+* * Capacity estimation
+  * What’s the average user usage pattern (reads to writes)
+* Availability/Latency
+* System interface design (API)
+* * postTweet(user\_id, tweet\_text, image\_url, user\_location, timestamp,...)
+* Data Model
+* High level design
+* Detailed design for selected components
+* Identifying and resolving bottlenecks
 
 ### Twitter
 
-*   ![](https://lh7-us.googleusercontent.com/Zp-tzCmjK4H7G59PWyCfNN-tYJxZPEZH8wglS6VSIaCBD287HEiquf60RMzDFLYTnwjFsDf2uPX9-7qy0xawfcuRsLSMk0Dt0pZMbXCbD_aedjK_w9w0l5gNQKcYBc0Rck42KTQxkGiCnJwkf688Mg)
+* ![](https://lh7-us.googleusercontent.com/Zp-tzCmjK4H7G59PWyCfNN-tYJxZPEZH8wglS6VSIaCBD287HEiquf60RMzDFLYTnwjFsDf2uPX9-7qy0xawfcuRsLSMk0Dt0pZMbXCbD_aedjK_w9w0l5gNQKcYBc0Rck42KTQxkGiCnJwkf688Mg)
 
 ### Youtube
 
-*   ![](https://lh7-us.googleusercontent.com/iOoNcnpk6kVXcvLIo8mTgUfA-PsnmUyLSdnCFG-o9Y6mi2yfq--ZycMQi5jy5atRoWi_qhxP6mI0J8Q-N2t-t6PHd45Nx_aPdwddflH82crjGNXH4sc75jKxlYqG-jJCE58FEutC76SkiDnEvB-GaA)
+* ![](https://lh7-us.googleusercontent.com/iOoNcnpk6kVXcvLIo8mTgUfA-PsnmUyLSdnCFG-o9Y6mi2yfq--ZycMQi5jy5atRoWi_qhxP6mI0J8Q-N2t-t6PHd45Nx_aPdwddflH82crjGNXH4sc75jKxlYqG-jJCE58FEutC76SkiDnEvB-GaA)
 
 ### URL Shortener
 
 ![](https://lh7-us.googleusercontent.com/KIj-bGvay7gaLMSY3pwWCNDpOcttM7OG16tb-pKvJiWmjCVgnTpk4poHAeo8_0ADhwbfFm7FhU9keqZYJKNjYOc9Bqc1ddqCm9tlEQhOsh75MPfmvbgywYnNe-F29LMC22BIR6Gu3QlpKXmBxUmZxA)
 
-*   Functional
-*   *   API
-    *   Throttling 
-    *   *   Noisy neighbors
-        *   Thundering herd
-        *   DDOS
-*   Non Functional
-*   *   Instagram example - pictures can wait, feed cannot
-    *   What does “top picture” mean
-    *   What does “follow” mean
-    *   Calculate space requirements
-    *   What type of storage
-    *   Object storage - will likely need a db entry for path
-    *   DB Storage
-    *   *   Size of each column \* number (i.e. users, pictures, etc) \* retention length 
-    *   Sharding/Partitioning will be an interesting conversation
-    *   20/80 rule - 20% of the reads account for 80% of the traffic
-    *   What type of traffic are we looking at
-    *   Users 
-    *   *   Daily vs. total
-    *   Deduplication
+* Functional
+* * API
+  * Throttling 
+  * * Noisy neighbors
+    * Thundering herd
+    * DDOS
+* Non Functional
+* * Instagram example - pictures can wait, feed cannot
+  * What does “top picture” mean
+  * What does “follow” mean
+  * Calculate space requirements
+  * What type of storage
+  * Object storage - will likely need a db entry for path
+  * DB Storage
+  * * Size of each column \* number (i.e. users, pictures, etc) \* retention length 
+  * Sharding/Partitioning will be an interesting conversation
+  * 20/80 rule - 20% of the reads account for 80% of the traffic
+  * What type of traffic are we looking at
+  * Users 
+  * * Daily vs. total
+  * Deduplication
 
 
 ### Solutions
 
-*   Segregate traffic
-*   *   Read vs. write
-    *   Replication (primary - Secondaries). This can lead to stale data (eventual consistency) but that may be ok
-    *   Consistent hashing [https://www.youtube.com/watch?​v=tHEyzVbl4bg](https://www.youtube.com/watch?v=tHEyzVbl4bg) 
-*   Need to research tree designs
-*   Dynamic Programming
-*   *   Recursion, Store (memoize), Bottom up
-    *   Example [https://www.youtube.com/watch?​v=vYquumk4nWw](https://www.youtube.com/watch?v=vYquumk4nWw) 
-*   Caching
-*   *   If it hits the database draw a route back to caching
-    *   LRU
-*   Load balancing
-*   *   Round robin
-    *   Least traffic
-*   CDN - don’t forget
-*   SQL vs. NoSQL
-*   *   Sql easier to update (no duplicate data)
-    *   NoSQL - faster reads, no schema or relations
-    *   *   Updates more difficult
-        *   Horizontal scaling easier
-        *   Great performance for mass (simple) read/write requests
-    *   SQL - data distributed across tables
+* Segregate traffic
+* * Read vs. write
+  * Replication (primary - Secondaries). This can lead to stale data (eventual consistency) but that may be ok
+  * Consistent hashing [https://www.youtube.com/watch?​v=tHEyzVbl4bg](https://www.youtube.com/watch?v=tHEyzVbl4bg) 
+* Need to research tree designs
+* Dynamic Programming
+* * Recursion, Store (memoize), Bottom up
+  * Example [https://www.youtube.com/watch?​v=vYquumk4nWw](https://www.youtube.com/watch?v=vYquumk4nWw) 
+* Caching
+* * If it hits the database draw a route back to caching
+  * LRU
+* Load balancing
+* * Round robin
+  * Least traffic
+* CDN - don’t forget
+* SQL vs. NoSQL
+* * Sql easier to update (no duplicate data)
+  * NoSQL - faster reads, no schema or relations
+  * * Updates more difficult
+    * Horizontal scaling easier
+    * Great performance for mass (simple) read/write requests
+  * SQL - data distributed across tables
 
 
 ### Interesting examples
 
-*   Dropbox - chunk the images
-*   *   Reduces duplicates, retry only failed chunks, diff only affected chunks
-*   Long polling
-*   *   Keeps a connection open until there’s a response
-*   Instagram
-*   *   [https://www.youtube.com/watch?​v=QmX2NPkJTKg](https://www.youtube.com/watch?v=QmX2NPkJTKg)
+* Dropbox - chunk the images
+* * Reduces duplicates, retry only failed chunks, diff only affected chunks
+* Long polling
+* * Keeps a connection open until there’s a response
+* Instagram
+* * [https://www.youtube.com/watch?​v=QmX2NPkJTKg](https://www.youtube.com/watch?v=QmX2NPkJTKg)
 
 
 ## Common Questions
 
-*   Design goals
-*   System scale
-*   Apply CAP Theorem
-*   Ask - read vs. write heavy
+* Design goals
+* System scale
+* Apply CAP Theorem
+* Ask - read vs. write heavy
 
 ### Video Description of a lot of these designs
 
@@ -134,11 +134,11 @@ test
 
 [TOP FACEBOOK SYSTEM DESIGN INTERVIEW QUESTIONS (PART 1) | Facebook Pirate Interview Round](https://www.youtube.com/watch?v=hykjbT5Z0oE)
 
-*   Latency concerns
-*   Highly available - eventually consistent
-*   Read heavy in nature - caching
-*   Walk through the experience -log in, formulate feed, pagination
-*   ![](https://lh7-us.googleusercontent.com/vx14S2qhirOo_Cf9djw_fjgXB-p7pmwQIA61IwLWQdAy5P3KXZufNKG7izIS1Jh_ErAYWi73M2GPb6b_uCjiFTKWw546AiQ-o5vLP3KK-qd0MiPDLfOx9YMr6CS-N34teZMop6GoRV6md_PIEPMUCg)
+* Latency concerns
+* Highly available - eventually consistent
+* Read heavy in nature - caching
+* Walk through the experience -log in, formulate feed, pagination
+* ![](https://lh7-us.googleusercontent.com/vx14S2qhirOo_Cf9djw_fjgXB-p7pmwQIA61IwLWQdAy5P3KXZufNKG7izIS1Jh_ErAYWi73M2GPb6b_uCjiFTKWw546AiQ-o5vLP3KK-qd0MiPDLfOx9YMr6CS-N34teZMop6GoRV6md_PIEPMUCg)
 
 ### Design Facebook Status Search
 
@@ -182,16 +182,16 @@ test
 
 ![](https://lh7-us.googleusercontent.com/i_OgW8HLMfRHn8vIL0mn7uVZsYayQuIg2V38hxotHvtrg5pSC0azGG98bSIL1VnkkNB8fitG7EsddOcdbgBgiCPo5Si0b_0FGwF98lOB5NJbGDyowrJjMVgiiLCJYEXBnL_RHlE28-GABlXHj7hU2g)
 
-*   Read vs. Write load
-*   Distribution
-*   CDN 
-*   Chunking the files to resolution, codecs, etc
+* Read vs. Write load
+* Distribution
+* CDN 
+* Chunking the files to resolution, codecs, etc
 
 ## [(223) TOP FACEBOOK SYSTEM DESIGN INTERVIEW QUESTIONS (PART 1) | Facebook Pirate Interview Round - YouTube](https://www.youtube.com/watch?v=hykjbT5Z0oE)
 
 ### 1. Design Facebook News Feed
 
-![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/yt.1.news.feed.png)
+- ![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/yt.1.news.feed.png)
 
 #### Key features
 
@@ -462,19 +462,19 @@ Storage
   - 99.9999%	= 31.56 sec / year
 - Example: Estimate Twitter QPS and storage requirements
   - Assumptions:
-    - 300 million monthly active users.
-    - 50% of users use Twitter daily.
-    - Users post 2 tweets per day on average.
-    - 10% of tweets contain media.
-    - Data is stored for 5 years.
+  - 300 million monthly active users.
+  - 50% of users use Twitter daily.
+  - Users post 2 tweets per day on average.
+  - 10% of tweets contain media.
+  - Data is stored for 5 years.
   - Query per second (QPS) estimate:
-    - Daily active users (DAU) = 300 million * 50% = 150 million
-    - Tweets QPS = 150 million * 2 tweets / 24 hour / 3600 seconds = ~3500
-    - Peek QPS = 2 * QPS = ~7000
+  - Daily active users (DAU) = 300 million * 50% = 150 million
+  - Tweets QPS = 150 million * 2 tweets / 24 hour / 3600 seconds = ~3500
+  - Peek QPS = 2 * QPS = ~7000
   - Average tweet size.: We will only estimate media storage here.
-    - tweet_id 64 bytes
-    - text 140 bytes
-    - media 1 MB
+  - tweet_id 64 bytes
+  - text 140 bytes
+  - media 1 MB
   - Media storage: 150 million * 2 * 10% * 1 MB = 30 TB per day
   - 5-year media storage: 30 TB * 365 * 5 = ~55 PB
 
@@ -532,34 +532,34 @@ Storage
   - High fault tolerance. If there are any problems with the rate limiter (for example, a cache server goes offline), it does not affect the entire system.
 - **Step 2** - Propose high-level design and get buy-in
   - Where to put the rate limiter?
-    - _middleware_ vs client vs server side
-    - e.g. cloudflare or AWS API Gateway
+  - _middleware_ vs client vs server side
+  - e.g. cloudflare or AWS API Gateway
 - [Algorithms for rate limiting](#algorithms-for-rate-limiting) vs [Token bucket algorithm](#token-bucket-algorithm) vs [Leaking bucket algorithm](#leaking-bucket-algorithm) vs [Fixed window counter algorithm](#fixed-window-counter-algorithm) vs [Sliding window log algorithm](#sliding-window-log-algorithm) vs [Sliding window counter algorithm](#sliding-window-counter-algorithm)
   - Hard vs Soft rate limiting
 - **Step 3** - Design deep dive
   - Rate limiting rules
-    - `domain: auth `
-    - `descriptors: `
-    - `- key: auth_type `
-    - `Value: login `
-    - `rate_limit: `
-    - `unit: minute `
-    - `requests_per_unit: 5`
+  - `domain: auth `
+  - `descriptors: `
+  - `- key: auth_type `
+  - `Value: login `
+  - `rate_limit: `
+  - `unit: minute `
+  - `requests_per_unit: 5`
   - HTTP response code `429` (too many requests)
   - Rate limiter headers
-    - `X-Ratelimit-Remaining`: The remaining number of allowed requests within the window.
-    - `X-Ratelimit-Limit`: It indicates how many calls the client can make per time window.
-    - `X-Ratelimit-Retry-After`: The number of seconds to wait until you can make a request again without being throttled.
+  - `X-Ratelimit-Remaining`: The remaining number of allowed requests within the window.
+  - `X-Ratelimit-Limit`: It indicates how many calls the client can make per time window.
+  - `X-Ratelimit-Retry-After`: The number of seconds to wait until you can make a request again without being throttled.
   - Rate limiter in a distributed environment
-    - Can lead to race condition
-    - Can lock, but that slows system design
-    - Use sorted sets data structure in Redis
+  - Can lead to race condition
+  - Can lock, but that slows system design
+  - Use sorted sets data structure in Redis
   - Synchronization issue
-    - Use central data store like Redis
-    - ![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/04.16.png)
+  - Use central data store like Redis
+  - ![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/04.16.png)
   - Performance optimization
-    - Route to closest edge server
-    - opt for eventual consistency of data
+  - Route to closest edge server
+  - opt for eventual consistency of data
 
 ### [CHAPTER 5: DESIGN CONSISTENT HASHING](#chapter-5-design-consistent-hashing)
 - ![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/05.08.png)
@@ -639,11 +639,11 @@ Storage
 - Handling permanent failures
   - Anti-entropy involves comparing each piece of data on replicas and updating each replica to the newest version. 
   - A __Merkle tree__ is used for inconsistency detection and minimizing the amount of data transferred.
-    - a possible configuration is one million buckets per one billion keys, so each bucket only contains 1000 keys.
-    - [Step 1: _Divide key space into buckets_ (4 in our example) as shown in Figure](#step-1-_divide-key-space-into-buckets_-4-in-our-example-as-shown-in-__figure)
-    - [Step 2: Once the buckets are created, _hash each key in a bucket_ using a uniform](#step-2-once-the-buckets-are-created-_hash-each-key-in-a-bucket_-using-a-uniform)
-    - [Step 3: _Create a single hash node per bucket_ (Figure 6-15).](#step-3-_create-a-single-hash-node-per-bucket_-__figure__-6-15)
-    - [Step 4: Build the tree upwards till root by _calculating hashes of children_](#step-4-build-the-tree-upwards-till-root-by-_calculating-hashes-of-children)
+  - a possible configuration is one million buckets per one billion keys, so each bucket only contains 1000 keys.
+  - [Step 1: _Divide key space into buckets_ (4 in our example) as shown in Figure](#step-1-_divide-key-space-into-buckets_-4-in-our-example-as-shown-in-__figure)
+  - [Step 2: Once the buckets are created, _hash each key in a bucket_ using a uniform](#step-2-once-the-buckets-are-created-_hash-each-key-in-a-bucket_-using-a-uniform)
+  - [Step 3: _Create a single hash node per bucket_ (Figure 6-15).](#step-3-_create-a-single-hash-node-per-bucket_-__figure__-6-15)
+  - [Step 4: Build the tree upwards till root by _calculating hashes of children_](#step-4-build-the-tree-upwards-till-root-by-_calculating-hashes-of-children)
 - ![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/06.16.png)
 - Handling data center outage by replicate across DCs
 - System architecture diagram
@@ -666,10 +666,10 @@ Storage
   - Ability to generate over 10,000 unique IDs per second.
 - Step 2 - Propose high-level design and get buy-in
   - The options we considered are:
-    - Multi-master replication
-    - Universally unique identifier (UUID)
-    - Ticket server
-    - Twitter snowflake approach
+  - Multi-master replication
+  - Universally unique identifier (UUID)
+  - Ticket server
+  - Twitter snowflake approach
 - For multi-master replication Use inherent DB auto_increment. Scalability concerns and doesn't meet ID tied to time
 - UUID is too long (128 bits) and not time based
 - A ticket Server => Central (SPOF) Db to generate IDs
@@ -679,9 +679,9 @@ Storage
   - The maximum timestamp that can be represented in 41 bits is 2 ^ 41 - 1 = 2199023255551 milliseconds (ms), which gives us: ~ 69 years = 2199023255551 ms / 1000 seconds / 365 days / 24 hours/ 3600 seconds.
 - Step 4 - Wrap up
   - If there is extra time at the end of the interview, here are a few additional talking points:
-    - _Clock synchronization_. In our design, we assume ID generation servers have the same clock. This assumption might not be true when a server is running on multiple cores. The same challenge exists in multi-machine scenarios. Solutions to clock synchronization are out of the scope of this book; however, it is important to understand the problem exists. Network Time Protocol is the most popular solution to this problem. For interested readers, refer to the reference material \[4\].
-    - _Section length tuning_. For example, fewer sequence numbers but more timestamp bits are effective for low concurrency and long-term applications.
-    - _High availability_. Since an ID generator is a mission-critical system, it must be highly available.
+  - _Clock synchronization_. In our design, we assume ID generation servers have the same clock. This assumption might not be true when a server is running on multiple cores. The same challenge exists in multi-machine scenarios. Solutions to clock synchronization are out of the scope of this book; however, it is important to understand the problem exists. Network Time Protocol is the most popular solution to this problem. For interested readers, refer to the reference material \[4\].
+  - _Section length tuning_. For example, fewer sequence numbers but more timestamp bits are effective for low concurrency and long-term applications.
+  - _High availability_. Since an ID generator is a mission-critical system, it must be highly available.
 
 ### [CHAPTER 8: DESIGN A URL SHORTENER](#chapter-8-design-a-url-shortener)
 - ![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/08.t.02.png)
@@ -704,7 +704,7 @@ Storage
 - URL redirecting
   - If the priority is to reduce the server load, using 301 redirect makes sense as only the first request of the same URL is sent to URL shortening servers.
   - However, if analytics is important, 302 redirect is a better choice as it can track click rate and source of the click more easily.
-- Step 3   - Design deep dive
+- Step 3 - Design deep dive
   - A hash table can be expensive and resource hungry. RDBMS is probably more ideal
   - The hashValue consists of characters from [0-9, a-z, A-Z], containing 10 + 26 + 26 = 62 possible characters. 
   - To figure out the length of hashValue, find the smallest n such that 62^n ≥ 365 billion. 
@@ -712,10 +712,10 @@ Storage
   - When n = 7, 62 ^ n = ~3.5 trillion, 3.5 trillion is more than enough to hold 365 billion URLs, so the length of hashValue is 7.
   - Use __bloom filter__ to detect hash collisions
 - Can use [Base 62 conversion](#base-62-conversion) for hash function
-    - URL length is not fixed
-    - depends on unique ID generator (CHAP 7)
-    - collision impossible (based on unique ID)
-    - security concern that you can rev eng the next shorturl
+  - URL length is not fixed
+  - depends on unique ID generator (CHAP 7)
+  - collision impossible (based on unique ID)
+  - security concern that you can rev eng the next shorturl
 - URL shortening deep dive
   - Assuming the input longURL is: [https://en.wikipedia.org/wiki/Systems\_design](https://en.wikipedia.org/wiki/Systems_design)
   - Unique ID generator returns ID: 2009215674938.
@@ -801,17 +801,17 @@ Storage
   - Notification systems: iOS, Android, Email, SMS
   - Contact Info gathering Flow
   - Notification sending/receiving flow
-    - User & Device info
+  - User & Device info
   - Flow
-    1. A _service calls APIs provided by notification servers_ to send notifications.
-    2. _Notification servers fetch metadata_ such as user info, device token, and notification setting from the cache or database.
-    3. A _notification event is sent to the corresponding queue_ for processing. For instance, an iOS push notification event is sent to the iOS PN queue.
-    4. _Workers pull notification events_ from message queues.
-    5. _Workers send notifications_ to third party services.
-    6. _Third-party services send notifications_ to user devices.
+  1. A _service calls APIs provided by notification servers_ to send notifications.
+  2. _Notification servers fetch metadata_ such as user info, device token, and notification setting from the cache or database.
+  3. A _notification event is sent to the corresponding queue_ for processing. For instance, an iOS push notification event is sent to the iOS PN queue.
+  4. _Workers pull notification events_ from message queues.
+  5. _Workers send notifications_ to third party services.
+  6. _Third-party services send notifications_ to user devices.
 - Step 3 - Design deep dive
   - Reliability
-    - Cache notifications and verify receipt
+  - Cache notifications and verify receipt
   - Dedupe logic to reduce duplicate notifications
 - Additional components and considerations
   - The notification servers are equipped with two more critical features: authentication and rate-limiting.
@@ -835,33 +835,33 @@ Storage
   - Candidate: Can feed contain images, videos, or _just text_? Interviewer: It can contain media files, including both images and videos.
 - Step 2 - Propose high-level design and get buy-in
   - Newsfeed APIs
-    - Feed publishing API `POST /v1/me/feed`
-    - Newsfeed retrieval API `POST /v1/me/feed`
+  - Feed publishing API `POST /v1/me/feed`
+  - Newsfeed retrieval API `POST /v1/me/feed`
   - Feed publishing
   - Newsfeed building
 - Step 3 - Design deep dive
   - Feed Publishing ![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/11.04.png)
-    - Fetch friend IDs from the graph database (better for storing network type data than rdbms)
-    - Get friends info from user cache
-    - Fanout Service for _Celebrity Problem_
-      - fanout on write (push) as default
-      - fanout on read (pull) for "celebrities" to reduce system load
+  - Fetch friend IDs from the graph database (better for storing network type data than rdbms)
+  - Get friends info from user cache
+  - Fanout Service for _Celebrity Problem_
+  - fanout on write (push) as default
+  - fanout on read (pull) for "celebrities" to reduce system load
   - Feed Retrieval ![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/11.07.png)
   - Cache architecture ![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/11.08.png)
 - Step 4 - Wrap up
   - Scaling the database:
-    - Vertical scaling vs Horizontal scaling
-    - SQL vs NoSQL
-    - Master-slave replication
-    - Read replicas
-    - Consistency models
-    - Database sharding
+  - Vertical scaling vs Horizontal scaling
+  - SQL vs NoSQL
+  - Master-slave replication
+  - Read replicas
+  - Consistency models
+  - Database sharding
   - Other talking points:
-    - Keep web tier stateless
-    - Cache data as much as you can
-    - Support multiple data centers
-    - Lose couple components with message queues
-    - Monitor key metrics. For instance, QPS during peak hours and latency while users refreshing their news feed are interesting to monitor.
+  - Keep web tier stateless
+  - Cache data as much as you can
+  - Support multiple data centers
+  - Lose couple components with message queues
+  - Monitor key metrics. For instance, QPS during peak hours and latency while users refreshing their news feed are interesting to monitor.
 
 ### [CHAPTER 12: DESIGN A CHAT SYSTEM](#chapter-12-design-a-chat-system)
 - ![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/12.08.png)
@@ -881,23 +881,23 @@ Storage
   - Candidate: _How long shall we store the chat history_? Interviewer: _Forever_.
 - Step 2 - Propose high-level design and get buy-in
   - ![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/12.02.png)
-    -  HTTP `keep-alive` on sender is efficient to maintain connection
-    - Receiver needs polling/websockets
-      - pollling is noisy
-      - Long polling is a little better but in stateless architecture might be connected to wrong server 
-      - websocket works best ![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/12.05.png)
-      - Websocket can also be used for sender
+  -  HTTP `keep-alive` on sender is efficient to maintain connection
+  - Receiver needs polling/websockets
+  - pollling is noisy
+  - Long polling is a little better but in stateless architecture might be connected to wrong server 
+  - websocket works best ![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/12.05.png)
+  - Websocket can also be used for sender
   - ![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/12.07.png)
 - Step 3 - Design deep dive
   - Service discovery: Most efficient server for client to connect to e.g. geographic location, server capacity etc
-    - `Apache Zookeeper`
+  - `Apache Zookeeper`
   - 1 on 1 chat flow ![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/12.12.png)
   - Small group chat flow ![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/12.14.png)
   - Online presence
-    - ![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/12.16.png)
-    - ![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/12.17.png)
+  - ![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/12.16.png)
+  - ![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/12.17.png)
   - Online status fanout ![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/12.19.png)
-    - For large groups, this is a lot of events. Can limit by fetching only when a user enters a group or manually refreshes list 
+  - For large groups, this is a lot of events. Can limit by fetching only when a user enters a group or manually refreshes list 
 - Step 4 - Wrap up
   - Extend the chat app to support media files such as photos and videos. Media files are significantly larger than text in size. Compression, cloud storage, and thumbnails are interesting topics to talk about.
   - End-to-end encryption. Whatsapp supports end-to-end encryption for messages. Only the sender and the recipient can read messages. Interested readers should refer to the article in the reference materials [9].
@@ -921,42 +921,42 @@ Storage
   - Query service ![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/13.01.t.png)
 - Step 3 - Design deep dive
   - Trie data structure ![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/13.06.png)
-    - `p`: length of a prefix
-    - `n`: total number of nodes in a trie
-    - `c`: number of children of a given node
-    - Find the prefix. Time complexity: `O(p)`.
-    - Traverse the subtree from the prefix node to get all valid children. A child is valid if it can form a valid query string. Time complexity: `O(c)`
-    - Sort the children and get top k. Time complexity: `O(clogc)`
-    - The time complexity of this algorithm is the sum of time spent on each step mentioned above: `O(p) + O(c) + O(clogc)` 
-    - two optimizations:
-      - Limit the max length of a prefix: reduces to `O(small constant), aka O(1)`
-      - Cache top search queries at each node ![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/13.08.png)
+  - `p`: length of a prefix
+  - `n`: total number of nodes in a trie
+  - `c`: number of children of a given node
+  - Find the prefix. Time complexity: `O(p)`.
+  - Traverse the subtree from the prefix node to get all valid children. A child is valid if it can form a valid query string. Time complexity: `O(c)`
+  - Sort the children and get top k. Time complexity: `O(clogc)`
+  - The time complexity of this algorithm is the sum of time spent on each step mentioned above: `O(p) + O(c) + O(clogc)` 
+  - two optimizations:
+  - Limit the max length of a prefix: reduces to `O(small constant), aka O(1)`
+  - Cache top search queries at each node ![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/13.08.png)
   - Limit the max length of a prefix
   - Cache top search queries at each node
   - Data gathering service ![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/13.09.png)
-    - Update cache on a schedule to reduce load
-    - Analytics log stores raw search queries
-    - Aggregators run on a schedule depending on how 'recent' you need results to be
+  - Update cache on a schedule to reduce load
+  - Analytics log stores raw search queries
+  - Aggregators run on a schedule depending on how 'recent' you need results to be
   - Aggregated Data.
-    - Workers to run async jobs on schedule
-    - Trie cache: Distributed for fast read
-    - Trie DB: long term store. Can be put in document store or KV
-    - Example Trie KV ![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/13.10.png)
+  - Workers to run async jobs on schedule
+  - Trie cache: Distributed for fast read
+  - Trie DB: long term store. Can be put in document store or KV
+  - Example Trie KV ![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/13.10.png)
   - Query service ![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/13.11.png)
   - Optimizations
-    - AJAX request. For web applications, browsers usually send AJAX requests to fetch autocomplete results. The main benefit of AJAX is that sending/receiving a request/response does not refresh the whole web page.
-    - Browser caching. For many applications, autocomplete search suggestions may not change much within a short time. Thus, autocomplete suggestions can be saved in browser cache to allow subsequent requests to get results from the cache directly. Google search engine uses the same cache mechanism. Figure 13-12 shows the response header when you type “system design interview” on the Google search engine. As you can see, Google caches the results in the browser for 1 hour. Please note: “private” in cache-control means results are intended for a single user and must not be cached by a shared cache. “maxage=3600” means the cache is valid for 3600 seconds, aka, an hour.
-    - Data sampling: For a large-scale system, logging every search query requires a lot of processing power and storage. Data sampling is important. For instance, only 1 out of every N requests is logged by the system.
+  - AJAX request. For web applications, browsers usually send AJAX requests to fetch autocomplete results. The main benefit of AJAX is that sending/receiving a request/response does not refresh the whole web page.
+  - Browser caching. For many applications, autocomplete search suggestions may not change much within a short time. Thus, autocomplete suggestions can be saved in browser cache to allow subsequent requests to get results from the cache directly. Google search engine uses the same cache mechanism. Figure 13-12 shows the response header when you type “system design interview” on the Google search engine. As you can see, Google caches the results in the browser for 1 hour. Please note: “private” in cache-control means results are intended for a single user and must not be cached by a shared cache. “maxage=3600” means the cache is valid for 3600 seconds, aka, an hour.
+  - Data sampling: For a large-scale system, logging every search query requires a lot of processing power and storage. Data sampling is important. For instance, only 1 out of every N requests is logged by the system.
   - Trie operations: Create, Update, Delete
-    - Delete for spam/adult content
+  - Delete for spam/adult content
   - Scale the storage
-    - Can shard data e.g. shard for each letter in alphabet ![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/13.15.png)
+  - Can shard data e.g. shard for each letter in alphabet ![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/13.15.png)
 - Step 4 - Wrap up
   - support multiple languages
   - different tries for each locale
   - real-time queries
-    - reduce working data set by sharding
-    - change ranking model to weigh recent queries
+  - reduce working data set by sharding
+  - change ranking model to weigh recent queries
 - Reference Materials
 
 ### [CHAPTER 14: DESIGN YOUTUBE](#chapter-14-design-youtube)
@@ -971,17 +971,17 @@ Storage
   - Candidate: Any _file size requirement_ for videos? Interviewer: Our platform focuses on small and medium-sized videos. The maximum allowed video size is 1GB.
   - Candidate: Can we leverage some of the _existing cloud infrastructures_ provided by Amazon, Google, or Microsoft? Interviewer: That is a great question. Building everything from scratch is unrealistic for most companies it is recommended to leverage some of the existing cloud services.
   - Back of the envelope estimation
-    - Assume the product has 5 million daily active users (DAU).
-    - Users watch 5 videos per day.
-    - 10% of users upload 1 video per day.
-    - Assume the average video size is 300 MB.
-    - Total daily storage space needed: 5 million * 10% * 300 MB = 150TB
-    - CDN cost.
-      - When cloud CDN serves a video, you are charged for data transferred out of the CDN.
-      - Let us use Amazon’s CDN CloudFront for cost estimation (Figure 14-2) [3].
-      - Assume 100% of traffic is served from the United States.
-      - The average cost per GB is $0.02.
-      - For simplicity, we only calculate the cost of video streaming. 5 million * 5 videos * 0.3GB * 0.02= 150,000 per day
+  - Assume the product has 5 million daily active users (DAU).
+  - Users watch 5 videos per day.
+  - 10% of users upload 1 video per day.
+  - Assume the average video size is 300 MB.
+  - Total daily storage space needed: 5 million * 10% * 300 MB = 150TB
+  - CDN cost.
+  - When cloud CDN serves a video, you are charged for data transferred out of the CDN.
+  - Let us use Amazon’s CDN CloudFront for cost estimation (Figure 14-2) [3].
+  - Assume 100% of traffic is served from the United States.
+  - The average cost per GB is $0.02.
+  - For simplicity, we only calculate the cost of video streaming. 5 million * 5 videos * 0.3GB * 0.02= 150,000 per day
 - Step 2 - Propose high-level design and get buy-in
   - ![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/14.03.png)
   - Video uploading flow ![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/14.05.png)
@@ -993,15 +993,15 @@ Storage
   - Temporary storage
   - Encoded video
   - System optimizations
-    - place upload centers close to users
-    - parallelism everywhere w/ message queues ![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/14.26.png)
+  - place upload centers close to users
+  - parallelism everywhere w/ message queues ![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/14.26.png)
   - Safety optimization: 
-    - pre-signed upload URL to verify authorized user
-    - protect your videos w/ DRM/Encryption/watermarking
+  - pre-signed upload URL to verify authorized user
+  - protect your videos w/ DRM/Encryption/watermarking
   - Cost-saving optimization
-    - use CDN only for popular videos
-    - Limit video distribution to specific regions (DC)
-    - build your own CDN
+  - use CDN only for popular videos
+  - Limit video distribution to specific regions (DC)
+  - build your own CDN
   - Error handling
 - Step 4 - Wrap up
   - Scale the API tier: Because API servers are stateless, it is easy to scale API tier horizontally.
@@ -1022,49 +1022,49 @@ Storage
   - Candidate: Is there a file size limit? Interview: Yes, files must be 10 GB or smaller.
   - Candidate: How many users does the product have? Interviewer: 10M DAU.
   - _Back of the envelope estimation_
-    - Assume the application has 50 million signed up users and 10 million DAU.
-    - Users get 10 GB free space.
-    - Assume users upload 2 files per day. The average file size is 500 KB.
-    - 1:1 read to write ratio.
-    - Total space allocated: 50 million * 10 GB = 500 Petabyte
-    - QPS for upload API: 10 million * 2 uploads / 24 hours / 3600 seconds = ~ 240
-    - Peak QPS = QPS * 2 = 480
+  - Assume the application has 50 million signed up users and 10 million DAU.
+  - Users get 10 GB free space.
+  - Assume users upload 2 files per day. The average file size is 500 KB.
+  - 1:1 read to write ratio.
+  - Total space allocated: 50 million * 10 GB = 500 Petabyte
+  - QPS for upload API: 10 million * 2 uploads / 24 hours / 3600 seconds = ~ 240
+  - Peak QPS = QPS * 2 = 480
 - Step 2 - Propose high-level design and get buy-in
   -  single server setup as listed below:
-    - A web server to upload and download files.
-    - A database to keep track of metadata like user data, login info, files info, etc.
-    - A storage system to store files. We allocate 1TB of storage space to store files.
+  - A web server to upload and download files.
+  - A database to keep track of metadata like user data, login info, files info, etc.
+  - A storage system to store files. We allocate 1TB of storage space to store files.
   - APIs
-    - 1. Upload a file to Google Drive
-    - 2. Download a file from Google Drive
-    - 3. Get file revisions
+  - 1. Upload a file to Google Drive
+  - 2. Download a file from Google Drive
+  - 3. Get file revisions
   - Move away from single server
-    - Use S3 for blob storage
-    - load balancer, web servers, metadata db
+  - Use S3 for blob storage
+  - load balancer, web servers, metadata db
   - Sync conflicts
-    - version changes and allow manual merge
+  - version changes and allow manual merge
   - High-level design ![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/15.10.png)
 - Step 3 - Design deep dive
   - Block servers can be optimized ![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/15.11.png)
-    - Delta sync: only sync modifications instead of whole block
-    - Compression
+  - Delta sync: only sync modifications instead of whole block
+  - Compression
   - Save storage space
-    - _De-duplicate data blocks_. Eliminating redundant blocks at the account level is an easy way to save space. Two blocks are identical if they have the same hash value.
-    - Adopt an _intelligent data backup strategy_. Two optimization strategies can be applied:
-    - _Set a limit_: We can set a limit for the number of versions to store. If the limit is reached, the oldest version will be replaced with the new version.
-    - _Keep valuable versions only_: Some files might be edited frequently. For example, saving every edited version for a heavily modified document could mean the file is saved over 1000 times within a short period. To avoid unnecessary copies, we could limit the number of saved versions. We give more weight to recent versions. Experimentation is helpful to figure out the optimal number of versions to save.
-    - _Moving infrequently used data to cold storage_. Cold data is the data that has not been active for months or years. Cold storage like Amazon S3 glacier \[11\] is much cheaper than S3.
+  - _De-duplicate data blocks_. Eliminating redundant blocks at the account level is an easy way to save space. Two blocks are identical if they have the same hash value.
+  - Adopt an _intelligent data backup strategy_. Two optimization strategies can be applied:
+  - _Set a limit_: We can set a limit for the number of versions to store. If the limit is reached, the oldest version will be replaced with the new version.
+  - _Keep valuable versions only_: Some files might be edited frequently. For example, saving every edited version for a heavily modified document could mean the file is saved over 1000 times within a short period. To avoid unnecessary copies, we could limit the number of saved versions. We give more weight to recent versions. Experimentation is helpful to figure out the optimal number of versions to save.
+  - _Moving infrequently used data to cold storage_. Cold data is the data that has not been active for months or years. Cold storage like Amazon S3 glacier \[11\] is much cheaper than S3.
   - Failure Handling
-    - _Load balancer failure_: If a load balancer fails, the secondary would become active and pick up the traffic. Load balancers usually monitor each other using a heartbeat, a periodic signal sent between load balancers. A load balancer is considered as failed if it has not sent a heartbeat for some time.
-    - _Block server failure_: If a block server fails, other servers pick up unfinished or pending jobs.
-    - _Cloud storage failure_: S3 buckets are replicated multiple times in different regions. If files are not available in one region, they can be fetched from different regions.
-    - _API server failure_: It is a stateless service. If an API server fails, the traffic is redirected to other API servers by a load balancer.
-    - _Metadata cache failure_: Metadata cache servers are replicated multiple times. If one node goes down, you can still access other nodes to fetch data. We will bring up a new cache server to replace the failed one.
-    - \_Metadata DB failure.
-    - _Master down_: If the master is down, promote one of the slaves to act as a new master and bring up a new slave node.
-    - _Slave down_: If a slave is down, you can use another slave for read operations and bring another database server to replace the failed one.
-    - _Notification service failure_: Every online user keeps a long poll connection with the notification server. Thus, each notification server is connected with many users. According to the Dropbox talk in 2012 \[6\], over 1 million connections are open per machine. If a server goes down, all the long poll connections are lost so clients must reconnect to a different server. Even though one server can keep many open connections, it cannot reconnect all the lost connections at once. Reconnecting with all the lost clients is a relatively slow process.
-    - _Offline backup queue failure_: Queues are replicated multiple times. If one queue fails, consumers of the queue may need to re-subscribe to the backup queue.
+  - _Load balancer failure_: If a load balancer fails, the secondary would become active and pick up the traffic. Load balancers usually monitor each other using a heartbeat, a periodic signal sent between load balancers. A load balancer is considered as failed if it has not sent a heartbeat for some time.
+  - _Block server failure_: If a block server fails, other servers pick up unfinished or pending jobs.
+  - _Cloud storage failure_: S3 buckets are replicated multiple times in different regions. If files are not available in one region, they can be fetched from different regions.
+  - _API server failure_: It is a stateless service. If an API server fails, the traffic is redirected to other API servers by a load balancer.
+  - _Metadata cache failure_: Metadata cache servers are replicated multiple times. If one node goes down, you can still access other nodes to fetch data. We will bring up a new cache server to replace the failed one.
+  - \_Metadata DB failure.
+  - _Master down_: If the master is down, promote one of the slaves to act as a new master and bring up a new slave node.
+  - _Slave down_: If a slave is down, you can use another slave for read operations and bring another database server to replace the failed one.
+  - _Notification service failure_: Every online user keeps a long poll connection with the notification server. Thus, each notification server is connected with many users. According to the Dropbox talk in 2012 \[6\], over 1 million connections are open per machine. If a server goes down, all the long poll connections are lost so clients must reconnect to a different server. Even though one server can keep many open connections, it cannot reconnect all the lost connections at once. Reconnecting with all the lost clients is a relatively slow process.
+  - _Offline backup queue failure_: Queues are replicated multiple times. If one queue fails, consumers of the queue may need to re-subscribe to the backup queue.
 
 ## CHAPTER 1: SCALE FROM ZERO TO MILLIONS OF USERS
 
@@ -1076,12 +1076,12 @@ To understand this setup, it is helpful to investigate the _request flow_ and _t
 
 ### request flow 
 1. Users access websites through domain names, such as api.mysite.com. Usually,
-   the Domain Name System (DNS) is a paid service provided by 3rd parties and
-   not hosted by our servers.
+ the Domain Name System (DNS) is a paid service provided by 3rd parties and
+ not hosted by our servers.
 2. Internet Protocol (IP) address is returned to the browser or mobile app. In
-   the example, IP address 15.125.23.214 is returned.
+ the example, IP address 15.125.23.214 is returned.
 3. Once the IP address is obtained, Hypertext Transfer Protocol (HTTP) [1]
-   requests are sent directly to your web server.
+ requests are sent directly to your web server.
 4. The web server returns HTML pages or JSON response for rendering.
 
 ### traffic source
@@ -1101,8 +1101,8 @@ GET /users/12 – Retrieve user object for id = 12
   "firstName": "John",
   ...,
   "address":{
-    "streetAddress": "21 2nd Street",
-    ...,
+  "streetAddress": "21 2nd Street",
+  ...,
   }
 }
 ```
@@ -1118,10 +1118,10 @@ Split Web/DB to allow independent scaling
 - __RDMBS__  MySQL, Oracle database, PostgreSQL, etc.
 - __NoSQL__ CouchDB, Neo4j, Cassandra, HBase, Amazon DynamoDB, etc. 
   - Grouped into four categories: 
-    1. key-value stores, 
-    2. graph stores, 
-    2. column stores, and 
-    2. document stores. 
+  1. key-value stores, 
+  2. graph stores, 
+  2. column stores, and 
+  2. document stores. 
 
 Generally RDBMS are the best option. However, might not suitable for your
 specific use cases, e.g. 
@@ -1353,17 +1353,17 @@ Figure 1-10 demonstrates the CDN workflow.
 ![CDN workflow](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/01.10.png)
 
 1. User A tries to get image.png by using an image URL. The URL’s domain is
-   provided by the CDN provider. The following two image URLs are samples used
-   to demonstrate what image URLs look like on Amazon and Akamai CDNs:
+ provided by the CDN provider. The following two image URLs are samples used
+ to demonstrate what image URLs look like on Amazon and Akamai CDNs:
   - https://mysite.cloudfront.net/logo.jpg
   - https://mysite.akamai.com/image-manager/img/logo.jpg
 2. If the CDN server does not have image.png in the cache, the CDN server
-   requests the file from the origin, which can be a web server or online
-   storage like Amazon S3.
+ requests the file from the origin, which can be a web server or online
+ storage like Amazon S3.
 3. The origin returns image.png to the CDN server, which includes optional HTTP
-   header Time-to-Live (TTL) which describes how long the image is cached.
+ header Time-to-Live (TTL) which describes how long the image is cached.
 4. The CDN caches the image and returns it to User A. The image remains cached
-   in the CDN until the TTL expires.
+ in the CDN until the TTL expires.
 5. User B sends a request to get the same image.
 6. The image is returned from the cache as long as the TTL has not expired.
 
@@ -1383,15 +1383,15 @@ Considerations of using a CDN
   by performing one of the following operations:
   - Invalidate the CDN object using APIs provided by CDN vendors.
   - Use object versioning to serve a different version of the object. To
-    version an object, you can add a parameter to the URL, such as a version
-    number. For example, version number 2 is added to the query string:
-    `image.png?v=2`.
+  version an object, you can add a parameter to the URL, such as a version
+  number. For example, version number 2 is added to the query string:
+  `image.png?v=2`.
 
 ![CDN & cache](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/01.11.png)
 
 Figure 1-11 shows the design after the CDN and cache are added.
 1. Static assets (JS, CSS, images, etc.,) are no longer served by web servers.
-   They are fetched from the CDN for better performance.
+ They are fetched from the CDN for better performance.
 2. The database load is lightened by caching data.
 
 ### Stateless web tier
@@ -1522,7 +1522,7 @@ However, if the queue is empty most of the time, the number of workers can be re
 Figure 1-19 shows the updated design. Due to the space constraint, only one
 data center is shown in the figure.
 1. The design includes a message queue, which helps to make the system more
-   loosely coupled and failure resilient.
+ loosely coupled and failure resilient.
 2. Logging, monitoring, metrics, and automation tools are included.
 
 ![LMA](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/01.19.png)
@@ -1596,12 +1596,12 @@ sequence of 8 bits. An ASCII character uses one byte of memory (8 bits). Below
 is a table explaining the data volume unit (Table 2- 1).
 
 | Power | Approx Value  | Full Name  | Short Name |
-| --    | --            | --         | --         |
-| 10    | 1 Thousand    | 1 Kilobyte | 1 KB       |
-| 20    | 1 Million     | 1 Megabyte | 1 MB       |
-| 30    | 1 Billion     | 1 Gigabyte | 1 GB       |
-| 40    | 1 Trillion    | 1 Terabyte | 1 TB       |
-| 50    | 1 Quadrillion | 1 Petabyte | 1 PB       |
+| --  | --    | --   | --   |
+| 10  | 1 Thousand  | 1 Kilobyte | 1 KB   |
+| 20  | 1 Million   | 1 Megabyte | 1 MB   |
+| 30  | 1 Billion   | 1 Gigabyte | 1 GB   |
+| 40  | 1 Trillion  | 1 Terabyte | 1 TB   |
+| 50  | 1 Quadrillion | 1 Petabyte | 1 PB   |
 
 
 ### Latency numbers every programmer should know
@@ -1611,21 +1611,21 @@ Dr. Dean from Google reveals the length of typical computer operations in 2010
 However, those numbers should still be able to give us an idea of the fastness
 and slowness of different computer operations.
 
-| Operation Name                          | Time             |
-| --                                      | --               |
-| L1 cache reference                      | 0.5 ns           |
-| Branch mispredict                       | 5 ns             |
-| L2 cache reference                      | 7 ns             |
-| Mutex lock/unlock                       | 100 ns           |
-| Main memory reference                   | 100 ns           |
-| Compress 1K bytes with Zippy            | 10k ns = 10 µs   |
-| Send 2K bytes over 1 Gbps network       | 20k ns = 20 µs   |
-| Read 1 MB sequentially from memory      | 250k ns = 250 µs |
-| Round trip within the same datacenter   | 500k ns = 500 µs |
-| Disk seek                               | 10m ns = 10 ms   |
-| Read 1 MB sequentially from the network | 10m ns = 10 ms   |
-| Read 1 MB sequentially from disk        | 30m ns = 30 ms   |
-| Send packet CA -> ND -> CA              | 150m ns = 150 ms |
+| Operation Name          | Time     |
+| --              | --     |
+| L1 cache reference        | 0.5 ns     |
+| Branch mispredict         | 5 ns     |
+| L2 cache reference        | 7 ns     |
+| Mutex lock/unlock         | 100 ns     |
+| Main memory reference       | 100 ns     |
+| Compress 1K bytes with Zippy    | 10k ns = 10 µs |
+| Send 2K bytes over 1 Gbps network   | 20k ns = 20 µs |
+| Read 1 MB sequentially from memory  | 250k ns = 250 µs |
+| Round trip within the same datacenter | 500k ns = 500 µs |
+| Disk seek           | 10m ns = 10 ms |
+| Read 1 MB sequentially from the network | 10m ns = 10 ms |
+| Read 1 MB sequentially from disk    | 30m ns = 30 ms |
+| Send packet CA -> ND -> CA      | 150m ns = 150 ms |
 
 A Google software engineer built a tool to visualize Dr. Dean’s numbers. The
 tool also takes the time factor into consideration. Figures 2-1 shows the
@@ -1658,12 +1658,12 @@ the better. As shown in Table 2-3, the number of nines correlate to the
 expected system downtime.
 
 | Availability | Downtime / day | Downtime / year |
-| --           | --             | --              |
-| 99%          | 14.40 min      | 3.65 days       |
-| 99.9%        | 1.44 min       | 8.77 hours      |
-| 99.99%       | 8.64 sec       | 52.60 mins      |
-| 99.999%      | 864 ms         | 5.26 mins       |
-| 99.9999%     | 86.4 ms        | 31.56 sec       |
+| --     | --     | --      |
+| 99%    | 14.40 min  | 3.65 days   |
+| 99.9%    | 1.44 min   | 8.77 hours  |
+| 99.99%   | 8.64 sec   | 52.60 mins  |
+| 99.999%  | 864 ms   | 5.26 mins   |
+| 99.9999%   | 86.4 ms    | 31.56 sec   |
 
 ### Example: Estimate Twitter QPS and storage requirements
 
@@ -1781,11 +1781,11 @@ and common ground to cover in every system design interview.
 
 ##### Step 1 - Understand the problem and establish design scope
 
-    "Why did the tiger roar?"
-    A hand shot up in the back of the class.
-    "Yes, Jimmy?", the teacher responded.
-    "Because he was HUNGRY".
-    "Very good Jimmy."
+  "Why did the tiger roar?"
+  A hand shot up in the back of the class.
+  "Yes, Jimmy?", the teacher responded.
+  "Because he was HUNGRY".
+  "Very good Jimmy."
 
 Throughout his childhood, Jimmy has always been the first to answer questions
 in the class.
@@ -2861,9 +2861,9 @@ usually treated as an opaque object in key-value stores, such as Amazon dynamo
 Here is a data snippet in a key-value store:
 
 | key | value |
-| --  | --    |
+| --  | --  |
 | 145 | john  |
-| 147 | bob   |
+| 147 | bob |
 | 525 | julia |
 
 In this chapter, you are asked to design a key-value store that supports the
@@ -3153,20 +3153,20 @@ Figure 6-9.
 ![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/06.09.png)
 
 1. A client writes a data item D1 to the system, and the write is handled by
-   server Sx, which now has the vector clock D1[(Sx, 1)].
+ server Sx, which now has the vector clock D1[(Sx, 1)].
 2. Another client reads the latest D1, updates it to D2, and writes it back. D2
-   descends from D1 so it overwrites D1. Assume the write is handled by the
-   same server Sx, which now has vector clock D2([Sx, 2]).
+ descends from D1 so it overwrites D1. Assume the write is handled by the
+ same server Sx, which now has vector clock D2([Sx, 2]).
 3. Another client reads the latest D2, updates it to D3, and writes it back.
-   Assume the write is handled by server Sy, which now has vector clock D3([Sx,
-   2], [Sy, 1])).
+ Assume the write is handled by server Sy, which now has vector clock D3([Sx,
+ 2], [Sy, 1])).
 4. Another client reads the latest D2, updates it to D4, and writes it back.
-   Assume the write is handled by server Sz, which now has D4([Sx, 2], [Sz,
-   1])).
+ Assume the write is handled by server Sz, which now has D4([Sx, 2], [Sz,
+ 1])).
 5. When another client reads D3 and D4, it discovers a conflict, which is
-   caused by data item D2 being modified by both Sy and Sz. The conflict is
-   resolved by the client and updated data is sent to the server. Assume the
-   write is handled by Sx, which now has
+ caused by data item D2 being modified by both Sy and Sz. The conflict is
+ resolved by the client and updated data is sent to the server. Assume the
+ write is handled by Sx, which now has
 
 D5([Sx, 3], [Sy, 1], [Sz, 1]). We will explain how to detect conflict shortly.
 
@@ -3350,7 +3350,7 @@ _primary based on the architecture of Cassandra_ [8].
 1. The _write request is persisted on a commit log file_.
 2. _Data is saved in the memory cache_.
 3. When the memory cache is full or reaches a predefined threshold, data is
-   _flushed to SSTable [9] on disk_. 
+ _flushed to SSTable [9] on disk_. 
 
 Note: A sorted-string table (SSTable) is a sorted list of <key, value> pairs.
 For readers interested in learning more about SStable, refer to the reference
@@ -3382,18 +3382,18 @@ This chapter covers many concepts and techniques. To refresh your memory, the fo
 table summarizes features and corresponding techniques used for a distributed key-value
 store.
 
-| Goals/Problems              | Technique                                                  |
-| --                          | --                                                         |
-| Ability to store big data   | Use _consistent hashing_ to spread the load across servers |
-| High Availability reads     | _Data replication_ & multi-data center setup               |
-| High Availability write     | Versioning and conflict resolution with _vector locks_     |
-| Dataset partition           | _consistent hashing_                                       |
-| Incremental scalability     | _consistent hashing_                                       |
-| Heterogeneity               | _consistent hashing_                                       |
-| Tunable consistency         | _quorum consensus_                                         |
-| Handling temporary failures | _sloppy quorum_ & _hinted handoff_                         |
-| Handling permanent failures | _merkle tree_                                              |
-| Handling DC outage          | _X-DC replication_                                         |
+| Goals/Problems      | Technique                  |
+| --          | --                   |
+| Ability to store big data | Use _consistent hashing_ to spread the load across servers |
+| High Availability reads   | _Data replication_ & multi-data center setup     |
+| High Availability write   | Versioning and conflict resolution with _vector locks_   |
+| Dataset partition     | _consistent hashing_             |
+| Incremental scalability   | _consistent hashing_             |
+| Heterogeneity     | _consistent hashing_             |
+| Tunable consistency   | _quorum consensus_               |
+| Handling temporary failures | _sloppy quorum_ & _hinted handoff_         |
+| Handling permanent failures | _merkle tree_                |
+| Handling DC outage    | _X-DC replication_               |
 
 ### Reference materials
 - [1] Amazon DynamoDB: https://aws.amazon.com/dynamodb/
@@ -3418,8 +3418,8 @@ minimal delay is challenging.
 
 Here are a few examples of unique IDs:
 
-| user_id    | 
-| --         | 
+| user_id  | 
+| --   | 
 | 1234567890 | 
 | 2345678901 | 
 | 3456789012 | 
@@ -3667,8 +3667,8 @@ consult external materials, such as the one in the reference material [1]. A
 URL shortener primary needs two API endpoints. 
 
 1. URL shortening. To create a new short URL, a client sends a POST request,
-   which contains one parameter: the original long URL. The API looks like
-   this:
+ which contains one parameter: the original long URL. The API looks like
+ this:
 
 ```
 POST api/v1/data/shorten
@@ -3818,11 +3818,11 @@ Thus, the short URL is https://tinyurl.com/2TX
 
 Table 8-3 shows the differences of the two approaches.
 
-| Hash + collision resolution                          | Base 62 conversion                                                                     |
-| --                                                   | --                                                                                     |
-| Fixed short URL length                               | The short URL length is not fixed. Goes up with ID                                     |
-| Does not need a unique ID generator                  | Depends on a unique ID generator                                                       |
-| Collision is possible and must be resolved           | Collision impossible                                                                   |
+| Hash + collision resolution          | Base 62 conversion                       |
+| --                 | --                             |
+| Fixed short URL length           | The short URL length is not fixed. Goes up with ID             |
+| Does not need a unique ID generator      | Depends on a unique ID generator                   |
+| Collision is possible and must be resolved     | Collision impossible                       |
 | Impossible to figure out the next available shortURL | Can figure out next available shortUL as Id increments by 1. Possible security concern |
 
 ### URL shortening deep dive
@@ -3835,9 +3835,9 @@ build the following diagram (Figure 8-7) to demonstrate the flow.
 1. longURL is the input.
 2. The system checks if the longURL is in the database.
 3. If it is, it means the longURL was converted to shortURL before. In this
-   case, fetch the shortURL from the database and return it to the client.
+ case, fetch the shortURL from the database and return it to the client.
 4. If not, the longURL is new. A new unique ID (primary key) Is generated by
-   the unique ID generator.
+ the unique ID generator.
 5. Convert the ID to shortURL with base 62 conversion.
 6. Create a new database row with the ID, shortURL, and longURL.
 
@@ -3848,8 +3848,8 @@ To make the flow easier to understand, let us look at a concrete example.
   is converted to “zn9edcu”.
 - Save ID, shortURL, and longURL to the database as shown in Table 8-4.
 
-| id            | shortURL | longURL                                      |
-| --            | --       | --                                           |
+| id    | shortURL | longURL              |
+| --    | --   | --               |
 | 2009215674938 | zn9edcu  | https://en.wikipedia.org/wiki/Systems_design |
 
 The distributed unique ID generator is worth mentioning. Its primary function
@@ -3872,7 +3872,7 @@ The flow of URL redirecting is summarized as follows:
 2. The load balancer forwards the request to web servers.
 3. If a shortURL is already in the cache, return the longURL directly.
 4. If a shortURL is not in the cache, fetch the longURL from the database. If
-   it is not in the database, it is likely a user entered an invalid shortURL.
+ it is not in the database, it is likely a user entered an invalid shortURL.
 5. The longURL is returned to the user.
 
 ### Step 4 - Wrap up
@@ -4480,12 +4480,12 @@ We primary need three components to send an iOS push notification:
 ```json
 {
   "aps":{
-    "alert":{
-      "title": "Game Request",
-      "body": "bob wants to play chess",
-      "action-loc-key": "PLAY"
-    },
-    "badge":5
+  "alert":{
+  "title": "Game Request",
+  "body": "bob wants to play chess",
+  "action-loc-key": "PLAY"
+  },
+  "badge":5
   }
 }
 ```
@@ -4608,19 +4608,19 @@ Request body
 ```json
 {
   "to": [
-    {
-      "user_id": 123456
-    }
+  {
+  "user_id": 123456
+  }
   ],
   "from": {
-    "email": "from@examples.com"
+  "email": "from@examples.com"
   },
   "subject": "Hello world",
   "content": [
-    {
-      "type": "text/plain",
-      "value": "hellow world"
-    }
+  {
+  "type": "text/plain",
+  "value": "hellow world"
+  }
   ]
 }
 ```
@@ -4656,9 +4656,9 @@ Already explained in the initial design.
 Next, let us examine how every component works together to send a notification:
 1. A _service calls APIs provided by notification servers_ to send notifications.
 2. _Notification servers fetch metadata_ such as user info, device token, and
-   notification setting from the cache or database.
+ notification setting from the cache or database.
 3. A _notification event is sent to the corresponding queue_ for processing. For
-   instance, an iOS push notification event is sent to the iOS PN queue.
+ instance, an iOS push notification event is sent to the iOS PN queue.
 4. _Workers pull notification events_ from message queues.
 5. _Workers send notifications_ to third party services.
 6. _Third-party services send notifications_ to user devices.
@@ -4697,7 +4697,7 @@ reduce the duplication occurrence, we introduce a dedupe mechanism and handle
 each failure case carefully. Here is a _simple dedupe logic_:
 
 1. When a notification event first arrives, we check if it is seen before by
-   checking the event ID. 
+ checking the event ID. 
 2. If it is seen before, it is discarded. 
 3. Otherwise, we will send out the notification. 
 
@@ -5002,30 +5002,30 @@ Let us take a close look at the fanout service as shown in Figure 11-5.
 
 ### The fanout service works as follows:
 1. _Fetch friend IDs from the graph database_. Graph databases are suited for
-   managing friend relationship and friend recommendations. Interested readers
-   wishing to learn more about this concept should refer to the reference
-   material [2].
+ managing friend relationship and friend recommendations. Interested readers
+ wishing to learn more about this concept should refer to the reference
+ material [2].
 2. _Get friends info from the user cache_. The system then filters out friends
-   based on user settings. For example, if you mute someone, her posts will not
-   show up on your news feed even though you are still friends. Another reason
-   why posts may not show is that a user could selectively share information
-   with specific friends or hide it from other people.
+ based on user settings. For example, if you mute someone, her posts will not
+ show up on your news feed even though you are still friends. Another reason
+ why posts may not show is that a user could selectively share information
+ with specific friends or hide it from other people.
 3. Send friends list and new post ID to the _message queue_.
 4. _Fanout workers fetch data from the message queue and store news feed data
-   in the news feed cache_. You can think of the news feed cache as a
-   `<post_id, user_id>` mapping table. Whenever a new post is made, it will be
-   appended to the news feed table as shown in Figure 11-6. The memory
-   consumption can become very large if we store the entire user and post
-   objects in the cache. Thus, only IDs are stored. To keep the memory size
-   small, we set a configurable limit. The chance of a user scrolling through
-   thousands of posts in news feed is slim. Most users are only interested in
-   the latest content, so the cache miss rate is low.
+ in the news feed cache_. You can think of the news feed cache as a
+ `<post_id, user_id>` mapping table. Whenever a new post is made, it will be
+ appended to the news feed table as shown in Figure 11-6. The memory
+ consumption can become very large if we store the entire user and post
+ objects in the cache. Thus, only IDs are stored. To keep the memory size
+ small, we set a configurable limit. The chance of a user scrolling through
+ thousands of posts in news feed is slim. Most users are only interested in
+ the latest content, so the cache miss rate is low.
 5. Store <post_id, user_id > in news feed cache. Figure 11-6 shows an example
-   of what the news feed looks like in cache.
+ of what the news feed looks like in cache.
 
 | post_id | user_id |
-| --      | --      |
-| 123     | 456     |
+| --  | --  |
+| 123   | 456   |
 
 ### Newsfeed retrieval deep dive
 
@@ -5035,16 +5035,16 @@ Figure 11-7 illustrates the detailed design for news feed retrieval.
 As shown in Figure 11-7, media content (images, videos, etc.) are stored in _CDN
 for fast retrieval_. Let us look at how a client retrieves news feed.
 1. A _user sends a request_ to retrieve her news feed. The request looks like
-   this: /v1/me/feed
+ this: /v1/me/feed
 2. The _load balancer redistributes requests_ to web servers.
 3. Web servers _call the news feed service_ to fetch news feeds.
 4. News feed service _gets a list post IDs_ from the news feed cache.
 5. A user’s news feed is _more than just a list of feed IDs_. It contains
-   username, profile picture, post content, post image, etc. Thus, the news
-   feed service fetches the complete user and post objects from caches (user
-   cache and post cache) to construct the fully hydrated news feed.
+ username, profile picture, post content, post image, etc. Thus, the news
+ feed service fetches the complete user and post objects from caches (user
+ cache and post cache) to construct the fully hydrated news feed.
 6. The fully hydrated news feed is _returned in JSON format_ back to the client
-   for rendering.
+ for rendering.
 
 ### Cache architecture
 
@@ -5432,8 +5432,8 @@ Figure 12-11 shows how service discovery (Zookeeper) works.
 1. User A tries to log in to the app.
 2. The load balancer sends the login request to API servers.
 3. After the backend authenticates the user, service discovery finds the best
-   chat server for User A. In this example, server 2 is chosen and the server
-   info is returned back to User A.
+ chat server for User A. In this example, server 2 is chosen and the server
+ info is returned back to User A.
 4. User A connects to chat server 2 through WebSocket.
 
 #### Message flows
@@ -5451,11 +5451,11 @@ Figure 12-12 explains what happens when User A sends a message to User B.
 2. Chat server 1 obtains a message ID from the ID generator.
 3. Chat server 1 sends the message to the message sync queue.
 4. The message is stored in a key-value store. 5.a. If User B is online, the
-   message is forwarded to Chat server 2 where User B is connected. 5.b. If
-   User B is offline, a push notification is sent from push notification (PN)
-   servers.
+ message is forwarded to Chat server 2 where User B is connected. 5.b. If
+ User B is offline, a push notification is sent from push notification (PN)
+ servers.
 6. Chat server 2 forwards the message to User B. There is a persistent
-   WebSocket connection between User B and Chat server 2.
+ WebSocket connection between User B and Chat server 2.
 
 ##### Message synchronization across multiple devices
 
@@ -5797,7 +5797,7 @@ terms.
 Steps to get top k most searched queries are listed below:
 1. Find the prefix. Time complexity: `O(p)`.
 2. Traverse the subtree from the prefix node to get all valid children. A child
-   is valid if it can form a valid query string. Time complexity: `O(c)`
+ is valid if it can form a valid query string. Time complexity: `O(c)`
 3. Sort the children and get top k. Time complexity: `O(clogc)`
 
 Let us use an example as shown in Figure 13-7 to explain the algorithm.
@@ -5857,7 +5857,7 @@ Let us revisit the time complexity of the algorithm after applying those two
 optimizations:
 1. Find the prefix node. Time complexity: `O(1)`
 2. Return top k. Since top k queries are cached, the time complexity for this
-   step is `O(1)`.
+ step is `O(1)`.
 
 As the time complexity for each of the steps is reduced to O(1), our algorithm
 takes only `O(1)` to fetch top k queries.
@@ -5917,10 +5917,10 @@ memory for fast read. It takes a weekly snapshot of the DB.
 _Trie DB_. Trie DB is the persistent storage. Two options are available to
 store the data:
 1. Document store: Since a new trie is built weekly, we can periodically take a
-   snapshot of it, serialize it, and store the serialized data in the database.
-   Document stores like MongoDB [4] are good fits for serialized data.
+ snapshot of it, serialize it, and store the serialized data in the database.
+ Document stores like MongoDB [4] are good fits for serialized data.
 2. Key-value store: A trie can be represented in a hash table form [4] by
-   applying the following logic:
+ applying the following logic:
   - Every prefix in the trie is mapped to a key in a hash table.
   - Data on each trie node is mapped to a value in a hash table.
 
@@ -5942,11 +5942,11 @@ Figure 13-11 shows the improved design as previous design is inefficient.
 1. A search query is sent to the load balancer.
 2. The load balancer routes the request to API servers.
 3. API servers get trie data from Trie Cache and construct autocomplete
-   suggestions for the client.
+ suggestions for the client.
 4. In case the data is not in Trie Cache, we replenish data back to the cache.
-   This way, all subsequent requests for the same prefix are returned from the
-   cache. A cache miss can happen when a cache server is out of memory or
-   offline.
+ This way, all subsequent requests for the same prefix are returned from the
+ cache. A cache miss can happen when a cache server is out of memory or
+ offline.
 
 Query service requires lightning-fast speed. We propose the following
 __optimizations__:
@@ -5983,15 +5983,15 @@ Trie is created by workers using aggregated data. The source of data is from Ana
 There are two ways to update the trie.
 
 1. Update the trie weekly. Once a new trie is created, the new trie replaces
-   the old one.
+ the old one.
 2. Update individual trie node directly. We try to avoid this operation because
-   it is slow. However, if the size of the trie is small, it is an acceptable
-   solution. When we update a trie node, its ancestors all the way up to the
-   root must be updated because ancestors store top queries of children.
-   Figure 13-13 shows an example of how the update operation works. On the
-   left side, the search query “beer” has the original value 10. On the right
-   side, it is updated to 30. As you can see, the node and its ancestors have
-   the “beer” value updated to 30.
+ it is slow. However, if the size of the trie is small, it is an acceptable
+ solution. When we update a trie node, its ancestors all the way up to the
+ root must be updated because ancestors store top queries of children.
+ Figure 13-13 shows an example of how the update operation works. On the
+ left side, the search query “beer” has the original value 10. On the right
+ side, it is updated to 30. As you can see, the node and its ancestors have
+ the “beer” value updated to 30.
 
 ![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/13.13.png)
 
@@ -6247,7 +6247,7 @@ video uploading flow works. The flow is broken down into two processes running
 in parallel.
 1. Upload the actual video.
 2. Update video metadata. Metadata contains information about video URL, size,
-   resolution, format, user info, etc.
+ resolution, format, user info, etc.
 
 #### Flow 1: upload the actual video
 
@@ -6257,16 +6257,16 @@ Figure 14-5 shows how to upload the actual video. The explanation is shown
 below:
 1. Videos are uploaded to the original storage.
 2. Transcoding servers fetch videos from the original storage and start
-   transcoding.
+ transcoding.
 3. Once transcoding is complete, the following two steps are executed in
-   parallel: 
-   - 3a. Transcoded videos are sent to transcoded storage. 
-   - 3b. Transcoding completion events are queued in the completion queue. 
-   - 3a.1. Transcoded videos are distributed to CDN. 
-   - 3b.1. Completion handler contains a bunch of workers that continuously pull event data from the queue. 
-   - 3b.1.a. and 3b.1.b. Completion handler updates the metadata database and cache when video transcoding is complete.
+ parallel: 
+ - 3a. Transcoded videos are sent to transcoded storage. 
+ - 3b. Transcoding completion events are queued in the completion queue. 
+ - 3a.1. Transcoded videos are distributed to CDN. 
+ - 3b.1. Completion handler contains a bunch of workers that continuously pull event data from the queue. 
+ - 3b.1.a. and 3b.1.b. Completion handler updates the metadata database and cache when video transcoding is complete.
 4. API servers inform the client that the video is successfully uploaded and is
-   ready for streaming.
+ ready for streaming.
 
 #### Flow b: update the metadata
 
@@ -6391,19 +6391,19 @@ output. Let us take a close look at each component.
 
 The preprocessor has 4 responsibilities:
 1. Video splitting. Video stream is split or further split into smaller Group
-   of Pictures (GOP) alignment. GOP is a group/chunk of frames arranged in a
-   specific order. Each chunk is an independently playable unit, usually a few
-   seconds in length.
+ of Pictures (GOP) alignment. GOP is a group/chunk of frames arranged in a
+ specific order. Each chunk is an independently playable unit, usually a few
+ seconds in length.
 2. Some old mobile devices or browsers might not support video splitting.
-   Preprocessor split videos by GOP alignment for old clients.
+ Preprocessor split videos by GOP alignment for old clients.
 3. DAG generation. The processor generates DAG based on configuration files
-   client programmers write. Figure 14-12 is a simplified DAG
-   representation which has 2 nodes and 1 edge: 
-   - This DAG representation is generated from the two configuration files below (Figure 14-13):
+ client programmers write. Figure 14-12 is a simplified DAG
+ representation which has 2 nodes and 1 edge: 
+ - This DAG representation is generated from the two configuration files below (Figure 14-13):
 4. Cache data. The preprocessor is a cache for segmented videos. For better
-   reliability, the preprocessor stores GOPs and metadata in temporary storage.
-   If video encoding fails, the system could use persisted data for retry
-   operations.
+ reliability, the preprocessor stores GOPs and metadata in temporary storage.
+ If video encoding fails, the system could use persisted data for retry
+ operations.
 
 ![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/14.12.png)
 
@@ -6528,14 +6528,14 @@ upload videos to the right location, we introduce pre-signed URLs as shown in Fi
 
 The upload flow is updated as follows:
 1. The client makes a HTTP request to API servers to fetch the pre-signed URL,
-   which gives the access permission to the object identified in the URL. The
-   term pre-signed URL is used by uploading files to Amazon S3. Other cloud
-   service providers might use a different name. For instance, Microsoft Azure
-   blob storage supports the same feature, but call it “Shared Access
-   Signature” [10].
+ which gives the access permission to the object identified in the URL. The
+ term pre-signed URL is used by uploading files to Amazon S3. Other cloud
+ service providers might use a different name. For instance, Microsoft Azure
+ blob storage supports the same feature, but call it “Shared Access
+ Signature” [10].
 2. API servers respond with a pre-signed URL.
 3. Once the client receives the response, it uploads the video using the
-   pre-signed URL.
+ pre-signed URL.
 
 #### Safety optimization: protect your videos
 
@@ -6567,13 +6567,13 @@ distribution [11] [12].
 It means a few popular videos are accessed frequently but many others have few
 or no viewers. Based on this observation, we implement a few optimizations:
 1. _Only serve the most popular videos from CDN_ and other videos from our high
-   capacity storage video servers (Figure 14-28).
+ capacity storage video servers (Figure 14-28).
 2. For less popular content, we may not need to store many encoded video
-   versions. _Short videos can be encoded on-demand_.
+ versions. _Short videos can be encoded on-demand_.
 3. _Some videos are popular only in certain regions_. There is no need to
-   distribute these videos to other regions.
+ distribute these videos to other regions.
 4. _Build your own CDN_ like Netflix and partner with Internet Service
-   Providers (ISPs).
+ Providers (ISPs).
 
 Building your CDN is a giant project; however, this could make sense for large
 streaming companies. An ISP can be Comcast, AT&T, Verizon, or other internet
@@ -7081,12 +7081,12 @@ diagram due to space constraint.
 
 1. Notification service informs client 2 that a file is changed somewhere else.
 2. Once client 2 knows that new updates are available, it sends a request to
-   fetch metadata.
+ fetch metadata.
 3. API servers call metadata DB to fetch metadata of the changes.
 4. Metadata is returned to the API servers.
 5. Client 2 gets the metadata.
 6. Once the client receives the metadata, it sends requests to block servers to
-   download blocks.
+ download blocks.
 7. Block servers first download blocks from cloud storage.
 8. Cloud storage returns blocks to the block servers.
 9. Client 2 downloads all the new blocks to reconstruct the file.
