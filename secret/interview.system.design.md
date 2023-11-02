@@ -19,8 +19,6 @@ test
 
 [System Design Interview PDF](system.design.interview.pdf)
 
-## Craig
-
 ![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/craig.meta.png)
 
 ### Ask a lot of questions
