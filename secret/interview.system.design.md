@@ -15,7 +15,7 @@ inoremap png ![](https://raw.githubusercontent.com/arafatm/assets/main/img/syste
 ```
 test
 ```
-- bullet
+  - bullet
 
 [System Design Interview PDF](system.design.interview.pdf)
 
