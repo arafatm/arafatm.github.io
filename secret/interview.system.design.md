@@ -284,10 +284,10 @@ Storage
   - get feedback
   - draw diagrams
   - do back-of-envolope calculations
-- __Communicate with your interviewer__
+- **Communicate with your interviewer**
 - _Step 3_ - Design deep dive
 - _Step 4_ - Wrap up
-- Dos
+- **Dos**
   - Always ask for clarification. Do not assume your assumption is correct.
   - Understand the requirements of the problem.
   - There is neither the right answer nor the best answer. 
@@ -299,7 +299,7 @@ Storage
   - Design the most critical components first.
   - Bounce ideas off the interviewer. A good interviewer works with you as a teammate.
   - _Never give up_.
-- Don’ts
+- **Don’ts**
   - Don't be unprepared for typical interview questions.
   - Don’t jump into a solution without clarifying the requirements and assumptions.
   - Don’t go into too much detail on a single component in the beginning. Give the highlevel design first then drills down.
@@ -316,31 +316,30 @@ Storage
 
 ### [CHAPTER 4: DESIGN A RATE LIMITER](#chapter-4-design-a-rate-limiter)
 - ![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/04.13.png)
-- Step 1 - Understand the problem and establish design scope](#step-1---understand-the-problem-and-establish-design-scope-1)
+- **Step 1** - Understand the problem and establish design scope](#step-1---understand-the-problem-and-establish-design-scope-1)
   - Accurately limit excessive requests.
   - Low latency. The rate limiter should not slow down HTTP response time.
   - Use as little memory as possible.
   - Distributed rate limiting. The rate limiter can be shared across multiple servers or processes.
   - Exception handling. Show clear exceptions to users when their requests are throttled.
   - High fault tolerance. If there are any problems with the rate limiter (for example, a cache server goes offline), it does not affect the entire system.
-- Step 2 - Propose high-level design and get buy-in](#step-2---propose-high-level-design-and-get-buy-in-1)
+- **Step 2** - Propose high-level design and get buy-in](#step-2---propose-high-level-design-and-get-buy-in-1)
   - Where to put the rate limiter?](#where-to-put-the-rate-limiter)
     - _middleware_ vs client vs server side
     - e.g. cloudflare or AWS API Gateway
 - Algorithms for rate limiting](#algorithms-for-rate-limiting) vs [Token bucket algorithm](#token-bucket-algorithm) vs [Leaking bucket algorithm](#leaking-bucket-algorithm) vs [Fixed window counter algorithm](#fixed-window-counter-algorithm) vs [Sliding window log algorithm](#sliding-window-log-algorithm) vs [Sliding window counter algorithm](#sliding-window-counter-algorithm)
   - Hard vs Soft rate limiting
-  - ![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/04.12.png)
-- Step 3 - Design deep dive](#step-3---design-deep-dive-1)
+- **Step 3** - Design deep dive](#step-3---design-deep-dive-1)
   - Rate limiting rules](#rate-limiting-rules)
-    - domain: auth 
-    - descriptors: 
-    - - key: auth_type 
-    - Value: login 
-    - rate_limit: 
-    - unit: minute 
-    - requests_per_unit: 5
+    - `domain: auth `
+    - `descriptors: `
+    - `- key: auth_type `
+    - `Value: login `
+    - `rate_limit: `
+    - `unit: minute `
+    - `requests_per_unit: 5`
   - HTTP response code `429` (too many requests)
-  - Rate limiter headers](#rate-limiter-headers)
+  - Rate limiter headers
     - `X-Ratelimit-Remaining`: The remaining number of allowed requests within the window.
     - `X-Ratelimit-Limit`: It indicates how many calls the client can make per time window.
     - `X-Ratelimit-Retry-After`: The number of seconds to wait until you can make a request again without being throttled.
@@ -356,29 +355,21 @@ Storage
     - opt for eventual consistency of data
 
 ### [CHAPTER 5: DESIGN CONSISTENT HASHING](#chapter-5-design-consistent-hashing)
-#### [The rehashing problem](#the-rehashing-problem)
-- `serverIndex = hash(key) % N`
-#### [Consistent hashing](#consistent-hashing)
-- Avoid having to rekey hashes when server is added/removed
-#### [Hash space and hash ring](#hash-space-and-hash-ring)
-#### [Hash servers](#hash-servers)
-#### [Hash keys](#hash-keys)
-#### [Server lookup](#server-lookup)
-#### [Add a server](#add-a-server)
 - ![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/05.08.png)
-#### [Remove a server](#remove-a-server)
-#### [Two issues in the basic approach](#two-issues-in-the-basic-approach)
-1. Keeping server sizes relatively equal
-#### [Virtual nodes](#virtual-nodes)
 - ![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/05.12.png)
+- The rehashing problem](#the-rehashing-problem)
+- Given `N` cache servers we want to distribute keys across
+- `serverIndex = hash(key) % N`
+- Avoid having to rekey hashes when server is added/removed
+- Hash space and hash ring](#hash-space-and-hash-ring)
+- Keeping server sizes relatively equal
+- Balance load across servers w/ Virtual nodes](#virtual-nodes)
 - As the number of virtual nodes increases, the distribution of keys becomes more balanced.
-#### [Find affected keys](#find-affected-keys)
-#### [Wrap up](#wrap-up)
-- The benefits of consistent hashing include:
-- Minimized keys are redistributed when servers are added or removed.
-- It is easy to scale horizontally because data are more evenly distributed.
-- Mitigate hotspot key problem. Excessive access to a specific shard could cause server overload. Imagine data for Katy Perry, Justin Bieber, and Lady Gaga all end up on the same shard. Consistent hashing helps to mitigate the problem by distributing the data more evenly.
-#### [Reference Materials](#reference-materials-3)
+- Wrap up](#wrap-up)
+  - The benefits of consistent hashing include:
+  - Minimized keys are redistributed when servers are added or removed.
+  - It is easy to scale horizontally because data are more evenly distributed.
+  - Mitigate hotspot key problem. Excessive access to a specific shard could cause server overload. Imagine data for Katy Perry, Justin Bieber, and Lady Gaga all end up on the same shard. Consistent hashing helps to mitigate the problem by distributing the data more evenly.
 
 ### [CHAPTER 6: DESIGN A KEY-VALUE STORE](#chapter-6-design-a-key-value-store)
 #### [Understand the problem and establish design scope](#understand-the-problem-and-establish-design-scope)
