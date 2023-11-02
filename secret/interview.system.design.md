@@ -842,6 +842,20 @@ Storage
 
 ### [CHAPTER 15: DESIGN GOOGLE DRIVE](#chapter-15-design-google-drive)
 - Step 1 - Understand the problem and establish design scope
+  - Candidate: What are the most important features? Interviewer: Upload and download files, file sync, and notifications.
+  - Candidate: Is this a mobile app, a web app, or both? Interviewer: Both.
+  - Candidate: What are the supported file formats? Interviewer: Any file type.
+  - Candidate: Do files need to be encrypted? Interview: Yes, files in the storage must be encrypted.
+  - Candidate: Is there a file size limit? Interview: Yes, files must be 10 GB or smaller.
+  - Candidate: How many users does the product have? Interviewer: 10M DAU.
+  - _Back of the envelope estimation_
+    - Assume the application has 50 million signed up users and 10 million DAU.
+    - Users get 10 GB free space.
+    - Assume users upload 2 files per day. The average file size is 500 KB.
+    - 1:1 read to write ratio.
+    - Total space allocated: 50 million \* 10 GB = 500 Petabyte
+    - QPS for upload API: 10 million \* 2 uploads / 24 hours / 3600 seconds = ~ 240
+    - Peak QPS = QPS \* 2 = 480
 - Step 2 - Propose high-level design and get buy-in
   - APIs
     - 1. Upload a file to Google Drive
