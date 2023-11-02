@@ -811,28 +811,33 @@ Storage
       - For simplicity, we only calculate the cost of video streaming. 5 million * 5 videos * 0.3GB * 0.02= 150,000 per day
 - Step 2 - Propose high-level design and get buy-in
   - ![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/14.03.png)
-  - Video uploading flow ![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/14.04.png)
-  - Flow 1: upload the actual video
-  - Flow b: update the metadata
-  - Video streaming flow
+  - Video uploading flow ![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/14.05.png)
+  - Video streaming flow can utilize CDN
 - Step 3 - Design deep dive
-  - Video transcoding
-  - Directed acyclic graph (DAG) model
-  - Video transcoding architecture
-  - Preprocessor
-  - DAG scheduler
-  - Resource manager
-  - Task workers
+  - Video transcoding can parallelize different aspects ![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/14.08.png)
+  - Preprocessor: Can split videos into smaller chunks for faster streaming
+  - Task workers ![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/14.19.png)
   - Temporary storage
   - Encoded video
   - System optimizations
-  - Speed optimization: place upload centers close to users
-  - Speed optimization: parallelism everywhere
-  - Safety optimization: pre-signed upload URL
-  - Safety optimization: protect your videos
+    - place upload centers close to users
+    - parallelism everywhere w/ message queues ![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/14.26.png)
+  - Safety optimization: 
+    - pre-signed upload URL to verify authorized user
+    - protect your videos w/ DRM/Encryption/watermarking
   - Cost-saving optimization
+    - use CDN only for popular videos
+    - Limit video distribution to specific regions (DC)
+    - build your own CDN
   - Error handling
 - Step 4 - Wrap up
+  - Scale the API tier: Because API servers are stateless, it is easy to scale API tier horizontally.
+  - Scale the database: You can talk about database replication and sharding.
+  - Live streaming: It refers to the process of how a video is recorded and broadcasted in real time. Although our system is not designed specifically for live streaming, live streaming and non-live streaming have some similarities: both require uploading, encoding, and streaming. The notable differences are:
+  - Live streaming has a higher latency requirement, so it might need a different streaming protocol.
+  - Live streaming has a lower requirement for parallelism because small chunks of data are already processed in real-time.
+  - Live streaming requires different sets of error handling. Any error handling that takes too much time is not acceptable.
+  - Video takedowns: Videos that violate copyrights, pornography, or other illegal acts shall be removed. Some can be discovered by the system during the upload process, while others might be discovered through user flagging.
 - Reference Materials
 
 ### [CHAPTER 15: DESIGN GOOGLE DRIVE](#chapter-15-design-google-drive)
