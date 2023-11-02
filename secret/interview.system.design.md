@@ -853,45 +853,45 @@ Storage
     - Users get 10 GB free space.
     - Assume users upload 2 files per day. The average file size is 500 KB.
     - 1:1 read to write ratio.
-    - Total space allocated: 50 million \* 10 GB = 500 Petabyte
-    - QPS for upload API: 10 million \* 2 uploads / 24 hours / 3600 seconds = ~ 240
-    - Peak QPS = QPS \* 2 = 480
+    - Total space allocated: 50 million * 10 GB = 500 Petabyte
+    - QPS for upload API: 10 million * 2 uploads / 24 hours / 3600 seconds = ~ 240
+    - Peak QPS = QPS * 2 = 480
 - Step 2 - Propose high-level design and get buy-in
+  -  single server setup as listed below:
+    - A web server to upload and download files.
+    - A database to keep track of metadata like user data, login info, files info, etc.
+    - A storage system to store files. We allocate 1TB of storage space to store files.
   - APIs
     - 1. Upload a file to Google Drive
     - 2. Download a file from Google Drive
     - 3. Get file revisions
   - Move away from single server
+    - Use S3 for blob storage
+    - load balancer, web servers, metadata db
   - Sync conflicts
-  - High-level design
-    - User:
-    - Block servers:
-    - Cloud storage
-    - Cold storage
-    - Load balancer
-    - API servers
-    - Metadata database
-    - Metadata cache
-    - Notification service
-    - Offline backup queue
+    - version changes and allow manual merge
+  - High-level design ![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/15.10.png)
 - Step 3 - Design deep dive
-  - Block servers
-  - High consistency requirement
-  - Metadata database
-    - User
-    - Device
-    - Namespace
-    - File
-    - File_version
-    - Block
-  - Upload flow
-  - Download flow
-  - Notification service
+  - Block servers can be optimized ![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/15.11.png)
+    - Delta sync: only sync modifications instead of whole block
+    - Compression
   - Save storage space
+    - _De-duplicate data blocks_. Eliminating redundant blocks at the account level is an easy way to save space. Two blocks are identical if they have the same hash value.
+    - Adopt an _intelligent data backup strategy_. Two optimization strategies can be applied:
+    - _Set a limit_: We can set a limit for the number of versions to store. If the limit is reached, the oldest version will be replaced with the new version.
+    - _Keep valuable versions only_: Some files might be edited frequently. For example, saving every edited version for a heavily modified document could mean the file is saved over 1000 times within a short period. To avoid unnecessary copies, we could limit the number of saved versions. We give more weight to recent versions. Experimentation is helpful to figure out the optimal number of versions to save.
+    - _Moving infrequently used data to cold storage_. Cold data is the data that has not been active for months or years. Cold storage like Amazon S3 glacier \[11\] is much cheaper than S3.
   - Failure Handling
-- Step 4 - Wrap up
-- Reference Materials
-
+    - _Load balancer failure_: If a load balancer fails, the secondary would become active and pick up the traffic. Load balancers usually monitor each other using a heartbeat, a periodic signal sent between load balancers. A load balancer is considered as failed if it has not sent a heartbeat for some time.
+    - _Block server failure_: If a block server fails, other servers pick up unfinished or pending jobs.
+    - _Cloud storage failure_: S3 buckets are replicated multiple times in different regions. If files are not available in one region, they can be fetched from different regions.
+    - _API server failure_: It is a stateless service. If an API server fails, the traffic is redirected to other API servers by a load balancer.
+    - _Metadata cache failure_: Metadata cache servers are replicated multiple times. If one node goes down, you can still access other nodes to fetch data. We will bring up a new cache server to replace the failed one.
+    - \_Metadata DB failure.
+    - _Master down_: If the master is down, promote one of the slaves to act as a new master and bring up a new slave node.
+    - _Slave down_: If a slave is down, you can use another slave for read operations and bring another database server to replace the failed one.
+    - _Notification service failure_: Every online user keeps a long poll connection with the notification server. Thus, each notification server is connected with many users. According to the Dropbox talk in 2012 \[6\], over 1 million connections are open per machine. If a server goes down, all the long poll connections are lost so clients must reconnect to a different server. Even though one server can keep many open connections, it cannot reconnect all the lost connections at once. Reconnecting with all the lost clients is a relatively slow process.
+    - _Offline backup queue failure_: Queues are replicated multiple times. If one queue fails, consumers of the queue may need to re-subscribe to the backup queue.
 
 ## CHAPTER 1: SCALE FROM ZERO TO MILLIONS OF USERS
 
