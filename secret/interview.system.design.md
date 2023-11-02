@@ -559,14 +559,14 @@ Storage
 ### [CHAPTER 9: DESIGN A WEB CRAWLER](#chapter-9-design-a-web-crawler)
 - ![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/09.04.png)
 - _Step 1_ - Understand the problem and establish design scope
-1. Given a set of URLs, download all the web pages addressed by the URLs.
-2. Extract URLs from these web pages
-3. Add new URLs to the list of URLs to be downloaded. Repeat these 3 steps.
+  - Given a set of URLs, download all the web pages addressed by the URLs.
+  - Extract URLs from these web pages
+  - Add new URLs to the list of URLs to be downloaded. Repeat these 3 steps.
 - Also address:
-- _Scalability_: The web is very large. There are billions of web pages out there. Web crawling should be extremely efficient using parallelization.
-- _Robustness_: The web is full of traps. Bad HTML, unresponsive servers, crashes, malicious links, etc. are all common. The crawler must handle all those edge cases.
-- _Politeness_: The crawler should not make too many requests to a website within a short time interval.
-- _Extensibility_: The system is flexible so that minimal changes are needed to support new content types. For example, if we want to crawl image files in the future, we should not need to redesign the entire system.
+  - _Scalability_: The web is very large. There are billions of web pages out there. Web crawling should be extremely efficient using parallelization.
+  - _Robustness_: The web is full of traps. Bad HTML, unresponsive servers, crashes, malicious links, etc. are all common. The crawler must handle all those edge cases.
+  - _Politeness_: The crawler should not make too many requests to a website within a short time interval.
+  - _Extensibility_: The system is flexible so that minimal changes are needed to support new content types. For example, if we want to crawl image files in the future, we should not need to redesign the entire system.
 - Back of the envelope estimation
   - Assume _1 billion_ web pages are downloaded every month.
   - QPS: 1,000,000,000 / 30 days / 24 hours / 3600 seconds = ~400 pages per second.
@@ -689,125 +689,130 @@ Storage
     - Support multiple data centers
     - Lose couple components with message queues
     - Monitor key metrics. For instance, QPS during peak hours and latency while users refreshing their news feed are interesting to monitor.
-# Reference materials
 
 ### [CHAPTER 12: DESIGN A CHAT SYSTEM](#chapter-12-design-a-chat-system)
 - ![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/12.08.png)
+  - Chat servers facilitate message sending/receiving.
+  - Presence servers manage online/offline status.
+  - API servers handle everything including user login, signup, change profile, etc.
+  - Notification servers send push notifications.
+  - Finally, the key-value store is used to store chat history. When an offline user comes online, she will see all her previous chat history.
 - Step 1 - Understand the problem and establish design scope
+  - Candidate: What _kind of chat app_ shall we design? 1 on 1 or group based? Interviewer: It should _support both 1 on 1 and group chat_.
+  - Candidate: Is this a _mobile_ app? Or a _web_ app? Or both? Interviewer: _Both_.
+  - Candidate: What is the _scale_ of this app? A startup app or massive scale? Interviewer: It should support _50 million daily active users_ (DAU).
+  - Candidate: For group chat, what is the _group member limit_? Interviewer: A _maximum of 100 people_
+  - Candidate: What _features_ are important for the chat app? Can it support _attachment_? Interviewer: _1 on 1 chat, group chat, online indicator_. The system only supports text messages.
+  - Candidate: Is there a message size limit? Interviewer: Yes, _text length should be less than 100,000 characters_ long.
+  - Candidate: Is _end-to-end encryption_ required? Interviewer: _Not required for now_ but we will discuss that if time allows.
+  - Candidate: _How long shall we store the chat history_? Interviewer: _Forever_.
 - Step 2 - Propose high-level design and get buy-in
-  * [Polling](#polling)
-  * [Long polling](#long-polling)
-- WebSocket
-  * [High-level design](#high-level-design-1)
-  * [Stateless Services](#stateless-services)
-  * [Stateful Service](#stateful-service)
-  * [Third-party integration](#third-party-integration)
-  * [Scalability](#scalability)
-  * [Storage](#storage)
-  * [Data models](#data-models)
-    * [Message table for 1 on 1 chat](#message-table-for-1-on-1-chat)
-    * [Message table for group chat](#message-table-for-group-chat)
-    * [Message ID](#message-id)
+  - ![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/12.02.png)
+    -  HTTP `keep-alive` on sender is efficient to maintain connection
+    - Receiver needs polling/websockets
+      - pollling is noisy
+      - Long polling is a little better but in stateless architecture might be connected to wrong server 
+      - websocket works best ![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/12.05.png)
+      - Websocket can also be used for sender
+  - ![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/12.07.png)
 - Step 3 - Design deep dive
-  * [Service discovery](#service-discovery)
-  * [Message flows](#message-flows)
-    * [1 on 1 chat flow](#1-on-1-chat-flow)
-    * [Message synchronization across multiple devices](#message-synchronization-across-multiple-devices)
-    * [Small group chat flow](#small-group-chat-flow)
-    * [Online presence](#online-presence)
-    * [User login](#user-login)
-    * [User logout](#user-logout)
-    * [User disconnection](#user-disconnection)
-    * [Online status fanout](#online-status-fanout)
+  - Service discovery: Most efficient server for client to connect to e.g. geographic location, server capacity etc
+    - `Apache Zookeeper`
+  - 1 on 1 chat flow ![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/12.12.png)
+  - Small group chat flow ![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/12.14.png)
+  - Online presence
+  - User login
+  - User logout
+  - User disconnection
+  - Online status fanout
+- Step 4 - Wrap up
+
+### [CHAPTER 13: DESIGN A SEARCH AUTOCOMPLETE SYSTEM](#chapter-13-design-a-search-autocomplete-system)
+- Step 1 - Understand the problem and establish design scope
+  - Requirements
+- Step 2 - Propose high-level design and get buy-in
+  - Data gathering service
+  - Query service
+- Step 3 - Design deep dive
+  - Trie data structure
+  - Limit the max length of a prefix
+  - Cache top search queries at each node
+  - Data gathering service
+  - Aggregated Data.
+  - Query service
+  - Trie operations
+    - Create
+    - Update
+    - Delete
+  - Scale the storage
 - Step 4 - Wrap up
 - Reference Materials
 
-### [CHAPTER 13: DESIGN A SEARCH AUTOCOMPLETE SYSTEM](#chapter-13-design-a-search-autocomplete-system)
-# Step 1 - Understand the problem and establish design scope
-  * [Requirements](#requirements)
-# Step 2 - Propose high-level design and get buy-in
-  * [Data gathering service](#data-gathering-service)
-  * [Query service](#query-service)
-# Step 3 - Design deep dive
-  * [Trie data structure](#trie-data-structure)
-  * [Limit the max length of a prefix](#limit-the-max-length-of-a-prefix)
-  * [Cache top search queries at each node](#cache-top-search-queries-at-each-node)
-  * [Data gathering service](#data-gathering-service-1)
-  * [Aggregated Data.](#aggregated-data)
-  * [Query service](#query-service-1)
-  * [Trie operations](#trie-operations)
-    * [Create](#create)
-    * [Update](#update)
-    * [Delete](#delete)
-  * [Scale the storage](#scale-the-storage)
-# Step 4 - Wrap up
-# Reference Materials
-
 ### [CHAPTER 14: DESIGN YOUTUBE](#chapter-14-design-youtube)
-# Step 1 - Understand the problem and establish design scope
-  * [Back of the envelope estimation](#back-of-the-envelope-estimation-1)
-# Step 2 - Propose high-level design and get buy-in
-  * [Video uploading flow](#video-uploading-flow)
-  * [Flow 1: upload the actual video](#flow-1-upload-the-actual-video)
-  * [Flow b: update the metadata](#flow-b-update-the-metadata)
-  * [Video streaming flow](#video-streaming-flow)
-# Step 3 - Design deep dive
-  * [Video transcoding](#video-transcoding)
-  * [Directed acyclic graph (DAG) model](#directed-acyclic-graph-dag-model)
-  * [Video transcoding architecture](#video-transcoding-architecture)
-  * [Preprocessor](#preprocessor)
-  * [DAG scheduler](#dag-scheduler)
-  * [Resource manager](#resource-manager)
-  * [Task workers](#task-workers)
-  * [Temporary storage](#temporary-storage)
-  * [Encoded video](#encoded-video)
-  * [System optimizations](#system-optimizations)
-  * [Speed optimization: place upload centers close to users](#speed-optimization-place-upload-centers-close-to-users)
-  * [Speed optimization: parallelism everywhere](#speed-optimization-parallelism-everywhere)
-  * [Safety optimization: pre-signed upload URL](#safety-optimization-pre-signed-upload-url)
-  * [Safety optimization: protect your videos](#safety-optimization-protect-your-videos)
-  * [Cost-saving optimization](#cost-saving-optimization)
-  * [Error handling](#error-handling)
-# Step 4 - Wrap up
-# Reference Materials
+- Step 1 - Understand the problem and establish design scope
+  - Back of the envelope estimation
+- Step 2 - Propose high-level design and get buy-in
+  - Video uploading flow
+  - Flow 1: upload the actual video
+  - Flow b: update the metadata
+  - Video streaming flow
+- Step 3 - Design deep dive
+  - Video transcoding
+  - Directed acyclic graph (DAG) model
+  - Video transcoding architecture
+  - Preprocessor
+  - DAG scheduler
+  - Resource manager
+  - Task workers
+  - Temporary storage
+  - Encoded video
+  - System optimizations
+  - Speed optimization: place upload centers close to users
+  - Speed optimization: parallelism everywhere
+  - Safety optimization: pre-signed upload URL
+  - Safety optimization: protect your videos
+  - Cost-saving optimization
+  - Error handling
+- Step 4 - Wrap up
+- Reference Materials
 
 ### [CHAPTER 15: DESIGN GOOGLE DRIVE](#chapter-15-design-google-drive)
-# Step 1 - Understand the problem and establish design scope
-# Step 2 - Propose high-level design and get buy-in
-  * [APIs](#apis)
-    * [1. Upload a file to Google Drive](#1-upload-a-file-to-google-drive)
-    * [2. Download a file from Google Drive](#2-download-a-file-from-google-drive)
-    * [3. Get file revisions](#3-get-file-revisions)
-  * [Move away from single server](#move-away-from-single-server)
-  * [Sync conflicts](#sync-conflicts)
-  * [High-level design](#high-level-design-2)
-    * [User:](#user)
-    * [Block servers:](#block-servers)
-    * [Cloud storage](#cloud-storage)
-    * [Cold storage](#cold-storage)
-    * [Load balancer](#load-balancer-1)
-    * [API servers](#api-servers)
-    * [Metadata database](#metadata-database)
-    * [Metadata cache](#metadata-cache)
-    * [Notification service](#notification-service)
-    * [Offline backup queue](#offline-backup-queue)
-# Step 3 - Design deep dive
-  * [Block servers](#block-servers-1)
-  * [High consistency requirement](#high-consistency-requirement)
-  * [Metadata database](#metadata-database-1)
-    * [User](#user-1)
-    * [Device](#device)
-    * [Namespace](#namespace)
-    * [File](#file)
-    * [File_version](#file_version)
-    * [Block](#block)
-  * [Upload flow](#upload-flow)
-  * [Download flow](#download-flow)
-  * [Notification service](#notification-service-1)
-  * [Save storage space](#save-storage-space)
-  * [Failure Handling](#failure-handling)
-# Step 4 - Wrap up
-# Reference Materials
+- Step 1 - Understand the problem and establish design scope
+- Step 2 - Propose high-level design and get buy-in
+  - APIs
+    - 1. Upload a file to Google Drive
+    - 2. Download a file from Google Drive
+    - 3. Get file revisions
+  - Move away from single server
+  - Sync conflicts
+  - High-level design
+    - User:
+    - Block servers:
+    - Cloud storage
+    - Cold storage
+    - Load balancer
+    - API servers
+    - Metadata database
+    - Metadata cache
+    - Notification service
+    - Offline backup queue
+- Step 3 - Design deep dive
+  - Block servers
+  - High consistency requirement
+  - Metadata database
+    - User
+    - Device
+    - Namespace
+    - File
+    - File_version
+    - Block
+  - Upload flow
+  - Download flow
+  - Notification service
+  - Save storage space
+  - Failure Handling
+- Step 4 - Wrap up
+- Reference Materials
 
 
 ## CHAPTER 1: SCALE FROM ZERO TO MILLIONS OF USERS
