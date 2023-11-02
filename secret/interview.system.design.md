@@ -629,50 +629,75 @@ Storage
   - Contact Info gathering Flow
   - Notification sending/receiving flow
     - User & Device info
-# Step 3 - Design deep dive
-# Reliability
-  * [How to prevent data loss?](#how-to-prevent-data-loss)
-  * [Will recipients receive a notification exactly once?](#will-recipients-receive-a-notification-exactly-once)
-# Additional components and considerations
-  * [Notification template](#notification-template)
-  * [Notification setting](#notification-setting)
-  * [Rate limiting](#rate-limiting)
-  * [Retry mechanism](#retry-mechanism)
-  * [Security in push notifications](#security-in-push-notifications)
-  * [Monitor queued notifications](#monitor-queued-notifications)
-  * [Events tracking](#events-tracking)
-# Updated design
-# Step 4 - Wrap up
-# Reference materials
+  - Flow
+    1. A _service calls APIs provided by notification servers_ to send notifications.
+    2. _Notification servers fetch metadata_ such as user info, device token, and notification setting from the cache or database.
+    3. A _notification event is sent to the corresponding queue_ for processing. For instance, an iOS push notification event is sent to the iOS PN queue.
+    4. _Workers pull notification events_ from message queues.
+    5. _Workers send notifications_ to third party services.
+    6. _Third-party services send notifications_ to user devices.
+- Step 3 - Design deep dive
+  - Reliability
+    - Cache notifications and verify receipt
+  - Dedupe logic to reduce duplicate notifications
+- Additional components and considerations
+  - The notification servers are equipped with two more critical features: authentication and rate-limiting.
+  - We also add a retry mechanism to handle notification failures. If the system fails to send notifications, they are put back in the messaging queue and the workers will retry for a predefined number of times.
+  - Furthermore, notification templates provide a consistent and efficient notification creation process.
+  - Finally, monitoring and tracking systems are added for system health checks and future improvements.
+- Step 4 - Wrap up
+  - Reliability: We proposed a robust retry mechanism to minimize the failure rate.
+  - Security: AppKey/appSecret pair is used to ensure only verified clients can send notifications.
+  - Tracking and monitoring: These are implemented in any stage of a notification flow to capture important stats.
+  - Respect user settings: Users may opt-out of receiving notifications. Our system checks user settings first before sending notifications.
+  - Rate limiting: Users will appreciate a frequency capping on the number of notifications they receive.
 
 ### [CHAPTER 11: DESIGN A NEWS FEED SYSTEM](#chapter-11-design-a-news-feed-system)
-# Step 1 - Understand the problem and establish design scope
-# Step 2 - Propose high-level design and get buy-in
-# Newsfeed APIs
-  * [Feed publishing API](#feed-publishing-api)
-  * [Newsfeed retrieval API](#newsfeed-retrieval-api)
-# Feed publishing
-# Newsfeed building
-# Step 3 - Design deep dive
-# Feed publishing deep dive
-  * [Web servers](#web-servers)
-  * [Fanout service](#fanout-service)
-    * [Fanout on write.](#fanout-on-write)
-    * [Fanout on read.](#fanout-on-read)
-# The fanout service works as follows:
-# Newsfeed retrieval deep dive
-# Cache architecture
-# Step 4 - Wrap up
-  * [Scaling the database:](#scaling-the-database)
-  * [Other talking points:](#other-talking-points)
+- Step 1 - Understand the problem and establish design scope
+  - Candidate: Is this a _mobile_ app? Or a _web app_? Or both? Interviewer: Both
+  - Candidate: What are the _important features_? Interview: A user can publish a post and see her friends’ posts on the news feed page.
+  - Candidate: Is the news feed _sorted_ by reverse chronological order or any particular order such as topic scores? For instance, posts from your close friends have higher scores. Interviewer: To keep things simple, let us assume the feed is sorted by reverse chronological order.
+  - Candidate: How many _friends_ can a user have? Interviewer: 5000
+  - Candidate: What is the _traffic volume_? Interviewer: 10 million DAU
+  - Candidate: Can feed contain images, videos, or _just text_? Interviewer: It can contain media files, including both images and videos.
+- Step 2 - Propose high-level design and get buy-in
+  - Newsfeed APIs
+    - Feed publishing API `POST /v1/me/feed`
+    - Newsfeed retrieval API `POST /v1/me/feed`
+  - Feed publishing
+  - Newsfeed building
+- Step 3 - Design deep dive
+  - Feed Publishing ![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/11.04.png)
+    - Fetch friend IDs from the graph database (better for storing network type data than rdbms)
+    - Get friends info from user cache
+    - Fanout Service for _Celebrity Problem_
+      - fanout on write (push) as default
+      - fanout on read (pull) for "celebrities" to reduce system load
+  - Feed Retrieval ![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/11.07.png)
+  - Cache architecture ![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/11.08.png)
+- Step 4 - Wrap up
+  - Scaling the database:
+    - Vertical scaling vs Horizontal scaling
+    - SQL vs NoSQL
+    - Master-slave replication
+    - Read replicas
+    - Consistency models
+    - Database sharding
+  - Other talking points:
+    - Keep web tier stateless
+    - Cache data as much as you can
+    - Support multiple data centers
+    - Lose couple components with message queues
+    - Monitor key metrics. For instance, QPS during peak hours and latency while users refreshing their news feed are interesting to monitor.
 # Reference materials
 
 ### [CHAPTER 12: DESIGN A CHAT SYSTEM](#chapter-12-design-a-chat-system)
-# Step 1 - Understand the problem and establish design scope
-# Step 2 - Propose high-level design and get buy-in
+- ![](https://raw.githubusercontent.com/arafatm/assets/main/img/system.design/12.08.png)
+- Step 1 - Understand the problem and establish design scope
+- Step 2 - Propose high-level design and get buy-in
   * [Polling](#polling)
   * [Long polling](#long-polling)
-# WebSocket
+- WebSocket
   * [High-level design](#high-level-design-1)
   * [Stateless Services](#stateless-services)
   * [Stateful Service](#stateful-service)
@@ -683,7 +708,7 @@ Storage
     * [Message table for 1 on 1 chat](#message-table-for-1-on-1-chat)
     * [Message table for group chat](#message-table-for-group-chat)
     * [Message ID](#message-id)
-# Step 3 - Design deep dive
+- Step 3 - Design deep dive
   * [Service discovery](#service-discovery)
   * [Message flows](#message-flows)
     * [1 on 1 chat flow](#1-on-1-chat-flow)
@@ -694,8 +719,8 @@ Storage
     * [User logout](#user-logout)
     * [User disconnection](#user-disconnection)
     * [Online status fanout](#online-status-fanout)
-# Step 4 - Wrap up
-# Reference Materials
+- Step 4 - Wrap up
+- Reference Materials
 
 ### [CHAPTER 13: DESIGN A SEARCH AUTOCOMPLETE SYSTEM](#chapter-13-design-a-search-autocomplete-system)
 # Step 1 - Understand the problem and establish design scope
