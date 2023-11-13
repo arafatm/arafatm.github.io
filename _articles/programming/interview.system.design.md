@@ -1,5 +1,6 @@
 ---
 permalink: /interview/system-design
+category: career
 author: Alex Xu
 title: System Design Interview - An Insider’s Guide 
 ---
