@@ -1,40 +1,41 @@
 <div class="nowrap">
 
-|            |                |                |                    |                  |
-| --         | --             | --             | --                 | --               |
-| Pr Press   | BP Bench Press | FP Floor Press | OHP Overhead Press | IP Incline Press |
-| SQ Squat   | BSQ Belt Squat | DL Deadlift    | FSQ Front Squat    |
-| d dumbbell | rel Releaser   |
+|                |                     |                 |                    |                  |
+| --             | --                  | --              | --                 | --               |
+| Pr Press       | BP Bench Press      | FP Floor Press  | OHP Overhead Press | IP Incline Press |
+| SQ Squat       | BSQ Belt Squat      | DL Deadlift     | FSQ Front Squat    |
+| d dumbbell     | wrl Weight Releaser |
+| SpB Spider Bar | McB McDonald Bar    | BfB Buffalo Bar
 
 |       |    |    | Main           | Variation           | Asst 1                           | Asst 2                         | Note                          | Warmup                                                                    |
 | --    | -- | -- | --             | --                  | --                               | --                             | --                            | --                                                                        |
-| 1115W | 10 | UM | 1x2 BP 195     | spider bar          | 4x15/s 1 arm rev hyper row 90    | 2x30 pec fly machine 120       |                               |                                                                           |
+| 1115W | 10 | UM | 1x2 BP 195     | SpB                 | 4x15/s 1 arm rev hyper row 90    | 2x30 pec fly machine 120       |                               |                                                                           |
 | 1113M | 9  | LM | 1x3 BSQ  280   | lowbox              | 3x40 hamstring curl 50#          |                                |                               |                                                                           |
 | 1108S | 8  | LD | 5x12 DL 185    |                     | 2x20 leg ext (deep) 70#          |                                |                               |                                                                           |
 | 1106X | 7  |    | 1x5 SQ 135     |                     | 3x1min bike high resistance:     |                                |                               | 4x20: Rev Hyper 50#, RDL straight 2x50db, Lunge raised leg on BP 10/s     |
 | 1030M |    |    | 1x1 BP 275     |                     | 7x30 rear delt fly 50#           |                                |                               | 4x25: incl BP 20db, tri kickback 10db/s, rear delt fly                    |
-| 1029S | X  |    | 8x3 BP 95      | w 3 chains          | 7x15 tri pushd pink band doubled | 5x10/s rev hyper row 100#      | Tony out, lift with Stacey    |                                                                           |
-| 1023M |    |    | 1x1 SQ 315     | spidB lowbox        | 4x10 straight leg sumo DL 135#   | 2xfail decl ab curl w/ 35db    |                               | 4x20: BSQ, hamstring curl, back ext                                       |
+| 1029S | X  |    | 8x3 BP 95      | 3 chains            | 7x15 tri pushd pink band doubled | 5x10/s rev hyper row 100#      | Tony out, lift with Stacey    |                                                                           |
+| 1023M |    |    | 1x1 SQ 315     | SpB lowbox          | 4x10 straight leg sumo DL 135#   | 2xfail decl ab curl w/ 35db    |                               | 4x20: BSQ, hamstring curl, back ext                                       |
 | 1021S | x  |    | 1x SQ 265      | SSB 5s pause        |                                  |                                |                               | 4x: 25x kb swing 25kb, 15x/leg hamstring curl, 20x stir the pot           |
-| 1020F | x  |    | 8x3 BP 95      | w 2x2 chains        | 3x8 tri ext 30db                 | 3x8 BO 1 arm rev hyper row 90# |                               | 4x25 tri pushd pink band, BO row 2x20db                                   |
+| 1020F | x  |    | 8x3 BP 95      | 2x2 chains          | 3x8 tri ext 30db                 | 3x8 BO 1 arm rev hyper row 90# |                               | 4x25 tri pushd pink band, BO row 2x20db                                   |
 | 1018W | 3  |    | 103 SQ 155     | SsB 1&1/4           | 6x30 KB swing 50kb               |                                |                               |                                                                           |
 | 0927W | 30 |    | 5x3 BP 155     | McDB 5s pse         | 4x25 rear delt fly 70            |                                |                               | 4x25: Rear delt fly 70, Single arm rev hyper row 50, incl BP tri ext 20db |
 | 0925M | 29 |    | 1x1 FSQ 225    |                     | 4x15 ghr                         |                                | got scared on 275             | 4x20: BSQ 135, Back ext, Hs curl 40#                                      |
-| 0923S | 28 |    | 10x3 BP 135    | w brick             | 5x10/s 1 arm row 60db            |                                |                               | 4x: 25 fly 50#, 25/s tri kickback, 10 pushup                              |
+| 0923S | 28 |    | 10x3 BP 135    | brick               | 5x10/s 1 arm row 60db            |                                |                               | 4x: 25 fly 50#, 25/s tri kickback, 10 pushup                              |
 | 0916S | 27 |    | 10x10 FP 95#   |                     | 5x25 rear delt fly 50#           |                                |                               | 4x25: rear delt fly 50#, tri kickback 15db, floor press 25db              |
 | 0904M |    |    | 5x50 BP 2x20d  |                     |                                  |                                |                               | 4x25: rear delt fly 25#, incl seal row 15db, pull appart pink band        |
 | 0902S |    |    | 30x3 BSQ 195#  | downslow, 2s pse    | 3x10 walking lunge w 2x20db      | 3x10 GHR                       |                               | 4x: 25 lying hamstring curl, 25 back exts, 15 leg press 315#              |
 | 0830W |    |    | 1x IP 235#     |                     | 2x20 IP 2x30db                   | 3x30 rev hyper row 180#        |                               | 4x25: rear delt fly 50#, BP 2x25db, x-body tri ext w pink band            |
 | 0828M |    |    | 5x5 BSQ +180#  |                     | 3x10/s stability ball rotation   |                                |                               | 4x: 12/leg press 20#, 12/leg hamstring curl 9#, rev hyper row on ball     |
-| 0826S |    |    | BP             | 200# + 86# rel      |                                  |                                |                               | 4x25: floor press 30db, rear fly machine, BP tri ext 15db                 |
+| 0826S |    |    | BP             | 200# + 86# wrl      |                                  |                                |                               | 4x25: floor press 30db, rear fly machine, BP tri ext 15db                 |
 | 0823W |    |    | SSB BSQ 385.   | box                 |                                  |                                | Missed 405                    | 4x20: good morning w pink band, SQ 90#, sidebend 30db                     |
-| 0821X |    |    | 1x1 BP         | buffalo bar 225#    | 4x12 BO Row 50db                 | 5x10 Elbow out tri ext 25db    | missed 245                    | 4x20: BO Rows 35db, Fly machine, tri kickback 12db                        |
+| 0821X |    |    | 1x1 BP 225     | BfB                 | 4x12 BO Row 50db                 | 5x10 Elbow out tri ext 25db    | missed 245                    | 4x20: BO Rows 35db, Fly machine, tri kickback 12db                        |
 | 0819S |    |    | 12x2 DL 245    |                     |                                  |                                |                               | 4x20: KB DL 24kg, Back exts, 10/leg step up                               |
 | 0816W |    |    | 12x3 Pr 95#    | + pink band         | 4x15 tri pushd green band        |                                |                               | 4x25: Rev Hyper Row 50#, tri kickback 10db, Pr 30db                       |
 | 0814M |    |    | 3x FSQ 225#    |                     | 5 min BSQ "walks"                |                                |                               | 4x: 12/leg single leg Pr 135, 3x hurdles, hamstring curls 20#             |
 | 0812S |    |    | 10x10 Pr 50db  | Single Arm DB       | 50 Seal Row empty bar            |                                |                               | 4x20 DB Pr 25db, BO Row 25db, tri kickback pink band                      |
 | 0809W |    |    | 10x10 DL 155#  |                     | Rock lunges 2 chains             | 3x5 GHR                        |                               | 4x20: KB swing 45#, calf raises, stir the pot                             |
-| 0807M |    |    | 6x3 BP 225#    | w black slingshot   | 2x10/arm BO Row on BP w deadstop | 2x8/arm tri kickback 45db      |                               | 4x20: B.O.Row 35db, pushup w slingshot, tri kickback 10db                 |
+| 0807M |    |    | 6x3 BP 225#    | black slingshot     | 2x10/arm BO Row on BP w deadstop | 2x8/arm tri kickback 45db      |                               | 4x20: B.O.Row 35db, pushup w slingshot, tri kickback 10db                 |
 | 0805X |    |    | 8x10 SQ 135#   | MarB                | 1x20 MarB SQ 135#                |                                |                               |                                                                           |
 | 0802X |    |    | 4x8 BP 135#    | McDB                | 4x10 tri pushd Blue Band (Thick) |                                |                               | 4x20 Pr 30db, tri pushd black band, 1-arm row 45db                        |
 | 0731X |    |    | 3x5 SQ 205#    | MarB                | 10,10,7 GHR                      |                                |                               | 4x20: Leg Pr 135# (3 plates), lunges, hip thrust on ball                  |
