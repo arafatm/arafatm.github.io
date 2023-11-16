@@ -10,7 +10,7 @@
 | SpB | Spider Bar  | McB | McDonald Bar  | BfB | Buffalo Bar    | ssb | safety squat bar | mrb | mars bar   |
 
 |       |    | SQ | BP | DL |     |       |     | Variation                 | Asst 1                           | Asst 2                     | Note                          | Warmup                                                             |
-| --    | -- | -- | -- | -- | --  | --    | --  | --                        | --                               | --                         |                               |                                                                    |
+| --    | -- | -- | -- | -- | --  | --    | --  | --                        | --                               | --                         | --                            | --                                                                 |
 | 1115W | 10 |    | BP |    |     | 1x2   | 195 | SpB                       | 4x15/s 1A rhy row 90             | 2x30 pec fly machine 120   | shoulder not 100%             |                                                                    |
 | 1114
 | 1113M | 9  |    |    |    | BQ  | 1x3   | 280 | lowbox                    | 3x40 hamstring curl 50           |                            |                               |                                                                    |
