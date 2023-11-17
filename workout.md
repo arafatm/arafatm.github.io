@@ -17,7 +17,7 @@
 
 |       |                                                                                                                                                                 |
 | --    | --                                                                                                                                                              |
-| 1115W | 10:sa: BP 1x2 195 SpB _shoulder not 100%_ : 4x15/s 1A rhy row 90 :two: 2x30 pec fly machine 120                                                                 |
+| 1115W | 10:sa: BP 1x2 195 SpB _shoulder not 100%_ :one: 4x15/s 1A rhy row 90 :two: 2x30 pec fly machine 120                                                                 |
 | 1114  |
 | 1113M | 9:sa: BT 1x3 280 lowbox :one: 3x40 hamstring curl 50                                                                                                            |
 | 1112  |
@@ -42,7 +42,7 @@
 | 1019  |
 | 1018W | :sa: SQ 10x3 155 SsB 1&1/4 :one: KB 6x30 swing 50kb                                                                                                             |
 | 0927W | :sa: BP 5x3 155 McB 5s pse :one: 4x25 rear delt fly 70 :two: 4x25: Rear delt fly 70, 1A rhy row 50, inc BP tri ext 20d                                          |
-| 0925M | :sa: _got scared on 275_ 1x1 225 :one: 4x15 ghr :two: 4x20: BQ 135, Back ext, Hs curl 40                                                                        |
+| 0925M | :sa: BP 1x1 225 _got scared on 275_ :one: 4x15 ghr :two: 4x20: BQ 135, Back ext, Hs curl 40                                                                        |
 | 0923S | :sa: BP 10x3 135 brick :one: 5x10/s 1A row 60d :two: 4x: 25 fly 50, 25/s tri kickback, 10 psu                                                                   |
 | 0916S | :sa: FP 10x10 95 :one: 5x25 rear delt fly 50 :two: 4x25: rear delt fly 50, tri kickback 15d, floor press 25d                                                    |
 | 0904M | :sa: BP 5x50 20d :one: 4x25: rear delt fly 25, inc seal row 15d, pull appart pink band                                                                          |
@@ -50,8 +50,8 @@
 | 0830W | :sa: IP 1x1 235 :one: IP 2x20 2x30d :two: 3x30 rhy row 180 :fu: 4x25: rear delt fly 50, BP 2x25d, x-body tri ext w pink band                                    |
 | 0828M | :sa: BT 5x5 180 :one: 3x10/s stability ball rotation :two: 4x: 12/leg press 20, 12/leg hamstring curl 9, rhy row on ball                                        |
 | 0826S | :sa: BP 1x1 286 86 wrl :one: 4x25: floor press 30d, rear fly machine, BP tri ext 15d                                                                            |
-| 0823W | :sa: _Missed 405_ BT 1x1 385 SSB box :one: 4x20: good morning w pink band, SQ 90, sidebend 30d                                                                  |
-| 0821X | :sa: _missed 245_ BP 1x1 225 BfB :one: 4x12 BO Row 50d :two: 5x10 Elbow out tri ext 25d :fu: 4x20: BO Rows 35d, Fly machine, tri kickback 12d                   |
+| 0823W | :sa: BT 1x1 385 SSB box _Missed 405_ :one: 4x20: good morning w pink band, SQ 90, sidebend 30d                                                                  |
+| 0821X | :sa: BP 1x1 225 BfB _missed 245_ :one: 4x12 BO Row 50d :two: 5x10 Elbow out tri ext 25d :fu: 4x20: BO Rows 35d, Fly machine, tri kickback 12d                   |
 | 0819S | :sa: DL 12x2 245 :one: 4x20: KB DL 24kg, Back exts, 10/leg step up                                                                                              |
 | 0816W | :sa: BP 12x3 95 + pink band :one: 4x15 tri psd green band :two: 4x25: rhy Row 50, tri kickback 10d, Pr 30d                                                      |
 | 0814M | :sa: FS 1x3 225 :one: 5 min BQ "walks" :two: 4x: 12/leg 1L Pr 135, 3x hurdles, hamstring curls 20                                                               |
@@ -70,7 +70,7 @@
 | 0715X | :sa: BP 2x5 205 slingshot :one: 5x15 Facedown Seal Row empty bar :two: 4x25: Pr 20d, rhy Row 90, tri psd x-body pink band                                       |
 | 0712X | :sa: BT 10x10 275 :one: 5x15 HS Curl 80 :two: 4x20 Back Ext, HS curl 30, lunges                                                                                 |
 | 0710X | :sa: BP 10x5 135 :one: 5x10 Seal Row 70d :two: 4x: 25x Tri psd w pink band, 25x Lat pulls on GHR, 25x Pr 30d                                                    |
-| 0705W | :sa: _w/ Darius_ psu 10x10 :one: 5x15 barbell curl (empty) :two: 5x15 seal row 50d :fu: 4x: 25 dec press 30d, 25x BQ row (empty), 15/s tri kickback 10d         |
+| 0705W | :sa: psu 10x10 _w/ Darius_ :one: 5x15 barbell curl (empty) :two: 5x15 seal row 50d :fu: 4x: 25 dec press 30d, 25x BQ row (empty), 15/s tri kickback 10d         |
 | 0703M | :sa: BT 10x10 225 :one: 5x10 hamstring curl 50 :two: 4x20: back ext, lunges, 20s plank                                                                          |
 | 0701X | :sa: BT 10x10 135 box :one: 10x4 jumps over BP :two: 4x: 20 BQ on box, 10/s hamstring curl, 20 back extention                                                   |
 
