@@ -22,6 +22,9 @@ title: arafatm
 - estimation [From Nobel Prize to Project Management Getting Risks Right](https://arafatm.com/agile/reference-class-forecasting) by Bent Flyvbjerg, Ph.D. & Dr. Techn.
 - spotify squad [Spotify’s Failed \\#SquadGoals](https://arafatm.com/agile/spotify-failed-squad-goals) by Jereiah Lee
 
+### GenAI
+- [Coursera DeepLearning.ai: Generative AI for Everyone](https://arafatm.com/coursera.deeplearning.generative.ai.for.everyone/)
+
 ### career
 - [10 Questions I Wish I’d Asked More To Turbocharge My Career](https://arafatm.com/career/10-questions-i-wish-i-asked) by Julie Zhuo
 - [Career Advice Nobody Gave Me... Never ignore a recruiter](https://arafatm.com/career/career-advice-nobody-gave-me-never-ignore-a-recruiter) by Alex Chesser
