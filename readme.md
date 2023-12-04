@@ -13,6 +13,9 @@ title: arafatm
 ### aaa
 - [The Ultimate Guide to First-Principles Thinking](https://arafatm.com/aaa/the-ultimate-guide-to-first-principles-thinking)
 
+### ai
+- [The Illustrated Transformer – Jay Alammar – Visualizing machine learning one concept at a time.](https://jalammar.github.io/illustrated-transformer/)
+
 ### agile
 - [Accelerate - The Science of Lean Software and DevOps - Building and Scaling High Performing Technology Organizations](https://arafatm.com/agile/accelarate) by Nicole Forsgren PhD, Jez Humble, and Gene Kim
 - [DORA Metrics - We’ve Been Using Them Wrong](https://arafatm.com/agile/dora-metrics-we-ve-been-using-them-wrong) by Dev Interrupted
