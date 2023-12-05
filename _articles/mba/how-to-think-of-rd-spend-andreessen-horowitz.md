@@ -1,6 +1,7 @@
 ---
 created: 2023-12-04T16:02:05 (UTC -08:00)
-tags: []
+categories: mba
+tags: 
 source: https://a16z.com/how-to-think-of-rd-spend/
 author: David George
 title: How to Think of RD Spend - Andreessen Horowitz
