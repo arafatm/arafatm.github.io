@@ -3,7 +3,7 @@ created: 2023-12-04T16:02:05 (UTC -08:00)
 tags: []
 source: https://a16z.com/how-to-think-of-rd-spend/
 author: David George
-title: How to Think of R&D Spend - Andreessen Horowitz
+title: How to Think of RD Spend - Andreessen Horowitz
 ---
 
 > Most growth-stage CEOs know how to tell if they're efficiently allocating
