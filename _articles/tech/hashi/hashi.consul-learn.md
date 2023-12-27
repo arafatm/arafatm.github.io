@@ -4,13 +4,8 @@ tags: hashi devops consul
 source: https://learn.hashicorp.com/consul/getting-started/consul-gs-intro
 title: Learn Consul
 ---
-
-
-
-
-
-
-
+`code` _underline_ **strong** :ship: 
+#hashi 
 ## Install Consul
 
 ### Installing Consul
@@ -82,7 +77,8 @@ the servers. For a strongly consistent view of the world, query the _HTTP API_
 <https://www.consul.io/api/index.html>, which forwards the request to the
 Consul servers.
 
-:shipit: Query nodes 
+:ship: Query nodes 
+
 ```bash
 curl localhost:8500/v1/catalog/nodes
 ```
@@ -194,8 +190,9 @@ via _DNS Interface_ or _HTTP API_
 
 #### DNS Interface
 
-:shipit: The fqdn is `web.service.consul`. Query the DNS interface for the
+:ship: The fqdn is `web.service.consul`. Query the DNS interface for the
 registered service.
+
 ```bash
 dig @127.0.0.1 -p 8600 web.service.consul
 ```
@@ -245,6 +242,8 @@ Next you'll update the web service by registering a health check for it.
 
 Remember that because you never started a service on port `80` where you
 registered web, the health check you register will fail.
+
+`code` _underline_ **strong** 
 
 :flashlight: You can update service definitions without any downtime by
 changing the service definition file and sending a `SIGHUP` to the agent or
