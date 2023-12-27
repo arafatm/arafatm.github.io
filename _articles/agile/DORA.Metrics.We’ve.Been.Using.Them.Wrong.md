@@ -4,6 +4,7 @@ author: Dev Interrupted
 category: agile
 title: DORA Metrics - We’ve Been Using Them Wrong
 ---
+
 ![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F08d23159-0f71-47f7-8b1b-b6e9f1bb0f63_1200x628.png)
 
 I’m a big advocate for the DORA 4 metrics. When used in the right context,
@@ -25,10 +26,10 @@ and Assessment (DORA) group established four metrics:
 
 In their words:
 
- “Deployment Frequency and Lead Time for Changes measure velocity, while
- Change Failure Rate and Time to Restore Service measure stability. And by
- measuring these values, and continuously iterating to improve on them, a
- team can achieve significantly better business outcomes.”_ 
+   “Deployment Frequency and Lead Time for Changes measure velocity, while
+   Change Failure Rate and Time to Restore Service measure stability. And by
+   measuring these values, and continuously iterating to improve on them, a
+   team can achieve significantly better business outcomes.”
 
 Herein lies our problem…
 
