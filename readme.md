@@ -7,5 +7,3 @@ title: arafatm
 | :-- | :-- |
 | [Emoji](/emoji)         | [coursera-machine-learning](https://arafatm.com/coursera-machine-learning)         |
 | [MathJAX](/mathjax)     | [presentation-working-remotely](https://arafatm.com/presentation-working-remotely) |
-
-:+1: 
