@@ -6,7 +6,7 @@ author: Johnny Bowman
 title: How To Figure Out If Im Healthy
 ---
 
-> And I mean healthy enough to feel vital in your 70s.
+![](https://preview.redd.it/foods-protein-density-vs-cost-per-gram-of-protein-v0-brerszlbzqjc1.png)
 
 This is part 2 of a 3 part series of health. Part 1 was about [how to get into A+ health](https://newsletter.amanswork.com/p/how-to-get-into-a-health)_._ This week is about how to figure out if you’re healthy. And I mean _really_ healthy. 
 
