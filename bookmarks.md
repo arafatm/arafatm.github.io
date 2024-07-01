@@ -1,3 +1,4 @@
+- [(123) I Know You're Angry, So Am I... - YouTube](https://www.youtube.com/watch?v=TU96wCDHGKM)
 - #ai [There's An AI For That - The Biggest AI Aggregator](https://theresanaiforthat.com/)
 - #career [How to Choose a Startup](https://www.danhock.co/p/how-to-choose-a-startup)
 - #code #docker #wsl #windows [DigitalOcean: How To Develop a Docker Application on Windows using WSL, Visual Studio Code, and Docker Desktop](https://www.digitalocean.com/community/tutorials/how-to-develop-a-docker-application-on-windows-using-wsl-visual-studio-code-and-docker-desktop)
