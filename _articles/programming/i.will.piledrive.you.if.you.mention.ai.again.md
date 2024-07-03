@@ -4,7 +4,7 @@ created: 2024-07-02T19:17:23 (UTC -07:00)
 tags: ai humor
 source: https://ludic.mataroa.blog/blog/i-will-fucking-piledrive-you-if-you-mention-ai-again/
 author: ludicity
-title: Eponymous Laws Part I - Laws of the Internet
+title: I Will Fucking Piledrive You If You Mention AI Again
 ---
 
 The recent innovations in the AI space, most notably those such as GPT-4, obviously have far-reaching implications for society, ranging from the utopian eliminating of drudgery, to the dystopian damage to the livelihood of artists in a capitalist society, to existential threats to humanity itself.
