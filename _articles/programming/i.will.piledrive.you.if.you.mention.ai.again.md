@@ -7,16 +7,11 @@ author: ludicity
 title: Eponymous Laws Part I - Laws of the Internet
 ---
 
-
-> The recent innovations in the AI space, most notably those such as GPT-4, obviously have far-reaching implications for society, ranging from the utopian eliminating of drudgery, to the dystopian damage to the livelihood of artists in a capitalist society, to existential threats to humanity itself.
-
----
-
 The recent innovations in the AI space, most notably those such as GPT-4, obviously have far-reaching implications for society, ranging from the utopian eliminating of drudgery, to the dystopian damage to the livelihood of artists in a capitalist society, to existential threats to humanity itself.
 
 I myself have formal training as a data scientist, [going so far as to dominate a competitive machine learning event at one of Australia's top universities](https://ludic.mataroa.blog/blog/breaking-my-universitys-machine-learning-competition/) and writing a Master's thesis where I wrote all my own libraries from scratch in MATLAB. I'm not God's gift to the field, but I am _clearly_ better than most of my competition - that is, practitioners like myself who haven't put in the reps to build their own C libraries in a cave with scraps, but can read textbooks, implement known solutions in high-level languages, and use libraries written by elite institutions.
 
-So it is with great regret that I announce that the next person to talk about rolling out AI is going to receive a complimentary chiropractic adjustment in the style of Dr. Bourne, i.e, I am going to fucking break your neck. I am truly, deeply, sorry.
+> So it is with great regret that I announce that the next person to talk about rolling out AI is going to receive a complimentary chiropractic adjustment in the style of Dr. Bourne, i.e, I am going to fucking break your neck. I am truly, deeply, sorry.
 
 ## I. But We Will Realize Untold Efficiencies With Machine L-
 
