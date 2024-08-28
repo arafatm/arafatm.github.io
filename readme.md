@@ -10,3 +10,5 @@ title: arafatm
 
 Links
 - #tax #ipo https://github.com/jlevy/og-equity-compensation
+
+- [#🦉/📔📚 Machine Learning for Absolute Beginners by Oliver Theobald](https://arafatm.com/book.Machine.Learning.for.Absolute.Beginners.Oliver.Theobald/)
