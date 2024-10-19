@@ -1,8 +1,3 @@
----
-layout: home
-title: arafatm
----
-
 | [Bookmarks](/bookmarks) | [awesome-scifi](https://arafatm.com/awesome-scifi)                                 |
 | :-- | :-- |
 | [Emoji](/emoji)         | [coursera-machine-learning](https://arafatm.com/coursera-machine-learning)         |
