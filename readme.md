@@ -5,5 +5,5 @@
 
 Links
 - #tax #ipo https://github.com/jlevy/og-equity-compensation
-
 - #ML/book [Machine Learning for Absolute Beginners by Oliver Theobald](https://arafatm.com/book.Machine.Learning.for.Absolute.Beginners.Oliver.Theobald/)
+- #interview #system.design [System Design](https://arafatm.com/interview.system.design/)
