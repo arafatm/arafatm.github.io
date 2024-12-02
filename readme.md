@@ -3,7 +3,11 @@
 | [Emoji](/emoji)         | [coursera-machine-learning](https://arafatm.com/coursera-machine-learning)         |
 | [MathJAX](/mathjax)     | [presentation-working-remotely](https://arafatm.com/presentation-working-remotely) |
 
-Links
+## Startup
 - #tax #ipo https://github.com/jlevy/og-equity-compensation
-- #ML/book [Machine Learning for Absolute Beginners by Oliver Theobald](https://arafatm.com/book.Machine.Learning.for.Absolute.Beginners.Oliver.Theobald/)
+
+## Machine Learning & AI
+- #ML/book [Machine Learning for Absolute Beginners by Oliver Theobald](/book.Machine.Learning.for.Absolute.Beginners.Oliver.Theobald/)
+
+## System Design
 - #interview #system.design [System Design](https://arafatm.com/interview.system.design/)
