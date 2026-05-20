@@ -11,3 +11,15 @@
 
 ## System Design
 - #interview #system.design [System Design](https://arafatm.com/interview.system.design/)
+
+---
+
+{% assign articles_by_cat = site.articles | group_by_exp: "item", "item.categories | first" %}
+{% assign sorted_cats = articles_by_cat | sort: "name" %}
+{% for cat in sorted_cats %}
+## {{ cat.name }}
+{% assign sorted_articles = cat.items | sort: "title" %}
+{% for article in sorted_articles %}
+- [{{ article.title | default: article.name }}]({{ article.url }})
+{% endfor %}
+{% endfor %}
